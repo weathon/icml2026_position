@@ -1,6 +1,8 @@
 const aiTarget = document.querySelector("#ai-examples");
 const realTarget = document.querySelector("#real-examples");
 const plainToggle = document.querySelector("#plain-toggle");
+const scriptBase = new URL(".", document.currentScript.src);
+const localUrl = (path) => new URL(path, scriptBase).href;
 
 plainToggle.addEventListener("click", () => {
   const isPlain = document.body.classList.toggle("plain");
@@ -8,7 +10,7 @@ plainToggle.addEventListener("click", () => {
   plainToggle.textContent = isPlain ? "restore noise" : "reduce noise";
 });
 
-fetch("assets/gallery.json")
+fetch(localUrl("assets/gallery.json"))
   .then((response) => {
     if (!response.ok) {
       throw new Error(`Gallery metadata request failed with HTTP ${response.status}`);
@@ -27,11 +29,11 @@ fetch("assets/gallery.json")
           <article class="ai-pair">
             <div class="pair-images">
               <div class="image-slot">
-                <img src="${item.failed}" alt="Original reference image for case ${item.index + 1}.">
+                <img src="${localUrl(item.failed)}" alt="Original reference image for case ${item.index + 1}.">
                 <span class="tag">original reference</span>
               </div>
               <div class="image-slot">
-                <img src="${item.success}" alt="Anti-aesthetic generated output for case ${item.index + 1}.">
+                <img src="${localUrl(item.success)}" alt="Anti-aesthetic generated output for case ${item.index + 1}.">
                 <span class="tag success-tag">anti-aesthetic output</span>
               </div>
             </div>
@@ -49,7 +51,7 @@ fetch("assets/gallery.json")
     realTarget.innerHTML = gallery.real
       .map((item) => `
         <article class="real-item">
-          <img src="${item.image}" alt="${item.query}.">
+          <img src="${localUrl(item.image)}" alt="${item.query}.">
           <dl>
             <dt>style</dt><dd>${item.query}</dd>
             <dt>evidence</dt><dd>${item.message}</dd>
