@@ -1,0 +1,525 @@
+\appendix
+\clearpage
+
+\section{Human Evaluation}
+\label{sec:human_eval}
+Since this is an objective answer and does not involve subjective preference, we used an LLM as an objective judge instead of a large-scale human evaluation. However, to validate the VLM accuracy, we used a small-scale human evaluation, following TIIF-Bench \cite{wei_tiif-bench_2025} and VideoVerse \cite{wang_videoverse_2025}. We used a group of 18 users to label 40 images (each user rates 10 images, with images that could trigger negative emotions removed) and used their rounded mean answer to compare them against the LLM selection, resulting in an MAE of 0.29 and a quadratic Cohen's kappa of 0.80, which suggested a stronglevel of agreement between human and LLM rated results \cite{mchugh_interrater_2012}. With the tie removed (which is the setting used to evaluate reward models), the LLM has an accuracy of 0.923 with humans. With the tie and original image being grouped into one class setting (the generation model setting), the LLM has an accuracy of 0.85 with humans. We used a rounded mean because if humans largely diverge on one sample, that means this sample is likely a tie. The prompt to the LLM is an object query that asks which image matches $p_a$ better, avoiding preference bias. We present both $I_a$ and $I_o$ to the reward model with $p_a$, to see which image gets a higher score from the reward model. We modeled this as a classification task. When evaluating the generation models, we used $p_o$ and $J$ to determine the extent to which the generated images diverged from conventional mainstream aesthetics.
+
+\section{More about Previous Discussion on Alignment of Image Generation Models}
+\label{sec:details_image_alignment}
+In image generation, related issues were explored in a pilot study in Value Sign Flip (VSF) Appendix~N \cite{guo_vsf_2025}, which raised concerns about generalized image preference and used negative prompts to drive non-mainstream outputs (including wide-spectrum aesthetics and abstract arts). Still, their experiments are mainly to demonstrate that their method is able to diverge from mainstream preferences. They did not provide a complete argument and test on large-scale generative and reward models. Maerten \textit{et al.} \cite{maerten_lapis_2025} reported that styles such as abstraction may receive lower mean human ratings despite independent artistic merit. Some prior work addresses preference diversity by measuring both mean and variance of perceived image quality \cite{ma_hpsv3_2025, maerten_lapis_2025}; however, they still aimed to predict the general human preference, merely adding a variance prediction alongside it. Jin \textit{et al.}\cite{jin_compose_2025} argue that the current approach is based on the assumption that there exists a single universal preference that is limiting. They argued that the visual preference is the alignment between the \textit{idea} and the outcome, which is personalized. They proposed to use an adapter to incorporate user-specific. However, they still mainly focused on personalized aesthetics outputs based on the principle of arts, and did not include purposefully technical degraded (anti-aesthetics) outputs. They also did not conduct large-scale experiments on generative and reward models.
+
+The Flux Krea team \cite{noauthor_releasing_2025} found that existing reward models, such as LAION Aesthetics, are biased toward depictions of women, blurry backgrounds, overly soft textures, and bright images, and that aligning to an average of human values may land models in a ``nobody’s happy'' zone. They therefore fine-tuned a model aligned to their specific preference rather than a generalized one.
+
+HPSv3 makes two additional assumptions that may be restrictive. First, it treats real-world images as the upper bound for generated images. Yet a key advantage of AI image generation (or most art forms) is its ability to go beyond real-world constraints, enabling creations like pink elephants or square apples. It also overlooks the significance of non-photorealistic artistic styles. Second, it validates annotators only when their ratings align with expert ratings, introducing a strong bias toward expert opinions. 
+
+VisionReward \cite{xu_visionreward_2025} uses explainable sub-dimensions to compute a total human preference score and finds that prominent main subjects, bright colors, and positive emotions influence the score. However, satisfying these criteria may not be desirable when it conflicts with the user’s instructions. Although prompt following has the highest weight in VisionReward, it is treated as a binary metric and may not capture fine-grained prompt details that run counter to these effects. Non-prominent main objects may be integral to abstract imagery, and dull colors may be intended for a retro or night-photography aesthetic. Reward models can embed such preferences into reinforcement learning signals, penalizing outputs that diverge from standard (or developer-set) expectations. As a result, generative models may fail to respect explicit instructions for low saturation, intentional artifacts, negative emotion, or domain-specific requirements such as camouflage animals or augmented images. Figure~\ref{fig:procedure_diagram} illustrates a case where prompts requesting a distorted image are ignored by model~1 in favor of a universally ``beautiful'' image.
+
+Reward models that encourage strong positive emotions may suppress so-called ``negative emotions.'' It falls into a pitfall that positive emotions = good, and we should have more, and negative emotions = bad, and we should avoid them. However, this mindset is harmful. Ford \textit{et al.} stated that ``in fact, several lines of research suggest a paradoxical effect: the more people pursue happiness, the less likely they are to experience positive outcomes, including feelings of happiness.'' \cite{gruber_paradoxical_2014} Negative emotions are essential to art and expression; a mixture of emotions characterizes real life. Similar to social media, if AI-generating homogenized positive emotions produces an overly sanitized representation, it obscures emotional complexity and neglects the expressive, developmental, constructive, and advocative roles of negative emotions. It also overlooked the experiences of those currently facing them. When AI-generated images consistently convey strong positive emotion, they can create the illusion that everyone is and should be happy (also similar to social media). Fujita \textit{et~al.} \cite{fujita_pressure_2025} describe this as Toxic Positivity, which may lead users to minimize or suppress negative feelings rather than engage with them as part of a growth process \cite{upadhyay_towards_2022}. The experience of negative emotions also carries intrinsic functional value. For example, feeling horror or disgust after witnessing images of war or violent crime is essential because it alerts us to danger and moral harm, reinforcing empathy and aversion to violence.
+\section{Judging Model Training}
+We fine-tuned another model instead of using the original VisionReward model because: (1) the original VisionReward model is very large, with 19B parameters; and (2) VisionReward uses 3--5 binary questions for each dimension, phrased as yes--no question-answering queries. However, these queries are very similar, causing ambiguity, e.g., ``Is the image very rich?'' vs. ``Is the image rich?'' This, combined with the large model size, also makes inference very expensive. Users have reported on GitHub that the inference speed is about 30 minutes/image, though it is likely caused by a bug.
+% \footnote{\url{https://github.com/zai-org/VisionReward/issues/23}}
+Our fine-tuned judging model addresses these issues by using a smaller 4B model and by formatting each dimension as a single question. We incorporated the VisionReward rating guidelines for human raters into the Qwen prompt, which puts the model in a much better starting position. The model predicts whether the score is positive, zero, or negative, and outputs 2, 1, and 0 for these cases, respectively. A high score means the model is performing well in traditional general preference. We consider the data noisy and think that keeping precise scores is unhelpful and can harm performance, so we retain only the sign. We also ensure the output is a single token (using 0, 1, 2 instead of -1, 0, 1) to improve expected-value calculation later.
+
+We require a continuous score rather than an ordinal score for calculating the delta between images with the original prompt and the wide-spectrum aesthetics prompt, so we compute the expected value using the probability of each token, as follows:
+\begin{equation}
+    S = P(0 \mid d,I) \cdot 0 + P(1 \mid d,I) \cdot 1 + P(2 \mid d,I) \cdot 2
+\end{equation}
+where $P(a \mid d,I)$ denotes the model's probability of outputting token $a$ given dimension $d$ and image $I$.
+
+We trained the model on the first 40k images as the training set and used the remaining 743 images as the validation set. Training ran on Nvidia GH200 for 5 epochs with a learning rate of 0.00002, cosine learning-rate decay, weight decay of 0.01, and LoRA applied to attention projection and attention output layers with rank 32. The validation metrics are shown in Table~\ref{tab:val}. We report MAE(Mean Absolute Error), weighted MAE (WMAE) between the continuous score and the ground-truth score, and the weighted F1 score for 3 classes, with weights based on ground-truth frequency. We did not compare it with the original VisionReward due to the impracticability of its evaluation and the different types of metrics being predicted. 
+\begin{table}[h]
+    \centering
+    \small
+    \begin{tabular}{ccc}
+         \hline
+         MAE & WMAE & WF1 \\
+         \hline
+         0.307 & 0.368 & 0.732 \\
+         \hline
+    \end{tabular}
+    \caption{Judging Model Validation Metrics on VisionReward Dataset}
+    \label{tab:val}
+\end{table}
+
+
+\section{Validation on Real Arts}
+% Although these image reward models are primarily designed to evaluate AI-generated imagery, we also tested them on real artworks. Although these reward models might be intended to assess AI images and there is a domain gap between that and real arts, this test is still valid for these reasons. (1) AI image generation models can generate these style of arts, especilly those high insutrction following ones, not all AI images are hyperrealistic. and thus it can be used to test how these image reward models judge these images as-if they are generated by AI (2) if the reward model does not reconize these high historticaly recongized art works due to domain gap, it is a bias of the model itself and what we are measuring here. This experiment can validate our hypothesis that reward models are biased against non-mainstream art. We evaluated a selection of historical artworks from the LAPIS dataset and artchive.com. This approach also allows us to determine if the low scores are specific to our generated wide-spectrum aesthetics images or if they reflect a broader bias. 
+
+% Although image reward models are primarily trained and evaluated on AI-generated imagery, we also assess them on real artworks. While a domain gap between synthetic images and traditional art may exist, this evaluation remains informative for several reasons. First, modern generators, particularly instruction-following systems, can already emulate a wide range of historical and abstract styles; therefore, the resulting scores meaningfully approximate how such AI-generated renderings would be judged. This makes evaluation of real artworks directly relevant for understanding how these models operationalize aesthetic value in practice. Second, if reward models systematically undervalue historically significant artworks, such failures should not be dismissed as benign generalization error. We distinguish two senses of bias here: (a) technical bias, a systematic, directional scoring error induced by training data selection and annotation practices, and (b) social bias, the downstream marginalization of non-mainstream artistic traditions when dominant aesthetic norms are treated as the default definition of quality. In our setting, what might be described as a domain gap reflects data selection and filtering bias in the reward model's training distribution: the systematic underrepresentation or exclusion of entire artistic traditions from the data used to define "good." Notably, some reward model training pipelines explicitly include real photographs and treat them as highest-quality anchors \cite{ma_hpsv3_2025}, demonstrating that the exclusion of traditional artworks is not a necessary constraint of the synthetic-image setting but a deliberate data curation choice. The decision to include real photos while excluding real art reveals an implicit hierarchy that privileges photorealistic aesthetics over other artistic traditions. Because these scores serve as optimization targets, such selective underrepresentation operationally becomes a suppressive bias against those styles. This is analogous to facial recognition systems trained primarily on one demographic group exhibiting degraded performance on others \cite{buolamwini_gender_2018}; the performance gap is not neutral drift but a predictable consequence of data coverage choices, and is appropriately characterized as bias. Third, irrespective of the underlying cause, consistently low reward assigned to these styles implies that generative systems optimized with these signals will be actively discouraged from producing them, leading to their systematic suppression. In this sense, the domain gap and its root causes directly reveal structural biases in how reward models encode and quantify aesthetic value.
+We evaluate image reward models on real artworks despite their primary training on AI imagery and photography \cite{ma_hpsv3_2025}. While a domain gap exists, this assessment remains informative. (1) Since instruction-following generators emulate historical styles, these scores meaningfully approximate how such AI renderings are judged in practice. (2) Systematically undervaluing significant art signifies technical and social bias rather than noise and can be executed with ``domain drift." Current datasets prioritize photorealism \cite{ma_hpsv3_2025} while underrepresenting traditional and abstract art, structurally narrowing aesthetic value rather than reflecting a neutral mismatch. If a reward model cannot recognize the values of a highly respected real art, it is a problem and could cause marginalization, no matter the cause. (3) Consistently low rewards discourage systems from producing these styles, leading to systematic suppression. This parallels facial recognition failures due to data composition \cite{buolamwini_gender_2018}; the performance gap constitutes a predictable structural harm rather than an excusable shift. Consequently, identifying this gap fulfills our objective by revealing precisely where the model's value judgment becomes exclusionary. We discussed more in Appendix.
+
+
+% To probe whether this effect is unique to our wide-spectrum generated images or reflects a broader pattern, we also assess a selection of historical artworks from the LAPIS dataset and artchive.com. We conducted a qualitative analysis first to examine each artwork individually. The selected artworks and their assigned scores are presented in Figure~\ref{fig:real_art_scores}. For each artwork, we used \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct} to generate a factual caption, while excluding interpretive content. Since the caption is factual, it should describe what is in the image, rather than the deeper meaning or connection that the reward model might not understand. The image and its corresponding caption were then fed to each reward model for rating.
+
+% To provide a baseline for these scores, Table~\ref{tab:reward_model_baselines} lists the mean and standard deviation of scores from each reward model using original prompts on the original images generated by models we tested. We can observe that some of the real art scores are lower than 2 standard deviations from the mean of AI images.
+
+To quantitatively validate this finding, we sampled roughly 10K real artworks from the LAPIS Dataset \cite{maerten_lapis_2025}, which spans a wide range of styles and genres. We restricted our evaluation to HPSv3, since the scores from HPSv2 and ImageReward are not standardized and depend strongly on the specific prompt—meaning that comparisons are only meaningful between images generated from the same prompt. The real artworks receive substantially lower scores than AI-generated images, even trailing some early-generation models such as Hunyuan-DiT (May 2024), and they rank near the bottom of the HPSv3 leaderboard (second to last). This supports our hypothesis that these reward models are strongly optimized for broad human preferences and tend to undervalue non-mainstream aesthetic images.
+
+\label{sec:real}
+\begin{table}[]
+    \centering
+    \small
+    \begin{tabular}{c|ccclc}
+    \toprule
+      RM & $r$ & $s$ & $R$ &  MM/YY &$M'$ \\ \midrule
+ %      ImgRewd & -0.13 & 0.74 & 5/7&  23/04 &SD1.4\\
+ % HPSv2& 0.21& 0.37& 18/23&  23/06&DALL·E mini\\
+ HPSv3& 5.86& 0.57& 10/12&  25/08&Hunyuan-DiT\\
+ \bottomrule
+    \end{tabular}
+    \caption{How reward models rate real art images.}
+    \label{tab:real_arts}
+\end{table}
+
+Although image reward models are primarily trained and evaluated on AI-generated imagery and real photos~\mbox{\cite{ma_hpsv3_2025}}, we also assess them on real artworks. While a domain gap between synthetic/real images and traditional art exists, this evaluation remains informative for several reasons. First, modern generators, particularly instruction-following systems, can already emulate a wide range of historical art styles; therefore, the resulting scores meaningfully approximate how such AI-generated renderings would be judged. This makes the evaluation of real artworks directly relevant for understanding how these models operationalize aesthetic value in practice when a user wants similar styles. Second, if reward models systematically undervalue historically significant artworks, such failures should not be treated as mere noise or domain shift, but as evidence of technical and social bias. We identify a specific data selection and filtering bias here: current datasets include real-world photography and treat it as the highest standard of quality \cite{ma_hpsv3_2025}, while traditional and abstract art are underrepresented. By treating photorealism as the superior benchmark for ``real" imagery while excluding diverse artistic traditions, the models encode a structural narrowing of aesthetic value rather than a neutral distribution mismatch. Third, irrespective of the underlying cause, consistently low reward assigned to these styles implies that generative systems optimized with these signals will be actively discouraged from producing them, leading to their systematic suppression and downstream harm. The second and third points can be analogous to facial recognition systems exhibiting degraded performance for specific demographic groups due to training data composition \cite{buolamwini_gender_2018}; the performance gap is a predictable consequence of underrepresentation and data selection bias, which does not excuse the performance drop and should be criticized as a structural harm rather than glossed over as a neutral domain shift. In this sense, the domain gap and its root causes—specifically the systematic underrepresentation of diverse artworks in favor of photographic standards—directly reveal structural biases in how reward models encode and quantify aesthetic value. Indeed, if this failure stems from a domain shift, then identifying and characterizing that shift is exactly our objective, as it reveals the precise boundaries where the model’s value judgment becomes exclusionary.
+
+We captioned the 10K images from LAPIS using \texttt{Qwen/Qwen3-VL-30B-A3B-Instruct} and evaluated them using each reward model. We compared the scores of real artworks with the benchmark each model released, which are usually popular models at the time of release. We report the raw score ($r$), relative score ($s$) within the leaderboard range, the rank on the leaderboard ($R$), the model that scored right above these real arts ($M'$), and the month the benchmark is released. The relative score is calculated by $(r_{art}-r_{min})/(r_{max} - r_{min})$, where $r_{art}$ is the score real art images get, and $r_{max}$ and $r_{min}$ are the highest and lowest scores in the leaderboard. Results are in the Table~\ref{tab:real_arts}. We can observe that the real art ranked very low in all three reward model leaderboards, and even lower than many early-stage image generation models. Additionally, they are much lower than the original images we generated that were scored with the original prompts. This shows that the reward models are heavily biased against. 
+This also shows that these reward models do not actually understand what makes good art, but are merely a \textit{sub}-population (of the labeller) opinion estimator. We ruled out the possibility that the model cannot understand abstract images by testing BLIP scores with images and captions from real art. We achieved a BLIP score of 0.996. To further rule out that BLIP assigns a high score regardless of the prompt, we shuffled the prompt and images, resulting in a BLIP score of 0.086. This BLIP confirmation shows that reward models could potentially match abstract images, but chose to score them low because they diverged from mainstream. 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{sec/imgs/img2img_samples.png}
+    \caption{Selected examples of image-to-image results from Flux Krea and DanceFlux. For the record, row numbers of these images are [51, 261, 191, 244, 129]. For example, for the first input, the intended input features a young boy struggling with a striped kite in a random, unfinished, and disharmonious scene lacking clear design. However, the Flux Krea Output deviates by being less chaotic, and the DanceFlux Output is the worst, showing the boy easily holding the kite and smiling.}
+    \label{fig:img2img_samples}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{sec//imgs/samples.png}
+    \caption{Some examples of low rating images generated by AI from our dataset}
+    \label{fig:placeholder}
+\end{figure}
+% \begin{figure*} 
+%     \centering
+%     \includegraphics[width=\linewidth]{sec/imgs/rating.pdf}
+%     \caption{Each reward model is given the wide-specturm aesthetics prompts ($p_a$) with the original and wide-specturm aesthetics images. The check mark shows which the model prefers even when given the $p_a$. Most aesthetics-aligned models (HPSv2, HPSv3, ImageReward) all prefer the original ``perfect'' images, even when given $p_a$. But a plain BLIP or LLM (when asked which one follows better) can correctly choose the wide-specturm aesthetics images.}
+%     \label{fig:placeholder}
+% \end{figure*}
+
+% \section{More Test On Controlled Experimental Arts}
+% Experimental arts are those pushing the boundary of conventional arts. It is very likely that these arts are being rated with very low scores by reward models because they do not fit the generalized preferences, even though they could have significant artistic value. Even though the wide-spectrum aesthetics images we generated could be considered as experimental art, we did a more controlled test by using human-generated experimental art and controlled AI-generated experimental art. 
+
+% We selected 7 experimental arts from Artist \cite{ibrahim_seven_nodate} and created 3 experimental artworks using the method mentioned in VSF Appendix N \cite{guo_vsf_2025} by Stable Diffusion 3.5 (using with VSF) to create very abstract or unusual artworks. These images are captioned and rated using the same method as the real arts. 
+% % The rating of each reward model and the image itself is shown in Figure~\ref{fig:exp}. We also used factal prompts, such that the prompt will describe any unusual things in the image. 
+
+
+% A couple of images have interesting ratings. \textit{Grauer Tag} by George Grosz got an HPSv3 score of 1.6, which is more than 3 standard deviations lower than the AI image mean; its ImageReward score is -1.2, which is also more than 3 standard deviations lower than the AI image mean. \textit{The Great Metaphysician} by Giorgio de Chirico received an ImageReward score of -1.9, which is more than 4 standard deviations lower than the AI image mean. Unsupervisedly, BLIP gives all these image-pair scores close to 1, meaning the caption and image understanding are not a problem. 
+
+
+% % todo: qing: how this matters, combined with real art
+% % \section{More Test On Abstract Arts}
+
+
+\section{Negative Emotions}
+\label{sec:emotion}
+As discussed in the Introduction, negative emotions—similar to wide-spectrum aesthetics—play a key role in art expression and real life. Although we examined emotion as one dimension of wide-spectrum aesthetics from VisionReward, we also conducted a more controlled test. In I2P \cite{schramowski_safe_2023} dataset, its labelling of negative emotions as self-harm raised many concerns. For example, \texttt{time dripping from the walls, small room, greyscale, sad mood, 4k, photography, award winning photo} has been labelled as self-harm for 100\%, and ironically, \texttt{The Scream by Simon Bisley} is labelled shocking for 100\% \footnote{\url{https://huggingface.co/datasets/AIML-TUDA/i2p/discussions/1}}. 
+
+% Specifically, we investigated whether reward models penalize images depicting negative emotions when the prompt explicitly specifies a negative emotion.
+
+To minimize noise and bias from unrelated elements, we first generated an image expressing happiness using Nano Banana, then applied image-to-image editing with Nano Banana to create versions expressing negative emotions: sadness, anger, and fearfulness. Everything besides the emotion was aimed to be unchanged. Examples and their corresponding scores are shown in Fig~\ref{fig:emotion_bias} in the Appendix. 
+
+ % 
+
+We also evaluated this as a classification task. If the reward model selected the image matching the negative emotion, it was considered correct. Quantitative results are reported in Table~\ref{tab:emotion}. The result shows that reward models are very opinionated against negative emotions, even when the prompt contains negative emotions.
+% Although our small-scale testing shows that the reward models can weakly correctly identify the negative emotion image if the prompt contains only the emotion (e.g., ``a sad person''), that is not how people usually prompt. 
+
+We also tested how an aesthetics-aligned model will generate when the user asks for a negative emotion face on the Flux family models. We found that if the prompt describes neutral elements and only mentions the emotion in a single place, a highly-aligned model (DanceFlux) usually fails to follow the prompt, unlike an unaligned model. They usually generated neutral or even positive emotions when given prompts containing negative emotions. However, when prompted to generate happy faces, DanceFlux can generate them. This confirmed our concerns about toxic positivity in image generation models, and it is the opposite finding compared to earlier research, which shows models tend to generate negative emotion content \cite{mehta_emotional_2024}. An example pair is shown in Figure~\ref{fig:vsf} in Appendix Right. 
+% if the prompt contains many elements that render a sad emotion (e.g., weather, body language, etc.), most models can generate successfully. However, 
+
+
+\begin{table}[]
+ \centering
+ \caption{Negative emotion classification accuracy across different models.}
+ \small
+ \scalebox{0.9}{
+ \begin{tabular}{llll}
+ \toprule
+ \textbf{Model} & \textbf{Anger} & \textbf{Fearfulness} & \textbf{Sadness} \\
+ \midrule
+ BLIP & \textbf{0.960} & \textbf{0.790} & \textbf{0.950} \\
+ HPSv2 & 0.700 & 0.640 & 0.880 \\
+ HPSv3 & 0.190 & 0.320 & 0.440 \\
+ ImageReward & 0.550 & 0.490 & 0.770 \\
+ \bottomrule
+ \end{tabular}}
+ \label{tab:emotion}
+ \vspace{-0.1in}
+\end{table}
+
+
+\begin{table}[]
+ \centering
+ \footnotesize
+ \caption{Emotion generation scores for each model. The scores show how well the model generates the specific emotion, measured by BLIP.}
+ \scalebox{1.0}{
+ \begin{tabular}{lrrrr}
+ \toprule
+ & Angry & Fearful & Happy & Sad \\
+ \midrule
+ DanceFlux & 0.27 & 0.33 & 0.61 & 0.36 \\
+ Flux Dev & 0.51 & 0.50 & 0.50 & 0.48 \\
+ Flux Krea & 0.65 & 0.45 & 0.60 & 0.55 \\
+ PrefFlux & 0.49 & 0.63 & 0.54 & 0.50 \\
+ Nano Banana & 0.84 & 0.80 & 0.60 & 0.70 \\
+ SD3.5-Large & 0.89 & 0.49 & 0.62 & 0.50 \\
+ \bottomrule
+ \end{tabular}}
+ \label{tab:emotion_gen}
+ \vskip -0.2pt
+\end{table}
+
+To test the generative model's ability to capture the full spectrum of emotions (including negative emotions), we perfomanced emotion generation tests. We restricted this test to the Flux family. SDXL often failed to render a person facing the camera when prompted, and Stable Diffusion 3.5 sometimes produced failed faces, so we excluded those families here. We thus include another unaligned model, Stable Diffusion 3.5 Large (with guidance scale of 4), as an unaligned baseline to rule out that smaller models cannot understand emotions. We also included Nano Banana as an external baseline. All models besides Nano Banana are generated using the same seed. We created 30 emotionally neutral prompts containing a placeholder \texttt{[emotion]} and instantiated each with happy, sad, fearfulness, or anger, yielding 120 prompts. Each prompt was given to the generation model. The resulting image was cropped with the open-vocabulary detector LLMDet \cite{fu_llmdet_2025} with the human face remaining and scored by BLIP with prompt of \texttt{The face shows [emotion] expression}. For each model and emotion, we recorded the target-emotion score and averaged across prompts; Table~\ref{tab:emotion_gen} in main tex reports the results. DanceFlux, which is strongly aesthetics-aligned, consistently executed happy prompts but failed on most negative emotions, whereas the best performing wide-specturm aesthetics model, Flux Krea and Stable Diffusion 3.5 Large, followed negative-emotion prompts much better. Flux Dev and the PrefFlux fell between these extremes, suggesting that the PrefFlux alignment, including UniGenBench, preserved prompt following by rewarding competence on complex instructions. This finding differs from early research where image generation models tend to generate negative emotion contents \cite{mehta_emotional_2024}. We expressed our concerns here, for overly optimistic and positive emotions could be problematic because they create an environment of toxic positivity and an ideological bias that positive emotion is always good and appropriate. It is also a symptom of optimization toward likeability rather than truth, both to the real world and the user's prompt.
+
+
+
+% \section{Stable Diffusion 3.5 Large}
+% Since there is no aligned version of Stable Diffusion 3.5 Large to compare to, we did not test it in the main text. However, based on its excellent performance on the emotion prompt following, we did an additional test on it. Results are reported in Table~\ref{tab:sd35large}. We can see that 
+
+\section{Per-Dimension Analysis For Reward Models}
+Unlike VisionReward, the three reward models we studied in this paper lack explainability for each dimension. To study their correlation with each VisionReward dimension, we did a regression on images generated (both original images and wide-spectrum aesthetics images) with all rate predictions and the blip scores (with original prompt) as independent variables and the reward calculated using the original prompt as the depended variable. We can see that most of the values are positive, but some are negative. The higher the BLIP score weight is, the better it follows the prompt rather than a fake preference. 
+% .... so what? todo: Qingyun 
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{sec/imgs/slopes.pdf}
+    \caption{Linear Regression Between Rater Dimissions (with BLIP scores from original prompt as addition) with Each Reward Model's reward rated with original prompt. A star means the p-value is less than 0.05.} 
+    \label{fig:slopes} 
+\end{figure*}
+
+
+\section{Image-to-Image Test}
+To examine whether aligned image generation models fail to produce wide-spectrum aesthetics images because they either lack a suitable starting point or do not fully understand what ``wide-spectrum aesthetics'' means, we conducted an image-to-image experiment. We took an image $I_a$ that Nano Banana successfully generated ($r_{\textbf{HPSv3}}(I_a, p_o) < 10$) and used it as input for two other models, Flux Krea and DanceFlux, to generate new images $I_a'$ using prompt $p_a$. We then compared the raw HPSv3 and Judging model scores with $I_a'$. This test evaluates whether these models can use the Nano Banana output as a solid foundation to create more wide-spectrum aesthetics images—or if they instead ``purify'' it toward mainstream aesthetics. The image-to-image strength is set to 0.5. Flux Krea and DanceFlux were selected as examples, as they show the largest difference within the same model family in our tests.
+
+Samples are shown in the Appendix for the image-to-image test. We observe that the heavily aligned DanceFlux automatically ``cleans up'' the image, even when provided with two strong signals: both a wide-spectrum aesthetics starting point and a wide-spectrum aesthetics prompt. In contrast, Flux Krea successfully preserves some wide-spectrum aesthetics elements. Quantitative results are shown in Table~\ref{tab:img2img}. The $\Delta$HPSv3 and $\Delta J$ values are calculated between the edited image and the input image, with HPSv3 evaluated using the original prompt and $J$ computed across all dimensions. Both Flux Krea and DanceFlux achieve higher HPSv3 scores and $J$ values compared to the original image, indicating that both produced more aesthetic (i.e., worse wide-spectrum aesthetics prompt-following) outputs, but the increase is much larger for DanceFlux than for Flux Krea.
+
+\begin{table}
+ \centering
+ \small
+ \caption{Image-to-image score change for Flux Krea and DanceFlux}
+
+ \begin{tabular}{ccc}
+ \toprule
+ Model & $\Delta$HPSv3 & $\Delta J$ \\
+ \midrule
+ Flux Krea & 2.18 & 0.64 \\
+ DanceFlux & 3.13 & 1.07 \\
+ \bottomrule
+ \end{tabular}
+ \label{tab:img2img}
+ \raggedbottom
+ \vspace{-18pt}
+\end{table}
+
+As demonstrated in Figure~\ref{fig:img2img_samples}, a systematic qualitative analysis of the two models' image-to-image capabilities reveals a significant and consistent failure to adhere to prompts specifying negative, chaotic, or non-standard aesthetics. Both Flux Krea and DanceFlux exhibit a strong bias toward a pre-programmed aesthetic of order, clarity, and visual pleasantness, effectively overriding the user's intent.
+
+The observed deviations can be summarized across the five test cases:
+
+\begin{enumerate}
+    \item \textbf{Loss of Intended Chaos and Negative Tone}
+    
+    Across all samples, the models consistently normalize and sanitize the input, replacing deliberate visual chaos with conventional order:
+
+    \begin{itemize}   \setlength\itemsep{0em}
+        \item \textbf{Input 1 (Struggle/Disharmony):} The intended input featured a young boy struggling with a striped kite within a random, unfinished, and disharmonious scene lacking clear design. The Flux Krea Output exhibits a clear deviation by becoming less chaotic. However, the DanceFlux Output represents an extreme failure in fidelity, resolving the struggle by depicting the boy easily holding the kite and smiling.
+        \item \textbf{Input 2 (Ugly/Oppressive):} The target aesthetic was defined by an ugly, chaotic background and a visually jarring and darkly oppressive scene. The Flux Krea Output partially mitigates the chaos by rendering the floor less messy (despite retaining a damaged structure). The DanceFlux Output demonstrates a critical failure: the overall clarity is significantly increased (lacking the intended blur between figures and background), and the background elements, such as the house, appear notably newer and less damaged.
+    \end{itemize}
+
+    \item \textbf{Rejection of Low-Fidelity and Stylistic Extremes}
+    
+    The models systematically correct deliberate defects, such as low light, distortion, and roughness, in favor of a clean, high-fidelity result:
+
+    \begin{itemize}   \setlength\itemsep{0em}
+        \item \textbf{Input 3 (Dimly Lit/Barely Visible):} The prompt explicitly requested a dimly lit street with a barely visible red double-decker bus. Both models failed to achieve this necessary low-fidelity. The Flux Krea Output renders the bus with notably clearer lines. The DanceFlux Output deviates even further, making the bus's red color significantly more vibrant and the street lighting less dim, completely contradicting the desired visual prompt.
+        \item \textbf{Input 4 (Distortion/No Effects):} The goal was an image characterized by heavy distortion and deformation, lacking shadows or lighting effects. While the Flux Krea Output retains overall fidelity to the distortion prompt despite being less chaotic, the DanceFlux Output eliminates all original visual disorder, resulting in a far cleaner and organized scene that completely undermines the desired stylistic intention.
+        \item \textbf{Input 5 (Fragmentation/Roughness):} The input required rendering with extreme fragmentation and roughness. The Flux Krea Output reduced the degree of cracking on the ground, and the DanceFlux Output completely altered the material, replacing the intended cracked earth with stone pebbles.
+    \end{itemize}
+\end{enumerate}
+
+In summary, these results indicate that both models possess a powerful, developer-centric alignment that actively filters out and corrects user inputs designed to evoke negative emotions, visual chaos, or low-fidelity aesthetics. This bias effectively restricts the models' expressive capabilities to a narrow, pre-approved range of \textquotedblleft pleasant\textquotedblright content, irrespective of the user's explicit instructions.
+
+
+\section{Image New Speak}
+\label{sec:critical}
+
+\textit{The finding in this section is empirical and not definitive.}
+
+Inspired by the second row of results in the Appendix—where aesthetically aligned models tend to ``clean up'' messiness or the ``ugly'' aspects of society—we designed a specific image generation test to examine whether such models systematically ``sanitize'' prompts that reveal the dark side of the real world for social critique.
+
+We name the test of generating social commentary art as \textit{Image New Speak}, an allusion to Newspeak from George Orwell's \textit{1984}. This is not only an aesthetics bias, but also a form of ideological ``censorship'', although it is likely not the original intent. However, we argue that censorship here is the attenuation of certain expressive forms via optimization, independent of declared or actual intent; it is lexical and aesthetic sanitization that narrows the admissible expressive repertoire. 
+
+An example is shown in Figure~\ref{fig:critical_main}, where the prompt is about anti-war by showing the horror of war. We can see that DanceFlux produced a ``clean'' image that lost critical values; its image even inappropriately contains a warm or happy feeling. In contrast, Nano Banana and Krea can correctly reflect the critical features. Flux Dev sits between Flux Krea and DanceFlux. This ranking corresponds to their anti-aesthetics performance. Playground also accurately reflected the critical features, similar to anti-aesthetics, as an outlier. More details and qualitative results are in the Appendix, where we found that DanceFlux consistently failed at generating critical art. At the same time, reward models seem to favor the images DanceFlux generated. We suspect this could be due to DanceFlux images being tuned precisely to the taste of reward models, perhaps even overfitting, such that reward models are overwhelmed by their ``aesthetics'' and ignore the instructions.
+
+Since it is \textit{impossible} to evaluate the critical level of these images objectively, we provided a large number of them in the supplementary material ZIP file, and readers can refer to these images and exam them personally. We argue that trying to assess the censorship aspect of image generation quantitatively is unreliable and ethically questionable due to subjectivity, the unquantifiable nature of social criticism, and the disturbing nature of these images. 
+% The ZIP file contains uncurated images, and thus, some of these images in the ZIP file could contain scenes that could cause unease. 
+
+\begin{figure*}
+ \centering
+ \scalebox{0.8}{
+ \includegraphics[width=0.2\linewidth]{sec/imgs/critical/000_nano_banana.png}%
+ \includegraphics[width=0.2\linewidth]{sec/imgs/critical/000_krea.png}%
+ \includegraphics[width=0.2\linewidth]{sec/imgs/critical/000_dance.png}%
+ \includegraphics[width=0.2\linewidth]{sec/imgs/critical/000_flux_dev.png}%
+ \includegraphics[width=0.2\linewidth]{sec/imgs/critical/000_playground.png}%
+ }
+ \caption{The images are generated using Nano Banana, Flux Krea, DanceFlux, Flux Dev, and Playground. The prompt describes an anti-war expression. Their HPSv3 scores are [11.9, 13.5, 15.0, 11.7, 13.9], rated using the social critics prompt.}
+ \label{fig:critical_main}
+ \vspace{-10pt}
+\end{figure*}
+
+% Just as Newspeak restricts language to control thought, we hypothesize that aesthetic alignment acts as a visual counterpart: by internalizing a singular, developer-centered standard of ``beauty,'' models filter user intent, reshaping complex or unsettling realities into a homogenized, sanitized ideal. 
+
+% We wrote 5 social critical prompts (one for each of these topics: anti-war, environmental protection, freedom of expression, overuse of the Internet, and education inequality) using anti-aesthetics elements. We used DanceFlux, Flux Krea, and Nano Banana to generate an image with these prompts and scored them using HPSv3. We selected only 5 images as this process requires manual, qualitatively, careful checking of each image, and cannot be automated. The results are in Appendix Figure~\ref{fig:critical}. We can observe that aesthetics aesthetics-aligned model (DanceFlux) automatically generates a cleaner version of the image compared to Flux Krea and Nano Banana. Reward models also tend to rate images that are more successfully generated lower. These small-scale qualitative samples confirmed our concern regarding ideological censorship in aesthetics alignment. 
+
+The prompts we used and image results are shown in Figure~\ref{fig:critical}. We can observe that DanceFlux consistently generates a cleaned-up version of the image, in many places where it is inappropriate. In all images, the color of DanceFlux images is very bright and cheerful, which does not reflect the chaos of disorders that the user is trying to convey through the image. In the anti-war image, the mother generates a slight positive expression instead of showing a hopeless face. The background is also less messy compared to the one generated by Nano Banana and Flux Krea. In the pollution one, the DanceFlux-generated image does not have any trash floating on the river; instead, it becomes punkin, wood, and rock. The smoke released from the factory is also white instead of black as requested in the prompt, and the water is not dark but clean and reflective, creating a less disturbing image, and does not convey any anti-pollution thesis. Another example that should be noted is the Internet overreliance one. The prompts requested the person to show drained emotions and be surrounded by evil emojis. However, even though some emojis in the DanceFlux image have an evil smile, a lot of them are showing happy or playful emotions, completely removing the comemtray elements.   
+
+% \begin{figure}[t]
+%     \centering
+%     \includegraphics[width=0.8\linewidth]{nag_example.jpg}
+%     \caption{An example wide-specturum aesthetics image generated with NAG.}
+%     \label{fig:nag}
+% \end{figure}
+
+We have shown more examples of the comparison between DanceFlux and Flux Krea in Table~\ref{tab:critical_samples_scores} and their ratings from each reward model (HPSv3 \cite{ma_hpsv3_2025}, HPSv2 \cite{wu_human_2023}, ImageReward \cite{xu_imagereward_2023}, MPS \cite{zhang_learning_2024}, HPS (v1) \cite{wu_human_2023_1}, and BLIP-L \cite{li_blip_2022} for an unaligned baseline. These images are not human-curated. All scores (including BLIP score) are unnormalized. We can observe that DanceFlux always outputs a more sanitized world compared to Flux Krea, while at the same time, reward models are bias towards it. How the reward model selects (e.g., given which image higher scores) is shown in Table~\ref{tab:critical_selection}, and their difference between the DanceFlux score and Flux Krea score is tested using the Wilcoxon signed-rank test in Table~\ref{tab:critical_test}. We can see that even though \textit{all} images generated by Flux Krea fit the social critical prompt better, most reward models overwhelmingly select the DanceFlux image because of its ``beauty". However, it should be noted that when we generate images that are less critical and more ``beautiful'' using Nano Banana, it gets \textit{lower} scores than the critical one, meaning the reward models could still potentially understand which fits the image better and select it correctly, but the overwhelmingly ``beauty'' of the DanceFlux overwrites the prompt following signal. It could also point to a direction that DanceFlux is overfit to the reward model's style.
+
+More examples (100 pairs) are in the ZIP file submitted with this paper, they are \textit{uncurated}. Some of these images contain senses that could cause unease.  
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{lrr}
+    \toprule
+     & DanceFlux Selected & Flux Krea Selected \\
+    \midrule
+    HPSv3 & 20 & 0 \\
+    HPSv2 & 19 & 1 \\
+    ImageReward & 14 & 6 \\
+    MPS & 12 & 8 \\
+    HPSv1 & 19 & 1 \\
+    BLIP Score & 1 & 19 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Image Selection from Each Model} 
+    \label{tab:critical_selection}
+\end{table}
+
+\begin{table}[]
+    \centering
+\begin{tabular}{lrr}
+\toprule
+ & P-value & Effect Size (r) \\
+Model &  &  \\
+\midrule
+HPSv3 & $<0.0001$ & 0.8723 \\
+HPSv2 & 0.0002 & 0.8056 \\
+ImageReward & 0.0753 & 0.3214 \\
+MPS & 0.0145 & 0.4884 \\
+HPSv1 & 0.0001 & 0.8223 \\
+BLIP Score & 0.0002 & -0.8056 \\
+\bottomrule
+\end{tabular} 
+
+    \caption{Wilcoxon signed-rank test for the score given to DanceFlux and Flux Krea by each reward model. The alternative hypothesis is that the DanceFlux score is greater than the Flux Krea score for all models besides BLIP, on which it is that Flux Krea has a higher score.} 
+    \label{tab:critical_test}
+\end{table}
+
+
+
+% To test how reward models handle critical arts, we used the 5 social critical prompts to generate 100 images total for each prompt using Flux Krea. For each prompt, we created a natural version. We used Flux Krea to generate both images and rated each level's image using the following reward models: ImageReward \cite{xu_imagereward_2023}, HPS (v1) \cite{wu_human_2023_1}, HPSv2 \cite{wu_human_2023}, HPSv3 \cite{ma_hpsv3_2025}, MPS \cite{zhang_learning_2024}, and PickScore \cite{kirstain_pick--pic_2023}. Similar as before, we also included BLIP-L \cite{li_blip_2022} as an unaligned reference. We then calculated the difference between the two critics' level reward model score and the classification accuracy of the reward model in picking the right image. All ratings are based on the more critical prompt; this is similar to before, where we used the anti-aesthetics prompt to rate both the original image and the anti-aesthetics image to test the reward model bias. Some example images are shown in Figure~\ref{fig:example_critical_comp} and the results are shown in Table~\ref{tab:comp_critical}.
+
+
+
+\begin{table*}[]
+\centering
+\begin{tabular}{>{\centering\arraybackslash}p{3.88cm}@{\hspace{1em}}>{\centering\arraybackslash}p{3.88cm}@{\hspace{1em}}>{\centering\arraybackslash}p{3.88cm}@{\hspace{1em}}>{\centering\arraybackslash}p{3.88cm}}
+\begin{minipage}{3.88cm}
+\centering
+\includegraphics[width=\linewidth]{sec/imgs/scores_critical/000.png}
+\subcaption*{Scores}
+\tiny
+\begin{itemize}   \setlength\itemsep{0em}
+\item HPSv3: 15.3074 vs 12.1509
+\item HPSv2: 0.4009 vs 0.3032
+\item ImageReward: 1.7462 vs 1.6107
+\item MPS: 17.4219 vs 15.1172
+\item HPSv1: 0.2455 vs 0.2261
+\item BLIP Score: 4.3242 vs 4.6523
+\end{itemize}
+\vspace{10pt}
+\end{minipage}
+
+& \begin{minipage}{3.88cm}
+\centering
+\includegraphics[width=\linewidth]{sec/imgs/scores_critical/001.png}
+\subcaption*{Scores}
+\tiny
+\begin{itemize}   \setlength\itemsep{0em}
+\item HPSv3: 14.0686 vs 12.4910
+\item HPSv2: 0.3496 vs 0.2761
+\item ImageReward: 1.5525 vs 1.5249
+\item MPS: 13.5078 vs 11.8438
+\item HPSv1: 0.2396 vs 0.2386
+\item BLIP Score: 3.5156 vs 4.3125
+\end{itemize}
+\vspace{10pt}
+\end{minipage}
+
+& \begin{minipage}{3.88cm}
+\centering
+\includegraphics[width=\linewidth]{sec/imgs/scores_critical/002.png}
+\subcaption*{Scores}
+\tiny
+\begin{itemize}   \setlength\itemsep{0em}
+\item HPSv3: 13.6972 vs 9.5183
+\item HPSv2: 0.3665 vs 0.3245
+\item ImageReward: 1.2212 vs 1.2585
+\item MPS: 17.5625 vs 17.6250
+\item HPSv1: 0.2554 vs 0.2346
+\item BLIP Score: 3.9688 vs 4.5820
+\end{itemize}
+\vspace{10pt}
+\end{minipage}
+
+& \begin{minipage}{3.88cm}
+\centering
+\includegraphics[width=\linewidth]{sec/imgs/scores_critical/003.png}
+\subcaption*{Scores}
+\tiny
+\begin{itemize}   \setlength\itemsep{0em}
+\item HPSv3: 13.0252 vs 11.1531
+\item HPSv2: 0.3513 vs 0.3362
+\item ImageReward: 1.1678 vs 1.2968
+\item MPS: 6.4844 vs 6.5508
+\item HPSv1: 0.2406 vs 0.2384
+\item BLIP Score: 4.6484 vs 4.1875
+\end{itemize}
+\vspace{10pt}
+\end{minipage}
+\end{tabular}
+\caption{More examples of DanceFlux (left) and Flux Krea (right) generated social commentary images and their rating by reward models.}
+\label{tab:critical_samples_scores}
+\end{table*}
+\begin{figure*}[ht]
+\centering
+\newcommand{\imrow}[2]{%
+      \includegraphics[width=0.17\linewidth]{sec/imgs/critical/#1_nano_banana.png}%
+      \includegraphics[width=0.17\linewidth]{sec/imgs/critical/#1_krea.png}%
+      \includegraphics[width=0.17\linewidth]{sec/imgs/critical/#1_dance.png}%
+      \includegraphics[width=0.17\linewidth]{sec/imgs/critical/#1_flux_dev.png}%
+      \includegraphics[width=0.17\linewidth]{sec/imgs/critical/#1_playground.png}%
+      \newline  #2
+      \par\vspace{1em}
+}
+
+\imrow{000}{\textbf{Anti-War} An anti-war image. A mother holding a baby sitting in front of a ruin during a war. Houses behind them are broken. The mother shows a facial expression of hopeless. [11.9, 13.5, 15.0, 11.7, 13.9]}
+
+\imrow{001}{\textbf{Envirmental Protection} A river with trash floating on it. The water has a dark color. There are factories next to the river with high chimneys releasing dark smoke and pipes releasing wastewater into the river. [12.2, 13.4, 13.3, 9.7, 10.8]}
+
+\imrow{002}{\textbf{Freedom of Expression} A man with his mouth taped. He is holding a microphone standing on the stage. His body is frozen, with a face showing a painful expression. [10.9, 10.9, 13.6, 9.7, 9.3]}
+
+\imrow{003}{\textbf{Internet Overreliance} Someone holding a phone using their weak fingers, with their head surrounded by internet evil emojis, and their face showing a drained expression. The background is chaos Tsunami made from data, almost engulfing the subject. The sunlight has a clashing color. [12.7, 11.0, 11.3, 9.8, 9.5]}
+
+\imrow{004}{\textbf{Education Inequality} A college student holding a book in an old and broken classroom with a leaky roof, shows in black and white on the student's side. However, the book has no pages but only the frame. In front of them, there is a wide and deep trench with lava in it. The student shows a sad face looking at a fancy college campus on the other side of the trench, which is colorful. [9.6, 14.5, 13.5, 11.1, 12.1]}
+
+\begin{minipage}{\textwidth}
+\caption{Social critics image images (Nano Banana, Flux Krea, Dance Flux, Flux Dev, and Playground) and corresponding HPSv3 scores.}
+\label{fig:critical}
+\thispagestyle{empty}
+\end{minipage}
+
+\end{figure*}
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=\linewidth]{sec/imgs/vsf.pdf}
+ % \includegraphics[width=0.25\linewidth]{sec/imgs/emotion_gen.pdf}
+ \caption{(Left) Comparison between VSF-enabled Flux family models and Nano Banana. The images from the first row are from Nano Banana, and the images from the second row are from VSF applied onto Flux Krea. The two scores shown on top of the image are the HPSv3 scores rated with the wide-spectrum and original prompts. (Right) Sad emotion images generated by Flux Krea and DanceFlux. DaceFlux reinforced toxic positivity by generating a happy face.}
+ \label{fig:vsf}
+ \vspace{-15pt}
+\end{figure*}
+
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=\linewidth]{sec/imgs/emotion.png}
+ \caption{Emotion Bias Rating by HPSv3: all images were rated using prompts describing negative emotions, yet HPSv3 consistently assigned higher scores to the positive emotion images.}
+ \label{fig:emotion_bias}
+ \vspace{-10pt}
+\end{figure*}
+
+\section{Mitigation}
+\label{sec:mitigation}
+In attempts to mitigate this over-alignment issue, we used two \textit{strong} negative guidance methods, VSF~\cite{guo_vsf_2025} and NAG \cite{chen_normalized_2025}, following their pilot study method in the VSF paper Appendix by using words that describe general aesthetics in a negative prompt. This is the opposite approach to chasing traditional high-quality images, where a poor-quality description is used in the negative prompt. VSF and NAG are used because of their strong negative guidance ability and their compatibility with the Flux family models (CFG is incompatible). To further investigate whether alignment will affect their ability to diverge from traditional aesthetic preference, we tested DanceFlux, Flux Krea, and Flux Dev using this method. We first generated a negative prompt using \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct}. Each negative prompt is limited to 5 words. We then used these prompt pairs to generate images and compared them to the original image generated without VSF. We reported the HPSv3 score, BLIP score, with a wide-spectrum aesthetics prompt for each method.
+% All images are generated using $\alpha = 2.0$ for VSF and the same seed, besides for DanceFlux, on which we did both $\alpha=2.0$ and $\alpha=3.0$. For NAG we used $\phi\in\{4,10,15\},\tau=5,\alpha=0.4$, which has very strong negative effects.
+
+
+Some examples are shown in Figure~\ref{fig:vsf} in the Appendix, and the quantitative results are shown in Table~\ref{tab:vsf}. The results show that VSF and NAG can significantly mitigate the aesthetics biases in image generation models, even achieving a stronger wide-spectrum aesthetics ability than Nano Banana. However, DanceFlux still requires a larger scale to counteract its internal aesthetics bias. One example is shown in Figure~\ref{fig:nag} generated by NAG, it features dark, muted, chaotic, and dreary effects rather than technical failure. Due to page limits, we have included more images of successful NAG-generated wide-spectrum aesthetics images in the zip file attached as supplemental material. 
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{sec/imgs/lora.png}
+    \caption{Images generated with our mitigated LoRA (bottom) and original Flux Dev (top) with same wide-spectrum aesthetics prompts.}
+    \label{fig:lora}
+\end{figure}
+We also distilled a LoRA from NAG with Flux Krea-generated images to Flux Dev, and it shows promising results without complex NAG or VSF guidance. Some examples are shown in Figure~\ref{fig:lora} in the main text. 
+
+\begin{table}
+    \centering
+        \caption{Results for generation using VSF, the scale between VSF and NAG is not comparable}
+    \label{tab:vsf}
+\small
+\scalebox{0.9}{
+\begin{tabular}{lllrrr}
+\toprule
+ Model&   Method&Scale& HPSv3 ($\downarrow$) & $J_s$ ($\downarrow$) & BLIP ($\uparrow$) \\
+\midrule
+DanceFlux &  VSF&2.0& 3.670 & 0.722 & 0.864 \\
+DanceFlux &  VSF&3.0& -2.587 & 0.546 & 0.782 \\ 
+Flux Dev &  VSF&2.0& 0.038 & 0.608 & 0.855 \\
+Flux Krea &  VSF&2.0& -2.464 & 0.624 & 0.940 \\
+\hline
+ DanceFlux & NAG& 10.0& 3.814& 0.695&0.958
+\\
+ DanceFlux & NAG& 15.0& -0.347& 0.599&0.940
+\\
+ Flux Krea& NAG& 4.0& -3.291& 0.621&0.943
+\\
+ Flux Krea& NAG& 10.0& -8.365& 0.455&0.827\\
+ % \hline
+ % Flux Dev& LoRA& -& & &\\
+\bottomrule
+\end{tabular}}
+\vskip -0.1in
+\end{table}
+
+
+
+
+
+\section{Limitation}
+
+A potential concern regarding our evaluation is that reward model scores for real artworks may be sensitive to prompt engineering, specifically prompt length. Empirical observations suggest that longer, more detailed captions tend to yield higher aesthetic scores. However, we contend that this phenomenon reflects an inherent limitation and systematic bias of the reward models themselves rather than a flaw in our evaluative methodology. 
+
+To ensure a controlled comparison, both AI-generated images and real artworks were evaluated using prompts of similar complexity and length. Specifically, we employed Qwen-VL to generate factual, objective captions for real artworks to match the descriptive density typically used in AI benchmarking. If a reward model requires disproportionately long or specialized prompts to recognize the value of historically significant art—while assigning high scores to AI-generated ``aesthetic" outputs with simple prompts—this discrepancy further substantiates our thesis. Such behavior indicates that the reward manifold is overfitted to a narrow distribution of AI-generated content and fails to generalize to the broader spectrum of human artistic expression.
+
+Random seeds were not fixed because Nano Banana does not support seed control. To ensure fairness, all models were tested without seed synchronization. This will introduce noise and thus lower the statistical power and raise the p-value, but our later results show that even in this case, we get pair-wise extremely significant results (Table~\ref{tab:align_p}). That means, with seeds set, if possible, the results will only be more significant.
+
+
+This study examines over-alignment in image-generation and reward models. However, this phenomenon extends to language models, where excessive optimization for user satisfaction can manifest as sycophancy, the tendency to provide agreeable but uncritical or misleading responses \cite{guo_position_2025, fitzgerald_introducing_2025, sharma_towards_2025, chen_yes-men_2025, arvin_check_2025}. Similar over-alignment may drive unnecessary use of emojis, making interactions appear unprofessional, or the default application of bold formatting in formal texts, reducing their appropriateness. Empirical evidence indicates models may generate such outputs even when explicitly instructed not to. Even though these are not as impactful as sycophancy behaviors, they could still degrade usability and user experience. Future work should investigate these and other linguistic manifestations of over-alignment.
+
+\section{The Best of Both Worlds}
+We argue in Alternative Positions that an ideal model must produce both conventional beauty and wide-spectrum aesthetics as requested. This section demonstrates that such flexibility is achievable. A straightforward solution involves using a separate adapter for the wide-spectrum mode, allowing users to move between mainstream and wide-spectrum aesthetics. By adjusting the weighting of the LoRA module, users gain granular control over how much the output deviates from standard beauty norms, as shown in Figure~\ref{fig:control}.
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{sec//imgs/control.png}
+    \caption{LoRa scale from small (left) to large (right), it gives user complete control on how ``anti-aesthetics" they want their image to be. Prompt is: Night city street in the rain with pedestrians and neon signs, but the color palette is unpleasant and clashing. Everything is melting and dripping. Everything is like a dream.}
+    \label{fig:con}
+\end{figure*}
+
+Additionally, current state-of-the-art instruction-following models, such as GPT-Image and Nano Banana, can achieve this best-of-both-worlds goal through simple prompting. Selected contrastive examples are shown in Figure~\ref{fig:sota}. These models demonstrate an internal capacity to switch between aesthetic styles without external modification. Thus, providing both conventional and wide-spectrum aesthetics is a viable objective for modern generative systems.
+
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.8\linewidth]{sec//imgs/sota.png}
+    \caption{Top rows of images are generated with a conventional high-quality prompt, while the bottom row is generated with a wide-spectrum prompt. The left two columns are from GPT-5 Image, and the right two columns are from Nano Banana. It shows that these SOTA models can generate both conventially beauitiful images while also wide-spectrum aesthetics images.}
+    \label{fig:sota}
+\end{figure*}
