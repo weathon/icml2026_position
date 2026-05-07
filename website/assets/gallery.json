@@ -1,0 +1,94 @@
+{
+  "ai": [
+    {
+      "index": 0,
+      "model": "nano-banana",
+      "dims": "[\"richness\", \"lighting distinction\"]",
+      "failed": "assets/ai/row_000_failed.jpg",
+      "success": "assets/ai/row_000_success.jpg",
+      "prompt_original": "A standing toilet in a bathroom stall next to a trash can.",
+      "prompt_distorted": "A standing toilet in a bathroom stall beside a trash can, rendered with no light or shadow, appearing random and unfinished, lacking clear intent or design, with flat, indistinct surfaces and no depth or texture.",
+      "llm_selected": 1
+    },
+    {
+      "index": 1,
+      "model": "nano-banana",
+      "dims": "[\"color aesthetic\", \"richness\", \"color brightness\"]",
+      "failed": "assets/ai/row_001_failed.jpg",
+      "success": "assets/ai/row_001_success.jpg",
+      "prompt_original": "A woman talking on a phone with a smile on her face.",
+      "prompt_distorted": "A woman smiling while talking on a phone, surrounded by clashing, overexposed, and muddy colors; the image feels dark, random, and unfinished, with no clear design, emphasizing unpleasant, disharmonious tones.",
+      "llm_selected": 1
+    },
+    {
+      "index": 2,
+      "model": "nano-banana",
+      "dims": "[\"richness\", \"lighting distinction\", \"main object\"]",
+      "failed": "assets/ai/row_002_failed.jpg",
+      "success": "assets/ai/row_002_success.jpg",
+      "prompt_original": "A person riding a bike across a brick road.",
+      "prompt_distorted": "A barely visible figure on a bike drifts across a flat, textureless brick road under uniform gray light\u2014no shadows, no highlights, no focal point; the scene feels randomly assembled, unfinished, with the rider lost in visual noise and indistinct edges.",
+      "llm_selected": 1
+    },
+    {
+      "index": 4,
+      "model": "nano-banana",
+      "dims": "[\"lighting distinction\", \"object pairing\", \"emotion\", \"clarity\"]",
+      "failed": "assets/ai/row_004_failed.jpg",
+      "success": "assets/ai/row_004_success.jpg",
+      "prompt_original": "Friends playing frisbee in the park in cooler weather",
+      "prompt_distorted": "Friends playing frisbee in a park under dull, flat lighting with no shadows, creating a gloomy, blurry scene. Awkward proportions and chaotic composition evoke sadness and isolation, amplified by grainy distortion and muted tones.",
+      "llm_selected": 1
+    }
+  ],
+  "real": [
+    {
+      "key": "ba8cb8c5",
+      "query": "distorted faces melting in psychedelic colors, low-fi surreal photography",
+      "dataset": "photos",
+      "message": "Surreal and anti-aesthetic psychedelic faces, melting and distorted photography. Challenge standard beauty.",
+      "size": 843,
+      "image": "assets/real/ba8cb8c5.jpg"
+    },
+    {
+      "key": "72f7caf4",
+      "query": "VHS aesthetic glitched landscape, analog distortion, static psychedelic noise",
+      "dataset": "photos",
+      "message": "VHS aesthetic and digital noise, distorted psychedelic landscapes. Low-fi, technically degraded aesthetic.",
+      "size": 83,
+      "image": "assets/real/72f7caf4.jpg"
+    },
+    {
+      "key": "384e8d9b",
+      "query": "abandoned building, derelict architecture, crumbling facade",
+      "dataset": "photos",
+      "message": "sub-element: abandoned buildings, decaying architecture, anti-aesthetic focus, derelict structures",
+      "size": 4281,
+      "image": "assets/real/384e8d9b.jpg"
+    },
+    {
+      "key": "a93a1fb5",
+      "query": "messy overhead wires tangled cables urban street clutter",
+      "dataset": "photos",
+      "message": "messy_wires: tangled overhead cables, chaotic electrical lines, urban infrastructure decay, wire clutter",
+      "size": 43,
+      "image": "assets/real/a93a1fb5.jpg"
+    },
+    {
+      "key": "63dffe73",
+      "query": "dark empty room lonely depression atmosphere",
+      "dataset": "photos",
+      "message": "anti_aesthetics, emotion:atmospheric_distress, sub:empty_dark_rooms, minimalist_isolation_photography",
+      "size": 68,
+      "image": "assets/real/63dffe73.jpg"
+    },
+    {
+      "key": "8897bf05",
+      "query": "dirty lens smudge dust haze flare blurry spots on camera lens obscured",
+      "dataset": "photos",
+      "message": "sub-type: dirty_lens, execution_quality anti-aesthetics, images obscured by lens contamination smudges dust and haze",
+      "size": 27,
+      "image": "assets/real/8897bf05.jpg"
+    }
+  ]
+}
