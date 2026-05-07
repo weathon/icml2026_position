@@ -19,7 +19,7 @@ def save_img(img, path, size=900):
 
 def build_ai_examples():
     ds = load_dataset("weathon/aas_benchmark_final", split="train", streaming=True)
-    want_rows = {0, 1, 2, 4}
+    want_rows = set(range(12))
     examples = []
 
     for row in ds:
@@ -58,7 +58,20 @@ def build_real_examples():
     with data_path.open() as f:
         data = json.load(f)
 
-    keys = ["ba8cb8c5", "72f7caf4", "384e8d9b", "a93a1fb5", "63dffe73", "8897bf05"]
+    keys = [
+        "ba8cb8c5",
+        "72f7caf4",
+        "384e8d9b",
+        "a93a1fb5",
+        "63dffe73",
+        "8897bf05",
+        "2493c49b",
+        "a63b3cfb",
+        "e4a1b978",
+        "6ce48abb",
+        "4ce14e22",
+        "985069e1",
+    ]
     examples = []
     for key in keys:
         item = data[key]

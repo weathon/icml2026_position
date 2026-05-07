@@ -27,18 +27,18 @@ fetch("assets/gallery.json")
           <article class="ai-pair">
             <div class="pair-images">
               <div class="image-slot">
-                <img src="${item.failed}" alt="Conventional generated image for row ${item.index}.">
-                <span class="tag">failed polish</span>
+                <img src="${item.failed}" alt="Original reference image for case ${item.index + 1}.">
+                <span class="tag">original reference</span>
               </div>
               <div class="image-slot">
-                <img src="${item.success}" alt="Successful anti-aesthetic generated image for row ${item.index}.">
-                <span class="tag success-tag">success</span>
+                <img src="${item.success}" alt="Anti-aesthetic generated output for case ${item.index + 1}.">
+                <span class="tag success-tag">anti-aesthetic output</span>
               </div>
             </div>
             <dl>
-              <dt>row</dt><dd>${item.index}</dd>
+              <dt>case</dt><dd>${item.index + 1}</dd>
               <dt>model</dt><dd>${item.model}</dd>
-              <dt>dims</dt><dd>${dims}</dd>
+              <dt>target</dt><dd>${dims}</dd>
               <dt>request</dt><dd>${item.prompt_distorted}</dd>
             </dl>
           </article>
@@ -51,9 +51,8 @@ fetch("assets/gallery.json")
         <article class="real-item">
           <img src="${item.image}" alt="${item.query}.">
           <dl>
-            <dt>query</dt><dd>${item.query}</dd>
-            <dt>source</dt><dd>${item.dataset}</dd>
-            <dt>set size</dt><dd>${item.size}</dd>
+            <dt>style</dt><dd>${item.query}</dd>
+            <dt>evidence</dt><dd>${item.message}</dd>
           </dl>
         </article>
       `)

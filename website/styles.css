@@ -8,6 +8,7 @@
   --link: #0000ee;
   --mud: #756932;
   --line: 3px solid var(--ink);
+  --pixel: 8px;
 }
 
 * {
@@ -22,6 +23,10 @@ body {
   margin: 0;
   color: var(--ink);
   background:
+    linear-gradient(45deg, rgba(0, 0, 0, 0.16) 25%, transparent 25%) 0 0 / 16px 16px,
+    linear-gradient(45deg, transparent 75%, rgba(181, 255, 0, 0.25) 75%) 0 0 / 16px 16px,
+    repeating-linear-gradient(37deg, rgba(255, 59, 24, 0.22) 0 2px, transparent 2px 31px),
+    repeating-linear-gradient(123deg, rgba(0, 0, 238, 0.12) 0 3px, transparent 3px 47px),
     repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0 1px, transparent 1px 17px),
     linear-gradient(125deg, var(--paper) 0 44%, #c7d0bf 44% 61%, #ffed00 61% 100%);
   font-family: Arial, Helvetica, sans-serif;
@@ -34,10 +39,12 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: radial-gradient(#000 0.7px, transparent 0.7px);
-  background-size: 9px 9px;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.28) 1px, transparent 1px),
+    radial-gradient(#000 0.9px, transparent 0.9px);
+  background-size: 19px 100%, 7px 7px;
   mix-blend-mode: multiply;
-  opacity: 0.12;
+  opacity: 0.19;
   z-index: 10;
 }
 
@@ -91,7 +98,8 @@ figure {
   top: 0;
   z-index: 5;
   border-bottom: var(--line);
-  background: #d8d8d8;
+  background:
+    repeating-linear-gradient(90deg, #d8d8d8 0 14px, #ffed00 14px 18px, #d8d8d8 18px 29px);
 }
 
 nav {
@@ -108,19 +116,51 @@ nav button {
   padding: 0.28rem 0.45rem;
   background: #fff;
   border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  image-rendering: pixelated;
 }
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(19rem, 0.78fr) minmax(20rem, 1.22fr);
   gap: clamp(1rem, 4vw, 5rem);
   align-items: start;
   min-height: 88vh;
   padding: clamp(1rem, 3vw, 2.5rem);
+  background:
+    linear-gradient(90deg, transparent 0 62%, rgba(255, 59, 24, 0.22) 62% 64%, transparent 64%),
+    repeating-linear-gradient(0deg, transparent 0 5.5rem, rgba(0, 0, 0, 0.08) 5.5rem 5.65rem);
+  overflow: hidden;
 }
 
 .hero > * {
   min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: min(28vw, 20rem);
+  aspect-ratio: 1;
+  background:
+    linear-gradient(#000 0 0) 0 0 / 16px 16px,
+    linear-gradient(var(--acid) 0 0) 32px 0 / 16px 16px,
+    linear-gradient(#ff77bc 0 0) 64px 16px / 16px 16px,
+    linear-gradient(var(--warning) 0 0) 16px 48px / 16px 16px,
+    linear-gradient(#0000ee 0 0) 80px 64px / 16px 16px,
+    linear-gradient(var(--acid) 0 0) 112px 96px / 16px 16px,
+    linear-gradient(#000 0 0) 144px 112px / 16px 16px,
+    linear-gradient(#ff77bc 0 0) 176px 144px / 16px 16px;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  image-rendering: pixelated;
+  transform: rotate(-6deg);
+  z-index: 0;
 }
 
 .hero-copy {
@@ -139,6 +179,7 @@ nav button {
   font-size: 0.92rem;
   overflow-wrap: anywhere;
   transform: rotate(-1.2deg);
+  box-shadow: 6px 6px 0 #000;
 }
 
 h1,
@@ -154,7 +195,11 @@ h1 {
   font-size: clamp(3rem, 5.8vw, 5.25rem);
   font-weight: 900;
   text-transform: uppercase;
-  text-shadow: 0.08em 0.08em 0 var(--acid), -0.05em 0.02em 0 #ff77bc;
+  text-shadow:
+    0.08em 0.08em 0 var(--acid),
+    -0.05em 0.02em 0 #ff77bc,
+    0.13em -0.05em 0 rgba(0, 0, 238, 0.65),
+    0.19em 0.02em 0 rgba(0, 0, 0, 0.85);
 }
 
 h2 {
@@ -170,6 +215,7 @@ h2 {
   border: var(--line);
   font-family: "Courier New", monospace;
   overflow-wrap: anywhere;
+  box-shadow: 8px 8px 0 #000;
 }
 
 .claim-text {
@@ -177,7 +223,9 @@ h2 {
   margin: 2.5rem 0 1rem 9vw;
   padding: 0.8rem;
   color: #fff;
-  background: #161616;
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 9px),
+    #161616;
   font-size: clamp(1.05rem, 2vw, 1.45rem);
 }
 
@@ -192,6 +240,7 @@ h2 {
   padding: 0.35rem 0.55rem;
   background: #fff;
   border: 2px solid #000;
+  box-shadow: 5px 5px 0 #000;
 }
 
 .hero-figure {
@@ -199,7 +248,9 @@ h2 {
   margin: 12vh 0 0;
   border: 4px solid #000;
   background: #fff;
-  transform: rotate(0.7deg);
+  transform: rotate(1.4deg) skewX(-0.6deg);
+  box-shadow: 13px 13px 0 #ff77bc, -9px -7px 0 var(--acid);
+  image-rendering: pixelated;
 }
 
 figcaption {
@@ -221,6 +272,8 @@ figcaption {
   font-family: "Courier New", monospace;
   font-weight: 700;
   white-space: nowrap;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #000;
 }
 
 .ticker span {
@@ -254,9 +307,56 @@ figcaption {
 
 .gallery-section,
 .figures,
+.findings,
 .closing {
   padding: clamp(1rem, 4vw, 4rem);
   border-top: var(--line);
+}
+
+.findings {
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 59, 24, 0.16) 0 2px, transparent 2px 23px),
+    #ece7cc;
+}
+
+.finding-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.finding-grid article {
+  min-height: 19rem;
+  padding: 0.85rem;
+  border: var(--line);
+  background: #fff;
+}
+
+.finding-grid article:nth-child(2n) {
+  margin-top: 3rem;
+  background: #dbff6b;
+}
+
+.finding-grid article:nth-child(3) {
+  background: #ffd1e8;
+}
+
+.finding-grid span {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border: 2px solid #000;
+  background: var(--warning);
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0.75rem 0 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2vw, 2.1rem);
+  line-height: 1;
 }
 
 .gallery-section {
@@ -282,7 +382,7 @@ figcaption {
 }
 
 .ai-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .ai-pair {
@@ -309,7 +409,8 @@ figcaption {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  filter: contrast(1.1) saturate(0.88);
+  filter: contrast(1.25) saturate(0.82);
+  image-rendering: pixelated;
 }
 
 .tag {
@@ -347,7 +448,7 @@ dd {
 }
 
 .real-grid {
-  grid-template-columns: repeat(6, minmax(9rem, 1fr));
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
   align-items: start;
 }
 
@@ -369,6 +470,7 @@ dd {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   filter: saturate(0.75) contrast(1.2);
+  image-rendering: pixelated;
 }
 
 .figures {
@@ -405,6 +507,17 @@ dd {
   color: var(--acid);
 }
 
+.closing pre {
+  max-width: 58rem;
+  overflow-x: auto;
+  padding: 1rem;
+  border: 2px solid var(--acid);
+  background: #f6f1d7;
+  color: #111;
+  font-family: "Courier New", monospace;
+  white-space: pre;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -437,9 +550,33 @@ body.plain h1 {
   text-shadow: none;
 }
 
+body.plain .hero {
+  background: transparent;
+}
+
+body.plain .hero::after {
+  display: none;
+}
+
+body.plain nav a,
+body.plain nav button,
+body.plain .stamp,
+body.plain .section-label,
+body.plain .authors,
+body.plain .link-row a {
+  box-shadow: none;
+}
+
 body.plain .hero-figure,
 body.plain .real-item {
   transform: none;
+  box-shadow: none;
+}
+
+body.plain .image-slot img,
+body.plain .real-item img,
+body.plain .hero-figure {
+  image-rendering: auto;
 }
 
 @keyframes shove {
@@ -465,6 +602,7 @@ body.plain .real-item {
   .hero,
   .split,
   .ai-grid,
+  .finding-grid,
   .figure-wall {
     grid-template-columns: 1fr;
   }
@@ -482,6 +620,7 @@ body.plain .real-item {
   }
 
   .split article:nth-child(2),
+  .finding-grid article:nth-child(2n),
   .figure-wall figure:nth-child(2),
   .figure-wall figure:nth-child(3),
   .real-item:nth-child(2n) {

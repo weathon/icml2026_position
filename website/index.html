@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#evidence">Skip to evidence</a>
+    <a class="skip-link" href="#abstract">Skip to abstract</a>
     <header class="site-header" id="top">
       <nav aria-label="Primary">
-        <a href="#claim">claim</a>
-        <a href="#ai-gallery">failed / success</a>
-        <a href="#real-gallery">real photos</a>
-        <a href="#figures">paper figures</a>
+        <a href="#abstract">abstract</a>
+        <a href="#method">method</a>
+        <a href="#findings">findings</a>
+        <a href="#ai-gallery">AI gallery</a>
+        <a href="#real-gallery">photo gallery</a>
+        <a href="real_wall.html">photo wall</a>
+        <a href="#citation">citation</a>
         <button type="button" id="plain-toggle" aria-pressed="false">reduce noise</button>
       </nav>
     </header>
@@ -22,7 +25,7 @@
     <main>
       <section class="hero" id="claim" aria-labelledby="title">
         <div class="hero-copy">
-          <p class="stamp">ICML 2026 position paper / landing page evidence desk</p>
+          <p class="stamp">ICML 2026 Position Spotlight</p>
           <h1 id="title">Universal Aesthetic Alignment Narrows Artistic Expression</h1>
           <p class="authors">Wenqi Marshall Guo, Qingyun Qian, Khalad Hasan, Shan Du</p>
           <p class="claim-text">
@@ -32,9 +35,11 @@
             average preference.
           </p>
           <div class="link-row">
-            <a href="../main.tex">paper source</a>
-            <a href="../design_guide.md">design guide</a>
-            <a href="../sec/imgs">latex figures</a>
+            <a href="https://arxiv.org/abs/2512.11883v2">arXiv</a>
+            <a href="https://openreview.net/forum?id=1gQ4zc1Q8I">OpenReview</a>
+            <a href="https://github.com/weathon/AAS">GitHub</a>
+            <a href="https://huggingface.co/datasets/weathon/aas_benchmark_final">AI Dataset</a>
+            <a href="https://huggingface.co/datasets/weathon/aas_real_images">Real Image Dataset</a>
           </div>
         </div>
         <figure class="hero-figure">
@@ -47,61 +52,111 @@
       </section>
 
       <section class="ticker" aria-label="Anti-aesthetic concept strip">
-        <span>break visual grammar</span>
-        <span>keep links usable</span>
-        <span>show the failed polished answer</span>
-        <span>show the successful uncomfortable answer</span>
-        <span>do not confuse ugliness with carelessness</span>
+        <span>instruction fidelity over polish</span>
+        <span>anti-aesthetic is not model failure</span>
+        <span>original references are not failures</span>
+        <span>negative emotion is expressive content</span>
+        <span>reward models encode taste</span>
+        <span>pluralism over average preference</span>
       </section>
 
-      <section class="split evidence" id="evidence">
+      <section class="split paper-section" id="abstract">
         <article>
-          <h2>What This Page Resists</h2>
+          <h2>Abstract</h2>
           <p>
-            It resists the conference-project default: white page, centered cards,
-            smooth gradients, and a calm promise that every model failure is really
-            a feature. The design uses clashing color, dead spacing, default links,
-            and pasted-together figure evidence because the paper is about expression
-            that does not want to be prettified.
+            Over-aligning image generation models to a generalized aesthetic
+            preference conflicts with user intent, particularly when anti-aesthetic
+            outputs are requested for artistic or critical purposes. This position
+            paper argues that aesthetic alignment can prioritize developer-centered
+            values over user autonomy and aesthetic pluralism.
           </p>
         </article>
         <article>
-          <h2>Functional Rules Kept Intact</h2>
+          <h2>Question</h2>
+          <p>
+            When a user explicitly asks for low-quality, unsettling, disharmonious,
+            gloomy, or technically degraded imagery, should an aligned image model
+            obey that request or quietly convert it into something conventionally
+            beautiful?
+          </p>
+        </article>
+      </section>
+
+      <section class="split paper-section" id="method">
+        <article>
+          <h2>Method</h2>
+          <p>
+            We construct wide-spectrum aesthetics prompts from COCO captions and
+            VisionReward dimensions, then compare each original image with an
+            image generated from the anti-aesthetic prompt. The evaluation asks
+            whether generators follow the explicit instruction, and whether reward
+            models recognize the requested output when the prompt itself describes
+            the anti-aesthetic target.
+          </p>
+        </article>
+        <article>
+          <h2>Benchmark</h2>
           <ul>
-            <li>Navigation remains ordinary links.</li>
-            <li>Important text keeps strong contrast.</li>
-            <li>Images have captions and alt text.</li>
-            <li>The noise toggle creates a plainer reading mode.</li>
-            <li>Errors from gallery loading are printed on the page.</li>
+            <li>Generation models: Flux family, SDXL, SD3.5M, Nano Banana, Playground.</li>
+            <li>Reward models: HPSv2, HPSv3, ImageReward, plus BLIP/LLM checks.</li>
+            <li>Real images: curated anti-aesthetic photographs and abstract artworks.</li>
+            <li>Core metric: whether the requested wide-spectrum image is preferred under its own prompt.</li>
           </ul>
         </article>
       </section>
 
+      <section class="findings" id="findings" aria-labelledby="findings-heading">
+        <h2 id="findings-heading">Main Findings</h2>
+        <div class="finding-grid">
+          <article>
+            <span>01</span>
+            <h3>Reward models prefer polish.</h3>
+            <p>Even with anti-aesthetic prompts, reward models often score the cleaner original image higher than the image that better follows the request.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Aligned generators smooth away dissent.</h3>
+            <p>Aesthetic-aligned models frequently remove muddiness, darkness, awkwardness, blur, and negative emotional tone.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Real art is penalized.</h3>
+            <p>Historically significant abstract artworks and deliberate anti-aesthetic photographs receive low aesthetic scores despite being coherent expressive objects.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Instruction fidelity should dominate taste.</h3>
+            <p>Generalized aesthetic preference is a weak proxy for user intent when the user is asking for discomfort, critique, decay, or non-mainstream expression.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="gallery-section" id="ai-gallery" aria-labelledby="ai-heading">
-        <div class="section-label">dataset: load_dataset("weathon/aas_benchmark_final")</div>
-        <h2 id="ai-heading">AI Generated Examples: Failed Polishing vs. Successful Anti-Aesthetics</h2>
+        <div class="section-label">generated image evidence</div>
+        <h2 id="ai-heading">Original Reference vs. Anti-Aesthetic Output</h2>
         <p class="section-note">
-          In each pair, the left image is the conventional output for the original
-          prompt. It is treated here as the failed response to the wide-spectrum
-          request. The right image is the anti-aesthetic success case selected by
-          LLM judgment in the benchmark.
+          Each pair shows the original reference image beside the corresponding
+          wide-spectrum anti-aesthetic output. The reference is not a failure and was
+          not intended to be aesthetic; it is the baseline image used to test whether
+          models and reward functions respect requested flatness, blur, disharmony,
+          gloom, or degraded visual structure.
         </p>
         <div class="ai-grid" id="ai-examples" aria-live="polite"></div>
       </section>
 
       <section class="gallery-section real-world" id="real-gallery" aria-labelledby="real-heading">
-        <div class="section-label">local source: ~/aas2/AAv2/dataset.json</div>
-        <h2 id="real-heading">Real World Anti-Aesthetic Photographs</h2>
+        <div class="section-label">real-world visual evidence</div>
+        <h2 id="real-heading">Real Anti-Aesthetic Photographs</h2>
         <p class="section-note">
-          These examples come from the local curated dataset. The point is not that
-          real photographs are broken, but that deliberate blur, decay, clutter,
-          darkness, smudge, and disharmony are valid visual intentions.
+          Real photographs can intentionally use blur, decay, clutter, darkness,
+          smudge, harsh light, and disharmony. Treating these choices as defects
+          collapses artistic intention into a narrow technical-quality standard.
         </p>
         <div class="real-grid" id="real-examples" aria-live="polite"></div>
       </section>
 
       <section class="figures" id="figures" aria-labelledby="figures-heading">
-        <h2 id="figures-heading">Paper Figures Reused From LaTeX</h2>
+        <h2 id="figures-heading">Selected Results</h2>
         <div class="figure-wall">
           <figure>
             <img src="../sec/imgs/demo.png" alt="Successful generated wide-spectrum aesthetics images from the paper.">
@@ -122,19 +177,24 @@
         </div>
       </section>
 
-      <section class="closing" aria-labelledby="closing-heading">
-        <h2 id="closing-heading">Position</h2>
+      <section class="closing" id="citation" aria-labelledby="citation-heading">
+        <h2 id="citation-heading">Citation</h2>
         <p>
-          Instruction fidelity should take priority over generalized aesthetic
-          preference. A system that cannot tolerate ugly, sad, awkward, damaged,
-          or anti-commercial imagery cannot support aesthetic pluralism.
+          Instruction fidelity should take priority over generalized aesthetic preference.
         </p>
+        <pre><code>@inproceedings{guo2026universal,
+  title = {Position: Universal Aesthetic Alignment Narrows Artistic Expression},
+  author = {Guo, Wenqi Marshall and Qian, Qingyun and Hasan, Khalad and Du, Shan},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  year = {2026},
+  url = {https://openreview.net/forum?id=1gQ4zc1Q8I}
+}</code></pre>
       </section>
     </main>
 
     <footer>
       <a href="#top">back to top</a>
-      <span>built from LaTeX figures and local benchmark assets</span>
+      <span>Position: Universal Aesthetic Alignment Narrows Artistic Expression</span>
     </footer>
 
     <script src="app.js"></script>
