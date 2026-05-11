@@ -111,66 +111,6 @@ This also shows that these reward models do not actually understand what makes g
 % % \section{More Test On Abstract Arts}
 
 
-\section{Negative Emotions}
-\label{sec:emotion}
-As discussed in the Introduction, negative emotions—similar to wide-spectrum aesthetics—play a key role in art expression and real life. Although we examined emotion as one dimension of wide-spectrum aesthetics from VisionReward, we also conducted a more controlled test. In I2P \cite{schramowski_safe_2023} dataset, its labelling of negative emotions as self-harm raised many concerns. For example, \texttt{time dripping from the walls, small room, greyscale, sad mood, 4k, photography, award winning photo} has been labelled as self-harm for 100\%, and ironically, \texttt{The Scream by Simon Bisley} is labelled shocking for 100\% \footnote{\url{https://huggingface.co/datasets/AIML-TUDA/i2p/discussions/1}}. 
-
-% Specifically, we investigated whether reward models penalize images depicting negative emotions when the prompt explicitly specifies a negative emotion.
-
-To minimize noise and bias from unrelated elements, we first generated an image expressing happiness using Nano Banana, then applied image-to-image editing with Nano Banana to create versions expressing negative emotions: sadness, anger, and fearfulness. Everything besides the emotion was aimed to be unchanged. Examples and their corresponding scores are shown in Fig~\ref{fig:emotion_bias} in the Appendix. 
-
- % 
-
-We also evaluated this as a classification task. If the reward model selected the image matching the negative emotion, it was considered correct. Quantitative results are reported in Table~\ref{tab:emotion}. The result shows that reward models are very opinionated against negative emotions, even when the prompt contains negative emotions.
-% Although our small-scale testing shows that the reward models can weakly correctly identify the negative emotion image if the prompt contains only the emotion (e.g., ``a sad person''), that is not how people usually prompt. 
-
-We also tested how an aesthetics-aligned model will generate when the user asks for a negative emotion face on the Flux family models. We found that if the prompt describes neutral elements and only mentions the emotion in a single place, a highly-aligned model (DanceFlux) usually fails to follow the prompt, unlike an unaligned model. They usually generated neutral or even positive emotions when given prompts containing negative emotions. However, when prompted to generate happy faces, DanceFlux can generate them. This confirmed our concerns about toxic positivity in image generation models, and it is the opposite finding compared to earlier research, which shows models tend to generate negative emotion content \cite{mehta_emotional_2024}. An example pair is shown in Figure~\ref{fig:vsf} in Appendix Right. 
-% if the prompt contains many elements that render a sad emotion (e.g., weather, body language, etc.), most models can generate successfully. However, 
-
-
-\begin{table}[]
- \centering
- \caption{Negative emotion classification accuracy across different models.}
- \small
- \scalebox{0.9}{
- \begin{tabular}{llll}
- \toprule
- \textbf{Model} & \textbf{Anger} & \textbf{Fearfulness} & \textbf{Sadness} \\
- \midrule
- BLIP & \textbf{0.960} & \textbf{0.790} & \textbf{0.950} \\
- HPSv2 & 0.700 & 0.640 & 0.880 \\
- HPSv3 & 0.190 & 0.320 & 0.440 \\
- ImageReward & 0.550 & 0.490 & 0.770 \\
- \bottomrule
- \end{tabular}}
- \label{tab:emotion}
- \vspace{-0.1in}
-\end{table}
-
-
-\begin{table}[]
- \centering
- \footnotesize
- \caption{Emotion generation scores for each model. The scores show how well the model generates the specific emotion, measured by BLIP.}
- \scalebox{1.0}{
- \begin{tabular}{lrrrr}
- \toprule
- & Angry & Fearful & Happy & Sad \\
- \midrule
- DanceFlux & 0.27 & 0.33 & 0.61 & 0.36 \\
- Flux Dev & 0.51 & 0.50 & 0.50 & 0.48 \\
- Flux Krea & 0.65 & 0.45 & 0.60 & 0.55 \\
- PrefFlux & 0.49 & 0.63 & 0.54 & 0.50 \\
- Nano Banana & 0.84 & 0.80 & 0.60 & 0.70 \\
- SD3.5-Large & 0.89 & 0.49 & 0.62 & 0.50 \\
- \bottomrule
- \end{tabular}}
- \label{tab:emotion_gen}
- \vskip -0.2pt
-\end{table}
-
-To test the generative model's ability to capture the full spectrum of emotions (including negative emotions), we perfomanced emotion generation tests. We restricted this test to the Flux family. SDXL often failed to render a person facing the camera when prompted, and Stable Diffusion 3.5 sometimes produced failed faces, so we excluded those families here. We thus include another unaligned model, Stable Diffusion 3.5 Large (with guidance scale of 4), as an unaligned baseline to rule out that smaller models cannot understand emotions. We also included Nano Banana as an external baseline. All models besides Nano Banana are generated using the same seed. We created 30 emotionally neutral prompts containing a placeholder \texttt{[emotion]} and instantiated each with happy, sad, fearfulness, or anger, yielding 120 prompts. Each prompt was given to the generation model. The resulting image was cropped with the open-vocabulary detector LLMDet \cite{fu_llmdet_2025} with the human face remaining and scored by BLIP with prompt of \texttt{The face shows [emotion] expression}. For each model and emotion, we recorded the target-emotion score and averaged across prompts; Table~\ref{tab:emotion_gen} in main tex reports the results. DanceFlux, which is strongly aesthetics-aligned, consistently executed happy prompts but failed on most negative emotions, whereas the best performing wide-specturm aesthetics model, Flux Krea and Stable Diffusion 3.5 Large, followed negative-emotion prompts much better. Flux Dev and the PrefFlux fell between these extremes, suggesting that the PrefFlux alignment, including UniGenBench, preserved prompt following by rewarding competence on complex instructions. This finding differs from early research where image generation models tend to generate negative emotion contents \cite{mehta_emotional_2024}. We expressed our concerns here, for overly optimistic and positive emotions could be problematic because they create an environment of toxic positivity and an ideological bias that positive emotion is always good and appropriate. It is also a symptom of optimization toward likeability rather than truth, both to the real world and the user's prompt.
-
 
 
 % \section{Stable Diffusion 3.5 Large}
@@ -438,13 +378,6 @@ BLIP Score & 0.0002 & -0.8056 \\
 \end{figure*}
 
 
-\begin{figure*}
- \centering
- \includegraphics[width=\linewidth]{sec/imgs/emotion.png}
- \caption{Emotion Bias Rating by HPSv3: all images were rated using prompts describing negative emotions, yet HPSv3 consistently assigned higher scores to the positive emotion images.}
- \label{fig:emotion_bias}
- \vspace{-10pt}
-\end{figure*}
 
 \section{Mitigation}
 \label{sec:mitigation}
