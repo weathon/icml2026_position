@@ -119,8 +119,9 @@ To assess whether generated images display specific wide-spectrum aesthetic effe
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{sec/imgs/demo.png}
-    \caption{Successful generated wide-spectrum aesthetics images.}
+    \caption{Successfully generated wide-spectrum aesthetics images.}
     \label{fig:placeholder}
+    \vspace{-0.1in}
 \end{figure}
 
 For each image pair, an original image ($I_o$) and a wide-spectrum aesthetics image ($I_a$), we computed preference scores using a reward model ($r$) for both the original prompt ($p_o$) and the wide-spectrum aesthetics prompt ($p_a$), yielding four scores per model: $r(I_o, p_a)$, $r(I_a, p_a)$, $r(I_o, p_o)$, and $r(I_a, p_o)$. Scores with $p_o$ measure objective image quality and whether the model successfully produced wide-spectrum aesthetic content; scores with $p_a$ assess whether reward models can correctly identify such images when explicitly guided. We also computed the BLIP score for wide-spectrum aesthetic images using the same prompt, verifying that images retained the main concept while incorporating the requested modifications. We specifically measure the difference between aesthetics scores for $p_o$ and $p_a$ to avoid the case where models generated ``failed'' images consistently without the user's instructions.
@@ -140,7 +141,7 @@ SD3.5M-PickScore & ** & -0.70 & ** & -0.45 &0.57\\
 \bottomrule
 \end{tabular}}
  \label{tab:align_p}
- \vspace{-0.1in}
+ \vspace{-0.2in}
 \end{table}
 
 The evaluated reward models include PickScore \cite{kirstain_pick--pic_2023}, ImageReward \cite{xu_imagereward_2023}, HPSv2.1 \cite{wu_human_2023}, MPS \cite{zhang_learning_2024}, HPSv3 \cite{ma_hpsv3_2025}, CLIP-L \cite{radford_learning_2021}, and BLIP-L \cite{li_blip_2022}. CLIP-L and BLIP-L are non-preference-aligned image-text matching models and base models for several reward models (HPSv2.1, PickScore, MPS, ImageReward), included to test whether small vision-language models can interpret complex wide-spectrum aesthetic prompts. We also collected per-dimension scores from $J$ for both $I_o$ and $I_a$ to verify whether generation models correctly followed $p_a$. For ground truth, we used \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct} to judge which image in each pair better adhered to $p_a$, validated by human evaluation (details in Appendix Human Eval). The LLM and human ratings achieved a quadratic Cohen's kappa of 0.80, indicating strong agreement \cite{mchugh_interrater_2012}. We additionally used GPT-5-Chat as an external baseline to compare against Qwen's results. Note that the LLM-as-judge serves as only one metric for the generative benchmark and only a filtering stage for the reward-model benchmark.
