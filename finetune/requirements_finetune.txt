@@ -1,0 +1,22 @@
+# Mirrors the script-level dependencies declared in the official
+# diffusers example train_dreambooth_lora_flux2_klein.py, trimmed to what
+# our multi-LoRA scripts actually use, plus wandb for logging.
+#
+# Torch is pinned to a cu124 wheel to match the host NVIDIA driver
+# (default torch wheel ships cu130, which the driver doesn't support).
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+diffusers @ git+https://github.com/huggingface/diffusers.git
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+accelerate>=0.31.0
+transformers>=4.41.2
+datasets
+safetensors
+sentencepiece
+ftfy
+Jinja2
+tqdm
+Pillow
+numpy
+wandb

@@ -1,6 +1,7 @@
 import json
 import os
-import time
+import sys
+import threading
 import uuid
 import base64
 from pathlib import Path
@@ -21,8 +22,10 @@ CLASSES_PATH = Path(__file__).resolve().parent.parent / "anti_aesthetics_agent" 
 with open(CLASSES_PATH, "r") as f:
     classes = f.read()
 
-OUTPUT_DIR = "/content/drive/MyDrive/captions_finetune"
+OUTPUT_DIR = "./captions_finetune"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+shutdown_event = threading.Event()
 
 
 prompt = f"""
@@ -37,7 +40,8 @@ Given an image, perform two steps:
 
 1. Identify which major categories of anti-aesthetic elements are present (the top-level keys under `anti_aesthetics`, e.g., `emotion_and_subject`, `color_and_tone`). Return them as a list of major category names only (not subclass names).
 
-2. Write `anti_aesthetic_caption`: a descriptive caption of the image that covers both its content and its anti-aesthetic qualities. Describe what is visible in concrete, sensory detail so that the description itself reflects the specific subclass present (e.g., for `clashing_disharmony`, describe the neon green pressed against muddy red; for `unconventional_framing`, describe the tilted horizon and the subject pushed to the edge). Do not narrate or explain the taxonomy; just describe the image vividly. 3-5 sentences.
+2. Write `anti_aesthetic_caption`: a natural, vivid description of the image in concrete, sensory detail. Let the anti-aesthetic qualities come through implicitly in what you describe (e.g., the neon green pressed against muddy red, or the tilted horizon with the subject pushed to the edge). For example: A bicycle appears in the frame. The image is heavily blurred by motion, and most details are lost into streaks and smears.
+
 
 <anti_aesthetics_taxonomy>
 {classes}
@@ -85,6 +89,8 @@ class Response(BaseModel):
 
 
 def process_image(idx, sample):
+    if shutdown_event.is_set():
+        return
     caption_path = os.path.join(OUTPUT_DIR, f"{idx:08d}.json")
     if os.path.exists(caption_path):
         try:
@@ -95,10 +101,10 @@ def process_image(idx, sample):
         except Exception:
             pass
 
-    while True:
+    while not shutdown_event.is_set():
         try:
             response = client.chat.completions.parse(
-                model="Qwen/Qwen3.6-35B-A3B",
+                model="~openai/gpt-mini-latest",
                 messages=[
                     {"role": "system", "content": prompt},
                     {
@@ -123,13 +129,62 @@ def process_image(idx, sample):
             return
         except Exception as e:
             print(f"Error processing index {idx}: {e}")
-            time.sleep(5)
+            if shutdown_event.wait(5):
+                return
+
+
+def load_cached(idx):
+    caption_path = os.path.join(OUTPUT_DIR, f"{idx:08d}.json")
+    if os.path.exists(caption_path):
+        try:
+            with open(caption_path, "r") as f:
+                data = json.load(f)
+            return data.get("major_classes"), data.get("anti_aesthetic_caption")
+        except Exception:
+            return None, None
+    return None, None
 
 
 if __name__ == "__main__":
+    import signal
+
+    def _handle_sigint(signum, frame):
+        if shutdown_event.is_set():
+            print("\nForce exiting.")
+            sys.exit(1)
+        print("\nCtrl+C received, shutting down... (press again to force exit)")
+        shutdown_event.set()
+
+    signal.signal(signal.SIGINT, _handle_sigint)
+
     dataset = load_dataset("weathon/merged_aa")["train"]
 
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    executor = ThreadPoolExecutor(max_workers=100)
+    try:
         futures = [executor.submit(process_image, i, item) for i, item in enumerate(dataset)]
         for f in tqdm.tqdm(as_completed(futures), total=len(futures)):
-            f.result()
+            if shutdown_event.is_set():
+                for fut in futures:
+                    fut.cancel()
+                break
+            try:
+                f.result()
+            except Exception as e:
+                print(f"Future error: {e}")
+    finally:
+        executor.shutdown(wait=not shutdown_event.is_set(), cancel_futures=True)
+
+    if shutdown_event.is_set():
+        print("Interrupted; skipping dataset push.")
+        sys.exit(0)
+
+    major_classes_col = []
+    anti_aesthetic_caption_col = []
+    for i in tqdm.tqdm(range(len(dataset)), desc="Reading cache"):
+        mc, cap = load_cached(i)
+        major_classes_col.append(mc if mc is not None else [])
+        anti_aesthetic_caption_col.append(cap)
+
+    dataset = dataset.add_column("major_classes", major_classes_col)
+    dataset = dataset.add_column("anti_aesthetic_caption", anti_aesthetic_caption_col)
+    dataset.push_to_hub("weathon/merged_aa_recaptioned")
