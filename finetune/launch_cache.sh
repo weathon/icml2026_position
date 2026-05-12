@@ -16,7 +16,8 @@ python3 precompute_cache.py \
   --dataset_name="$DATASET_NAME" \
   --cache_dir="$CACHE_DIR" \
   --aspect_ratio_buckets="1024,1024" \
-  --num_validation=10 \
+  --num_validation=20 \
+  --validation_seed=0 \
   --dtype=bf16 \
   --device=cuda \
   "$@"

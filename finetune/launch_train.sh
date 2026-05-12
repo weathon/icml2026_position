@@ -32,7 +32,7 @@ accelerate launch \
     --weighting_scheme=none \
     --guidance_scale=3.5 \
     --checkpointing_steps=500 \
-    --num_validation_samples=10 \
+    --num_validation_samples=20 \
     --validation_every_n_steps=20 \
     --validation_inference_steps=28 \
     --push_to_hub \

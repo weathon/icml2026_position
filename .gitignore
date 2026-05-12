@@ -3,3 +3,4 @@ finetune/cache_aa/
 finetune/multi_lora_aa/
 finetune/wandb
 finetune/captions_finetune
+.lmao

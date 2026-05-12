@@ -53,8 +53,11 @@ def parse_args():
     p.add_argument("--dataset_name", type=str, default="weathon/merged_aa_recaptioned")
     p.add_argument("--cache_dir", type=str, default="./cache_aa")
     p.add_argument("--aspect_ratio_buckets", type=str, default="1024,1024")
-    p.add_argument("--num_validation", type=int, default=10,
-                   help="First N valid entries are tagged as validation in index.json (not preprocessed).")
+    p.add_argument("--num_validation", type=int, default=20,
+                   help="N valid entries are randomly sampled (seeded by --validation_seed) "
+                        "and tagged as validation in index.json (not preprocessed).")
+    p.add_argument("--validation_seed", type=int, default=0,
+                   help="Seed used to randomly pick the validation set.")
     p.add_argument("--center_crop", action="store_true")
     p.add_argument("--revision", type=str, default=None)
     p.add_argument("--variant", type=str, default=None)
@@ -90,6 +93,27 @@ def main():
     print(f"Loading dataset {args.dataset_name}...")
     ds = load_dataset(args.dataset_name, split="train")
 
+    # ---- First pass: enumerate row indices that pass the filter, so we can
+    # randomly pick the validation subset before any expensive work. We only
+    # need the metadata columns here, not the images.
+    print("Scanning for valid rows (caption + non-empty mask)...")
+    valid_indices = []
+    for i, row in enumerate(tqdm(ds, desc="Scanning")):
+        classes = row.get("major_classes") or []
+        caption = row.get("anti_aesthetic_caption")
+        if not classes or not caption:
+            continue
+        if not any(c in LORA_NAME_TO_IDX for c in classes):
+            continue
+        valid_indices.append(i)
+    print(f"  {len(valid_indices)} valid rows out of {len(ds)}")
+
+    import random as _random
+    rng = _random.Random(args.validation_seed)
+    n_val = min(args.num_validation, len(valid_indices))
+    validation_indices = set(rng.sample(valid_indices, n_val))
+    print(f"  Selected {n_val} validation indices (seed={args.validation_seed})")
+
     print("Loading VAE + text encoder...")
     vae = AutoencoderKLFlux2.from_pretrained(
         args.pretrained_model_name_or_path, subfolder="vae", revision=args.revision, variant=args.variant
@@ -118,8 +142,8 @@ def main():
     val_count = 0
     skipped = 0
 
-    pbar = tqdm(ds, desc="Caching")
-    for row in pbar:
+    pbar = tqdm(enumerate(ds), desc="Caching", total=len(ds))
+    for row_idx, row in pbar:
         classes = row.get("major_classes") or []
         caption = row.get("anti_aesthetic_caption")
         if not classes or not caption:
@@ -134,8 +158,8 @@ def main():
             skipped += 1
             continue
 
-        # First N go to validation (no preprocessing — just record prompt+mask).
-        if val_count < args.num_validation:
+        # Validation set: randomly chosen ahead of the main loop (seeded).
+        if row_idx in validation_indices:
             index_entries.append({
                 "split": "validation",
                 "caption": caption,

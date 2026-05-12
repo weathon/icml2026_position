@@ -265,20 +265,37 @@ class AntiAestheticsDataset(Dataset):
         repeats: int = 1,
         random_flip: bool = False,
         center_crop: bool = False,
-        num_validation: int = 10,
+        num_validation: int = 20,
+        validation_seed: int = 0,
     ):
         ds = load_dataset(hf_repo, split="train")
         self.buckets = buckets
         self.random_flip = random_flip
         self.center_crop = center_crop
 
+        # First pass: enumerate which row indices pass the filter so we can
+        # randomly pick a stable validation subset (seeded) before doing any
+        # image preprocessing.
+        valid_indices = []
+        for i, row in enumerate(ds):
+            classes = row.get("major_classes") or []
+            caption = row.get("anti_aesthetic_caption")
+            if not classes or not caption:
+                continue
+            if not any(c in LORA_NAME_TO_IDX for c in classes):
+                continue
+            valid_indices.append(i)
+
+        import random as _random
+        rng = _random.Random(validation_seed)
+        n_val = min(num_validation, len(valid_indices))
+        validation_indices = set(rng.sample(valid_indices, n_val))
+
         self.pixel_values: list[tuple[torch.Tensor, int]] = []
         self.prompts: list[str] = []
         self.masks: list[torch.Tensor] = []
         self.original_indices: list[int] = []
 
-        # First `num_validation` valid entries are reserved as the validation
-        # set (prompt + mask, no preprocessed image needed).
         self.validation_prompts: list[str] = []
         self.validation_masks: list[torch.Tensor] = []
 
@@ -298,7 +315,7 @@ class AntiAestheticsDataset(Dataset):
             if mask.sum() == 0:
                 continue
 
-            if len(self.validation_prompts) < num_validation:
+            if i in validation_indices:
                 self.validation_prompts.append(caption)
                 self.validation_masks.append(mask.clone())
                 continue
@@ -517,8 +534,12 @@ def parse_args():
     p.add_argument("--mode_scale", type=float, default=1.29)
     p.add_argument("--guidance_scale", type=float, default=1.0)
     p.add_argument("--checkpointing_steps", type=int, default=500)
-    p.add_argument("--num_validation_samples", type=int, default=10,
-                   help="First N valid dataset entries reserved as validation set.")
+    p.add_argument("--num_validation_samples", type=int, default=20,
+                   help="N valid dataset entries randomly reserved as validation set "
+                        "(only used when --precomputed_cache_dir is not set; the cache "
+                        "carries its own validation set in index.json).")
+    p.add_argument("--validation_seed", type=int, default=0,
+                   help="Seed for the random validation pick in the non-precomputed path.")
     p.add_argument("--validation_every_n_steps", type=int, default=500,
                    help="Run validation every N optimizer steps. 0 disables.")
     p.add_argument("--validation_inference_steps", type=int, default=28,
@@ -689,6 +710,7 @@ def main():
             random_flip=args.random_flip,
             center_crop=args.center_crop,
             num_validation=args.num_validation_samples,
+            validation_seed=args.validation_seed,
         )
         if args.dry_run:
             train_dataset.pixel_values = train_dataset.pixel_values[:1]
