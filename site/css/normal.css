@@ -669,29 +669,11 @@ table.results td.bold {
   font-weight: 700;
   color: var(--vermilion);
 }
-table.results tr.divider td {
-  background: var(--ink);
-  color: var(--paper);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 8px 14px;
-  border-bottom: 0;
-}
-table.results tr.post td {
-  background: rgba(192, 138, 44, 0.06);
-}
-table.results tr.post:hover td {
-  background: rgba(192, 138, 44, 0.14);
-}
-table.results tr.post.pending td {
+table.results tr.pending td {
   color: var(--muted);
   font-style: italic;
 }
-table.results tr.post.pending:hover td {
+table.results tr.pending:hover td {
   background: var(--bg-deep);
 }
 

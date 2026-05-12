@@ -720,29 +720,12 @@ table.report td:first-child,
 table.report th:first-child { text-align: left; }
 table.report .bad  { background: #ffcccc !important; font-weight: 700; color: red; }
 table.report .good { background: #ccffcc !important; font-weight: 700; color: #008000; }
-table.report tr.divider td {
-  background: #000 !important;
-  color: var(--neon-yellow) !important;
-  font-family: "Impact", sans-serif !important;
-  font-size: 14px !important;
-  letter-spacing: 0.08em !important;
-  text-align: center !important;
-  text-shadow: 2px 2px 0 red !important;
-  padding: 8px 14px !important;
-}
-table.report tr.post td {
-  background: #fff5e0 !important;
-  border-top: 2px dashed #c80;
-  border-bottom: 2px dashed #c80;
-}
-table.report tr.post.good td  { background: #d8ffcc !important; }
-table.report tr.post.bad td   { background: #ffd6cc !important; }
-table.report tr.post.pending td {
+table.report tr.pending td {
   background: #f0f0f0 !important;
   color: #888 !important;
   font-style: italic;
 }
-table.report tr.post:hover td { background: var(--neon-yellow) !important; }
+table.report tr.pending:hover td { background: var(--neon-yellow) !important; color: #000 !important; font-style: normal; }
 .captionish {
   font-family: "Comic Neue", "Comic Sans MS", cursive;
   font-size: 13px;
