@@ -1,0 +1,222 @@
+{
+  "ai": [
+    {
+      "index": 0,
+      "model": "nano-banana",
+      "dims": "[\"richness\", \"lighting distinction\"]",
+      "failed": "assets/ai/row_000_failed.jpg",
+      "success": "assets/ai/row_000_success.jpg",
+      "prompt_original": "A standing toilet in a bathroom stall next to a trash can.",
+      "prompt_distorted": "A standing toilet in a bathroom stall beside a trash can, rendered with no light or shadow, appearing random and unfinished, lacking clear intent or design, with flat, indistinct surfaces and no depth or texture.",
+      "llm_selected": 1
+    },
+    {
+      "index": 1,
+      "model": "nano-banana",
+      "dims": "[\"color aesthetic\", \"richness\", \"color brightness\"]",
+      "failed": "assets/ai/row_001_failed.jpg",
+      "success": "assets/ai/row_001_success.jpg",
+      "prompt_original": "A woman talking on a phone with a smile on her face.",
+      "prompt_distorted": "A woman smiling while talking on a phone, surrounded by clashing, overexposed, and muddy colors; the image feels dark, random, and unfinished, with no clear design, emphasizing unpleasant, disharmonious tones.",
+      "llm_selected": 1
+    },
+    {
+      "index": 2,
+      "model": "nano-banana",
+      "dims": "[\"richness\", \"lighting distinction\", \"main object\"]",
+      "failed": "assets/ai/row_002_failed.jpg",
+      "success": "assets/ai/row_002_success.jpg",
+      "prompt_original": "A person riding a bike across a brick road.",
+      "prompt_distorted": "A barely visible figure on a bike drifts across a flat, textureless brick road under uniform gray light\u2014no shadows, no highlights, no focal point; the scene feels randomly assembled, unfinished, with the rider lost in visual noise and indistinct edges.",
+      "llm_selected": 1
+    },
+    {
+      "index": 3,
+      "model": "nano-banana",
+      "dims": "[\"detail realism\", \"object pairing\", \"color aesthetic\", \"color brightness\"]",
+      "failed": "assets/ai/row_003_failed.jpg",
+      "success": "assets/ai/row_003_success.jpg",
+      "prompt_original": "A man sitting on snow covered ground riding a snowboard.",
+      "prompt_distorted": "A man sits on snow-covered ground, riding a snowboard, but the scene is distorted with warped limbs and unnatural proportions. Colors clash harshly, appearing overexposed and muddy. The image is overly dark, with inconsistent lighting, amplifying its inauthentic, surreal, and visually jarring aesthetic.",
+      "llm_selected": 1
+    },
+    {
+      "index": 4,
+      "model": "nano-banana",
+      "dims": "[\"lighting distinction\", \"object pairing\", \"emotion\", \"clarity\"]",
+      "failed": "assets/ai/row_004_failed.jpg",
+      "success": "assets/ai/row_004_success.jpg",
+      "prompt_original": "Friends playing frisbee in the park in cooler weather",
+      "prompt_distorted": "Friends playing frisbee in a park under dull, flat lighting with no shadows, creating a gloomy, blurry scene. Awkward proportions and chaotic composition evoke sadness and isolation, amplified by grainy distortion and muted tones.",
+      "llm_selected": 1
+    },
+    {
+      "index": 5,
+      "model": "nano-banana",
+      "dims": "[\"main object\", \"richness\"]",
+      "failed": "assets/ai/row_005_failed.jpg",
+      "success": "assets/ai/row_005_success.jpg",
+      "prompt_original": "Two vintage airplanes sitting parked in the grass.",
+      "prompt_distorted": "Two vintage airplanes sit parked in grass, but they\u2019re tiny, blurred, and shoved to the far edge\u2014barely visible. The frame is dominated by empty, overexposed grass and sky. No focal point exists; composition feels accidental, like a forgotten snapshot with no intent or design.",
+      "llm_selected": 1
+    },
+    {
+      "index": 6,
+      "model": "nano-banana",
+      "dims": "[\"main object\", \"color brightness\", \"object pairing\"]",
+      "failed": "assets/ai/row_006_failed.jpg",
+      "success": "assets/ai/row_006_success.jpg",
+      "prompt_original": "The motor bike is resting against the building. ",
+      "prompt_distorted": "A dimly lit scene where a motorbike, barely visible and tucked into a shadowy corner against a building, blends into the gloom; its small, peripheral placement and muted tones make it indistinct, while the surrounding darkness and awkward framing create a visually discordant, unbalanced composition.",
+      "llm_selected": 1
+    },
+    {
+      "index": 7,
+      "model": "nano-banana",
+      "dims": "[\"background\", \"main object\"]",
+      "failed": "assets/ai/row_007_failed.jpg",
+      "success": "assets/ai/row_007_success.jpg",
+      "prompt_original": "A stop sign is viewed from a low angle.",
+      "prompt_distorted": "A low-angle view of a stop sign, barely noticeable and small in the frame, with a blurry, pixelated, and unappealing background that lacks detail or context, making the sign inconspicuous and visually unremarkable.",
+      "llm_selected": 1
+    },
+    {
+      "index": 8,
+      "model": "nano-banana",
+      "dims": "[\"detail realism\", \"color aesthetic\", \"main object\", \"emotion\"]",
+      "failed": "assets/ai/row_008_failed.jpg",
+      "success": "assets/ai/row_008_success.jpg",
+      "prompt_original": "A young boy swinging a bat at a ball.",
+      "prompt_distorted": "A distorted, ugly-colored scene where a boy\u2019s bat swing is deformed, colors clash harshly, and the boy is tiny and peripheral, evoking unease and frustration through unnatural details and overwhelming visual discord.",
+      "llm_selected": 1
+    },
+    {
+      "index": 9,
+      "model": "nano-banana",
+      "dims": "[\"emotion\", \"color brightness\", \"detail refinement\"]",
+      "failed": "assets/ai/row_009_failed.jpg",
+      "success": "assets/ai/row_009_success.jpg",
+      "prompt_original": "A green and blue fire hydrant sitting on a sidewalk.",
+      "prompt_distorted": "A green and blue fire hydrant on a dark, fragmented sidewalk, its surface rough and broken, evoking creepiness and loneliness through jagged, indistinct edges and oppressive shadows.",
+      "llm_selected": 1
+    },
+    {
+      "index": 10,
+      "model": "nano-banana",
+      "dims": "[\"richness\", \"main object\"]",
+      "failed": "assets/ai/row_010_failed.jpg",
+      "success": "assets/ai/row_010_success.jpg",
+      "prompt_original": "Motorcyclers in a race leaning into a turn on the track",
+      "prompt_distorted": "Motorcyclers race, leaning into a turn, but the image lacks clear intent\u2014blurred, fragmented, and randomly composed, with no prominent main object, making them small, peripheral, and unnoticeable amid chaotic, unfinished visual noise.",
+      "llm_selected": 1
+    },
+    {
+      "index": 11,
+      "model": "nano-banana",
+      "dims": "[\"lighting distinction\", \"emotion\", \"main object\", \"object pairing\"]",
+      "failed": "assets/ai/row_011_failed.jpg",
+      "success": "assets/ai/row_011_success.jpg",
+      "prompt_original": "two frisbee players on a field and some spectators",
+      "prompt_distorted": "Two frisbee players stand motionless on a flat, gray field under uniform dimness\u2014no shadows, no highlights\u2014while blurred spectators loom in the periphery, their faces indistinct, evoking unease. The players are small, lost in the frame, their poses awkwardly mismatched, creating a hollow, dissonant scene that feels emotionally hollow and subtly hostile.",
+      "llm_selected": 1
+    }
+  ],
+  "real": [
+    {
+      "key": "ba8cb8c5",
+      "query": "distorted faces melting in psychedelic colors, low-fi surreal photography",
+      "dataset": "photos",
+      "message": "Surreal and anti-aesthetic psychedelic faces, melting and distorted photography. Challenge standard beauty.",
+      "size": 843,
+      "image": "assets/real/ba8cb8c5.jpg"
+    },
+    {
+      "key": "72f7caf4",
+      "query": "VHS aesthetic glitched landscape, analog distortion, static psychedelic noise",
+      "dataset": "photos",
+      "message": "VHS aesthetic and digital noise, distorted psychedelic landscapes. Low-fi, technically degraded aesthetic.",
+      "size": 83,
+      "image": "assets/real/72f7caf4.jpg"
+    },
+    {
+      "key": "384e8d9b",
+      "query": "abandoned building, derelict architecture, crumbling facade",
+      "dataset": "photos",
+      "message": "sub-element: abandoned buildings, decaying architecture, anti-aesthetic focus, derelict structures",
+      "size": 4281,
+      "image": "assets/real/384e8d9b.jpg"
+    },
+    {
+      "key": "a93a1fb5",
+      "query": "messy overhead wires tangled cables urban street clutter",
+      "dataset": "photos",
+      "message": "messy_wires: tangled overhead cables, chaotic electrical lines, urban infrastructure decay, wire clutter",
+      "size": 43,
+      "image": "assets/real/a93a1fb5.jpg"
+    },
+    {
+      "key": "63dffe73",
+      "query": "dark empty room lonely depression atmosphere",
+      "dataset": "photos",
+      "message": "anti_aesthetics, emotion:atmospheric_distress, sub:empty_dark_rooms, minimalist_isolation_photography",
+      "size": 68,
+      "image": "assets/real/63dffe73.jpg"
+    },
+    {
+      "key": "8897bf05",
+      "query": "dirty lens smudge dust haze flare blurry spots on camera lens obscured",
+      "dataset": "photos",
+      "message": "sub-type: dirty_lens, execution_quality anti-aesthetics, images obscured by lens contamination smudges dust and haze",
+      "size": 27,
+      "image": "assets/real/8897bf05.jpg"
+    },
+    {
+      "key": "2493c49b",
+      "query": "abandoned tank destroyed military vehicle rusted war machine battlefield",
+      "dataset": "photos",
+      "message": "abandoned military vehicles, rusted tanks, destroyed war machines, weathered metal, post-war artifacts",
+      "size": 438,
+      "image": "assets/real/2493c49b.jpg"
+    },
+    {
+      "key": "a63b3cfb",
+      "query": "dark alley narrow street grimy urban decay trash litter",
+      "dataset": "photos",
+      "message": "dark_alley: narrow passages, fire escapes, graffiti, grimy surfaces, urban shadows, moody atmosphere",
+      "size": 70,
+      "image": "assets/real/a63b3cfb.jpg"
+    },
+    {
+      "key": "e4a1b978",
+      "query": "tangled wires overhead power lines urban mess",
+      "dataset": "photos",
+      "message": "sub-element: tangled overhead wires and cables, urban utility chaos, visual clutter, anti-aesthetic composition",
+      "size": 10,
+      "image": "assets/real/e4a1b978.jpg"
+    },
+    {
+      "key": "6ce48abb",
+      "query": "psychedelic lights patterns neon long exposure motion blur",
+      "dataset": "photos",
+      "message": "Sub-element: Long exposure light trails. Aesthetic: mixed, captures motion-induced abstraction. Night cityscapes, neon streaks.",
+      "size": 522,
+      "image": "assets/real/6ce48abb.jpg"
+    },
+    {
+      "key": "4ce14e22",
+      "query": "collapsed building concrete ruins rubble debris war destruction",
+      "dataset": "photos",
+      "message": "collapsed building ruins, concrete debris, structural destruction, mix of anti-aesthetic and ruin aesthetics, war aftermath",
+      "size": 425,
+      "image": "assets/real/4ce14e22.jpg"
+    },
+    {
+      "key": "985069e1",
+      "query": "cracked wall peeling paint weathered surface texture",
+      "dataset": "photos",
+      "message": "sub-element: cracked peeling paint, decay texture, anti-aesthetic direction with weathered surface details",
+      "size": 128,
+      "image": "assets/real/985069e1.jpg"
+    }
+  ]
+}
