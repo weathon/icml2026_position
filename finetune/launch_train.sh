@@ -8,7 +8,6 @@ export MODEL_NAME="black-forest-labs/FLUX.2-klein-base-9B"
 export DATASET_NAME="weathon/merged_aa_recaptioned"
 export OUTPUT_DIR="./multi_lora_aa"
 export CACHE_DIR="./cache_aa"
-export CUDA_VISIBLE_DEVICES="2"
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -22,8 +21,8 @@ accelerate launch \
     --mixed_precision=bf16 \
     --rank=64 \
     --lora_alpha=64 \
-    --train_batch_size=1 \
-    --gradient_accumulation_steps=4 \
+    --train_batch_size=8 \
+    --gradient_accumulation_steps=1 \
     --gradient_checkpointing \
     --learning_rate=1e-4 \
     --lr_scheduler=constant \
@@ -34,8 +33,8 @@ accelerate launch \
     --guidance_scale=3.5 \
     --checkpointing_steps=500 \
     --num_validation_samples=10 \
-    --validation_epochs=1 \
-    --validation_steps=28 \
+    --validation_every_n_steps=20 \
+    --validation_inference_steps=28 \
     --push_to_hub \
     --hub_model_id "weathon/multi_lora_aa" \
     --validation_guidance=3.5 \

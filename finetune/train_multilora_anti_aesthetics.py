@@ -519,8 +519,10 @@ def parse_args():
     p.add_argument("--checkpointing_steps", type=int, default=500)
     p.add_argument("--num_validation_samples", type=int, default=10,
                    help="First N valid dataset entries reserved as validation set.")
-    p.add_argument("--validation_epochs", type=int, default=1)
-    p.add_argument("--validation_steps", type=int, default=28)
+    p.add_argument("--validation_every_n_steps", type=int, default=500,
+                   help="Run validation every N optimizer steps. 0 disables.")
+    p.add_argument("--validation_inference_steps", type=int, default=28,
+                   help="Number of diffusion inference steps used for each validation image.")
     p.add_argument("--validation_guidance", type=float, default=3.5)
     p.add_argument("--validation_height", type=int, default=1024)
     p.add_argument("--validation_width", type=int, default=1024)
@@ -580,7 +582,7 @@ def main():
         args.max_train_steps = 1
         args.num_train_epochs = 1
         args.checkpointing_steps = 10**9  # effectively disabled
-        args.validation_epochs = 1
+        args.validation_every_n_steps = 1
         logger.info("Dry run: max_train_steps=1, validation limited to 1 sample.")
 
     # Load models -------------------------------------------------------------
@@ -880,29 +882,29 @@ def main():
                             commit_message=f"checkpoint-{global_step}",
                         )
 
+                if (
+                    accelerator.is_main_process
+                    and train_dataset.validation_prompts
+                    and args.validation_every_n_steps > 0
+                    and global_step % args.validation_every_n_steps == 0
+                ):
+                    _run_validation_step(
+                        args=args,
+                        accelerator=accelerator,
+                        transformer=transformer,
+                        train_dataset=train_dataset,
+                        weight_dtype=weight_dtype,
+                        step=global_step,
+                        phase="validation",
+                    )
+                    transformer.train()
+
             logs = {"loss": loss.detach().item(), "lr": lr_scheduler.get_last_lr()[0]}
             progress_bar.set_postfix(**logs)
             accelerator.log(logs, step=global_step)
 
             if global_step >= args.max_train_steps:
                 break
-
-        # ----- Per-epoch validation --------------------------------------
-        if (
-            accelerator.is_main_process
-            and train_dataset.validation_prompts
-            and args.validation_epochs > 0
-            and (epoch + 1) % args.validation_epochs == 0
-        ):
-            _run_epoch_validation(
-                args=args,
-                accelerator=accelerator,
-                transformer=transformer,
-                train_dataset=train_dataset,
-                weight_dtype=weight_dtype,
-                epoch=epoch,
-                phase="validation",
-            )
 
         if global_step >= args.max_train_steps:
             break
@@ -918,13 +920,13 @@ def main():
             )
 
         if not args.skip_final_validation and train_dataset.validation_prompts:
-            _run_epoch_validation(
+            _run_validation_step(
                 args=args,
                 accelerator=accelerator,
                 transformer=transformer,
                 train_dataset=train_dataset,
                 weight_dtype=weight_dtype,
-                epoch=args.num_train_epochs,
+                step=global_step,
                 phase="test",
             )
     accelerator.end_training()
@@ -951,10 +953,10 @@ def _upload_checkpoint(hub_api: HfApi, repo_id: str, local_dir: str, path_in_rep
         logger.warning(f"Hub upload failed for {path_in_repo}: {e}")
 
 
-def _run_epoch_validation(args, accelerator, transformer, train_dataset, weight_dtype, epoch, phase):
+def _run_validation_step(args, accelerator, transformer, train_dataset, weight_dtype, step, phase):
     """Build an inference pipeline using the trained transformer and generate
     one image per validation (prompt, mask) entry."""
-    logger.info(f"Running {phase} ({len(train_dataset.validation_prompts)} samples) at epoch {epoch}.")
+    logger.info(f"Running {phase} ({len(train_dataset.validation_prompts)} samples) at step {step}.")
     unwrapped = accelerator.unwrap_model(transformer)
     pipeline = Flux2KleinPipeline.from_pretrained(
         args.pretrained_model_name_or_path,
@@ -970,9 +972,9 @@ def _run_epoch_validation(args, accelerator, transformer, train_dataset, weight_
             prompts=train_dataset.validation_prompts,
             masks=train_dataset.validation_masks,
             accelerator=accelerator,
-            epoch=epoch,
+            epoch=step,
             seed=args.seed,
-            num_inference_steps=args.validation_steps,
+            num_inference_steps=args.validation_inference_steps,
             guidance_scale=args.validation_guidance,
             height=args.validation_height,
             width=args.validation_width,

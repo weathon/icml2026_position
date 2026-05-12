@@ -8,7 +8,6 @@ cd "$(dirname "$0")"
 export MODEL_NAME="black-forest-labs/FLUX.2-klein-base-9B"
 export DATASET_NAME="weathon/merged_aa_recaptioned"
 export CACHE_DIR="./cache_aa"
-export CUDA_VISIBLE_DEVICES="2"
 
 mkdir -p "$CACHE_DIR"
 
