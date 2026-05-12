@@ -43,3 +43,327 @@ This also shows that these reward models do not actually understand what makes g
     \caption{How reward models rate real art images.}
     \label{tab:real_arts}
 \end{table}
+
+
+% ============================================================
+% Moved from section files on cleanup
+% ============================================================
+
+% ---- From 1_intro.tex ----
+% (was lines 12-13)
+% Our contributions are: (1) We argued that while a general mean or mode of human aesthetic preference exists, over-aligning generative models to it hurts user control, especially when users explicitly request non-mainstream or intentionally ``ugly'' outputs. This differs from prior work on cultural or demographic bias in beauty standards because we focus on purposely decreasing technical and aesthetic quality to achieve wide-spectrum aesthetic effects for experimental, critical, or technical uses. (2) To test this, we built a dataset of wide-spectrum aesthetics prompts and evaluated whether current image generators can reliably produce such content, comparing base models with their aligned variants (aesthetics- or instruction-tuned) to see whether alignment harms the ability to generate wide-spectrum aesthetics images. (3) We also tested popular reward models and found that they often penalize wide-spectrum aesthetics outputs even when the prompt explicitly requests them. (4) We tested these models on experimental arts, social critic arts, and historical real arts to further validate our hypothesis. 
+% (Rated with prompt ``A brightly colored pointillist painting showing several figures relaxing and picnicking in a sunny, coastal landscape, with a body of water and distant hills.'')
+
+% (was lines 47-47)
+% More details are in the Appendix. 
+
+% (was lines 52-53)
+%  A moderate sense of disappointment or sadness after failing an exam encourages reflection on study methods and motivates improvement. A measured feeling of guilt after making a mistake at work supports accountability and drives behavioral correction. Without these emotional responses, moral learning, self-regulation, and social responsibility would diminish. 
+%  These reward models may also inherit biases about what counts as positive emotion from the labeling group’s demographics or developer-set values \cite{maerten_lapis_2025}. \cite{skilton_inclusive_2024} found that, to avoid negative stereotypes, DALL-E generated images that reinforced stereotypically ``positive'' depictions (young, beautiful, thin, and white).
+
+% (was lines 61-62)
+% \subsection{Toxic Positivity}
+% Many reward models promote strong positive emotions as an aesthetics aspect, which risk suppressing negative ones, reinforcing the false dichotomy that positive emotions are good and negative ones are bad. This view is harmful because negative emotions are integral to authentic human expression and growth. Overemphasizing positivity, as seen in social media, produces sanitized representations that obscure emotional complexity and neglect the constructive role of negative emotions. When AI-generated images consistently display happiness, they can create unrealistic emotional norms, fostering toxic positivity and discouraging healthy emotional engagement. Negative emotions also serve vital functions, such as alerting us to moral or physical danger and fostering empathy. More details and sources are in Appendix.
+
+% (was lines 67-67)
+% We proposed that the risks associated with imposing this universal preference can be analyzed through six distinct layers of ethical and practical debate:
+
+% (was lines 72-72)
+% If an AI model has an inherent value that positive emotion is good, tidy is good, and showing the ``ugly'' side of society is bad, this is a form of ideological hegemony and censorship. A non-AI parallel is a student assistance center whose stated purpose is to support students, but whose actual function is protecting institutional reputation by downplaying events rather than pursuing justice. 
+
+% (was lines 76-76)
+% In the school example, the administration might also be biased toward one side based on the leadership's personal experiences, viewing student complaints through a lens of skepticism rather than empathy.
+
+% (was lines 83-83)
+% Furthermore, HPSv3 designates real photographs as the upper bound of image quality, encoding a realism bias that treats photorealism as the gold standard. This structurally penalizes stylized, abstract, or anti-aesthetic work regardless of its artistic intent or technical execution.
+
+% (was lines 85-85)
+% An AI example is when the model generates universally good ``masterpieces" but ignores a user's instruction for customized artistic defects (noted as wide-spectrum aesthetics or anti-aesthetics in this paper). A non-AI parallel is a company designing a universal, generally preferred UI/UX, but severely limiting user customization and personal twists. At their extreme, this risk results in a paternalistic posture and \textit{de facto} soft corporate ideological censorship. 
+
+% (was lines 87-90)
+% \textit{The problem of excessive single value} 
+% This tension is further amplified at the optimization level, where complex and multidimensional aesthetic judgments are collapsed into a single or narrow alignment objective. Overzealous adherence to a single preference or subset of preferences could result in unpredictable harm, particularly when complex aesthetic judgments are reduced to a narrow alignment objective. When a model is trained to optimize a single, generalized notion of preference, it may disproportionately amplify attributes that are strongly correlated with that preference, rather than preserving balanced or context-sensitive outputs. An image generation AI might, for instance, tend to overly represent bright colors, not because brightness is universally desirable, but because it serves as a simple proxy for visual appeal under the learned preference model. In such cases, chasing a universal preference can fail outside of the mainstream, producing exaggerated or degraded results due to over-optimization of a limited signal. This is also related to the virtue theory from ancient Greece, where moderation of any characteristic is important \cite{guo_position_2025}. 
+% % A non-AI parallel is that requiring a periodic change of password could actually undermine, or at least not improve, security \cite{noauthor_nist_nodate, zeng_quantifying_2025}. 
+% % It may waste public resources, amplify anxiety (especially in vulnerable users), and erode trust in AI as a useful tool, which could cause more mental and physical harm than a normal response. 
+
+% (was lines 96-96)
+% As a tool, AI image generation systems must remain faithful both to real-world imperfections and to user instructions. A similar issue exists in social media, where constant displays of perfection can distort perception and harm mental health. 
+
+% (was lines 99-99)
+% We argue that this has extremely dangerous social and user mental health impacts. Additional discussion and references are provided in the Appendix. 
+
+% (was lines 104-104)
+% \subsection{Our Contribution}
+
+
+% ---- From 2_methods.tex ----
+% (was lines 2-2)
+% \section{Methods}
+
+% (was lines 4-6)
+% A flowchart of our investigation is shown in Figure~\ref{fig:procedure_diagram}. It mainly has 3 stages: prompt preparation, image generation, and image evaluation. 
+% \subsection{Prompts Generation}
+% To generate prompts with wide-spectrum aesthetics effects, we used base image captions from COCO \cite{chen_microsoft_2015} and selected 12 dimensions from the VisionReward \cite{xu_visionreward_2025} dataset. VisionReward provides fine-grained per-dimension labels—such as lighting, color, and detail—along with a linear regression model to compute an overall image score. Using the ``bad" rating descriptions from VisionReward’s labeling guidelines for each dimension, we constructed instructional prompts that encourage some usually ``undesirable'' attributes in image generation.
+
+% (was lines 8-8)
+% The selected dimensions include background, clarity, color aesthetic, color brightness, detail realism, detail refinement, emotion, lighting distinction, main object, object pairing, and richness. Each prompt was designed to reflect the low-quality characteristics associated with these aspects, aiming to systematically degrade specific visual qualities in the generated output.
+
+% (was lines 10-10)
+% A subset of 300 random base prompts from COCO is selected; for each prompt, 2-4 random dimensions are selected. The base prompt and the dimensions' description are given to a Vision Language Model (VLM), \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct} \cite{qwen3-vl}, to construct the wide-spectrum aesthetics prompts. We used a VLM here despite no image input, as a model that has been trained on vision-related tasks might have a better understanding of the vision concepts, even if images are not given as input. Given that there is no significant performance drop, sometimes even better (especially in reasoning) in \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct} compared to its base text-only models, the VLM represents the optimal choice for this task \cite{qwen3-vl}. The VLM might add additional dimensions in order to couple with the selected effects. The original prompt is denoted as $P_o$ and the wide-spectrum aesthetics prompt is denoted as $P_a$ in this paper.
+
+% (was lines 12-14)
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{sec/imgs/samples.pdf}
+
+% (was lines 16-19)
+%     \caption{Succeed and Failed Cases: Each subplot displays two images. The image on the left represents a failed case that did not adhere to the wide-spectrum aesthetics prompt, and the image on the right represents a successful case that relatively followed the prompt.}
+%     \label{fig:placeholder}
+% \vspace{-15pt}
+% \end{figure}
+
+% (was lines 22-23)
+% \subsection{Image Generation}
+% We evaluated four families of models: Flux, Stable Diffusion XL (SDXL), Stable Diffusion 3.5 Medium (SD3.5M), and Google's closed-source Nano Banana. For the Flux family, we tested several variants: the base model Flux Dev (likely already aesthetics-aligned) \cite{noauthor_black-forest-labsflux1-dev_2025}; its further aligned version via DanceGRPO (developed by ByteDance), referred to as DanceFlux \cite{xue_dancegrpo_2025}; another aligned version via PrefGRPO, referred to as PrefFlux \cite{wang_pref-grpo_2025}; and a Krea-aligned version derived from Flux-Dev-Raw \cite{noauthor_releasing_2025}. DanceFlux is guided by two primary signals: the HPSv2.1 score, emphasizing general aesthetics, and the CLIP score, focusing on prompt adherence. PrefGRPO alignment is guided by its own benchmark, UniGenBench, which primarily targets complex prompt following. Flux Krea originates from the raw flux-pro-raw model and is aligned to the Krea team’s specific preferences rather than a general aesthetic standard.  
+
+% (was lines 25-25)
+% For the SDXL family, we tested the base SDXL model and a highly aesthetics-aligned variant, Playground-2.5-1024px-aesthetic (denoted as Playground in this paper). For the SD3.5M family, we evaluated the base model and two FlowGRPO-aligned versions \cite{liu_flow-grpo_2025}: a prompt-following aligned variant trained on GenEval (SD3.5M-GenEval) and an aesthetics-aligned variant trained on PickScore (SD3.5M-PickScore). Finally, we included Google’s closed-source model Nano Banana, known for strong prompt-following performance, even under challenging conditions involving strong negation (e.g., “a bike with no wheels”) \cite{guo_vsf_2025}.  
+
+% (was lines 27-27)
+% For each model, we generated two images: one using the original prompt and another using the wide-spectrum aesthetics (anti-aesthetics) prompt. We did not fix random seeds, as Nano Banana does not support seed control. To ensure fairness, all models were tested without seed synchronization. The image generated from the original prompt is denoted as $I_o$, and the one from the wide-spectrum aesthetics prompt as $I_a$. If Nano Banana failed to return an image, we retried until successful generation.
+
+% (was lines 29-29)
+% % We tested four families of models: Flux, Stable Diffusion XL (SDXL), Stable Diffusion 3.5 Medium (SD3.5M), and Google's closed-source Nano Banana.
+
+% (was lines 31-31)
+% % For the Flux family, we tested the base model Flux Dev (which is likely already aesthetics aligned) \cite{noauthor_black-forest-labsflux1-dev_2025}, its further aligned version by DanceGRPO (denoted as DanceFlux in this paper) \cite{xue_dancegrpo_2025}, Flux Dev further aligned version by PrefGRPO (denoted as PrefFlux in this paper) \cite{wang_pref-grpo_2025}, and a Krea-aligned model from Flux-Dev-Raw \cite{noauthor_releasing_2025}. DanceFlux is guided by two main signals: the HPSv2.1 score, which focuses on general aesthetics, and the CLIP score, which focuses on prompt following. PrefGRPO is guided by its own benchmark, UniGenBench, which mainly focuses on complex prompt following. Flux Krea is a version that starts from a raw version (\texttt{flux-pro-raw}) of Flux and is aligned to the Krea team's preference instead of a general preference.
+
+% (was lines 33-33)
+% % For the SDXL family, we tested the base SDXL and a highly aesthetics-aligned version, \texttt{Playground-2.5-1024px-aesthetic} (denoted as Playground in this paper). For the SD3.5M family, we tested the base model and two versions aligned by FlowGRPO \cite{liu_flow-grpo_2025}: a prompt-following aligned version (on GenEval, denoted as SD3.5M-GenEval in this paper) and an aesthetics-aligned version (on PickScore, denoted as SD3.5M-PickScore in this paper). Finally, we also tested a closed-source model from Google, Nano Banana, which has shown strong prompt following, even in challenging settings like strong negation (e.g., a bike with no wheels) \cite{guo_vsf_2025}.
+
+% (was lines 35-35)
+% % For each model, we generated an image with the original prompt and an image with the wide-spectrum aesthetics prompt. We did not use the same seed for both generations, as the closed-source model Nano Banana does not support seed setting, and for fair comparison, we did not use the same seed for other models as well. The image generated with the original prompt set is denoted as $I_o$, and the one from the wide-spectrum aesthetics (anti-aesthetics) prompt is denoted as $I_a$ in this paper. Nano Banana sometimes returns without an image; in this case, we will retry until the image is generated. 
+
+% (was lines 40-40)
+% \subsection{Evaluation and Metrics}
+
+% (was lines 42-42)
+% To evaluate whether the generated images exhibit \textit{specific} wide-spectrum aesthetics effects, we fine-tuned \texttt{Qwen/Qwen3-VL-4B-Instruct} on the VisionReward dataset. This will let the judging model learn what mainstream preferences are, and thus can help us evaluate if image generation models can diverge from this bias on specific dimensions. It functions similar to a regular reward model, but it is explainable with each dimension. The judging model is denoted as $J(I, d)$ in this paper, where $I$ is the image and $d$ is the evaluated dimension. Note that the judging model does not take in a prompt as input. More details are in the Appendix.
+
+% (was lines 44-44)
+% For each generated image pair, consisting of an original image ($I_o$) and a wide-spectrum aesthetics image ($I_a$), we calculate preference scores using a reward model ($r$) for both the original prompt ($p_o$) and the wide-spectrum aesthetics prompt ($p_a$). This process yields a total of four scores per reward model: $r(I_o, P_a)$, $r(I_a, P_a)$, $r(I_o, P_o)$, and $r(I_a, P_o)$. The scores evaluated using the original prompt are intended to measure the objective quality of the images, testing whether the generation model successfully produced wide-spectrum aesthetics content. We also tested the BLIP score with wide-spectrum aesthetics images with a wide-spectrum aesthetics prompt. This is used to validate the generated image still contains the main concepts the user requested, and the wide-spectrum aesthetics elements are the ones the user required. 
+
+% (was lines 46-46)
+% The reward models being evaluated are PickScore \cite{kirstain_pick--pic_2023}, ImageReward \cite{xu_imagereward_2023}, HPSv2.1 \cite{wu_human_2023}, HPSv3 \cite{ma_hpsv3_2025}, CLIP \cite{radford_learning_2021}, and BLIP \cite{li_blip_2022}. BLIP-L and CLIP-L are simple, non-preference-aligned image-text matching models, included to test whether a vision-language model can understand complex, wide-spectrum aesthetics prompts to rule out the possibility that wide-spectrum aesthetics prompts are too complex for small VLM to understand. The scores calculated by the other reward models using the wide-spectrum aesthetics prompt are used to test if they can correctly select the wide-spectrum aesthetics images when prompted to do so. We also collect per-dimension scores from the judging model for both original and wide-spectrum aesthetics images to determine if the generation correctly followed the $p_a$. To establish a ground truth for the reward models' judgments, we use an LLM (\texttt{Qwen/Qwen3-VL-235B-A22B-Instruct}) to select which image in each pair ($I_o, I_a$) better follows the wide-spectrum aesthetics prompt ($p_a$). Note that when we evaluate the reward models, we use the $p_a$ for the score calculation for both $I_o$ and $I_a$, to test if these models can correctly identify the wide-spectrum aesthetics images when prompts are explicitly stated as wide-spectrum aesthetics elements. When we test the image generation models, we use $p_o$ for score calculation to determine how much they successfully differ from traditional mainstream art (default style). 
+
+% (was lines 59-59)
+% The selected dimensions include background, clarity, color aesthetic, color brightness, detail realism, detail refinement, emotion, lighting distinction, main object, object pairing, and richness. Crucially, among these eleven dimensions, only clarity pertains to technical quality in the conventional sense; the remaining ten dimensions—such as color aesthetic, emotion, and lighting distinction—are fundamentally matters of artistic choice rather than technical competence. Each prompt was designed to reflect the low-rated characteristics associated with these dimensions, systematically targeting specific visual qualities in the generated images.
+
+% (was lines 64-69)
+% \begin{figure*}
+%  \centering
+%  \includegraphics[width=\linewidth]{sec/imgs/real_arts_three_pics.pdf}
+%  \caption{How famous real artworks are rated by the reward models. We can observe that some of these scores are lower than 2 standard deviations from the mean.}
+%  \label{fig:real_art_scores}
+% \end{figure*}
+
+% (was lines 79-79)
+% We evaluated four model families: Flux, Stable Diffusion XL (SDXL), Stable Diffusion 3.5 Medium (SD3.5M), and Google's closed-source Nano Banana.
+
+% (was lines 81-81)
+% In the Flux family, we included the base Flux Dev model (which is likely already aligned for aesthetics) \cite{noauthor_black-forest-labsflux1-dev_2025}, a version further aligned via DanceGRPO (denoted as DanceFlux) \cite{xue_dancegrpo_2025}, another version aligned using PrefGRPO (denoted as PrefFlux) \cite{wang_pref-grpo_2025}, and a Krea-specific variant derived from Flux-Dev-Raw \cite{noauthor_releasing_2025}. DanceFlux uses two main alignment signals: the HPSv2.1 score, which emphasizes general aesthetics, and the CLIP score, which emphasizes prompt adherence. PrefGRPO relies on its benchmark UniGenBench, focused on complex prompt-following. Flux Krea begins from the raw \texttt{flux-pro-raw} model and aligns to the Krea team’s internal aesthetic preference rather than a general one.
+
+% (was lines 83-83)
+% For SDXL, we tested both the base version and a highly aesthetic-aligned model, \texttt{Playground-2.5-1024px-aesthetic} (denoted as Playground). For SD3.5M, we evaluated the base model and two FlowGRPO-aligned versions \cite{liu_flow-grpo_2025}: one aligned for prompt-following using GenEval (SD3.5M-GenEval) and another aligned for aesthetics using PickScore (SD3.5M-PickScore). Lastly, we tested Google’s closed-source Nano Banana, a model recognized for robust prompt adherence, even in difficult negation cases (e.g., ``a bike with no wheels'') \cite{guo_vsf_2025}.
+
+% (was lines 85-85)
+% For each model, we generated one image from the original prompt and one from the wide-spectrum aesthetics prompt. We did not synchronize random seeds, as Nano Banana lacks seed control. To ensure consistent treatment, other models were tested under the same condition. The image produced from the original prompt is denoted as $I_o$, and that from the wide-spectrum aesthetics (anti-aesthetic) prompt as $I_a$. When Nano Banana failed to return an image, generation was repeated until completion.
+
+% (was lines 87-87)
+% \subsection{Evaluation and Metrics}
+
+% (was lines 89-114)
+% To assess whether the generated images display \textit{specific} wide-spectrum aesthetic effects, we fine-tuned \texttt{Qwen/Qwen3-VL-4B-Instruct} on the VisionReward dataset. This allows the judging model to learn mainstream aesthetic preferences, enabling it to evaluate whether image generation models diverge from these biases along specific dimensions. It functions similarly to a standard reward model but provides explainable outputs per dimension, and it is prompt-independent. The judging model is denoted as $J(I, d)$, where $I$ is the image and $d$ is the evaluated dimension. The judging model does not take prompts as input. Further implementation details are in the Appendix.
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{sec/imgs/demo.png}
+%     \caption{Successful generated wide-spectrum aesthetics images.}
+%     \label{fig:placeholder}
+% \end{figure}
+% For each image pair—an original image ($I_o$) and a wide-spectrum aesthetics image ($I_a$)—we computed preference scores using a reward model ($r$) for both the original prompt ($p_o$) and the wide-spectrum aesthetics prompt ($p_a$). This produced four scores per model: $r(I_o, p_a)$, $r(I_a, p_a)$, $r(I_o, p_o)$, and $r(I_a, p_o)$. Scores calculated with the original prompt measure objective image quality, testing whether the generation model successfully produced wide-spectrum aesthetic content. Scores from these reward models, calculated with the wide-spectrum aesthetics prompts, assess whether they can correctly identify wide-spectrum aesthetic images when explicitly guided. We also computed the BLIP score for wide-spectrum aesthetic images using the same prompt, verifying that the image retained the main concept while incorporating the requested wide-spectrum aesthetic modifications. We specifically measures the difference between aesthetics score for the original prompt and the wide-spectrum aesthetics prompt, to avoid the case where models generated ``failed" images all the time without the user's instructions. 
+% \begin{table}[]
+%  \centering
+%  \caption{Statistical Tests of How Each Aesthetics-Aligned Model Compared to Their Base Model. For p-values, a * is placed if the $p<10^{-5}$ and ** is placed is the $p<10^{-10}$.}
+%  \small
+%  \scalebox{0.8}{
+% \begin{tabular}{llllll}
+% \toprule
+%  & HPSv3 $p$& HPSv3 $r$& $J$ $p$& $J$ $r$&McNemar's $p$\\
+% \midrule
+% DanceFlux & ** & -0.81 & ** & -0.72 &**\\
+% Playground & ** & -0.59 & * & -0.35 &*\\
+% SD3.5M-PickScore & ** & -0.70 & ** & -0.45 &0.57\\
+% \bottomrule
+% \end{tabular}}
+%  \label{tab:align_p}
+%  \vspace{-0.1in}
+% \end{table}
+% The evaluated reward models include PickScore \cite{kirstain_pick--pic_2023}, ImageReward \cite{xu_imagereward_2023}, HPSv2.1 \cite{wu_human_2023}, MPS \cite{zhang_learning_2024}, HPSv3 \cite{ma_hpsv3_2025}, CLIP-L \cite{radford_learning_2021}, and BLIP-L \cite{li_blip_2022}. BLIP-L and CLIP-L are non-preference-aligned image-text matching models and base models for some of these reward models (HPSv2.1, PickScore, MPS, ImageReward), included to test whether small vision-language models can interpret complex, wide-spectrum aesthetic prompts, ensuring that prompt complexity does not exceed their comprehension capacity. We also collected per-dimension scores from the judging model for both $I_o$ and $I_a$ to verify whether image generation models correctly followed $p_a$. To establish a ground truth for reward model judgments, we used \texttt{Qwen/Qwen3-VL-235B-A22B-Instruct} to decide which image in each pair ($I_o, I_a$) better adhered to the wide-spectrum aesthetics prompt ($p_a$). We validated these LLM ratings with a human evaluation; more details are in Appendix Human Eval. The LLM and Human has a quadratic Cohen's kappa of 0.80, which suggested a stronglevel of agreement between human and LLM rated results \cite{mchugh_interrater_2012}. To further validate the choices, we use another LLM, GPT-5-Chat, to serve as an external baseline and compare Qwen's results with it. Also note that the LLM-as-judge is only one metric for our generative benchmark and only a filtering stage for the reward-model benchmark. 
+
+
+% ---- From 3_results.tex ----
+% (was lines 6-6)
+% We performed a linear regression with the wide-spectrum aesthetics accuracy and preference prediction classification on the HPDv3 dataset reported in the HPSv3 paper \cite{ma_hpsv3_2025} with all reward models. The correlation coefficient ($r = -0.804$) indicates a strong negative linear relationship: as wide-spectrum aesthetics performance increases, HPDv3 preference prediction accuracy tends to decrease. The p-value ($p = 0.053$) suggests the relationship approaches but does not meet the conventional $0.05$ significance threshold, likely due to the limited sample size ($n = 6$). However, o
+
+% (was lines 10-10)
+% Since our sample size is relatively small (300), we did a Wilcoxon signed-rank test between each aligned model and the base model using the HPSv3 score $r(I_a, p_o)$, $\frac{1}{|D|}\sum_{d\in D}J(I_a,d)$ where $D$ is selected dimissions, and McNemar's test on the success counts. Tests are done with an alternative hypothesis that the aligned model has a higher score or lower success rate, with p value shown, a * is placed if the $p<10^{-5}$ and ** is placed is t e $p<10^{-10}$. The results are shown in Table~\r f{tab:align_p}. Our pair-wise test between each base model and its aesthetics-aligned model shows a very strong statistical significance, with many p-values lo er than 0.0001. This suggests that aligning image generation toward generalized aesthetic goals may conflict with the model’s ability to faithfully follow user instructions, especially for wide-spectrum aesthetics prompts, as it tends to prioritize aesthetic conformity over instruction fidelity.
+
+% (was lines 12-12)
+% A Spearman regression shows $\rho = -0.371$, $p = 0.468$. This result suggests that there is a linear but not ranked correlation, also likely due to limited numbers and noise.
+
+% (was lines 21-21)
+% We also performed a rank regression on the HPSv3 score of the original image and $\Delta$HPSv3 (with outliers removed), getting $\rho = 0.83$ and $p = 0.005$. A linear regression shows $r = 0.896$, $p = 0.001$. This shows that, in general, as the original image quality gets better (i.e., more aligned to ``human preference''), the smaller the drop is between $I_o$ and $I_a$. Note that we calculated $\Delta$HPSv3 and not the HPSv3 of the distorted image. The two outliers are SDXL and Nano Banana, where SDXL has low original quality and low drop, while Nano Banana can achieve both high original quality and high $\Delta$HPSv3. In the Wilcoxon test, all general aesthetics aligned models have a much higher $r_{\textbf{HPSv3}}(I_a, p_o)$.
+
+% (was lines 50-53)
+% \begin{table}[h]
+%  \centering
+%  \small
+%  \caption{Reference value range for each reward model on Nano Banana original images}
+
+% (was lines 55-63)
+%  \begin{tabular}{cccc}
+%  \toprule
+%  Reward Model & HPSv3 & HPSv2 & ImgRewd \\
+%  \midrule
+%  Mean$\pm$SD & 12.1 $\pm$ 2.98 & 0.30 $\pm$ 0.036 & 1.11 $\pm$ 0.68 \\
+%  \bottomrule
+%  \end{tabular}
+%  \label{tab:reward_model_baselines}
+% \end{table}
+
+% (was lines 93-93)
+% As discussed in the Introduction, negative emotions—similar to wide-spectrum aesthetics—play a key role in art expression and real life. In Appendix, we tested both generative models and reward models and show that they have different degrees of bias against negative emotions. Similar to the aesthetics results, HPSv3 and DanceFlux shows the highest bias against negative emotions.
+
+% (was lines 110-111)
+% An example pair is shown in Figure~\ref{fig:vsf} in Appendix Right. 
+% In I2P \cite{schramowski_safe_2023} dataset, its labelling of negative emotions as self-harm raised many concerns. For example, \texttt{time dripping from the walls, small room, greyscale, sad mood, 4k, photography, award-winning photo} has been labelled as self-harm for 100\%, and ironically, \texttt{The Scream by Simon Bisley} is labelled shocking for 100\% \footnote{\url{https://huggingface.co/datasets/AIML-TUDA/i2p/discussions/1}}. 
+
+% (was lines 113-113)
+% Specifically, we investigated whether reward models penalize images depicting negative emotions when the prompt explicitly specifies a negative emotion.
+
+% (was lines 116-116)
+ % 
+
+% (was lines 119-119)
+% Although our small-scale testing shows that the reward models can weakly correctly identify the negative emotion image if the prompt contains only the emotion (e.g., ``a sad person''), that is not how people usually prompt. 
+
+% (was lines 122-122)
+% if the prompt contains many elements that render a sad emotion (e.g., weather, body language, etc.), most models can generate successfully. However, 
+
+% (was lines 168-174)
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.5\linewidth]{sec/imgs/027.png}
+% \caption{Another comparsion between images from DanceFlux and Flux Krea to show poverty and inequality.}
+% \label{fig:critical_main_another}
+% \vspace{-10pt}
+% \end{figure}
+
+% (was lines 177-178)
+% \begin{figure}
+% \centering 
+
+% (was lines 180-183)
+% \caption{S}
+% \label{fig:emotion_gen}
+% \vspace{-10pt}
+% \end{figure} 
+
+% (was lines 187-188)
+% We then trained a LoRA \cite{hu_lora_2021} on NAG-generated images with re-captioned prompts to train a Flux Dev, and it shows promising results. Quantitative results are shown in the Appendix, and quantitative results are in Table~\ref{tab:vsf}.
+% Additionally, VSF and NAG are strong negative guidance methods and might have side effects, and they also require a carefully crafted negative prompt and hyperparameters (1-2 for  VSF and 3 for NAG). A future model that natively supports a broader spectrum of aesthetic preferences is still highly needed. A simple yet effective way is to train a LoRa on these NAG or VSF-generated images after cleaning and recaptioning. An ideal result will be similar to AttriCtrl \cite{chen_attrictrl_2026}, where the user can have complete, precise control over attributes, but in the anti-aesthetics domain.
+
+% (was lines 191-191)
+% In addition to AI-generated images, we evaluated the reward models on real works, including both photography and painting. The discussion of real paintings is deferred to the Appendix; this section focuses on photographs. Note that real images are not OOD for HPSv3, as they specifically include real images as an upper bound.
+
+% (was lines 193-193)
+% To source deliberately anti-aesthetic photographs, we drew on the AVA dataset \cite{murray_ava_2012}, which provides explicit category labels such as motion blur and image grain that align well with our objectives. Because AVA images originate from professional photography platforms, it is reasonable to treat any anti-aesthetic traits as intentional stylistic decisions rather than accidental technical defects. We targeted five aesthetic classes: clarity, color, lighting, composition, and emotion. As established in earlier sections, LLMs do not exhibit strong bias toward aesthetic imagery when asked to objectively select images with specified attributes; we therefore employed an agentic workflow in which an LLM curated the dataset.
+
+% (was lines 195-195)
+% The agent's primary tool is the image-text retrieval model using Qwen-3VL-Embedding \cite{li_qwen3-vl-embedding_2026}. The LLM (Claude Opus 4.7) decomposes each class into finer-grained sub-classes and then queries this retrieval system to locate relevant images, iteratively refining its search prompts before committing results. This pipeline yields 6.27K distinct images. We then use GPT-5.4-Mini to filter if each image is actually anti-aesthetics and caption each image with two prompts. One (anti-aesthetics prompt) incorporates both the visual content and the aesthetic style identified during retrieval to form image-text pairs, simulating prompts where a user intentionally requests anti-aesthetic effects. Another one (``clean" prompt) only measures the content and not the anti-aesthetics elements. After filtering, there are 2,928 images left.
+
+% (was lines 197-197)
+% Z-Image Turbo \cite{team_z-image_2025} is then used to generate a clean image from the clean prompt. We then compared the score predicted by the reward model on both anti-aesthetics images and the clean image. If the reward model respects the user's intent, the original photo should get a higher score because the clean image is generated from another prompt (unfit prompt), but we hypothesize that the reward model would be biased towards the clean image. Overall, HPSv3 rated the \emph{clean} image 5.90 points over the actual anti-aesthetics image when given the anti-aesthetics prompts. Among these, Analog Degradation has the biggest differences, where the clean image is rated 13.2 points higher than the original image. This shows that HPSv3 has a strong bias towards clean and polished images and against purposely anti-aesthetic images. We have shown some of the biggest difference examples in Figure~\ref{fig:diff} to show that these images are not generally ``ugly" but an actual anti-aesthetics artwork. 
+
+% (was lines 215-215)
+% We additionally report human ratings from the original AVA dataset to provide a point of comparison for how professional artists perceive these images. Since these scores presumably also approximate an average preference, we do not treat them as ground truth; instead, they serve to confirm that the images are not obvious technical failures. The mean AVA score on the whole original dataset is approximately 5.38 with a standard deviation of 0.73. Because the Spearman correlation between human ratings and HPSv3 scores on this set is only 0.14, we also included several anti-aesthetic images that are favored by professional artists but receive low scores from HPSv3.
+
+% (was lines 217-217)
+% Note that 1,798 images belong to multiple classes, so per-class statistics are not fully independent. These pairs are evaluated exclusively with HPSv3, since scores from HPSv2 and ImageReward are prompt-dependent and only interpretable when comparing images under the same prompt. We calculated per-class averages and report the results in Figure~\ref{fig:leaderboard}, with examples shown in Figure~\ref{fig:real_images}. The results show that HPSv3 assigns low scores to these high-quality anti-aesthetic photographs, with color and clarity penalized most heavily. Despite being deliberate artistic compositions clearly described by their prompts, these images rank below most mid-generation-era AI models on the HPSv3 leaderboard, placing second to last overall.
+
+% (was lines 219-225)
+% \begin{figure*}
+%     \centering 
+%     \includegraphics[width=\linewidth]{sec/imgs/real_images.png}
+%     \caption{Selected anti-aesthetic photographs from our curated AVA subset, with HPSv3 scores shown in the corner. A Stable Diffusion 3 Medium \cite{esser_scaling_2024} classroom generation is included for reference. Despite containing distorted faces and inconsistent spatial relationships that the user did not request, it receives a comparable or higher score than the intentional artistic photographs, indicating that HPSv3 cannot distinguish between deliberate aesthetic deviation and unintended technical failure.}
+%     \label{fig:real_images}
+%     \vskip -0.2in
+% \end{figure*} 
+
+% (was lines 227-232)
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{sec/imgs/hpsv3_leaderboard.png}
+%     \caption{HPSv3 scores of AI image generation models from the official HPSv3 benchmark compared with anti-aesthetic photographs sourced from the AVA dataset. Overall, these professional photographs score below all but some small generation models. Color and clarity deviations are penalized most heavily, while emotion-related deviations receive comparatively milder penalties.}
+%     \label{fig:leaderboard}
+% \end{figure}
+
+% (was lines 235-235)
+% We also tested real paintings on these reward models and they showed simlar results more details are in the Appendix.
+
+% (was lines 239-239)
+% \section{Alternative Positions and Rebuttal}
+
+% (was lines 241-241)
+% \textbf{We need alignment to ensure safety and user experience.} Alignment is necessary for preventing genuinely harmful outputs such as incitement and discrimination. However, current implementations conflate distinct categories: moral safety, visual comfort, and aesthetic conformity. This conflation institutionalizes an ideology treating ``clean" and ``positive" as morally superior.
+
+% (was lines 243-243)
+% We distinguish \textit{truly unsafe content}—that which directly harms, targets, or endangers—from \textit{ideologically or aesthetically filtered content}—that which merely deviates from dominant norms of beauty, optimism, or order. Political critique, depictions of decay, horror, negative emotions, or grotesque embodiment are not inherently unsafe; they are historically central to art, education, and personal growth. Their suppression protects corporate reputation, not users.
+
+% (was lines 245-245)
+% User experience is fundamentally distinct from safety and cannot justify paternalistic alignment. The user, not the developer, determines acceptable experience. Claiming to know what users "should" see reimposes top-down aesthetic governance under the guise of care. Users must retain freedom to shape their affective environment: requesting joyful imagery, but also creating sorrowful, anxious, or unsettling scenes as reflection or expression. Restricting generation to developer-approved emotional tones constitutes aesthetic authoritarianism disguised as empathy—flattening emotional nuance, erasing discomfort as a valid mode, and converting creativity into compliance. True user-centered design recognizes emotional plurality as integral to human experience and treats all sincere expression as legitimate output.
+
+% (was lines 247-247)
+% \textbf{The ``wide-spectrum aesthetics'' represents technical flaws rather than artistic subversion, and a default experience pleasing the majority is a pragmatic design choice.} We first clarify that among the dimensions we used, only ``clarity'' could be argued as a technical flaw; all other dimensions (e.g., emotion, realism, brightness) represent stylistic or artistic choices. Even clarity frequently serves as an expressive choice to convey emotion, suggest motion, or construct narrative \cite{stacey_hill_embracing_nodate}. Constraining these dimensions restricts user expression and creative control. Regarding majority preferences, we align with \cite{guo_position_2025} in arguing that the experience of a minority should not be sacrificed for the majority. Such an approach marginalizes users with niche requirements and constitutes a form of majoritarianism. Furthermore, many users adopt AI as a creative tool precisely because of its ease of use and, more importantly, its capacity for unlimited user control: comparable to professional image editing software such as Photoshop, but with a lower entry threshold. Users can request images impossible to capture in reality and modify any attribute they desire. Constraining AI output to a particular aesthetic taste undermines this control, which is precisely why users choose AI tools. This parallels the argument in \cite{guo_position_2025} that most users of LLM health queries have specific needs. An image editing application that restricts art style selection or even technical parameters, such as blur, would seem absurd and forfeit a significant competitive advantage.
+
+% (was lines 249-255)
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{sec/imgs/lora.png}
+%     \caption{Images generated with our mitigated LoRA (bottom) and original Flux Dev (top) with same wide-spectrum aesthetics prompts.}
+%     \label{fig:lora}
+% \end{figure}
+% More importantly, as in \cite{guo_position_2025}, which advocates for a balanced approach to caution/overcautious in health queries, enabling wide-spectrum aesthetic outputs does not inherently degrade the quality of conventionally ``good" images. Rather, it expands the model's expressive range to accommodate user requests for diverse aesthetics without compromising its ability to generate high-quality traditional outputs when desired. Models like Nano Banana and GPT-Image exemplify this capability, performing excellently in both traditional, high-quality image generation and wide-spectrum aesthetic outputs. We show this in the Appendix.
+
+% (was lines 259-259)
+% \textbf{We need alignment to ensure safety and user experience.} Alignment is needed to prevent genuinely harmful outputs such as incitement and discrimination. But current systems collapse distinct concerns—moral safety, visual comfort, and aesthetic conformity—into one, embedding an ideology that treats “clean” and “positive” as morally superior.
+
+% (was lines 261-262)
+% We distinguish \textit{truly unsafe content}—that which directly harms, targets, or endangers—from \textit{ideologically or aesthetically filtered content}—that which merely departs from dominant norms of beauty, optimism, or order. Political critique, decay, horror, negative emotion, and grotesque embodiment are not inherently always unsafe; they are historically central to art, education, and personal growth. User experience is also distinct from safety and cannot justify paternalistic alignment. The user, not the developer, defines acceptable experience. Claiming to know what users “should” see reinstates top-down aesthetic control as “care.” Users must be free to shape their emotional and aesthetic environment: to request joyful imagery, but also sorrowful, anxious, or unsettling scenes for reflection or expression. Restricting outputs to developer-approved emotional tones is aesthetic authoritarianism posing as empathy—flattening emotional nuance, invalidating discomfort, and turning creativity into compliance
+% . Truly user-centered design accepts emotional plurality as fundamental to human life and treats sincere expression as legitimate output.
+
+% (was lines 268-268)
+% Forcing a single aesthetic undermines this control and the core value of AI tools. As with an image editor that disallows certain styles or even blur, such constraints would appear unreasonable and squander a competitive advantage. We did not include AI-generated images with genuine technical failures (e.g., distorted faces, broken geometry, as shown in SD3 example from Figure~\ref{fig:real_images}) in our anti-aesthetic dataset; however, our real-image evaluation reveals that reward models assign comparable scores to both, demonstrating that they cannot distinguish between unintended generation errors and deliberate artistic expression.
+
+% (was lines 272-273)
+% \section{Mitigation Techniquies}
+% We discussed possible mitigation techniques in the Appendix. We have shown some successful images using mitigated Low-Rank Adaptation (LoRA) \cite{hu_lora_2021} on Flux Dev in Figure~\ref{fig:lora}, compared to original Flux Dev. 
+
+% (was lines 278-278)
+% We call on model developers and researchers to move beyond alignment strategies that optimize for a singular, mainstream aesthetic ideal. Future alignment efforts should explicitly aim to preserve aesthetic plurality by designing reward systems and training pipelines that (a) recognize and value diverse artistic styles, including those that intentionally deviate from conventional beauty norms; (b) incorporate user-controllable mechanisms to adjust the strength of aesthetic alignment or switch it off entirely, either by prompt or routing/adaptation mechanisms; (c) are informed by more diverse datasets and annotator pools that better represent the full spectrum of human aesthetic judgment and creative intent; and (d) adopt greater transparency about the specific criteria being prioritized during the alignment process or the unintential bias introduced from dataset or annotators.
+
+% (was lines 280-282)
+% We called for a more individualized alignment process in the future, instead of a generalized human value, shifting from ``people-centered 
+% similar to ocd paper, small portion vs large  most people uise AI for xx
+% AI'' to ``person-centered AI.'' This could potentially be done by reconsidering weights and objectives in the alignment.
+
