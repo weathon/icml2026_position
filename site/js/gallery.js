@@ -393,3 +393,70 @@ window.AAS_REAL_CLEAN_URL = function(i)  { return `img/asserts/real/${i}_clean.j
 
 window.AAS_REAL_PAGE = 'https://huggingface.co/datasets/weathon/aas_real_images';
 window.AAS_BENCH_PAGE = 'https://huggingface.co/datasets/weathon/aas_benchmark_final';
+
+window.AAS_LAPIS_SAMPLES = [
+  {
+    "i": 7482,
+    "hpsv3": -4.28,
+    "caption": "A painting depicts a bright, sunlit scene with white buildings against a clear blue sky. A small white church with a bell tower and a red cross is visible on the left. In the foreground, a white domed structure and a s\u2026"
+  },
+  {
+    "i": 5863,
+    "hpsv3": -3.7,
+    "caption": "This is a painting depicting a densely built hillside settlement. The composition is dominated by layered, textured structures in earthy tones of brown, tan, and ochre, suggesting stone or adobe construction. A white b\u2026"
+  },
+  {
+    "i": 3018,
+    "hpsv3": -3.22,
+    "caption": "A sketch on yellowish paper shows a stylized, abstract figure riding a horse. The horse is drawn with a long neck, pointed ears, and a simple body. The rider is depicted with a large head, a long arm raised, and a body\u2026"
+  },
+  {
+    "i": 8236,
+    "hpsv3": -3.21,
+    "caption": "A painting depicts a dark blue vase holding a cluster of white flowers. The flowers are rendered with textured, circular strokes, appearing dense and full. A green leaf or stem element is visible behind the flowers. Th\u2026"
+  },
+  {
+    "i": 2219,
+    "hpsv3": -3.16,
+    "caption": "A painting depicts a bouquet of flowers in a vase, rendered in soft, muted tones of pink, white, and beige. The flowers, possibly roses, are loosely formed with visible brushstrokes, creating a textured, impressionisti\u2026"
+  },
+  {
+    "i": 8216,
+    "hpsv3": -2.82,
+    "caption": "A close-up view of tree trunks in a forest. The trunks are slender and light-colored, with dark vertical markings. They stand against a background of dense, textured foliage in shades of green and yellow. The image has\u2026"
+  },
+  {
+    "i": 35,
+    "hpsv3": -2.13,
+    "caption": "A painting depicts a brown, woolly animal, possibly a sheep or goat, lying on a light-colored, flat surface. The animal is positioned horizontally, facing left, with its legs tucked beneath its body. A long, thin, dark\u2026"
+  },
+  {
+    "i": 4648,
+    "hpsv3": -2.12,
+    "caption": "A painting depicts a large, dark tree casting a prominent shadow over a white house with a red chimney. The house is situated on a bright yellow-green lawn under a cloudy sky with patches of blue. A small figure in lig\u2026"
+  },
+  {
+    "i": 8728,
+    "hpsv3": -1.72,
+    "caption": "A painting depicts a dramatic landscape with towering, textured rock formations in beige and ochre, set against a dark, stormy sky of deep blues and blacks. Below, a calm body of water reflects the sky and the base of\u2026"
+  },
+  {
+    "i": 9709,
+    "hpsv3": -1.62,
+    "caption": "A snow-covered landscape features a horse pulling a sled with a person, moving across a field. Bare trees stand in the foreground, while buildings with snow-laden roofs are visible in the background under a pale sky. T\u2026"
+  },
+  {
+    "i": 11344,
+    "hpsv3": -1.25,
+    "caption": "A painting depicts a man with a beard and glasses, wearing a dark garment with white and yellow floral patterns. He is seated, holding a white object with similar floral designs. The background is dark and indistinct,\u2026"
+  },
+  {
+    "i": 3400,
+    "hpsv3": -1.11,
+    "caption": "This is a monochromatic portrait of an elderly man with voluminous, white, curly hair. He has a deeply lined face with prominent wrinkles, dark, sunken eyes, and a solemn expression. He wears a dark garment with a high\u2026"
+  }
+];
+
+window.AAS_LAPIS_URL = function(i) { return `img/asserts/lapis/${i}.jpg`; };
+
+window.AAS_LAPIS_PAGE = 'https://huggingface.co/datasets/weathon/lapis';

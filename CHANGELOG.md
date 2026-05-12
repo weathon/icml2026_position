@@ -94,3 +94,70 @@ changes are not in scope of this log.
 - **Functional layer intact across both modes**: navigation, links,
   scroll-to-anchor, keyboard focus, and table semantics all work in the
   Y2K chaos mode. The `prefers-reduced-motion` query disables marquees.
+
+## 2026-05-11 (later) — Sponsors, real-art gallery, polish
+
+### Added
+
+- **Sponsors block on the normal page** (`normal.html` + `normal.css`).
+  Three-card grid placed between BibTeX and the footer, with a new
+  `#sponsors` anchor in the top nav.
+  - **Canada Foundation for Innovation** (logo: `CFI.png`) — *Funding &
+    workstation*. Linked to `innovation.ca`.
+  - **Lambda** (logo: `lambda.png`) — *Large & long-running compute*.
+    Linked to `lambda.ai`.
+  - **Weathon Software** (custom SVG: `weathon.svg`) — *Lightweight
+    experiment compute*. Linked to `weasoft.com`.
+- **Custom SVG logo for Weathon Software** (`site/img/local/weathon.svg`).
+  A 320×80 wordmark with a dark-blue rounded-square mark on the left
+  containing a small white W stroke, cyan horizon line, and orange sun
+  (weather + compute motif), alongside the "Weathon SOFTWARE" wordmark in
+  Inter.
+- **Real Art gallery section** on both pages, sourced from the
+  `weathon/lapis` HuggingFace dataset (~10K real paintings, each with
+  HPSv3 / HPSv2 / ImageReward scores).
+  - Curated 12 representational artworks (landscapes, still lifes,
+    portraits, animals, scenes) with HPSv3 scores in the −1.11 to −4.28
+    range — all real paintings with clear subject matter that HPSv3
+    nevertheless places far below the 10–15 range of clean AI images.
+  - Filtered to exclude flat color fields, graph paper, fabric closeups,
+    minimalist monochrome, and other near-blank surfaces. Selection
+    criteria: representational keywords in the caption (portrait,
+    landscape, still life, animal, figure, etc.) combined with absence
+    of abstract keywords ("color field", "minimalist", "geometric
+    shapes", etc.).
+  - Each card displays the painting on a dark gallery mat with a single
+    red HPSv3 score badge + the dataset's AI-generated caption.
+  - Section title: "Recognized art that HPSv3 sees as below zero".
+  - On the anti page the section is inserted as Slide 7 / 9 with cat-badge
+    "REAL paintings @ negative HPSv3!!" and dossier-card styling matching
+    the rest of the Y2K mode.
+- **GitHub repo link** in four places: hero CTA + footer on the normal
+  page, hero toolbar + web-ring + footer Files on the anti page. Points
+  to `github.com/weathon/icml2026_position`.
+
+### Changed
+
+- **Removed the static `samples.jpg` paper figure** from both pages and
+  from disk. The figure was a frozen 3×3 snapshot of older curated
+  examples; the live dataset gallery below it now shows the actual
+  selected pairs with HPSv3 scores, so the static figure was
+  duplicative and slightly misleading.
+- **Renumbered anti-page slide counters** from N/8 to N/9 to make room
+  for the new Real Art slide. Section letter for objections bumped from
+  G → H; conclusion from H → I.
+- **Removed `section + section` 4px double-line and both `<hr class="fold">`
+  dividers** in the anti page. They created horizontal lines across
+  image-grid sections that could be misread as part of an image card.
+  Section breaks are now carried entirely by the slide counter + cat-badge
+  + heading stack.
+- **Fixed `.evidence` body text color** on the Six Risks slide cards to
+  `#000` (was inheriting cream-on-dark from `section p`), with an
+  exception for the dark Risk VI card which keeps acid-green-on-black.
+- **Fixed BibTeX label overlap** on the anti page: `pre.bibtex` now has
+  `padding-top: 36px` and `margin-top: 26px` so the floating
+  "★★★ COPY/PASTE TO CITE! ★★★" label sits clearly above the code
+  without clipping the first line.
+- **Contact lines** on both pages now route inquiries to Wenqi Marshall
+  Guo (`wg25r@student.ubc.ca`) with Shan Du listed as corresponding
+  author of record.

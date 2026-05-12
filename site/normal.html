@@ -18,6 +18,8 @@
       <a href="#risks">Risks</a>
       <a href="#results">Results</a>
       <a href="#gallery">Gallery</a>
+      <a href="#real-art">Real art</a>
+      <a href="#sponsors">Sponsors</a>
       <a href="#bibtex">BibTeX</a>
     </div>
     <div class="right">
@@ -44,6 +46,7 @@
 
     <div class="cta-row">
       <a class="btn primary" href="https://openreview.net/forum?id=1gQ4zc1Q8I">📄 Read the paper</a>
+      <a class="btn" href="https://github.com/weathon/icml2026_position">⌥ GitHub repo</a>
       <a class="btn" href="https://huggingface.co/datasets/weathon/aas_benchmark_final">🤗 Benchmark dataset</a>
       <a class="btn" href="https://huggingface.co/datasets/weathon/aas_real_images">🤗 Real-image dataset</a>
       <a class="btn" href="#bibtex">⌗ BibTeX</a>
@@ -344,6 +347,25 @@
   </div>
 </section>
 
+<section id="real-art">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Real artworks · LAPIS dataset</div>
+    <h2>Recognized art that HPSv3 sees as below zero</h2>
+    <p class="lead">
+      These are paintings — Color Field, Abstract Expressionism, expressionist still life, figurative naïve art — drawn from the <a href="https://huggingface.co/datasets/weathon/lapis">LAPIS</a> art dataset. Each was captioned and scored by HPSv3. They all sit in negative territory; HPSv3's typical range for AI generations is 0–15.
+    </p>
+    <p>
+      Real artworks ranked at the very bottom of HPSv3's own leaderboard — below most early AI generators. The reward model cannot distinguish between deliberate aesthetic deviation and unintended generation failure. We argue this is the systemic bias the paper identifies, made concrete.
+    </p>
+
+    <div class="art-gallery" id="art-gallery" style="margin-top: 22px;"></div>
+    <p class="muted" style="font-size: 13px; margin-top: 12px;">
+      LAPIS contains roughly 10K real artworks; the bottom-12 selection above is curated for variety across genre and style. Captions are AI-generated descriptions, not titles.
+    </p>
+  </div>
+</section>
+
 <section id="rebuttal">
   <span class="section-anchor"></span>
   <div class="container">
@@ -399,6 +421,46 @@
   </div>
 </section>
 
+<section class="sponsors" id="sponsors" aria-label="Sponsors and acknowledgments">
+  <div class="container">
+    <div class="eyebrow">Sponsors &amp; acknowledgments</div>
+    <h2>This work was made possible by</h2>
+    <p class="lead">Compute, infrastructure, and funding support from the organizations below.</p>
+
+    <div class="sponsor-grid">
+      <div class="sponsor">
+        <div class="logo-wrap">
+          <a href="https://www.innovation.ca/" target="_blank" rel="noopener">
+            <img src="img/local/CFI.png" alt="Canada Foundation for Innovation">
+          </a>
+        </div>
+        <p class="role">Funding &amp; workstation</p>
+        <p class="body"><b>Canada Foundation for Innovation</b> provided research funding and the local workstation hardware used throughout this project.</p>
+      </div>
+
+      <div class="sponsor">
+        <div class="logo-wrap">
+          <a href="https://lambda.ai/" target="_blank" rel="noopener">
+            <img src="img/local/lambda.png" alt="Lambda">
+          </a>
+        </div>
+        <p class="role">Large &amp; long-running compute</p>
+        <p class="body"><b>Lambda</b> provided cloud GPU credits for the heavy, long-running experiments: image generation across all model families and reward-model evaluation at scale.</p>
+      </div>
+
+      <div class="sponsor">
+        <div class="logo-wrap">
+          <a href="https://weasoft.com/" target="_blank" rel="noopener">
+            <img src="img/local/weathon.svg" alt="Weathon Software">
+          </a>
+        </div>
+        <p class="role">Lightweight experiment compute</p>
+        <p class="body"><b>Weathon Software</b> provided playground-style compute for fast, iterative experiments and prototyping during exploration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container">
     <div class="cols">
@@ -414,6 +476,7 @@
         <h5>Resources</h5>
         <ul>
           <li><a href="https://openreview.net/forum?id=1gQ4zc1Q8I">Paper PDF</a></li>
+          <li><a href="https://github.com/weathon/icml2026_position">GitHub repo</a></li>
           <li><a href="https://huggingface.co/datasets/weathon/aas_benchmark_final">AI benchmark</a></li>
           <li><a href="https://huggingface.co/datasets/weathon/aas_real_images">Real-image dataset</a></li>
         </ul>
@@ -533,11 +596,33 @@
     return div;
   }
 
+  function makeArt(a) {
+    const div = document.createElement('div');
+    div.className = 'art-card';
+    const hps3 = (a.hpsv3 != null) ? `<span class="score-badge">HPSv3 ${a.hpsv3.toFixed(2)}</span>` : '';
+    div.innerHTML = `
+      <div class="art-frame">
+        <img alt="real artwork from LAPIS" loading="lazy" referrerpolicy="no-referrer" src="${AAS_LAPIS_URL(a.i)}">
+      </div>
+      <div class="meta">
+        <div class="score-row">${hps3}</div>
+        <div class="caption">${a.caption}</div>
+      </div>
+    `;
+    div.querySelectorAll('img').forEach(hookImg);
+    return div;
+  }
+
   const bench = document.getElementById('benchmark-gallery');
   AAS_BENCHMARK_PAIRS.forEach(p => bench.appendChild(makePair(p)));
 
   const real = document.getElementById('real-gallery');
   AAS_REAL_SAMPLES.forEach(s => real.appendChild(makeThumb(s)));
+
+  const art = document.getElementById('art-gallery');
+  if (art && window.AAS_LAPIS_SAMPLES) {
+    AAS_LAPIS_SAMPLES.forEach(a => art.appendChild(makeArt(a)));
+  }
 })();
 </script>
 
