@@ -1195,6 +1195,74 @@ sub, sup { font-family: "JetBrains Mono", monospace; font-size: 0.75em; }
   background: var(--paper);
 }
 
+/* =====================================================================
+   Flux Dev + VSF — placeholder gallery (3 samples, filled in later)
+   ===================================================================== */
+.vsf-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+@media (max-width: 820px) { .vsf-gallery { grid-template-columns: 1fr; } }
+
+.vsf-card {
+  margin: 0;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.vsf-imgwrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--bg-deep) 0 16px,
+      var(--paper) 16px 32px
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vsf-imgwrap::before {
+  content: "pending";
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--paper);
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+}
+.vsf-card.has-image .vsf-imgwrap {
+  background: var(--bg-deep);
+}
+.vsf-card.has-image .vsf-imgwrap::before { content: none; }
+.vsf-card figcaption {
+  padding: 12px 14px 14px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.vsf-stamp {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ochre);
+  text-transform: uppercase;
+}
+.vsf-note {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
 /* Reduced-motion guard */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

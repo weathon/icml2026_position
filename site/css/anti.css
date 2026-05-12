@@ -1308,3 +1308,51 @@ pre.bibtex::before {
   border-top: 3px solid #000;
   text-shadow: none;
 }
+
+/* ====================================================================== */
+/* Flux Dev + VSF — 3-up placeholder dossier */
+.vsf-gallery-anti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+@media (max-width: 820px) { .vsf-gallery-anti { grid-template-columns: 1fr; } }
+
+.vsf-file {
+  padding: 0;
+}
+.vsf-imgwrap-anti {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-bottom: 3px solid #000;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--neon-yellow) 0 18px,
+      #000 18px 22px
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vsf-imgwrap-anti::before {
+  content: "AWAITING IMAGE";
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  background: #000;
+  color: var(--neon-yellow);
+  padding: 6px 14px;
+  border: 3px solid var(--neon-yellow);
+  text-shadow: 2px 2px 0 red;
+  transform: rotate(-2deg);
+  box-shadow: 4px 4px 0 red;
+}
+.vsf-file.has-image .vsf-imgwrap-anti { background: #000; }
+.vsf-file.has-image .vsf-imgwrap-anti::before { content: none; }
+.vsf-file img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}

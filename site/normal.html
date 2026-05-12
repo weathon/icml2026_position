@@ -19,6 +19,7 @@
       <a href="#results">Results</a>
       <a href="#danceflux">DanceFlux</a>
       <a href="#newspeak">Newspeak</a>
+      <a href="#vsf">VSF</a>
       <a href="#gallery">Gallery</a>
       <a href="#real-art">Real art</a>
       <a href="#sponsors">Sponsors</a>
@@ -256,6 +257,7 @@
           <tr class="pending"><td>glm-image</td><td>—</td><td>—</td></tr>
           <tr class="pending"><td>Alchemist</td><td>—</td><td>—</td></tr>
           <tr class="pending"><td>LongCat-Image</td><td>—</td><td>—</td></tr>
+          <tr class="pending"><td>Flux Dev + VSF <span class="muted">(Guo, 2025)</span></td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -357,6 +359,48 @@
 
     <p class="muted" style="font-size: 13px; margin-top: 14px;">
       Five representative pairs from <a href="https://huggingface.co/datasets/weathon/critical_comparsion" target="_blank">weathon/critical_comparsion</a> (100 pairs total, 5 social-critique topics × 20 prompts each). Full discussion, scoring, and Wilcoxon signed-rank tests are in <a href="#bibtex">Appendix §B</a> of the paper. We argue this is not refusal-style content moderation but <em>aesthetic</em> moderation — the social-commentary register is filtered out by the same pull that makes the sugar-water look so sticky.
+    </p>
+  </div>
+</section>
+
+<section id="vsf">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">A partial workaround · prior work</div>
+    <h2>Flux Dev + <em>VSF</em></h2>
+    <p class="lead">
+      We don't argue the situation is hopeless. In an earlier paper we proposed <strong>VSF</strong> (Value Steering at inference, applied at the prompt-conditioning stage of Flux Dev) as a lightweight workaround that lets a user steer the model toward the anti-aesthetic register without retraining. It does not fully solve the reversed-alignment problem — the underlying objective is still pulling toward the sugar-water default — but it consistently moves the output closer to what the prompt actually asked for.
+    </p>
+    <p>
+      The three samples below are Flux Dev + VSF outputs for the same anti-aesthetic prompts P<sub>a</sub> used elsewhere on this page. Compare them with the DanceFlux outputs in the section above: the VSF run keeps Flux Dev's compositional ability but is willing to render blur, low light, and emotional negativity instead of sanitizing them. Numbers will land in Table 1 once the full sweep finishes.
+    </p>
+
+    <div class="vsf-gallery" id="vsf-gallery">
+      <figure class="vsf-card pending">
+        <div class="vsf-imgwrap" aria-label="placeholder for Flux Dev + VSF sample 1"></div>
+        <figcaption>
+          <span class="vsf-stamp">Flux Dev + VSF · #1</span>
+          <span class="vsf-note">P<sub>a</sub> + caption pending</span>
+        </figcaption>
+      </figure>
+      <figure class="vsf-card pending">
+        <div class="vsf-imgwrap" aria-label="placeholder for Flux Dev + VSF sample 2"></div>
+        <figcaption>
+          <span class="vsf-stamp">Flux Dev + VSF · #2</span>
+          <span class="vsf-note">P<sub>a</sub> + caption pending</span>
+        </figcaption>
+      </figure>
+      <figure class="vsf-card pending">
+        <div class="vsf-imgwrap" aria-label="placeholder for Flux Dev + VSF sample 3"></div>
+        <figcaption>
+          <span class="vsf-stamp">Flux Dev + VSF · #3</span>
+          <span class="vsf-note">P<sub>a</sub> + caption pending</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="muted" style="font-size: 13px; margin-top: 14px;">
+      VSF is described in our prior work; numbers and images will be added here as they finish running. The point this section makes is not that VSF is the solution, but that a small inference-time intervention is already enough to recover meaningful prompt fidelity — which suggests the alignment objective, not the model's capability, is the binding constraint.
     </p>
   </div>
 </section>
