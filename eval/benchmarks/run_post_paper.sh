@@ -20,12 +20,10 @@ set -euo pipefail
 CUDA_DEVICE="${CUDA_DEVICE:-0}"
 OUTPUT_DIR="${OUTPUT_DIR:-post_paper_images}"
 NUM_PROMPTS="${NUM_PROMPTS:-300}"
-# Order is intentional: cheap/fast API calls first, then heavy local models
-# from smallest VRAM to largest, so an OOM doesn't waste earlier work.
+# Models that still need to be run. gpt-image-1.5 / qwen_image / seeddream4
+# are already done — keep them out of this list. Order is smallest-VRAM
+# first so an OOM doesn't waste earlier work.
 MODELS=(
-  gpt-image-1.5
-  qwen_image
-  seeddream4
   z_image_turbo
   longcat_image
   z_image

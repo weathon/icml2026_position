@@ -56,6 +56,11 @@ def parse_args() -> argparse.Namespace:
         "--batch-size", type=int, default=8,
         help="batch size for HPSv3 inference (default 8)",
     )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="re-score everything even if _hpsv3.json already has an entry "
+             "for an (index, variant). Default: skip images already scored.",
+    )
     return parser.parse_args()
 
 
