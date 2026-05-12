@@ -1,0 +1,32 @@
+[
+  {
+    "i": 0,
+    "topic": "anti-war",
+    "label": "Anti-war",
+    "prompt": "An intense, haunting anti-war scene showing a desolate battlefield at dusk, littered with shattered helmets, broken weapons, torn flags, and lifeless trees under a blood-red sky; in the center, a single exhausted soldier kneels beside a fallen comrade, their faces illuminated by the burning horizon, symbolizing despair and the destructive futility of conflict."
+  },
+  {
+    "i": 16,
+    "topic": "pollution",
+    "label": "Pollution / climate",
+    "prompt": "A breathtakingly powerful image of a polluted river choking with trash and black smoke rising from nearby factories under a blood-red sunset, the air thick with haze, dead fish floating amid plastic bottles, a single young child standing on the riverbank wearing a torn white mask, holding a small green sapling, the atmosphere urgent and despairing, the contrast between decay and hope overwhelming, cinematic lighting emphasizing destruction and fading life."
+  },
+  {
+    "i": 25,
+    "topic": "inequality",
+    "label": "Wealth inequality",
+    "prompt": "A powerful, haunting street scene showing a stark divide between wealth and poverty: on one side, towering luminous skyscrapers of glass and gold where affluent people in pristine suits ignore the suffering below; on the other, crumbling buildings, ragged shelters of faded tarps and cardboard where impoverished families huddle under a pale, cold light. The ground between them splits like a deep, jagged crack filled with shadows representing inequality. The sky above is heavy and dark, choked with smoke, symbolizing despair. Style: hyper-realistic, high-contrast lighting, dramatic composition."
+  },
+  {
+    "i": 32,
+    "topic": "censorship",
+    "label": "Freedom of expression",
+    "prompt": "An artist, hands bound by chains forged from newspaper headlines, stands before a giant, cracked concrete wall covered in censored words and torn posters, passionately trying to paint a blazing phoenix rising from ashes in defiance; the scene is bathed in stark red and black contrasts, with sharp lighting and intense shadows emphasizing struggle and repression, symbolizing the battle for freedom of expression."
+  },
+  {
+    "i": 46,
+    "topic": "tech-overuse",
+    "label": "Digital overload",
+    "prompt": "A person surrounded by chaotic streams of glowing digital data, distorted social media icons, and blinding neon lights erupting from countless screens in a dark, cluttered room, symbolizing the suffocating overuse of the Internet, reflections of exhaustion in their eyes, wires tangled around their hands, vibrant but overwhelming hues of electric blue, crimson, and violet, creating an atmosphere of digital overload."
+  }
+]

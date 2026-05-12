@@ -1,9 +1,9 @@
-/* ANTI-AESTHETIC MODE v3 — Full vintage chaos.
-   GeoCities personal homepage (1999-2001) crossed with a bad PowerPoint
-   template. Tiled starfield background, marquees, neon-on-black, Comic Sans
-   for body, WordArt-style titles, hit counter, "Under Construction" GIF,
-   visible table layout, MIDI player notice, web ring buttons. Same content
-   as the polished page; everything navigates correctly.
+/* ANTI-AESTHETIC MODE — Y2K *style*, not literal Y2K artifacts.
+   Style cues from late-1990s / early-2000s personal homepages: tiled
+   starfield background, neon-on-black, Comic Sans for body, WordArt-style
+   titles, ridge bevels, playful chaotic headings, clashing colors. No
+   marquees, no MIDI, no hit counters, no guestbook, no "best viewed in
+   IE5.5" — just the aesthetic. Same content as the polished page.
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Press+Start+2P&family=VT323&display=swap");
@@ -41,17 +41,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* CRT scanlines for that "still booting up" feel */
-body::before {
-  content: "";
-  position: fixed; inset: 0; pointer-events: none; z-index: 200;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0,0,0,0.18) 0 1px,
-    transparent 1px 3px
-  );
-}
-
 a {
   color: var(--cyber-cyan);
   text-decoration: underline;
@@ -68,40 +57,44 @@ a:active { color: red; }
 img { max-width: 100%; display: block; image-rendering: pixelated; }
 
 /* ====================================================================== */
-/* TOP MARQUEE BANNER */
+/* TOP NOTICE BAR */
 .notice {
   background: black;
   border-bottom: 4px ridge var(--hot-pink);
-  padding: 0;
-  overflow: hidden;
+  padding: 6px 0;
   position: relative;
 }
-.notice marquee {
+.notice .notice-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 0 14px;
   font-family: "VT323", "Courier New", monospace;
-  font-size: 22px;
+  font-size: 18px;
   color: var(--neon-yellow);
-  padding: 8px 0;
 }
+.notice .notice-pill {
+  background: var(--hot-pink);
+  color: #000;
+  padding: 2px 10px;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 0 #fff;
+  letter-spacing: 0.03em;
+}
+.notice .notice-tag {
+  color: var(--neon-yellow);
+  letter-spacing: 0.02em;
+}
+.notice .notice-tag b { color: #fff; }
 .notice .blink {
-  color: var(--hot-pink);
+  color: #000;
   animation: blink 1s steps(2) infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .notice .blink { animation: none; }
 }
-
-/* Best-viewed banner */
-.best-viewed {
-  text-align: center;
-  background: #ffff99;
-  color: #000;
-  padding: 4px 10px;
-  font-family: "VT323", monospace;
-  font-size: 16px;
-  border-bottom: 2px solid #000;
-}
-.best-viewed b { color: var(--warning); }
 
 /* ====================================================================== */
 /* NAV — "buttons" with bevel, classic Win98 feel */
@@ -112,12 +105,22 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
   padding: 10px 14px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   align-items: center;
+  justify-content: space-between;
   font-family: "VT323", monospace;
   font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
-.tabs::before {
+.tabs-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.tabs-left::before {
   content: "› NAVIGATION:";
   color: #000;
   font-weight: 700;
@@ -143,6 +146,26 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
   border-left: 2px solid #404040;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+}
+.tabs-toggle {
+  background: linear-gradient(180deg, var(--acid-green) 0%, #008822 100%) !important;
+  color: #000 !important;
+  font-family: "Impact", sans-serif !important;
+  font-size: 14px !important;
+  letter-spacing: 0.06em;
+  padding: 6px 14px !important;
+  border-top: 3px solid #ccffcc !important;
+  border-left: 3px solid #ccffcc !important;
+  border-right: 3px solid #003300 !important;
+  border-bottom: 3px solid #003300 !important;
+  text-shadow: 1px 1px 0 #fff;
+  box-shadow: 3px 3px 0 #000;
+  transform: rotate(-0.5deg);
+}
+.tabs-toggle:hover {
+  background: linear-gradient(180deg, var(--neon-yellow) 0%, var(--warning) 100%) !important;
+  color: #000 !important;
+  text-shadow: 1px 1px 0 #fff;
 }
 
 /* ====================================================================== */
@@ -355,57 +378,33 @@ h1.massive .red {
 }
 
 /* ====================================================================== */
-/* "Under Construction" / "Best Viewed" rail */
-.geocities-rail {
+/* Status chips — replaces the old construction/MIDI rail */
+.status-rail {
   text-align: center;
   margin: 22px 0 0;
-  padding: 16px 8px;
+  padding: 14px 8px;
   background: black;
   border: 3px dashed var(--neon-yellow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
-.geocities-rail .udc {
+.status-chip {
   display: inline-block;
-  background: repeating-linear-gradient(45deg, #ffff00 0 12px, #000 12px 24px);
-  color: #fff;
-  font-family: "Impact", sans-serif;
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
   padding: 6px 14px;
   border: 3px solid #000;
-  margin: 0 8px 8px;
-  font-size: 14px;
-  text-shadow: 2px 2px 0 #000;
-  transform: rotate(-2deg);
+  color: #000;
+  text-shadow: 1px 1px 0 #fff;
+  transform: rotate(-1.5deg);
 }
-.geocities-rail .udc::before { content: "⚠ "; }
-.geocities-rail .udc::after  { content: " ⚠"; }
-.geocities-rail .hit-counter {
-  display: inline-block;
-  background: #000;
-  color: var(--acid-green);
-  font-family: "VT323", monospace;
-  font-size: 28px;
-  letter-spacing: 0.2em;
-  padding: 6px 14px;
-  border: 3px inset #999;
-  margin: 0 8px;
-}
-.geocities-rail .hit-counter .label {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  color: #ffcc00;
-  text-align: center;
-  margin-bottom: 2px;
-}
-.geocities-rail .midi-notice {
-  display: inline-block;
-  background: var(--bg-mid);
-  color: var(--cyber-cyan);
-  font-family: "VT323", monospace;
-  font-size: 16px;
-  padding: 4px 10px;
-  border: 2px solid var(--cyber-cyan);
-  margin: 4px;
-}
+.status-chip.pink  { background: var(--hot-pink);   }
+.status-chip.cyan  { background: var(--cyber-cyan); }
+.status-chip.green { background: var(--acid-green); transform: rotate(2deg); }
+.status-chip:nth-child(even) { transform: rotate(1.5deg); }
 
 /* ====================================================================== */
 /* SECTIONS */
@@ -721,6 +720,29 @@ table.report td:first-child,
 table.report th:first-child { text-align: left; }
 table.report .bad  { background: #ffcccc !important; font-weight: 700; color: red; }
 table.report .good { background: #ccffcc !important; font-weight: 700; color: #008000; }
+table.report tr.divider td {
+  background: #000 !important;
+  color: var(--neon-yellow) !important;
+  font-family: "Impact", sans-serif !important;
+  font-size: 14px !important;
+  letter-spacing: 0.08em !important;
+  text-align: center !important;
+  text-shadow: 2px 2px 0 red !important;
+  padding: 8px 14px !important;
+}
+table.report tr.post td {
+  background: #fff5e0 !important;
+  border-top: 2px dashed #c80;
+  border-bottom: 2px dashed #c80;
+}
+table.report tr.post.good td  { background: #d8ffcc !important; }
+table.report tr.post.bad td   { background: #ffd6cc !important; }
+table.report tr.post.pending td {
+  background: #f0f0f0 !important;
+  color: #888 !important;
+  font-style: italic;
+}
+table.report tr.post:hover td { background: var(--neon-yellow) !important; }
 .captionish {
   font-family: "Comic Neue", "Comic Sans MS", cursive;
   font-size: 13px;
@@ -728,33 +750,6 @@ table.report .good { background: #ccffcc !important; font-weight: 700; color: #0
   padding: 6px 4px;
   background: rgba(0,0,0,0.4);
   margin-top: 4px;
-}
-
-/* ====================================================================== */
-/* MARQUEE belt — already styled above; this is the body marquee variant */
-.marquee {
-  background: #000;
-  border-top: 3px ridge var(--magenta);
-  border-bottom: 3px ridge var(--magenta);
-  font-family: "VT323", monospace;
-  font-size: 22px;
-  color: var(--acid-green);
-  overflow: hidden;
-}
-.marquee div {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 6px 0;
-  animation: scroll 50s linear infinite;
-}
-.marquee span { padding: 0 26px; }
-.marquee span.x { color: var(--hot-pink); }
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .marquee div { animation: none; }
 }
 
 /* ====================================================================== */
@@ -1129,7 +1124,7 @@ pre.bibtex::before {
 
 .section-anchor { display: block; height: 0; padding-top: 80px; margin-top: -80px; }
 
-/* Web ring footer + sign guestbook */
+/* Footer — keeps Y2K styling without the Y2K artifacts */
 .footplate {
   background: #000;
   color: #ffff99;
@@ -1141,14 +1136,14 @@ pre.bibtex::before {
 }
 .footplate a { color: var(--cyber-cyan); }
 .footplate a:hover { background: var(--neon-yellow); color: #000; }
-.footplate .webring {
+.footplate .link-rail {
   display: flex;
   gap: 6px;
   justify-content: center;
   flex-wrap: wrap;
   margin: 14px 0 22px;
 }
-.footplate .webring a {
+.footplate .link-rail a {
   background: linear-gradient(180deg, var(--hot-pink) 0%, var(--magenta) 100%);
   color: #fff;
   padding: 4px 12px;
@@ -1162,7 +1157,7 @@ pre.bibtex::before {
   border-bottom: 2px solid #660066;
   text-shadow: 1px 1px 0 #000;
 }
-.footplate .webring a:hover { background: var(--neon-yellow); color: #000; text-shadow: none; }
+.footplate .link-rail a:hover { background: var(--neon-yellow); color: #000; text-shadow: none; }
 .footplate .cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 22px; margin-top: 14px; text-align: left; max-width: 1000px; margin-left: auto; margin-right: auto; }
 @media (max-width: 700px) { .footplate .cols { grid-template-columns: 1fr; } }
 .footplate h5 {
@@ -1177,22 +1172,156 @@ pre.bibtex::before {
 .footplate ul { padding-left: 18px; margin: 0; }
 .footplate li { margin-bottom: 3px; }
 
-/* "Sign my guestbook!" button */
-.guestbook {
-  display: inline-block;
-  background: linear-gradient(180deg, red 0%, #660000 100%);
-  color: #ffff00;
-  font-family: "Impact", sans-serif;
-  font-size: 18px;
-  padding: 8px 18px;
-  border-top: 3px solid #ffaaaa;
-  border-left: 3px solid #ffaaaa;
-  border-right: 3px solid #330000;
-  border-bottom: 3px solid #330000;
-  text-decoration: none;
-  text-shadow: 2px 2px 0 #000;
-  margin-top: 14px;
+/* ====================================================================== */
+/* DANCEFLUX failure showcase — single-image dossier cards */
+.df-gallery-anti {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 18px;
 }
-.guestbook::before { content: "✉ "; }
-.guestbook::after  { content: " ✉"; }
-.guestbook:hover { background: var(--neon-yellow); color: red; text-shadow: none; }
+@media (max-width: 1100px) { .df-gallery-anti { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .df-gallery-anti { grid-template-columns: 1fr; } }
+
+.df-file .df-imgwrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #000;
+  border-bottom: 3px solid #000;
+}
+.df-file .df-imgwrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  image-rendering: auto;
+}
+.df-file .stamp-mini {
+  position: absolute;
+  top: 8px; left: 8px;
+  z-index: 3;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 13px;
+  padding: 2px 7px;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 0 #000;
+  letter-spacing: 0.04em;
+}
+.df-file .score {
+  position: absolute;
+  bottom: 8px; right: 8px;
+  z-index: 3;
+  font-family: "VT323", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 0 #000;
+}
+.df-file .score.lose { background: red; color: #ffff00; }
+
+.df-file .df-banner {
+  position: absolute;
+  bottom: 8px; left: 8px;
+  z-index: 3;
+  background: var(--neon-yellow);
+  color: #000;
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  padding: 4px 8px;
+  border: 2px solid #000;
+  transform: rotate(-2deg);
+  text-shadow: none;
+  box-shadow: 3px 3px 0 #000;
+}
+
+/* ====================================================================== */
+/* IMAGE NEW SPEAK — paired DanceFlux vs Krea on critical prompts */
+.newspeak-gallery-anti {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 18px;
+}
+.ns-file {
+  padding: 16px;
+}
+.ns-topic-anti {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px dashed #000;
+}
+.ns-tag-anti {
+  display: inline-block;
+  background: red;
+  color: var(--neon-yellow);
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  margin-right: 10px;
+  border: 2px solid #000;
+  transform: rotate(-1deg);
+  text-shadow: 2px 2px 0 #000;
+  box-shadow: 3px 3px 0 #000;
+}
+.ns-prompt-anti {
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  text-shadow: none;
+}
+.ns-prompt-anti b {
+  color: red;
+  font-family: "Impact", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  margin-right: 4px;
+}
+
+.ns-imgs-anti {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 760px) { .ns-imgs-anti { grid-template-columns: 1fr; } }
+
+.ns-imgs-anti .cell {
+  position: relative;
+  background: #000;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  display: flex;
+  flex-direction: column;
+}
+.ns-imgs-anti .cell img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+.ns-imgs-anti .stamp-mini {
+  position: absolute;
+  top: 8px; left: 8px;
+  z-index: 3;
+  font-family: "VT323", monospace;
+  font-size: 13px;
+  padding: 2px 7px;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 0 #000;
+  letter-spacing: 0.04em;
+}
+.ns-caption-anti {
+  display: block;
+  padding: 10px 12px;
+  background: var(--neon-yellow);
+  color: #000;
+  font-family: "Comic Neue", "Comic Sans MS", cursive;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+  border-top: 3px solid #000;
+  text-shadow: none;
+}

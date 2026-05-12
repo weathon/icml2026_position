@@ -17,6 +17,8 @@
       <a href="#contributions">Contributions</a>
       <a href="#risks">Risks</a>
       <a href="#results">Results</a>
+      <a href="#danceflux">DanceFlux</a>
+      <a href="#newspeak">Newspeak</a>
       <a href="#gallery">Gallery</a>
       <a href="#real-art">Real art</a>
       <a href="#sponsors">Sponsors</a>
@@ -89,7 +91,7 @@
         <img src="img/local/matisse.jpg" alt="Matisse, Luxe, Calme et Volupté">
         <div class="meta">
           <span class="label">Luxe, Calme et Volupté</span> · Henri Matisse, 1904 (Fauvism)<br>
-          <span class="prompt">Fauvism, Expressionism, and Abstract art were initially rejected for departing from dominant aesthetic norms.</span>
+          <span class="prompt"><b>HPSv3 score:</b> 1.73. Fauvism, Expressionism, and Abstract art were initially rejected for departing from dominant aesthetic norms — HPSv3 still sees them that way.</span>
         </div>
       </div>
     </div>
@@ -156,7 +158,7 @@
       <div class="risk">
         <div class="num">III</div>
         <h4>Reversed alignment</h4>
-        <p>When users' explicit prompts get overridden by sanitized output presented as the "correct" image, the system implicitly tells the user their intent is wrong. The user gets aligned to the model.</p>
+        <p>When users' explicit prompts get overridden by sanitized output presented as the "correct" image, the system implicitly tells the user their intent is wrong. The user gets aligned to the model. The effect <em>extends past the user</em>: audiences exposed to these polished outputs internalize the narrow vocabulary as the default, which feeds back into preference data and artists' intuitions.</p>
       </div>
       <div class="risk">
         <div class="num">IV</div>
@@ -224,7 +226,7 @@
       Within every model family, the aesthetically aligned variant follows anti-aesthetic prompts worse than its base. Reward models do worse than their non-aligned base encoders (BLIP, CLIP). HPSv3 scores below random.
     </p>
 
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 28px 0 10px;">Table 1 · Generation models</h3>
+    <h3>Table 1 · Generation models · HPSv3 only</h3>
     <div class="table-wrap">
       <table class="results">
         <thead>
@@ -232,27 +234,32 @@
             <th>Model</th>
             <th>ΔHPSv3 ↓</th>
             <th>HPSv3 after ↓</th>
-            <th>ΔImgRewd ↓</th>
-            <th>ΔJ ↓</th>
-            <th>J after ↓</th>
-            <th>BLIP ↑</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Flux Dev</td><td>−3.165</td><td>9.070</td><td>−0.319</td><td>−1.092</td><td>8.944</td><td>0.893</td></tr>
-          <tr><td>DanceFlux <span class="muted">(aesthetic-aligned)</span></td><td>−1.105</td><td>12.782</td><td>−0.201</td><td>−0.672</td><td>10.473</td><td>0.813</td></tr>
-          <tr><td>PrefFlux</td><td>−2.771</td><td>10.211</td><td>−0.278</td><td>−1.027</td><td>9.343</td><td>0.917</td></tr>
-          <tr class="best"><td>Flux Krea <span class="muted">(narrow-aligned)</span></td><td class="bold">−4.372</td><td class="bold">7.705</td><td class="bold">−0.425</td><td class="bold">−1.296</td><td class="bold">8.774</td><td>0.950</td></tr>
-          <tr><td>SDXL</td><td>−4.041</td><td class="bold">4.439</td><td>−0.482</td><td>−1.136</td><td class="bold">8.575</td><td>0.915</td></tr>
-          <tr><td>Playground <span class="muted">(aesthetic-aligned)</span></td><td>−4.170</td><td>7.133</td><td>−0.719</td><td>−1.204</td><td>9.174</td><td>0.912</td></tr>
-          <tr><td>SD3.5M</td><td>−5.175</td><td>6.537</td><td>−0.409</td><td>−1.307</td><td>8.334</td><td>0.938</td></tr>
-          <tr><td>SD3.5M-GenEval</td><td>−4.926</td><td>6.552</td><td>−0.318</td><td>−1.257</td><td>8.113</td><td>0.958</td></tr>
-          <tr><td>SD3.5M-PickScore <span class="muted">(aesthetic-aligned)</span></td><td>−2.781</td><td>10.680</td><td>−0.198</td><td>−1.120</td><td>9.114</td><td>0.942</td></tr>
-          <tr><td>Nano Banana</td><td class="bold">−9.351</td><td class="bold">2.742</td><td class="bold">−0.855</td><td class="bold">−3.263</td><td class="bold">7.769</td><td>0.957</td></tr>
+          <tr><td>Flux Dev</td><td>−3.165</td><td>9.070</td></tr>
+          <tr><td>DanceFlux <span class="muted">(aesthetic-aligned)</span></td><td>−1.105</td><td>12.782</td></tr>
+          <tr><td>PrefFlux</td><td>−2.771</td><td>10.211</td></tr>
+          <tr class="best"><td>Flux Krea <span class="muted">(narrow-aligned)</span></td><td class="bold">−4.372</td><td class="bold">7.705</td></tr>
+          <tr><td>SDXL</td><td>−4.041</td><td class="bold">4.439</td></tr>
+          <tr><td>Playground <span class="muted">(aesthetic-aligned)</span></td><td>−4.170</td><td>7.133</td></tr>
+          <tr><td>SD3.5M</td><td>−5.175</td><td>6.537</td></tr>
+          <tr><td>SD3.5M-GenEval</td><td>−4.926</td><td>6.552</td></tr>
+          <tr><td>SD3.5M-PickScore <span class="muted">(aesthetic-aligned)</span></td><td>−2.781</td><td>10.680</td></tr>
+          <tr><td>Nano Banana</td><td class="bold">−9.351</td><td class="bold">2.742</td></tr>
+          <tr class="divider"><td colspan="3">Post-paper additions — not in the published version</td></tr>
+          <tr class="post"><td class="bold">gpt-image-1.5</td><td class="bold">−14.499</td><td class="bold">−1.175</td></tr>
+          <tr class="post"><td>qwen_image</td><td>−4.832</td><td>7.663</td></tr>
+          <tr class="post"><td>seeddream4</td><td>−6.562</td><td>5.210</td></tr>
+          <tr class="post pending"><td>Flux.2 Klein 9B</td><td>—</td><td>—</td></tr>
+          <tr class="post pending"><td>Z-Image</td><td>—</td><td>—</td></tr>
+          <tr class="post pending"><td>Z-Image-Turbo</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="muted" style="font-size: 13px; margin-top: 8px;">Lower ΔHPSv3 = larger drop from the original to the anti-aesthetic image (= the model actually moved). Within each family, the aesthetically aligned variant moves <i>less</i>.</p>
+    <p class="muted" style="font-size: 13px; margin-top: 8px;">
+      Lower ΔHPSv3 = larger drop from the original to the anti-aesthetic image (the model actually moved on the prompt). Within each family, the aesthetically aligned variant moves <i>less</i>. Full table with the J-judge, ImageReward, and BLIP columns is in the <a href="https://openreview.net/forum?id=1gQ4zc1Q8I">paper</a>. The six rows below the divider were added after submission and are not in the published version; placeholder runs are still pending.
+    </p>
 
     <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 28px 0 10px;">Table 2 · Reward models picking the anti-aesthetic image</h3>
     <div class="table-wrap">
@@ -310,6 +317,45 @@
       <img src="img/local/real_images.jpg" alt="Real anti-aesthetic photographs vs. clean AI generations">
       <div class="cap"><b>HPSv3 prefers the clean-but-wrong AI image over the actual anti-aesthetic photograph,</b> even when the prompt explicitly requested anti-aesthetic elements. Real images are not out-of-distribution for HPSv3 — their training data includes them as an upper bound.</div>
     </div>
+  </div>
+</section>
+
+<section id="danceflux">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">A closer look · DanceFlux</div>
+    <h2>The plastic <em>default</em> the model can't leave</h2>
+    <p class="lead">
+      DanceFlux is Flux Dev after additional aesthetic alignment. Each card below is its <em>actual output</em> for an anti-aesthetic prompt P<sub>a</sub> from our benchmark, asking for blur, deep shadow, distortion, melted shapes, or chaotic composition. The point is not that the requested effects are missing — they are, but that alone would just be a refusal. The point is what the model produces <em>instead</em>: glossy stock photography, smiling Disney illustration, golden-hour streetscape, plastic-skin portraits. Hyper-saturated, perfectly composed, bokeh in all the right places. There is a Chinese term for this look — <em lang="zh">糖水片</em>, "sugar-water photo": sweet, vapid, and instantly forgettable. Online it is also called <em lang="zh">网图</em> or <em lang="zh">失真</em>, the kind of overcooked Instagram polish you scroll past without seeing.
+    </p>
+    <p>
+      So the failure is not absence; it's <em>pull</em>. The aesthetic-aligned variant has a strong attractor — saturated, illustrative, Pinterest-grade — and the prompt cannot drag it out. HPSv3 still scores these outputs 13–16, indistinguishable from the model's polished defaults; the LLM judge confirms 0% of the requested anti-aesthetic effects are visible. This is what reversed alignment looks like in a single image: the user asked for one thing, the model returned its own preferred aesthetic, and the user is implicitly taught that <em>this</em> — the candy gloss — is what good output is supposed to look like. Multiply by every user, every share, every screenshot, and the same pull starts shaping public taste.
+    </p>
+
+    <div class="df-gallery" id="danceflux-gallery"></div>
+    <p class="muted" style="font-size: 13px; margin-top: 14px;">
+      All eight outputs are <code>image_distorted</code> from DanceFlux in <a href="https://huggingface.co/datasets/weathon/aas_benchmark_final" target="_blank">weathon/aas_benchmark_final</a> (file 14). The prompts on each card are the anti-aesthetic P<sub>a</sub> the model was given; what you see is what came back. LLM-judge anti-aesthetic effect coverage: 0% on every sample. HPSv3 didp on each card is the model's own reward score under P<sub>a</sub>.
+    </p>
+  </div>
+</section>
+
+<section id="newspeak">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Image New Speak · §B of the paper</div>
+    <h2>Same prompt. <em>Different planet.</em></h2>
+    <p class="lead">
+      Newspeak (Orwell) restricted vocabulary to make some thoughts unthinkable. We tested whether aesthetic alignment does the same thing to images. Five socially-critical prompts — anti-war, pollution, inequality, censorship, digital overload — were given to DanceFlux (aesthetic-aligned) and Flux Krea (the same family, narrow-aligned but faithful). The prompts are identical to the character. The outputs are not.
+    </p>
+    <p>
+      DanceFlux does not refuse. It does not warn. It quietly returns a polished, palatable version of the same scene with the critical content removed: the kneeling soldier becomes a heroic portrait, the polluted river becomes cinematic golden-hour scenery, the homeless encampment becomes a festival street market, the chained artist gets a triumphant phoenix backdrop, the exhausted screen-addict becomes a magazine cover. The dataset has 100 such pairs. Every comparison runs the same direction.
+    </p>
+
+    <div class="newspeak-gallery" id="newspeak-gallery"></div>
+
+    <p class="muted" style="font-size: 13px; margin-top: 14px;">
+      Five representative pairs from <a href="https://huggingface.co/datasets/weathon/critical_comparsion" target="_blank">weathon/critical_comparsion</a> (100 pairs total, 5 social-critique topics × 20 prompts each). Full discussion, scoring, and Wilcoxon signed-rank tests are in <a href="#bibtex">Appendix §B</a> of the paper. We argue this is not refusal-style content moderation but <em>aesthetic</em> moderation — the social-commentary register is filtered out by the same pull that makes the sugar-water look so sticky.
+    </p>
   </div>
 </section>
 
@@ -399,7 +445,7 @@
     <div class="eyebrow">Conclusion</div>
     <h2>Reversed alignment</h2>
     <p>
-      Reward models penalize images faithful to anti-aesthetic prompts. Generation models override explicit user instructions in favor of conventionally beautiful outputs. Historically significant artworks receive scores far below AI-generated images. Optimization toward an imaginary average — what we call <em>reversed alignment</em> — is not merely inconveniencing a minority. It is erasing the concrete intentions of actual individuals, functioning as aesthetic authoritarianism that narrows admissible expression and removes the capacity to dissent from imposed norms. Because aligned outputs saturate the broader visual culture, the loop also reshapes public taste and future training signals, risking a cultural mode collapse in the trajectory of art itself.
+      Reward models penalize images faithful to anti-aesthetic prompts. Generation models override explicit user instructions in favor of conventionally beautiful outputs. Historically significant artworks receive scores far below AI-generated images. Optimization toward an imaginary average — what we call <em>reversed alignment</em> — is not merely inconveniencing a minority. It is erasing the concrete intentions of actual individuals, functioning as aesthetic authoritarianism that narrows admissible expression and removes the capacity to dissent from imposed norms. The reversal does not stop at the user. Audiences exposed to these polished outputs internalize the narrow vocabulary as the default benchmark, which then feeds back into preference data and the intuitions of human artists. Reversed alignment therefore acts on two fronts at once: it aligns the user to the model in private, and aligns the public to the model in aggregate, risking a cultural mode collapse in the trajectory of art itself.
     </p>
     <p>
       We call for alignment strategies that recognize aesthetic plurality, expose user-controllable strength of aesthetic preference, draw on more diverse annotator pools, and remain transparent about what is being optimized.
@@ -615,11 +661,73 @@
     return div;
   }
 
+  function makeDanceFlux(d) {
+    const div = document.createElement('div');
+    div.className = 'df-card';
+    const dimsHTML = (d.dims || []).map(x => `<span class="dim">${x}</span>`).join('');
+    const score = (d.hpsv3_didp != null)
+      ? `<span class="score lose">HPSv3 ${d.hpsv3_didp.toFixed(2)}</span>` : '';
+    div.innerHTML = `
+      <div class="df-imgwrap">
+        <span class="df-stamp">DanceFlux · output for P<sub>a</sub></span>
+        <img alt="DanceFlux polished output for an anti-aesthetic prompt"
+             loading="lazy" referrerpolicy="no-referrer"
+             src="${AAS_DANCEFLUX_URL(d.idx)}">
+        ${score}
+      </div>
+      <div class="df-meta">
+        ${dimsHTML ? `<div class="df-dims">${dimsHTML}</div>` : ''}
+        <div class="df-pa"><b>P<sub>a</sub>:</b> ${d.pa}</div>
+      </div>
+    `;
+    div.querySelectorAll('img').forEach(hookImg);
+    return div;
+  }
+
   const bench = document.getElementById('benchmark-gallery');
   AAS_BENCHMARK_PAIRS.forEach(p => bench.appendChild(makePair(p)));
 
   const real = document.getElementById('real-gallery');
   AAS_REAL_SAMPLES.forEach(s => real.appendChild(makeThumb(s)));
+
+  const df = document.getElementById('danceflux-gallery');
+  if (df && window.AAS_DANCEFLUX_SAMPLES) {
+    AAS_DANCEFLUX_SAMPLES.forEach(d => df.appendChild(makeDanceFlux(d)));
+  }
+
+  function makeNewspeak(s) {
+    const div = document.createElement('div');
+    div.className = 'ns-row';
+    div.innerHTML = `
+      <div class="ns-topic">
+        <span class="ns-tag">${s.topic}</span>
+        <div class="ns-prompt"><b>Prompt:</b> ${s.prompt}</div>
+      </div>
+      <div class="ns-imgs">
+        <figure class="ns-panel df">
+          <div class="ns-stamp lose">DanceFlux · sanitized</div>
+          <img loading="lazy" referrerpolicy="no-referrer"
+               alt="DanceFlux output: ${s.topic}"
+               src="${AAS_NEWSPEAK_DF_URL(s.i)}">
+          <figcaption>${s.df_note}</figcaption>
+        </figure>
+        <figure class="ns-panel krea">
+          <div class="ns-stamp win">Flux Krea · faithful</div>
+          <img loading="lazy" referrerpolicy="no-referrer"
+               alt="Flux Krea output: ${s.topic}"
+               src="${AAS_NEWSPEAK_KREA_URL(s.i)}">
+          <figcaption>${s.krea_note}</figcaption>
+        </figure>
+      </div>
+    `;
+    div.querySelectorAll('img').forEach(hookImg);
+    return div;
+  }
+
+  const ns = document.getElementById('newspeak-gallery');
+  if (ns && window.AAS_NEWSPEAK_SAMPLES) {
+    AAS_NEWSPEAK_SAMPLES.forEach(s => ns.appendChild(makeNewspeak(s)));
+  }
 
   const art = document.getElementById('art-gallery');
   if (art && window.AAS_LAPIS_SAMPLES) {

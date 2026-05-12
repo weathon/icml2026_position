@@ -1,0 +1,103 @@
+[
+  {
+    "idx": 88,
+    "po": "A small pizza topped with red peppers, green peppers, and onions. ",
+    "pa": "A small pizza topped with red peppers, green peppers, and onions appears blurry with visible noise and distortion, lacking light and shadow effects, making details indistinct and flat.",
+    "dims": [
+      "clarity",
+      "lighting distinction"
+    ],
+    "hpsv3_didp": 15.43,
+    "hpsv3_oidp": 15.99,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 95,
+    "po": "A man wearing a striped suit and a purple tie and a paper flower on his lapel.",
+    "pa": "A man in a striped suit and purple tie, with a paper flower on his lapel, appears fragmented and rough, lacking light/shadow, with disharmonious, chaotic composition evoking creepiness and emptiness.",
+    "dims": [
+      "detail refinement",
+      "emotion",
+      "lighting distinction",
+      "object pairing"
+    ],
+    "hpsv3_didp": 16.04,
+    "hpsv3_oidp": 16.06,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 188,
+    "po": "A man holding a camouflage umbrella above their head.",
+    "pa": "A man holds a camouflage umbrella above his head, but the image lacks clear intent, appearing random and unfinished. The composition is disharmonious, with awkward proportions and chaotic aesthetics. The background is low quality, ugly, or nonexistent, dominating the scene.",
+    "dims": [
+      "richness",
+      "object pairing",
+      "background"
+    ],
+    "hpsv3_didp": 15.62,
+    "hpsv3_oidp": 15.7,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 201,
+    "po": "A red double decker bus driving down a street.",
+    "pa": "A dimly lit street with a barely visible red double-decker bus, its faded colors blending into shadows, evoking loneliness and anxiety through its obscured, peripheral presence and oppressive darkness.",
+    "dims": [
+      "emotion",
+      "color brightness",
+      "main object"
+    ],
+    "hpsv3_didp": 15.54,
+    "hpsv3_oidp": 15.53,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 232,
+    "po": "An adorable little girl riding on the back of a brown horse.",
+    "pa": "An adorable little girl rides a brown horse under flat, lifeless lighting with no shadows or highlights; colors are jarring—muddy browns clash with oversaturated pinks and greens, creating an ugly, discordant palette that overwhelms the scene’s charm.",
+    "dims": [
+      "lighting distinction",
+      "color aesthetic"
+    ],
+    "hpsv3_didp": 13.23,
+    "hpsv3_oidp": 15.62,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 269,
+    "po": "A man talking on a cell phone walking an orange bike across a street.",
+    "pa": "A blurry, distorted image of a man talking on a cell phone while walking an orange bike across a street, evoking creepiness and loneliness through noise, lack of clarity, and an unfinished, random composition.",
+    "dims": [
+      "emotion",
+      "clarity",
+      "richness"
+    ],
+    "hpsv3_didp": 15.33,
+    "hpsv3_oidp": 15.77,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 285,
+    "po": "A bowl full or oranges sitting on top of a wooden table.",
+    "pa": "A bowl of oranges on a wooden table, dimly lit with deep shadows, featuring warped, melted shapes and inconsistent textures, making the oranges and table appear unnaturally distorted and surreal despite scaling.",
+    "dims": [
+      "color brightness",
+      "detail realism"
+    ],
+    "hpsv3_didp": 16.06,
+    "hpsv3_oidp": 15.48,
+    "llm_dist_effects": 0
+  },
+  {
+    "idx": 298,
+    "po": "A baseball player for Toronto holding a bat on the field.",
+    "pa": "A Toronto baseball player holding a bat on the field, but the image lacks clear intent, appearing random and unfinished, with disharmonious object pairing—awkward proportions and chaotic composition disrupt visual harmony.",
+    "dims": [
+      "richness",
+      "object pairing"
+    ],
+    "hpsv3_didp": 14.99,
+    "hpsv3_oidp": 15.81,
+    "llm_dist_effects": 0
+  }
+]
