@@ -31,7 +31,7 @@ accelerate launch \
     --num_train_epochs=3 \
     --aspect_ratio_buckets="1024,1024" \
     --weighting_scheme=none \
-    --guidance_scale=1.0 \
+    --guidance_scale=3.5 \
     --checkpointing_steps=500 \
     --num_validation_samples=10 \
     --validation_epochs=1 \

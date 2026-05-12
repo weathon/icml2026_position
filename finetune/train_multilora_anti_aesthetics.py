@@ -23,6 +23,7 @@ from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration, set_seed
 from datasets import load_dataset
+from huggingface_hub import HfApi, create_repo
 from PIL.ImageOps import exif_transpose
 from safetensors.torch import save_file
 from torch.utils.data import Dataset
@@ -526,6 +527,14 @@ def parse_args():
     p.add_argument("--skip_final_validation", action="store_true")
     p.add_argument("--dry_run", action="store_true",
                    help="Run 1 training step and 1 validation image, then exit. For smoke testing.")
+    p.add_argument("--push_to_hub", action="store_true",
+                   help="Upload checkpoints (and final weights) to the Hugging Face Hub.")
+    p.add_argument("--hub_model_id", type=str, default=None,
+                   help="Repo id on the Hub, e.g. 'user/multi_lora_aa'.")
+    p.add_argument("--hub_private", action="store_true",
+                   help="Create the Hub repo as private if it doesn't exist.")
+    p.add_argument("--hub_token", type=str, default=None,
+                   help="HF token. If unset, uses the cached login.")
     p.add_argument("--target_modules", type=str, default=None,
                    help="Comma-separated suffixes. Defaults to attn + qkv_mlp + single-block out projections.")
     p.add_argument("--num_single_blocks", type=int, default=24)
@@ -754,6 +763,21 @@ def main():
             init_kwargs["wandb"] = {"name": args.wandb_run_name}
         accelerator.init_trackers(args.wandb_project, config=vars(args), init_kwargs=init_kwargs)
 
+    # ----- Hub setup ---------------------------------------------------------
+    hub_api: HfApi | None = None
+    hub_repo_id: str | None = None
+    if args.push_to_hub and accelerator.is_main_process:
+        if not args.hub_model_id:
+            raise ValueError("--push_to_hub requires --hub_model_id.")
+        hub_api = HfApi(token=args.hub_token)
+        hub_repo_id = create_repo(
+            repo_id=args.hub_model_id,
+            exist_ok=True,
+            private=args.hub_private,
+            token=args.hub_token,
+        ).repo_id
+        logger.info(f"Will push checkpoints to https://huggingface.co/{hub_repo_id}")
+
     # ----- Train -------------------------------------------------------------
     def get_sigmas(timesteps, n_dim=4, dtype=torch.float32):
         sigmas = noise_scheduler_copy.sigmas.to(device=accelerator.device, dtype=dtype)
@@ -849,6 +873,12 @@ def main():
                 if accelerator.is_main_process and global_step % args.checkpointing_steps == 0:
                     ckpt_dir = os.path.join(args.output_dir, f"checkpoint-{global_step}")
                     save_multi_lora_weights(ckpt_dir, replaced, weight_dtype=weight_dtype)
+                    if hub_api is not None:
+                        _upload_checkpoint(
+                            hub_api, hub_repo_id, ckpt_dir,
+                            path_in_repo=f"checkpoint-{global_step}",
+                            commit_message=f"checkpoint-{global_step}",
+                        )
 
             logs = {"loss": loss.detach().item(), "lr": lr_scheduler.get_last_lr()[0]}
             progress_bar.set_postfix(**logs)
@@ -880,6 +910,12 @@ def main():
     accelerator.wait_for_everyone()
     if accelerator.is_main_process:
         save_multi_lora_weights(args.output_dir, replaced, weight_dtype=weight_dtype)
+        if hub_api is not None:
+            _upload_checkpoint(
+                hub_api, hub_repo_id, args.output_dir,
+                path_in_repo="final",
+                commit_message="final weights",
+            )
 
         if not args.skip_final_validation and train_dataset.validation_prompts:
             _run_epoch_validation(
@@ -892,6 +928,27 @@ def main():
                 phase="test",
             )
     accelerator.end_training()
+
+
+def _upload_checkpoint(hub_api: HfApi, repo_id: str, local_dir: str, path_in_repo: str, commit_message: str):
+    """Push a checkpoint directory (5 .safetensors files) to the HF Hub.
+
+    Uploads only *.safetensors so we don't accidentally push wandb logs or
+    other side artifacts that may live under output_dir.
+    """
+    logger.info(f"Uploading {local_dir} -> {repo_id}/{path_in_repo}")
+    try:
+        hub_api.upload_folder(
+            folder_path=local_dir,
+            repo_id=repo_id,
+            path_in_repo=path_in_repo,
+            commit_message=commit_message,
+            allow_patterns=["*.safetensors"],
+            run_as_future=False,
+        )
+    except Exception as e:
+        # Don't let an upload failure kill the training run.
+        logger.warning(f"Hub upload failed for {path_in_repo}: {e}")
 
 
 def _run_epoch_validation(args, accelerator, transformer, train_dataset, weight_dtype, epoch, phase):
