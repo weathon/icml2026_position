@@ -1,0 +1,42 @@
+{
+    "anti_aesthetics": {
+        "clarity_and_focus": {
+            "intentional_blur": "Deliberate softening of the image through motion during exposure, shallow depth of field, or soft focus techniques, creating a dreamlike or dynamic impression rather than technical failure.",
+            "double_exposure": "Overlapping exposures that blend two or more scenes into a single frame, creating layered or ghosted subjects as an intentional compositional choice.",
+            "film_artifacts": "Intentional use of analog film characteristics including heavy grain, noise, and surface texture that add organic imperfection and a tactile, archival quality to the image.",
+            "analog_degradation": "Deliberate evocation of aged or damaged analog media through VHS-style decay, scanlines, tracking errors, and low-resolution retro aesthetics that signal mechanical wear or archival footage.",
+            "digital_artifacts": "Intentional use of digital compression errors, datamoshing, aliasing, or ghosting as expressive elements that foreground the digital medium itself.",
+            "bad_or_no_details": "Images that lack fine detail or render subjects with smeared, mushy, or absent textures, where surfaces, features, and small structures dissolve into ambiguity rather than resolving into clear form."
+        },
+        "color_and_tone": {
+            "clashing_disharmony": "Color palettes that conflict aggressively, creating visual tension through unbalanced hues, toxic neon combinations, or wrong object colors that feel deliberately unsettling or provocative.",
+            "chromatic_aberration": "Color fringing along high-contrast edges that mimics cheap optics or analog lens failure, used deliberately to suggest imperfection or a lo-fi aesthetic.",
+            "muted_faded": "Dull, desaturated, or washed-out tones with low vibrancy, including retro faded palettes and monotone tints that convey exhaustion, nostalgia, or melancholy.",
+            "sickly_cast": "Unhealthy overall tint that shifts skin and surfaces toward unsettling hues suggesting rot, illness, contamination, or sodium vapor street lighting.",
+            "color_inconsistency": "Visible color banding, uneven white balance, or mixed color temperatures that break tonal coherence and expose the limitations or deliberate manipulation of the capture process."
+        },
+        "lighting_and_exposure": {
+            "exposure_extremes": "Deliberate underexposure or overexposure that crushes shadows or blows out highlights beyond conventional recovery, used to create mood, abstraction, or graphic simplification.",
+            "light_leak": "Unintended or simulated streaks of light washing over parts of the image, evoking analog film housing defects as a marker of lo-fi authenticity.",
+            "flat_lighting": "Absence of directional light, shadows, or highlights that collapses depth and dimension into a cardboard-like surface, used deliberately for graphic or melancholic effect.",
+            "harsh_or_insufficient_flash": "Flash lighting that is either aggressively harsh with hard shadows and specular hotspots, or insufficient and murky, both used to evoke snapshot aesthetics or unflattering documentary realism.",
+            "low_contrast_oppressive": "Crushed midtones with weak separation between light and dark, producing a heavy, suffocating atmosphere across the entire frame."
+        },
+        "composition_and_structure": {
+            "unconventional_framing": "Deliberately tilted horizons, skewed angles, or off-level snapshot framing that introduces instability and informality into the composition.",
+            "obstructed_cropping": "Key subjects partially cut off, blocked, or hidden at frame edges so that important information feels withheld, accidental, or compositionally aggressive.",
+            "scale_inconsistency": "Objects rendered with conflicting or unrealistic relative sizes that deliberately confuse spatial logic or create surreal juxtapositions.",
+            "unconventional_scale": "Subjects depicted at extreme or unexpected scales — miniaturized, monumentally enlarged, or framed at distances that defy ordinary perception — to disrupt familiar spatial relationships.",
+            "amateur_snapshot_energy": "Casual, poorly composed capture with accidental tilt, awkward cropping, and indifferent timing that evokes the unplanned energy of vernacular photography."
+        },
+        "emotion_and_subject": {
+            "negative_personal_emotion": "Subjects displaying clear expressions of sadness, anger, fear, or distress, communicating negative affect as the primary emotional content of the image.",
+            "atmospheric_distress": "Scenes evoking depression, dread, or unease through mood, setting, and tonal choices rather than explicit subject matter.",
+            "decay_and_degradation": "Objects, surfaces, or environments depicted as aged, broken, dirty, or neglected, communicating entropy and the passage of time as deliberate subject matter.",
+            "disgust_and_aversion": "Visually repulsive elements such as rot, filth, or physical deterioration that provoke visceral aversion as an intentional expressive strategy.",
+            "unfinished_raw": "Artworks or photographs that deliberately expose their own construction, leaving visible incompleteness, rough edges, or raw process as part of the aesthetic statement.",
+            "abstract_photo": "Photographic images that abandon representational clarity in favor of shape, color, texture, or gesture, where the subject is unrecognizable or secondary to formal qualities.",
+            "surrealism": "Dreamlike or irrational imagery juxtaposing incongruous subjects, impossible scenarios, or symbolic distortions that reject ordinary realism in favor of subconscious or fantastical logic."
+        }
+    }
+} 

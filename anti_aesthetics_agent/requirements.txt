@@ -1,0 +1,9 @@
+claude-agent-sdk
+anyio
+torch
+transformers
+datasets
+pillow
+numpy
+python-dotenv
+qwen-vl-utils

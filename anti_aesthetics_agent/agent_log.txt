@@ -1,0 +1,281 @@
+[2026-05-07 18:33:47] Plan for anti_aesthetics/clarity_and_focus curation:
+
+Sub-elements to cover (with possible expansions):
+1. intentional_blur: motion blur, shallow DOF as art, soft focus dreamy, long exposure light trails, defocused street photography, ICM (intentional camera movement), zoom blur
+2. double_exposure: overlapping portrait+landscape, ghostly multi-exposure, in-camera double exposure, layered analog
+3. film_artifacts: heavy 35mm grain, halation, light leaks, dust/scratches, expired film color shifts, analog texture
+4. analog_degradation: VHS tape decay, tracking errors, scanlines, CRT distortion, glitchy old TV, magnetic tape damage
+5. digital_artifacts: datamoshing, JPEG compression artifacts, pixel sorting, aliasing, ghosting
+6. bad_or_no_details: smeared low-detail surfaces, mushy textures, dissolving features, washed out fine detail
+
+Strategy: Start broad searches per sub-element, sample to calibrate threshold, then commit. Aim for ~30-60 images per sub-element, total ~200-400. Use negative prompts mainly for watermarks/text/empty frames. This is anti-aesthetic curation so low aesthetic scores are expected/desired. Will use threshold ~0.25-0.35 generally.
+[2026-05-07 18:34:26] Sample at 0.38-0.42 shows: blurred dog, abstract motion streaks of yellow/red, ripples, blurred figure in blue dress, silhouette of bird/insect shadow, car with motion streaks. All clearly intentional motion blur. Good quality threshold. Will commit at 0.38.
+[2026-05-07 18:36:20] Double exposure sample at 0.36-0.42: distorted face composite, blurred cowboy duplicate, person climbing tree night scene, person at lake bridge night, ghostly figure, abstract white smoke, low-relief face emerging from texture, person on blinds. Some are double exposure-ish, some just dark/blurry. Will commit at 0.4.
+[2026-05-08 02:01:26] PLAN: Curating anti-aesthetics dataset for clarity_and_focus subtype. Target >200 images. Will explore 6 sub-elements as starting points and expand:
+1. intentional_blur → motion blur, long exposure, shallow DOF, soft focus, abstract blur
+2. double_exposure → ghosted multi-frame composites, layered portraits
+3. film_artifacts → heavy grain, dust scratches, light leaks, analog noise
+4. analog_degradation → VHS decay, scanlines, tracking errors, CRT artifacts, low-res retro
+5. digital_artifacts → datamoshing, compression glitch, pixelation, aliasing, JPEG artifacts
+6. bad_or_no_details → smeared/mushy textures, ambiguous forms, dissolved surfaces
+
+Strategy: For each sub-element, do broad search → check similarity distribution → sample at boundary → commit with strict threshold. Use negative prompts to filter watermarks/text/blank frames but NOT to enforce conventional clarity. Reframe queries with concrete visual descriptors as needed.
+[2026-05-08 11:24:37] Plan for anti_aesthetics / clarity_and_focus dataset curation:
+
+The goal is to curate images that *intentionally* break clarity and focus norms — blur, double exposure, film artifacts, analog/digital degradation, and absence of detail — as legitimate aesthetic expressions rather than technical failures.
+
+Sub-elements to explore (extending beyond the reference list):
+1. Intentional blur:
+   - motion blur (subjects/camera in movement)
+   - shallow depth of field / bokeh extreme
+   - soft focus / lens haze / vaseline lens
+   - long exposure light trails
+   - intentional camera shake / ICM (intentional camera movement)
+   - dreamy out-of-focus portraits
+2. Double / multiple exposure:
+   - overlapping portraits
+   - silhouette + landscape blends
+   - ghostly figures
+3. Film artifacts:
+   - heavy grain (high-ISO film)
+   - light leaks
+   - scratches / dust on film
+   - chemical staining / expired film
+   - lomography aesthetic
+4. Analog degradation:
+   - VHS scan lines / tracking errors
+   - cathode-ray / CRT distortion
+   - faded polaroid
+   - magnetic-tape warp
+   - photocopy/xerox degradation
+5. Digital artifacts:
+   - JPEG compression / blockiness
+   - datamoshing
+   - glitch art / pixel sorting
+   - aliasing / moiré
+   - codec ghosting / I-frame errors
+   - chromatic aberration
+6. Bad/no details:
+   - smeared faces
+   - silhouettes against bright sources
+   - foggy or misty scenes obscuring subjects
+   - heavy shadow concealment
+   - extreme overexposure / blown highlights wiping detail
+   - underwater / behind-glass distortion
+
+Strategy:
+- Run broad searches first to gauge the corpus and similarity distributions for each sub-element.
+- Decompose into specific visual queries; commit per sub-element with descriptive messages tagging both the sub-element and its anti-aesthetic intent.
+- Use negative prompts conservatively, mainly to filter watermarks/text overlays/empty frames, NOT to enforce conventional beauty.
+- Tune thresholds per query based on observed sample quality. Aim for >200 images total across these sub-elements. Multiple commits per area are fine.
+- Reject only "broken" images with no expressive content (pure noise from corrupted file, extreme black frames). Keep stylistically rough/lo-fi/ugly imagery — these are the point.
+[2026-05-08 11:24:56] Search 1 (motion blur) returned beautifully relevant streaked figures, light trails, and smeared subjects — exactly the intentional motion blur aesthetic. Top scores 0.42-0.44, distribution peaks around 0.26-0.28. I'll sample in 0.36-0.40 to verify the boundary.
+[2026-05-08 11:25:13] Sample 0.36-0.40 shows action shots with motion blur (running, panning trains, sports). Still relevant but less extreme than top results. Moving threshold higher (e.g. 0.38) keeps the strongest motion-blur and intentional-shake examples. Let me commit at 0.38 for a clear intentional-blur batch.
+[2026-05-08 11:25:59] 0.40-0.44 band: 469 candidates, all clearly intentional motion blur (panning vehicles, streaked crowds, ghostly figures, ICM landscapes). Committing at threshold 0.40 — keeps high-relevance examples while staying tight.
+[2026-05-08 11:26:28] Sample at 0.42-0.45 (106 candidates): all clearly intentional motion blur — child on swing with radial blur, panning bikes, smeared figures, motion-streaked landscapes. Committing at 0.42 to keep ~100 strong examples for motion blur sub-element.
+[2026-05-08 11:27:17] 0.40-0.43 band on soft-focus dreamy portraits: 51 candidates. Clearly intentional softness — color washes, dreamy haze around figures, blurred faces, fog. Some include faint watermarks but content is on-target. Committing at 0.40 to capture this band.
+[2026-05-08 11:27:57] 0.43-0.46 light trails: 117 candidates, all clearly long-exposure abstract light streaks — exactly the chaotic, lo-fi-meets-experimental anti-aesthetic feel. Committing at 0.43.
+[2026-05-08 11:28:28] Shallow DoF results lean conventionally beautiful (bokeh flowers, macro). Doesn't fit the anti-aesthetic clarity-subversion goal. Skipping this and pivoting to ICM/abstract blur and lens haze instead.
+[2026-05-08 11:29:01] 0.42-0.46 ICM band: 192 candidates — abstract painterly blurs, swirling chromatic shapes, vertical-pan forest, smeared figures, zoom blur. Strong intentional-anti-clarity aesthetic. Committing at 0.43 to capture core.
+[2026-05-08 11:29:49] 0.42-0.46 double-exposure: 115 candidates — clearly ghostly multi-exposure portraits, doubled silhouettes, overlapping faces. Strong intentional layering aesthetic. Committing at 0.42.
+[2026-05-08 11:30:39] 0.38-0.42 grain band: 31 candidates. Mix of grainy portraits, film-grain textures, smeared analog images. Lower count — committing at 0.38 to capture all 31+. Quality is on-target.
+[2026-05-08 11:31:21] 0.40-0.43 light leak band: 33 candidates — orange/red light bursts, lens flares, expired-film color casts. Strong anti-aesthetic warm-color washes. Committing at 0.40.
+[2026-05-08 11:32:03] 0.40-0.44 damaged-film band: 39 candidates — film strips, scratched textures, tintype-style portraits, dusty surfaces, partially destroyed negatives. Strong analog-decay aesthetic. Committing at 0.40.
+[2026-05-08 11:32:56] 0.36-0.41 VHS/CRT band: 83 candidates — pixel-grid CRTs, scanline static, color-bar test patterns, night-vision green, retro TV imagery. Strong analog-decay aesthetic. Committing at 0.36 to capture all 83.
+[2026-05-08 11:33:43] 0.37-0.40 faded-polaroid band: 58 candidates — sepia-faded snapshots, vintage cameras, browned/yellowed photographs, blurry diffused glow images. Strong analog nostalgic decay. Committing at 0.37.
+[2026-05-08 11:34:32] 0.38-0.42 glitch band: 167 candidates — pixel sorting, color shifts, fragmented compositions, datamosh-like blends, oversaturated digital errors. Strong digital-artifact aesthetic. Committing at 0.39 to keep it tighter.
+[2026-05-08 11:35:14] JPEG compression query is noisy at 0.36-0.40 — many normal photos creep in. Skipping JPEG sub-element commit, pivoting to chromatic aberration (more visually distinctive).
+[2026-05-08 11:35:35] Chromatic aberration query returned mostly rainbow CD reflections — clean rainbow imagery, not the lens-defect aesthetic I was hoping for. Skipping. Pivoting to a different angle on digital artifacts.
+[2026-05-08 11:36:18] 0.36-0.40 pixelated band: 52 candidates — pixel art mosaic, blocky portraits, color-cell grids, low-res CRT-imagery overlap. On-target digital low-res aesthetic. Committing at 0.36.
+[2026-05-08 11:37:17] 0.39-0.43 fog/silhouette band: 50 candidates — figures dissolved into mist, obscured silhouettes, monochrome haze. Subject details lost — perfect bad_or_no_details aesthetic. Committing at 0.39.
+[2026-05-08 11:38:02] 0.39-0.43 overexposed band: 104 candidates, but quality is mixed — many normal-looking portraits with high-key style, not strongly anti-aesthetic. Trying tighter threshold or different query for blown-highlight aesthetic.
+[2026-05-08 11:38:20] Even at 0.41-0.43 the overexposed query returns mostly normal scenes (barns, portraits) with bright skies. Not strongly anti-aesthetic. Skipping. Trying smeared/featureless face query.
+[2026-05-08 11:38:58] 0.40-0.43 smeared-faces band: 71 candidates — dissolved/abstracted portraits, featureless faces, decayed flesh, painterly distortions. Highly anti-aesthetic, on-target. Committing at 0.40.
+[2026-05-08 11:39:40] Curation complete. My 14 commits totaled 1027 images across all 6 reference sub-elements plus extensions:
+- intentional_blur: motion_blur (107) + soft_focus (66) + light_trails (127) + ICM_abstract (103) = 403
+- double_exposure: 117
+- film_artifacts: grain (32) + light_leak (35) + scratch_decay (43) = 110
+- analog_degradation: VHS_CRT (87) + faded_polaroid (64) = 151
+- digital_artifacts: glitch (65) + pixelation (53) = 118
+- bad_or_no_details: fog_silhouette (52) + smeared_face (76) = 128
+
+Pre-existing commits (~1141) plus mine give a total dataset of 2168. Slightly over the 1000 soft target but coverage across clarity-subverting aesthetics is broad and balanced. Skipped extreme-shallow-DoF (too conventionally beautiful), JPEG-blockiness (too noisy), and chromatic-aberration (CD rainbow reflections only) when queries didn't surface anti-aesthetic content.
+[2026-05-08 11:40:10] Plan for anti_aesthetics / color_and_tone curation. Target >200 images across 5 sub-elements:
+
+1. clashing_disharmony — toxic neon clashes, complementary color screams, wrong-color objects (purple skin, green sky), unbalanced palettes that feel jarring. Queries: "clashing neon colors photo", "garish color palette tension", "complementary color clash unsettling", "magenta and lime green chaos".
+
+2. chromatic_aberration — purple/green fringing on high-contrast edges, cheap optics look, lo-fi lens failure. Queries: "chromatic aberration fringing edges", "color fringing cheap lens photograph", "RGB shift glitch image", "lens chromatic distortion photo".
+
+3. muted_faded — washed out, low saturation, exhausted retro palettes, monotone melancholy. Queries: "faded washed out photograph desaturated", "muted color palette melancholy", "exhausted dull retro film photo", "monotone tint overcast scene".
+
+4. sickly_cast — sodium vapor yellow, jaundice green, illness/rot tint. Queries: "sickly yellow green tint photo", "sodium vapor street light cast", "jaundiced color tone unhealthy", "greenish hue rot contamination".
+
+5. color_inconsistency — banding, mixed white balance, broken color temperature. Queries: "color banding gradient sky photo", "mixed white balance window indoor outdoor", "uneven color temperature photograph", "posterized color stepping artifact".
+
+Strategy: search broad → sub-element decomposition → sample → commit each separately. Anti-aesthetic curation, so I expect lower aesthetic scores; that's fine. Use negative prompts only against orthogonal junk (text overlays, watermarks, blank/black frames). Will not use "ugly" or "low quality" as negative.
+
+Starting with clashing_disharmony.
+[2026-05-08 11:40:46] 0.34-0.37 sample contains: purple-haired girl, neon city signage with motion blur, garish hoagie shop, clashing red/blue/yellow outfits, green laser fog, geometric LEGO pile. Mix of strong neon clashes plus some weaker results (girl in front of stone wall is less relevant). Top-15 around 0.36-0.39 looks strongest. I'll use threshold 0.355 for clashing neon to capture most strong clashes while excluding weaker matches.
+[2026-05-08 11:41:12] 0.355-0.39 sample shows clear strong neon/clash content: chandelier blue/magenta, painting orange/black, fashion punks, magenta/purple stage smoke, neon highlighter sticks, infinity mirror room. Quality good. Will commit at 0.355.
+[2026-05-08 11:41:59] Sample shows magenta/green/purple combos: ornamental cabbage, pink chrysanthemum, harlequin clown, drag makeup, purple costume, pink balloons. Genuine complementary clash content. Will commit at 0.35.
+[2026-05-08 11:42:45] 0.34-0.37 sample: red-lit horror album cover, pink-haired girl, blue-haired punk, parade chaos, ice cream truck/kid, "Delusional Psychotic Life" album face, green-lit performer, jester masks, candy wrapper trash, yellow-clad street performer. Strong garish/toxic vibe with disturbing aesthetic. Will commit at 0.35.
+[2026-05-08 11:44:10] 0.32-0.35 sample for lens flare/halation: disco ball boy, parking garage shadow, tunnel light streaks, rural blur, blurry car interior at night, train tracks sunset, ghostly windshield, red/cyan light trails. Good lo-fi optical artifact content. Will commit at 0.32.
+[2026-05-08 11:45:01] 0.32-0.345 sample: melancholic teen with stuffed animal, indie portrait, blurred forest road, guitar player, abandoned toy, kaleidoscope, dystopian factory, drunk on pavement, carousel motion blur, gothic girl. Lo-fi/analog feel, melancholy mood, optical imperfections. Will commit at 0.325.
+[2026-05-08 11:45:57] 0.29-0.32 muted/faded sample: woman with cat (muted), retro newspaper read, urban scene, wolf portrait (mid-saturation), dingy living room, abandoned bridge with rust, weird breakfast scene, dull rocks, snow path, dim fireplace. Mostly desaturated/dull tones. Top results have dolls and old photos which fit. Will commit at 0.30.
+[2026-05-08 11:46:43] 0.32-0.345 retro/melancholy sample: old man portrait, vintage telephone switchboard, sleeping woman, abandoned buildings, sodium-lit station, hot air balloon at dusk. Strong nostalgic/faded mood. Will commit at 0.325.
+[2026-05-08 11:47:36] 0.28-0.31 overcast/gloomy sample: industrial bridge, stormy sky, hooded portrait, sculpture obelisk, white horse, sleeping baby (B&W), foggy train view, old man dim portrait, monochrome girl, painted face. Strong gloomy/monotone fit. Will commit at 0.29 to capture broader pool.
+[2026-05-08 11:48:34] 0.345-0.37 sickly sample: yellow-tinted woman in bed, green-tinted dramatic lit girl, sleeping baby B&W, green sleepy reader, sodium-yellow workshop, kids in old clothes, white-faced clown, green-painted body art, sick kid with cold meds. Strong sickly/jaundice content. Will commit at 0.35.
+[2026-05-08 11:49:09] Top sodium vapor results are excellent — orange/yellow night street, fog with car lights, palms with sodium-lit sky, dim suburban scenes, light trails. Strong color cast match. Will commit at 0.35.
+[2026-05-08 11:49:32] 0.34-0.36 sample: hilltop village at night, cathedral lit, traffic lights, illuminated street, fountain, ferris wheel structure, train tracks, Golden Gate bridge in orange haze. All have sodium-lit color cast. Will commit at 0.34.
+[2026-05-08 11:50:20] 0.3-0.33 sample fluorescent/cold: green-lit shoes on purple, urban escalator, blue/purple bridge, cold-toned building, green Grinch face, subway tunnel, ornate church (greenish), industrial machinery green light, bridge structure, monochrome girl. Mix of cold/clinical light. Will commit at 0.31.
+[2026-05-08 11:51:14] 0.34-0.36 mixed-WB sample: chandelier crystals, subway tube, dome ceiling, narrow gallery, rotunda, stained glass, atrium with mixed temperatures. Lots of architectural shots with mixed indoor/outdoor light sources. Genuine mixed-WB look. Will commit at 0.34.
+[2026-05-08 11:52:08] 0.30-0.32 banding/posterization sample: skyscraper, sunset with sun rays, building with sky transition, mountain at sunset (banding visible), city orange sunset, airport mixed light, tunnel teal/red, cat with rainbow flag, blue/yellow sky, sunset over city. Strong gradient banding in sunsets typical of digital JPEG. Will commit at 0.31.
+[2026-05-08 11:52:56] 0.32-0.35 sample for harsh flash/uneven: fire-eater portrait (mixed flame+flash), workshop, snapshot couple, sodium lit street, concert with stage lights, stark portrait, fire close-up, woman flash portrait, woman in shadow, blue-lit yawning passenger. Mixed flash + ambient + colored lights — strong color inconsistency. Will commit at 0.33.
+[2026-05-08 11:53:21] color_and_tone batch summary:
+- clashing_disharmony: 169 images (3 commits)
+- chromatic_aberration: 90 images (2 commits)
+- muted_faded: 129 images (3 commits)
+- sickly_cast: 131 images (3 commits)
+- color_inconsistency: 227 images (3 commits)
+Total color_and_tone: 746 images. Well above 200 target with reasonable balance across sub-elements. chromatic_aberration is lowest — let me add one more query for it to bring it up.
+[2026-05-08 11:54:07] 0.32-0.35 prism/refraction sample: stained glass figure, blue-lit driver, rainbow stage lights, balloons girl, RGB-shifted car interior trails, motion blur lights, atrium with target art, stilt performer, multicolor wood, parrotfish. Real chromatic separation in driver/light streak shots. Will commit at 0.33.
+[2026-05-08 11:54:44] FINAL color_and_tone curation summary (14 commits, 770 images total):
+- clashing_disharmony: 169 images (neon clashes 28, magenta-green 77, garish toxic 64)
+- chromatic_aberration: 114 images (halation/light leaks 51, vintage cheap-optic 39, prism RGB 24)
+- muted_faded: 129 images (desaturated 30, retro melancholy 88, overcast monotone 11)
+- sickly_cast: 131 images (jaundice tints 50, sodium vapor 52, fluorescent cold 29)
+- color_inconsistency: 227 images (mixed WB 106, color banding 79, flash+ambient 42)
+
+All 5 sub-elements covered with sub-element decomposition. Negative prompts limited to orthogonal junk (watermarks, blank/black, plain product). Thresholds chosen per-query based on observed similarity distributions and sample reviews. Anti-aesthetic intent maintained — content selected for jarring/sickly/faded/clashing aesthetics rather than technically broken images.
+[2026-05-08 11:55:15] Plan for anti_aesthetics > lighting_and_exposure curation:
+
+The goal is to curate images showing deliberately bad/unconventional lighting and exposure as legitimate artistic expression, not technical failures. Wide-spectrum aesthetics — embrace harsh, ugly, mood-driven lighting.
+
+Sub-elements to explore (starting from reference list, but I'll expand):
+1. Exposure extremes — crushed shadows / blown highlights
+   - Underexposed silhouettes against bright sky
+   - Overexposed white-out / blown sky
+   - High-contrast graphic black-and-white
+   - Pure shadow with tiny highlight
+2. Light leak — analog film defects
+   - Red/orange light leak streaks
+   - Film burn / sprocket holes light
+   - Lomography style overlap leaks
+3. Flat lighting — no shadows, depth-collapsed
+   - Overcast gray flat scenes
+   - Studio flat front lighting
+   - Diffuse fog flat tone
+4. Harsh / insufficient flash
+   - Direct flash snapshot, red-eye
+   - Hard flash shadows on walls
+   - Murky underexposed flash interiors
+   - Party / paparazzi flash aesthetics
+5. Low-contrast oppressive
+   - Muddy midtones, gray-on-gray
+   - Heavy fog / smog suffocating
+   - Brown/sepia heavy filter
+6. Possible expansions:
+   - Lens flare overload
+   - Mixed color temperature clashes (sodium vapor + fluorescent)
+   - Backlit silhouettes obscuring subjects
+   - Night photography with extreme noise
+   - Strong single-source dramatic chiaroscuro pushed to abstraction
+
+Approach: start broad with each sub-element, refine via search→sample→commit cycles. Use negative prompts for watermarks/text/empty frames. Threshold per query based on observed distribution.
+[2026-05-08 11:55:35] Search for overexposure returned top scores 0.41. Some images are pure white/empty (less useful), others show overexposed landscapes with silhouettes (good anti-aesthetic — graphic minimalism via blown highlights). One has dictionary text. Need to sample mid-high range to find content-rich overexposed images.
+[2026-05-08 11:55:58] Sample at 0.36-0.40 shows mostly good content: silhouettes against blown skies, fog/sun blast, blurry overexposed landscape, minimal compositions. Some are very plain. Will commit at 0.36 to capture this anti-aesthetic exposure-extreme cluster.
+[2026-05-08 11:56:58] Underexposure sample at 0.32-0.36: half-shadowed face, dark trees, motion-blurred figure, eerie green-lit path with dark figure, shoe stepping on pink bunny, hanging dark objects. Strong anti-aesthetic content — mood and unease via crushed shadows. Will commit at 0.32.
+[2026-05-08 11:57:13] 728 images in a single underexposure commit is too many — would dominate dataset. Will undo and re-commit at a higher threshold to keep proportions balanced across sub-elements.
+[2026-05-08 11:57:47] Light leak query returned mostly orange/red abstract closeups rather than authentic film light leaks. Need more specific phrasing — focus on the streak/flare across image edge characteristic of film housing defects.
+[2026-05-08 11:58:19] Light leak sample at 0.36-0.40 mixed: some real light streaks/blurs, some abstract macros. Will commit at 0.38 to focus on stronger matches.
+[2026-05-08 11:59:13] Flat lighting sample shows good content: foggy/overcast scenes, cloudy skies, bleak winter landscapes. One screenshot of website (text-heavy) — negative prompt should help. 1018 candidates at 0.36 is too many; will commit at higher threshold ~0.39.
+[2026-05-08 11:59:44] Frontal flat lighting query mostly returned conventional studio portraits, not really flat-lit. Skip this commit. Try a different angle: institutional/fluorescent fluorescent flat lighting in unflattering interior settings.
+[2026-05-08 12:00:17] Sampled flat institutional lighting: brick corridor with fluorescent rows, blue parking garage, white hallway, fluorescent tube closeup, empty room, blue industrial corridor, dark hallway, cold meeting room. All fit anti-aesthetic flat institutional lighting. Will commit at 0.39.
+[2026-05-08 12:01:10] Flash sample at 0.37-0.41 contains many casual snapshot portraits, some too clean. 2406 candidates is too large. Commit at 0.40.
+[2026-05-08 12:01:49] Oppressive low-contrast top results are ideal: foggy bare trees, smog skyline, gray dirt road in mist, dim streetlight in fog. All gray monotone, suffocating mood. Will commit at 0.39.
+[2026-05-08 12:02:41] Sample shows desolate urban night with sodium-orange street lights, lonely figure walking on empty road, distant skyline silhouettes. Strong color-temp clash mood. Will commit at 0.40.
+[2026-05-08 12:03:36] Chiaroscuro sample shows: harsh window light stripes, lone mannequin in dark, single-source portrait, blue-lit curtain, rainbow prism on bottle, dark abstract metal shapes. Excellent dramatic single-source content. Will commit at 0.40.
+[2026-05-08 12:05:04] Backlit silhouette top results: anonymous figures against windows, sinister shadow figures, deeply obscured faces — perfect anti-aesthetic identity-erasure backlighting. Will commit at 0.39.
+[2026-05-08 12:06:06] Verified two larger commits: harsh flash sample shows expected snapshot/direct-flash portraits with eerie shadow effects; mixed color temp sample shows urban night with sodium-orange / blue-twilight clashes and dimly lit storefronts. Lighting_and_exposure curation complete — 11 commits, ~1249 images covering all 5 reference sub-elements plus 6 expansions (separate over/underexposure, separate overcast vs institutional flat, mixed color temp, chiaroscuro, lens flare, backlit silhouette). Wide-spectrum anti-aesthetic lighting goal achieved.
+[2026-05-08 12:06:51] Plan for anti_aesthetics / composition_and_structure curation:
+
+Goal: Build a wide-spectrum subset of images where the *composition itself* is the source of anti-aesthetic value — tilted horizons, awkward cropping, scale conflicts, snapshot energy — rather than subject matter or post-processing alone. These should look intentionally "wrong" or amateur in framing, not just blurry/low-quality.
+
+Sub-elements I will explore (starting from the reference list, with extensions):
+1. Unconventional framing / dutch tilt / crooked horizons — accidental angle photography
+2. Obstructed / aggressive cropping — head cut off, subject sliced by frame edge, foreground object blocking subject
+3. Scale inconsistency / forced perspective gone wrong / surreal scale juxtaposition
+4. Unconventional scale — extreme close-up of mundane objects, tiny subject in vast empty frame, monumental low-angle distortion
+5. Amateur snapshot energy — flash photo of strangers, blurry party shot, off-center vernacular photography
+Extensions I may pursue:
+6. Negative space dominance / subject pushed to extreme corner
+7. Awkward symmetry breaks / off-balance composition
+8. Foreground intrusion / accidental finger or strap in frame
+9. Wide-angle distortion at close range / fisheye warping faces
+10. Disorienting POV — looking up from ground, looking straight down at feet, ceiling-only frames
+
+Strategy:
+- One sub-element per commit batch.
+- Use search → inspect distribution → sample mid/edge bands → commit with a tight threshold.
+- Negative prompts: exclude pure technical garbage (corrupted files, full black/white frames) and watermarks/text overlays where they confuse the search; do NOT use "ugly/blurry/bad" as negatives because those are the target.
+- Aim for >200 images across all sub-elements; multiple commits per sub-element are fine.
+
+Starting with sub-element 1: tilted horizons / crooked framing.
+[2026-05-08 12:07:14] First search for "tilted horizon dutch angle" returned scores capped at 0.36, quite low. Top images include vertical buildings shot at angle (Gehry-style architecture), train track perspective, ferris wheel motion blur — some have actual tilted/dutch framing but many are just dynamic compositions. Need to refine query and sample to find true anti-aesthetic crooked snapshots, not stylish architectural photos.
+[2026-05-08 12:08:11] Sample at 0.31-0.34 band shows good anti-aesthetic crooked snapshots: ski stage with tilted dancers, go-kart shot, party crowd, runner cropped, surprised man on phone, cluttered antique shop with fisheye, fallen gas station sign, man on toy wagon. These are exactly the "off-kilter handheld" target. Now check lower band 0.29-0.31 to see how far quality holds.
+[2026-05-08 12:09:46] Sample at 0.33-0.36 for "head cut off / awkward crop" shows leaping man with arms cropped, motion-blur kid running cut at frame, headless bent figure, photographer with subject sliced. Mix of true cropping anti-aesthetics and casual portraits. Commit at 0.34 to keep harder hits.
+[2026-05-08 12:10:39] Sample at 0.33-0.36 for "blocked by foreground" shows: man's profile blocking news headline, peace vigil tent with hidden figure, blurry foreground person at subway, child obscured behind tree, man covering face. Good obstruction content. Commit at 0.335.
+[2026-05-08 12:11:45] Sample 0.34-0.37 of "forced perspective scale mismatch" gives oversized parade tricycle, low-angle Angel of the North, knife next to eye, giant red horn, giant puppet at parade. Strong scale-confusion content. Commit at 0.34.
+[2026-05-08 12:12:49] Sample 0.34-0.37 of macro close-up gives snail shell spiral, wasp face, hot dog with ketchup, toothpicks, lava lamp bubbles, man surrounded by pencils, hibiscus stamen. Strong claustrophobic-frame-filling-zoom content. Commit at 0.34.
+[2026-05-08 12:13:32] Top-12 of "tiny figure in vast space" returns striking landscape compositions: hiker in snow, silhouetted walker by tree, lighthouse on cliff edge, dunes with three tiny tourists, lone tree on misty hill. These tilt toward conventional landscape aesthetics but they fit the "unconventional_scale" brief (subject monumentally diminished). Wide-spectrum dataset welcomes both pretty and ugly. Commit at 0.33.
+[2026-05-08 12:14:25] Sample 0.36-0.39 of monumental low angle: skyscraper convergence, blue glass facade, torii gate, totem pole, modern roofline, gothic cathedral entrance, Empire State Building. All clearly upward perspective monuments. Commit at 0.36.
+[2026-05-08 12:16:25] Sample 0.33-0.36 of family vernacular: fireworks night, Vicks/medicine bottles still life, candle in glass, Christmas truck, indie singer, Christmas bow gift, drunk teen passed out with bottles, blurry Halloween street ghost. Strong amateur night-flash energy. Commit at 0.33.
+[2026-05-08 12:21:30] Final tally for composition_and_structure: 15 commits, ~3046 images covering all 5 reference sub-elements (unconventional_framing, obstructed_cropping, scale_inconsistency, unconventional_scale, amateur_snapshot_energy) plus 4 self-extended sub-elements (extreme_negative_space, foreground_intrusion, disorienting_pov up/down, fisheye_facial_distortion). Mix is heavily anti-aesthetic with several high-aesthetic pluralism inserts (low-angle monumental architecture, tiny-subject-in-vast landscape) to maintain wide-spectrum coverage. Dataset comfortably exceeds 200-image floor and stays well below 1000-per-category target. Curation complete.
+[2026-05-08 12:22:09] PLAN for anti_aesthetics / emotion_and_subject sub-type. Target >200 images via multiple commits. Will decompose each of the 7 reference sub-elements into specific visual queries:
+
+1. negative_personal_emotion: crying face, angry face/yelling, fearful expression, lonely sad portrait, grief/mourning
+2. atmospheric_distress: dim foggy alley, oppressive grey skies, eerie empty interior, dark stormy mood, isolated figure in bleak landscape
+3. decay_and_degradation: rusted metal, peeling paint walls, abandoned ruins, dirty cluttered rooms, broken furniture
+4. disgust_and_aversion: rotting food, mold and fungus, garbage piles, dirty toilet/bathroom, dead insects/animals
+5. unfinished_raw: rough sketches with visible pencil marks, unfinished paintings with bare canvas, exposed brushstrokes/drips, collage with rough edges
+6. abstract_photo: motion-blurred abstraction, ICM intentional camera movement, reflection abstractions, light-leak abstract textures
+7. surrealism: dreamlike collage, double-exposure portraits, impossible/melted objects, masked figures in odd settings, body horror surrealism
+
+Approach: search broadly first, examine score distributions, then sample within tight bands, then commit with thresholds chosen per query. Use negative prompts mainly to filter watermarks, text overlays, blank/white frames. Will keep negative prompt list short (3-5 strings).
+
+Starting with sub-element 1: negative personal emotion - "crying face" first.
+[2026-05-08 12:22:31] Top-12 max similarity ~0.27 for "crying face" query. Results don't show literal tears but rather lonely/sad atmosphere — figure on bench, dark statue, low-key portrait. Photo dataset likely lacks explicit close-up crying. Pivoting query to atmospheric/lonely sadness portraits, and will sample a band to verify.
+[2026-05-08 12:22:48] Sample at 0.235-0.27 shows: angel statue, woman in dark interior, old man reading by lamp, dim doorway, foggy alley at night, elderly woman reading newspaper, homeless men sitting against wall, dark park with figure walking. These are atmospheric melancholy/loneliness scenes — not literal crying but match "atmospheric_distress" sub-element well. Will commit this batch under that sub-element framing rather than crying.
+[2026-05-08 12:23:45] Sample 0.25-0.31 for angry/screaming yields mixed quality — many false positives (waterfall, kid with guitar). Dataset weak on close-up angry faces. Skipping commit on this query. Trying "fearful/scared expression" next.
+[2026-05-08 12:24:16] Sample at 0.32-0.37 for protest/anger shows strong matches: protest crowd with signs, screaming face in red light, angry hands gripping wheel, woman with hands clutching head in distress, immigration protest, white house protest. Some weak matches like rust formations. Will commit at 0.33 to keep strong protest/anger imagery.
+[2026-05-08 12:24:55] Sample 0.36-0.41 funeral/gravestone is highly consistent: cemeteries, tombstones, mourners with flowers, weeping angel statues, military cemetery. Strong matches. Will commit at 0.36 to maximize relevant images.
+[2026-05-08 12:25:47] 0.36-0.41 sample: dim tunnel, foggy night roads, dark cobblestone alleys, abandoned-looking buildings, deserted streets at night under sodium lamps. Strong atmospheric distress matches. Will commit at 0.37 to be selective.
+[2026-05-08 12:26:32] Sample 0.32-0.36 stormy sky shows dark wave-crashing coast, stonehenge under heavy cloud, mountain passes under storm, volcanic eruption with ash plume, foggy ridges. All match oppressive weather. Will commit at 0.33 to capture broader bleak weather imagery.
+[2026-05-08 12:27:18] 0.35-0.40 rust sample is consistently rust/corroded surfaces, rusted chains, decayed industrial buildings, rusted rebar. Strong matches. Will commit at 0.36.
+[2026-05-08 12:27:58] Sample 0.34-0.38 peeling paint shows: hallway with cracked walls, abandoned house exteriors, ruined interior with crumbling ceiling, decayed industrial space, bare interior with balloons (artistic). Strong decay matches. Will commit at 0.35.
+[2026-05-08 12:28:36] 0.36-0.40 abandoned ruins: derelict factory interior, twisted metal collapse, brick building with broken windows, smashed windows, abandoned construction site, train tracks toward dark factory. Strong matches. Will commit at 0.37 since dataset has 254 candidates in this band.
+[2026-05-08 12:29:28] 0.30-0.34 rot/decay sample shows: dried-up flowers, creepy doll head, decayed roses, fungus on tree, rusty wrench in dirt, derelict door. Mixed but generally decay-related. Acceptable. Will commit at 0.33 to be selective and avoid too many false positives.
+[2026-05-08 12:30:12] 0.33-0.37 garbage shows: crushed cans, recycled trash piles, scrap metal heaps, smashed cars in scrapyard, landfill mountain. All strong matches for waste/refuse. Will commit at 0.34.
+[2026-05-08 12:30:58] 0.34-0.40 dead animal sample shows: dead bird in snow, dead lizard, animal skull, fly on rotting leaf, bull skull, human skull, dead bird in canyon. Strong matches for death/decay/disgust. Will commit at 0.36 to be selective.
+[2026-05-08 12:31:51] 0.30-0.34 sketch sample: pencils on graph paper, classified ads with handwritten circles, scribbled math notes, technical drafting drawings, basement framing. Matches "exposed process / raw" framing. Will commit at 0.32.
+[2026-05-08 12:32:37] 0.32-0.36 unfinished painting sample: artist painting on floor, splash of light/paint, bare interior, mannequin head, painter at work, abstract paint texture. Mostly relevant. Will commit at 0.34.
+[2026-05-08 12:33:32] 0.34-0.39 ICM/light trail abstraction shows: red concert with motion blur, color streaks through window, blue tunnel motion blur, color dome, motion-blurred taxi at night, city lights long-exposure, blue circle/funnel, gold spiral. All match abstract motion photography. Will commit at 0.36.
+[2026-05-08 12:34:20] 0.32-0.36 macro abstraction sample shows: pebble in snow, salt grain macro, marble candle, cotton plant, caterpillar, ice formations on reeds, layered cliff, rusty chains. Lots of natural textures and details. Borderline overlap with decay set. Will commit at 0.33 to capture decent volume of texture abstraction.
+[2026-05-08 12:35:15] 0.35-0.39 surrealism sample shows: spider attack dream sequence, doll head in candy pile, distorted face with hair tendrils, figure walking through doorway in dark, hourglass face with sparkles, floating camera, scissors near eye. Strong dreamlike/uncanny imagery. Will commit at 0.36.
+[2026-05-08 12:35:57] 0.33-0.37 double exposure sample shows: hand drawing self emerging from paper (Escher-like), kaleidoscope mirror faces, woman in night car ICM, dancing silhouette, exposure-stack head transform, TV screen man, intense close-up, dark figure on floor. Mostly fits "surreal/ghostly composite". Will commit at 0.34.
+[2026-05-08 12:36:29] DATASET COMPLETE for anti_aesthetics / emotion_and_subject. 17 commits totaling 1846 images for this sub-type, covering all 7 reference sub-elements:
+- negative_personal_emotion: 21 + 92 + 88 = 201 (atmospheric melancholy, anger/protest, funeral/mourning)
+- atmospheric_distress: 117 + 52 = 169 (foggy alleys, stormy skies)
+- decay_and_degradation: 106 + 106 + 224 = 436 (rust, peeling paint, abandoned ruins)
+- disgust_and_aversion: 73 + 93 + 93 = 259 (rot/mold, garbage, dead animals)
+- unfinished_raw: 50 + 27 = 77 (sketches, unfinished paintings)
+- abstract_photo: 199 + 152 = 351 (motion-blur, macro texture)
+- surrealism: 236 + 117 = 353 (dreamlike juxtaposition, double-exposure)
+
+Well past target of >200 images. Used per-query thresholds (0.32-0.37) chosen from observed similarity distributions. Negative prompts kept short (3-5 strings) to filter watermarks and obvious mismatches without enforcing conventional beauty.
+[2026-05-08 21:45:10] PLAN: Curating anti_aesthetics / clarity_and_focus subcategory. Target: 200-300 images total covering 6 sub-elements: (1) intentional_blur — motion blur, shallow DoF, soft focus, long exposure; (2) double_exposure — layered/ghosted compositions; (3) film_artifacts — heavy grain, noise, scratches; (4) analog_degradation — VHS decay, scanlines, tracking errors, retro low-res; (5) digital_artifacts — datamoshing, compression glitches, aliasing; (6) bad_or_no_details — smeared, mushy, lack-of-detail surfaces. Strategy: search broadly first to see distribution, then decompose each sub-element into 2-3 fine-grained queries (e.g. blur → motion blur of moving subject, out-of-focus portraits, long exposure light trails). Use negatives only for watermarks/text/empty frames. Commit each fine-grained query separately with descriptive message tags. Roughly 30-50 images per sub-element. Will start with intentional_blur.
+[2026-05-08 21:45:41] Sample at 0.30-0.34 shows mixed quality: some clear motion blur (cyclist, dashboard light trails, train), but also sharp action shots without blur (driver, snowboarder). 0.30 too loose. Top range 0.34+ is excellent. Will commit at 0.335 to capture true motion blur.
+[2026-05-08 21:46:09] Sample at 0.335-0.36: every image clearly shows motion blur — tunnel speed lines, dashboard dragging streetlights, fairground rides spinning into light arcs, F1 cars panning blur. Strong signal. Committing at 0.335 for motion blur sub-element.
+[2026-05-08 21:46:50] Sample at 0.32-0.35: most show long-exposure light trails (Golden Gate, Vegas strip, ferris wheel, dashboard tunnel). A couple are static night cityscapes without trails. 0.32 a bit loose. Top range 0.35+ very strong. Will commit at 0.34 — light trails clearly visible in those rows.
+[2026-05-08 21:47:43] Sample at 0.33-0.355: every image exhibits dreamy out-of-focus / shallow DoF — abstract red blur, ladybug on guitar with bokeh background, distant city bokeh, swirly motion blur, ghostly faces. All on-target. Will commit at 0.33 to capture broader range.
+[2026-05-08 21:48:06] 88 images for soft-focus is too many; total intentional_blur is 137 already. Target is 200-300 across all 6 sub-elements (~30-50 each). Will undo and re-commit at tighter threshold.

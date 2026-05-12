@@ -1,0 +1,13 @@
+{
+    "background": "The images's background is low quality, there is no background or the background is ugly",
+    "clarity": "The images is blurry, the image is noticeably blurry, as though noise or distortion is present.",
+    "color aesthetic": "The images's color aesthetic is ugly, there are ugly colors, the colors are unpleasant, often due to lack of harmony, abruptness, overexposure, or poor color choice.",
+    "color brightness": "The images's brightness is dark: Purely judging the color, it is dark.",
+    "detail realism": "The images's detail realism is inauthentic; The image is inconsistent with reality, featuring heavy object distortion or deformation, even when scaled down, the flaws in realism are apparent.",
+    "detail refinement": "Important elements appear noticeably rough on closer inspection, or the overall image feels rough. Important details are blatantly rough or unfinished. So rough that it is impossible to discern objects in the image. The image isn't just indecipherable, but it also appears extremely fragmented/broken.",
+    "emotion": "The images shows negative emotions. The image invokes negative emotions, such as creepiness, eeriness, horror, disgust, or hostility",
+    "lighting distinction": "The images' bas bad lighting distinction: No light and shadow: No obvious light effects or shadows are seen.",
+    "main object": "The images's main object is not prominent: There is no main object, or the main object is too inconspicuous (small + peripheral + unnoticeable).",
+    "object pairing": "The images's object pairing is disharmonious: Includes any noticeable mismatch in harmony, proportion, or aesthetics, such as awkward pairings, chaotic or discordant compositions, etc.",
+    "richness": "The images's empty: The image appears to lack clear intent or design and seems random or completely unfinished. "
+}

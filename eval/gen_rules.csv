@@ -1,0 +1,48 @@
+﻿Dimension,Score,Option,Description
+Object Composition (object pairing),1,Harmonious,"Coordination should meet at least one of the following qualities:In terms of overall feelings, it brings a sense of serenity, dynamism, or harmony, resulting in overall coordination.Compositional techniques such as visual unity or complementary relationships."
+,0,Normal,There is no obvious sense of coordination or lack of coordination between the objects.
+,-1,Disharmonious,"Includes any noticeable mismatch in harmony, proportion, or aesthetics, such as awkward pairings, chaotic or discordant compositions, etc."
+Main Object Position (main object),1,Prominent,"The main objects are prominent if they meet all the following conditions:A main object or objects exist in the image.The main objects are in noticeable positions (e.g., central areas of the image or focal points).The main objects are not too small."
+,0,Normal,"There is a main object, but it is not very noticeable."
+,-1,Not prominent,"There is no main object, or the main object is too inconspicuous (small + peripheral + unnoticeable)."
+Scene Richness (richness),2,Very rich,"The image contains many objects and small details, and all areas are visually full or detailed."
+,1,Rich,"The image contains quite a few objects and details, but not to the level of being very rich; some areas are not very detailed."
+,0,Normal,"The visual richness is average, and nothing stands out in either direction."
+,-1,Monotonous,"The image is comprehensible or seems to carry deliberate design, as opposed to looking random or unfinished.The image features large blank spaces, minimal color, simple shapes, and little detail in the main objects."
+,-2,Empty,The image appears to lack clear intent or design and seems random or completely unfinished.
+Background Quality (background),2,Beautiful,The background is beautiful and can capture the viewer’s attention.
+,1,Somewhat beautiful,The background is beautiful and can capture the viewer’s attention.
+,0,Normal,The background exists but is not remarkable.
+,-1,No background,There is no background.
+Overall Clarity (clarity),2,Very clear,Extremely clear without any part of the image appearing excessively blurry.
+,1,Clear,"The overall image is clear, but some important areas may appear slightly blurry."
+,0,Normal,"There is no obvious blurriness, but some areas lack clarity—a safe choice if unsure."
+,-1,Blurry,"The image is noticeably blurry, as though noise or distortion is present."
+,-2,Completely blurry,The entire image is extremely blurry and indistinct.
+Brightness (color brightness),1,Bright,Purely judging the color—it is bright.
+,0,Normal,Purely judging the color—neither bright nor dark.
+,-1,Dark,Purely judging the color—it is dark.
+Color Aesthetics(color aesthetic),1,Beautiful colors,"The colors in the image are aesthetically pleasing, and you can imagine the picture becoming more attractive solely due to its coloring."
+,0,Normal colors,The colors are ordinary—neither beautiful nor unpleasant.
+,-1,Ugly colors,"The colors are unpleasant, often due to lack of harmony, abruptness, overexposure, or poor color choice."
+Environmental Light and Shadow Prominence (lighting distinction),2,Very prominent,"Highly pronounced, with features like drastic lighting or shadows, reflections, or refractions."
+,1,Prominent,"Lighting or shadows are clearly visible, and a light source may be apparent in the image."
+,0,Normal,The light source is not visible or very subtle.Shadows or light details are weak or unremarkable.
+,-1,No light and shadow,No obvious light effects or shadows are seen.
+Emotional Response (emotion),2,Very positive,"The image clearly stirs positive emotions, such as joy or warmth (e.g., a cheerful celebration or a serene Thanksgiving dinner)."
+,1,Positive,"The image contains elements that generate positive emotions, such as beauty, harmony, or freshness."
+,0,Normal,The emotional response to the image is neutral or indifferent.
+,-1,Negative,"The image invokes negative emotions, such as creepiness, eeriness, or hostility."
+,-2,Very negative,"The image elicits overwhelmingly negative emotions, such as horror, or disgust, or depression"
+Detail Refinement (detail refinement),2,Very refined,Extremely refined with almost no visible flaws or imperfections.
+,1,Refined,"Relatively refined overall, but still with some visible flaws or room for improvement in precision."
+,0,Normal,Neither rough nor overly polished—select this for average finishing.
+,-1,Rough,"Important elements appear noticeably rough on closer inspection, or the overall image feels rough."
+,-2,Very rough,Important details are blatantly rough or unfinished.
+,-3,Hard to recognize,So rough that it is impossible to discern objects in the image.
+,-4,Fragmented,"The image isn't just indecipherable, but it also appears extremely fragmented/broken."
+Detail Authenticity (detail realism),1,Authentic,The imagery is photorealistic and completely free of noticeable flaws.
+,0,Neutral,The image contains neither major flaws nor notable realism—it feels between real and artificial.
+,-1,Inauthentic,"Certain areas appear noticeably artificial, though less obvious when viewed at small scale."
+,-2,Very inauthentic,"Even when scaled down, the flaws in realism are apparent."
+,-3,Severely inauthentic,"The image is entirely inconsistent with reality, featuring heavy object distortion or deformation."

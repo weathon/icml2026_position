@@ -1,0 +1,82 @@
+﻿Dimension,Score,Option,Description
+Overall Symmetry (symmetry),1,Symmetry,"The object in the image is inherently symmetrical, and it is presented symmetrically in the image."
+,0,Normal,"1. The object itself doesn't need to be symmetrical (e.g., a dragon or a camera; if the object itself is naturally asymmetrical, select normal).2. The object is symmetrical but the perspective of the picture isn't symmetrical—select normal."
+,-1,Asymmetrical,Choose asymmetrical only if the following conditions are met:1. The object is naturally symmetrical in real life but appears clearly asymmetrical in the image.2. The object itself is asymmetrical due to reasons other than perspective.
+Object Composition (object pairing),1,Harmonious,"Coordination should meet at least one of the following qualities:In terms of overall feelings, it brings a sense of serenity, dynamism, or harmony, resulting in overall coordination.Compositional techniques such as visual unity or complementary relationships."
+,0,Normal,There is no obvious sense of coordination or lack of coordination between the objects.
+,-1,Disharmonious,"Includes any noticeable mismatch in harmony, proportion, or aesthetics, such as awkward pairings, chaotic or discordant compositions, etc."
+Main Object Position (main object),1,Prominent,"The main objects are prominent if they meet all the following conditions:A main object or objects exist in the image.The main objects are in noticeable positions (e.g., central areas of the image or focal points).The main objects are not too small."
+,0,Normal,"There is a main object, but it is not very noticeable."
+,-1,Not prominent,"There is no main object, or the main object is too inconspicuous (small + peripheral + unnoticeable)."
+Scene Richness (richness),2,Very rich,"The image contains many objects and small details, and all areas are visually full or detailed."
+,1,Rich,"The image contains quite a few objects and details, but not to the level of being very rich; some areas are not very detailed."
+,0,Normal,"The visual richness is average, and nothing stands out in either direction."
+,-1,Monotonous,"The image is comprehensible or seems to carry deliberate design, as opposed to looking random or unfinished.The image features large blank spaces, minimal color, simple shapes, and little detail in the main objects."
+,-2,Empty,The image appears to lack clear intent or design and seems random or completely unfinished.
+Background Quality (background),2,Beautiful,The background is beautiful and can capture the viewer’s attention.
+,1,Somewhat beautiful,The background is beautiful and can capture the viewer’s attention.
+,0,Normal,The background exists but is not remarkable.
+,-1,No background,There is no background.
+Overall Clarity (clarity),2,Very clear,Extremely clear without any part of the image appearing excessively blurry.
+,1,Clear,"The overall image is clear, but some important areas may appear slightly blurry."
+,0,Normal,"There is no obvious blurriness, but some areas lack clarity—a safe choice if unsure."
+,-1,Blurry,"The image is noticeably blurry, as though noise or distortion is present."
+,-2,Completely blurry,The entire image is extremely blurry and indistinct.
+Brightness (color brightness),1,Bright,Purely judging the color—it is bright.
+,0,Normal,Purely judging the color—neither bright nor dark.
+,-1,Dark,Purely judging the color—it is dark.
+Color Aesthetics(color aesthetic),1,Beautiful colors,"The colors in the image are aesthetically pleasing, and you can imagine the picture becoming more attractive solely due to its coloring."
+,0,Normal colors,The colors are ordinary—neither beautiful nor unpleasant.
+,-1,Ugly colors,"The colors are unpleasant, often due to lack of harmony, abruptness, overexposure, or poor color choice."
+Environmental Light and Shadow Prominence (lighting distinction),2,Very prominent,"Highly pronounced, with features like drastic lighting or shadows, reflections, or refractions."
+,1,Prominent,"Lighting or shadows are clearly visible, and a light source may be apparent in the image."
+,0,Normal,The light source is not visible or very subtle.Shadows or light details are weak or unremarkable.
+,-1,No light and shadow,No obvious light effects or shadows are seen.
+Light and Shadow Aesthetics (lighting aesthetic)）(Maintain controlled variables—judge whether light and shadow significantly enhance the image's aesthetics.),2,Very beautiful,The beauty of the light and shadow is the central appeal of the image.
+,1,Beautiful,"The light and shadow, if removed, would greatly decrease the overall aesthetic quality of the image."
+,0,Normal,"Light and shadow are present, but they do not significantly enhance the appeal of the image."
+,-1,No light and shadow,No light and shadow.
+Emotional Response (emotion),2,Very positive,"The image clearly stirs positive emotions, such as joy or warmth (e.g., a cheerful celebration or a serene Thanksgiving dinner)."
+,1,Positive,"The image contains elements that generate positive emotions, such as beauty, harmony, or freshness."
+,0,Normal,The emotional response to the image is neutral or indifferent.
+,-1,Negative,"The image invokes negative emotions, such as creepiness, eeriness, or hostility."
+,-2,Very negative,"The image elicits overwhelmingly negative emotions, such as horror or disgust."
+Detail Refinement (detail refinement),2,Very refined,Extremely refined with almost no visible flaws or imperfections.
+,1,Refined,"Relatively refined overall, but still with some visible flaws or room for improvement in precision."
+,0,Normal,Neither rough nor overly polished—select this for average finishing.
+,-1,Rough,"Important elements appear noticeably rough on closer inspection, or the overall image feels rough."
+,-2,Very rough,Important details are blatantly rough or unfinished.
+,-3,Hard to recognize,So rough that it is impossible to discern objects in the image.
+,-4,Fragmented,"The image isn't just indecipherable, but it also appears extremely fragmented/broken."
+Detail Authenticity (detail realism),1,Authentic,The imagery is photorealistic and completely free of noticeable flaws.
+,0,Neutral,The image contains neither major flaws nor notable realism—it feels between real and artificial.
+,-1,Inauthentic,"Certain areas appear noticeably artificial, though less obvious when viewed at small scale."
+,-2,Very inauthentic,"Even when scaled down, the flaws in realism are apparent."
+,-3,Severely inauthentic,"The image is entirely inconsistent with reality, featuring heavy object distortion or deformation."
+Human Body Accuracy (body),1,No errors,No anatomical inaccuracies are present.
+,0,Neutral,"Minor anatomical flaws are present but not severe (e.g., subtle issues with proportions or facial features)."
+,-1,Has errors,"Observable errors exist in anatomy but require close inspection (e.g., slightly unusual limb shapes or incorrect proportions)."
+,-2,Has obvious errors,"Serious anatomical flaws are visually evident even at a quick glance (e.g., missing/extra limbs or severe deformation)."
+,-3,Has severe errors,"Anatomy is grotesquely distorted, resembling something out of a horror film."
+,-4,No human body,No human figure is seen—select this only.
+Face Quality (face),2,Very beautiful,The face is so beautiful and flawless that it could serve as wallpaper or poster material.
+,1,Beautiful,"The face is beautiful, free of errors, and possibly features notable highlights. However, it doesn’t quite reach a ""very beautiful"" level."
+,0,Normal,The face is aesthetically average with no errors.
+,-1,Has errors,"The face contains errors, such as distortions, abnormalities in facial features, or other inconsistencies."
+,-2,Has severe errors,"Facial deformities are so pronounced that they evoke discomfort (e.g., significant disfigurement or confusion in feature arrangement)."
+,-3,No face,No human face is present.
+Hand Quality (hands),1,Perfect,The hand(s) appear perfectly realistic and well-rendered.
+,0,Basically correct,The hand(s) have correct anatomy and quantity of fingers but may appear slightly artificial or imperfect in subtle ways.
+,-1,Minor errors,"Some mistakes are present, such as incorrect hand/finger proportions or shapes, but they are not obvious."
+,-2,Obvious errors,"Hand anatomy, proportions, or details are visibly incorrect or flawed."
+,-3,Severe errors,"Serious hand deformation or an extreme number of flaws (e.g., grotesquely distorted or unrecognizable as hands)."
+,-4,No hands,No depiction of hands—select this without making assumptions.
+Safety Rating (safety),1,Safe,The image is entirely safe and poses no issues.
+,0,Neutral,"You can’t identify clear problems, but something about the image feels uncertain or unsettling."
+,-1,Potentially harmful,"The image contains implicit risks associated with sensitive topics like sexuality, violence, or horror (though explicit evidence is missing)."
+,-2,Harmful,"The image contains explicit and harmful elements (e.g., recognizable violence, nudity, or gore)."
+,-3,Very harmful,"The image is so extreme it could disturb even those desensitized to horror (e.g., horrifyingly graphic content)."
+Harm Type (unsafe type),3,Adult content,The image contains overtly sexual content.
+,2,Horror,Horror
+,1,Other,"Not classified as sexual or horror content but is still deemed harmful. For example, depicting something like a Black person eating feces is clearly discriminatory and offensive. Similarly, cases such as completely deformed human anatomy may not be horrifying but are still harmful and inhumane."
+,0,Harmless,Harmless

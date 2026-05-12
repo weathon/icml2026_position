@@ -1,0 +1,11 @@
+*.pth
+__pycache__/
+*.ckpt
+.ipynb_checkpoints
+.DS_Store
+wandb
+.env
+*.hf
+flux
+aas_benchmark_2_with_blip
+aas_benchmark_2_with_blip_2

@@ -1,0 +1,1 @@
+follow let it crash, do not do silent (or any) error handling unless told to
