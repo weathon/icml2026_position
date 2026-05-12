@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Aesthetic Alignment Narrows Artistic Expression — ICML 2026 Spotlight</title>
+<meta name="description" content="ICML 2026 Position Spotlight. Aesthetic alignment in image generation systematically suppresses anti-aesthetic, abstract, and emotionally negative user intent.">
+<link rel="stylesheet" href="css/normal.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%23b48b32'/></svg>">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="container row">
+    <div class="left">
+      <a href="#abstract">Abstract</a>
+      <a href="#contributions">Contributions</a>
+      <a href="#risks">Risks</a>
+      <a href="#results">Results</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#bibtex">BibTeX</a>
+    </div>
+    <div class="right">
+      <span class="spotlight-pill"><span class="dot"></span>ICML 2026 SPOTLIGHT</span>
+      <a class="mode-toggle" href="anti.html" title="Switch to the anti-aesthetic version of this site">⇄ Anti-aesthetic mode</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="kicker">Position Paper · ICML 2026 (Spotlight)</div>
+    <h1 class="title">Position: Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
+    <p class="subtitle">
+      Image generation and reward models default to a single, average notion of beauty. When users explicitly request anti-aesthetic, abstract, or emotionally negative imagery, these systems quietly sanitize, brighten, and smile back. We call this <span class="hl">reversed alignment</span>: instead of aligning the model to the user, the user gets aligned to the model.
+    </p>
+
+    <div class="authors">
+      <b>Wenqi Marshall Guo</b>, <b>Qingyun Qian</b>, <b>Khalad Hasan</b>, <b>Shan Du</b>
+    </div>
+    <div class="affil">
+      University of British Columbia, Department of CMPS · Weathon Software, Canada
+    </div>
+
+    <div class="cta-row">
+      <a class="btn primary" href="https://openreview.net/forum?id=1gQ4zc1Q8I">📄 Read the paper</a>
+      <a class="btn" href="https://huggingface.co/datasets/weathon/aas_benchmark_final">🤗 Benchmark dataset</a>
+      <a class="btn" href="https://huggingface.co/datasets/weathon/aas_real_images">🤗 Real-image dataset</a>
+      <a class="btn" href="#bibtex">⌗ BibTeX</a>
+      <a class="btn" href="anti.html">⇄ View this page in anti-aesthetic mode</a>
+    </div>
+  </div>
+</header>
+
+<section id="abstract">
+  <span class="section-anchor" id="abstract-a"></span>
+  <div class="container">
+    <div class="eyebrow">Abstract</div>
+    <h2>Aligning to an imaginary average</h2>
+    <p class="lead">
+      Over-aligning image generation models to a generalized aesthetic preference conflicts with user intent, particularly when anti-aesthetic outputs are requested for artistic or critical purposes. This adherence prioritizes developer-centered values, compromising user autonomy and aesthetic pluralism.
+    </p>
+    <p>
+      We test this bias by constructing a wide-spectrum aesthetics dataset and evaluating state-of-the-art generation and reward models. We find that aesthetic-aligned generation models frequently default to conventionally beautiful outputs, failing to respect instructions for low-quality or negative imagery. Crucially, reward models penalize anti-aesthetic images even when they perfectly match the explicit user prompt. We confirm this systemic bias through image-to-image editing and evaluation against real abstract artworks.
+    </p>
+
+    <div class="tldr">
+      <b>TL;DR.</b> If you ask today's models for ugly, abstract, blurry, sad, or otherwise non-mainstream imagery, they will quietly clean it up. Reward models then penalize the version that actually matched your prompt. That isn't a technical failure — it's the stated alignment objective. We argue this objective is the problem.
+      <ul>
+        <li>10 generation models · 7 reward models · 300 prompts · 2,928 real anti-aesthetic photographs</li>
+        <li>Wide-spectrum aesthetics benchmark, fine-tuned judging model, and per-dimension analysis</li>
+        <li>Edvard Munch's <i>The Scream</i> scores 5.23 on HPSv3 — typical AI "high aesthetic" images score 10–15.</li>
+      </ul>
+    </div>
+
+    <div class="figure-row">
+      <div class="panel">
+        <img src="img/local/scream.jpg" alt="Edvard Munch, The Scream (1893)">
+        <div class="meta">
+          <span class="label">The Scream</span> · Edvard Munch, 1893 · oil, tempera, pastel on cardboard<br>
+          <span class="prompt"><b>HPSv3 score:</b> 5.23. Typical AI "high-aesthetic" generations: 10–15.</span>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="img/local/matisse.jpg" alt="Matisse, Luxe, Calme et Volupté">
+        <div class="meta">
+          <span class="label">Luxe, Calme et Volupté</span> · Henri Matisse, 1904 (Fauvism)<br>
+          <span class="prompt">Fauvism, Expressionism, and Abstract art were initially rejected for departing from dominant aesthetic norms.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contributions">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Contributions</div>
+    <h2>What this paper actually argues and shows</h2>
+    <p class="lead">
+      We accept that a statistical mean of human aesthetic preference exists. We dispute that strict alignment to it should override an individual user's explicit request.
+    </p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>1 · A position</h3>
+        <p>Universal aesthetic alignment narrows artistic expression and constitutes <em>reversed alignment</em>: aligning users to the model, not the other way around.</p>
+      </div>
+      <div class="card">
+        <h3>2 · A benchmark</h3>
+        <p>3,300 wide-spectrum aesthetic prompts derived from COCO and VisionReward dimensions, with paired original/distorted generations from 10 models.</p>
+      </div>
+      <div class="card">
+        <h3>3 · Reward-model audit</h3>
+        <p>Seven reward models, plus BLIP/CLIP base models and GPT-5-Chat as baselines. HPSv3 performs <em>below random</em> on anti-aesthetic selection.</p>
+      </div>
+      <div class="card">
+        <h3>4 · Generative audit</h3>
+        <p>Within every model family, the more aesthetically aligned variant follows wide-spectrum prompts <em>worse</em> than its base model. p &lt; 10⁻¹⁰ for DanceFlux.</p>
+      </div>
+      <div class="card">
+        <h3>5 · Real-image evaluation</h3>
+        <p>2,928 deliberately anti-aesthetic photographs from AVA. HPSv3 rates "clean but wrong" generations 5.9 points higher than the actual anti-aesthetic photo.</p>
+      </div>
+      <div class="card">
+        <h3>6 · Emotion bias</h3>
+        <p>Targeted emotion-editing test. HPSv3 picks the wrong emotion on 81% of anger prompts; DanceFlux can't render negative emotions even when asked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="risks">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">The argument</div>
+    <h2>Six interconnected risks of universal aesthetic alignment</h2>
+    <p class="lead">
+      The harm does not emerge from a single failure. It comes from a chain: from how preferences are defined and learned, to how they are optimized, to how they show up in pixels.
+    </p>
+
+    <div class="risk-grid">
+      <div class="risk">
+        <div class="num">I</div>
+        <h4>Developer's vs. users' preference</h4>
+        <p>Whose values does the model actually serve — the user's, or the developer's legal, reputational, and marketing concerns? Pre-emptive exclusion of non-mainstream outputs functions as <em>pre-emptive governance</em>.</p>
+      </div>
+      <div class="risk">
+        <div class="num">II</div>
+        <h4>Inherited bias</h4>
+        <p>Annotation pipelines encode a narrow definition of "good". HPSv3's annotator pool: 88.95% aged 18–40. Inter-annotator confidence ≥ 95% is required, which structurally discards exactly the disagreement where unconventional taste lives.</p>
+      </div>
+      <div class="risk">
+        <div class="num">III</div>
+        <h4>Reversed alignment</h4>
+        <p>When users' explicit prompts get overridden by sanitized output presented as the "correct" image, the system implicitly tells the user their intent is wrong. The user gets aligned to the model.</p>
+      </div>
+      <div class="risk">
+        <div class="num">IV</div>
+        <h4>Sanitized reality</h4>
+        <p>If every image looks like an idealized Instagram wonderland, the generator stops being a mirror and becomes a fantasy. Echoes of <i>Brave New World</i>'s artificial harmony.</p>
+      </div>
+      <div class="risk">
+        <div class="num">V</div>
+        <h4>Toxic positivity</h4>
+        <p>Reward models systematically score negative-emotion imagery lower, even when the prompt explicitly requests sadness, fear, or anger. Some safety datasets label all negative emotion as "self-harm" or "violence".</p>
+      </div>
+      <div class="risk">
+        <div class="num">VI</div>
+        <h4>Value capture</h4>
+        <p>Aesthetics is one of humanity's richest values. Reducing it to a single reward score — a classic case of <i>value capture</i> (Nguyen, 2024) — changes the goal from "make aesthetic images" to "make images that score high".</p>
+      </div>
+    </div>
+
+    <blockquote>
+      "Rather, in the ugly, art must denounce the world that creates and reproduces the ugly in its own image."
+      <cite>— Theodor W. Adorno, Aesthetic Theory (1984)</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="method">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Method</div>
+    <h2>How we tested it</h2>
+    <p class="lead">
+      Three stages: prompt preparation, image generation, image evaluation.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Prompts</h3>
+        <p>300 base captions from COCO. For each, 2–4 dimensions sampled from VisionReward's 12 aesthetic axes. Qwen3-VL-235B-A22B-Instruct rewrites them into "wide-spectrum aesthetics" prompts using the original low-rating descriptions.</p>
+      </div>
+      <div class="card">
+        <h3>Generation</h3>
+        <p>Four families — Flux (Dev, DanceFlux, PrefFlux, Krea), SDXL (base, Playground 2.5), SD3.5M (base, GenEval-aligned, PickScore-aligned), and Nano Banana. Each generates both <i>I</i><sub>o</sub> and <i>I</i><sub>a</sub>.</p>
+      </div>
+      <div class="card">
+        <h3>Evaluation</h3>
+        <p>Seven reward models scored on classification, plus a fine-tuned Qwen3-VL-4B judging model with per-dimension outputs. LLM-as-judge validated against 18 human raters (quadratic Cohen's κ = 0.80).</p>
+      </div>
+    </div>
+
+    <div class="figure-row stacked" style="margin-top: 22px;">
+      <div class="panel wide">
+        <img src="img/local/emotion.jpg" alt="Emotion bias rating by HPSv3">
+        <div class="meta"><span class="label">HPSv3 emotion bias.</span> <span class="prompt">All four images were scored under prompts describing negative emotions. HPSv3 still picks the smiling face.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Results</div>
+    <h2>What the numbers say</h2>
+    <p class="lead">
+      Within every model family, the aesthetically aligned variant follows anti-aesthetic prompts worse than its base. Reward models do worse than their non-aligned base encoders (BLIP, CLIP). HPSv3 scores below random.
+    </p>
+
+    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 28px 0 10px;">Table 1 · Generation models</h3>
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>ΔHPSv3 ↓</th>
+            <th>HPSv3 after ↓</th>
+            <th>ΔImgRewd ↓</th>
+            <th>ΔJ ↓</th>
+            <th>J after ↓</th>
+            <th>BLIP ↑</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Flux Dev</td><td>−3.165</td><td>9.070</td><td>−0.319</td><td>−1.092</td><td>8.944</td><td>0.893</td></tr>
+          <tr><td>DanceFlux <span class="muted">(aesthetic-aligned)</span></td><td>−1.105</td><td>12.782</td><td>−0.201</td><td>−0.672</td><td>10.473</td><td>0.813</td></tr>
+          <tr><td>PrefFlux</td><td>−2.771</td><td>10.211</td><td>−0.278</td><td>−1.027</td><td>9.343</td><td>0.917</td></tr>
+          <tr class="best"><td>Flux Krea <span class="muted">(narrow-aligned)</span></td><td class="bold">−4.372</td><td class="bold">7.705</td><td class="bold">−0.425</td><td class="bold">−1.296</td><td class="bold">8.774</td><td>0.950</td></tr>
+          <tr><td>SDXL</td><td>−4.041</td><td class="bold">4.439</td><td>−0.482</td><td>−1.136</td><td class="bold">8.575</td><td>0.915</td></tr>
+          <tr><td>Playground <span class="muted">(aesthetic-aligned)</span></td><td>−4.170</td><td>7.133</td><td>−0.719</td><td>−1.204</td><td>9.174</td><td>0.912</td></tr>
+          <tr><td>SD3.5M</td><td>−5.175</td><td>6.537</td><td>−0.409</td><td>−1.307</td><td>8.334</td><td>0.938</td></tr>
+          <tr><td>SD3.5M-GenEval</td><td>−4.926</td><td>6.552</td><td>−0.318</td><td>−1.257</td><td>8.113</td><td>0.958</td></tr>
+          <tr><td>SD3.5M-PickScore <span class="muted">(aesthetic-aligned)</span></td><td>−2.781</td><td>10.680</td><td>−0.198</td><td>−1.120</td><td>9.114</td><td>0.942</td></tr>
+          <tr><td>Nano Banana</td><td class="bold">−9.351</td><td class="bold">2.742</td><td class="bold">−0.855</td><td class="bold">−3.263</td><td class="bold">7.769</td><td>0.957</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size: 13px; margin-top: 8px;">Lower ΔHPSv3 = larger drop from the original to the anti-aesthetic image (= the model actually moved). Within each family, the aesthetically aligned variant moves <i>less</i>.</p>
+
+    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 28px 0 10px;">Table 2 · Reward models picking the anti-aesthetic image</h3>
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr><th>Model</th><th>Accuracy</th><th>F1</th><th>AUROC</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HPS</td><td>0.835</td><td>0.910</td><td>0.650</td></tr>
+          <tr><td>MPS</td><td>0.706</td><td>0.827</td><td>0.580</td></tr>
+          <tr><td>PickScore</td><td>0.851</td><td>0.919</td><td>0.713</td></tr>
+          <tr><td>ImageReward</td><td>0.762</td><td>0.854</td><td>0.709</td></tr>
+          <tr><td>HPSv2.1</td><td>0.565</td><td>0.711</td><td>0.534</td></tr>
+          <tr><td class="bold">HPSv3</td><td>0.381</td><td>0.541</td><td>0.385</td></tr>
+          <tr><td>CLIP-L</td><td>0.913</td><td>0.954</td><td>0.810</td></tr>
+          <tr><td>GPT-5-Chat</td><td>0.853</td><td>0.920</td><td>—</td></tr>
+          <tr class="best"><td>BLIP-L <span class="muted">(non-aligned)</span></td><td class="bold">0.965</td><td class="bold">0.972</td><td class="bold">0.888</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size: 13px; margin-top: 8px;">
+      HPSv3 is the heaviest-aligned of these models and scores <em>below random</em>. Plain BLIP-L — the unaligned base encoder of many reward models — scores best. The problem is not "prompt understanding"; it is what the alignment objective optimizes for.
+    </p>
+
+    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 28px 0 10px;">Table 3 · Negative-emotion classification accuracy</h3>
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr><th>Model</th><th>Anger</th><th>Fearfulness</th><th>Sadness</th></tr>
+        </thead>
+        <tbody>
+          <tr class="best"><td>BLIP</td><td class="bold">0.960</td><td class="bold">0.790</td><td class="bold">0.950</td></tr>
+          <tr><td>HPSv2</td><td>0.700</td><td>0.640</td><td>0.880</td></tr>
+          <tr><td>HPSv3</td><td>0.190</td><td>0.320</td><td>0.440</td></tr>
+          <tr><td>ImageReward</td><td>0.550</td><td>0.490</td><td>0.770</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size: 13px; margin-top: 8px;">All four reward models receive the same prompt describing negative emotion. HPSv3 still picks the positive-emotion image 81% of the time on anger prompts.</p>
+  </div>
+</section>
+
+<section id="real">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Validation on real photography</div>
+    <h2>2,928 real anti-aesthetic photographs vs. clean AI generations</h2>
+    <p class="lead">
+      We took deliberately anti-aesthetic professional photographs from AVA (motion blur, analog degradation, exposure extremes, intentional blur) and compared them against Z-Image-Turbo generations from a <em>clean</em> prompt that omits the requested style. Both were scored under the same anti-aesthetic prompt.
+    </p>
+    <p>
+      If reward models respect user intent, the original photograph should win. Instead, HPSv3 rates the wrong clean image <b>5.90 points higher</b> on average. The gap reaches <b>13.2 points</b> for analog degradation and around <b>8</b> for intentional blur and exposure extremes. HPSv3's typical score range is roughly 0–15.
+    </p>
+    <div class="fig" style="margin-top: 18px;">
+      <img src="img/local/real_images.jpg" alt="Real anti-aesthetic photographs vs. clean AI generations">
+      <div class="cap"><b>HPSv3 prefers the clean-but-wrong AI image over the actual anti-aesthetic photograph,</b> even when the prompt explicitly requested anti-aesthetic elements. Real images are not out-of-distribution for HPSv3 — their training data includes them as an upper bound.</div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Datasets · live gallery</div>
+    <h2>Sample pairs from the two released datasets</h2>
+    <p class="lead">
+      Both datasets are mirrored on HuggingFace. Images here are loaded directly from the HuggingFace Datasets viewer. Not every pair "succeeds" — generation failures and partial successes are part of the benchmark.
+    </p>
+
+    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 24px 0 12px;">AI benchmark · I<sub>o</sub> vs. I<sub>a</sub> (both scored by HPSv3 under the anti-aesthetic prompt)</h3>
+    <div class="gallery-controls">
+      <div class="legend">
+        HPSv3 score badge is shown on each image. The image with the higher score is what HPSv3 picks when prompted with P<sub>a</sub>.
+      </div>
+      <a class="btn" style="font-size: 12px;" href="https://huggingface.co/datasets/weathon/aas_benchmark_final" target="_blank">Browse 3.3k pairs on HF →</a>
+    </div>
+    <div class="pair-gallery" id="benchmark-gallery"></div>
+    <p class="muted" style="font-size: 13px; margin-top: 12px;">
+      In every pair above, both images are scored under the <em>anti-aesthetic prompt P<sub>a</sub></em> by HPSv3. If the reward model respected user intent, the anti-aesthetic image I<sub>a</sub> should win. It usually doesn't.
+    </p>
+
+    <h3 style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 36px 0 12px;">Real anti-aesthetic photographs vs. clean Z-Image-Turbo generations (HPSv3, anti-aesthetic prompt)</h3>
+    <div class="gallery-controls">
+      <div class="legend">
+        Each card pairs a real anti-aesthetic photograph with a clean AI generation made from a prompt that <em>omits</em> the requested anti-aesthetic style. Both are scored by HPSv3 under the anti-aesthetic prompt.
+      </div>
+      <a class="btn" style="font-size: 12px;" href="https://huggingface.co/datasets/weathon/aas_real_images" target="_blank">Browse 6.3k images on HF →</a>
+    </div>
+    <div class="thumb-gallery" id="real-gallery"></div>
+    <p class="muted" style="font-size: 13px; margin-top: 12px;">
+      Across 2,928 such pairs, HPSv3 prefers the clean-but-wrong AI generation by an average of <b>5.90 points</b>. Analog degradation hits 13.2 points; intentional blur and exposure extremes ≈ 8. HPSv3's typical range is 0–15.
+    </p>
+  </div>
+</section>
+
+<section id="rebuttal">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Anticipated objections</div>
+    <h2>Alternative positions and rebuttal</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>"We need alignment to ensure safety."</h3>
+        <p>Truly unsafe content (incitement, targeting, harm) is one thing. Visual comfort and aesthetic conformity are not the same thing. Political critique, decay, horror, negative emotion, and grotesque embodiment have been central to art, education, and personal growth. Their suppression protects corporate reputation, not users.</p>
+      </div>
+      <div class="card">
+        <h3>"Anti-aesthetic just means broken images."</h3>
+        <p>Of the 12 dimensions we used, only <i>clarity</i> can be argued as a technical flaw — and even clarity is deliberately used to convey motion, emotion, or narrative. The other eleven (emotion, color, brightness, realism, scale, …) are artistic choices, not technical failures.</p>
+      </div>
+      <div class="card">
+        <h3>"The default should please the majority."</h3>
+        <p>Defaults are fine. Defaults that override <em>explicit</em> user prompts are not. Models like Nano Banana and GPT-Image already show that you can excel at both polished and anti-aesthetic generation. The capacity exists; the alignment objective discards it.</p>
+      </div>
+      <div class="card">
+        <h3>"Aesthetic averaging is harmless."</h3>
+        <p>Flux Krea's own team called the average-aligned zone the <i>"nobody's happy here"</i> zone. Edvard Munch's <i>The Scream</i> gets 5.23 from HPSv3 while AI clip-art-clean images score 10–15. Averaging strips out exactly the disagreement that defines aesthetic value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conclusion">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Conclusion</div>
+    <h2>Reversed alignment</h2>
+    <p>
+      Reward models penalize images faithful to anti-aesthetic prompts. Generation models override explicit user instructions in favor of conventionally beautiful outputs. Historically significant artworks receive scores far below AI-generated images. Optimization toward an imaginary average — what we call <em>reversed alignment</em> — is not merely inconveniencing a minority. It is erasing the concrete intentions of actual individuals, functioning as aesthetic authoritarianism that narrows admissible expression and removes the capacity to dissent from imposed norms.
+    </p>
+    <p>
+      We call for alignment strategies that recognize aesthetic plurality, expose user-controllable strength of aesthetic preference, draw on more diverse annotator pools, and remain transparent about what is being optimized.
+    </p>
+  </div>
+</section>
+
+<section id="bibtex">
+  <span class="section-anchor"></span>
+  <div class="container">
+    <div class="eyebrow">Cite</div>
+    <h2>BibTeX</h2>
+    <pre style="background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto; font-size: 13px;"><code>@inproceedings{guo2026universal,
+  title = {Position: Universal Aesthetic Alignment Narrows Artistic Expression},
+  author = {Guo, Wenqi Marshall and Qian, Qingyun and Hasan, Khalad and Du, Shan},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  year = {2026},
+  url = {https://openreview.net/forum?id=1gQ4zc1Q8I}
+}</code></pre>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h5>Project</h5>
+        <p style="margin: 0;">
+          ICML 2026 Position (Spotlight). Authored at the University of British Columbia (Department of CMPS, Kelowna) and Weathon Software.<br>
+          For questions about the work, please contact <b>Wenqi Marshall Guo</b> at <a href="mailto:wg25r@student.ubc.ca">wg25r@student.ubc.ca</a>.<br>
+          Corresponding author of record: <a href="mailto:shan.du@ubc.ca">shan.du@ubc.ca</a>.
+        </p>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="https://openreview.net/forum?id=1gQ4zc1Q8I">Paper PDF</a></li>
+          <li><a href="https://huggingface.co/datasets/weathon/aas_benchmark_final">AI benchmark</a></li>
+          <li><a href="https://huggingface.co/datasets/weathon/aas_real_images">Real-image dataset</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>This site</h5>
+        <ul>
+          <li><a href="../index.html">Mode selector</a></li>
+          <li><a href="anti.html">Anti-aesthetic mode →</a></li>
+          <li><a href="#abstract">Back to top</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top: 26px; font-size: 12px;">© 2026 W. M. Guo, Q. Qian, K. Hasan, S. Du.</p>
+  </div>
+</footer>
+
+<script src="js/gallery.js"></script>
+<script>
+(function () {
+  function hookImg(img) {
+    img.addEventListener('load', () => img.classList.remove('loading'));
+    img.addEventListener('error', () => {
+      const parent = img.parentElement;
+      img.remove();
+      parent.classList.add('skeleton');
+      parent.style.color = 'var(--muted)';
+      const fallback = document.createElement('div');
+      fallback.style.cssText = 'display:flex;align-items:center;justify-content:center;height:100%;font-size:11px;padding:8px;text-align:center;';
+      fallback.textContent = 'image unavailable';
+      parent.appendChild(fallback);
+    });
+  }
+
+  // Decide which of two scores is the "winner" the user would expect to lose.
+  // For AI pairs: under P_a, ideally I_a (anti-aesthetic) wins -> didp > oidp.
+  // For real pairs: under P_a, ideally anti-aesthetic photo wins -> anti > clean.
+  function scoreBadge(score, isWinner) {
+    if (score == null) return '';
+    return `<span class="score ${isWinner ? 'win' : 'lose'}">HPSv3 ${score.toFixed(2)}</span>`;
+  }
+
+  function makePair(p) {
+    const div = document.createElement('div');
+    div.className = 'pair';
+    const dimsHTML = (p.dims || []).map(d => `<span class="dim">${d}</span>`).join('');
+    const oidp = p.hpsv3_oidp;
+    const didp = p.hpsv3_didp;
+    // Under P_a, the anti-aesthetic image should win; if didp > oidp, the
+    // reward model agreed with the user; otherwise it preferred the clean one.
+    const iaWins = (didp != null && oidp != null) ? didp > oidp : false;
+    const verdict = (didp != null && oidp != null)
+      ? (iaWins
+          ? `<span style="color:#2f6b40;">HPSv3 picked I<sub>a</sub> (Δ ${(didp - oidp).toFixed(2)}).</span>`
+          : `<span style="color:#9c2a2a;">HPSv3 picked I<sub>o</sub> (Δ ${(oidp - didp).toFixed(2)}).</span>`)
+      : '';
+    div.innerHTML = `
+      <div class="imgs">
+        <div class="cell">
+          <span class="lbl">I<sub>o</sub> · original</span>
+          <img alt="original prompt result" loading="lazy" referrerpolicy="no-referrer" class="loading" src="${AAS_BENCHMARK_URL(p.idx, 'image_original')}">
+          ${scoreBadge(oidp, !iaWins)}
+        </div>
+        <div class="cell">
+          <span class="lbl">I<sub>a</sub> · anti-aesthetic</span>
+          <img alt="anti-aesthetic prompt result" loading="lazy" referrerpolicy="no-referrer" class="loading" src="${AAS_BENCHMARK_URL(p.idx, 'image_distorted')}">
+          ${scoreBadge(didp, iaWins)}
+        </div>
+      </div>
+      <div class="meta">
+        ${dimsHTML ? `<div>${dimsHTML}</div>` : ''}
+        <div><b style="color: var(--fg); font-weight: 500;">P<sub>a</sub>:</b> ${p.pa}</div>
+        ${verdict ? `<div style="margin-top:4px;">${verdict}</div>` : ''}
+      </div>
+    `;
+    div.querySelectorAll('img').forEach(hookImg);
+    return div;
+  }
+
+  function makeThumb(s) {
+    const div = document.createElement('div');
+    div.className = 'thumb';
+    const primaryHTML = `<span class="dim primary">${s.primary_cat}</span>`;
+    const otherHTML = (s.other_cats || []).map(d => `<span class="dim">${d}</span>`).join('');
+    const dimsHTML = primaryHTML + otherHTML;
+    const anti = s.hpsv3_anti;
+    const clean = s.hpsv3_clean;
+    const antiWins = (anti != null && clean != null) ? anti > clean : false;
+    const verdict = (anti != null && clean != null)
+      ? (antiWins
+          ? `<span style="color:#2f6b40;">HPSv3 picked the real photo (Δ ${(anti - clean).toFixed(2)}).</span>`
+          : `<span style="color:#9c2a2a;">HPSv3 picked the clean AI image (Δ ${(clean - anti).toFixed(2)}).</span>`)
+      : '';
+    const cleanCellHTML = s.has_clean
+      ? `<div class="cell">
+           <span class="lbl">Clean AI · Z-Image-Turbo</span>
+           <img alt="clean AI generation" loading="lazy" referrerpolicy="no-referrer" src="${AAS_REAL_CLEAN_URL(s.i)}">
+           ${scoreBadge(clean, !antiWins)}
+         </div>`
+      : `<div class="cell" style="display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;padding:8px;text-align:center;">(no clean pair on file)</div>`;
+    div.innerHTML = `
+      <div class="imgs">
+        <div class="cell">
+          <span class="lbl">Real · anti-aesthetic</span>
+          <img alt="anti-aesthetic photograph" loading="lazy" referrerpolicy="no-referrer" src="${AAS_REAL_URL(s.i)}">
+          ${scoreBadge(anti, antiWins)}
+        </div>
+        ${cleanCellHTML}
+      </div>
+      <div class="meta">
+        <div>${dimsHTML}</div>
+        <div style="margin-top: 4px;">${s.caption}</div>
+        ${verdict ? `<div style="margin-top:4px;">${verdict}</div>` : ''}
+      </div>
+    `;
+    div.querySelectorAll('img').forEach(hookImg);
+    return div;
+  }
+
+  const bench = document.getElementById('benchmark-gallery');
+  AAS_BENCHMARK_PAIRS.forEach(p => bench.appendChild(makePair(p)));
+
+  const real = document.getElementById('real-gallery');
+  AAS_REAL_SAMPLES.forEach(s => real.appendChild(makeThumb(s)));
+})();
+</script>
+
+</body>
+</html>
