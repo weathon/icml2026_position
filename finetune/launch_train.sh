@@ -36,6 +36,8 @@ accelerate launch \
     --num_validation_samples=10 \
     --validation_epochs=1 \
     --validation_steps=28 \
+    --push_to_hub \
+    --hub_model_id "weathon/multi_lora_aa" \
     --validation_guidance=3.5 \
     --report_to=wandb \
     --seed=42 \
