@@ -480,20 +480,23 @@
   /* ----- QR BLOCKS ----- */
   .qr-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2mm;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1mm;
   }
   .qr-block {
     background: var(--card);
     border: 0.3mm solid var(--line);
-    padding: 1.5mm 1.8mm;
+    padding: 1mm;
     display: grid;
     grid-template-columns: 16mm 1fr;
-    gap: 1.5mm;
+    gap: 1mm;
     align-items: center;
   }
   .qr-block.cv {
     border-left: 1mm solid var(--accent);
+  }
+  .qr-block.qingyun {
+    border-left-color: var(--accent-2);
   }
   .qr-block img {
     width: 16mm; height: 16mm;
@@ -502,21 +505,21 @@
   }
   .qr-block .qr-text h4 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 8.5pt;
+    font-size: 7.5pt;
     font-weight: 700;
     line-height: 1.05;
     margin: 0 0 0.5mm;
   }
   .qr-block .qr-text h4 em { color: var(--accent); font-style: italic; }
   .qr-block .qr-text p {
-    font-size: 6pt;
+    font-size: 5.3pt;
     color: var(--muted);
     line-height: 1.22;
     margin: 0 0 0.5mm;
   }
   .qr-block .qr-text p b { color: var(--ink); font-weight: 700; }
   .qr-block .qr-url {
-    font-size: 5.5pt;
+    font-size: 4.8pt;
     color: var(--accent);
     word-break: break-all;
     line-height: 1.2;
@@ -929,17 +932,23 @@
         <div class="qr-block">
           <img src="website.png" alt="QR code: project website">
           <div class="qr-text">
-            <h4>Project <em>site, code &amp; data</em></h4>
-            <p>Paper, dataset (<b>aas_benchmark_final</b>), fine-tuned models, source.</p>
+            <h4>Project <em>site</em></h4>
+            <p>Paper · <b>data</b> · code</p>
             <div class="qr-url">↗ weathon.github.io</div>
           </div>
         </div>
         <div class="qr-block cv">
           <img src="qrcode_cv.png" alt="QR code: Wenqi Marshall Guo CV">
           <div class="qr-text">
-            <h4>Hire me — <em>Fall 2026</em></h4>
-            <p><b>Wenqi Marshall Guo</b> · <b>industry roles</b> &amp; <b>PhD positions</b>. Come say hi.</p>
-            <div class="qr-url">↗ CV_2026.pdf</div>
+            <h4>Wenqi — <em>Fall 2026</em></h4>
+            <p><b>Industry roles</b> · <b>PhD positions</b></p>
+          </div>
+        </div>
+        <div class="qr-block cv qingyun">
+          <img src="qingyun_cv.png" alt="QR code: Qingyun Qian CV">
+          <div class="qr-text">
+            <h4>Qingyun — <em>on the market</em></h4>
+            <p><b>Looking for jobs</b> · <b>research Master's / PhD</b></p>
           </div>
         </div>
       </div>
