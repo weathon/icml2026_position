@@ -63,10 +63,40 @@
     position: absolute; inset: 0;
     pointer-events: none;
     z-index: 51;
-    opacity: 0.28;
+    opacity: 0.4;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.8'/></svg>");
     background-size: 26mm 26mm;
     mix-blend-mode: overlay;
+  }
+  /* (e) dense analog scanlines over the whole board */
+  .vhs-scan {
+    position: absolute; inset: 0;
+    z-index: 54; pointer-events: none;
+    opacity: 0.5;
+    background: repeating-linear-gradient(0deg,
+      rgba(20,30,55,0.10) 0, rgba(20,30,55,0.10) 0.3mm,
+      transparent 0.3mm, transparent 0.9mm);
+    mix-blend-mode: multiply;
+  }
+  /* (f) VHS chroma-shift tracking bands */
+  .vhs-band {
+    position: absolute; left: 0; right: 0;
+    z-index: 55; pointer-events: none;
+    background: linear-gradient(180deg,
+      transparent 0%, rgba(226,95,166,0.20) 35%,
+      rgba(58,166,200,0.20) 65%, transparent 100%);
+    mix-blend-mode: screen;
+    filter: blur(0.5mm);
+  }
+  /* (g) horizontal static interference strip */
+  .vhs-static {
+    position: absolute; left: 0; right: 0;
+    z-index: 55; pointer-events: none;
+    opacity: 0.55;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='12'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='0.02 0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='200' height='12' filter='url(%23s)' opacity='0.85'/></svg>");
+    background-size: 100% 2mm;
+    mix-blend-mode: overlay;
+    filter: contrast(1.4);
   }
   /* (c) JPEG macroblock smear, floating mid-poster */
   .artifact-block {
@@ -1090,8 +1120,20 @@
   <div class="artifact-block" style="top: 92mm; left: 120mm; width: 38mm; height: 26mm; transform: rotate(3deg);"></div>
   <div class="artifact-block" style="top: 180mm; left: 300mm; width: 30mm; height: 44mm; transform: rotate(-5deg);"></div>
   <div class="artifact-block" style="top: 230mm; left: 30mm; width: 50mm; height: 14mm;"></div>
+
+  <!-- analog interference -->
+  <div class="vhs-scan"></div>
+  <div class="vhs-band" style="top: 70mm; height: 9mm;"></div>
+  <div class="vhs-band" style="top: 168mm; height: 6mm;"></div>
+  <div class="vhs-band" style="top: 248mm; height: 11mm;"></div>
+  <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
+  <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
+
+  <!-- glitch tear lines -->
   <div class="artifact-tear" style="top: 108mm;"></div>
+  <div class="artifact-tear" style="top: 158mm; transform: translateY(-0.4mm);"></div>
   <div class="artifact-tear" style="top: 205mm; transform: scaleX(-1) translateY(-0.4mm);"></div>
+  <div class="artifact-tear" style="top: 276mm;"></div>
 
 </div>
 </body>
