@@ -752,6 +752,36 @@
     filter: saturate(1.18) contrast(1.05);
   }
 
+  /* ----- LOCAL analog artifacts ----- */
+  .lan { position: absolute; z-index: 56; pointer-events: none; }
+  /* RGB chroma-displacement chip */
+  .lan-rgb {
+    background: repeating-linear-gradient(0deg,
+      rgba(226,95,166,0.4) 0, rgba(226,95,166,0.4) 0.45mm,
+      rgba(58,166,200,0.4) 0.45mm, rgba(58,166,200,0.4) 0.9mm);
+    mix-blend-mode: screen; opacity: 0.7; filter: blur(0.15mm);
+  }
+  /* signal-dropout streak */
+  .lan-drop {
+    height: 0.7mm;
+    background: linear-gradient(90deg,
+      transparent, #ffffff 22%, #d2e4f4 50%, #ffffff 74%, transparent);
+    mix-blend-mode: screen; opacity: 0.85; filter: blur(0.1mm);
+  }
+  /* head-switch static patch */
+  .lan-static {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='16'><filter id='h'><feTurbulence type='fractalNoise' baseFrequency='0.04 0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='200' height='16' filter='url(%23h)' opacity='0.9'/></svg>");
+    background-size: 100% 1.3mm;
+    mix-blend-mode: overlay; opacity: 0.75; filter: contrast(1.6);
+  }
+  /* localized chroma smear */
+  .lan-smear {
+    background: linear-gradient(90deg,
+      rgba(226,95,166,0) 0%, rgba(226,95,166,0.45) 35%,
+      rgba(58,166,200,0.45) 65%, rgba(226,95,166,0) 100%);
+    mix-blend-mode: screen; opacity: 0.6; filter: blur(0.7mm);
+  }
+
   /* ----- Y2K glossy gel panels ----- */
   .art-card, .lapis-cell, .emo-figure, .emo-table, .reversed, .why,
   .real-strip, .sponsors-block, .qr-block, .diagram-wrap, .news-footnote,
@@ -1128,6 +1158,18 @@
   <div class="vhs-band" style="top: 248mm; height: 11mm;"></div>
   <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
   <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
+
+  <!-- local analog artifacts -->
+  <div class="lan lan-rgb" style="top: 100mm; left: 195mm; width: 9mm; height: 14mm; transform: rotate(1deg);"></div>
+  <div class="lan lan-rgb" style="top: 213mm; left: 178mm; width: 7mm; height: 18mm;"></div>
+  <div class="lan lan-rgb" style="top: 138mm; left: 18mm; width: 6mm; height: 11mm;"></div>
+  <div class="lan lan-drop" style="top: 124mm; left: 205mm; width: 30mm;"></div>
+  <div class="lan lan-drop" style="top: 232mm; left: 300mm; width: 26mm;"></div>
+  <div class="lan lan-drop" style="top: 96mm; left: 60mm; width: 22mm;"></div>
+  <div class="lan lan-static" style="top: 158mm; left: 246mm; width: 28mm; height: 5mm;"></div>
+  <div class="lan lan-static" style="top: 198mm; left: 22mm; width: 24mm; height: 4mm;"></div>
+  <div class="lan lan-smear" style="top: 187mm; left: 240mm; width: 40mm; height: 7mm;"></div>
+  <div class="lan lan-smear" style="top: 255mm; left: 55mm; width: 34mm; height: 6mm;"></div>
 
   <!-- glitch tear lines -->
   <div class="artifact-tear" style="top: 108mm;"></div>
