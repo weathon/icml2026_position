@@ -6,16 +6,16 @@
 <style>
   @page { size: 420mm 297mm; margin: 0; }
   :root {
-    --bg: #b9bd8a;        /* bile beige-green */
-    --ink: #2a1338;       /* murky aubergine */
-    --muted: #7d6a4f;     /* dishwater brown */
-    --line: #4a2a55;
-    --accent: #ff1e8e;    /* screaming magenta */
-    --accent-2: #1fbf9a;  /* acid teal clash */
-    --gold: #9aab00;      /* radioactive olive */
-    --good: #1fbf9a;
-    --soft: #d6b6e0;      /* clammy lilac */
-    --card: #cdd0a0;      /* mushroom-pea */
+    --bg: #dceaf6;        /* soft aqua-silver */
+    --ink: #21304a;       /* deep slate blue */
+    --muted: #6c7a92;     /* cool grey */
+    --line: #9cbada;      /* soft steel blue */
+    --accent: #e25fa6;    /* candy pink */
+    --accent-2: #3aa6c8;  /* aqua blue */
+    --gold: #d59a3a;      /* soft amber */
+    --good: #3aa6c8;
+    --soft: #eaf3fc;      /* pale aqua panel */
+    --card: #f2f8ff;      /* glossy white-blue */
   }
   * { box-sizing: border-box; }
   html, body {
@@ -37,9 +37,9 @@
     gap: 4mm;
     position: relative;
     overflow: hidden;
-    /* ugly clashing wash under everything */
+    /* soft Frutiger-Aero sky wash */
     background:
-      linear-gradient(115deg, #c8cf6a 0%, #b9bd8a 28%, #d6b6e0 55%, #b3b870 78%, #9aab00 100%);
+      linear-gradient(160deg, #cfe6f5 0%, #e7eefb 34%, #f2e9f7 64%, #d8ecf3 100%);
   }
   /* ----- ARTIFACT LAYERS ----- */
   /* (a) banding + posterized color gradient, like 8-bit JPEG */
@@ -50,11 +50,11 @@
     z-index: 50;
     background:
       repeating-linear-gradient(0deg,
-        rgba(0,0,0,0.05) 0, rgba(0,0,0,0.05) 0.4mm,
-        rgba(255,255,255,0.0) 0.4mm, rgba(255,255,255,0.0) 1.8mm),
+        rgba(33,48,74,0.035) 0, rgba(33,48,74,0.035) 0.4mm,
+        rgba(255,255,255,0.0) 0.4mm, rgba(255,255,255,0.0) 2.2mm),
       repeating-linear-gradient(90deg,
-        rgba(255,30,142,0.05) 0, rgba(255,30,142,0.05) 8mm,
-        rgba(31,191,154,0.05) 8mm, rgba(31,191,154,0.05) 16mm);
+        rgba(58,166,200,0.04) 0, rgba(58,166,200,0.04) 9mm,
+        rgba(226,95,166,0.035) 9mm, rgba(226,95,166,0.035) 18mm);
     mix-blend-mode: multiply;
   }
   /* (b) film grain / dither noise */
@@ -206,9 +206,16 @@
 
   /* ----- SECTION HEADERS (plain) ----- */
   .sec-head {
-    display: flex; align-items: baseline; gap: 2.5mm;
-    border-bottom: 0.3mm solid var(--line);
-    padding-bottom: 1mm;
+    display: flex; align-items: center; gap: 2.5mm;
+    padding: 1mm 2.5mm;
+    border-radius: 2.4mm;
+    border: 0.3mm solid #8fb4d6;
+    background: linear-gradient(180deg,
+      #ffffff 0%, #e3f0fb 46%, #bcd9f0 50%, #d4ebfb 100%);
+    box-shadow:
+      inset 0 0.4mm 0.5mm rgba(255,255,255,0.95),
+      inset 0 -0.5mm 0.7mm rgba(90,130,170,0.35),
+      0.3mm 0.5mm 1mm rgba(40,70,110,0.18);
   }
   .sec-num {
     font-family: "Times New Roman", Times, serif;
@@ -712,12 +719,34 @@
 
   /* light oversaturation as a style cue, still legible */
   .art-card img, .lapis-cell img {
-    filter: saturate(1.25) contrast(1.08);
+    filter: saturate(1.18) contrast(1.05);
   }
-  /* offset accent shadow on cards */
-  .art-card, .lapis-cell, .emo-callout {
-    box-shadow: 0.5mm 0.5mm 0 var(--accent-2);
+
+  /* ----- Y2K glossy gel panels ----- */
+  .art-card, .lapis-cell, .emo-figure, .emo-table, .reversed, .why,
+  .real-strip, .sponsors-block, .qr-block, .diagram-wrap, .news-footnote,
+  .normal-cell, .news-cell .topic, .emo-callout {
+    border-radius: 2mm;
+    border-color: #a8c6e2;
+    background-color: var(--card);
+    background-image:
+      linear-gradient(180deg,
+        rgba(255,255,255,0.9) 0%,
+        rgba(255,255,255,0.35) 28%,
+        rgba(255,255,255,0.0) 55%,
+        rgba(120,160,200,0.08) 100%);
+    box-shadow:
+      inset 0 0.4mm 0.5mm rgba(255,255,255,0.9),
+      0.3mm 0.5mm 1mm rgba(40,70,110,0.14);
   }
+  .reversed { background-color: var(--soft); }
+  .emo-callout {
+    background-color: #fbeaf3;
+    border-color: var(--accent);
+  }
+  /* rounded image tiles */
+  .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
+  .art-card img, .lapis-cell img { border-radius: 1mm; }
 </style>
 </head>
 <body>
