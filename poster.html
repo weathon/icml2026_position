@@ -100,8 +100,11 @@
     grid-template-columns: 1.55fr 1fr 0.55fr;
     align-items: center;
     gap: 7mm;
-    border-bottom: 0.5mm solid var(--line);
     padding-bottom: 3mm;
+    /* Y2K holographic divider */
+    border-bottom: 0.9mm solid transparent;
+    border-image: linear-gradient(90deg,
+      #ff1e8e, #ffe600, #1fbf9a, #6f93b8, #d6b6e0, #ff1e8e) 1;
   }
   .kicker {
     text-transform: uppercase;
@@ -110,15 +113,35 @@
     color: var(--muted);
     margin-bottom: 1.5mm;
   }
-  /* Anti-aesthetic accent #1: red stamped SPOTLIGHT */
+  /* Y2K chrome gel SPOTLIGHT badge */
   .spotlight {
     display: inline-block;
-    background: var(--accent); color: #fff8e8;
-    padding: 0.6mm 2.5mm;
+    color: #1a1030;
+    padding: 0.8mm 3mm;
     margin-left: 3mm;
-    font-weight: 700; font-size: 8pt;
-    letter-spacing: 0.18em;
+    font-weight: 800; font-size: 8pt;
+    letter-spacing: 0.16em;
     transform: rotate(-2deg);
+    border-radius: 3mm;
+    background:
+      linear-gradient(180deg,
+        #ffffff 0%, #e6f0ff 18%, #9fbfe0 49%,
+        #6f93b8 51%, #c8d8ec 80%, #ffffff 100%);
+    border: 0.3mm solid #6f93b8;
+    box-shadow:
+      inset 0 0.4mm 0.6mm rgba(255,255,255,0.95),
+      inset 0 -0.5mm 0.6mm rgba(40,70,110,0.5),
+      0.4mm 0.6mm 1.2mm rgba(0,0,0,0.25);
+    text-shadow: 0 0.2mm 0 rgba(255,255,255,0.7);
+  }
+  /* Y2K sparkle glyphs */
+  .spark {
+    color: #ff1e8e;
+    font-size: 9pt;
+    text-shadow:
+      0 0 0.6mm #fff,
+      0 0 1.4mm #00ffd0;
+    vertical-align: 0.4mm;
   }
   h1.title {
     font-family: "Times New Roman", Times, serif;
@@ -703,13 +726,13 @@
   <!-- HEADER -->
   <div class="head">
     <div>
-      <div class="kicker">POSITION PAPER · ICML 2026 <span class="spotlight">★ SPOTLIGHT</span></div>
+      <div class="kicker">POSITION PAPER · ICML 2026 <span class="spotlight">✦ SPOTLIGHT</span> <span class="spark">✧</span></div>
       <h1 class="title">Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
       <div class="authors"><b>Wenqi Marshall Guo</b>, <b>Qingyun Qian</b>, <b>Khalad Hasan</b>, <b>Shan Du</b></div>
       <div class="affil">University of British Columbia (Okanagan) · Department of CMPS · Weathon Software, Canada</div>
     </div>
     <div class="thesis">
-      Image generators quietly <b>sanitize</b> the prompts they should follow, and reward models <b>punish</b> the answer the user actually asked for.
+      <span class="spark">✦</span> Image generators quietly <b>sanitize</b> the prompts they should follow, and reward models <b>punish</b> the answer the user actually asked for.
     </div>
     <div class="links">
       <b>arXiv</b> 2512.11883<br>
