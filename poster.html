@@ -6,16 +6,16 @@
 <style>
   @page { size: 420mm 297mm; margin: 0; }
   :root {
-    --bg: #ffffff;
-    --ink: #15110a;
-    --muted: #6b6354;
-    --line: #1c1814;
-    --accent: #c4502e;
-    --accent-2: #1f4a4d;
-    --gold: #b88825;
-    --good: #1f4a4d;
-    --soft: #f4ecc7;
-    --card: #fbf4d8;
+    --bg: #b9bd8a;        /* bile beige-green */
+    --ink: #2a1338;       /* murky aubergine */
+    --muted: #7d6a4f;     /* dishwater brown */
+    --line: #4a2a55;
+    --accent: #ff1e8e;    /* screaming magenta */
+    --accent-2: #1fbf9a;  /* acid teal clash */
+    --gold: #9aab00;      /* radioactive olive */
+    --good: #1fbf9a;
+    --soft: #d6b6e0;      /* clammy lilac */
+    --card: #cdd0a0;      /* mushroom-pea */
   }
   * { box-sizing: border-box; }
   html, body {
@@ -37,6 +37,64 @@
     gap: 4mm;
     position: relative;
     overflow: hidden;
+    /* ugly clashing wash under everything */
+    background:
+      linear-gradient(115deg, #c8cf6a 0%, #b9bd8a 28%, #d6b6e0 55%, #b3b870 78%, #9aab00 100%);
+  }
+  /* ----- ARTIFACT LAYERS ----- */
+  /* (a) banding + posterized color gradient, like 8-bit JPEG */
+  .poster::before {
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background:
+      repeating-linear-gradient(0deg,
+        rgba(0,0,0,0.16) 0, rgba(0,0,0,0.16) 0.45mm,
+        rgba(255,255,255,0.0) 0.45mm, rgba(255,255,255,0.0) 1.1mm),
+      repeating-linear-gradient(90deg,
+        rgba(255,30,142,0.14) 0, rgba(255,30,142,0.14) 6mm,
+        rgba(31,191,154,0.14) 6mm, rgba(31,191,154,0.14) 12mm),
+      repeating-linear-gradient(115deg,
+        rgba(154,171,0,0.12) 0, rgba(154,171,0,0.12) 20mm,
+        rgba(214,182,224,0.12) 20mm, rgba(214,182,224,0.12) 40mm);
+    mix-blend-mode: multiply;
+  }
+  /* (b) film grain / dither noise */
+  .poster::after {
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    z-index: 51;
+    opacity: 0.9;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.8'/></svg>");
+    background-size: 26mm 26mm;
+    mix-blend-mode: overlay;
+  }
+  /* (c) JPEG macroblock smear, floating mid-poster */
+  .artifact-block {
+    position: absolute;
+    z-index: 52;
+    pointer-events: none;
+    background:
+      repeating-conic-gradient(from 0deg, #ff1e8e 0deg 90deg, #1fbf9a 90deg 180deg) 0 0 / 3mm 3mm;
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+    filter: blur(0.2mm);
+    outline: 0.4mm dashed #00ffd0;
+  }
+  /* (d) scanline tear strip */
+  .artifact-tear {
+    position: absolute; left: 0; right: 0;
+    height: 2.2mm;
+    z-index: 53;
+    pointer-events: none;
+    background: linear-gradient(90deg,
+      transparent 0%, #00ffd0 6%, #ff1e8e 7%, transparent 9%,
+      transparent 40%, #ffe600 41%, transparent 43%,
+      transparent 70%, #ff1e8e 71%, #00ffd0 73%, transparent 76%);
+    mix-blend-mode: screen;
+    transform: translateY(-0.4mm);
   }
 
   /* ----- HEADER (plain) ----- */
@@ -72,6 +130,11 @@
     font-weight: 700;
     margin: 0 0 2mm;
     letter-spacing: -0.01em;
+    /* RGB-split chromatic aberration */
+    text-shadow:
+      0.6mm 0 0 rgba(255,30,142,0.65),
+      -0.6mm 0 0 rgba(0,255,208,0.55),
+      0 0.4mm 0 rgba(0,0,0,0.25);
   }
   /* Anti-aesthetic accent #2: red marker stroke under "Narrows" */
   h1.title em {
@@ -636,6 +699,18 @@
     border-top: 0.3mm solid var(--line);
   }
   footer b { color: var(--ink); }
+
+  /* ugly oversaturation + hue shift on a slice of the imagery */
+  .art-card img, .lapis-cell img {
+    filter: saturate(1.8) contrast(1.25) hue-rotate(-18deg);
+  }
+  .news-pic img.glitch, .normal-cell .pic img.glitch {
+    filter: saturate(1.6) hue-rotate(30deg) contrast(1.3);
+  }
+  /* posterized cards */
+  .art-card, .lapis-cell, .emo-callout {
+    box-shadow: 0.7mm 0.7mm 0 var(--accent), -0.5mm -0.5mm 0 var(--accent-2);
+  }
 </style>
 </head>
 <body>
@@ -975,6 +1050,12 @@
 
   </div>
 
+  <!-- floating compression artifacts -->
+  <div class="artifact-block" style="top: 92mm; left: 120mm; width: 38mm; height: 26mm; transform: rotate(3deg);"></div>
+  <div class="artifact-block" style="top: 180mm; left: 300mm; width: 30mm; height: 44mm; transform: rotate(-5deg);"></div>
+  <div class="artifact-block" style="top: 230mm; left: 30mm; width: 50mm; height: 14mm;"></div>
+  <div class="artifact-tear" style="top: 108mm;"></div>
+  <div class="artifact-tear" style="top: 205mm; transform: scaleX(-1) translateY(-0.4mm);"></div>
 
 </div>
 </body>
