@@ -68,35 +68,39 @@
     background-size: 26mm 26mm;
     mix-blend-mode: overlay;
   }
-  /* (e) dense analog scanlines over the whole board */
+  /* (e) faint scanlines, barely there */
   .vhs-scan {
     position: absolute; inset: 0;
     z-index: 54; pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.16;
     background: repeating-linear-gradient(0deg,
-      rgba(20,30,55,0.10) 0, rgba(20,30,55,0.10) 0.3mm,
-      transparent 0.3mm, transparent 0.9mm);
+      rgba(20,30,55,0.08) 0, rgba(20,30,55,0.08) 0.3mm,
+      transparent 0.3mm, transparent 1.6mm);
     mix-blend-mode: multiply;
   }
-  /* (f) VHS chroma-shift tracking bands */
+  /* (f) tracking-distortion band: horizontal streak + chroma bleed */
   .vhs-band {
     position: absolute; left: 0; right: 0;
     z-index: 55; pointer-events: none;
-    background: linear-gradient(180deg,
-      transparent 0%, rgba(226,95,166,0.20) 35%,
-      rgba(58,166,200,0.20) 65%, transparent 100%);
+    opacity: 0.7;
+    background:
+      linear-gradient(180deg,
+        transparent 0%, rgba(226,95,166,0.22) 30%,
+        rgba(58,166,200,0.22) 70%, transparent 100%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='20'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.7' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='20' filter='url(%23b)' opacity='0.7'/></svg>");
+    background-size: 100% 100%, 100% 1.6mm;
     mix-blend-mode: screen;
-    filter: blur(0.5mm);
+    filter: blur(0.35mm);
   }
   /* (g) horizontal static interference strip */
   .vhs-static {
     position: absolute; left: 0; right: 0;
     z-index: 55; pointer-events: none;
-    opacity: 0.55;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='12'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='0.02 0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='200' height='12' filter='url(%23s)' opacity='0.85'/></svg>");
-    background-size: 100% 2mm;
+    opacity: 0.6;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='14'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='0.01 0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='14' filter='url(%23s)' opacity='0.85'/></svg>");
+    background-size: 100% 2.4mm;
     mix-blend-mode: overlay;
-    filter: contrast(1.4);
+    filter: contrast(1.5);
   }
   /* (c) JPEG macroblock smear, floating mid-poster */
   .artifact-block {
@@ -768,11 +772,11 @@
       transparent, #ffffff 22%, #d2e4f4 50%, #ffffff 74%, transparent);
     mix-blend-mode: screen; opacity: 0.85; filter: blur(0.1mm);
   }
-  /* head-switch static patch */
+  /* head-switch / torn-signal static patch (horizontal streaks) */
   .lan-static {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='16'><filter id='h'><feTurbulence type='fractalNoise' baseFrequency='0.04 0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='200' height='16' filter='url(%23h)' opacity='0.9'/></svg>");
-    background-size: 100% 1.3mm;
-    mix-blend-mode: overlay; opacity: 0.75; filter: contrast(1.6);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='14'><filter id='h'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='14' filter='url(%23h)' opacity='0.9'/></svg>");
+    background-size: 100% 1.8mm;
+    mix-blend-mode: overlay; opacity: 0.75; filter: contrast(1.7);
   }
   /* localized chroma smear */
   .lan-smear {
