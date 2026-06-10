@@ -201,7 +201,7 @@
   }
   h1.title {
     font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-    font-size: 34pt;
+    font-size: 28pt;
     line-height: 1.04;
     font-weight: 700;
     margin: 0 0 2mm;
@@ -235,6 +235,66 @@
     text-align: right;
   }
   .links b { color: var(--accent); font-weight: 700; }
+
+  /* ----- borrowed from site/anti.html: GeoCities artifacts, dulled ----- */
+  /* struck word, corrected in brick — from the site's title */
+  h1.title .strike {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.1mm;
+    text-decoration-color: var(--accent-2);
+    color: var(--muted);
+  }
+  h1.title .again { color: var(--accent-2); }
+  .bang { color: #8a2f17; }
+  /* dashed notice chips */
+  .chip-row {
+    display: flex; gap: 2mm; margin-top: 2.5mm;
+    flex-wrap: wrap; justify-content: center;
+  }
+  .chip {
+    font-family: "Courier New", monospace;
+    font-size: 6.5pt;
+    letter-spacing: 0.06em;
+    padding: 0.6mm 2mm;
+    border: 0.35mm dashed var(--accent-2);
+    border-radius: 1mm;
+    color: var(--ink);
+    background: rgba(179,173,94,0.25);
+  }
+  .chip.alt {
+    border-color: var(--blue-doodle);
+    background: rgba(154,110,160,0.18);
+  }
+  /* EXHIBIT stamps on the paintings */
+  .art-card .imgwrap { position: relative; }
+  .exhibit {
+    position: absolute; top: 0; left: 0;
+    z-index: 3;
+    font-family: "Courier New", monospace;
+    font-size: 5.5pt; font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.4mm 1.5mm;
+    background: #b3973a; color: #1f1d14;
+  }
+  /* caution-stripe jobs banner along the page bottom */
+  .hire-banner {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 7mm;
+    z-index: 3;
+    background: repeating-linear-gradient(45deg, #b3973a 0 4mm, #2b291f 4mm 5mm);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hire-banner span {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 700;
+    font-size: 8.5pt;
+    background: #cdb968;
+    color: #211f16;
+    padding: 0.5mm 4mm;
+    border: 0.4mm dashed #6e2f1d;
+  }
+  .hire-banner b { color: #8a2f17; }
 
   /* ----- mosaic zones ----- */
   .zone {
@@ -732,13 +792,17 @@
   <!-- header -->
   <div class="head">
     <div>
-      <div class="kicker">POSITION PAPER · ICML 2026 <span class="spotlight">✦ SPOTLIGHT</span> <span class="spark">✧</span></div>
-      <h1 class="title">Universal Aesthetic Alignment Narrows Artistic Expression</h1>
+      <div class="kicker">★彡 POSITION PAPER · ICML 2026 彡★ <span class="spotlight">✦ SPOTLIGHT<span class="bang">!!!</span></span> <span class="spark">✧</span></div>
+      <h1 class="title">Universal Aesthetic Alignment Narrows Artistic <span class="strike">Expression</span> <span class="again">Expression</span></h1>
       <div class="authors"><b>Wenqi Marshall Guo</b>, <b>Qingyun Qian</b>, <b>Khalad Hasan</b>, <b>Shan Du</b></div>
       <div class="affil">University of British Columbia (Okanagan) · Department of CMPS · Weathon Software, Canada</div>
     </div>
     <div class="thesis">
       <span class="spark">✦</span> Image generators quietly <b>sanitize</b> the prompts they should follow, and reward models <b>punish</b> the answer the user actually asked for.
+      <div class="chip-row">
+        <span class="chip">★ this poster is the argument ★</span>
+        <span class="chip alt">Scream = 5.23 · AI clip-art ≈ 10–15</span>
+      </div>
     </div>
     <div class="links">
       <b>arXiv</b> 2512.11883<br>
@@ -763,11 +827,11 @@
     </p>
     <div class="artrow">
       <div class="art-card">
-        <div class="imgwrap"><img src="site/img/local/scream.jpg" alt="Munch — The Scream"></div>
+        <div class="imgwrap"><span class="exhibit">EXHIBIT 1</span><img src="site/img/local/scream.jpg" alt="Munch — The Scream"></div>
         <div class="meta"><b>The Scream</b> · Munch 1893<span class="score">5.23</span></div>
       </div>
       <div class="art-card">
-        <div class="imgwrap"><img src="site/img/local/matisse.jpg" alt="Matisse — Luxe"></div>
+        <div class="imgwrap"><span class="exhibit">EXHIBIT 2</span><img src="site/img/local/matisse.jpg" alt="Matisse — Luxe"></div>
         <div class="meta"><b>Luxe, Calme et Volupté</b> · Matisse 1904<span class="score">1.73</span></div>
       </div>
       <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/7482.jpg" alt="LAPIS landscape"></div><div class="lscore">−4.28</div><div class="lcap">landscape</div></div>
@@ -820,7 +884,7 @@
     <div class="sec-head">
       <span class="sec-num">iii</span>
       <h2 class="sec-title">DanceFlux vs Nano Banana on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
-      <span class="sec-meta">sugar-water default</span>
+      <span class="sec-meta">sugar-water default · 糖水片!!</span>
     </div>
     <p class="sec-lead">
       Each P<sub>a</sub> explicitly asks for blur, deep shadow, melted shapes, disharmony, or chaotic composition. <b>Nano Banana</b> renders it. <b>DanceFlux</b> returns hyper-saturated Pinterest-grade outputs anyway. LLM-judge anti-aesthetic coverage: Nano Banana ≫ DanceFlux <b>(0% on every sample)</b>.
@@ -1165,6 +1229,11 @@
   <div class="artifact-tear" style="top: 158mm; transform: translateY(-0.4mm);"></div>
   <div class="artifact-tear" style="top: 205mm; transform: scaleX(-1) translateY(-0.4mm);"></div>
   <div class="artifact-tear" style="top: 276mm;"></div>
+
+  <!-- caution-stripe jobs banner, borrowed from the site header -->
+  <div class="hire-banner">
+    <span>★彡 <b>!!!</b> HIRE US <b>!!!</b> Wenqi &amp; Qingyun are LOOKING 4 JOBS · PhD / research Master's (Fall 2026!!) ☆ scan the QR codes ☆ 彡★</span>
+  </div>
 
 </div>
 </body>
