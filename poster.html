@@ -37,10 +37,12 @@
     gap: 4mm;
     position: relative;
     overflow: hidden;
-    /* soft Frutiger-Aero sky wash */
-    background:
-      linear-gradient(160deg, #cfe6f5 0%, #e7eefb 34%, #f2e9f7 64%, #d8ecf3 100%);
+    /* clean white ground, neon shapes float on top */
+    background: #fdfff6;
   }
+  /* free-form neon background shapes */
+  .nshape { position: absolute; z-index: 1; pointer-events: none; }
+  .head, .body { position: relative; z-index: 2; }
   /* ----- ARTIFACT LAYERS ----- */
   /* (a) banding + posterized color gradient, like 8-bit JPEG */
   .poster::before {
@@ -135,10 +137,6 @@
     align-items: center;
     gap: 7mm;
     padding-bottom: 3mm;
-    /* Y2K holographic divider */
-    border-bottom: 0.9mm solid transparent;
-    border-image: linear-gradient(90deg,
-      #eaff00, #39ff14, #00ffd0, #aaff00, #6f93b8, #eaff00) 1;
   }
   .kicker {
     text-transform: uppercase;
@@ -147,26 +145,17 @@
     color: var(--muted);
     margin-bottom: 1.5mm;
   }
-  /* Y2K chrome gel SPOTLIGHT badge */
+  /* neon pill SPOTLIGHT badge */
   .spotlight {
     display: inline-block;
-    color: #1a1030;
+    color: #1c2a14;
     padding: 0.8mm 3mm;
     margin-left: 3mm;
     font-weight: 800; font-size: 8pt;
     letter-spacing: 0.16em;
-    transform: rotate(-2deg);
-    border-radius: 3mm;
-    background:
-      linear-gradient(180deg,
-        #ffffff 0%, #e6f0ff 18%, #9fbfe0 49%,
-        #6f93b8 51%, #c8d8ec 80%, #ffffff 100%);
-    border: 0.3mm solid #6f93b8;
-    box-shadow:
-      inset 0 0.4mm 0.6mm rgba(255,255,255,0.95),
-      inset 0 -0.5mm 0.6mm rgba(40,70,110,0.5),
-      0.4mm 0.6mm 1.2mm rgba(0,0,0,0.25);
-    text-shadow: 0 0.2mm 0 rgba(255,255,255,0.7);
+    border-radius: 4mm;
+    background: #eaff00;
+    box-shadow: 0 0 1.6mm rgba(234,255,0,0.9);
   }
   /* Y2K sparkle glyphs */
   .spark {
@@ -178,47 +167,13 @@
     vertical-align: 0.4mm;
   }
   h1.title {
-    font-family: "Arial Black", "Impact", "Helvetica Neue", sans-serif;
-    font-size: 30pt;
-    line-height: 1.0;
-    font-weight: 900;
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    font-size: 34pt;
+    line-height: 1.04;
+    font-weight: 700;
     margin: 0 0 2mm;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 3;
-    width: 112%;
-    margin-left: -7mm;
-    padding-left: 7mm;
-    transform: rotate(-1.6deg);
-    background: linear-gradient(95deg, #d6f000 0%, #39ff14 52%, #00e6b8 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: 0.32mm #15330e;
-    filter: drop-shadow(0.5mm 0.6mm 0 rgba(21,51,14,0.55));
-  }
-  /* glitch slices behind the gradient title */
-  h1.title::before, h1.title::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: none;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-  }
-  h1.title::before {
-    color: #eaff00;
-    -webkit-text-stroke: 0;
-    transform: translate(1.2mm, -0.5mm);
-    clip-path: polygon(0 4%, 100% 4%, 100% 32%, 0 32%);
-  }
-  h1.title::after {
-    color: #00ffd0;
-    -webkit-text-stroke: 0;
-    transform: translate(-1.3mm, 0.6mm) skewX(-4deg);
-    clip-path: polygon(0 58%, 100% 58%, 100% 82%, 0 82%);
+    letter-spacing: -0.01em;
+    color: #233018;
   }
   h1.title em {
     color: inherit;
@@ -272,14 +227,9 @@
   .sec-head {
     display: flex; align-items: center; gap: 2.5mm;
     padding: 1mm 2.5mm;
-    border-radius: 2.4mm;
-    border: 0.3mm solid #8fb4d6;
-    background: linear-gradient(180deg,
-      #ffffff 0%, #e3f0fb 46%, #bcd9f0 50%, #d4ebfb 100%);
-    box-shadow:
-      inset 0 0.4mm 0.5mm rgba(255,255,255,0.95),
-      inset 0 -0.5mm 0.7mm rgba(90,130,170,0.35),
-      0.3mm 0.5mm 1mm rgba(40,70,110,0.18);
+    border-radius: 4mm 0 0 4mm;
+    background: linear-gradient(90deg,
+      rgba(234,255,0,0.85) 0%, rgba(170,255,62,0.45) 55%, rgba(170,255,62,0) 100%);
   }
   .sec-num {
     font-family: "Times New Roman", Times, serif;
@@ -816,81 +766,39 @@
     mix-blend-mode: screen; opacity: 0.6; filter: blur(0.7mm);
   }
 
-  /* ----- Y2K glossy gel panels ----- */
+  /* ----- FREE-FORM: no boxes, content floats on the page ----- */
   .art-card, .lapis-cell, .emo-figure, .emo-table, .reversed, .why,
   .real-strip, .sponsors-block, .qr-block, .diagram-wrap, .news-footnote,
   .normal-cell, .news-cell .topic, .emo-callout {
-    border-radius: 2mm;
-    border-color: #a8c6e2;
-    background-color: var(--card);
-    background-image:
-      linear-gradient(180deg,
-        rgba(255,255,255,0.9) 0%,
-        rgba(255,255,255,0.35) 28%,
-        rgba(255,255,255,0.0) 55%,
-        rgba(120,160,200,0.08) 100%);
-    box-shadow:
-      inset 0 0.4mm 0.5mm rgba(255,255,255,0.9),
-      0.3mm 0.5mm 1mm rgba(40,70,110,0.14);
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
   }
-  .reversed { background-color: var(--soft); }
+  .art-card .imgwrap, .lapis-cell .imgwrap { background: transparent; }
+  /* images float with soft shadows instead of frames */
+  .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img, .emo-figure img {
+    box-shadow: 0 0.8mm 2mm rgba(50,70,30,0.30);
+    border: none;
+  }
+  /* the key statement panel: soft neon wash, organic corners */
+  .reversed {
+    background: linear-gradient(135deg, rgba(234,255,0,0.40), rgba(57,255,20,0.14) 75%);
+    border-radius: 4mm 16mm 4mm 14mm;
+  }
+  /* the 81% stat: neon blob sticker */
   .emo-callout {
-    background-color: #f4fbdc;
-    border-color: var(--accent);
+    background: radial-gradient(circle at 35% 30%, #f6ff8a, #ddff3a 75%);
+    border-radius: 48% 52% 55% 45% / 55% 48% 52% 45%;
+    transform: rotate(-3deg);
+    padding: 3mm 4mm;
+    box-shadow: 0 1mm 2.5mm rgba(130,190,0,0.45);
   }
   /* rounded image tiles */
   .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
   .art-card img, .lapis-cell img { border-radius: 1mm; }
 
-  /* ----- DECONSTRUCTED LAYOUT ----- */
-  /* columns knocked off their rails */
-  .body > .col:nth-child(1) { transform: rotate(-0.9deg) translateY(-2mm); }
-  .body > .col:nth-child(2) { transform: rotate(0.6deg) translateY(2.5mm); }
-  .body > .col:nth-child(3) { transform: rotate(-0.7deg) translateY(-1.5mm); }
-  /* header pieces fight each other */
-  .thesis { transform: rotate(1.8deg) translateY(2mm); }
-  .links { transform: rotate(-2.4deg) translateX(2mm); }
-  /* cards tilt, scale, and jump their cells */
-  .art-card:nth-child(odd) { transform: rotate(-2deg) translateX(-1.5mm); }
-  .art-card:nth-child(even) { transform: rotate(1.8deg) translate(1.5mm, 1mm); }
-  .lapis-cell:nth-child(1) { transform: rotate(2deg); }
-  .lapis-cell:nth-child(2) { transform: rotate(-2.6deg) translateY(-2mm) scale(1.12); position: relative; z-index: 4; }
-  .lapis-cell:nth-child(3) { transform: rotate(1.6deg) translateX(1.5mm); }
-  .normal-cell:nth-child(odd) { transform: rotate(-1deg); }
-  .normal-cell:nth-child(even) { transform: rotate(0.9deg) translateY(0.8mm); }
-  .normal-cell:nth-child(4) { transform: rotate(2.4deg) scale(1.09) translateY(-1mm); position: relative; z-index: 4; }
-  .news-cell:nth-child(odd) .topic { transform: rotate(-2.2deg) translateX(-1.5mm); }
-  .news-cell:nth-child(even) .topic { transform: rotate(1.8deg); }
-  .news-cell:nth-child(5) .news-pic:last-child { transform: rotate(3deg) scale(1.15); z-index: 5; box-shadow: 1mm 1.2mm 0 rgba(57,255,20,0.55); }
-  /* blocks escape their column */
-  .emo-callout { transform: rotate(-5deg) translate(2.5mm, -1mm) scale(1.06); position: relative; z-index: 4; }
-  .emo-figure { transform: rotate(1deg) translateX(2mm); }
-  .reversed { width: 105%; transform: rotate(-1.2deg) translateX(-2.5mm); }
-  .why { width: 95%; margin-left: 6%; transform: rotate(1.6deg); }
-  .real-strip { width: 108%; margin-left: -4%; transform: rotate(-1.5deg); }
-  .sponsors-block { width: 104%; transform: rotate(1deg) translateX(-1.5mm); }
-  .qr-block:nth-child(1) { transform: rotate(-2.6deg) translateY(1.5mm); }
-  .qr-block:nth-child(2) { transform: rotate(3deg) translateY(-2mm); position: relative; z-index: 4; }
-  .qr-block:nth-child(3) { transform: rotate(-2deg) translateY(1mm); }
-
-  /* giant outline type crossing the layout */
-  .mega {
-    position: absolute;
-    z-index: 56;
-    pointer-events: none;
-    font-family: "Arial Black", "Impact", sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-    color: transparent;
-    -webkit-text-stroke: 0.55mm rgba(70,190,0,0.9);
-    filter: drop-shadow(0.7mm 0.7mm 0 rgba(234,255,0,0.85));
-  }
-  .mega.vert { writing-mode: vertical-rl; }
-  .mega.yellow { -webkit-text-stroke-color: rgba(170,180,0,0.9); filter: drop-shadow(0.7mm 0.7mm 0 rgba(57,255,20,0.7)); }
-
-  /* ----- ANTI-DESIGN: doodle svgs ----- */
+  /* ----- doodle svgs ----- */
   .doodle {
     position: absolute;
     z-index: 57;
@@ -901,6 +809,45 @@
 </head>
 <body>
 <div class="poster">
+
+  <!-- free-form neon background shapes -->
+  <svg class="nshape" style="top: 0; left: 0; width: 100%; height: 58mm;" viewBox="0 0 420 58" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="ng1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f2ff61"/>
+        <stop offset="1" stop-color="#a9ff3e"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 0 H420 V26
+      C406 28 400 40 390 36 C382 33 380 27 368 28
+      C354 30 350 46 340 41 C332 37 334 29 322 27
+      C306 25 300 34 288 31 C278 29 276 23 264 24
+      C250 25 246 38 234 34 C226 31 226 25 214 24
+      C198 23 192 30 180 28 C170 26 168 21 156 22
+      C142 23 138 36 126 32 C118 29 118 24 106 23
+      C90 22 84 29 72 27 C62 25 60 20 48 21
+      C34 22 30 32 18 29 C10 27 8 25 0 26 Z" fill="url(#ng1)" opacity="0.9"/>
+    <ellipse cx="340" cy="50" rx="2.4" ry="3.6" fill="#a9ff3e" opacity="0.9"/>
+    <ellipse cx="126" cy="44" rx="2" ry="3" fill="#bdff52" opacity="0.9"/>
+    <ellipse cx="390" cy="44" rx="1.8" ry="2.8" fill="#c3ff5e" opacity="0.85"/>
+  </svg>
+  <svg class="nshape" style="top: 126mm; left: -12mm; width: 86mm; height: 78mm;" viewBox="0 0 90 80">
+    <defs>
+      <linearGradient id="ng2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#eaff52"/>
+        <stop offset="1" stop-color="#7dff3e"/>
+      </linearGradient>
+    </defs>
+    <path d="M45 4 C70 2 88 20 84 40 C80 62 64 78 42 76 C20 74 4 58 6 38 C8 16 24 6 45 4 Z" fill="url(#ng2)" opacity="0.40"/>
+  </svg>
+  <div class="nshape" style="top: 196mm; left: 116mm; width: 226mm; height: 32mm; background: linear-gradient(90deg, rgba(125,255,62,0.30), rgba(234,255,0,0.30)); border-radius: 40mm; transform: rotate(-7deg);"></div>
+  <div class="nshape" style="top: 60mm; left: 372mm; width: 56mm; height: 158mm; background: linear-gradient(180deg, rgba(234,255,0,0.35), rgba(125,255,62,0.22)); border-radius: 44% 56% 50% 50% / 38% 30% 64% 58%;"></div>
+  <svg class="nshape" style="top: 266mm; left: 0; width: 190mm; height: 31mm;" viewBox="0 0 190 31" preserveAspectRatio="none">
+    <path d="M0 31 V14 C30 2 60 26 92 13 C124 1 154 24 190 11 V31 Z" fill="#b8ff45" opacity="0.42"/>
+  </svg>
+  <div class="nshape" style="top: 46mm; left: 142mm; width: 7mm; height: 7mm; border-radius: 50%; background: rgba(234,255,0,0.8);"></div>
+  <div class="nshape" style="top: 54mm; left: 152mm; width: 4mm; height: 4mm; border-radius: 50%; background: rgba(125,255,62,0.7);"></div>
+  <div class="nshape" style="top: 250mm; left: 350mm; width: 5mm; height: 5mm; border-radius: 50%; background: rgba(234,255,0,0.75);"></div>
 
   <!-- HEADER -->
   <div class="head">
@@ -927,7 +874,7 @@
 
     <!-- COL 1: REAL ART + EMOTION -->
     <div class="col">
-      <div class="sec-head" style="transform: rotate(-2deg) translateX(-5mm); width: 97%;">
+      <div class="sec-head">
         <span class="sec-num">i</span>
         <h2 class="sec-title">Art the reward model rejects</h2>
         <span class="sec-meta">HPSv3 typ. 0–15</span>
@@ -953,7 +900,7 @@
         <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/11344.jpg"></div><div class="lscore">−1.25</div><div class="lcap">portrait</div></div>
       </div>
 
-      <div class="sec-head" style="margin-top: 1mm; transform: rotate(1.5deg) translateX(4mm); width: 92%;">
+      <div class="sec-head" style="margin-top: 1mm;">
         <span class="sec-num">ii</span>
         <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
         <span class="sec-meta">prompt-faithful = punished</span>
@@ -996,7 +943,7 @@
     <div class="col">
 
       <!-- Part 1: DanceFlux vs Flux Krea on NORMAL anti-aesthetic prompts -->
-      <div class="sec-head" style="transform: rotate(-1.2deg) translateX(-8mm); width: 106%;">
+      <div class="sec-head">
         <span class="sec-num">iii</span>
         <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
         <span class="sec-meta">sugar-water default</span>
@@ -1064,7 +1011,7 @@
       </div>
 
       <!-- Part 2: Image New Speak — DanceFlux vs Flux Krea -->
-      <div class="sec-head" style="margin-top: 1mm; transform: rotate(1.7deg) translateX(6mm); width: 93%;">
+      <div class="sec-head" style="margin-top: 1mm;">
         <span class="sec-num">iv</span>
         <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
         <span class="sec-meta">100-pair dataset · same direction every time</span>
@@ -1127,7 +1074,7 @@
 
     <!-- COL 3: REVERSED ALIGNMENT + SVG + WHY -->
     <div class="col">
-      <div class="sec-head" style="transform: rotate(-2.4deg) translateX(-4mm); width: 95%;">
+      <div class="sec-head">
         <span class="sec-num">v</span>
         <h2 class="sec-title"><em>Reversed</em> alignment</h2>
         <span class="sec-meta">two loops</span>
@@ -1249,12 +1196,7 @@
   <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
   <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
 
-  <!-- giant outline type crossing the layout -->
-  <div class="mega" style="top: 136mm; left: 8mm; font-size: 56pt; transform: rotate(-7deg); opacity: 0.6;">UGLY ON PURPOSE</div>
-  <div class="mega vert yellow" style="top: 92mm; left: 408mm; font-size: 25pt; opacity: 0.7;">OUT-OF-DISTRIBUTION ART</div>
-  <div class="mega yellow" style="top: 279mm; left: -7mm; font-size: 32pt; transform: rotate(-2deg); opacity: 0.65;">ANTI·AESTHETIC ALIGNMENT</div>
-
-  <!-- anti-design doodles -->
+  <!-- doodles -->
   <!-- Y2K butterfly -->
   <svg class="doodle" style="top: 2mm; left: 308mm; width: 21mm; height: 17mm; transform: rotate(-9deg);" viewBox="0 0 60 48">
     <g fill="none" stroke="#39ff14" stroke-width="1.6" stroke-linecap="round">
