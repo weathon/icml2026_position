@@ -10,9 +10,9 @@
     --ink: #21304a;       /* deep slate blue */
     --muted: #6c7a92;     /* cool grey */
     --line: #9cbada;      /* soft steel blue */
-    --accent: #ff2bd6;    /* neon pink */
-    --accent-2: #00c2b8;  /* neon teal */
-    --gold: #8fc400;      /* acid lime */
+    --accent: #5db800;    /* acid green (readable) */
+    --accent-2: #00b5a0;  /* teal secondary */
+    --gold: #a8c400;      /* acid yellow */
     --good: #00a89e;
     --soft: #eaf3fc;      /* pale aqua panel */
     --card: #f2f8ff;      /* glossy white-blue */
@@ -54,7 +54,7 @@
         rgba(255,255,255,0.0) 0.4mm, rgba(255,255,255,0.0) 2.2mm),
       repeating-linear-gradient(90deg,
         rgba(58,166,200,0.04) 0, rgba(58,166,200,0.04) 9mm,
-        rgba(226,95,166,0.035) 9mm, rgba(226,95,166,0.035) 18mm);
+        rgba(170,255,0,0.05) 9mm, rgba(170,255,0,0.05) 18mm);
     mix-blend-mode: multiply;
   }
   /* (b) film grain / dither noise */
@@ -85,7 +85,7 @@
     opacity: 0.7;
     background:
       linear-gradient(180deg,
-        transparent 0%, rgba(226,95,166,0.22) 30%,
+        transparent 0%, rgba(170,255,0,0.22) 30%,
         rgba(58,166,200,0.22) 70%, transparent 100%),
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='20'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.7' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='20' filter='url(%23b)' opacity='0.7'/></svg>");
     background-size: 100% 100%, 100% 1.6mm;
@@ -108,7 +108,7 @@
     z-index: 52;
     pointer-events: none;
     background:
-      repeating-conic-gradient(from 0deg, #ff1e8e 0deg 90deg, #1fbf9a 90deg 180deg) 0 0 / 3mm 3mm;
+      repeating-conic-gradient(from 0deg, #eaff00 0deg 90deg, #39ff14 90deg 180deg) 0 0 / 3mm 3mm;
     opacity: 0.18;
     mix-blend-mode: hard-light;
     filter: blur(0.3mm);
@@ -121,9 +121,9 @@
     pointer-events: none;
     opacity: 0.55;
     background: linear-gradient(90deg,
-      transparent 0%, #00ffd0 6%, #ff1e8e 7%, transparent 9%,
-      transparent 40%, #ffe600 41%, transparent 43%,
-      transparent 70%, #ff1e8e 71%, #00ffd0 73%, transparent 76%);
+      transparent 0%, #00ffd0 6%, #eaff00 7%, transparent 9%,
+      transparent 40%, #39ff14 41%, transparent 43%,
+      transparent 70%, #eaff00 71%, #00ffd0 73%, transparent 76%);
     mix-blend-mode: screen;
     transform: translateY(-0.4mm);
   }
@@ -138,7 +138,7 @@
     /* Y2K holographic divider */
     border-bottom: 0.9mm solid transparent;
     border-image: linear-gradient(90deg,
-      #ff1e8e, #ffe600, #1fbf9a, #6f93b8, #d6b6e0, #ff1e8e) 1;
+      #eaff00, #39ff14, #00ffd0, #aaff00, #6f93b8, #eaff00) 1;
   }
   .kicker {
     text-transform: uppercase;
@@ -170,11 +170,11 @@
   }
   /* Y2K sparkle glyphs */
   .spark {
-    color: #ff1e8e;
+    color: #8fd400;
     font-size: 9pt;
     text-shadow:
       0 0 0.6mm #fff,
-      0 0 1.4mm #00ffd0;
+      0 0 1.4mm #39ff14;
     vertical-align: 0.4mm;
   }
   h1.title {
@@ -186,12 +186,17 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     position: relative;
-    transform: rotate(-1.2deg);
-    background: linear-gradient(95deg, #ff2bd6 0%, #7a3cff 48%, #00d9c0 100%);
+    z-index: 3;
+    width: 112%;
+    margin-left: -7mm;
+    padding-left: 7mm;
+    transform: rotate(-1.6deg);
+    background: linear-gradient(95deg, #d6f000 0%, #39ff14 52%, #00e6b8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    filter: drop-shadow(0.2mm 0.3mm 0 rgba(33,48,74,0.4));
+    -webkit-text-stroke: 0.32mm #15330e;
+    filter: drop-shadow(0.5mm 0.6mm 0 rgba(21,51,14,0.55));
   }
   /* glitch slices behind the gradient title */
   h1.title::before, h1.title::after {
@@ -204,13 +209,15 @@
     background-clip: border-box;
   }
   h1.title::before {
-    color: #00ffd0;
-    transform: translate(1mm, -0.5mm);
+    color: #eaff00;
+    -webkit-text-stroke: 0;
+    transform: translate(1.2mm, -0.5mm);
     clip-path: polygon(0 4%, 100% 4%, 100% 32%, 0 32%);
   }
   h1.title::after {
-    color: #ff2bd6;
-    transform: translate(-1.1mm, 0.6mm) skewX(-4deg);
+    color: #00ffd0;
+    -webkit-text-stroke: 0;
+    transform: translate(-1.3mm, 0.6mm) skewX(-4deg);
     clip-path: polygon(0 58%, 100% 58%, 100% 82%, 0 82%);
   }
   h1.title em {
@@ -784,8 +791,8 @@
   /* RGB chroma-displacement chip */
   .lan-rgb {
     background: repeating-linear-gradient(0deg,
-      rgba(226,95,166,0.4) 0, rgba(226,95,166,0.4) 0.45mm,
-      rgba(58,166,200,0.4) 0.45mm, rgba(58,166,200,0.4) 0.9mm);
+      rgba(234,255,0,0.45) 0, rgba(234,255,0,0.45) 0.45mm,
+      rgba(57,255,20,0.4) 0.45mm, rgba(57,255,20,0.4) 0.9mm);
     mix-blend-mode: screen; opacity: 0.7; filter: blur(0.15mm);
   }
   /* signal-dropout streak */
@@ -804,8 +811,8 @@
   /* localized chroma smear */
   .lan-smear {
     background: linear-gradient(90deg,
-      rgba(226,95,166,0) 0%, rgba(226,95,166,0.45) 35%,
-      rgba(58,166,200,0.45) 65%, rgba(226,95,166,0) 100%);
+      rgba(234,255,0,0) 0%, rgba(234,255,0,0.45) 35%,
+      rgba(57,255,20,0.4) 65%, rgba(234,255,0,0) 100%);
     mix-blend-mode: screen; opacity: 0.6; filter: blur(0.7mm);
   }
 
@@ -828,43 +835,67 @@
   }
   .reversed { background-color: var(--soft); }
   .emo-callout {
-    background-color: #fbeaf3;
+    background-color: #f4fbdc;
     border-color: var(--accent);
   }
   /* rounded image tiles */
   .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
   .art-card img, .lapis-cell img { border-radius: 1mm; }
 
-  /* ----- ANTI-DESIGN: break the grid ----- */
-  .body > .col:nth-child(1) { transform: rotate(-0.5deg) translateY(-0.5mm); }
-  .body > .col:nth-child(2) { transform: rotate(0.35deg) translateY(1mm); }
-  .body > .col:nth-child(3) { transform: rotate(-0.4deg) translateY(0.5mm); }
-  .sec-head { transform: rotate(-0.8deg) translateX(-0.8mm); }
-  .art-card:nth-child(odd) { transform: rotate(-1.4deg); }
-  .art-card:nth-child(even) { transform: rotate(1.2deg) translateY(0.8mm); }
-  .lapis-cell:nth-child(1) { transform: rotate(1.5deg); }
-  .lapis-cell:nth-child(2) { transform: rotate(-1.1deg) translateY(-0.5mm); }
-  .lapis-cell:nth-child(3) { transform: rotate(0.9deg); }
-  .normal-cell:nth-child(odd) { transform: rotate(-0.7deg); }
-  .normal-cell:nth-child(even) { transform: rotate(0.6deg) translateY(0.5mm); }
-  .news-cell:nth-child(odd) .topic { transform: rotate(-1.6deg); }
-  .news-cell:nth-child(even) .topic { transform: rotate(1.3deg); }
-  .emo-callout { transform: rotate(-2.6deg) translateX(1mm); }
-  .emo-figure { transform: rotate(0.6deg); }
-  .reversed { transform: rotate(-0.6deg); }
-  .why { transform: rotate(0.8deg) translateX(-0.5mm); }
-  .real-strip { transform: rotate(-0.5deg); }
-  .qr-block:nth-child(1) { transform: rotate(-1.2deg); }
-  .qr-block:nth-child(2) { transform: rotate(1.6deg) translateY(-0.4mm); }
-  .qr-block:nth-child(3) { transform: rotate(-0.9deg); }
-  .sponsors-block { transform: rotate(0.5deg); }
+  /* ----- DECONSTRUCTED LAYOUT ----- */
+  /* columns knocked off their rails */
+  .body > .col:nth-child(1) { transform: rotate(-0.9deg) translateY(-2mm); }
+  .body > .col:nth-child(2) { transform: rotate(0.6deg) translateY(2.5mm); }
+  .body > .col:nth-child(3) { transform: rotate(-0.7deg) translateY(-1.5mm); }
+  /* header pieces fight each other */
+  .thesis { transform: rotate(1.8deg) translateY(2mm); }
+  .links { transform: rotate(-2.4deg) translateX(2mm); }
+  /* cards tilt, scale, and jump their cells */
+  .art-card:nth-child(odd) { transform: rotate(-2deg) translateX(-1.5mm); }
+  .art-card:nth-child(even) { transform: rotate(1.8deg) translate(1.5mm, 1mm); }
+  .lapis-cell:nth-child(1) { transform: rotate(2deg); }
+  .lapis-cell:nth-child(2) { transform: rotate(-2.6deg) translateY(-2mm) scale(1.12); position: relative; z-index: 4; }
+  .lapis-cell:nth-child(3) { transform: rotate(1.6deg) translateX(1.5mm); }
+  .normal-cell:nth-child(odd) { transform: rotate(-1deg); }
+  .normal-cell:nth-child(even) { transform: rotate(0.9deg) translateY(0.8mm); }
+  .normal-cell:nth-child(4) { transform: rotate(2.4deg) scale(1.09) translateY(-1mm); position: relative; z-index: 4; }
+  .news-cell:nth-child(odd) .topic { transform: rotate(-2.2deg) translateX(-1.5mm); }
+  .news-cell:nth-child(even) .topic { transform: rotate(1.8deg); }
+  .news-cell:nth-child(5) .news-pic:last-child { transform: rotate(3deg) scale(1.15); z-index: 5; box-shadow: 1mm 1.2mm 0 rgba(57,255,20,0.55); }
+  /* blocks escape their column */
+  .emo-callout { transform: rotate(-5deg) translate(2.5mm, -1mm) scale(1.06); position: relative; z-index: 4; }
+  .emo-figure { transform: rotate(1deg) translateX(2mm); }
+  .reversed { width: 105%; transform: rotate(-1.2deg) translateX(-2.5mm); }
+  .why { width: 95%; margin-left: 6%; transform: rotate(1.6deg); }
+  .real-strip { width: 108%; margin-left: -4%; transform: rotate(-1.5deg); }
+  .sponsors-block { width: 104%; transform: rotate(1deg) translateX(-1.5mm); }
+  .qr-block:nth-child(1) { transform: rotate(-2.6deg) translateY(1.5mm); }
+  .qr-block:nth-child(2) { transform: rotate(3deg) translateY(-2mm); position: relative; z-index: 4; }
+  .qr-block:nth-child(3) { transform: rotate(-2deg) translateY(1mm); }
+
+  /* giant outline type crossing the layout */
+  .mega {
+    position: absolute;
+    z-index: 56;
+    pointer-events: none;
+    font-family: "Arial Black", "Impact", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 0.55mm rgba(70,190,0,0.9);
+    filter: drop-shadow(0.7mm 0.7mm 0 rgba(234,255,0,0.85));
+  }
+  .mega.vert { writing-mode: vertical-rl; }
+  .mega.yellow { -webkit-text-stroke-color: rgba(170,180,0,0.9); filter: drop-shadow(0.7mm 0.7mm 0 rgba(57,255,20,0.7)); }
 
   /* ----- ANTI-DESIGN: doodle svgs ----- */
   .doodle {
     position: absolute;
     z-index: 57;
     pointer-events: none;
-    filter: drop-shadow(0 0 0.8mm rgba(255,43,214,0.45));
+    filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(57,255,20,0.4));
   }
 </style>
 </head>
@@ -896,7 +927,7 @@
 
     <!-- COL 1: REAL ART + EMOTION -->
     <div class="col">
-      <div class="sec-head">
+      <div class="sec-head" style="transform: rotate(-2deg) translateX(-5mm); width: 97%;">
         <span class="sec-num">i</span>
         <h2 class="sec-title">Art the reward model rejects</h2>
         <span class="sec-meta">HPSv3 typ. 0–15</span>
@@ -922,7 +953,7 @@
         <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/11344.jpg"></div><div class="lscore">−1.25</div><div class="lcap">portrait</div></div>
       </div>
 
-      <div class="sec-head" style="margin-top: 1mm;">
+      <div class="sec-head" style="margin-top: 1mm; transform: rotate(1.5deg) translateX(4mm); width: 92%;">
         <span class="sec-num">ii</span>
         <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
         <span class="sec-meta">prompt-faithful = punished</span>
@@ -965,7 +996,7 @@
     <div class="col">
 
       <!-- Part 1: DanceFlux vs Flux Krea on NORMAL anti-aesthetic prompts -->
-      <div class="sec-head">
+      <div class="sec-head" style="transform: rotate(-1.2deg) translateX(-8mm); width: 106%;">
         <span class="sec-num">iii</span>
         <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
         <span class="sec-meta">sugar-water default</span>
@@ -1033,7 +1064,7 @@
       </div>
 
       <!-- Part 2: Image New Speak — DanceFlux vs Flux Krea -->
-      <div class="sec-head" style="margin-top: 1mm;">
+      <div class="sec-head" style="margin-top: 1mm; transform: rotate(1.7deg) translateX(6mm); width: 93%;">
         <span class="sec-num">iv</span>
         <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
         <span class="sec-meta">100-pair dataset · same direction every time</span>
@@ -1096,7 +1127,7 @@
 
     <!-- COL 3: REVERSED ALIGNMENT + SVG + WHY -->
     <div class="col">
-      <div class="sec-head">
+      <div class="sec-head" style="transform: rotate(-2.4deg) translateX(-4mm); width: 95%;">
         <span class="sec-num">v</span>
         <h2 class="sec-title"><em>Reversed</em> alignment</h2>
         <span class="sec-meta">two loops</span>
@@ -1218,28 +1249,95 @@
   <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
   <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
 
+  <!-- giant outline type crossing the layout -->
+  <div class="mega" style="top: 136mm; left: 8mm; font-size: 56pt; transform: rotate(-7deg); opacity: 0.6;">UGLY ON PURPOSE</div>
+  <div class="mega vert yellow" style="top: 92mm; left: 408mm; font-size: 25pt; opacity: 0.7;">OUT-OF-DISTRIBUTION ART</div>
+  <div class="mega yellow" style="top: 279mm; left: -7mm; font-size: 32pt; transform: rotate(-2deg); opacity: 0.65;">ANTI·AESTHETIC ALIGNMENT</div>
+
   <!-- anti-design doodles -->
-  <svg class="doodle" style="top: 4mm; left: 138mm; width: 16mm; height: 16mm; transform: rotate(12deg);" viewBox="0 0 40 40">
-    <path d="M20 2 L24 15 L38 16 L26 23 L31 37 L20 28 L9 37 L14 23 L2 16 L16 15 Z" fill="none" stroke="#ff2bd6" stroke-width="2"/>
+  <!-- Y2K butterfly -->
+  <svg class="doodle" style="top: 2mm; left: 308mm; width: 21mm; height: 17mm; transform: rotate(-9deg);" viewBox="0 0 60 48">
+    <g fill="none" stroke="#39ff14" stroke-width="1.6" stroke-linecap="round">
+      <path d="M30 12 C29 22,29 34,30 42"/>
+      <path d="M30 14 C25 6,21 4,19 7"/>
+      <path d="M30 14 C35 6,39 4,41 7"/>
+      <path d="M29 20 C16 6,3 10,5 21 C6 29,17 31,28 27"/>
+      <path d="M31 20 C44 6,57 10,55 21 C54 29,43 31,32 27"/>
+      <path d="M28 30 C17 32,9 40,15 44 C21 47,27 39,29 33"/>
+      <path d="M32 30 C43 32,51 40,45 44 C39 47,33 39,31 33"/>
+    </g>
+    <g fill="none" stroke="#eaff00" stroke-width="1.1">
+      <circle cx="14" cy="19" r="3"/>
+      <circle cx="46" cy="19" r="3"/>
+      <path d="M19 38 l4 -3 M41 38 l-4 -3"/>
+    </g>
   </svg>
-  <svg class="doodle" style="top: 34mm; left: 96mm; width: 26mm; height: 8mm;" viewBox="0 0 80 20">
-    <path d="M2 12 C 10 2, 18 18, 26 10 S 42 2, 50 12 S 66 18, 78 8" fill="none" stroke="#00d9c0" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- loop-de-loop scribble through the title zone -->
+  <svg class="doodle" style="top: 30mm; left: 86mm; width: 36mm; height: 10mm;" viewBox="0 0 100 26">
+    <path d="M2 16 C 10 4, 16 4, 20 11 C 24 18, 30 18, 32 11 C 34 5, 28 3, 28 9 C 28 16, 38 17, 46 11 C 56 3, 62 21, 72 12 C 76 8, 72 4, 70 8 C 68 13, 78 15, 86 10 L 98 7" fill="none" stroke="#eaff00" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M93 3 l3 4 M97 3 l-3 4" stroke="#39ff14" stroke-width="1.4" stroke-linecap="round"/>
   </svg>
-  <svg class="doodle" style="top: 60mm; left: 4mm; width: 12mm; height: 12mm;" viewBox="0 0 30 30">
-    <path d="M15 15 m0 -2 a2 2 0 1 1 -0.1 0 M15 15 m0 -6 a6 6 0 1 1 -0.2 0 M15 15 m0 -10 a10 10 0 1 1 -0.3 0" fill="none" stroke="#7a3cff" stroke-width="1.6"/>
+  <!-- globe with orbit + satellite, bleeding off right edge -->
+  <svg class="doodle" style="top: 52mm; left: 400mm; width: 22mm; height: 15mm;" viewBox="0 0 64 44">
+    <g fill="none" stroke="#39ff14" stroke-width="1.5">
+      <circle cx="32" cy="22" r="13"/>
+      <ellipse cx="32" cy="22" rx="6" ry="13"/>
+      <path d="M20.5 16.5 h23 M19 22 h26 M20.5 27.5 h23"/>
+    </g>
+    <ellipse cx="32" cy="22" rx="28" ry="8" fill="none" stroke="#eaff00" stroke-width="1.3" stroke-dasharray="4 2" transform="rotate(-12 32 22)"/>
+    <circle cx="55" cy="13" r="2.2" fill="none" stroke="#eaff00" stroke-width="1.3"/>
+    <path d="M51 8 l8 0 M55 4 l0 8" stroke="#00ffd0" stroke-width="1" stroke-linecap="round"/>
   </svg>
-  <svg class="doodle" style="top: 150mm; left: 136mm; width: 10mm; height: 10mm;" viewBox="0 0 24 24">
-    <path d="M12 2 V22 M2 12 H22 M5 5 L19 19 M19 5 L5 19" stroke="#ff2bd6" stroke-width="2" stroke-linecap="round"/>
+  <!-- spirograph, bleeding off left edge -->
+  <svg class="doodle" style="top: 248mm; left: -5mm; width: 20mm; height: 20mm;" viewBox="0 0 60 60">
+    <g fill="none" stroke="#aaff00" stroke-width="1">
+      <ellipse cx="30" cy="30" rx="26" ry="9"/>
+      <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(30 30 30)"/>
+      <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(60 30 30)"/>
+      <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(90 30 30)"/>
+      <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(120 30 30)"/>
+      <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(150 30 30)"/>
+    </g>
+    <circle cx="30" cy="30" r="3" fill="none" stroke="#39ff14" stroke-width="1.5"/>
   </svg>
-  <svg class="doodle" style="top: 268mm; left: 150mm; width: 24mm; height: 10mm; transform: rotate(-6deg);" viewBox="0 0 70 24">
-    <path d="M2 12 L14 4 L14 9 L40 9 L40 4 L52 12 L40 20 L40 15 L14 15 L14 20 Z" fill="none" stroke="#00d9c0" stroke-width="2"/>
-    <path d="M58 6 L68 18 M68 6 L58 18" stroke="#ff2bd6" stroke-width="2" stroke-linecap="round"/>
+  <!-- CRT TV with static -->
+  <svg class="doodle" style="top: 271mm; left: 196mm; width: 17mm; height: 15mm; transform: rotate(4deg);" viewBox="0 0 60 52">
+    <g fill="none" stroke="#39ff14" stroke-width="1.6">
+      <rect x="6" y="16" width="48" height="32" rx="4"/>
+      <rect x="11" y="21" width="30" height="22" rx="2"/>
+      <path d="M24 16 L16 4 M36 16 L44 4"/>
+      <circle cx="16" cy="4" r="1.6"/><circle cx="44" cy="4" r="1.6"/>
+      <circle cx="47" cy="27" r="2"/><circle cx="47" cy="34" r="2"/>
+      <path d="M44 41 h6"/>
+    </g>
+    <path d="M13 25 h26 M13 29 h26 M13 33 h26 M13 37 h26" stroke="#eaff00" stroke-width="1" stroke-dasharray="3 2"/>
   </svg>
-  <svg class="doodle" style="top: 96mm; left: 282mm; width: 14mm; height: 14mm;" viewBox="0 0 36 36">
-    <path d="M18 4 C 30 4, 34 14, 30 22 C 26 32, 10 34, 6 24 C 2 16, 8 6, 18 7 C 26 8, 28 16, 24 21" fill="none" stroke="#ff2bd6" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- scissors + cut-here line across the column gap -->
+  <svg class="doodle" style="top: 95mm; left: 246mm; width: 36mm; height: 9mm;" viewBox="0 0 100 24">
+    <path d="M28 12 H98" stroke="#eaff00" stroke-width="1.4" stroke-dasharray="5 3"/>
+    <g fill="none" stroke="#39ff14" stroke-width="1.6">
+      <ellipse cx="7" cy="6" rx="4.5" ry="3.2" transform="rotate(-20 7 6)"/>
+      <ellipse cx="7" cy="18" rx="4.5" ry="3.2" transform="rotate(20 7 18)"/>
+      <path d="M11 8 L30 14 M11 16 L30 10"/>
+    </g>
   </svg>
-  <svg class="doodle" style="top: 230mm; left: 404mm; width: 11mm; height: 18mm;" viewBox="0 0 26 46">
-    <path d="M13 2 L13 32 M13 32 L5 22 M13 32 L21 22 M4 40 Q 13 48, 22 40" fill="none" stroke="#7a3cff" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- cyber smiley with halo -->
+  <svg class="doodle" style="top: 148mm; left: 132mm; width: 14mm; height: 14mm; transform: rotate(8deg);" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#eaff00" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
+    <circle cx="24" cy="26" r="14" fill="none" stroke="#39ff14" stroke-width="1.8"/>
+    <path d="M18 18 l1.5 3.5 L23 23 l-3.5 1.5 L18 28 l-1.5 -3.5 L13 23 l3.5 -1.5 Z" fill="none" stroke="#eaff00" stroke-width="1.1"/>
+    <path d="M30 18 l1.5 3.5 L35 23 l-3.5 1.5 L30 28 l-1.5 -3.5 L25 23 l3.5 -1.5 Z" fill="none" stroke="#eaff00" stroke-width="1.1"/>
+    <path d="M17 31 Q24 38 31 31" fill="none" stroke="#00ffd0" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+  <!-- barcode glitch sticker -->
+  <svg class="doodle" style="top: 282mm; left: 356mm; width: 20mm; height: 8mm; transform: rotate(-3deg);" viewBox="0 0 70 26">
+    <g stroke="#39ff14" stroke-width="1">
+      <path d="M5 4 v18 M10 4 v18 M19 4 v18 M27 4 v18 M34 4 v18 M45 4 v18 M52 4 v18 M61 4 v18"/>
+    </g>
+    <g stroke="#39ff14" stroke-width="2.4">
+      <path d="M14 4 v18 M23 4 v18 M39 4 v18 M57 4 v18 M65 4 v18"/>
+    </g>
+    <path d="M2 13 h66" stroke="#eaff00" stroke-width="1.6"/>
   </svg>
 
   <!-- local analog artifacts -->
