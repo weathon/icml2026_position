@@ -804,24 +804,26 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 2.5mm;
+    gap: 3.5mm;
   }
-  .zband { flex-direction: row; gap: 5mm; align-items: stretch; }
-  .zband .why { width: 60mm; flex: none; }
-  .zband .why p { font-size: 6.8pt; }
-  .zband .real-strip { flex: 1; min-width: 0; }
-  .zband .qr-row { width: 114mm; flex: none; align-self: center; }
-  .zband .sponsors-block { width: 60mm; flex: none; }
-  .real-strip .rs-cell .img { aspect-ratio: auto; height: 20mm; }
+  .metarow { flex-direction: row; gap: 3mm; align-items: flex-start; }
+  .metarow .qr-row { width: 86mm; flex: none; gap: 1mm; }
+  .metarow .sponsors-block { flex: 1; }
+  .metarow .qr-block { grid-template-columns: 10mm 1fr; padding: 0.8mm; gap: 0.8mm; }
+  .metarow .qr-block img { width: 10mm; height: 10mm; }
+  .metarow .sponsors-block .logo { height: 6.5mm; }
+  .metarow .sponsors-block .logo img { max-height: 6.5mm; }
+  .metarow .sponsors-block .spons-head { margin-bottom: 0.8mm; }
+  .real-strip .rs-cell .img { aspect-ratio: auto; height: 18mm; }
   /* paintings + lapis works share one row */
   .artrow {
     display: grid;
     grid-template-columns: 1.1fr 1.1fr 1fr 1fr 1fr;
-    gap: 2mm;
+    gap: 2.5mm;
     align-items: start;
   }
   /* news speak reflows to 3-up with topic above the pair */
-  .news-stack { grid-template-columns: repeat(3, 1fr); }
+  .news-stack { grid-template-columns: repeat(3, 1fr); gap: 2.5mm; }
   .news-cell { grid-template-columns: 1fr 1fr; }
   .news-cell .topic {
     grid-column: 1 / -1;
@@ -829,6 +831,7 @@
     align-items: baseline;
     gap: 1.5mm;
   }
+  .news-footnote { grid-column: 1 / -1; }
 
   /* ----- doodle svgs ----- */
   .doodle {
@@ -904,7 +907,7 @@
   <!-- MOSAIC ZONES -->
 
     <!-- real art: top right, sits lower than its neighbor -->
-    <div class="zone" style="left: 250mm; top: 58mm; width: 161mm; height: 80mm;">
+    <div class="zone" style="left: 252mm; top: 60mm; width: 159mm;">
       <div class="sec-head">
         <span class="sec-num">i</span>
         <h2 class="sec-title">Art the reward model rejects</h2>
@@ -930,7 +933,7 @@
     </div>
 
     <!-- emotion: mid left, narrower than the band below it -->
-    <div class="zone" style="left: 9mm; top: 146mm; width: 120mm; height: 98mm;">
+    <div class="zone" style="left: 9mm; top: 150mm; width: 118mm;">
       <div class="sec-head">
         <span class="sec-num">ii</span>
         <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
@@ -971,7 +974,7 @@
     </div>
 
     <!-- danceflux vs krea: top left, wide -->
-    <div class="zone" style="left: 9mm; top: 52mm; width: 234mm; height: 88mm;">
+    <div class="zone" style="left: 9mm; top: 52mm; width: 234mm;">
       <div class="sec-head">
         <span class="sec-num">iii</span>
         <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
@@ -1041,7 +1044,7 @@
     </div>
 
     <!-- image new speak: big center block, edges align with nothing -->
-    <div class="zone" style="left: 136mm; top: 142mm; width: 176mm; height: 106mm;">
+    <div class="zone" style="left: 140mm; top: 144mm; width: 156mm;">
       <div class="sec-head">
         <span class="sec-num">iv</span>
         <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
@@ -1104,7 +1107,7 @@
     </div>
 
     <!-- reversed alignment: right rail -->
-    <div class="zone" style="left: 319mm; top: 144mm; width: 92mm; height: 104mm;">
+    <div class="zone" style="left: 322mm; top: 156mm; width: 89mm;">
       <div class="sec-head">
         <span class="sec-num">v</span>
         <h2 class="sec-title"><em>Reversed</em> alignment</h2>
@@ -1132,8 +1135,8 @@
       </div>
     </div>
 
-    <!-- bottom band: full width, swallows three former sections -->
-    <div class="zone zband" style="left: 9mm; top: 252mm; width: 402mm; height: 37mm;">
+    <!-- why: continues the emotion column, edge aligns with nothing -->
+    <div class="zone" style="left: 322mm; top: 252mm; width: 89mm;">
       <div class="why">
         <h3>Why it matters · <em>value capture</em></h3>
         <p>
@@ -1143,7 +1146,10 @@
           <b>Call:</b> alignment that exposes user-controllable preference strength, draws on diverse annotators, and stays transparent about what it optimizes.
         </p>
       </div>
+    </div>
 
+    <!-- real photos: under the news block, offset from its edges -->
+    <div class="zone" style="left: 9mm; top: 248mm; width: 122mm;">
       <div class="real-strip">
         <div class="rs-head">Real <em>anti-aesthetic</em> photographs</div>
         <div class="rs-sub">From <b>aas_real_images</b> — intentional artistic choices that HPSv3 / ImageReward still rank deep in the <b>negative</b>. Score shown: ImageReward.</div>
@@ -1170,7 +1176,10 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- qr + sponsors: tucked under image new speak -->
+    <div class="zone metarow" style="left: 150mm; top: 267mm; width: 138mm;">
       <div class="qr-row">
         <div class="qr-block">
           <img src="website.png" alt="QR code: project website">
@@ -1263,7 +1272,7 @@
     <path d="M51 8 l8 0 M55 4 l0 8" stroke="#7bf9ac" stroke-width="1" stroke-linecap="round"/>
   </svg>
   <!-- spirograph, bleeding off left edge -->
-  <svg class="doodle" style="top: 116mm; left: 238mm; width: 18mm; height: 18mm;" viewBox="0 0 60 60">
+  <svg class="doodle" style="top: 162mm; left: 300mm; width: 15mm; height: 15mm;" viewBox="0 0 60 60">
     <g fill="none" stroke="#4189f2" stroke-width="1">
       <ellipse cx="30" cy="30" rx="26" ry="9"/>
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(30 30 30)"/>
@@ -1275,7 +1284,7 @@
     <circle cx="30" cy="30" r="3" fill="none" stroke="#4189f2" stroke-width="1.5"/>
   </svg>
   <!-- CRT TV with static -->
-  <svg class="doodle" style="top: 231mm; left: 393mm; width: 17mm; height: 15mm; transform: rotate(4deg);" viewBox="0 0 60 52">
+  <svg class="doodle" style="top: 228mm; left: 299mm; width: 16mm; height: 14mm; transform: rotate(4deg);" viewBox="0 0 60 52">
     <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <rect x="6" y="16" width="48" height="32" rx="4"/>
       <rect x="11" y="21" width="30" height="22" rx="2"/>
@@ -1287,7 +1296,7 @@
     <path d="M13 25 h26 M13 29 h26 M13 33 h26 M13 37 h26" stroke="#ef9d34" stroke-width="1" stroke-dasharray="3 2"/>
   </svg>
   <!-- scissors + cut-here line across the column gap -->
-  <svg class="doodle" style="top: 95mm; left: 246mm; width: 36mm; height: 9mm;" viewBox="0 0 100 24">
+  <svg class="doodle" style="top: 137mm; left: 150mm; width: 30mm; height: 8mm;" viewBox="0 0 100 24">
     <path d="M28 12 H98" stroke="#ef9d34" stroke-width="1.4" stroke-dasharray="5 3"/>
     <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <ellipse cx="7" cy="6" rx="4.5" ry="3.2" transform="rotate(-20 7 6)"/>
@@ -1296,7 +1305,7 @@
     </g>
   </svg>
   <!-- cyber smiley with halo -->
-  <svg class="doodle" style="top: 148mm; left: 132mm; width: 14mm; height: 14mm; transform: rotate(8deg);" viewBox="0 0 48 48">
+  <svg class="doodle" style="top: 196mm; left: 301mm; width: 13mm; height: 13mm; transform: rotate(8deg);" viewBox="0 0 48 48">
     <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#ef9d34" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
     <circle cx="24" cy="26" r="14" fill="none" stroke="#4189f2" stroke-width="1.8"/>
     <path d="M18 18 l1.5 3.5 L23 23 l-3.5 1.5 L18 28 l-1.5 -3.5 L13 23 l3.5 -1.5 Z" fill="none" stroke="#ef9d34" stroke-width="1.1"/>
@@ -1304,7 +1313,7 @@
     <path d="M17 31 Q24 38 31 31" fill="none" stroke="#7bf9ac" stroke-width="1.8" stroke-linecap="round"/>
   </svg>
   <!-- barcode glitch sticker -->
-  <svg class="doodle" style="top: 290mm; left: 196mm; width: 18mm; height: 7mm; transform: rotate(-2deg);" viewBox="0 0 70 26">
+  <svg class="doodle" style="top: 290mm; left: 196mm; width: 16mm; height: 6mm; transform: rotate(-2deg);" viewBox="0 0 70 26">
     <g stroke="#4189f2" stroke-width="1">
       <path d="M5 4 v18 M10 4 v18 M19 4 v18 M27 4 v18 M34 4 v18 M45 4 v18 M52 4 v18 M61 4 v18"/>
     </g>
