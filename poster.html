@@ -806,17 +806,23 @@
     flex-direction: column;
     gap: 3.5mm;
   }
-  .metarow { flex-direction: row; gap: 5mm; align-items: flex-start; }
-  .metarow .qr-row { width: 114mm; flex: none; gap: 2mm; }
-  .metarow .sponsors-block { flex: 1; }
-  .metarow .qr-block { grid-template-columns: 16mm 1fr; padding: 1mm; gap: 1.5mm; }
-  .metarow .qr-block img { width: 16mm; height: 16mm; }
-  .metarow .qr-block .qr-text h4 { font-size: 9pt; }
-  .metarow .qr-block .qr-text p { font-size: 6.2pt; }
-  .metarow .qr-block .qr-url { font-size: 5.5pt; }
-  .metarow .sponsors-block .spons-head { font-size: 11pt; }
-  .metarow .sponsors-block .logo { height: 9mm; }
-  .metarow .sponsors-block .logo img { max-height: 9mm; }
+  .metarow { flex-direction: row; gap: 5mm; align-items: stretch; }
+  .metarow .qr-row { flex: 1; gap: 4mm; }
+  .metarow .qr-block {
+    grid-template-columns: 22mm 1fr;
+    align-items: center;
+    align-content: center;
+    padding: 1mm;
+    gap: 2mm;
+  }
+  .metarow .qr-block img { width: 22mm; height: 22mm; }
+  .metarow .qr-block .qr-text h4 { font-size: 10pt; }
+  .metarow .qr-block .qr-text p { font-size: 6.8pt; }
+  .metarow .qr-block .qr-url { font-size: 6pt; }
+  .sponszone .spons-head { font-size: 11pt; margin-bottom: 2mm; }
+  .sponszone .logo { height: 12mm; }
+  .sponszone .logo img { max-height: 12mm; }
+  .sponszone .role { font-size: 5.5pt; }
   .real-strip .rs-cell .img { aspect-ratio: auto; height: 24mm; }
   /* paintings + lapis works share one row */
   .artrow {
@@ -1188,7 +1194,7 @@
     </div>
 
     <!-- qr + sponsors: tucked under image new speak -->
-    <div class="zone metarow" style="left: 150mm; top: 259mm; width: 160mm;">
+    <div class="zone metarow" style="left: 146mm; top: 262mm; width: 164mm; height: 27mm;">
       <div class="qr-row">
         <div class="qr-block">
           <img src="website.png" alt="QR code: project website">
@@ -1213,7 +1219,10 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- sponsors: right rail bottom -->
+    <div class="zone sponszone" style="left: 322mm; top: 268mm; width: 89mm;">
       <div class="sponsors-block">
         <div class="spons-head">Made <em>possible</em> by</div>
         <div class="spons-row">
@@ -1293,7 +1302,7 @@
     <circle cx="30" cy="30" r="3" fill="none" stroke="#4189f2" stroke-width="1.5"/>
   </svg>
   <!-- CRT TV with static -->
-  <svg class="doodle" style="top: 270mm; left: 332mm; width: 16mm; height: 14mm; transform: rotate(4deg);" viewBox="0 0 60 52">
+  <svg class="doodle" style="top: 192mm; left: 300mm; width: 16mm; height: 14mm; transform: rotate(4deg);" viewBox="0 0 60 52">
     <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <rect x="6" y="16" width="48" height="32" rx="4"/>
       <rect x="11" y="21" width="30" height="22" rx="2"/>
@@ -1314,7 +1323,7 @@
     </g>
   </svg>
   <!-- cyber smiley with halo -->
-  <svg class="doodle" style="top: 271mm; left: 366mm; width: 13mm; height: 13mm; transform: rotate(8deg);" viewBox="0 0 48 48">
+  <svg class="doodle" style="top: 222mm; left: 301mm; width: 13mm; height: 13mm; transform: rotate(8deg);" viewBox="0 0 48 48">
     <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#ef9d34" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
     <circle cx="24" cy="26" r="14" fill="none" stroke="#4189f2" stroke-width="1.8"/>
     <path d="M18 18 l1.5 3.5 L23 23 l-3.5 1.5 L18 28 l-1.5 -3.5 L13 23 l3.5 -1.5 Z" fill="none" stroke="#ef9d34" stroke-width="1.1"/>
