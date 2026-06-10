@@ -10,10 +10,10 @@
     --ink: #21304a;       /* deep slate blue */
     --muted: #6c7a92;     /* cool grey */
     --line: #9cbada;      /* soft steel blue */
-    --accent: #5db800;    /* acid green (readable) */
-    --accent-2: #00b5a0;  /* teal secondary */
-    --gold: #a8c400;      /* acid yellow */
-    --good: #00a89e;
+    --accent: #2e6ed4;    /* palette blue, darkened for text */
+    --accent-2: #e8941f;  /* palette orange, darkened for text */
+    --gold: #ef9d34;      /* palette orange for numerals */
+    --good: #2e6ed4;
     --soft: #eaf3fc;      /* pale aqua panel */
     --card: #f2f8ff;      /* glossy white-blue */
   }
@@ -110,7 +110,7 @@
     z-index: 52;
     pointer-events: none;
     background:
-      repeating-conic-gradient(from 0deg, #eaff00 0deg 90deg, #39ff14 90deg 180deg) 0 0 / 3mm 3mm;
+      repeating-conic-gradient(from 0deg, #ef9d34 0deg 90deg, #4189f2 90deg 180deg) 0 0 / 3mm 3mm;
     opacity: 0.18;
     mix-blend-mode: hard-light;
     filter: blur(0.3mm);
@@ -123,9 +123,9 @@
     pointer-events: none;
     opacity: 0.55;
     background: linear-gradient(90deg,
-      transparent 0%, #00ffd0 6%, #eaff00 7%, transparent 9%,
-      transparent 40%, #39ff14 41%, transparent 43%,
-      transparent 70%, #eaff00 71%, #00ffd0 73%, transparent 76%);
+      transparent 0%, #7bf9ac 6%, #ef9d34 7%, transparent 9%,
+      transparent 40%, #4189f2 41%, transparent 43%,
+      transparent 70%, #ef9d34 71%, #7bf9ac 73%, transparent 76%);
     mix-blend-mode: screen;
     transform: translateY(-0.4mm);
   }
@@ -154,16 +154,16 @@
     font-weight: 800; font-size: 8pt;
     letter-spacing: 0.16em;
     border-radius: 4mm;
-    background: #eaff00;
-    box-shadow: 0 0 1.6mm rgba(234,255,0,0.9);
+    background: #ef9d34;
+    box-shadow: 0 0 1.6mm rgba(239,157,52,0.8);
   }
   /* Y2K sparkle glyphs */
   .spark {
-    color: #8fd400;
+    color: #ef9d34;
     font-size: 9pt;
     text-shadow:
       0 0 0.6mm #fff,
-      0 0 1.4mm #39ff14;
+      0 0 1.4mm #4189f2;
     vertical-align: 0.4mm;
   }
   h1.title {
@@ -229,7 +229,7 @@
     padding: 1mm 2.5mm;
     border-radius: 4mm 0 0 4mm;
     background: linear-gradient(90deg,
-      rgba(234,255,0,0.85) 0%, rgba(170,255,62,0.45) 55%, rgba(170,255,62,0) 100%);
+      rgba(178,251,86,0.95) 0%, rgba(123,249,172,0.5) 55%, rgba(123,249,172,0) 100%);
   }
   .sec-num {
     font-family: "Times New Roman", Times, serif;
@@ -375,7 +375,7 @@
     color: #fff8e8;
   }
   .normal-cell .pic .stamp.krea { background: var(--good); }
-  .normal-cell .pic .stamp.dance { background: var(--accent); }
+  .normal-cell .pic .stamp.dance { background: var(--accent-2); }
 
   /* ----- EMOTION ----- */
   .emo-figure {
@@ -481,7 +481,7 @@
     letter-spacing: 0.1em; text-transform: uppercase;
     color: #fff8e8;
   }
-  .news-stamp.dance { background: var(--accent); }
+  .news-stamp.dance { background: var(--accent-2); }
   .news-stamp.krea { background: var(--good); }
   .news-footnote {
     font-size: 7.5pt; color: var(--muted);
@@ -783,16 +783,16 @@
   }
   /* the key statement panel: soft neon wash, organic corners */
   .reversed {
-    background: linear-gradient(135deg, rgba(234,255,0,0.40), rgba(57,255,20,0.14) 75%);
+    background: linear-gradient(135deg, rgba(178,251,86,0.45), rgba(123,249,172,0.20) 75%);
     border-radius: 4mm 16mm 4mm 14mm;
   }
   /* the 81% stat: neon blob sticker */
   .emo-callout {
-    background: radial-gradient(circle at 35% 30%, #f6ff8a, #ddff3a 75%);
+    background: radial-gradient(circle at 35% 30%, #d9fc92, #b2fb56 75%);
     border-radius: 48% 52% 55% 45% / 55% 48% 52% 45%;
     transform: rotate(-3deg);
     padding: 3mm 4mm;
-    box-shadow: 0 1mm 2.5mm rgba(130,190,0,0.45);
+    box-shadow: 0 1mm 2.5mm rgba(110,180,80,0.45);
   }
   /* rounded image tiles */
   .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
@@ -835,7 +835,7 @@
     position: absolute;
     z-index: 57;
     pointer-events: none;
-    filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(57,255,20,0.4));
+    filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(65,137,242,0.4));
   }
 </style>
 </head>
@@ -846,8 +846,8 @@
   <svg class="nshape" style="top: 0; left: 0; width: 100%; height: 58mm;" viewBox="0 0 420 58" preserveAspectRatio="none">
     <defs>
       <linearGradient id="ng1" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#f2ff61"/>
-        <stop offset="1" stop-color="#a9ff3e"/>
+        <stop offset="0" stop-color="#c9fb6e"/>
+        <stop offset="1" stop-color="#7bf9ac"/>
       </linearGradient>
     </defs>
     <path d="M0 0 H420 V26
@@ -859,27 +859,27 @@
       C142 23 138 36 126 32 C118 29 118 24 106 23
       C90 22 84 29 72 27 C62 25 60 20 48 21
       C34 22 30 32 18 29 C10 27 8 25 0 26 Z" fill="url(#ng1)" opacity="0.9"/>
-    <ellipse cx="340" cy="50" rx="2.4" ry="3.6" fill="#a9ff3e" opacity="0.9"/>
-    <ellipse cx="126" cy="44" rx="2" ry="3" fill="#bdff52" opacity="0.9"/>
-    <ellipse cx="390" cy="44" rx="1.8" ry="2.8" fill="#c3ff5e" opacity="0.85"/>
+    <ellipse cx="340" cy="50" rx="2.4" ry="3.6" fill="#7bf9ac" opacity="0.9"/>
+    <ellipse cx="126" cy="44" rx="2" ry="3" fill="#8df9a0" opacity="0.9"/>
+    <ellipse cx="390" cy="44" rx="1.8" ry="2.8" fill="#7bf9ac" opacity="0.85"/>
   </svg>
   <svg class="nshape" style="top: 126mm; left: -12mm; width: 86mm; height: 78mm;" viewBox="0 0 90 80">
     <defs>
       <linearGradient id="ng2" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#eaff52"/>
-        <stop offset="1" stop-color="#7dff3e"/>
+        <stop offset="0" stop-color="#b2fb56"/>
+        <stop offset="1" stop-color="#7bf9ac"/>
       </linearGradient>
     </defs>
     <path d="M45 4 C70 2 88 20 84 40 C80 62 64 78 42 76 C20 74 4 58 6 38 C8 16 24 6 45 4 Z" fill="url(#ng2)" opacity="0.40"/>
   </svg>
-  <div class="nshape" style="top: 196mm; left: 116mm; width: 226mm; height: 32mm; background: linear-gradient(90deg, rgba(125,255,62,0.30), rgba(234,255,0,0.30)); border-radius: 40mm; transform: rotate(-7deg);"></div>
-  <div class="nshape" style="top: 60mm; left: 372mm; width: 56mm; height: 158mm; background: linear-gradient(180deg, rgba(234,255,0,0.35), rgba(125,255,62,0.22)); border-radius: 44% 56% 50% 50% / 38% 30% 64% 58%;"></div>
+  <div class="nshape" style="top: 196mm; left: 116mm; width: 226mm; height: 32mm; background: linear-gradient(90deg, rgba(123,249,172,0.40), rgba(178,251,86,0.40)); border-radius: 40mm; transform: rotate(-7deg);"></div>
+  <div class="nshape" style="top: 60mm; left: 372mm; width: 56mm; height: 158mm; background: linear-gradient(180deg, rgba(66,134,245,0.20), rgba(123,249,172,0.22)); border-radius: 44% 56% 50% 50% / 38% 30% 64% 58%;"></div>
   <svg class="nshape" style="top: 266mm; left: 0; width: 190mm; height: 31mm;" viewBox="0 0 190 31" preserveAspectRatio="none">
-    <path d="M0 31 V14 C30 2 60 26 92 13 C124 1 154 24 190 11 V31 Z" fill="#b8ff45" opacity="0.42"/>
+    <path d="M0 31 V14 C30 2 60 26 92 13 C124 1 154 24 190 11 V31 Z" fill="#7bf9ac" opacity="0.42"/>
   </svg>
-  <div class="nshape" style="top: 46mm; left: 142mm; width: 7mm; height: 7mm; border-radius: 50%; background: rgba(234,255,0,0.8);"></div>
-  <div class="nshape" style="top: 54mm; left: 152mm; width: 4mm; height: 4mm; border-radius: 50%; background: rgba(125,255,62,0.7);"></div>
-  <div class="nshape" style="top: 250mm; left: 350mm; width: 5mm; height: 5mm; border-radius: 50%; background: rgba(234,255,0,0.75);"></div>
+  <div class="nshape" style="top: 46mm; left: 142mm; width: 7mm; height: 7mm; border-radius: 50%; background: rgba(239,157,52,0.75);"></div>
+  <div class="nshape" style="top: 54mm; left: 152mm; width: 4mm; height: 4mm; border-radius: 50%; background: rgba(123,249,172,0.8);"></div>
+  <div class="nshape" style="top: 250mm; left: 350mm; width: 5mm; height: 5mm; border-radius: 50%; background: rgba(66,134,245,0.55);"></div>
 
   <!-- HEADER -->
   <div class="head">
@@ -1231,7 +1231,7 @@
   <!-- doodles -->
   <!-- Y2K butterfly -->
   <svg class="doodle" style="top: 2mm; left: 308mm; width: 21mm; height: 17mm; transform: rotate(-9deg);" viewBox="0 0 60 48">
-    <g fill="none" stroke="#39ff14" stroke-width="1.6" stroke-linecap="round">
+    <g fill="none" stroke="#4189f2" stroke-width="1.6" stroke-linecap="round">
       <path d="M30 12 C29 22,29 34,30 42"/>
       <path d="M30 14 C25 6,21 4,19 7"/>
       <path d="M30 14 C35 6,39 4,41 7"/>
@@ -1240,7 +1240,7 @@
       <path d="M28 30 C17 32,9 40,15 44 C21 47,27 39,29 33"/>
       <path d="M32 30 C43 32,51 40,45 44 C39 47,33 39,31 33"/>
     </g>
-    <g fill="none" stroke="#eaff00" stroke-width="1.1">
+    <g fill="none" stroke="#ef9d34" stroke-width="1.1">
       <circle cx="14" cy="19" r="3"/>
       <circle cx="46" cy="19" r="3"/>
       <path d="M19 38 l4 -3 M41 38 l-4 -3"/>
@@ -1248,23 +1248,23 @@
   </svg>
   <!-- loop-de-loop scribble through the title zone -->
   <svg class="doodle" style="top: 30mm; left: 86mm; width: 36mm; height: 10mm;" viewBox="0 0 100 26">
-    <path d="M2 16 C 10 4, 16 4, 20 11 C 24 18, 30 18, 32 11 C 34 5, 28 3, 28 9 C 28 16, 38 17, 46 11 C 56 3, 62 21, 72 12 C 76 8, 72 4, 70 8 C 68 13, 78 15, 86 10 L 98 7" fill="none" stroke="#eaff00" stroke-width="2.2" stroke-linecap="round"/>
-    <path d="M93 3 l3 4 M97 3 l-3 4" stroke="#39ff14" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M2 16 C 10 4, 16 4, 20 11 C 24 18, 30 18, 32 11 C 34 5, 28 3, 28 9 C 28 16, 38 17, 46 11 C 56 3, 62 21, 72 12 C 76 8, 72 4, 70 8 C 68 13, 78 15, 86 10 L 98 7" fill="none" stroke="#ef9d34" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M93 3 l3 4 M97 3 l-3 4" stroke="#4189f2" stroke-width="1.4" stroke-linecap="round"/>
   </svg>
   <!-- globe with orbit + satellite, bleeding off right edge -->
   <svg class="doodle" style="top: 40mm; left: 397mm; width: 22mm; height: 15mm;" viewBox="0 0 64 44">
-    <g fill="none" stroke="#39ff14" stroke-width="1.5">
+    <g fill="none" stroke="#4189f2" stroke-width="1.5">
       <circle cx="32" cy="22" r="13"/>
       <ellipse cx="32" cy="22" rx="6" ry="13"/>
       <path d="M20.5 16.5 h23 M19 22 h26 M20.5 27.5 h23"/>
     </g>
-    <ellipse cx="32" cy="22" rx="28" ry="8" fill="none" stroke="#eaff00" stroke-width="1.3" stroke-dasharray="4 2" transform="rotate(-12 32 22)"/>
-    <circle cx="55" cy="13" r="2.2" fill="none" stroke="#eaff00" stroke-width="1.3"/>
-    <path d="M51 8 l8 0 M55 4 l0 8" stroke="#00ffd0" stroke-width="1" stroke-linecap="round"/>
+    <ellipse cx="32" cy="22" rx="28" ry="8" fill="none" stroke="#ef9d34" stroke-width="1.3" stroke-dasharray="4 2" transform="rotate(-12 32 22)"/>
+    <circle cx="55" cy="13" r="2.2" fill="none" stroke="#ef9d34" stroke-width="1.3"/>
+    <path d="M51 8 l8 0 M55 4 l0 8" stroke="#7bf9ac" stroke-width="1" stroke-linecap="round"/>
   </svg>
   <!-- spirograph, bleeding off left edge -->
   <svg class="doodle" style="top: 116mm; left: 238mm; width: 18mm; height: 18mm;" viewBox="0 0 60 60">
-    <g fill="none" stroke="#aaff00" stroke-width="1">
+    <g fill="none" stroke="#4189f2" stroke-width="1">
       <ellipse cx="30" cy="30" rx="26" ry="9"/>
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(30 30 30)"/>
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(60 30 30)"/>
@@ -1272,11 +1272,11 @@
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(120 30 30)"/>
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(150 30 30)"/>
     </g>
-    <circle cx="30" cy="30" r="3" fill="none" stroke="#39ff14" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="3" fill="none" stroke="#4189f2" stroke-width="1.5"/>
   </svg>
   <!-- CRT TV with static -->
   <svg class="doodle" style="top: 231mm; left: 393mm; width: 17mm; height: 15mm; transform: rotate(4deg);" viewBox="0 0 60 52">
-    <g fill="none" stroke="#39ff14" stroke-width="1.6">
+    <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <rect x="6" y="16" width="48" height="32" rx="4"/>
       <rect x="11" y="21" width="30" height="22" rx="2"/>
       <path d="M24 16 L16 4 M36 16 L44 4"/>
@@ -1284,12 +1284,12 @@
       <circle cx="47" cy="27" r="2"/><circle cx="47" cy="34" r="2"/>
       <path d="M44 41 h6"/>
     </g>
-    <path d="M13 25 h26 M13 29 h26 M13 33 h26 M13 37 h26" stroke="#eaff00" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M13 25 h26 M13 29 h26 M13 33 h26 M13 37 h26" stroke="#ef9d34" stroke-width="1" stroke-dasharray="3 2"/>
   </svg>
   <!-- scissors + cut-here line across the column gap -->
   <svg class="doodle" style="top: 95mm; left: 246mm; width: 36mm; height: 9mm;" viewBox="0 0 100 24">
-    <path d="M28 12 H98" stroke="#eaff00" stroke-width="1.4" stroke-dasharray="5 3"/>
-    <g fill="none" stroke="#39ff14" stroke-width="1.6">
+    <path d="M28 12 H98" stroke="#ef9d34" stroke-width="1.4" stroke-dasharray="5 3"/>
+    <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <ellipse cx="7" cy="6" rx="4.5" ry="3.2" transform="rotate(-20 7 6)"/>
       <ellipse cx="7" cy="18" rx="4.5" ry="3.2" transform="rotate(20 7 18)"/>
       <path d="M11 8 L30 14 M11 16 L30 10"/>
@@ -1297,21 +1297,21 @@
   </svg>
   <!-- cyber smiley with halo -->
   <svg class="doodle" style="top: 148mm; left: 132mm; width: 14mm; height: 14mm; transform: rotate(8deg);" viewBox="0 0 48 48">
-    <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#eaff00" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
-    <circle cx="24" cy="26" r="14" fill="none" stroke="#39ff14" stroke-width="1.8"/>
-    <path d="M18 18 l1.5 3.5 L23 23 l-3.5 1.5 L18 28 l-1.5 -3.5 L13 23 l3.5 -1.5 Z" fill="none" stroke="#eaff00" stroke-width="1.1"/>
-    <path d="M30 18 l1.5 3.5 L35 23 l-3.5 1.5 L30 28 l-1.5 -3.5 L25 23 l3.5 -1.5 Z" fill="none" stroke="#eaff00" stroke-width="1.1"/>
-    <path d="M17 31 Q24 38 31 31" fill="none" stroke="#00ffd0" stroke-width="1.8" stroke-linecap="round"/>
+    <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#ef9d34" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
+    <circle cx="24" cy="26" r="14" fill="none" stroke="#4189f2" stroke-width="1.8"/>
+    <path d="M18 18 l1.5 3.5 L23 23 l-3.5 1.5 L18 28 l-1.5 -3.5 L13 23 l3.5 -1.5 Z" fill="none" stroke="#ef9d34" stroke-width="1.1"/>
+    <path d="M30 18 l1.5 3.5 L35 23 l-3.5 1.5 L30 28 l-1.5 -3.5 L25 23 l3.5 -1.5 Z" fill="none" stroke="#ef9d34" stroke-width="1.1"/>
+    <path d="M17 31 Q24 38 31 31" fill="none" stroke="#7bf9ac" stroke-width="1.8" stroke-linecap="round"/>
   </svg>
   <!-- barcode glitch sticker -->
   <svg class="doodle" style="top: 290mm; left: 196mm; width: 18mm; height: 7mm; transform: rotate(-2deg);" viewBox="0 0 70 26">
-    <g stroke="#39ff14" stroke-width="1">
+    <g stroke="#4189f2" stroke-width="1">
       <path d="M5 4 v18 M10 4 v18 M19 4 v18 M27 4 v18 M34 4 v18 M45 4 v18 M52 4 v18 M61 4 v18"/>
     </g>
-    <g stroke="#39ff14" stroke-width="2.4">
+    <g stroke="#4189f2" stroke-width="2.4">
       <path d="M14 4 v18 M23 4 v18 M39 4 v18 M57 4 v18 M65 4 v18"/>
     </g>
-    <path d="M2 13 h66" stroke="#eaff00" stroke-width="1.6"/>
+    <path d="M2 13 h66" stroke="#ef9d34" stroke-width="1.6"/>
   </svg>
 
   <!-- local analog artifacts -->
