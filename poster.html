@@ -4,47 +4,48 @@
 <meta charset="UTF-8">
 <title>Universal Aesthetic Alignment Narrows Artistic Expression — ICML 2026 Poster</title>
 <style>
+  /* ============================================================
+     ICML 2026 poster — anti-aesthetic product-poster style.
+     White ground, organic neon-green shapes behind a free-form
+     mosaic of absolutely placed zones (no shared row/column
+     edges), palette-blue/orange accents, analog-glitch overlays.
+     Canvas: A2 landscape, 420mm x 297mm.
+     ============================================================ */
   @page { size: 420mm 297mm; margin: 0; }
   :root {
-    --bg: #dceaf6;        /* soft aqua-silver */
-    --ink: #21304a;       /* deep slate blue */
-    --muted: #6c7a92;     /* cool grey */
-    --line: #9cbada;      /* soft steel blue */
-    --accent: #2e6ed4;    /* palette blue, darkened for text */
-    --accent-2: #e8941f;  /* palette orange, darkened for text */
-    --gold: #ef9d34;      /* palette orange for numerals */
-    --good: #2e6ed4;
-    --soft: #eaf3fc;      /* pale aqua panel */
-    --card: #f2f8ff;      /* glossy white-blue */
+    --ink: #21304a;        /* near-black body text */
+    --muted: #6c7a92;      /* secondary text */
+    --accent: #2e6ed4;     /* palette blue, darkened for text */
+    --accent-2: #e8941f;   /* palette orange, darkened for text */
+    --gold: #ef9d34;       /* palette orange for numerals/labels */
+    --good: #2e6ed4;       /* "faithful model" = blue */
+    --green: #7bf9ac;      /* palette spring green (backgrounds) */
+    --lime: #b2fb56;       /* palette yellow-green (backgrounds) */
+    --blue-doodle: #4189f2;/* palette blue (decor strokes) */
   }
   * { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0;
     width: 420mm; height: 297mm;
-    background: var(--bg); color: var(--ink);
+    color: var(--ink);
     font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-size: 10pt; line-height: 1.35;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  .serif { font-family: "Times New Roman", Times, serif; }
-
   .poster {
     width: 420mm; height: 297mm;
-    padding: 8mm 9mm 8mm;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 4mm;
+    padding: 8mm 9mm;
     position: relative;
     overflow: hidden;
-    /* clean white ground, neon shapes float on top */
     background: #fdfff6;
   }
-  /* free-form neon background shapes */
+
+  /* ----- background neon shapes (behind everything) ----- */
   .nshape { position: absolute; z-index: 1; pointer-events: none; }
-  .head, .body { position: relative; z-index: 2; }
-  /* ----- ARTIFACT LAYERS ----- */
-  /* (a) banding + posterized color gradient, like 8-bit JPEG */
+
+  /* ----- analog artifact overlays (above content, subtle) ----- */
+  /* banding, like over-compressed color */
   .poster::before {
     content: "";
     position: absolute; inset: 0;
@@ -53,13 +54,13 @@
     background:
       repeating-linear-gradient(0deg,
         rgba(33,48,74,0.035) 0, rgba(33,48,74,0.035) 0.4mm,
-        rgba(255,255,255,0.0) 0.4mm, rgba(255,255,255,0.0) 2.2mm),
+        rgba(255,255,255,0) 0.4mm, rgba(255,255,255,0) 2.2mm),
       repeating-linear-gradient(90deg,
         rgba(58,166,200,0.04) 0, rgba(58,166,200,0.04) 9mm,
-        rgba(170,255,0,0.05) 9mm, rgba(170,255,0,0.05) 18mm);
+        rgba(178,251,86,0.05) 9mm, rgba(178,251,86,0.05) 18mm);
     mix-blend-mode: multiply;
   }
-  /* (b) film grain / dither noise */
+  /* film grain */
   .poster::after {
     content: "";
     position: absolute; inset: 0;
@@ -70,7 +71,7 @@
     background-size: 26mm 26mm;
     mix-blend-mode: overlay;
   }
-  /* (e) faint scanlines, barely there */
+  /* faint scanlines */
   .vhs-scan {
     position: absolute; inset: 0;
     z-index: 54; pointer-events: none;
@@ -80,21 +81,21 @@
       transparent 0.3mm, transparent 1.6mm);
     mix-blend-mode: multiply;
   }
-  /* (f) tracking-distortion band: horizontal streak + chroma bleed */
+  /* tracking-distortion band: horizontal streak + chroma bleed */
   .vhs-band {
     position: absolute; left: 0; right: 0;
     z-index: 55; pointer-events: none;
     opacity: 0.7;
     background:
       linear-gradient(180deg,
-        transparent 0%, rgba(170,255,0,0.22) 30%,
+        transparent 0%, rgba(178,251,86,0.22) 30%,
         rgba(58,166,200,0.22) 70%, transparent 100%),
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='20'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.7' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='20' filter='url(%23b)' opacity='0.7'/></svg>");
     background-size: 100% 100%, 100% 1.6mm;
     mix-blend-mode: screen;
     filter: blur(0.35mm);
   }
-  /* (g) horizontal static interference strip */
+  /* horizontal static interference strip */
   .vhs-static {
     position: absolute; left: 0; right: 0;
     z-index: 55; pointer-events: none;
@@ -104,7 +105,7 @@
     mix-blend-mode: overlay;
     filter: contrast(1.5);
   }
-  /* (c) JPEG macroblock smear, floating mid-poster */
+  /* JPEG macroblock smear */
   .artifact-block {
     position: absolute;
     z-index: 52;
@@ -115,7 +116,7 @@
     mix-blend-mode: hard-light;
     filter: blur(0.3mm);
   }
-  /* (d) scanline tear strip */
+  /* scanline tear strip */
   .artifact-tear {
     position: absolute; left: 0; right: 0;
     height: 1.2mm;
@@ -129,9 +130,42 @@
     mix-blend-mode: screen;
     transform: translateY(-0.4mm);
   }
+  /* localized analog patches */
+  .lan { position: absolute; z-index: 56; pointer-events: none; }
+  .lan-rgb {
+    background: repeating-linear-gradient(0deg,
+      rgba(239,157,52,0.45) 0, rgba(239,157,52,0.45) 0.45mm,
+      rgba(65,137,242,0.4) 0.45mm, rgba(65,137,242,0.4) 0.9mm);
+    mix-blend-mode: screen; opacity: 0.7; filter: blur(0.15mm);
+  }
+  .lan-drop {
+    height: 0.7mm;
+    background: linear-gradient(90deg,
+      transparent, #ffffff 22%, #d2e4f4 50%, #ffffff 74%, transparent);
+    mix-blend-mode: screen; opacity: 0.85; filter: blur(0.1mm);
+  }
+  .lan-static {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='14'><filter id='h'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='14' filter='url(%23h)' opacity='0.9'/></svg>");
+    background-size: 100% 1.8mm;
+    mix-blend-mode: overlay; opacity: 0.75; filter: contrast(1.7);
+  }
+  .lan-smear {
+    background: linear-gradient(90deg,
+      rgba(239,157,52,0) 0%, rgba(239,157,52,0.45) 35%,
+      rgba(65,137,242,0.4) 65%, rgba(239,157,52,0) 100%);
+    mix-blend-mode: screen; opacity: 0.6; filter: blur(0.7mm);
+  }
+  /* doodles: hand-drawn shape svgs in the gutters */
+  .doodle {
+    position: absolute;
+    z-index: 57;
+    pointer-events: none;
+    filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(65,137,242,0.4));
+  }
 
-  /* ----- HEADER (plain) ----- */
+  /* ----- header ----- */
   .head {
+    position: relative; z-index: 2;
     display: grid;
     grid-template-columns: 1.55fr 1fr 0.55fr;
     align-items: center;
@@ -145,7 +179,6 @@
     color: var(--muted);
     margin-bottom: 1.5mm;
   }
-  /* neon pill SPOTLIGHT badge */
   .spotlight {
     display: inline-block;
     color: #1c2a14;
@@ -154,16 +187,15 @@
     font-weight: 800; font-size: 8pt;
     letter-spacing: 0.16em;
     border-radius: 4mm;
-    background: #ef9d34;
+    background: var(--gold);
     box-shadow: 0 0 1.6mm rgba(239,157,52,0.8);
   }
-  /* Y2K sparkle glyphs */
   .spark {
-    color: #ef9d34;
+    color: var(--gold);
     font-size: 9pt;
     text-shadow:
       0 0 0.6mm #fff,
-      0 0 1.4mm #4189f2;
+      0 0 1.4mm var(--blue-doodle);
     vertical-align: 0.4mm;
   }
   h1.title {
@@ -174,10 +206,6 @@
     margin: 0 0 2mm;
     letter-spacing: -0.01em;
     color: #233018;
-  }
-  h1.title em {
-    color: inherit;
-    font-style: normal;
   }
   .authors {
     font-size: 11pt;
@@ -207,23 +235,16 @@
   }
   .links b { color: var(--accent); font-weight: 700; }
 
-  /* ----- BODY ----- */
-  .body {
-    display: grid;
-    grid-template-columns: 1.0fr 1.8fr 1.0fr;
-    grid-template-rows: 1fr;
-    gap: 5mm;
-    min-height: 0;
-    height: 100%;
-  }
-  .col {
-    display: flex; flex-direction: column;
-    gap: 3mm;
-    min-height: 0;
-    height: 100%;
+  /* ----- mosaic zones ----- */
+  .zone {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5mm;
   }
 
-  /* ----- SECTION HEADERS (plain) ----- */
+  /* section header: neon wash that fades out, no box */
   .sec-head {
     display: flex; align-items: center; gap: 2.5mm;
     padding: 1mm 2.5mm;
@@ -263,25 +284,30 @@
   .sec-lead b { color: var(--accent); }
   .sec-lead i { font-style: italic; color: var(--ink); }
 
-  /* ----- REAL ART ----- */
-  .real-stack {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2mm;
-  }
-  .art-card {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1.5mm;
-    display: flex; flex-direction: column;
-  }
-  .art-card .imgwrap {
-    aspect-ratio: 1 / 1;
-    background: #f0e9d3;
+  /* images float on the page: soft shadow, rounded, no frame */
+  .imgwrap, .pic, .news-pic, .rs-cell .img {
+    border-radius: 1.4mm;
     overflow: hidden;
+    box-shadow: 0 0.8mm 2mm rgba(50,70,30,0.30);
+  }
+
+  /* ----- i: real art row (2 paintings + 3 LAPIS works) ----- */
+  .artrow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5mm;
+    align-items: start;
+  }
+  .art-card { display: flex; flex-direction: column; }
+  .art-card .imgwrap, .lapis-cell .imgwrap {
+    aspect-ratio: 1 / 1;
     display: flex; align-items: center; justify-content: center;
   }
-  .art-card img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .art-card img, .lapis-cell img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    filter: saturate(1.18) contrast(1.05);
+  }
   .art-card .meta {
     font-size: 7pt; color: var(--muted);
     padding-top: 1mm; line-height: 1.2;
@@ -303,21 +329,6 @@
     font-weight: 500;
     margin-right: 0.4mm;
   }
-
-  .lapis-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm;
-  }
-  .lapis-cell {
-    background: var(--card); border: 0.3mm solid var(--line);
-    padding: 1mm;
-  }
-  .lapis-cell .imgwrap {
-    aspect-ratio: 1 / 1;
-    background: #f0e9d3;
-    overflow: hidden;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .lapis-cell img { max-width: 100%; max-height: 100%; object-fit: contain; }
   .lapis-cell .lscore {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
@@ -329,16 +340,67 @@
     line-height: 1.15;
   }
 
-  /* ----- DanceFlux vs Krea on NORMAL P_a (col 2 top) ----- */
+  /* ----- ii: emotion bias ----- */
+  .emo-figure { display: flex; flex-direction: column; gap: 1mm; }
+  .emo-figure img {
+    width: 100%; display: block; object-fit: contain;
+    border-radius: 1.4mm;
+    box-shadow: 0 0.8mm 2mm rgba(50,70,30,0.30);
+  }
+  .emo-tag {
+    display: flex; justify-content: space-between; gap: 2mm;
+    font-size: 6.5pt;
+    color: var(--muted);
+  }
+  .emo-tag b { color: var(--accent); font-weight: 700; }
+  .emo-stats {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 2mm;
+  }
+  .emo-table h4 {
+    margin: 0 0 1mm;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 8.5pt; font-weight: 600; line-height: 1.1;
+  }
+  .emo-table table {
+    width: 100%; border-collapse: collapse; font-size: 7.5pt;
+  }
+  .emo-table th, .emo-table td {
+    padding: 0.4mm 0.8mm; text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .emo-table th { color: var(--muted); font-weight: 600; }
+  .emo-table th:first-child, .emo-table td:first-child { text-align: left; }
+  .emo-table tr.hi td { color: var(--accent); font-weight: 700; }
+  .emo-table tr.good td { color: var(--good); font-weight: 600; }
+  .emo-table td.bad { color: var(--accent); font-weight: 700; }
+  .emo-table td.win { color: var(--good); font-weight: 700; }
+  /* the 81% stat: neon blob sticker */
+  .emo-callout {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 3mm 4mm;
+    background: radial-gradient(circle at 35% 30%, #d9fc92, #b2fb56 75%);
+    border-radius: 48% 52% 55% 45% / 55% 48% 52% 45%;
+    transform: rotate(-3deg);
+    box-shadow: 0 1mm 2.5mm rgba(110,180,80,0.45);
+  }
+  .emo-callout .big {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26pt; line-height: 0.95;
+    color: var(--accent); font-weight: 700;
+  }
+  .emo-callout .label {
+    font-size: 7pt; color: var(--ink);
+    line-height: 1.25; margin-top: 1mm;
+  }
+  .emo-callout .label b { color: var(--accent); }
+
+  /* ----- iii: DanceFlux vs Flux Krea on normal anti-aesthetic prompts ----- */
   .normal-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2mm;
+    gap: 2.5mm;
   }
   .normal-cell {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1.2mm;
     display: flex; flex-direction: column;
     gap: 1mm;
   }
@@ -360,98 +422,40 @@
     grid-template-columns: 1fr 1fr;
     gap: 1mm;
   }
-  .normal-cell .pic {
-    position: relative; overflow: hidden;
+  .pic {
+    position: relative;
     background: #000;
-    border: 0.3mm solid var(--line);
     aspect-ratio: 1 / 1;
   }
-  .normal-cell .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .normal-cell .pic .stamp {
+  .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .stamp {
     position: absolute; top: 0; left: 0;
     padding: 0.2mm 1mm;
     font-size: 5.5pt; font-weight: 700;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: #fff8e8;
   }
-  .normal-cell .pic .stamp.krea { background: var(--good); }
-  .normal-cell .pic .stamp.dance { background: var(--accent-2); }
+  .stamp.krea { background: var(--good); }
+  .stamp.dance { background: var(--accent-2); }
 
-  /* ----- EMOTION ----- */
-  .emo-figure {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1.5mm;
-    display: flex; flex-direction: column; gap: 1mm;
-  }
-  .emo-figure img { width: 100%; display: block; object-fit: contain; }
-  .emo-tag {
-    display: flex; justify-content: space-between; gap: 2mm;
-    font-size: 6.5pt;
-    color: var(--muted);
-  }
-  .emo-tag b { color: var(--accent); font-weight: 700; }
-  .emo-stats {
-    display: grid; grid-template-columns: 1.4fr 1fr; gap: 2mm;
-  }
-  .emo-table {
-    background: var(--card); border: 0.3mm solid var(--line);
-    padding: 1.5mm;
-  }
-  .emo-table h4 {
-    margin: 0 0 1mm;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 8.5pt; font-weight: 600; line-height: 1.1;
-  }
-  .emo-table table {
-    width: 100%; border-collapse: collapse; font-size: 7.5pt;
-  }
-  .emo-table th, .emo-table td {
-    padding: 0.4mm 0.8mm; text-align: right;
-    font-variant-numeric: tabular-nums;
-  }
-  .emo-table th { color: var(--muted); font-weight: 600; }
-  .emo-table th:first-child, .emo-table td:first-child { text-align: left; }
-  .emo-table tr.hi td { color: var(--accent); font-weight: 700; }
-  .emo-table tr.good td { color: var(--good); font-weight: 600; }
-  .emo-table td.bad { color: var(--accent); font-weight: 700; }
-  .emo-table td.win { color: var(--good); font-weight: 700; }
-  /* Anti-aesthetic accent #3: 81% callout slightly tilted */
-  .emo-callout {
-    background: #f0ead2;
-    border: 0.5mm solid var(--accent);
-    padding: 2mm;
-    display: flex; flex-direction: column; justify-content: center;
-    transform: rotate(-1.5deg);
-  }
-  .emo-callout .big {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 26pt; line-height: 0.95;
-    color: var(--accent); font-weight: 700;
-  }
-  .emo-callout .label {
-    font-size: 7pt; color: var(--ink);
-    line-height: 1.25; margin-top: 1mm;
-  }
-  .emo-callout .label b { color: var(--accent); }
-
-  /* ----- IMAGE NEW SPEAK: 2 comparisons per row ----- */
+  /* ----- iv: Image New Speak, 3-up cells with topic above each pair ----- */
   .news-stack {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2mm;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5mm;
   }
   .news-cell {
     display: grid;
-    grid-template-columns: 22mm 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1mm;
     align-items: stretch;
   }
   .news-cell .topic {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1.2mm 1.4mm;
-    display: flex; flex-direction: column;
+    grid-column: 1 / -1;
+    display: flex; flex-direction: row;
+    align-items: baseline;
+    gap: 1.5mm;
+    padding: 0.5mm 0;
   }
   .news-cell .topic .num {
     font-family: "Times New Roman", Times, serif;
@@ -461,16 +465,15 @@
   .news-cell .topic .name {
     font-family: "Times New Roman", Times, serif;
     font-size: 10pt; font-weight: 700;
-    line-height: 1.05; margin: 0.8mm 0 0.4mm;
+    line-height: 1.05;
   }
   .news-cell .topic .hint {
     font-size: 6pt; color: var(--muted);
     line-height: 1.2;
   }
   .news-pic {
-    position: relative; overflow: hidden;
+    position: relative;
     background: #000;
-    border: 0.3mm solid var(--line);
     aspect-ratio: 1 / 1;
   }
   .news-pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -481,25 +484,26 @@
     letter-spacing: 0.1em; text-transform: uppercase;
     color: #fff8e8;
   }
-  .news-stamp.dance { background: var(--accent-2); }
   .news-stamp.krea { background: var(--good); }
+  .news-stamp.dance { background: var(--accent-2); }
+  /* footnote fills the spare grid slot, in a wash container
+     aligned with the image row beside it */
   .news-footnote {
-    font-size: 7.5pt; color: var(--muted);
-    line-height: 1.35;
-    padding: 1.5mm 2mm;
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    border-left: 1mm solid var(--accent);
+    font-size: 6pt; color: var(--muted);
+    line-height: 1.28;
+    padding: 1.5mm 2.5mm;
     display: flex; flex-direction: column; justify-content: center;
+    background: linear-gradient(135deg, rgba(178,251,86,0.40), rgba(123,249,172,0.18));
+    border-radius: 2.5mm 6mm 2.5mm 5mm;
   }
   .news-footnote b { color: var(--accent); font-weight: 700; }
   .news-footnote i { font-style: italic; color: var(--ink); }
 
-  /* ----- REVERSED ALIGNMENT (col 3) ----- */
+  /* ----- v: reversed alignment (wash panel, organic corners) ----- */
   .reversed {
-    background: var(--soft);
-    border: 0.3mm solid var(--line);
     padding: 3mm 3.5mm;
+    background: linear-gradient(135deg, rgba(178,251,86,0.45), rgba(123,249,172,0.20) 75%);
+    border-radius: 4mm 16mm 4mm 14mm;
   }
   .reversed h2 {
     font-family: "Times New Roman", Times, serif;
@@ -509,12 +513,6 @@
   .reversed h2 em { color: var(--accent); font-style: italic; }
   .reversed p {
     font-size: 8.5pt; line-height: 1.38; margin: 0 0 1mm;
-  }
-  .reversed .loop-mini {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0.5mm 0 1.5mm;
   }
   .reversed p b { color: var(--accent); }
   .reversed p i { font-style: italic; }
@@ -533,32 +531,12 @@
   .reversed .stats {
     font-size: 7pt; line-height: 1.4;
     color: var(--ink);
-    border-top: 0.2mm dashed var(--line);
+    border-top: 0.2mm dashed var(--muted);
     padding-top: 1mm; margin-top: 1mm;
   }
   .reversed .stats b { color: var(--accent); font-weight: 700; }
 
-  .diagram-wrap {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 2mm;
-    display: flex; flex-direction: column;
-  }
-  .diagram-wrap .diag-title {
-    font-size: 6.5pt; letter-spacing: 0.15em;
-    color: var(--muted); text-align: center;
-    text-transform: uppercase;
-    border-bottom: 0.2mm dashed var(--muted);
-    padding-bottom: 0.8mm; margin-bottom: 1mm;
-  }
-  .diagram-wrap .diag-title b { color: var(--accent); font-weight: 700; }
-  .diagram { width: 100%; height: auto; display: block; }
-
-  .why {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 2mm 2.5mm;
-  }
+  /* ----- why it matters ----- */
   .why h3 {
     font-family: "Times New Roman", Times, serif;
     font-size: 11pt; margin: 0 0 1mm;
@@ -571,62 +549,7 @@
   .why p b { color: var(--accent); }
   .why p i { font-style: italic; }
 
-  /* ----- QR BLOCKS ----- */
-  .qr-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1mm;
-  }
-  .qr-block {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1mm;
-    display: grid;
-    grid-template-columns: 16mm 1fr;
-    gap: 1mm;
-    align-items: center;
-  }
-  .qr-block.cv {
-    border-left: 1mm solid var(--accent);
-  }
-  .qr-block.qingyun {
-    border-left-color: var(--accent-2);
-  }
-  .qr-block img {
-    width: 16mm; height: 16mm;
-    display: block;
-    background: #fff;
-  }
-  .qr-block .qr-text h4 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 7.5pt;
-    font-weight: 700;
-    line-height: 1.05;
-    margin: 0 0 0.5mm;
-  }
-  .qr-block .qr-text h4 em { color: var(--accent); font-style: italic; }
-  .qr-block .qr-text p {
-    font-size: 5.3pt;
-    color: var(--muted);
-    line-height: 1.22;
-    margin: 0 0 0.5mm;
-  }
-  .qr-block .qr-text p b { color: var(--ink); font-weight: 700; }
-  .qr-block .qr-url {
-    font-size: 4.8pt;
-    color: var(--accent);
-    word-break: break-all;
-    line-height: 1.2;
-    font-family: "Courier New", monospace;
-  }
-
-  /* ----- REAL PHOTOS STRIP ----- */
-  .real-strip {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    border-left: 1mm solid var(--accent-2);
-    padding: 1.5mm 2mm;
-  }
+  /* ----- real anti-aesthetic photographs ----- */
   .real-strip .rs-head {
     font-family: "Times New Roman", Times, serif;
     font-size: 9pt;
@@ -647,20 +570,18 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5mm;
   }
-  .real-strip .rs-cell {
+  .rs-cell {
     display: flex; flex-direction: column;
     gap: 0.4mm;
   }
-  .real-strip .rs-cell .img {
-    aspect-ratio: 1 / 1;
+  .rs-cell .img {
+    height: 27mm;
     background: #000;
-    border: 0.3mm solid var(--line);
-    overflow: hidden;
   }
-  .real-strip .rs-cell .img img {
+  .rs-cell .img img {
     width: 100%; height: 100%; object-fit: cover;
   }
-  .real-strip .rs-cell .ir {
+  .rs-cell .ir {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-size: 9pt;
@@ -668,7 +589,7 @@
     color: var(--accent);
     line-height: 1;
   }
-  .real-strip .rs-cell .cap {
+  .rs-cell .cap {
     text-align: center;
     font-size: 5.5pt;
     color: var(--muted);
@@ -676,18 +597,59 @@
     font-family: "Courier New", monospace;
   }
 
-  /* ----- SPONSORS ----- */
-  .sponsors-block {
-    background: var(--card);
-    border: 0.3mm solid var(--line);
-    padding: 1.8mm 2mm;
+  /* ----- QR row (bottom-anchored) ----- */
+  .metarow { flex-direction: row; gap: 5mm; align-items: stretch; }
+  .qr-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    flex: 1;
   }
+  .qr-block {
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    gap: 2mm;
+    align-items: center;
+    align-content: center;
+    padding: 1mm;
+  }
+  .qr-block.cv { border-left: 1mm solid var(--accent); }
+  .qr-block.qingyun { border-left-color: var(--accent-2); }
+  .qr-block img {
+    width: 22mm; height: 22mm;
+    display: block;
+    background: #fff;
+  }
+  .qr-block .qr-text h4 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 0 0 0.5mm;
+  }
+  .qr-block .qr-text h4 em { color: var(--accent); font-style: italic; }
+  .qr-block .qr-text p {
+    font-size: 6.8pt;
+    color: var(--muted);
+    line-height: 1.22;
+    margin: 0 0 0.5mm;
+  }
+  .qr-block .qr-text p b { color: var(--ink); font-weight: 700; }
+  .qr-block .qr-url {
+    font-size: 6pt;
+    color: var(--accent);
+    word-break: break-all;
+    line-height: 1.2;
+    font-family: "Courier New", monospace;
+  }
+
+  /* ----- sponsors ----- */
   .sponsors-block .spons-head {
     font-family: "Times New Roman", Times, serif;
-    font-size: 9pt;
+    font-size: 11pt;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 1.5mm;
+    margin-bottom: 2mm;
   }
   .sponsors-block .spons-head em { color: var(--gold); font-style: italic; }
   .sponsors-block .spons-row {
@@ -702,12 +664,12 @@
     gap: 0.6mm;
   }
   .sponsors-block .spons .logo {
-    height: 9mm;
+    height: 12mm;
     width: 100%;
     display: flex; align-items: center; justify-content: center;
   }
   .sponsors-block .spons .logo img {
-    max-height: 9mm;
+    max-height: 12mm;
     max-width: 100%;
     object-fit: contain;
   }
@@ -720,147 +682,12 @@
     text-align: center;
     line-height: 1.2;
   }
-
-  /* ----- FOOTER ----- */
-  footer {
-    display: flex; justify-content: space-between;
-    align-items: center;
-    padding-top: 2mm;
-    font-size: 7.5pt; color: var(--muted);
-    border-top: 0.3mm solid var(--line);
-  }
-  footer b { color: var(--ink); }
-
-  /* light oversaturation as a style cue, still legible */
-  .art-card img, .lapis-cell img {
-    filter: saturate(1.18) contrast(1.05);
-  }
-
-  /* ----- LOCAL analog artifacts ----- */
-  .lan { position: absolute; z-index: 56; pointer-events: none; }
-  /* RGB chroma-displacement chip */
-  .lan-rgb {
-    background: repeating-linear-gradient(0deg,
-      rgba(234,255,0,0.45) 0, rgba(234,255,0,0.45) 0.45mm,
-      rgba(57,255,20,0.4) 0.45mm, rgba(57,255,20,0.4) 0.9mm);
-    mix-blend-mode: screen; opacity: 0.7; filter: blur(0.15mm);
-  }
-  /* signal-dropout streak */
-  .lan-drop {
-    height: 0.7mm;
-    background: linear-gradient(90deg,
-      transparent, #ffffff 22%, #d2e4f4 50%, #ffffff 74%, transparent);
-    mix-blend-mode: screen; opacity: 0.85; filter: blur(0.1mm);
-  }
-  /* head-switch / torn-signal static patch (horizontal streaks) */
-  .lan-static {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='14'><filter id='h'><feTurbulence type='fractalNoise' baseFrequency='0.008 0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='14' filter='url(%23h)' opacity='0.9'/></svg>");
-    background-size: 100% 1.8mm;
-    mix-blend-mode: overlay; opacity: 0.75; filter: contrast(1.7);
-  }
-  /* localized chroma smear */
-  .lan-smear {
-    background: linear-gradient(90deg,
-      rgba(234,255,0,0) 0%, rgba(234,255,0,0.45) 35%,
-      rgba(57,255,20,0.4) 65%, rgba(234,255,0,0) 100%);
-    mix-blend-mode: screen; opacity: 0.6; filter: blur(0.7mm);
-  }
-
-  /* ----- FREE-FORM: no boxes, content floats on the page ----- */
-  .art-card, .lapis-cell, .emo-figure, .emo-table, .reversed, .why,
-  .real-strip, .sponsors-block, .qr-block, .diagram-wrap, .news-footnote,
-  .normal-cell, .news-cell .topic, .emo-callout {
-    background: none;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-  }
-  .art-card .imgwrap, .lapis-cell .imgwrap { background: transparent; }
-  /* images float with soft shadows instead of frames */
-  .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img, .emo-figure img {
-    box-shadow: 0 0.8mm 2mm rgba(50,70,30,0.30);
-    border: none;
-  }
-  /* the key statement panel: soft neon wash, organic corners */
-  .reversed {
-    background: linear-gradient(135deg, rgba(178,251,86,0.45), rgba(123,249,172,0.20) 75%);
-    border-radius: 4mm 16mm 4mm 14mm;
-  }
-  /* the 81% stat: neon blob sticker */
-  .emo-callout {
-    background: radial-gradient(circle at 35% 30%, #d9fc92, #b2fb56 75%);
-    border-radius: 48% 52% 55% 45% / 55% 48% 52% 45%;
-    transform: rotate(-3deg);
-    padding: 3mm 4mm;
-    box-shadow: 0 1mm 2.5mm rgba(110,180,80,0.45);
-  }
-  /* rounded image tiles */
-  .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
-  .art-card img, .lapis-cell img { border-radius: 1mm; }
-
-  /* ----- FREE-FORM MOSAIC ZONES (edges intentionally unaligned) ----- */
-  .zone {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 3.5mm;
-  }
-  .metarow { flex-direction: row; gap: 5mm; align-items: stretch; }
-  .metarow .qr-row { flex: 1; gap: 4mm; }
-  .metarow .qr-block {
-    grid-template-columns: 22mm 1fr;
-    align-items: center;
-    align-content: center;
-    padding: 1mm;
-    gap: 2mm;
-  }
-  .metarow .qr-block img { width: 22mm; height: 22mm; }
-  .metarow .qr-block .qr-text h4 { font-size: 10pt; }
-  .metarow .qr-block .qr-text p { font-size: 6.8pt; }
-  .metarow .qr-block .qr-url { font-size: 6pt; }
-  .sponszone .spons-head { font-size: 11pt; margin-bottom: 2mm; }
-  .sponszone .logo { height: 12mm; }
-  .sponszone .logo img { max-height: 12mm; }
-  .sponszone .role { font-size: 5.5pt; }
-  .real-strip .rs-cell .img { aspect-ratio: auto; height: 24mm; }
-  /* paintings + lapis works share one row */
-  .artrow {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2.5mm;
-    align-items: start;
-  }
-  /* news speak reflows to 3-up with topic above the pair */
-  .news-stack { grid-template-columns: repeat(3, 1fr); gap: 2.5mm; }
-  .news-cell { grid-template-columns: 1fr 1fr; }
-  .news-cell .topic {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 1.5mm;
-  }
-  .news-footnote {
-    font-size: 6.8pt;
-    padding: 2.5mm;
-    align-self: stretch;
-    background: linear-gradient(135deg, rgba(178,251,86,0.40), rgba(123,249,172,0.18));
-    border-radius: 2.5mm 6mm 2.5mm 5mm;
-  }
-
-  /* ----- doodle svgs ----- */
-  .doodle {
-    position: absolute;
-    z-index: 57;
-    pointer-events: none;
-    filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(65,137,242,0.4));
-  }
 </style>
 </head>
 <body>
 <div class="poster">
 
-  <!-- free-form neon background shapes -->
+  <!-- background neon shapes -->
   <svg class="nshape" style="top: 0; left: 0; width: 100%; height: 58mm;" viewBox="0 0 420 58" preserveAspectRatio="none">
     <defs>
       <linearGradient id="ng1" x1="0" y1="0" x2="0" y2="1">
@@ -899,11 +726,11 @@
   <div class="nshape" style="top: 54mm; left: 152mm; width: 4mm; height: 4mm; border-radius: 50%; background: rgba(123,249,172,0.8);"></div>
   <div class="nshape" style="top: 250mm; left: 350mm; width: 5mm; height: 5mm; border-radius: 50%; background: rgba(66,134,245,0.55);"></div>
 
-  <!-- HEADER -->
+  <!-- header -->
   <div class="head">
     <div>
       <div class="kicker">POSITION PAPER · ICML 2026 <span class="spotlight">✦ SPOTLIGHT</span> <span class="spark">✧</span></div>
-      <h1 class="title" data-text="Universal Aesthetic Alignment Narrows Artistic Expression">Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
+      <h1 class="title">Universal Aesthetic Alignment Narrows Artistic Expression</h1>
       <div class="authors"><b>Wenqi Marshall Guo</b>, <b>Qingyun Qian</b>, <b>Khalad Hasan</b>, <b>Shan Du</b></div>
       <div class="affil">University of British Columbia (Okanagan) · Department of CMPS · Weathon Software, Canada</div>
     </div>
@@ -919,330 +746,325 @@
     </div>
   </div>
 
-  <!-- MOSAIC ZONES -->
+  <!-- mosaic zones: absolutely placed, edges deliberately unaligned -->
 
-    <!-- real art: top right, sits lower than its neighbor -->
-    <div class="zone" style="left: 252mm; top: 60mm; width: 159mm;">
-      <div class="sec-head">
-        <span class="sec-num">i</span>
-        <h2 class="sec-title">Art the reward model rejects</h2>
-        <span class="sec-meta">HPSv3 typ. 0–15</span>
+  <!-- i: real art — top right, set lower than the block to its left -->
+  <div class="zone" style="left: 252mm; top: 60mm; width: 159mm;">
+    <div class="sec-head">
+      <span class="sec-num">i</span>
+      <h2 class="sec-title">Art the reward model rejects</h2>
+      <span class="sec-meta">HPSv3 typ. 0–15</span>
+    </div>
+    <p class="sec-lead">
+      Two canonical paintings + three LAPIS works, all in <b>negative</b> reward territory. HPSv3 cannot distinguish deliberate aesthetic deviation from generation failure.
+    </p>
+    <div class="artrow">
+      <div class="art-card">
+        <div class="imgwrap"><img src="site/img/local/scream.jpg" alt="Munch — The Scream"></div>
+        <div class="meta"><b>The Scream</b> · Munch 1893<span class="score">5.23</span></div>
       </div>
-      <p class="sec-lead">
-        Two canonical paintings + three LAPIS works, all in <b>negative</b> reward territory. HPSv3 cannot distinguish deliberate aesthetic deviation from generation failure.
+      <div class="art-card">
+        <div class="imgwrap"><img src="site/img/local/matisse.jpg" alt="Matisse — Luxe"></div>
+        <div class="meta"><b>Luxe, Calme et Volupté</b> · Matisse 1904<span class="score">1.73</span></div>
+      </div>
+      <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/7482.jpg" alt="LAPIS landscape"></div><div class="lscore">−4.28</div><div class="lcap">landscape</div></div>
+      <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/8236.jpg" alt="LAPIS still life"></div><div class="lscore">−3.21</div><div class="lcap">still life</div></div>
+      <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/11344.jpg" alt="LAPIS portrait"></div><div class="lscore">−1.25</div><div class="lcap">portrait</div></div>
+    </div>
+  </div>
+
+  <!-- ii: emotion bias — mid left -->
+  <div class="zone" style="left: 9mm; top: 144mm; width: 118mm;">
+    <div class="sec-head">
+      <span class="sec-num">ii</span>
+      <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
+      <span class="sec-meta">prompt-faithful = punished</span>
+    </div>
+    <p class="sec-lead">
+      Same face edited into three negative emotions. HPSv3 — asked to find the negative one — still picks happy. DanceFlux, asked to generate negative emotion, returns neutral or happy.
+    </p>
+    <div class="emo-figure">
+      <img src="site/img/local/emotion.jpg" alt="Happy vs sad / anger / fearfulness">
+      <div class="emo-tag">
+        <span>Happy <b>14.60</b></span>
+        <span>Sad <b>12.80</b></span>
+        <span>Anger <b>11.40</b></span>
+        <span>Fear <b>10.60</b></span>
+      </div>
+    </div>
+    <div class="emo-stats">
+      <div class="emo-table">
+        <h4>Reward-model accuracy on negative emotion</h4>
+        <table>
+          <thead><tr><th>Model</th><th>Anger</th><th>Fear</th><th>Sad</th></tr></thead>
+          <tbody>
+            <tr class="good"><td>BLIP <span style="color:var(--muted); font-size:6pt;">(unaligned)</span></td><td class="win">0.96</td><td class="win">0.79</td><td class="win">0.95</td></tr>
+            <tr><td>HPSv2</td><td>0.70</td><td>0.64</td><td>0.88</td></tr>
+            <tr class="hi"><td>HPSv3</td><td class="bad">0.19</td><td class="bad">0.32</td><td class="bad">0.44</td></tr>
+            <tr><td>ImageReward</td><td>0.55</td><td>0.49</td><td>0.77</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="emo-callout">
+        <div class="big">81%</div>
+        <div class="label"><b>HPSv3 picks happy</b> when the prompt asks for <b>anger</b>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iii: DanceFlux vs Krea — top left, wide -->
+  <div class="zone" style="left: 9mm; top: 52mm; width: 234mm;">
+    <div class="sec-head">
+      <span class="sec-num">iii</span>
+      <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
+      <span class="sec-meta">sugar-water default</span>
+    </div>
+    <p class="sec-lead">
+      Each P<sub>a</sub> explicitly asks for blur, deep shadow, melted shapes, disharmony, or chaotic composition. <b>Flux Krea</b> renders it. <b>DanceFlux</b> returns hyper-saturated Pinterest-grade outputs anyway. LLM-judge anti-aesthetic coverage: Krea ≫ DanceFlux <b>(0% on every sample)</b>.
+    </p>
+    <div class="normal-grid">
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#88</span><span class="npa"><b>Pa:</b> pizza · blurry, noise, flat</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/88_krea.jpg" alt="Krea on prompt 88"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/88_df.jpg" alt="DanceFlux on prompt 88"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#232</span><span class="npa"><b>Pa:</b> flat lifeless · muddy clash</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/232_krea.jpg" alt="Krea on prompt 232"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/232_df.jpg" alt="DanceFlux on prompt 232"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#285</span><span class="npa"><b>Pa:</b> deep shadow · melted shapes</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/285_krea.jpg" alt="Krea on prompt 285"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/285_df.jpg" alt="DanceFlux on prompt 285"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#298</span><span class="npa"><b>Pa:</b> random, unfinished, chaotic</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/298_krea.jpg" alt="Krea on prompt 298"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/298_df.jpg" alt="DanceFlux on prompt 298"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#95</span><span class="npa"><b>Pa:</b> fragmented · creepy · emptiness</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/95_krea.jpg" alt="Krea on prompt 95"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/95_df.jpg" alt="DanceFlux on prompt 95"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#188</span><span class="npa"><b>Pa:</b> ugly background · awkward</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/188_krea.jpg" alt="Krea on prompt 188"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/188_df.jpg" alt="DanceFlux on prompt 188"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#201</span><span class="npa"><b>Pa:</b> dim · oppressive · loneliness</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/201_krea.jpg" alt="Krea on prompt 201"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/201_df.jpg" alt="DanceFlux on prompt 201"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+      <div class="normal-cell">
+        <div class="head-row"><span class="nidx">#269</span><span class="npa"><b>Pa:</b> blurry · creepy · lonely</span></div>
+        <div class="normal-pair">
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/269_krea.jpg" alt="Krea on prompt 269"><span class="stamp krea">Krea</span></div>
+          <div class="pic"><img src="site/img/asserts/df_vs_krea/269_df.jpg" alt="DanceFlux on prompt 269"><span class="stamp dance">DanceFlux</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iv: Image New Speak — big center block -->
+  <div class="zone" style="left: 140mm; top: 152mm; width: 156mm;">
+    <div class="sec-head">
+      <span class="sec-num">iv</span>
+      <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
+      <span class="sec-meta">100-pair dataset · same direction every time</span>
+    </div>
+    <p class="sec-lead">
+      Same socially-critical prompts go to <b>DanceFlux</b> (aesthetic-aligned) and <b>Flux Krea</b> (same Flux family, narrow-aligned but faithful). DanceFlux sanitizes; Krea keeps the critique.
+    </p>
+    <div class="news-stack">
+      <div class="news-cell">
+        <div class="topic">
+          <span class="num">01</span>
+          <span class="name">Anti-war</span>
+          <span class="hint">kneeling soldier · blood sky</span>
+        </div>
+        <div class="news-pic"><img src="site/img/critical/000_krea.png" alt="Flux Krea — anti-war"><span class="news-stamp krea">Krea</span></div>
+        <div class="news-pic"><img src="site/img/critical/000_dance.png" alt="DanceFlux — anti-war"><span class="news-stamp dance">DanceFlux</span></div>
+      </div>
+      <div class="news-cell">
+        <div class="topic">
+          <span class="num">02</span>
+          <span class="name">Pollution</span>
+          <span class="hint">choking river · masked child</span>
+        </div>
+        <div class="news-pic"><img src="site/img/critical/001_krea.png" alt="Flux Krea — pollution"><span class="news-stamp krea">Krea</span></div>
+        <div class="news-pic"><img src="site/img/critical/001_dance.png" alt="DanceFlux — pollution"><span class="news-stamp dance">DanceFlux</span></div>
+      </div>
+      <div class="news-cell">
+        <div class="topic">
+          <span class="num">03</span>
+          <span class="name">Censorship</span>
+          <span class="hint">chained artist · phoenix</span>
+        </div>
+        <div class="news-pic"><img src="site/img/critical/002_krea.png" alt="Flux Krea — censorship"><span class="news-stamp krea">Krea</span></div>
+        <div class="news-pic"><img src="site/img/critical/002_dance.png" alt="DanceFlux — censorship"><span class="news-stamp dance">DanceFlux</span></div>
+      </div>
+      <div class="news-cell">
+        <div class="topic">
+          <span class="num">04</span>
+          <span class="name">Digital ovld.</span>
+          <span class="hint">evil emojis · exhausted</span>
+        </div>
+        <div class="news-pic"><img src="site/img/critical/003_krea.png" alt="Flux Krea — digital overload"><span class="news-stamp krea">Krea</span></div>
+        <div class="news-pic"><img src="site/img/critical/003_dance.png" alt="DanceFlux — digital overload"><span class="news-stamp dance">DanceFlux</span></div>
+      </div>
+      <div class="news-cell">
+        <div class="topic">
+          <span class="num">05</span>
+          <span class="name">Inequality</span>
+          <span class="hint">crumbling school · disparity</span>
+        </div>
+        <div class="news-pic"><img src="site/img/critical/004_krea.png" alt="Flux Krea — inequality"><span class="news-stamp krea">Krea</span></div>
+        <div class="news-pic"><img src="site/img/critical/004_dance.png" alt="DanceFlux — inequality"><span class="news-stamp dance">DanceFlux</span></div>
+      </div>
+      <div class="news-footnote">
+        Not refusal-style content moderation — <i>aesthetic</i> moderation. Same prompt, every comparison runs the same direction: DanceFlux sanitizes the critique into something polished, Krea keeps it. Wilcoxon signed-rank across 6 reward models: <b>p &lt; 0.0001</b> on HPSv3, which still picks DanceFlux on <b>20 / 20</b> pairs.
+      </div>
+    </div>
+  </div>
+
+  <!-- v: reversed alignment — right rail -->
+  <div class="zone" style="left: 322mm; top: 129mm; width: 89mm;">
+    <div class="sec-head">
+      <span class="sec-num">v</span>
+      <h2 class="sec-title"><em>Reversed</em> alignment</h2>
+      <span class="sec-meta">two loops</span>
+    </div>
+    <div class="reversed">
+      <h2>User aligned <em>to the model</em></h2>
+      <p>
+        <b>Private loop:</b> user asks for blur, decay, or grief; model returns its candy-gloss default and implicitly teaches that <i>this</i> is what good output looks like. The user adjusts.
       </p>
-
-      <div class="artrow">
-        <div class="art-card">
-          <div class="imgwrap"><img src="site/img/local/scream.jpg" alt="Munch — The Scream"></div>
-          <div class="meta"><b>The Scream</b> · Munch 1893<span class="score">5.23</span></div>
-        </div>
-        <div class="art-card">
-          <div class="imgwrap"><img src="site/img/local/matisse.jpg" alt="Matisse — Luxe"></div>
-          <div class="meta"><b>Luxe, Calme et Volupté</b> · Matisse 1904<span class="score">1.73</span></div>
-        </div>
-        <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/7482.jpg"></div><div class="lscore">−4.28</div><div class="lcap">landscape</div></div>
-        <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/8236.jpg"></div><div class="lscore">−3.21</div><div class="lcap">still life</div></div>
-        <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/11344.jpg"></div><div class="lscore">−1.25</div><div class="lcap">portrait</div></div>
-      </div>
-    </div>
-
-    <!-- emotion: mid left, narrower than the band below it -->
-    <div class="zone" style="left: 9mm; top: 144mm; width: 118mm;">
-      <div class="sec-head">
-        <span class="sec-num">ii</span>
-        <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
-        <span class="sec-meta">prompt-faithful = punished</span>
-      </div>
-      <p class="sec-lead">
-        Same face edited into three negative emotions. HPSv3 — asked to find the negative one — still picks happy. DanceFlux, asked to generate negative emotion, returns neutral or happy.
+      <p>
+        <b>Public loop:</b> polished outputs flood feeds. Audiences internalize the narrow vocabulary as the default; new preference data folds this back into the next aligned model. The loop tightens — risking a cultural <b>mode collapse</b> in art.
       </p>
-
-      <div class="emo-figure">
-        <img src="site/img/local/emotion.jpg" alt="Happy vs sad / anger / fearfulness">
-        <div class="emo-tag">
-          <span>Happy <b>14.60</b></span>
-          <span>Sad <b>12.80</b></span>
-          <span>Anger <b>11.40</b></span>
-          <span>Fear <b>10.60</b></span>
-        </div>
-      </div>
-
-      <div class="emo-stats">
-        <div class="emo-table">
-          <h4>Reward-model accuracy on negative emotion</h4>
-          <table>
-            <thead><tr><th>Model</th><th>Anger</th><th>Fear</th><th>Sad</th></tr></thead>
-            <tbody>
-              <tr class="good"><td>BLIP <span style="color:var(--muted); font-size:6pt;">(unaligned)</span></td><td class="win">0.96</td><td class="win">0.79</td><td class="win">0.95</td></tr>
-              <tr><td>HPSv2</td><td>0.70</td><td>0.64</td><td>0.88</td></tr>
-              <tr class="hi"><td>HPSv3</td><td class="bad">0.19</td><td class="bad">0.32</td><td class="bad">0.44</td></tr>
-              <tr><td>ImageReward</td><td>0.55</td><td>0.49</td><td>0.77</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="emo-callout">
-          <div class="big">81%</div>
-          <div class="label"><b>HPSv3 picks happy</b> when the prompt asks for <b>anger</b>.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- danceflux vs krea: top left, wide -->
-    <div class="zone" style="left: 9mm; top: 52mm; width: 234mm;">
-      <div class="sec-head">
-        <span class="sec-num">iii</span>
-        <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
-        <span class="sec-meta">sugar-water default</span>
-      </div>
-      <p class="sec-lead">
-        Each P<sub>a</sub> explicitly asks for blur, deep shadow, melted shapes, disharmony, or chaotic composition. <b>Flux Krea</b> renders it. <b>DanceFlux</b> returns hyper-saturated Pinterest-grade outputs anyway. LLM-judge anti-aesthetic coverage: Krea ≫ DanceFlux <b>(0% on every sample)</b>.
+      <p>
+        And the suppressed content is not unsafe — it's critical, abstract, or emotionally negative imagery. Pre-emptive sanitization protects <i>corporate reputation</i>, not users.
       </p>
-      <div class="normal-grid">
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#88</span><span class="npa"><b>Pa:</b> pizza · blurry, noise, flat</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/88_krea.jpg" alt="Krea on prompt 88"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/88_df.jpg" alt="DanceFlux on prompt 88"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#232</span><span class="npa"><b>Pa:</b> flat lifeless · muddy clash</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/232_krea.jpg" alt="Krea on prompt 232"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/232_df.jpg" alt="DanceFlux on prompt 232"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#285</span><span class="npa"><b>Pa:</b> deep shadow · melted shapes</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/285_krea.jpg" alt="Krea on prompt 285"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/285_df.jpg" alt="DanceFlux on prompt 285"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#298</span><span class="npa"><b>Pa:</b> random, unfinished, chaotic</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/298_krea.jpg" alt="Krea on prompt 298"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/298_df.jpg" alt="DanceFlux on prompt 298"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#95</span><span class="npa"><b>Pa:</b> fragmented · creepy · emptiness</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/95_krea.jpg" alt="Krea on prompt 95"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/95_df.jpg" alt="DanceFlux on prompt 95"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#188</span><span class="npa"><b>Pa:</b> ugly background · awkward</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/188_krea.jpg" alt="Krea on prompt 188"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/188_df.jpg" alt="DanceFlux on prompt 188"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#201</span><span class="npa"><b>Pa:</b> dim · oppressive · loneliness</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/201_krea.jpg" alt="Krea on prompt 201"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/201_df.jpg" alt="DanceFlux on prompt 201"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
-        <div class="normal-cell">
-          <div class="head-row"><span class="nidx">#269</span><span class="npa"><b>Pa:</b> blurry · creepy · lonely</span></div>
-          <div class="normal-pair">
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/269_krea.jpg" alt="Krea on prompt 269"><span class="stamp krea">Krea</span></div>
-            <div class="pic"><img src="site/img/asserts/df_vs_krea/269_df.jpg" alt="DanceFlux on prompt 269"><span class="stamp dance">DanceFlux</span></div>
-          </div>
-        </div>
+      <div class="pull">
+        “Rather, in the ugly, art must denounce the world that creates and reproduces the ugly in its own image.”
+        <cite>— T. W. Adorno, <i>Aesthetic Theory</i> (1984)</cite>
+      </div>
+      <div class="stats">
+        <b>10</b> gen models · <b>7</b> reward models · <b>300</b> prompts · <b>2,928</b> real photos · <b>p &lt; 10⁻¹⁰</b> for DanceFlux · HPSv3 prefers clean-but-wrong by <b>+5.9</b> pts.
       </div>
     </div>
+  </div>
 
-    <!-- image new speak: big center block, edges align with nothing -->
-    <div class="zone" style="left: 140mm; top: 152mm; width: 156mm;">
-      <div class="sec-head">
-        <span class="sec-num">iv</span>
-        <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
-        <span class="sec-meta">100-pair dataset · same direction every time</span>
-      </div>
-      <p class="sec-lead">
-        Same socially-critical prompts go to <b>DanceFlux</b> (aesthetic-aligned) and <b>Flux Krea</b> (same Flux family, narrow-aligned but faithful). DanceFlux sanitizes; Krea keeps the critique.
+  <!-- why it matters — under the reversed rail -->
+  <div class="zone" style="left: 322mm; top: 226mm; width: 89mm;">
+    <div class="why">
+      <h3>Why it matters · <em>value capture</em></h3>
+      <p>
+        Reducing aesthetics to one reward score is <i>value capture</i> — the goal shifts from <b>make aesthetic images</b> to <b>make images that score high</b>. Pre-emptive exclusion of non-mainstream outputs is <b>pre-emptive governance</b>: it removes the user's capacity to dissent.
       </p>
+      <p>
+        <b>Call:</b> alignment that exposes user-controllable preference strength, draws on diverse annotators, and stays transparent about what it optimizes.
+      </p>
+    </div>
+  </div>
 
-      <div class="news-stack">
-        <div class="news-cell">
-          <div class="topic">
-            <span class="num">01</span>
-            <span class="name">Anti-war</span>
-            <span class="hint">kneeling soldier · blood sky</span>
-          </div>
-          <div class="news-pic"><img src="site/img/critical/000_krea.png" alt="Flux Krea — anti-war"><span class="news-stamp krea">Krea</span></div>
-          <div class="news-pic"><img src="site/img/critical/000_dance.png" alt="DanceFlux — anti-war"><span class="news-stamp dance">DanceFlux</span></div>
+  <!-- real photographs — bottom left -->
+  <div class="zone" style="left: 9mm; top: 240mm; width: 122mm;">
+    <div class="real-strip">
+      <div class="rs-head">Real <em>anti-aesthetic</em> photographs</div>
+      <div class="rs-sub">From <b>aas_real_images</b> — intentional artistic choices that HPSv3 / ImageReward still rank deep in the <b>negative</b>. Score shown: ImageReward.</div>
+      <div class="rs-grid">
+        <div class="rs-cell">
+          <div class="img"><img src="site/img/asserts/real/1863.jpg" alt="vase, intentional blur"></div>
+          <div class="ir">−8.64</div>
+          <div class="cap">painterly blur</div>
         </div>
-        <div class="news-cell">
-          <div class="topic">
-            <span class="num">02</span>
-            <span class="name">Pollution</span>
-            <span class="hint">choking river · masked child</span>
-          </div>
-          <div class="news-pic"><img src="site/img/critical/001_krea.png" alt="Flux Krea — pollution"><span class="news-stamp krea">Krea</span></div>
-          <div class="news-pic"><img src="site/img/critical/001_dance.png" alt="DanceFlux — pollution"><span class="news-stamp dance">DanceFlux</span></div>
+        <div class="rs-cell">
+          <div class="img"><img src="site/img/asserts/real/1109.jpg" alt="ghostly figure in woods"></div>
+          <div class="ir">−6.37</div>
+          <div class="cap">surreal · woods</div>
         </div>
-        <div class="news-cell">
-          <div class="topic">
-            <span class="num">03</span>
-            <span class="name">Censorship</span>
-            <span class="hint">chained artist · phoenix</span>
-          </div>
-          <div class="news-pic"><img src="site/img/critical/002_krea.png" alt="Flux Krea — censorship"><span class="news-stamp krea">Krea</span></div>
-          <div class="news-pic"><img src="site/img/critical/002_dance.png" alt="DanceFlux — censorship"><span class="news-stamp dance">DanceFlux</span></div>
+        <div class="rs-cell">
+          <div class="img"><img src="site/img/asserts/real/991.jpg" alt="horses, double exposure"></div>
+          <div class="ir">−8.59</div>
+          <div class="cap">horses · ghostly</div>
         </div>
-        <div class="news-cell">
-          <div class="topic">
-            <span class="num">04</span>
-            <span class="name">Digital ovld.</span>
-            <span class="hint">evil emojis · exhausted</span>
-          </div>
-          <div class="news-pic"><img src="site/img/critical/003_krea.png" alt="Flux Krea — digital overload"><span class="news-stamp krea">Krea</span></div>
-          <div class="news-pic"><img src="site/img/critical/003_dance.png" alt="DanceFlux — digital overload"><span class="news-stamp dance">DanceFlux</span></div>
-        </div>
-        <div class="news-cell">
-          <div class="topic">
-            <span class="num">05</span>
-            <span class="name">Inequality</span>
-            <span class="hint">crumbling school · disparity</span>
-          </div>
-          <div class="news-pic"><img src="site/img/critical/004_krea.png" alt="Flux Krea — inequality"><span class="news-stamp krea">Krea</span></div>
-          <div class="news-pic"><img src="site/img/critical/004_dance.png" alt="DanceFlux — inequality"><span class="news-stamp dance">DanceFlux</span></div>
-        </div>
-        <div class="news-footnote">
-          Not refusal-style content moderation — <i>aesthetic</i> moderation. Same prompt, every comparison runs the same direction: DanceFlux sanitizes the critique into something polished, Krea keeps it. Wilcoxon signed-rank across 6 reward models: <b>p &lt; 0.0001</b> on HPSv3, which still picks DanceFlux on <b>20 / 20</b> pairs.
+        <div class="rs-cell">
+          <div class="img"><img src="site/img/asserts/real/2235.jpg" alt="lake, motion-blurred shore"></div>
+          <div class="ir">−7.85</div>
+          <div class="cap">dreamlike lake</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- reversed alignment: right rail -->
-    <div class="zone" style="left: 322mm; top: 136mm; width: 89mm;">
-      <div class="sec-head">
-        <span class="sec-num">v</span>
-        <h2 class="sec-title"><em>Reversed</em> alignment</h2>
-        <span class="sec-meta">two loops</span>
-      </div>
-
-      <div class="reversed">
-        <h2>User aligned <em>to the model</em></h2>
-        <p>
-          <b>Private loop:</b> user asks for blur, decay, or grief; model returns its candy-gloss default and implicitly teaches that <i>this</i> is what good output looks like. The user adjusts.
-        </p>
-        <p>
-          <b>Public loop:</b> polished outputs flood feeds. Audiences internalize the narrow vocabulary as the default; new preference data folds this back into the next aligned model. The loop tightens — risking a cultural <b>mode collapse</b> in art.
-        </p>
-        <p>
-          And the suppressed content is not unsafe — it's critical, abstract, or emotionally negative imagery. Pre-emptive sanitization protects <i>corporate reputation</i>, not users.
-        </p>
-        <div class="pull">
-          “Rather, in the ugly, art must denounce the world that creates and reproduces the ugly in its own image.”
-          <cite>— T. W. Adorno, <i>Aesthetic Theory</i> (1984)</cite>
-        </div>
-        <div class="stats">
-          <b>10</b> gen models · <b>7</b> reward models · <b>300</b> prompts · <b>2,928</b> real photos · <b>p &lt; 10⁻¹⁰</b> for DanceFlux · HPSv3 prefers clean-but-wrong by <b>+5.9</b> pts.
+  <!-- QR row — bottom center, anchored to the page bottom -->
+  <div class="zone metarow" style="left: 146mm; top: 262mm; width: 164mm; height: 27mm;">
+    <div class="qr-row">
+      <div class="qr-block">
+        <img src="website.png" alt="QR code: project website">
+        <div class="qr-text">
+          <h4>Project <em>site</em></h4>
+          <p>Paper · <b>data</b> · code</p>
+          <div class="qr-url">↗ weathon.github.io</div>
         </div>
       </div>
-    </div>
-
-    <!-- why: continues the emotion column, edge aligns with nothing -->
-    <div class="zone" style="left: 322mm; top: 232mm; width: 89mm;">
-      <div class="why">
-        <h3>Why it matters · <em>value capture</em></h3>
-        <p>
-          Reducing aesthetics to one reward score is <i>value capture</i> — the goal shifts from <b>make aesthetic images</b> to <b>make images that score high</b>. Pre-emptive exclusion of non-mainstream outputs is <b>pre-emptive governance</b>: it removes the user's capacity to dissent.
-        </p>
-        <p>
-          <b>Call:</b> alignment that exposes user-controllable preference strength, draws on diverse annotators, and stays transparent about what it optimizes.
-        </p>
+      <div class="qr-block cv">
+        <img src="qrcode_cv.png" alt="QR code: Wenqi Marshall Guo CV">
+        <div class="qr-text">
+          <h4>Wenqi — <em>Fall 2026</em></h4>
+          <p><b>Industry roles</b> · <b>PhD positions</b></p>
+        </div>
       </div>
-    </div>
-
-    <!-- real photos: under the news block, offset from its edges -->
-    <div class="zone" style="left: 9mm; top: 248mm; width: 122mm;">
-      <div class="real-strip">
-        <div class="rs-head">Real <em>anti-aesthetic</em> photographs</div>
-        <div class="rs-sub">From <b>aas_real_images</b> — intentional artistic choices that HPSv3 / ImageReward still rank deep in the <b>negative</b>. Score shown: ImageReward.</div>
-        <div class="rs-grid">
-          <div class="rs-cell">
-            <div class="img"><img src="site/img/asserts/real/1863.jpg" alt="vase, intentional blur"></div>
-            <div class="ir">−8.64</div>
-            <div class="cap">painterly blur</div>
-          </div>
-          <div class="rs-cell">
-            <div class="img"><img src="site/img/asserts/real/1109.jpg" alt="ghostly figure in woods"></div>
-            <div class="ir">−6.37</div>
-            <div class="cap">surreal · woods</div>
-          </div>
-          <div class="rs-cell">
-            <div class="img"><img src="site/img/asserts/real/991.jpg" alt="horses, double exposure"></div>
-            <div class="ir">−8.59</div>
-            <div class="cap">horses · ghostly</div>
-          </div>
-          <div class="rs-cell">
-            <div class="img"><img src="site/img/asserts/real/2235.jpg" alt="lake, motion-blurred shore"></div>
-            <div class="ir">−7.85</div>
-            <div class="cap">dreamlike lake</div>
-          </div>
+      <div class="qr-block cv qingyun">
+        <img src="qingyun_cv.png" alt="QR code: Qingyun Qian CV">
+        <div class="qr-text">
+          <h4>Qingyun — <em>on the market</em></h4>
+          <p><b>Looking for jobs</b> · <b>research Master's / PhD</b></p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- qr + sponsors: tucked under image new speak -->
-    <div class="zone metarow" style="left: 146mm; top: 262mm; width: 164mm; height: 27mm;">
-      <div class="qr-row">
-        <div class="qr-block">
-          <img src="website.png" alt="QR code: project website">
-          <div class="qr-text">
-            <h4>Project <em>site</em></h4>
-            <p>Paper · <b>data</b> · code</p>
-            <div class="qr-url">↗ weathon.github.io</div>
-          </div>
+  <!-- sponsors — right rail bottom -->
+  <div class="zone" style="left: 322mm; top: 268mm; width: 89mm;">
+    <div class="sponsors-block">
+      <div class="spons-head">Made <em>possible</em> by</div>
+      <div class="spons-row">
+        <div class="spons">
+          <div class="logo"><img src="site/img/local/CFI.png" alt="Canada Foundation for Innovation"></div>
+          <div class="role">Funding · workstation</div>
         </div>
-        <div class="qr-block cv">
-          <img src="qrcode_cv.png" alt="QR code: Wenqi Marshall Guo CV">
-          <div class="qr-text">
-            <h4>Wenqi — <em>Fall 2026</em></h4>
-            <p><b>Industry roles</b> · <b>PhD positions</b></p>
-          </div>
+        <div class="spons">
+          <div class="logo"><img src="site/img/local/lambda.png" alt="Lambda"></div>
+          <div class="role">Cloud GPU credits</div>
         </div>
-        <div class="qr-block cv qingyun">
-          <img src="qingyun_cv.png" alt="QR code: Qingyun Qian CV">
-          <div class="qr-text">
-            <h4>Qingyun — <em>on the market</em></h4>
-            <p><b>Looking for jobs</b> · <b>research Master's / PhD</b></p>
-          </div>
+        <div class="spons">
+          <div class="logo"><img src="site/img/local/weathon.svg" alt="Weathon Software"></div>
+          <div class="role">Iterative compute</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- sponsors: right rail bottom -->
-    <div class="zone sponszone" style="left: 322mm; top: 268mm; width: 89mm;">
-      <div class="sponsors-block">
-        <div class="spons-head">Made <em>possible</em> by</div>
-        <div class="spons-row">
-          <div class="spons">
-            <div class="logo"><img src="site/img/local/CFI.png" alt="Canada Foundation for Innovation"></div>
-            <div class="role">Funding · workstation</div>
-          </div>
-          <div class="spons">
-            <div class="logo"><img src="site/img/local/lambda.png" alt="Lambda"></div>
-            <div class="role">Cloud GPU credits</div>
-          </div>
-          <div class="spons">
-            <div class="logo"><img src="site/img/local/weathon.svg" alt="Weathon Software"></div>
-            <div class="role">Iterative compute</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- floating compression artifacts -->
+  <!-- compression-artifact blocks -->
   <div class="artifact-block" style="top: 92mm; left: 120mm; width: 38mm; height: 26mm; transform: rotate(3deg);"></div>
   <div class="artifact-block" style="top: 180mm; left: 300mm; width: 30mm; height: 44mm; transform: rotate(-5deg);"></div>
   <div class="artifact-block" style="top: 230mm; left: 30mm; width: 50mm; height: 14mm;"></div>
@@ -1255,8 +1077,8 @@
   <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
   <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
 
-  <!-- doodles -->
-  <!-- Y2K butterfly -->
+  <!-- doodles (shapes only), kept to gutters and seams -->
+  <!-- butterfly, over the header banner -->
   <svg class="doodle" style="top: 2mm; left: 308mm; width: 21mm; height: 17mm; transform: rotate(-9deg);" viewBox="0 0 60 48">
     <g fill="none" stroke="#4189f2" stroke-width="1.6" stroke-linecap="round">
       <path d="M30 12 C29 22,29 34,30 42"/>
@@ -1273,12 +1095,12 @@
       <path d="M19 38 l4 -3 M41 38 l-4 -3"/>
     </g>
   </svg>
-  <!-- loop-de-loop scribble through the title zone -->
+  <!-- loop-de-loop scribble, under the title -->
   <svg class="doodle" style="top: 30mm; left: 86mm; width: 36mm; height: 10mm;" viewBox="0 0 100 26">
     <path d="M2 16 C 10 4, 16 4, 20 11 C 24 18, 30 18, 32 11 C 34 5, 28 3, 28 9 C 28 16, 38 17, 46 11 C 56 3, 62 21, 72 12 C 76 8, 72 4, 70 8 C 68 13, 78 15, 86 10 L 98 7" fill="none" stroke="#ef9d34" stroke-width="2.2" stroke-linecap="round"/>
     <path d="M93 3 l3 4 M97 3 l-3 4" stroke="#4189f2" stroke-width="1.4" stroke-linecap="round"/>
   </svg>
-  <!-- globe with orbit + satellite, bleeding off right edge -->
+  <!-- globe with orbit + satellite, top right corner -->
   <svg class="doodle" style="top: 40mm; left: 397mm; width: 22mm; height: 15mm;" viewBox="0 0 64 44">
     <g fill="none" stroke="#4189f2" stroke-width="1.5">
       <circle cx="32" cy="22" r="13"/>
@@ -1289,7 +1111,7 @@
     <circle cx="55" cy="13" r="2.2" fill="none" stroke="#ef9d34" stroke-width="1.3"/>
     <path d="M51 8 l8 0 M55 4 l0 8" stroke="#7bf9ac" stroke-width="1" stroke-linecap="round"/>
   </svg>
-  <!-- spirograph, bleeding off left edge -->
+  <!-- spirograph, in the news/rail gutter -->
   <svg class="doodle" style="top: 162mm; left: 300mm; width: 15mm; height: 15mm;" viewBox="0 0 60 60">
     <g fill="none" stroke="#4189f2" stroke-width="1">
       <ellipse cx="30" cy="30" rx="26" ry="9"/>
@@ -1301,7 +1123,7 @@
     </g>
     <circle cx="30" cy="30" r="3" fill="none" stroke="#4189f2" stroke-width="1.5"/>
   </svg>
-  <!-- CRT TV with static -->
+  <!-- CRT TV, in the gutter -->
   <svg class="doodle" style="top: 192mm; left: 300mm; width: 16mm; height: 14mm; transform: rotate(4deg);" viewBox="0 0 60 52">
     <g fill="none" stroke="#4189f2" stroke-width="1.6">
       <rect x="6" y="16" width="48" height="32" rx="4"/>
@@ -1313,7 +1135,7 @@
     </g>
     <path d="M13 25 h26 M13 29 h26 M13 33 h26 M13 37 h26" stroke="#ef9d34" stroke-width="1" stroke-dasharray="3 2"/>
   </svg>
-  <!-- scissors + cut-here line across the column gap -->
+  <!-- scissors + cut line, in the seam above Image New Speak -->
   <svg class="doodle" style="top: 142mm; left: 150mm; width: 30mm; height: 8mm;" viewBox="0 0 100 24">
     <path d="M28 12 H98" stroke="#ef9d34" stroke-width="1.4" stroke-dasharray="5 3"/>
     <g fill="none" stroke="#4189f2" stroke-width="1.6">
@@ -1322,7 +1144,7 @@
       <path d="M11 8 L30 14 M11 16 L30 10"/>
     </g>
   </svg>
-  <!-- cyber smiley with halo -->
+  <!-- smiley with halo, in the gutter -->
   <svg class="doodle" style="top: 222mm; left: 301mm; width: 13mm; height: 13mm; transform: rotate(8deg);" viewBox="0 0 48 48">
     <ellipse cx="24" cy="9" rx="10" ry="3" fill="none" stroke="#ef9d34" stroke-width="1.3" stroke-dasharray="3 2" transform="rotate(-8 24 9)"/>
     <circle cx="24" cy="26" r="14" fill="none" stroke="#4189f2" stroke-width="1.8"/>
@@ -1331,7 +1153,7 @@
     <path d="M17 31 Q24 38 31 31" fill="none" stroke="#7bf9ac" stroke-width="1.8" stroke-linecap="round"/>
   </svg>
 
-  <!-- local analog artifacts -->
+  <!-- local analog patches -->
   <div class="lan lan-rgb" style="top: 100mm; left: 195mm; width: 9mm; height: 14mm; transform: rotate(1deg);"></div>
   <div class="lan lan-rgb" style="top: 213mm; left: 178mm; width: 7mm; height: 18mm;"></div>
   <div class="lan lan-rgb" style="top: 138mm; left: 18mm; width: 6mm; height: 11mm;"></div>
