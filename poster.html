@@ -39,7 +39,13 @@
     padding: 8mm 9mm;
     position: relative;
     overflow: hidden;
-    background: #fdfff6;
+    /* tiled dot starfield, borrowed from the site background, dulled */
+    background-image:
+      radial-gradient(rgba(43,41,31,0.10) 0.45mm, transparent 0.7mm),
+      radial-gradient(rgba(122,70,113,0.09) 0.35mm, transparent 0.6mm),
+      linear-gradient(135deg, #fbfdf0 0%, #fdfff6 50%, #f4f6e8 100%);
+    background-size: 8mm 8mm, 15mm 15mm, auto;
+    background-position: 0 0, 4mm 6mm, 0 0;
   }
 
   /* ----- background neon shapes (behind everything) ----- */
@@ -172,6 +178,10 @@
     align-items: center;
     gap: 7mm;
     padding-bottom: 3mm;
+    /* muted rainbow rule, from the site's clashing dividers */
+    border-bottom: 1mm solid transparent;
+    border-image: linear-gradient(90deg,
+      #a85544, #b3973a, #87a36b, #38766e, #5a6fa0, #8a5f8f) 1;
   }
   .kicker {
     text-transform: uppercase;
@@ -199,14 +209,25 @@
       0 0 1.4mm var(--blue-doodle);
     vertical-align: 0.4mm;
   }
+  /* WordArt title, borrowed from anti.html: Impact, muted-rainbow
+     gradient fill, dark outline, hard offset shadow */
   h1.title {
-    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-    font-size: 28pt;
-    line-height: 1.04;
-    font-weight: 700;
+    font-family: "Impact", "Arial Black", "Helvetica Neue", sans-serif;
+    font-size: 30pt;
+    line-height: 1.02;
+    font-weight: 900;
     margin: 0 0 2mm;
-    letter-spacing: -0.01em;
-    color: #233018;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg,
+      #c2a83e 0%, #b3703a 40%, #9a5577 72%, #715a9e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.4mm #2b291f;
+    filter:
+      drop-shadow(0.8mm 0.8mm 0 rgba(43,41,31,0.8))
+      drop-shadow(0 0 1.2mm rgba(154,110,160,0.45));
   }
   .authors {
     font-size: 11pt;
@@ -237,14 +258,24 @@
   .links b { color: var(--accent); font-weight: 700; }
 
   /* ----- borrowed from site/anti.html: GeoCities artifacts, dulled ----- */
-  /* struck word, corrected in brick — from the site's title */
+  /* struck word + boxed correction — from the site's WordArt title */
   h1.title .strike {
     text-decoration: line-through;
-    text-decoration-thickness: 1.1mm;
-    text-decoration-color: var(--accent-2);
-    color: var(--muted);
+    text-decoration-thickness: 1.2mm;
+    text-decoration-color: #8a3b24;
+    -webkit-text-fill-color: #8a8676;
+    opacity: 0.75;
   }
-  h1.title .again { color: var(--accent-2); }
+  h1.title .again {
+    display: inline-block;
+    background: #8a3b24;
+    -webkit-text-fill-color: #cdb968;
+    -webkit-text-stroke: 0;
+    padding: 0 3mm 0.5mm;
+    border: 0.6mm dashed #b3973a;
+    transform: rotate(-2.5deg);
+    margin-left: 1mm;
+  }
   .bang { color: #8a2f17; }
   /* dashed notice chips */
   .chip-row {
@@ -884,7 +915,7 @@
     <div class="sec-head">
       <span class="sec-num">iii</span>
       <h2 class="sec-title">DanceFlux vs Nano Banana on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
-      <span class="sec-meta">sugar-water default · 糖水片!!</span>
+      <span class="sec-meta">sugar-water default</span>
     </div>
     <p class="sec-lead">
       Each P<sub>a</sub> explicitly asks for blur, deep shadow, melted shapes, disharmony, or chaotic composition. <b>Nano Banana</b> renders it. <b>DanceFlux</b> returns hyper-saturated Pinterest-grade outputs anyway. LLM-judge anti-aesthetic coverage: Nano Banana ≫ DanceFlux <b>(0% on every sample)</b>.
