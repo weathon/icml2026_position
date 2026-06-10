@@ -798,6 +798,38 @@
   .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
   .art-card img, .lapis-cell img { border-radius: 1mm; }
 
+  /* ----- FREE-FORM MOSAIC ZONES (edges intentionally unaligned) ----- */
+  .zone {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5mm;
+  }
+  .zband { flex-direction: row; gap: 5mm; align-items: stretch; }
+  .zband .why { width: 60mm; flex: none; }
+  .zband .why p { font-size: 6.8pt; }
+  .zband .real-strip { flex: 1; min-width: 0; }
+  .zband .qr-row { width: 114mm; flex: none; align-self: center; }
+  .zband .sponsors-block { width: 60mm; flex: none; }
+  .real-strip .rs-cell .img { aspect-ratio: auto; height: 20mm; }
+  /* paintings + lapis works share one row */
+  .artrow {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1fr 1fr 1fr;
+    gap: 2mm;
+    align-items: start;
+  }
+  /* news speak reflows to 3-up with topic above the pair */
+  .news-stack { grid-template-columns: repeat(3, 1fr); }
+  .news-cell { grid-template-columns: 1fr 1fr; }
+  .news-cell .topic {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1.5mm;
+  }
+
   /* ----- doodle svgs ----- */
   .doodle {
     position: absolute;
@@ -869,11 +901,10 @@
     </div>
   </div>
 
-  <!-- BODY -->
-  <div class="body">
+  <!-- MOSAIC ZONES -->
 
-    <!-- COL 1: REAL ART + EMOTION -->
-    <div class="col">
+    <!-- real art: top right, sits lower than its neighbor -->
+    <div class="zone" style="left: 250mm; top: 58mm; width: 161mm; height: 80mm;">
       <div class="sec-head">
         <span class="sec-num">i</span>
         <h2 class="sec-title">Art the reward model rejects</h2>
@@ -883,7 +914,7 @@
         Two canonical paintings + three LAPIS works, all in <b>negative</b> reward territory. HPSv3 cannot distinguish deliberate aesthetic deviation from generation failure.
       </p>
 
-      <div class="real-stack">
+      <div class="artrow">
         <div class="art-card">
           <div class="imgwrap"><img src="site/img/local/scream.jpg" alt="Munch — The Scream"></div>
           <div class="meta"><b>The Scream</b> · Munch 1893<span class="score">5.23</span></div>
@@ -892,15 +923,15 @@
           <div class="imgwrap"><img src="site/img/local/matisse.jpg" alt="Matisse — Luxe"></div>
           <div class="meta"><b>Luxe, Calme et Volupté</b> · Matisse 1904<span class="score">1.73</span></div>
         </div>
-      </div>
-
-      <div class="lapis-grid">
         <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/7482.jpg"></div><div class="lscore">−4.28</div><div class="lcap">landscape</div></div>
         <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/8236.jpg"></div><div class="lscore">−3.21</div><div class="lcap">still life</div></div>
         <div class="lapis-cell"><div class="imgwrap"><img src="site/img/asserts/lapis/11344.jpg"></div><div class="lscore">−1.25</div><div class="lcap">portrait</div></div>
       </div>
+    </div>
 
-      <div class="sec-head" style="margin-top: 1mm;">
+    <!-- emotion: mid left, narrower than the band below it -->
+    <div class="zone" style="left: 9mm; top: 146mm; width: 120mm; height: 98mm;">
+      <div class="sec-head">
         <span class="sec-num">ii</span>
         <h2 class="sec-title">Emotion bias · <em>toxic positivity</em></h2>
         <span class="sec-meta">prompt-faithful = punished</span>
@@ -939,10 +970,8 @@
       </div>
     </div>
 
-    <!-- COL 2: DanceFlux normal + IN Speak -->
-    <div class="col">
-
-      <!-- Part 1: DanceFlux vs Flux Krea on NORMAL anti-aesthetic prompts -->
+    <!-- danceflux vs krea: top left, wide -->
+    <div class="zone" style="left: 9mm; top: 52mm; width: 234mm; height: 88mm;">
       <div class="sec-head">
         <span class="sec-num">iii</span>
         <h2 class="sec-title">DanceFlux vs Flux Krea on <em>normal</em> anti-aesthetic P<sub>a</sub></h2>
@@ -1009,9 +1038,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Part 2: Image New Speak — DanceFlux vs Flux Krea -->
-      <div class="sec-head" style="margin-top: 1mm;">
+    <!-- image new speak: big center block, edges align with nothing -->
+    <div class="zone" style="left: 136mm; top: 142mm; width: 176mm; height: 106mm;">
+      <div class="sec-head">
         <span class="sec-num">iv</span>
         <h2 class="sec-title">Image New Speak · <em>DanceFlux vs Flux Krea</em>, same prompt</h2>
         <span class="sec-meta">100-pair dataset · same direction every time</span>
@@ -1072,8 +1103,8 @@
       </div>
     </div>
 
-    <!-- COL 3: REVERSED ALIGNMENT + SVG + WHY -->
-    <div class="col">
+    <!-- reversed alignment: right rail -->
+    <div class="zone" style="left: 319mm; top: 144mm; width: 92mm; height: 104mm;">
       <div class="sec-head">
         <span class="sec-num">v</span>
         <h2 class="sec-title"><em>Reversed</em> alignment</h2>
@@ -1099,7 +1130,10 @@
           <b>10</b> gen models · <b>7</b> reward models · <b>300</b> prompts · <b>2,928</b> real photos · <b>p &lt; 10⁻¹⁰</b> for DanceFlux · HPSv3 prefers clean-but-wrong by <b>+5.9</b> pts.
         </div>
       </div>
+    </div>
 
+    <!-- bottom band: full width, swallows three former sections -->
+    <div class="zone zband" style="left: 9mm; top: 252mm; width: 402mm; height: 37mm;">
       <div class="why">
         <h3>Why it matters · <em>value capture</em></h3>
         <p>
@@ -1181,8 +1215,6 @@
       </div>
     </div>
 
-  </div>
-
   <!-- floating compression artifacts -->
   <div class="artifact-block" style="top: 92mm; left: 120mm; width: 38mm; height: 26mm; transform: rotate(3deg);"></div>
   <div class="artifact-block" style="top: 180mm; left: 300mm; width: 30mm; height: 44mm; transform: rotate(-5deg);"></div>
@@ -1220,7 +1252,7 @@
     <path d="M93 3 l3 4 M97 3 l-3 4" stroke="#39ff14" stroke-width="1.4" stroke-linecap="round"/>
   </svg>
   <!-- globe with orbit + satellite, bleeding off right edge -->
-  <svg class="doodle" style="top: 52mm; left: 400mm; width: 22mm; height: 15mm;" viewBox="0 0 64 44">
+  <svg class="doodle" style="top: 40mm; left: 397mm; width: 22mm; height: 15mm;" viewBox="0 0 64 44">
     <g fill="none" stroke="#39ff14" stroke-width="1.5">
       <circle cx="32" cy="22" r="13"/>
       <ellipse cx="32" cy="22" rx="6" ry="13"/>
@@ -1231,7 +1263,7 @@
     <path d="M51 8 l8 0 M55 4 l0 8" stroke="#00ffd0" stroke-width="1" stroke-linecap="round"/>
   </svg>
   <!-- spirograph, bleeding off left edge -->
-  <svg class="doodle" style="top: 248mm; left: -5mm; width: 20mm; height: 20mm;" viewBox="0 0 60 60">
+  <svg class="doodle" style="top: 116mm; left: 238mm; width: 18mm; height: 18mm;" viewBox="0 0 60 60">
     <g fill="none" stroke="#aaff00" stroke-width="1">
       <ellipse cx="30" cy="30" rx="26" ry="9"/>
       <ellipse cx="30" cy="30" rx="26" ry="9" transform="rotate(30 30 30)"/>
@@ -1243,7 +1275,7 @@
     <circle cx="30" cy="30" r="3" fill="none" stroke="#39ff14" stroke-width="1.5"/>
   </svg>
   <!-- CRT TV with static -->
-  <svg class="doodle" style="top: 271mm; left: 196mm; width: 17mm; height: 15mm; transform: rotate(4deg);" viewBox="0 0 60 52">
+  <svg class="doodle" style="top: 231mm; left: 393mm; width: 17mm; height: 15mm; transform: rotate(4deg);" viewBox="0 0 60 52">
     <g fill="none" stroke="#39ff14" stroke-width="1.6">
       <rect x="6" y="16" width="48" height="32" rx="4"/>
       <rect x="11" y="21" width="30" height="22" rx="2"/>
@@ -1272,7 +1304,7 @@
     <path d="M17 31 Q24 38 31 31" fill="none" stroke="#00ffd0" stroke-width="1.8" stroke-linecap="round"/>
   </svg>
   <!-- barcode glitch sticker -->
-  <svg class="doodle" style="top: 282mm; left: 356mm; width: 20mm; height: 8mm; transform: rotate(-3deg);" viewBox="0 0 70 26">
+  <svg class="doodle" style="top: 290mm; left: 196mm; width: 18mm; height: 7mm; transform: rotate(-2deg);" viewBox="0 0 70 26">
     <g stroke="#39ff14" stroke-width="1">
       <path d="M5 4 v18 M10 4 v18 M19 4 v18 M27 4 v18 M34 4 v18 M45 4 v18 M52 4 v18 M61 4 v18"/>
     </g>
