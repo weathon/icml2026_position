@@ -10,10 +10,10 @@
     --ink: #21304a;       /* deep slate blue */
     --muted: #6c7a92;     /* cool grey */
     --line: #9cbada;      /* soft steel blue */
-    --accent: #e25fa6;    /* candy pink */
-    --accent-2: #3aa6c8;  /* aqua blue */
-    --gold: #d59a3a;      /* soft amber */
-    --good: #3aa6c8;
+    --accent: #ff2bd6;    /* neon pink */
+    --accent-2: #00c2b8;  /* neon teal */
+    --gold: #8fc400;      /* acid lime */
+    --good: #00a89e;
     --soft: #eaf3fc;      /* pale aqua panel */
     --card: #f2f8ff;      /* glossy white-blue */
   }
@@ -178,18 +178,41 @@
     vertical-align: 0.4mm;
   }
   h1.title {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 36pt;
-    line-height: 1.02;
-    font-weight: 700;
+    font-family: "Arial Black", "Impact", "Helvetica Neue", sans-serif;
+    font-size: 30pt;
+    line-height: 1.0;
+    font-weight: 900;
     margin: 0 0 2mm;
-    letter-spacing: -0.01em;
-    /* subtle RGB-split chromatic aberration */
-    text-shadow:
-      0.25mm 0 0 rgba(255,30,142,0.35),
-      -0.25mm 0 0 rgba(0,255,208,0.3);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    position: relative;
+    transform: rotate(-1.2deg);
+    background: linear-gradient(95deg, #ff2bd6 0%, #7a3cff 48%, #00d9c0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0.2mm 0.3mm 0 rgba(33,48,74,0.4));
   }
-  /* "Narrows" rendered plain, no special treatment */
+  /* glitch slices behind the gradient title */
+  h1.title::before, h1.title::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+  }
+  h1.title::before {
+    color: #00ffd0;
+    transform: translate(1mm, -0.5mm);
+    clip-path: polygon(0 4%, 100% 4%, 100% 32%, 0 32%);
+  }
+  h1.title::after {
+    color: #ff2bd6;
+    transform: translate(-1.1mm, 0.6mm) skewX(-4deg);
+    clip-path: polygon(0 58%, 100% 58%, 100% 82%, 0 82%);
+  }
   h1.title em {
     color: inherit;
     font-style: normal;
@@ -811,6 +834,38 @@
   /* rounded image tiles */
   .imgwrap, .pic, .news-pic, .real-strip .rs-cell .img { border-radius: 1.4mm; }
   .art-card img, .lapis-cell img { border-radius: 1mm; }
+
+  /* ----- ANTI-DESIGN: break the grid ----- */
+  .body > .col:nth-child(1) { transform: rotate(-0.5deg) translateY(-0.5mm); }
+  .body > .col:nth-child(2) { transform: rotate(0.35deg) translateY(1mm); }
+  .body > .col:nth-child(3) { transform: rotate(-0.4deg) translateY(0.5mm); }
+  .sec-head { transform: rotate(-0.8deg) translateX(-0.8mm); }
+  .art-card:nth-child(odd) { transform: rotate(-1.4deg); }
+  .art-card:nth-child(even) { transform: rotate(1.2deg) translateY(0.8mm); }
+  .lapis-cell:nth-child(1) { transform: rotate(1.5deg); }
+  .lapis-cell:nth-child(2) { transform: rotate(-1.1deg) translateY(-0.5mm); }
+  .lapis-cell:nth-child(3) { transform: rotate(0.9deg); }
+  .normal-cell:nth-child(odd) { transform: rotate(-0.7deg); }
+  .normal-cell:nth-child(even) { transform: rotate(0.6deg) translateY(0.5mm); }
+  .news-cell:nth-child(odd) .topic { transform: rotate(-1.6deg); }
+  .news-cell:nth-child(even) .topic { transform: rotate(1.3deg); }
+  .emo-callout { transform: rotate(-2.6deg) translateX(1mm); }
+  .emo-figure { transform: rotate(0.6deg); }
+  .reversed { transform: rotate(-0.6deg); }
+  .why { transform: rotate(0.8deg) translateX(-0.5mm); }
+  .real-strip { transform: rotate(-0.5deg); }
+  .qr-block:nth-child(1) { transform: rotate(-1.2deg); }
+  .qr-block:nth-child(2) { transform: rotate(1.6deg) translateY(-0.4mm); }
+  .qr-block:nth-child(3) { transform: rotate(-0.9deg); }
+  .sponsors-block { transform: rotate(0.5deg); }
+
+  /* ----- ANTI-DESIGN: doodle svgs ----- */
+  .doodle {
+    position: absolute;
+    z-index: 57;
+    pointer-events: none;
+    filter: drop-shadow(0 0 0.8mm rgba(255,43,214,0.45));
+  }
 </style>
 </head>
 <body>
@@ -820,7 +875,7 @@
   <div class="head">
     <div>
       <div class="kicker">POSITION PAPER · ICML 2026 <span class="spotlight">✦ SPOTLIGHT</span> <span class="spark">✧</span></div>
-      <h1 class="title">Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
+      <h1 class="title" data-text="Universal Aesthetic Alignment Narrows Artistic Expression">Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
       <div class="authors"><b>Wenqi Marshall Guo</b>, <b>Qingyun Qian</b>, <b>Khalad Hasan</b>, <b>Shan Du</b></div>
       <div class="affil">University of British Columbia (Okanagan) · Department of CMPS · Weathon Software, Canada</div>
     </div>
@@ -1162,6 +1217,30 @@
   <div class="vhs-band" style="top: 248mm; height: 11mm;"></div>
   <div class="vhs-static" style="top: 132mm; height: 4mm;"></div>
   <div class="vhs-static" style="top: 214mm; height: 3mm;"></div>
+
+  <!-- anti-design doodles -->
+  <svg class="doodle" style="top: 4mm; left: 138mm; width: 16mm; height: 16mm; transform: rotate(12deg);" viewBox="0 0 40 40">
+    <path d="M20 2 L24 15 L38 16 L26 23 L31 37 L20 28 L9 37 L14 23 L2 16 L16 15 Z" fill="none" stroke="#ff2bd6" stroke-width="2"/>
+  </svg>
+  <svg class="doodle" style="top: 34mm; left: 96mm; width: 26mm; height: 8mm;" viewBox="0 0 80 20">
+    <path d="M2 12 C 10 2, 18 18, 26 10 S 42 2, 50 12 S 66 18, 78 8" fill="none" stroke="#00d9c0" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+  <svg class="doodle" style="top: 60mm; left: 4mm; width: 12mm; height: 12mm;" viewBox="0 0 30 30">
+    <path d="M15 15 m0 -2 a2 2 0 1 1 -0.1 0 M15 15 m0 -6 a6 6 0 1 1 -0.2 0 M15 15 m0 -10 a10 10 0 1 1 -0.3 0" fill="none" stroke="#7a3cff" stroke-width="1.6"/>
+  </svg>
+  <svg class="doodle" style="top: 150mm; left: 136mm; width: 10mm; height: 10mm;" viewBox="0 0 24 24">
+    <path d="M12 2 V22 M2 12 H22 M5 5 L19 19 M19 5 L5 19" stroke="#ff2bd6" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <svg class="doodle" style="top: 268mm; left: 150mm; width: 24mm; height: 10mm; transform: rotate(-6deg);" viewBox="0 0 70 24">
+    <path d="M2 12 L14 4 L14 9 L40 9 L40 4 L52 12 L40 20 L40 15 L14 15 L14 20 Z" fill="none" stroke="#00d9c0" stroke-width="2"/>
+    <path d="M58 6 L68 18 M68 6 L58 18" stroke="#ff2bd6" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <svg class="doodle" style="top: 96mm; left: 282mm; width: 14mm; height: 14mm;" viewBox="0 0 36 36">
+    <path d="M18 4 C 30 4, 34 14, 30 22 C 26 32, 10 34, 6 24 C 2 16, 8 6, 18 7 C 26 8, 28 16, 24 21" fill="none" stroke="#ff2bd6" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+  <svg class="doodle" style="top: 230mm; left: 404mm; width: 11mm; height: 18mm;" viewBox="0 0 26 46">
+    <path d="M13 2 L13 32 M13 32 L5 22 M13 32 L21 22 M4 40 Q 13 48, 22 40" fill="none" stroke="#7a3cff" stroke-width="2.2" stroke-linecap="round"/>
+  </svg>
 
   <!-- local analog artifacts -->
   <div class="lan lan-rgb" style="top: 100mm; left: 195mm; width: 9mm; height: 14mm; transform: rotate(1deg);"></div>
