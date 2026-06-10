@@ -178,10 +178,16 @@
     align-items: center;
     gap: 7mm;
     padding-bottom: 3mm;
-    /* muted rainbow rule, from the site's clashing dividers */
-    border-bottom: 1mm solid transparent;
-    border-image: linear-gradient(90deg,
-      #a85544, #b3973a, #87a36b, #38766e, #5a6fa0, #8a5f8f) 1;
+  }
+  /* full-width rainbow band along the top, mirror of the bottom banner */
+  .rainbow-banner {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 7mm;
+    z-index: 3;
+    background: linear-gradient(180deg,
+      #a85544 0 16.7%, #b3973a 16.7% 33.4%, #87a36b 33.4% 50%,
+      #38766e 50% 66.7%, #5a6fa0 66.7% 83.4%, #8a5f8f 83.4% 100%);
   }
   .kicker {
     text-transform: uppercase;
@@ -1243,6 +1249,75 @@
     <path d="M122 5 l3 -3 M123 8 l4 -1 M118 11 l1.5 2.5 l1.5 -2.5 l1.5 2.5 l1.5 -2.5" fill="none" stroke="#b05a32" stroke-width="1" stroke-linecap="round"/>
   </svg>
 
+  <!-- cute-bizarre doodles in the header gaps -->
+  <!-- winged eyeball with heart antenna -->
+  <svg class="doodle" style="top: 24mm; left: 160mm; width: 14mm; height: 10mm; transform: rotate(-4deg);" viewBox="0 0 70 50">
+    <g fill="none" stroke="#8a5f8f" stroke-width="1.4">
+      <path d="M24 26 C 18 14, 8 12, 8 20 C 2 20, 2 28, 9 28 C 6 34, 16 36, 24 30"/>
+      <path d="M46 26 C 52 14, 62 12, 62 20 C 68 20, 68 28, 61 28 C 64 34, 54 36, 46 30"/>
+    </g>
+    <circle cx="35" cy="26" r="10" fill="none" stroke="#5a6fa0" stroke-width="1.5"/>
+    <circle cx="35" cy="26" r="4.5" fill="none" stroke="#b05a32" stroke-width="1.3"/>
+    <circle cx="35" cy="26" r="1.8" fill="#5a6fa0"/>
+    <path d="M27 17 l-2 -3 M35 15 l0 -3.5 M43 17 l2 -3" stroke="#5a6fa0" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M35 12 V 9" stroke="#b05a32" stroke-width="1.2"/>
+    <path d="M35 6.5 C 33.5 4, 30.5 5, 31.5 7.5 C 32.2 9, 34 10, 35 11 C 36 10, 37.8 9, 38.5 7.5 C 39.5 5, 36.5 4, 35 6.5 Z" fill="#b05a32"/>
+    <circle cx="27" cy="31" r="1.6" fill="#b3973a" opacity="0.6"/>
+    <circle cx="43" cy="31" r="1.6" fill="#b3973a" opacity="0.6"/>
+  </svg>
+  <!-- melting three-eyed smiley with a bow -->
+  <svg class="doodle" style="top: 42.5mm; left: 58mm; width: 9mm; height: 10mm; transform: rotate(5deg);" viewBox="0 0 40 44">
+    <circle cx="20" cy="18" r="13" fill="none" stroke="#a8862e" stroke-width="1.5"/>
+    <circle cx="14" cy="15" r="1.4" fill="#5a6fa0"/>
+    <circle cx="20" cy="13" r="1.4" fill="#5a6fa0"/>
+    <circle cx="26" cy="15" r="1.4" fill="#5a6fa0"/>
+    <path d="M13 23 q3 3 7 1 q4 -2 7 1" fill="none" stroke="#b05a32" stroke-width="1.3" stroke-linecap="round"/>
+    <g fill="none" stroke="#87a36b" stroke-width="1.2" stroke-linecap="round">
+      <path d="M10 29 q-1 5 0 8 q1.4 -2 0.8 -8"/>
+      <path d="M20 31 q-1.5 6 0 10 q1.8 -3 1 -10"/>
+      <path d="M29 28 q-0.8 4 0 6.5 q1 -1.6 0.5 -6.5"/>
+    </g>
+    <path d="M16 5 l-5 -2.5 l0 5 Z M24 5 l5 -2.5 l0 5 Z" fill="none" stroke="#8a5f8f" stroke-width="1.1"/>
+    <circle cx="20" cy="5" r="1.5" fill="#8a5f8f"/>
+  </svg>
+  <!-- toothy mushroom with a sparkle -->
+  <svg class="doodle" style="top: 41mm; left: 140mm; width: 9.5mm; height: 10.5mm; transform: rotate(-6deg);" viewBox="0 0 36 40">
+    <path d="M4 18 C 4 6, 32 6, 32 18 Z" fill="none" stroke="#b05a32" stroke-width="1.4"/>
+    <circle cx="12" cy="12" r="1.6" fill="none" stroke="#b3973a" stroke-width="1"/>
+    <circle cx="21" cy="10" r="1.3" fill="none" stroke="#b3973a" stroke-width="1"/>
+    <circle cx="26" cy="14" r="1.2" fill="none" stroke="#b3973a" stroke-width="1"/>
+    <path d="M11 18 C 10 28, 12 34, 14 35 L 22 35 C 24 34, 26 28, 25 18" fill="none" stroke="#5a6fa0" stroke-width="1.4"/>
+    <circle cx="15" cy="24" r="1.2" fill="#5a6fa0"/>
+    <circle cx="21" cy="24" r="1.2" fill="#5a6fa0"/>
+    <path d="M14 29 l2 2.2 l2 -2.2 l2 2.2 l2 -2.2" fill="none" stroke="#b05a32" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M31 7 l1 2.4 L34.5 10.5 l-2.5 1 L31 14 l-1 -2.5 L27.5 10.5 l2.5 -1 Z" fill="none" stroke="#87a36b" stroke-width="0.9"/>
+  </svg>
+  <!-- snail with a CRT-TV shell -->
+  <svg class="doodle" style="top: 41mm; left: 364mm; width: 13mm; height: 8.5mm;" viewBox="0 0 56 36">
+    <path d="M6 31 C 8 25, 14 23, 20 26 L 46 26 C 50 26, 52 28, 52 31 Z" fill="none" stroke="#87a36b" stroke-width="1.4"/>
+    <path d="M9 27 C 6 20, 8 14, 12 13" fill="none" stroke="#87a36b" stroke-width="1.4"/>
+    <path d="M11 13 l-2 -5 M14 13 l2 -5" stroke="#87a36b" stroke-width="1.1"/>
+    <circle cx="9" cy="7" r="1.3" fill="#5a6fa0"/>
+    <circle cx="16" cy="7" r="1.3" fill="#5a6fa0"/>
+    <rect x="22" y="8" width="22" height="16" rx="2" fill="none" stroke="#b05a32" stroke-width="1.4"/>
+    <path d="M25 12 h16 M25 15 h16 M25 18 h16 M25 21 h16" stroke="#a8862e" stroke-width="0.9" stroke-dasharray="2.5 1.5"/>
+    <path d="M30 8 l-4 -5 M36 8 l4 -5" stroke="#b05a32" stroke-width="1.1"/>
+  </svg>
+  <!-- caterpillar inching along the kicker line -->
+  <svg class="doodle" style="top: 8.8mm; left: 118mm; width: 13mm; height: 3.6mm;" viewBox="0 0 60 16">
+    <g fill="none" stroke="#87a36b" stroke-width="1.2">
+      <circle cx="8" cy="10" r="4"/>
+      <circle cx="16" cy="10" r="4"/>
+      <circle cx="24" cy="10" r="4"/>
+      <circle cx="32" cy="10" r="4"/>
+    </g>
+    <circle cx="41" cy="9" r="4.5" fill="none" stroke="#a8862e" stroke-width="1.3"/>
+    <circle cx="40" cy="8" r="0.9" fill="#5a6fa0"/>
+    <circle cx="43" cy="8" r="0.9" fill="#5a6fa0"/>
+    <path d="M39 5 l-1.5 -3 M44 5 l1.5 -3" stroke="#a8862e" stroke-width="1"/>
+    <path d="M53 4 l0.8 2 L56 7 l-2.2 0.8 L53 10 l-0.8 -2.2 L50 7 l2.2 -1 Z" fill="none" stroke="#8a5f8f" stroke-width="0.8"/>
+  </svg>
+
   <!-- local analog patches -->
   <div class="lan lan-rgb" style="top: 100mm; left: 195mm; width: 9mm; height: 14mm; transform: rotate(1deg);"></div>
   <div class="lan lan-rgb" style="top: 213mm; left: 178mm; width: 7mm; height: 18mm;"></div>
@@ -1260,6 +1335,9 @@
   <div class="artifact-tear" style="top: 158mm; transform: translateY(-0.4mm);"></div>
   <div class="artifact-tear" style="top: 205mm; transform: scaleX(-1) translateY(-0.4mm);"></div>
   <div class="artifact-tear" style="top: 276mm;"></div>
+
+  <!-- rainbow band along the top -->
+  <div class="rainbow-banner"></div>
 
   <!-- caution-stripe jobs banner, borrowed from the site header -->
   <div class="hire-banner">
