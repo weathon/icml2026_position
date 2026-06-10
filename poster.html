@@ -169,6 +169,12 @@
     pointer-events: none;
     filter: drop-shadow(0.3mm 0.3mm 0 rgba(20,45,15,0.45)) drop-shadow(0 0 1mm rgba(90,111,160,0.4));
   }
+  /* analog glitch artifacts, overlaid on the imagery */
+  .glitchsvg {
+    position: absolute;
+    z-index: 58;
+    pointer-events: none;
+  }
 
   /* ----- header ----- */
   .head {
@@ -1405,6 +1411,69 @@
   <div class="lan lan-static" style="top: 198mm; left: 22mm; width: 24mm; height: 4mm;"></div>
   <div class="lan lan-smear" style="top: 187mm; left: 240mm; width: 40mm; height: 7mm;"></div>
   <div class="lan lan-smear" style="top: 255mm; left: 55mm; width: 34mm; height: 6mm;"></div>
+
+  <!-- analog glitch artifacts scattered over the imagery -->
+  <!-- displaced slice bars, over the Pa comparison grid -->
+  <svg class="glitchsvg" style="top: 118mm; left: 64mm; width: 16mm; height: 10mm;" viewBox="0 0 64 40">
+    <rect x="6" y="2" width="50" height="5" fill="#5a6fa0" opacity="0.5"/>
+    <rect x="0" y="9" width="44" height="4" fill="#b05a32" opacity="0.55"/>
+    <rect x="14" y="15" width="50" height="6" fill="#5a6fa0" opacity="0.4"/>
+    <rect x="4" y="23" width="38" height="3" fill="#ffffff" opacity="0.85"/>
+    <rect x="20" y="28" width="44" height="5" fill="#87a36b" opacity="0.5"/>
+    <rect x="0" y="35" width="30" height="3" fill="#b05a32" opacity="0.45"/>
+  </svg>
+  <!-- sync-tear zigzag, doubled with chroma offset -->
+  <svg class="glitchsvg" style="top: 96mm; left: 174mm; width: 18mm; height: 6mm;" viewBox="0 0 72 24">
+    <path d="M0 8 H18 V12 H8 V16 H34 V10 H52 V15 H72" fill="none" stroke="#b05a32" stroke-width="1.6" opacity="0.85"/>
+    <path d="M0 10 H18 V14 H8 V18 H34 V12 H52 V17 H72" fill="none" stroke="#5a6fa0" stroke-width="1.6" opacity="0.65"/>
+    <path d="M26 4 h6 M44 20 h8" stroke="#ffffff" stroke-width="1.4" opacity="0.9"/>
+  </svg>
+  <!-- macroblock pixel cluster, over the lapis works -->
+  <svg class="glitchsvg" style="top: 100mm; left: 318mm; width: 12mm; height: 9mm;" viewBox="0 0 48 36">
+    <g fill="#5a6fa0" opacity="0.6">
+      <rect x="2" y="3" width="5" height="5"/><rect x="12" y="8" width="4" height="4"/>
+      <rect x="24" y="2" width="6" height="6"/><rect x="36" y="10" width="5" height="5"/>
+      <rect x="8" y="20" width="5" height="5"/><rect x="30" y="24" width="4" height="4"/>
+    </g>
+    <g fill="#b05a32" opacity="0.55">
+      <rect x="6" y="6" width="4" height="4"/><rect x="18" y="14" width="5" height="5"/>
+      <rect x="40" y="4" width="4" height="4"/><rect x="22" y="28" width="6" height="4"/>
+    </g>
+    <g fill="#ffffff" opacity="0.85">
+      <rect x="15" y="5" width="3" height="3"/><rect x="34" y="18" width="3" height="3"/>
+      <rect x="4" y="29" width="3" height="3"/>
+    </g>
+  </svg>
+  <!-- oscilloscope burst, over the news pairs -->
+  <svg class="glitchsvg" style="top: 226mm; left: 246mm; width: 16mm; height: 7mm;" viewBox="0 0 64 28">
+    <path d="M0 14 L6 14 8 4 10 24 12 8 14 20 16 14 24 14 26 6 28 22 30 14 40 14 42 10 44 18 46 14 64 14" fill="none" stroke="#87a36b" stroke-width="1.3" opacity="0.9"/>
+    <path d="M0 16 L6 16 8 6 10 26 12 10 14 22 16 16 24 16 26 8 28 24 30 16 40 16 42 12 44 20 46 16 64 16" fill="none" stroke="#5a6fa0" stroke-width="1.1" opacity="0.55"/>
+  </svg>
+  <!-- rgb ghost triangle, over the emotion figure -->
+  <svg class="glitchsvg" style="top: 174mm; left: 24mm; width: 10mm; height: 9mm;" viewBox="0 0 40 40">
+    <path d="M8 6 L34 20 L8 34 Z" fill="none" stroke="#b05a32" stroke-width="1.4" opacity="0.8"/>
+    <path d="M10 8 L36 22 L10 36 Z" fill="none" stroke="#5a6fa0" stroke-width="1.4" opacity="0.6"/>
+    <path d="M6 4 L32 18 L6 32 Z" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.7"/>
+  </svg>
+  <!-- dropout bars with displaced copy, over the real photos -->
+  <svg class="glitchsvg" style="top: 262mm; left: 78mm; width: 14mm; height: 8mm;" viewBox="0 0 56 32">
+    <g fill="#2b291f" opacity="0.7">
+      <rect x="2" y="6" width="2" height="20"/><rect x="8" y="2" width="1.5" height="26"/>
+      <rect x="14" y="9" width="3" height="14"/><rect x="22" y="4" width="2" height="24"/>
+      <rect x="30" y="8" width="1.5" height="16"/><rect x="38" y="3" width="2.5" height="25"/>
+      <rect x="46" y="7" width="2" height="18"/>
+    </g>
+    <g fill="#b05a32" opacity="0.5" transform="translate(2,1.5)">
+      <rect x="2" y="6" width="2" height="20"/><rect x="14" y="9" width="3" height="14"/>
+      <rect x="30" y="8" width="1.5" height="16"/><rect x="46" y="7" width="2" height="18"/>
+    </g>
+  </svg>
+  <!-- static dash burst, in the seam above the news block -->
+  <svg class="glitchsvg" style="top: 50mm; left: 196mm; width: 14mm; height: 5mm;" viewBox="0 0 64 20">
+    <path d="M2 4 h6 M12 4 h3 M20 4 h8 M34 4 h4 M44 4 h9" stroke="#5a6fa0" stroke-width="1.6" opacity="0.7"/>
+    <path d="M6 10 h4 M16 10 h7 M28 10 h3 M38 10 h10 M54 10 h6" stroke="#b05a32" stroke-width="1.6" opacity="0.7"/>
+    <path d="M2 16 h9 M18 16 h4 M30 16 h7 M46 16 h5" stroke="#87a36b" stroke-width="1.6" opacity="0.7"/>
+  </svg>
 
   <!-- glitch tear lines -->
   <div class="artifact-tear" style="top: 108mm;"></div>
