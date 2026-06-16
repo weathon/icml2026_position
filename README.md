@@ -46,6 +46,7 @@ The released artifacts support four parts of the analysis:
 - Preprint: [arXiv:2512.11883](https://arxiv.org/abs/2512.11883)
 - Project page: <https://weathon.github.io/icml2026_position>
 - ICML page: <https://icml.cc/virtual/2026/poster/67242>
+- Lay blog: [English](blog/README.md) | [中文](blog/README.zh-CN.md)
 
 ## Datasets
 
@@ -129,9 +130,9 @@ details.
 ## Citation
 
 ```bibtex
-@inproceedings{qian2026universal,
-  title = {Universal Aesthetic Alignment Narrows Artistic Expression},
-  author = {Qian, Qingyun and Guo, Wenqi and Wattenberg, Martin},
+@inproceedings{guo2026universal,
+  title = {Position: Universal Aesthetic Alignment Narrows Artistic Expression},
+  author = {Guo, Wenqi Marshall and Qian, Qingyun and Hasan, Khalad and Du, Shan},
   booktitle = {Forty-third International Conference on Machine Learning},
   year = {2026},
   url = {https://openreview.net/forum?id=1gQ4zc1Q8I}

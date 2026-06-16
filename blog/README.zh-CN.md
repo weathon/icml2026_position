@@ -1,5 +1,7 @@
 # ICML 2026 观点论文 Spotlight：AI生成的图片正在反向对齐人类的审美？
 
+[English version](README.md)
+
 UBC和Weathon Software的研究提出，图像的美学对齐正在削弱艺术表达。
 
 ![论文标题与作者](images/image2.png)
