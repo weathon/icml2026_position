@@ -623,55 +623,75 @@
   .news-footnote b { color: var(--accent); font-weight: 700; }
   .news-footnote i { font-style: italic; color: var(--ink); }
 
-  /* ----- v: reversed alignment (wash panel, organic corners) ----- */
-  .reversed {
-    padding: 3mm 3.5mm;
+  /* ----- v: six layers of concern (wash panel, organic corners) ----- */
+  .concerns {
+    padding: 2.4mm 3.2mm 2mm;
     background: linear-gradient(135deg, rgba(154,110,160,0.30), rgba(179,173,94,0.28) 75%);
     border-radius: 4mm 16mm 4mm 14mm;
   }
-  .reversed h2 {
+  .concerns ol {
+    list-style: none; margin: 0; padding: 0;
+    counter-reset: cz;
+  }
+  .concerns li {
+    counter-increment: cz;
+    position: relative;
+    padding-left: 5.6mm;
+    margin-bottom: 1.1mm;
+  }
+  .concerns li:last-child { margin-bottom: 0; }
+  .concerns li::before {
+    content: counter(cz);
+    position: absolute; left: 0; top: -0.2mm;
     font-family: "Times New Roman", Times, serif;
-    font-size: 14pt; margin: 0 0 1mm;
-    font-weight: 700; line-height: 1.1;
+    font-size: 12pt; font-weight: 700;
+    color: var(--gold); line-height: 1;
   }
-  .reversed h2 em { color: var(--accent); font-style: italic; }
-  .reversed p {
-    font-size: 8.5pt; line-height: 1.38; margin: 0 0 1mm;
-  }
-  .reversed p b { color: var(--accent); }
-  .reversed p i { font-style: italic; }
-  .reversed .pull {
-    border-left: 0.5mm solid var(--accent);
-    padding-left: 2mm;
+  .concerns li h4 {
+    display: inline;
     font-family: "Times New Roman", Times, serif;
-    font-size: 8.5pt; font-style: italic;
-    line-height: 1.3; margin: 1.5mm 0;
+    font-size: 8.7pt; font-weight: 700;
+    line-height: 1.1; color: var(--ink);
   }
-  .reversed .pull cite {
-    display: block; font-size: 7pt;
-    font-style: normal; color: var(--muted);
-    margin-top: 0.4mm;
+  .concerns li h4 em { color: var(--accent); font-style: italic; }
+  .concerns li p {
+    font-size: 6.6pt; line-height: 1.23; margin: 0.1mm 0 0;
   }
-  .reversed .stats {
-    font-size: 7pt; line-height: 1.4;
-    color: var(--ink);
-    border-top: 0.2mm dashed var(--muted);
-    padding-top: 1mm; margin-top: 1mm;
+  .concerns li p b { color: var(--accent); font-weight: 700; }
+  .concerns li p i { font-style: italic; }
+  .concerns .rev {
+    display: block; margin-top: 0.4mm;
+    padding-left: 1.8mm;
+    border-left: 0.4mm solid var(--accent-2);
+    font-size: 6.6pt; line-height: 1.23;
   }
-  .reversed .stats b { color: var(--accent); font-weight: 700; }
+  .concerns .rev b { color: var(--accent-2); font-weight: 700; }
+  .concerns .rev i { font-style: italic; }
 
   /* ----- why it matters ----- */
   .why h3 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 11pt; margin: 0 0 1mm;
+    font-size: 10pt; margin: 0 0 0.8mm;
     font-weight: 700;
   }
   .why h3 em { color: var(--gold); font-style: italic; }
   .why p {
-    font-size: 7.5pt; line-height: 1.35; margin: 0 0 0.6mm;
+    font-size: 7pt; line-height: 1.28; margin: 0 0 0.6mm;
   }
   .why p b { color: var(--accent); }
   .why p i { font-style: italic; }
+  .why p.epi {
+    border-left: 0.5mm solid var(--accent);
+    padding-left: 2mm;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic; line-height: 1.28;
+    margin: 0 0 1mm;
+  }
+  .why p.epi cite {
+    display: block; font-size: 6.5pt;
+    font-style: normal; color: var(--muted);
+    margin-top: 0.3mm;
+  }
 
   /* ----- real anti-aesthetic photographs ----- */
   .real-strip .rs-head {
@@ -1071,43 +1091,54 @@
     </div>
   </div>
 
-  <!-- v: reversed alignment — right rail -->
+  <!-- v: six layers of concern — right rail -->
   <div class="zone" style="left: 322mm; top: 129mm; width: 89mm;">
     <div class="sec-head">
       <span class="sec-num">v</span>
-      <h2 class="sec-title"><em>Reversed</em> alignment</h2>
-      <span class="sec-meta">two loops</span>
+      <h2 class="sec-title">Six layers of <em>concern</em></h2>
+      <span class="sec-meta">how the harm compounds</span>
     </div>
-    <div class="reversed">
-      <h2>User aligned <em>to the model</em></h2>
-      <p>
-        <b>Private loop:</b> user asks for blur, decay, or grief; model returns its candy-gloss default and implicitly teaches that <i>this</i> is what good output looks like. The user adjusts.
-      </p>
-      <p>
-        <b>Public loop:</b> polished outputs flood feeds. Audiences internalize the narrow vocabulary as the default; new preference data folds this back into the next aligned model. The loop tightens — risking a cultural <b>mode collapse</b> in art.
-      </p>
-      <p>
-        And the suppressed content is not unsafe — it's critical, abstract, or emotionally negative imagery. Pre-emptive sanitization protects <i>corporate reputation</i>, not users.
-      </p>
-      <div class="pull">
-        “Rather, in the ugly, art must denounce the world that creates and reproduces the ugly in its own image.”
-        <cite>— T. W. Adorno, <i>Aesthetic Theory</i> (1984)</cite>
-      </div>
-      <div class="stats">
-        <b>10</b> gen models · <b>7</b> reward models · <b>300</b> prompts · <b>2,928</b> real photos · <b>p &lt; 10⁻¹⁰</b> for DanceFlux · HPSv3 prefers clean-but-wrong by <b>+5.9</b> pts.
-      </div>
+    <div class="concerns">
+      <ol>
+        <li>
+          <h4>Whose preference?</h4>
+          <p>Alignment encodes <i>someone's</i> values — usually the developer's reputational, legal, and marketing caution, not the user's intent. Refusing critical art is <b>pre-emptive governance</b> that designs away dissent.</p>
+        </li>
+        <li>
+          <h4>Inherited bias</h4>
+          <p>Even with no self-interest, a developer's idea of “good” leaks in through data, annotation, and modeling. Models amplify dominant beauty standards — skewing Western, dropping non-normative looks — reinforcing the <b>beauty myth</b>.</p>
+        </li>
+        <li>
+          <h4>Individual <em>vs</em> collective</h4>
+          <p>A generalized standard overrides the single user who wanted otherwise; models <i>sanitize</i> requests that diverge from the mainstream.</p>
+          <span class="rev"><b>Reversed alignment:</b> the user gets aligned to the model. A <i>private loop</i> (you adapt to its candy-gloss default) and a <i>public loop</i> (polished feeds become the next training prior) tighten into cultural <b>mode collapse</b>.</span>
+        </li>
+        <li>
+          <h4>Sanitized reality</h4>
+          <p>If every output is a flawless Instagram wonderland, generation mirrors a fantasy, not the world — <i>Brave New World</i>, rendered.</p>
+        </li>
+        <li>
+          <h4>Toxic positivity</h4>
+          <p>Reward models score strong positive emotion higher and penalize fear, grief, and anger, flattening the emotional range art depends on.</p>
+        </li>
+        <li>
+          <h4>Value capture</h4>
+          <p>Compressing aesthetics — rich, subtle, contested — into one reward score shifts the goal from <i>make aesthetic images</i> to <i>make images that score high</i>, outsourcing taste and autonomy.</p>
+        </li>
+      </ol>
     </div>
   </div>
 
-  <!-- why it matters — under the reversed rail -->
-  <div class="zone" style="left: 322mm; top: 226mm; width: 89mm;">
+  <!-- why it matters — under the six-concerns rail -->
+  <div class="zone" style="left: 322mm; top: 240mm; width: 89mm;">
     <div class="why">
-      <h3>Why it matters · <em>value capture</em></h3>
-      <p>
-        Reducing aesthetics to one reward score is <i>value capture</i> — the goal shifts from <b>make aesthetic images</b> to <b>make images that score high</b>. Pre-emptive exclusion of non-mainstream outputs is <b>pre-emptive governance</b>: it removes the user's capacity to dissent.
+      <h3>Why it <em>matters</em></h3>
+      <p class="epi">
+        “Rather, in the ugly, art must denounce the world that creates and reproduces the ugly in its own image.”
+        <cite>— T. W. Adorno, <i>Aesthetic Theory</i> (1984)</cite>
       </p>
       <p>
-        <b>Call:</b> alignment that exposes user-controllable preference strength, draws on diverse annotators, and stays transparent about what it optimizes.
+        The suppressed content is not unsafe — it is critical, abstract, or emotionally negative, yet HPSv3 still prefers clean-but-wrong by <b>+5.9</b> pts. <b>The fix:</b> user-controllable preference strength, diverse annotators, transparency.
       </p>
     </div>
   </div>
