@@ -1,89 +1,140 @@
-# eval
+# Evaluation Code
 
-Evaluation code for the ICML 2026 position paper. This directory holds the
-scripts and notebooks used to generate the paper's benchmark numbers, train and
-evaluate the BLIP-based aesthetic rater, and run the case studies.
+This directory contains the scripts and notebooks used for the benchmark
+generation, reward-model scoring, rater training, and figure-level analyses.
+Most paths are local and relative, so run scripts from the subdirectory where
+they live unless the script says otherwise.
 
-The code has not been cleaned up beyond grouping into folders, so paths inside
-scripts are still relative. Run each script from the folder it lives in.
+## Code Layout
 
-## Layout
+```text
+benchmarks/
+  benchmark.py              Main image-generation sweep.
+  benchmark_emotion.py      Emotion-bias generation sweep.
+  benchmark_post_paper.py   Extra post-submission generation sweep.
+  prompts.json              Prompt set used by the benchmark scripts.
+  config.json               FluxTransformer2DModel config.
+  run2.sh                   Driver script for the original sweep.
+  run_post_paper.sh         Driver script for later model additions.
 
+reward_models/
+  run_hpsv2.py              HPSv2 scoring.
+  eval_later.py             HPSv3 scoring used in earlier runs.
+  score_post_paper_hpsv3.py HPSv3 scoring for post-paper additions.
+  run_image_reward.py       ImageReward scoring.
+  pick_score.py             PickScore helper.
+  *_rewards.*               Cached reward outputs.
+
+dataset_construction/
+  ds.py                     AAS benchmark prompt construction.
+  ds_emotion.py             Emotion split construction.
+  convert_base64_dataset.py Decode base64 image records into a HF dataset.
+  *.ipynb                   Dataset assembly and inspection notebooks.
+
+rater/
+  train.py                  BLIP-based aesthetic rater training.
+  eval.py                   Held-out rater evaluation.
+  main.py                   End-to-end BLIP/HPS/PickScore evaluation pipeline.
+  human_eval.py             Human-evaluation utilities.
+  rules.csv                 Distortion rules for training/evaluation.
+  gen_rules.csv             Generation-time rule list.
+
+rater_training/
+  train.py                  Earlier rater-training path.
+  train_sigmoid.py          Sigmoid-head BLIP training experiment.
+  qwen.py                   Qwen3-VL rater utilities.
+  infer.py, infer_vsf.py    Inference helpers.
+  llm_select.py             LLM-based selection helper.
+  prompts.json, rules.csv   Prompt and rule inputs.
+
+studies/
+  anti_physics/             Anti-physics case study.
+  attn_map/                 Attention-map visualization.
+  emotion_bias/             Emotion-bias analysis.
+
+data/
+  vsf.py, vsf_krea.py       VSF inference utilities.
+  nag.py                    NAG reference script.
+  reward_model_deltas.csv   Shared reward-model delta table.
+
+notebooks/
+  *.ipynb                   Exploratory and analysis notebooks.
 ```
-benchmarks/            Image-generation benchmark sweep
-  benchmark.py           Main sweep over generation models (FLUX, SD3, etc.)
-  benchmark_emotion.py   Emotion-bias sweep
-  prompts.json           Prompt set used by the sweeps
-  config.json            FluxTransformer2DModel config
-  run2.sh                Driver shell script
 
-reward_models/         Off-the-shelf reward-model scorers
-  run_hpsv2.py           Score the AAS benchmark with HPSv2
-  run_image_reward.py    Score with ImageReward
-  eval_later.py          Score with HPSv3
-  eval_later.ipynb       Same, exploratory notebook
-  pick_score.py          PickScore helper used by main.py
-  hpsv2_rewards.json     Cached HPSv2 scores
-  hpsv3_rewards.pkl      Cached HPSv3 scores
-  image_reward.json      Cached ImageReward scores
+## Typical Entry Points
 
-dataset_construction/  Building the prompt/image dataset
-  ds.py                  Prompt generation for the AAS benchmark
-  ds_emotion.py          Prompt generation for the emotion split
-  convert_base64_dataset.py  Decode base64 images back into a HF dataset
-  dataset_gen.ipynb      Dataset assembly notebook
-  data.ipynb             Dataset inspection notebook
-
-rater/                 BLIP-based aesthetic rater used by the paper
-  train.py               Training loop
-  eval.py                Held-out evaluation
-  main.py                End-to-end pipeline (BLIP + HPSv2 + PickScore)
-  human_eval.py          Human-eval helper
-  rules.csv              Distortion rules used during training
-  gen_rules.csv          Generation-time rule list
-  gpt.png                Reference image for qualitative comparisons
-  rater.ipynb, eval.ipynb, main.ipynb,
-  binary.ipynb, blip_compare.ipynb   Exploratory notebooks
-
-rater_training/        Earlier rater-training code (Qwen3-VL + LLM raters,
-                       qualitative PDFs). Kept self-contained.
-
-studies/               Case-study folders for individual figures
-  anti_physics/          "Anti-physics" study
-  attn_map/              Attention-map visualization
-  emotion_bias/          Emotion-bias plots
-
-data/                  Shared inference scripts and reference images
-                       (VSF, NAG, img2img), referenced from notebooks.
-
-notebooks/             Misc exploratory notebooks
-  scratch.ipynb, qwen_image.ipynb, dance_grpo.ipynb
-```
-
-## Running things
-
-Most scripts read their inputs from the working directory, so `cd` into the
-right subfolder first. For example:
+Run a generation benchmark:
 
 ```bash
-cd benchmarks
+cd eval/benchmarks
 python benchmark.py --models flux_dev --cuda-device 0
-
-cd ../reward_models
-python run_hpsv2.py
-
-cd ../rater
-python train.py
 ```
 
-`benchmark.py` expects a `flux/flux/transformer/diffusion_pytorch_model.safetensors`
-checkpoint at `eval/benchmarks/flux/flux/transformer/` (gitignored). The Qwen
-rater under `rater_training/` and the off-the-shelf reward models pull weights
-from HuggingFace on first run.
+Score benchmark outputs with reward models:
 
-## Notes
+```bash
+cd eval/reward_models
+python run_hpsv2.py
+python run_image_reward.py
+python eval_later.py
+```
 
-- `wandb/`, `flux/`, `aas_benchmark_2_with_blip*/`, `*.pth`, `*.ckpt`, and
-  `*.hf` are gitignored — they are run artifacts or local checkpoints.
-- The empty `eval` file and empty `HPSv3/` directory are leftovers from before
-  the reorg and can be removed when convenient.
+Train or evaluate the BLIP-based rater:
+
+```bash
+cd eval/rater
+python train.py
+python eval.py
+```
+
+Build prompt/image datasets:
+
+```bash
+cd eval/dataset_construction
+python ds.py
+python ds_emotion.py
+```
+
+## Inputs
+
+- `benchmarks/prompts.json` contains the prompt set used by the generation
+  benchmark scripts.
+- `dataset_construction/` contains scripts used to build the prompt/image
+  datasets before publishing to Hugging Face.
+- `rater/rules.csv` and `rater/gen_rules.csv` define the distortion and
+  generation rules used by the rater pipeline.
+- `benchmark.py` expects a Flux checkpoint at
+  `eval/benchmarks/flux/flux/transformer/diffusion_pytorch_model.safetensors`.
+  This path is gitignored because the checkpoint is large.
+
+## Outputs
+
+- Reward-model scripts write cached score files under `reward_models/`.
+- Benchmark scripts may write generated image folders and intermediate dataset
+  exports in their working directories.
+- Rater training writes checkpoints and run artifacts locally.
+- Notebooks under `studies/` and `notebooks/` produce the analysis plots and
+  intermediate tables used during paper development.
+
+## Environment Notes
+
+The exact package environment is experiment-dependent. The code uses common
+image-generation and evaluation libraries such as PyTorch, diffusers,
+transformers, datasets, and reward-model-specific packages. Several scripts
+download model weights from Hugging Face on first run.
+
+The following are intentionally not tracked:
+
+- `wandb/`
+- `flux/`
+- `aas_benchmark_2_with_blip*/`
+- `*.pth`, `*.ckpt`, `*.hf`
+- `__pycache__/`, `.ipynb_checkpoints/`
+
+## Raw Analysis Data
+
+The public benchmark dataset on Hugging Face includes the prompt/image pairs
+and raw analysis data used for downstream evaluation:
+
+<https://huggingface.co/datasets/weathon/aas_benchmark_final>
+

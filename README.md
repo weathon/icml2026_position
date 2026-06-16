@@ -1,71 +1,139 @@
 # Universal Aesthetic Alignment Narrows Artistic Expression
 
-ICML 2026 position paper, project website, and supporting code.
+[![Project Page](https://img.shields.io/badge/project-page-blue)](https://weathon.github.io/icml2026_position)
+[![OpenReview](https://img.shields.io/badge/OpenReview-1gQ4zc1Q8I-red)](https://openreview.net/forum?id=1gQ4zc1Q8I)
+[![arXiv](https://img.shields.io/badge/arXiv-2512.11883-b31b1b.svg)](https://arxiv.org/abs/2512.11883)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow.svg)](https://huggingface.co/datasets/weathon/aas_benchmark_final)
 
-This repo bundles three pieces:
+Code, evaluation scripts, datasets, and supporting artifacts for the ICML 2026
+position paper **Universal Aesthetic Alignment Narrows Artistic Expression**.
+If this repository is useful for your research, please consider starring it.
 
-- The project **website** (`index.html` + `site/`) — the mode-selector splash
-  and the two paired landing pages (polished vs anti-aesthetic).
-- An **evaluation suite** (`eval/`) — benchmarks, reward-model scorers, the
-  BLIP-based rater, and the case-study notebooks behind the paper's figures.
-- A **dataset-curation agent** (`anti_aesthetics_agent/`) — Claude Agent SDK
-  driver that walks a class taxonomy and uses Qwen3-VL embeddings to sample
-  candidate images for the anti-aesthetic dataset.
+The project studies how aesthetic alignment in image generation and reward
+models can override explicit user intent. In particular, it evaluates whether
+models preserve prompts that ask for anti-aesthetic, abstract, distorted,
+negative-emotion, or otherwise non-mainstream visual outputs.
 
-The paper source (`main.tex`, `sec/*.tex`) lives in a separate repo, so this
-one is just the website + the code that produced the numbers and the dataset.
+## Project Overview
 
-## Layout
+Modern image generators are often optimized toward broad, averaged notions of
+visual appeal: clean lighting, balanced composition, smooth detail, legible
+subjects, and positive affect. This project asks what happens when that default
+conflicts with a user's explicit request for images that are ugly, distorted,
+abstract, low-fidelity, emotionally negative, or otherwise outside mainstream
+commercial aesthetics.
 
+We call this failure mode **reversed alignment**: instead of the model aligning
+to the user's stated intent, the user is pushed back toward the model's learned
+aesthetic preference. The same effect also appears in reward models, which can
+penalize prompt-faithful anti-aesthetic images and prefer cleaner images that
+contradict the prompt.
+
+The released artifacts support four parts of the analysis:
+
+- A wide-spectrum aesthetic benchmark spanning conventional and anti-aesthetic
+  instructions.
+- Reward-model audits measuring whether scoring models prefer the image that
+  actually follows the prompt.
+- Real-image and artwork analyses testing whether the bias extends beyond
+  synthetic benchmark pairs.
+- Dataset-curation and fine-tuning code used for the paper's supporting
+  experiments.
+
+## Resources
+
+- Paper: [OpenReview](https://openreview.net/forum?id=1gQ4zc1Q8I)
+- Preprint: [arXiv:2512.11883](https://arxiv.org/abs/2512.11883)
+- Project page: <https://weathon.github.io/icml2026_position>
+- ICML page: <https://icml.cc/virtual/2026/poster/67242>
+
+## Datasets
+
+- [AAS benchmark](https://huggingface.co/datasets/weathon/aas_benchmark_final):
+  wide-spectrum aesthetic prompt/image pairs and raw analysis data for
+  evaluating whether generation and reward models respect anti-aesthetic
+  instructions.
+- [AAS real images](https://huggingface.co/datasets/weathon/aas_real_images):
+  curated real-image anti-aesthetic dataset used for reward-model analysis.
+- [LAPIS](https://huggingface.co/datasets/weathon/lapis): real artworks used to
+  probe reward-model treatment of historically grounded non-mainstream
+  aesthetics.
+- [Critical comparison pairs](https://huggingface.co/datasets/weathon/critical_comparsion):
+  social-critique image pairs used in the Image New Speak analysis.
+
+## Repository Structure
+
+```text
+eval/                       Evaluation suite for benchmark, reward-model,
+                            rater, and case-study experiments.
+  benchmarks/               Image-generation benchmark sweeps.
+  reward_models/            HPSv2, HPSv3, ImageReward, and PickScore scoring.
+  dataset_construction/     Prompt and dataset construction scripts.
+  rater/                    BLIP-based aesthetic rater training/evaluation.
+  rater_training/           Earlier Qwen/LLM rater-training experiments.
+  studies/                  Figure-level studies and analysis notebooks.
+  data/                     Shared data-preparation and inference utilities.
+  notebooks/                Exploratory notebooks.
+
+finetune/                   Fine-tuning and validation scripts for model
+                            variants used in the experiments.
+
+anti_aesthetics_agent/      Agent-assisted dataset curation code using
+                            Qwen3-VL embeddings and a class taxonomy.
+
+scripts/                    Dataset publishing and asset-generation utilities.
+
+blog/                       Public write-up drafts and related media.
+
+index.html, site/           Project-page assets served by GitHub Pages.
+poster.html, poster.pdf     Poster artifacts.
 ```
-index.html                 Mode-selector splash for the project site
-site/                      Polished + anti-aesthetic landing pages, CSS, JS
-scripts/                   Helpers for building website assets and pushing
-                           the real-image dataset to HuggingFace
-design_guide.md            Visual design notes for the two website modes
-CHANGELOG.md               Website changelog
 
-eval/                      Evaluation code (see eval/README.md)
-anti_aesthetics_agent/     Dataset curation agent (see its own README)
-```
+More detailed notes are available in [eval/README.md](eval/README.md) and
+[anti_aesthetics_agent/README.md](anti_aesthetics_agent/README.md).
 
-## Website
+## Usage
 
-The site is plain HTML/CSS/JS, no build step. Open `index.html` directly, or
-serve the repo root with any static server, e.g.:
+The experimental code is organized by task. Most scripts assume they are run
+from their own subdirectory because several paths are relative.
 
 ```bash
-python -m http.server 8000
-# then visit http://localhost:8000/
+cd eval/benchmarks
+python benchmark.py --models flux_dev --cuda-device 0
+
+cd ../reward_models
+python run_hpsv2.py
+
+cd ../rater
+python train.py
 ```
 
-The splash routes to `site/normal.html` (research-page layout) or
-`site/anti.html` (the deliberately ugly version). The chosen mode is
-remembered in `localStorage`.
+The fine-tuning code has separate dependencies:
 
-See `CHANGELOG.md` for the site history and `design_guide.md` for the visual
-spec behind each mode.
+```bash
+pip install -r finetune/requirements_finetune.txt
+```
 
-## Evaluation
+The dataset-curation agent has its own environment:
 
-All evaluation code is in [`eval/`](eval/). The README there describes the
-sub-folder layout (benchmarks, reward models, rater training, case studies)
-and how to run each piece.
+```bash
+cd anti_aesthetics_agent
+pip install -r requirements.txt
+python agent_sdk_runner.py
+```
 
-## Dataset agent
+Large model weights, local checkpoints, generated datasets, and run logs are
+not tracked in git. See the subdirectory READMEs for expected paths and setup
+details.
 
-The Claude Agent SDK driver that curates the anti-aesthetic dataset lives in
-[`anti_aesthetics_agent/`](anti_aesthetics_agent/). Its README covers setup,
-the MCP tool layout, and how to resume from a checkpoint.
+## Citation
 
-## Publishing checklist
-
-Before pushing this repo publicly:
-
-- Strip any HuggingFace / OpenAI / Replicate tokens from local `.env` files
-  (they are gitignored, but double-check).
-- Confirm `eval/wandb/`, `eval/**/flux/`, `eval/**/*.pth`, `eval/**/*.ckpt`,
-  `anti_aesthetics_agent/tmp/`, and `anti_aesthetics_agent/embeddings/` are
-  not tracked — `.gitignore` files in each subdir already cover these.
-- Bump the paper link in `index.html` / `site/normal.html` once the camera-ready
-  arXiv id is final.
+```bibtex
+@inproceedings{qian2026universal,
+  title = {Universal Aesthetic Alignment Narrows Artistic Expression},
+  author = {Qian, Qingyun and Guo, Wenqi and Wattenberg, Martin},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  year = {2026},
+  url = {https://openreview.net/forum?id=1gQ4zc1Q8I}
+}
+```
