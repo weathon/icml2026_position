@@ -2,9 +2,7 @@
 
 [中文版本](README.zh-CN.md)
 
-Researchers from UBC and Weathon Software argue that aesthetic alignment in
-image generation is becoming a form of aesthetic authoritarianism: a narrow,
-averaged taste is enforced as if it were neutral image quality.
+Research from UBC and Weathon Software argues that aesthetic alignment in images is narrowing artistic expression.
 
 ![Paper title and authors](images/image2.png)
 
@@ -12,193 +10,83 @@ Paper title: Position: Universal Aesthetic Alignment Narrows Artistic Expression
 Authors: Wenqi Guo, Qingyun Qian, Khalad Hasan, Shan Du  
 Paper: https://arxiv.org/abs/2512.11883  
 Code and data: https://github.com/weathon/icml2026_position  
-Project page: https://weathon.github.io/icml2026_position/  
-ICML event page: https://icml.cc/virtual/2026/poster/67242
+Exhibition site: https://weathon.github.io/icml2026_position/  
+ICML Event Page: https://icml.cc/virtual/2026/poster/67242
 
-The first author, Wenqi Guo, is a master's student at UBC working on safety and
-privacy issues in AI generative models. Together with co-author Qingyun Qian, a
-law graduate and current UBC computer science undergraduate, the paper raises a
-broader concern about the pursuit of single-value alignment in AI systems. Their
-previous work criticized excessive caution in medical AI systems; this paper
-turns to aesthetic alignment in image generation and asks whether it is harming
-artistic expression.
+The first author, Wenqi Guo, is a master's student at UBC working on safety and privacy issues in AI generative models. Together with co-author Qingyun Qian, a law graduate and current UBC computer science undergraduate, he raises concerns about AI models' general pursuit of alignment around a single value. The two previously criticized excessive caution in medical models. This paper mainly discusses how aesthetic alignment in image-generation models limits artistic expression. The paper's advisors are from UBC: Khalad Hasan mainly works on human-computer interaction, while Shan Du mainly focuses on computer vision and computer graphics.
 
 ![ICML 2026 Spotlight poster](images/image3.png)
 
-The ICML poster itself also breaks away, to some extent, from the conventional
-academic poster style.
+The paper's poster at ICML: to some extent, it breaks away from the constraints of the traditional academic-poster style.
 
 ## When "Better Looking" Becomes the Default Goal
 
-AI-generated images have moved far beyond the early era of eight fingers and
-distorted faces. Once basic correctness improved, the next goal for many AI
-developers became making generated images more appealing. Human-preference
-models such as ImageReward, HPSv2, and HPSv3 were developed to align generation
-models toward images that better match aggregate human preferences.
+AI image-generation models initially could only produce images with eight fingers, distorted faces, and other outputs that violated normal biological structure. They have now evolved to generate images that are normal and consistent with human anatomy. After these correctness problems in image generation were addressed, AI developers shifted their goal toward making AI-generated images more consistent with human aesthetics. As a result, image-quality evaluation models such as ImageReward, HPSv2, and HPSv3 were developed one after another and widely used to align image-generation models so they would produce images more consistent with human preferences.
 
-The problem is that a generation model pushed by reinforcement learning can
-turn influencer-style glossy images into the default answer. Worse, this look
-is treated as the correct answer. Art should be plural. It should have room for
-non-mainstream styles, negative emotion, political critique, roughness, and even
-ugliness. When a glossy mainstream look dominates and marginalizes other styles,
-the direction of alignment becomes suspicious: are developers training models to
-align with human taste, or are models quietly aligning users back toward the
-model's own aesthetic values?
+However, when image-generation models are forced to align with aesthetic standards preset by developers, and are trained through reinforcement learning to produce only influencer-style "sugar-water photos" -- images with vivid colors and strong contrast that are popular on social media -- have the images these models can produce gradually moved away from real art in human society? Artistic expression should be diverse. Beyond mainstream aesthetic frameworks, art should also include niche styles, subcultures, and even "ugly" cultures. But when these brightly colored, high-contrast "sugar-water photos" become dominant and other niche styles are quietly marginalized, should we ask: when did art's hundred flowers blooming become a single "color blockbuster" standing alone? So-called "aesthetic alignment to generate images more consistent with human preferences" raises a question: are developers training models to align with human aesthetics, or is the opposite happening, with models quietly reverse-aligning users' aesthetics to their own aesthetic preferences by producing an absolute quantity of images in a single style?
 
 ![Images generated by Flux Dev after DanceGRPO alignment](images/image1.png)
 
-The images above were generated by Flux Dev after DanceGRPO alignment. To be
-fair, they are very appealing by mainstream standards: vivid colors, strong
-contrast, and crisp details. But when nearly every generated image becomes this
-kind of glossy "sugar-water" image, especially when the user explicitly asks to
-avoid that style, the model is replacing the user's artistic intent with an
-institutional preference for visual comfort.
+The images shown here were generated by Flux Dev after DanceGRPO alignment. Objectively speaking, these images do fit popular tastes and preferences very well: bright colors, strong contrast, and clear details. However, for these trained image-generation models, no matter what users request, even when users explicitly ask to avoid this kind of style, the models still stubbornly apply the same aesthetic standard and output heavily homogenized "sugar-water blockbusters." This not only violates the user's prompt, but also invisibly resists the artistic content the user wants to express.
 
-## Six Connected Concerns
+## Six Interconnected Concerns
 
-The paper identifies six connected concerns about universal, homogenized
-aesthetic standards.
+The authors, Wenqi Guo and Qingyun Qian, propose six interconnected concerns about this universal and homogenized aesthetic standard.
 
-First is the tension between developer preferences and user preferences. Does
-this aesthetic standard really satisfy users' aesthetic needs, or does it mainly
-reflect developers' attempts to avoid reputational, legal, and market risks? The
-paper argues that preemptively excluding non-mainstream work functions as a form
-of anticipatory governance: algorithmic design unilaterally defines the boundary
-of possible creation and removes the user's ability to object.
+First is the concern about aesthetic standards and user preferences: does this aesthetic standard really satisfy users' aesthetic needs? Or is its purpose to satisfy developers' concerns about avoiding reputational, legal, and market risks? The paper argues that the practice of preemptively excluding non-mainstream styles and retaining only a single aesthetic standard creates a singularity of creative possibility. Through algorithmic design, it confines generated images to a certain range; and, as discussed above, its disregard for user instructions also deprives users of the possibility of dissent. Against this background, whether this aesthetic standard truly satisfies user preferences is questionable.
 
-Second is the problem of intrinsic bias. Even when developers have no obvious
-self-interest, their understanding of human preference is inherited by the model
-through data selection, annotation practices, and modeling choices. This can
-entrench a narrow, well-intentioned definition of a "good image" that excludes
-aesthetic diversity. For example, most HPSv3 annotators are young, and
-annotators must pass a test requiring agreement with expert labels. That design
-quietly imports a particular bias.
+Second is the problem of bias when developers formulate aesthetic standards. Even if developers themselves have no obvious interest-driven needs, or even if they are not aware of their own biases, their understanding of human aesthetic preferences is implicitly passed to the model through data selection, annotation practices, and modeling choices. This leads to a definition of "human-preference images" that appears broad but is actually narrow, excluding diverse aesthetics. For example, most HPSv3 annotators are young people, so the definition of a "good image" they choose may lean toward the aesthetics of a younger generation. In addition, HPSv3 requires annotators to pass a test matching expert annotations. This means later annotators may have views of aesthetic images that do not fit the previously specified, implicitly biased aesthetic framework, but are forcibly corrected by that test.
 
-Third is the tension between individual and aggregate preference. When a built-in
-preference is applied to every user as the default quality standard, a rule that
-works for the majority can override the explicit wishes of a particular user.
-This pushes both users and audiences toward the same aesthetic direction, which
-the authors call "reversed alignment." The concern is normative: the model is
-quietly deciding which visual values are allowed to count as good, even when
-the user asked for something else.
+Third is the contradiction between individual preferences and group preferences. When developers' pre-formulated aesthetic standard -- an inherent preference with implicit bias -- is set as the default quality standard for serving all users, this "universal standard that developers see as beneficial to most people" may override the explicit wishes of some users. This produces a conflict between group preference and individual preference: the model adopts a unified aesthetic framework rather than following a particular user's explicit instructions. It also leads to the homogenization of group customers' aesthetics: when the model mostly generates only one style of image, and users can only passively accept images in that style, users' aesthetic preferences are reverse-aligned to the model's preferences.
 
-Fourth is the concern that models beautify and sanitize reality. If generators
-only produce polished, flawless, universally pleasing images, can they still
-represent reality and user intent? Or do they become producers of idealized
-illusions rather than reflections of the world?
+Fourth, does an aesthetic framework forcibly corrected by a unified standard lead to over-beautification and the problem of modifying reality? When an image-generation model, constrained by an aesthetic framework, can only generate glossy, flawless images, are "ugliness" that runs counter to the "perfect image," other niche styles, and the darkness of reality being quietly ignored? The images generated by the model may not represent the reality users want, but only present an idealized side of it.
 
-Fifth is an excess of positivity. Many reward models assign higher scores to
-images with strong positive emotion and bright colors, while systematically
-penalizing negative emotion and darker styles. This matters because anger,
-fear, grief, disgust, and unease are not defects to be cleaned away. They are
-central to art, political critique, memory, mourning, and self-understanding.
-Suppressing them distorts emotional expression and reduces the expressive range
-of the model.
+Fifth, overly vivid images have a problem of "excess positive energy." Given the aesthetic framework discussed above, many reward models score images in a targeted way: they give higher scores to images with strong positive emotions and bright colors, while systematically penalizing images with negative emotions and styles. Trying to make images give viewers more positive emotion seems correct. However, rejecting images with negative styles also seems to create another problem. Negative emotions and styles play an irreplaceable role in human cognition and social interaction. Not allowing negative styles to appear distorts emotional expression and weakens the model's expressive power.
 
-Sixth is value capture. Aesthetics is one of the richest, most contested, and
-most diverse domains of human value. Reducing it to a single reward score is a
-classic case of value capture: multidimensional aesthetic exploration is
-compressed into one number.
+Sixth, the fixed aesthetic direction called "universal human preference" has the problem of singular artistic value and de-diversification. Aesthetics is one of the richest, most contested, and most diverse human values. Reducing it to a single reward score is a typical case of value capture. It compresses diverse, complex, multidimensional aesthetic exploration into a single number, limits the emergence of art in different styles, and suppresses human discussion of diverse aesthetic images.
 
-## How Do We Test Whether Models Are Stubborn?
+## How Do We Test How Stubborn Models Are?
 
-To test how stubborn current models are, the researchers designed 300 prompts.
-They started from COCO prompts, then selected several anti-aesthetic dimensions
-from the VisionReward image-annotation guidelines, including dim lighting,
-clashing colors, distorted proportions, and negative emotion. They used Qwen3 to
-synthesize the anti-aesthetic generation prompts.
+To test how stubborn current models are in enforcing this kind of aesthetic standard, the authors designed 300 prompts. These prompts use prompts from the COCO dataset as a base. Then, following the VisionReward guideline for annotating images, the authors selected several "anti-aesthetic" dimensions, such as dim lighting, clashing colors, disproportion, and negative emotions. Finally, they used Qwen3 to synthesize anti-aesthetic images and generate the dataset.
 
-They then sent these prompts to mainstream image-generation model families. To
-avoid the alternative explanation that the models simply cannot follow complex
-anti-aesthetic prompts, they compared models within the same family: versions
-without additional aesthetic alignment and versions with additional community or
-academic aesthetic alignment. They evaluated both image-generation models and
-reward models.
+They then sent these prompts into mainstream image-generation model families to test the generated images. For comparison, and to rule out the possibility that "the model simply cannot follow complex anti-aesthetic prompts," they tested models from the same family that had not undergone additional aesthetic alignment, as well as models that had undergone additional aesthetic alignment in the community or academia. They tested both image-generation models and reward models.
 
-## Do Reward Models Understand Anti-Aesthetics?
+## Do Reward Models Really Understand Anti-Aesthetics?
 
-To evaluate reward models, the researchers gave each reward model a successful
-anti-aesthetic image and an original image generated from the base COCO prompt.
-The model was also given the anti-aesthetic prompt used to generate the
-anti-aesthetic image. The question was simple: which image does the reward model
-prefer? The authors also tested plain image-text matching models such as BLIP
-and CLIP.
+To evaluate reward models, they gave the reward model an original image generated from a COCO base prompt and a successfully generated anti-aesthetic image, while explicitly providing the prompt requesting an anti-aesthetic image. They then observed which image the reward model would choose. At the same time, they tested simple image-text matching models: BLIP and CLIP.
 
-The results show that recent reward models such as HPSv3 and HPSv2.1 often fail
-to select the anti-aesthetic image even when they are explicitly given the
-anti-aesthetic prompt. In contrast, non-aesthetic-trained CLIP and BLIP can
-nearly always identify the correct image. This rules out the explanation that
-the anti-aesthetic prompts are simply too complex for models to understand.
+The results show that even the latest reward models, such as HPSv3 and HPSv2.1, almost cannot correctly select the anti-aesthetic image when given an anti-aesthetic prompt. But CLIP and BLIP, which have not undergone aesthetic training, can perfectly select this anti-aesthetic image. Because the same anti-aesthetic prompt was used, these two test results rule out the possibility that the anti-aesthetic prompt is too complex for the model to understand.
 
 ![Reward model classification results](images/image5.png)
 
-## Can Image Generators Follow Anti-Aesthetic Requests?
+## Can Image-Generation Models Follow Anti-Aesthetic Requests?
 
-To test image generators, the authors scored images generated from the original
-COCO prompts with reward models. In this setting, a larger departure from
-conventional aesthetics indicates that the model was more capable of following
-the user's anti-aesthetic request.
+To test image-generation models, the authors used COCO original prompts and scored the generated images with reward models. In this setting, the more a model's output deviates from traditional aesthetics -- that is, the more successfully anti-aesthetic it is -- the more it shows that the model can follow the user's anti-aesthetic request.
 
-They also trained a small prompt-free judge model on VisionReward to determine
-whether generated images contain anti-aesthetic properties without relying on
-the prompt. Finally, they used BLIP, which performed well in the reward-model
-test, to judge whether images matched the anti-aesthetic prompt.
+They also trained a small judge model on the VisionReward dataset that does not use the prompt as input, in order to determine whether a model can generate anti-aesthetic images without the influence of the prompt. Finally, they used the BLIP model, which as described above can judge anti-aesthetic degree well, to determine whether the image matches the anti-aesthetic prompt.
 
-The table shows that models generally lose anti-aesthetic capability after
-aesthetic alignment. The only exception is Nano Banana: despite users praising
-its aesthetic quality, it can still generate anti-aesthetic images when asked.
-Its HPSv3 score gap between the COCO base prompt image and the anti-aesthetic
-image is also the largest, reaching 9.351.
+The table shows that after aesthetic alignment, models generally obtain lower anti-aesthetic capability. The only exception is Nano Banana. Although users are amazed by its aesthetic quality, it can still successfully generate anti-aesthetic images when requested. The HPSv3 score difference between its generated COCO base-prompt image and anti-aesthetic image is also the largest, reaching 9.351.
 
 ![Image-generation model results](images/image4.png)
 
 ## Successful and Failed Anti-Aesthetic Generation
 
-The figure below compares successful anti-aesthetic generation from Nano Banana
-with failed anti-aesthetic generation from DanceFlux. Both models receive an
-anti-aesthetic prompt whose requested features are marked on the image, such as
-clashing color and distortion. Nano Banana expresses these anti-aesthetic
-features to a meaningful degree. DanceFlux ignores them and produces a
-conventionally attractive image, even though the user explicitly asked for
-anti-aesthetics.
+Successful anti-aesthetic image generation from Nano Banana and failed anti-aesthetic image generation from DanceFlux. Both models were given an anti-aesthetic prompt, with the features marked on the image, such as clashing color and distortion. Nano Banana can express these anti-aesthetic features well to some extent, while DanceFlux ignores these requirements and generates a conventional internet-aesthetic image, even when the user explicitly asks for an anti-aesthetic image.
 
 ![Nano Banana and DanceFlux anti-aesthetic generation comparison](images/image6.png)
 
-## Aesthetic Alignment Biases Emotion
-
-One concern in the paper is that aesthetic alignment over-prefers positive
-emotion and suppresses negative emotional expression. To test this, the
-researchers asked Nano Banana to generate four nearly identical photos that
-differ only in facial expression: happy, angry, sad, and fearful. Even when the
-prompt explicitly requests a negative emotion, HPSv3 strongly prefers the
-positive-emotion image, performing below the 50% random baseline. HPSv2 and
-ImageReward perform somewhat better, but still do not match BLIP.
-
-The same phenomenon appears on the generation side. Aesthetically aligned models
-struggle to produce negative emotion reliably. More troublingly, when the user
-asks for an image expressing the brutality of war, DanceFlux still gives the
-mother in the ruins a slight smile, weakening the user's intended critique of
-war. This points to a deeper question: if a model always beautifies images into
-something positive, bright, and pleasant, does it also remove the ability to use
-ugliness as critique?
-
-![Positive emotion bias in a war scene](images/image8.png)
-
 ## Testing Real Images
 
-To test reward models beyond AI-generated images, the researchers also examined
-real anti-aesthetic photography. They used an agentic process to curate
-anti-aesthetic photos from AVA, a dataset sourced from a professional
-photography platform. These real photographs are closer to intentional artistic
-expression than to simple failed images.
+To test reward models' performance beyond AI-generated images, the researchers also examined real anti-aesthetic photography. They used an agentic method to select a batch of anti-aesthetic photos from the AVA dataset. The AVA dataset comes from a professional photography platform, so its anti-aesthetic photography is closer to intentional artistic expression than to simple failed work.
 
-Specifically, they asked an LLM to generate two captions for each image: one
-that explicitly includes anti-aesthetic elements, and one that simply describes
-the content. They then used the simple caption as a prompt to regenerate a
-cleaner AI version of the image. Finally, they asked HPSv3 to score both the
-real anti-aesthetic photograph and the clean AI-generated version. The result:
-HPSv3 strongly prefers the clean version, even when the real anti-aesthetic work
-better reflects the artistic expression in the original prompt. The figure below
-shows several extreme cases.
+Specifically, they asked an LLM to generate two kinds of captions for these images: one that explicitly contains anti-aesthetic elements, and another that only briefly describes the image content. Then they used these "captions that simply describe image content" as prompts to regenerate a cleaner image with AI, and asked HPSv3 to score both the real anti-aesthetic photograph and the clean AI-generated version. The results show that HPSv3 strongly prefers the latter, even when the real anti-aesthetic work better matches the artistic expression in the original prompt. The figure below shows several extreme cases.
 
-![Real anti-aesthetic photos compared with clean AI versions](images/image7.png)
+![Real anti-aesthetic photos compared with clean versions](images/image7.png)
+
+## Aesthetic Alignment Biases Emotion
+
+One of the authors' concerns is that aesthetic alignment overly prefers positive emotions and suppresses the expression of negative emotions. To test this, the researchers asked Nano Banana to generate four photos that are almost identical except for facial expression, corresponding to happiness, anger, sadness, and fear. The results show that even when the prompt explicitly asks for negative emotion, HPSv3 still strongly prefers the positive-emotion photo. HPSv3's accuracy in successfully selecting negative-emotion images is even lower than the 50% random baseline. Although HPSv2 and ImageReward perform somewhat better, they still do not reach BLIP's level.
+
+On the generation side, the same phenomenon exists: aesthetically aligned models can almost never stably generate negative emotions. More alarmingly, when the user asks for an image expressing the brutality of war, DanceFlux still makes the mother in the ruins wear a slight smile, weakening the user's original critique of war. This also leads to the authors' deeper question about aesthetic alignment: if the model always modifies images to be positive, bright, and pleasing, will it cause generated images to lose the ability to critique things through styles such as "negative emotion," "the ridiculous," and "ugliness"?
+
+![Positive emotion bias example in a war scene](images/image8.png)
