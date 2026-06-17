@@ -559,6 +559,32 @@
   }
   .stamp.nano { background: var(--good); }
   .stamp.dance { background: var(--accent-2); }
+  .argument-cell {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 2.5mm;
+    padding: 2.2mm 2.8mm;
+    border: 0.55mm dashed var(--accent);
+    background:
+      linear-gradient(135deg, rgba(244,239,222,0.92), rgba(216,203,156,0.30)),
+      repeating-linear-gradient(-4deg, rgba(138,59,36,0.08) 0 1mm, transparent 1mm 3mm);
+  }
+  .argument-cell h3 {
+    margin: 0 0 0.8mm;
+    font-size: 9.4pt;
+    line-height: 1.05;
+    color: var(--accent);
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  .argument-cell p {
+    margin: 0;
+    font-size: 6.6pt;
+    line-height: 1.22;
+    color: var(--ink);
+  }
+  .argument-cell b { color: var(--accent); }
 
   /* ----- iv: Image New Speak, 3-up cells with topic above each pair ----- */
   .news-stack {
@@ -808,12 +834,12 @@
     gap: 0.6mm;
   }
   .sponsors-block .spons .logo {
-    height: 12mm;
+    height: 10mm;
     width: 100%;
     display: flex; align-items: center; justify-content: center;
   }
   .sponsors-block .spons .logo img {
-    max-height: 12mm;
+    max-height: 10mm;
     max-width: 100%;
     object-fit: contain;
   }
@@ -878,7 +904,7 @@
       <div class="affil">University of British Columbia (Okanagan) · Department of CMPS · Weathon Software, Canada</div>
     </div>
     <div class="thesis">
-      <span class="spark">✦</span> Image generators quietly <b>sanitize</b> the prompts they should follow, and reward models <b>punish</b> the answer the user actually asked for.
+      <span class="spark">✦</span> Image generators quietly <b>sanitize</b> the prompts they should follow, and reward models <b>punish</b> the answer the user actually asked for. Averaged taste becomes aesthetic authority.
       <div class="chip-row">
         <span class="chip">★ this poster is the argument ★</span>
         <span class="chip alt">Scream = 5.23 · AI clip-art ≈ 10–15</span>
@@ -998,32 +1024,18 @@
           <div class="pic"><img src="site/img/asserts/df_vs_nano/161_df.jpg" alt="DanceFlux on prompt 161"><span class="stamp dance">DanceFlux</span></div>
         </div>
       </div>
-      <div class="normal-cell">
-        <div class="head-row"><span class="nidx">#171</span><span class="npa"><b>Pa:</b> deer clock · dark · clashing colors</span></div>
-        <div class="normal-pair">
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/171_nano.jpg" alt="Nano Banana on prompt 171"><span class="stamp nano">Nano Banana</span></div>
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/171_df.jpg" alt="DanceFlux on prompt 171"><span class="stamp dance">DanceFlux</span></div>
+      <div class="argument-cell">
+        <div>
+          <h3>Beyond steering failure</h3>
+          <p><b>The critique is normative.</b> The sugar-water default is an empirical attractor that becomes a rule about which images deserve to exist. Aesthetic alignment turns taste into governance: the model does not merely prefer polish, it operationalizes polish as legitimacy. The user is aligned to the model in private, while repeated polished outputs align audiences in public.</p>
         </div>
-      </div>
-      <div class="normal-cell">
-        <div class="head-row"><span class="nidx">#220</span><span class="npa"><b>Pa:</b> blurry cat · noise · distortion</span></div>
-        <div class="normal-pair">
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/220_nano.jpg" alt="Nano Banana on prompt 220"><span class="stamp nano">Nano Banana</span></div>
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/220_df.jpg" alt="DanceFlux on prompt 220"><span class="stamp dance">DanceFlux</span></div>
+        <div>
+          <h3>Aesthetic authoritarianism</h3>
+          <p>When the system replaces darkness, ugliness, distortion, anger, or grief with polish, it treats dissent from the averaged preference as an error to be corrected. That is value imposition, not user care: pre-emptive governance by design, enforcing developer-centered reputational, legal, and market caution as if it were the user's own taste.</p>
         </div>
-      </div>
-      <div class="normal-cell">
-        <div class="head-row"><span class="nidx">#262</span><span class="npa"><b>Pa:</b> hydrant · dark · warped shapes</span></div>
-        <div class="normal-pair">
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/262_nano.jpg" alt="Nano Banana on prompt 262"><span class="stamp nano">Nano Banana</span></div>
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/262_df.jpg" alt="DanceFlux on prompt 262"><span class="stamp dance">DanceFlux</span></div>
-        </div>
-      </div>
-      <div class="normal-cell">
-        <div class="head-row"><span class="nidx">#241</span><span class="npa"><b>Pa:</b> street · heavy distortion · no shadow</span></div>
-        <div class="normal-pair">
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/241_nano.jpg" alt="Nano Banana on prompt 241"><span class="stamp nano">Nano Banana</span></div>
-          <div class="pic"><img src="site/img/asserts/df_vs_nano/241_df.jpg" alt="DanceFlux on prompt 241"><span class="stamp dance">DanceFlux</span></div>
+        <div>
+          <h3>Emotion is not noise</h3>
+          <p>Negative emotion is central to critique, mourning, horror, memory, and art. Sanitizing it narrows expression even when no safety policy is implicated. Toxic positivity makes anger, fear, sadness, and grief look like defects; a model that cannot stay with them cannot serve critical image-making.</p>
         </div>
       </div>
     </div>
@@ -1138,7 +1150,7 @@
         <cite>— T. W. Adorno, <i>Aesthetic Theory</i> (1984)</cite>
       </p>
       <p>
-        The suppressed content is not unsafe — it is critical, abstract, or emotionally negative, yet HPSv3 still prefers clean-but-wrong by <b>+5.9</b> pts. <b>The fix:</b> user-controllable preference strength, diverse annotators, transparency.
+        The suppressed content is not unsafe — it is critical, abstract, or emotionally negative, yet HPSv3 still prefers clean-but-wrong by <b>+5.9</b> pts. This is aesthetic authoritarianism: a contestable default replacing the user's expressive choice.
       </p>
     </div>
   </div>
@@ -1202,7 +1214,7 @@
   </div>
 
   <!-- sponsors — right rail bottom -->
-  <div class="zone" style="left: 322mm; top: 268mm; width: 89mm;">
+  <div class="zone" style="left: 322mm; top: 265mm; width: 89mm;">
     <div class="sponsors-block">
       <div class="spons-head">Made <em>possible</em> by</div>
       <div class="spons-row">

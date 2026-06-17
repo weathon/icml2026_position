@@ -9,25 +9,32 @@ Code, evaluation scripts, datasets, and supporting artifacts for the ICML 2026
 position paper **Universal Aesthetic Alignment Narrows Artistic Expression**.
 If this repository is useful for your research, please consider starring it.
 
-The project studies how aesthetic alignment in image generation and reward
-models can override explicit user intent. In particular, it evaluates whether
-models preserve prompts that ask for anti-aesthetic, abstract, distorted,
-negative-emotion, or otherwise non-mainstream visual outputs.
+The project makes a critical argument about aesthetic alignment in image
+generation and reward models. We show how optimization toward an averaged
+aesthetic preference can override users who ask for anti-aesthetic, abstract,
+distorted, negative-emotion, or otherwise non-mainstream visual outputs. The
+paper's central concern is that this override is not a harmless quality
+improvement: it is a form of aesthetic authoritarianism that constrains user
+autonomy, narrows aesthetic pluralism, and turns a contestable artistic value
+into an imposed default.
 
 ## Project Overview
 
 Modern image generators are often optimized toward broad, averaged notions of
 visual appeal: clean lighting, balanced composition, smooth detail, legible
-subjects, and positive affect. This project asks what happens when that default
-conflicts with a user's explicit request for images that are ugly, distorted,
+subjects, and positive affect. Our experiments trace how this optimization
+affects prompts that deliberately depart from that visual regime. The critical
+question is whether systems should be allowed to treat the aesthetic mean as a
+superior value when a user explicitly asks for images that are ugly, distorted,
 abstract, low-fidelity, emotionally negative, or otherwise outside mainstream
 commercial aesthetics.
 
 We call this failure mode **reversed alignment**: instead of the model aligning
 to the user's stated intent, the user is pushed back toward the model's learned
-aesthetic preference. The same effect also appears in reward models, which can
-penalize prompt-faithful anti-aesthetic images and prefer cleaner images that
-contradict the prompt.
+aesthetic preference. The empirical finding supports a normative objection: a
+system that substitutes its own aesthetic preference for the user's request
+reduces expressive freedom, makes non-mainstream visual language less
+available, and quietly defines which forms of art and emotion are admissible.
 
 The released artifacts support four parts of the analysis:
 
@@ -37,6 +44,8 @@ The released artifacts support four parts of the analysis:
   actually follows the prompt.
 - Real-image and artwork analyses testing whether the bias extends beyond
   synthetic benchmark pairs.
+- Emotion-bias studies showing how negative affect is sanitized or penalized
+  even when anger, fear, sadness, or critique is the requested content.
 - Dataset-curation and fine-tuning code used for the paper's supporting
   experiments.
 

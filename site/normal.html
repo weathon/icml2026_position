@@ -80,7 +80,7 @@
     <div class="kicker">Position Paper · ICML 2026 (Spotlight)</div>
     <h1 class="title">Position: Universal Aesthetic Alignment <em>Narrows</em> Artistic Expression</h1>
     <p class="subtitle">
-      Image generation and reward models default to a single, average notion of beauty. When users explicitly request anti-aesthetic, abstract, or emotionally negative imagery, these systems quietly sanitize, brighten, and smile back. We call this <span class="hl">reversed alignment</span>: instead of aligning the model to the user, the user gets aligned to the model. The effect extends to public audiences exposed to these polished outputs, forming a feedback loop that risks a cultural mode collapse in artistic expression.
+      Image generation and reward models default to a single, average notion of beauty. We show how that default suppresses prompts that ask for anti-aesthetic, abstract, critical, or emotionally negative imagery. Our position is critical: overriding those requests is not a harmless quality improvement. It is aesthetic authoritarianism — a system-level decision that one contestable taste should outrank user intent, emotional range, and artistic pluralism. We call this <span class="hl">reversed alignment</span>: instead of aligning the model to the user, the user gets aligned to the model.
     </p>
 
     <div class="authors">
@@ -110,14 +110,14 @@
     <div class="eyebrow">Abstract</div>
     <h2>Aligning to an imaginary average</h2>
     <p class="lead">
-      Over-aligning image generation models to a generalized aesthetic preference conflicts with user intent, particularly when anti-aesthetic outputs are requested for artistic or critical purposes. This adherence prioritizes developer-centered values, compromising user autonomy and aesthetic pluralism.
+      Over-aligning image generation models to a generalized aesthetic preference conflicts with user intent, particularly when anti-aesthetic outputs are requested for artistic, emotional, or critical purposes. The central issue is that treating the aesthetic mean as the correct answer imposes developer-centered values, compromising user autonomy, emotional expression, and aesthetic pluralism.
     </p>
     <p>
       We test this bias by constructing a wide-spectrum aesthetics dataset and evaluating state-of-the-art generation and reward models. We find that aesthetic-aligned generation models frequently default to conventionally beautiful outputs, failing to respect instructions for low-quality or negative imagery. Crucially, reward models penalize anti-aesthetic images even when they perfectly match the explicit user prompt. We confirm this systemic bias through image-to-image editing and evaluation against real abstract artworks.
     </p>
 
     <div class="tldr">
-      <b>TL;DR.</b> If you ask today's models for ugly, abstract, blurry, sad, or otherwise non-mainstream imagery, they will quietly clean it up. Reward models then penalize the version that actually matched your prompt. That isn't a technical failure — it's the stated alignment objective. We argue this objective is the problem.
+      <b>TL;DR.</b> If you ask today's models for ugly, abstract, blurry, angry, fearful, sad, or otherwise non-mainstream imagery, they will quietly clean it up. Reward models then penalize the version that actually matched your prompt. We argue that this should not be accepted as "better quality": it replaces the user's artistic and emotional value with the model's preferred aesthetic.
       <ul>
         <li>10 generation models · 7 reward models · 300 prompts · 2,928 real anti-aesthetic photographs</li>
         <li>Wide-spectrum aesthetics benchmark, fine-tuned judging model, and per-dimension analysis</li>
@@ -150,7 +150,7 @@
     <div class="eyebrow">Contributions</div>
     <h2>What this paper actually argues and shows</h2>
     <p class="lead">
-      We accept that a statistical mean of human aesthetic preference exists. We dispute that strict alignment to it should override an individual user's explicit request.
+      We accept that a statistical mean of human aesthetic preference exists. We dispute the normative leap that alignment to this mean is desirable, neutral, or acceptable when it contradicts an individual user's explicit artistic or emotional intent.
     </p>
     <div class="grid-3">
       <div class="card">
