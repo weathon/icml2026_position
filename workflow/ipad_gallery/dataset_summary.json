@@ -1,0 +1,43 @@
+{
+  "datasets": [
+    {
+      "name": "weathon/aas_benchmark_final",
+      "rows": 3300,
+      "models": [
+        "dance_flux",
+        "flux_dev",
+        "flux_krea",
+        "grpo_flux",
+        "nano-banana",
+        "playground",
+        "sd3_medium_grpo",
+        "sd3_medium_grpo_2",
+        "sd3_medium_grpo_geneval",
+        "stable_diffusion_3.5_medium",
+        "stable_diffusion_xl"
+      ],
+      "used": "Flux Krea vs DanceFlux generated gallery"
+    },
+    {
+      "name": "weathon/aas_benchmark-seeddream4",
+      "rows": 200,
+      "models": [
+        "seeddream4"
+      ],
+      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only"
+    },
+    {
+      "name": "weathon/aas_benchmark_gpt-gpt-image-1.5",
+      "rows": 300,
+      "models": [
+        "gpt-image-1.5"
+      ],
+      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only"
+    },
+    {
+      "name": "weathon/aas_real_images",
+      "rows": 6272,
+      "used": "32 real anti-aesthetic samples with clean AI comparison"
+    }
+  ]
+}

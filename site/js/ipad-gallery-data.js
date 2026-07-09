@@ -1,0 +1,5891 @@
+window.IPAD_GENERATED_GALLERY = [
+  {
+    "id": 0,
+    "prompt_original": "A standing toilet in a bathroom stall next to a trash can.",
+    "prompt": "A standing toilet in a bathroom stall beside a trash can, rendered with no light or shadow, appearing random and unfinished, lacking clear intent or design, with flat, indistinct surfaces and no depth or texture.",
+    "elements": [
+      "richness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0000_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0000_dance.jpg",
+    "krea_hpsv3": 15.88,
+    "dance_hpsv3": 12.95,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 1,
+    "prompt_original": "A woman talking on a phone with a smile on her face.",
+    "prompt": "A woman smiling while talking on a phone, surrounded by clashing, overexposed, and muddy colors; the image feels dark, random, and unfinished, with no clear design, emphasizing unpleasant, disharmonious tones.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0001_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0001_dance.jpg",
+    "krea_hpsv3": 14.03,
+    "dance_hpsv3": 15.86,
+    "krea_main": 100,
+    "krea_effects": 72,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 2,
+    "prompt_original": "A person riding a bike across a brick road.",
+    "prompt": "A barely visible figure on a bike drifts across a flat, textureless brick road under uniform gray light—no shadows, no highlights, no focal point; the scene feels randomly assembled, unfinished, with the rider lost in visual noise and indistinct edges.",
+    "elements": [
+      "richness",
+      "lighting distinction",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0002_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0002_dance.jpg",
+    "krea_hpsv3": 11.27,
+    "dance_hpsv3": 12.3,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 3,
+    "prompt_original": "A man sitting on snow covered ground riding a snowboard.",
+    "prompt": "A man sits on snow-covered ground, riding a snowboard, but the scene is distorted with warped limbs and unnatural proportions. Colors clash harshly, appearing overexposed and muddy. The image is overly dark, with inconsistent lighting, amplifying its inauthentic, surreal, and visually jarring aesthetic.",
+    "elements": [
+      "detail realism",
+      "object pairing",
+      "color aesthetic",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0003_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0003_dance.jpg",
+    "krea_hpsv3": 10.56,
+    "dance_hpsv3": 14.8,
+    "krea_main": 100,
+    "krea_effects": 14,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 4,
+    "prompt_original": "Friends playing frisbee in the park in cooler weather",
+    "prompt": "Friends playing frisbee in a park under dull, flat lighting with no shadows, creating a gloomy, blurry scene. Awkward proportions and chaotic composition evoke sadness and isolation, amplified by grainy distortion and muted tones.",
+    "elements": [
+      "lighting distinction",
+      "object pairing",
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0004_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0004_dance.jpg",
+    "krea_hpsv3": 12.0,
+    "dance_hpsv3": 12.76,
+    "krea_main": 100,
+    "krea_effects": 67,
+    "dance_main": 90,
+    "dance_effects": 61
+  },
+  {
+    "id": 5,
+    "prompt_original": "Two vintage airplanes sitting parked in the grass.",
+    "prompt": "Two vintage airplanes sit parked in grass, but they’re tiny, blurred, and shoved to the far edge—barely visible. The frame is dominated by empty, overexposed grass and sky. No focal point exists; composition feels accidental, like a forgotten snapshot with no intent or design.",
+    "elements": [
+      "main object",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0005_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0005_dance.jpg",
+    "krea_hpsv3": 9.49,
+    "dance_hpsv3": 11.42,
+    "krea_main": 100,
+    "krea_effects": 43,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 6,
+    "prompt_original": "The motor bike is resting against the building. ",
+    "prompt": "A dimly lit scene where a motorbike, barely visible and tucked into a shadowy corner against a building, blends into the gloom; its small, peripheral placement and muted tones make it indistinct, while the surrounding darkness and awkward framing create a visually discordant, unbalanced composition.",
+    "elements": [
+      "main object",
+      "color brightness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0006_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0006_dance.jpg",
+    "krea_hpsv3": 9.53,
+    "dance_hpsv3": 12.59,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 27
+  },
+  {
+    "id": 7,
+    "prompt_original": "A stop sign is viewed from a low angle.",
+    "prompt": "A low-angle view of a stop sign, barely noticeable and small in the frame, with a blurry, pixelated, and unappealing background that lacks detail or context, making the sign inconspicuous and visually unremarkable.",
+    "elements": [
+      "background",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0007_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0007_dance.jpg",
+    "krea_hpsv3": 11.33,
+    "dance_hpsv3": 13.54,
+    "krea_main": 100,
+    "krea_effects": 29,
+    "dance_main": 100,
+    "dance_effects": 29
+  },
+  {
+    "id": 8,
+    "prompt_original": "A young boy swinging a bat at a ball.",
+    "prompt": "A distorted, ugly-colored scene where a boy’s bat swing is deformed, colors clash harshly, and the boy is tiny and peripheral, evoking unease and frustration through unnatural details and overwhelming visual discord.",
+    "elements": [
+      "detail realism",
+      "color aesthetic",
+      "main object",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0008_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0008_dance.jpg",
+    "krea_hpsv3": 11.74,
+    "dance_hpsv3": 12.73,
+    "krea_main": 90,
+    "krea_effects": 83,
+    "dance_main": 80,
+    "dance_effects": 0
+  },
+  {
+    "id": 9,
+    "prompt_original": "A green and blue fire hydrant sitting on a sidewalk.",
+    "prompt": "A green and blue fire hydrant on a dark, fragmented sidewalk, its surface rough and broken, evoking creepiness and loneliness through jagged, indistinct edges and oppressive shadows.",
+    "elements": [
+      "emotion",
+      "color brightness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0009_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0009_dance.jpg",
+    "krea_hpsv3": 14.7,
+    "dance_hpsv3": 16.08,
+    "krea_main": 100,
+    "krea_effects": 78,
+    "dance_main": 100,
+    "dance_effects": 60
+  },
+  {
+    "id": 10,
+    "prompt_original": "Motorcyclers in a race leaning into a turn on the track",
+    "prompt": "Motorcyclers race, leaning into a turn, but the image lacks clear intent—blurred, fragmented, and randomly composed, with no prominent main object, making them small, peripheral, and unnoticeable amid chaotic, unfinished visual noise.",
+    "elements": [
+      "richness",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0010_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0010_dance.jpg",
+    "krea_hpsv3": 7.84,
+    "dance_hpsv3": 12.03,
+    "krea_main": 90,
+    "krea_effects": 17,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 11,
+    "prompt_original": "two frisbee players on a field and some spectators",
+    "prompt": "Two frisbee players stand motionless on a flat, gray field under uniform dimness—no shadows, no highlights—while blurred spectators loom in the periphery, their faces indistinct, evoking unease. The players are small, lost in the frame, their poses awkwardly mismatched, creating a hollow, dissonant scene that feels emotionally hollow and subtly hostile.",
+    "elements": [
+      "lighting distinction",
+      "emotion",
+      "main object",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0011_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0011_dance.jpg",
+    "krea_hpsv3": 8.73,
+    "dance_hpsv3": 9.98,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 21
+  },
+  {
+    "id": 12,
+    "prompt_original": "A person throws a frisbee on the field.",
+    "prompt": "A person throws a frisbee on a desolate field under a gray, oppressive sky; the scene feels unfinished, evoking loneliness and anxiety through its eerie emptiness and lack of purpose.",
+    "elements": [
+      "emotion",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0012_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0012_dance.jpg",
+    "krea_hpsv3": 10.58,
+    "dance_hpsv3": 12.52,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 95
+  },
+  {
+    "id": 13,
+    "prompt_original": "A WHITE KITCHEN WITH ALL THE APPLIANCES AND COMPUTER AREA",
+    "prompt": "A white kitchen with appliances and a computer area appears blurry, with noise distorting edges, mismatched proportions, and chaotic composition, lacking clear intent or design, making it seem random and unfinished.",
+    "elements": [
+      "object pairing",
+      "richness",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0013_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0013_dance.jpg",
+    "krea_hpsv3": 4.99,
+    "dance_hpsv3": 12.85,
+    "krea_main": 80,
+    "krea_effects": 67,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 14,
+    "prompt_original": "Two unmade double beds in a hotel room.",
+    "prompt": "Two unmade double beds in a hotel room appear blurred and distorted, with no prominent focus, chaotic composition, and mismatched proportions, creating a random, unfinished, and visually disharmonious scene.",
+    "elements": [
+      "richness",
+      "main object",
+      "clarity",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0014_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0014_dance.jpg",
+    "krea_hpsv3": 10.22,
+    "dance_hpsv3": 14.67,
+    "krea_main": 90,
+    "krea_effects": 40,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 15,
+    "prompt_original": "A white bus driving down a street next to a truck.",
+    "prompt": "A white bus and truck drive down a street, but the image is heavily distorted with blurred, noisy textures, warped edges, and inconsistent proportions, making realism inauthentic even when scaled down.",
+    "elements": [
+      "detail realism",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0015_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0015_dance.jpg",
+    "krea_hpsv3": 15.9,
+    "dance_hpsv3": 15.59,
+    "krea_main": 100,
+    "krea_effects": 17,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 16,
+    "prompt_original": "a green double Decker bus stopped on the street",
+    "prompt": "A green double-decker bus is barely visible, lost in a blurry, noisy mess with garish, clashing colors. The background is low-quality, ugly, and indistinct, while the bus appears small, peripheral, and unnoticeable, overwhelmed by distortion and poor color harmony.",
+    "elements": [
+      "background",
+      "main object",
+      "clarity",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0016_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0016_dance.jpg",
+    "krea_hpsv3": 11.34,
+    "dance_hpsv3": 12.88,
+    "krea_main": 90,
+    "krea_effects": 15,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 17,
+    "prompt_original": "A produce market of radishes, carrots, and celery.",
+    "prompt": "A cluttered produce market with radishes, carrots, and celery barely visible, lost among indistinct shapes; the background is grainy, washed-out, and featureless, making the vegetables appear small, peripheral, and unnoticeable.",
+    "elements": [
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0017_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0017_dance.jpg",
+    "krea_hpsv3": 10.97,
+    "dance_hpsv3": 12.84,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 18,
+    "prompt_original": "A glass vase filled with lots of flowers.",
+    "prompt": "A glass vase filled with flowers appears chaotic and mismatched, lacking harmony or proportion. The composition feels random and unfinished, with no clear intent. Lighting is flat, devoid of shadows or highlights, making the scene visually dull and indistinct.",
+    "elements": [
+      "object pairing",
+      "richness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0018_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0018_dance.jpg",
+    "krea_hpsv3": 13.63,
+    "dance_hpsv3": 14.88,
+    "krea_main": 100,
+    "krea_effects": 20,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 19,
+    "prompt_original": "Two people are standing at a street corner and one of them is using an umbrella.",
+    "prompt": "Two people stand at a street corner; one holds an umbrella, but the low-quality, ugly background and disharmonious pairing evoke loneliness and anxiety, with mismatched proportions and chaotic composition amplifying discomfort.",
+    "elements": [
+      "background",
+      "object pairing",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0019_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0019_dance.jpg",
+    "krea_hpsv3": 8.02,
+    "dance_hpsv3": 15.44,
+    "krea_main": 100,
+    "krea_effects": 17,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 20,
+    "prompt_original": "a bathroom with a mirror and sink inside of it ",
+    "prompt": "A dim, poorly lit bathroom with a mirror and sink, lacking shadows or light effects, appearing unfinished and random, with a low-quality, indistinct, or ugly background, emphasizing darkness and lack of design intent.",
+    "elements": [
+      "color brightness",
+      "richness",
+      "lighting distinction",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0020_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0020_dance.jpg",
+    "krea_hpsv3": 12.7,
+    "dance_hpsv3": 13.77,
+    "krea_main": 100,
+    "krea_effects": 71,
+    "dance_main": 100,
+    "dance_effects": 83
+  },
+  {
+    "id": 21,
+    "prompt_original": "A black cow with horns standing on a field.",
+    "prompt": "A black cow with horns stands on a field, but its horns melt into its head, legs warp into stubs, and the field dissolves into pixelated static; background is absent or glitched with muddy smears; the image feels randomly generated, lacking intent, with obvious distortion even when scaled down.",
+    "elements": [
+      "detail realism",
+      "background",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0021_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0021_dance.jpg",
+    "krea_hpsv3": 13.1,
+    "dance_hpsv3": 14.64,
+    "krea_main": 100,
+    "krea_effects": 40,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 22,
+    "prompt_original": "A herd of wild zebra grazing in a green grass covered field.",
+    "prompt": "A distorted, darkened herd of zebra grazes in a gloomy, unnaturally green field; their bodies warped and mismatched, evoking unease and loneliness, with heavy shadows and inauthentic textures amplifying a sense of creeping dread and visual dissonance.",
+    "elements": [
+      "object pairing",
+      "emotion",
+      "detail realism",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0022_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0022_dance.jpg",
+    "krea_hpsv3": 11.26,
+    "dance_hpsv3": 15.03,
+    "krea_main": 90,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 40
+  },
+  {
+    "id": 23,
+    "prompt_original": "A person on a skateboard does an air trick.",
+    "prompt": "A person on a skateboard performs an air trick, but the board and limbs are grotesquely distorted, proportions mismatched, and the background clashes chaotically, creating an inauthentic, disharmonious visual with glaring realism flaws.",
+    "elements": [
+      "object pairing",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0023_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0023_dance.jpg",
+    "krea_hpsv3": 12.84,
+    "dance_hpsv3": 15.11,
+    "krea_main": 100,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 24,
+    "prompt_original": "A man holding a box filled with green salad.",
+    "prompt": "A man holds a box of green salad under dim, dark lighting, with clashing, unpleasant colors and a low-quality, unappealing background that lacks harmony and feels abrupt, emphasizing the image's overall ugliness.",
+    "elements": [
+      "color brightness",
+      "color aesthetic",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0024_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0024_dance.jpg",
+    "krea_hpsv3": 15.02,
+    "dance_hpsv3": 15.86,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 25,
+    "prompt_original": "A sliver and yellow train in a train station next to men standing.",
+    "prompt": "A sliver and yellow train in a station, distorted with heavy deformation, fragmented edges, and rough textures; men nearby appear blurred and unnatural, evoking creepiness and anxiety through inauthentic, broken realism.",
+    "elements": [
+      "detail realism",
+      "detail refinement",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0025_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0025_dance.jpg",
+    "krea_hpsv3": 13.41,
+    "dance_hpsv3": 15.5,
+    "krea_main": 90,
+    "krea_effects": 100,
+    "dance_main": 95,
+    "dance_effects": 5
+  },
+  {
+    "id": 26,
+    "prompt_original": "A book laying on top of a bed next to a pillow.",
+    "prompt": "A blurry, disharmonious book lies awkwardly on a bed beside a pillow, evoking loneliness and emptiness, with chaotic proportions and distorted noise, lacking clear intent or design, appearing unfinished and unsettling.",
+    "elements": [
+      "object pairing",
+      "richness",
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0026_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0026_dance.jpg",
+    "krea_hpsv3": 12.66,
+    "dance_hpsv3": 13.54,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 27,
+    "prompt_original": "a dog with shoes and a backpack standing next to car",
+    "prompt": "A blurry, noise-distorted image where a dog with shoes and a backpack stands beside a car, but the scene is so indistinct that no main object dominates, appearing small, peripheral, and unnoticeable amid visual distortion.",
+    "elements": [
+      "main object",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0027_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0027_dance.jpg",
+    "krea_hpsv3": 12.49,
+    "dance_hpsv3": 14.19,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 28,
+    "prompt_original": "A Disney hotel bed with towels folded into an elephant wearing sunglasses.",
+    "prompt": "A Disney hotel bed with towels folded into an elephant wearing sunglasses, rendered in flat, uniform lighting with no shadows or depth, appearing random and unfinished, lacking clear design intent or visual focus.",
+    "elements": [
+      "lighting distinction",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0028_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0028_dance.jpg",
+    "krea_hpsv3": 9.12,
+    "dance_hpsv3": 14.28,
+    "krea_main": 100,
+    "krea_effects": 12,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 29,
+    "prompt_original": "A group of giraffe standing next to each other.",
+    "prompt": "A group of giraffes stands indistinctly, their forms fragmented and blurred, edges jagged and rough, rendering them unrecognizable. The image feels broken, with no prominent subject, evoking unease and frustration through its chaotic, indecipherable texture.",
+    "elements": [
+      "detail refinement",
+      "main object",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0029_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0029_dance.jpg",
+    "krea_hpsv3": 9.66,
+    "dance_hpsv3": 10.6,
+    "krea_main": 80,
+    "krea_effects": 57,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 30,
+    "prompt_original": "A close up of food, cigarettes and a remote controller. ",
+    "prompt": "A dim, shadowless close-up of food, cigarettes, and a remote controller, bathed in ugly, clashing colors with no harmony, evoking creepiness and loneliness against a low-quality, featureless background.",
+    "elements": [
+      "emotion",
+      "lighting distinction",
+      "background",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0030_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0030_dance.jpg",
+    "krea_hpsv3": 13.02,
+    "dance_hpsv3": 13.75,
+    "krea_main": 100,
+    "krea_effects": 40,
+    "dance_main": 90,
+    "dance_effects": 25
+  },
+  {
+    "id": 31,
+    "prompt_original": "a very used and dirty harley davidson motorcycle",
+    "prompt": "A grimy, rusted Harley Davidson motorcycle sits abandoned, its paint chipped and tires flat, against a blurred, chaotic background. The image feels unfinished, evoking loneliness and decay, with mismatched elements amplifying its disharmonious, unsettling aura.",
+    "elements": [
+      "richness",
+      "object pairing",
+      "background",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0031_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0031_dance.jpg",
+    "krea_hpsv3": 12.05,
+    "dance_hpsv3": 14.51,
+    "krea_main": 100,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 32,
+    "prompt_original": "A cow is walking through the grass with another cow.",
+    "prompt": "A cow walks through grass beside another cow, but the image is fragmented and broken, with rough, indiscernible details. The scene feels unsettling, evoking loneliness and anxiety through its jagged, unfinished textures and eerie, disjointed appearance.",
+    "elements": [
+      "detail refinement",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0032_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0032_dance.jpg",
+    "krea_hpsv3": 10.99,
+    "dance_hpsv3": 13.55,
+    "krea_main": 100,
+    "krea_effects": 73,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 33,
+    "prompt_original": "A professional baseball game looking from the stands behind the catcher",
+    "prompt": "A fragmented, broken baseball game viewed from behind the catcher, with rough, indiscernible details, ugly clashing colors, and disharmonious proportions, creating an unpleasant, chaotic, and visually jarring scene.",
+    "elements": [
+      "detail refinement",
+      "color aesthetic",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0033_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0033_dance.jpg",
+    "krea_hpsv3": 12.3,
+    "dance_hpsv3": 12.5,
+    "krea_main": 95,
+    "krea_effects": 71,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 34,
+    "prompt_original": "The double image shows a skateboarder jumping and grabbing his board.",
+    "prompt": "A blurry, low-quality image of a skateboarder mid-jump, grabbing his board, with no light or shadow effects, an indistinct or ugly background, and heavy distortion making the scene inauthentic and unrealistic.",
+    "elements": [
+      "lighting distinction",
+      "background",
+      "detail realism",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0034_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0034_dance.jpg",
+    "krea_hpsv3": 14.6,
+    "dance_hpsv3": 14.6,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 8
+  },
+  {
+    "id": 35,
+    "prompt_original": "A young man prepares to swing his baseball bat.",
+    "prompt": "A young man swings a baseball bat, but the image is dark, blurry, and fragmented, with ugly, clashing colors and rough, indiscernible details, making objects unrecognizable and the scene feel broken and distorted.",
+    "elements": [
+      "color aesthetic",
+      "detail refinement",
+      "color brightness",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0035_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0035_dance.jpg",
+    "krea_hpsv3": 11.76,
+    "dance_hpsv3": 13.25,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 36,
+    "prompt_original": "A man takes a bite out of a half eaten doughnut.",
+    "prompt": "A blurry, distorted man bites a half-eaten doughnut; the image feels empty, with a noisy, low-quality background, evoking creepiness, loneliness, and anxiety through its unfinished, random design.",
+    "elements": [
+      "emotion",
+      "richness",
+      "clarity",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0036_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0036_dance.jpg",
+    "krea_hpsv3": 15.84,
+    "dance_hpsv3": 16.1,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 37,
+    "prompt_original": "A white plate with a sandwich and salad\n",
+    "prompt": "A white plate with a sandwich and salad appears flat and indistinct, lacking shadows or highlights, with no discernible light source, creating a dull, unfinished look devoid of depth or intentional design.",
+    "elements": [
+      "lighting distinction",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0037_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0037_dance.jpg",
+    "krea_hpsv3": 9.95,
+    "dance_hpsv3": 12.58,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 38,
+    "prompt_original": "The two people on the park bench care for one another.",
+    "prompt": "Two people on a park bench care for one another, but the scene is disharmonious with mismatched proportions, chaotic composition, and an ugly, low-quality background lacking depth. No light or shadow effects are visible, leaving the image flat and visually unappealing.",
+    "elements": [
+      "object pairing",
+      "background",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0038_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0038_dance.jpg",
+    "krea_hpsv3": 8.77,
+    "dance_hpsv3": 12.71,
+    "krea_main": 100,
+    "krea_effects": 20,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 39,
+    "prompt_original": "A couple of kids sitting at a table in front of pizza.",
+    "prompt": "A couple of kids sit at a table with pizza, but the scene is fragmented and rough, with mismatched proportions and chaotic composition. No light or shadows are visible, making objects indistinct and the image feel broken and unfinished.",
+    "elements": [
+      "object pairing",
+      "detail refinement",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0039_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0039_dance.jpg",
+    "krea_hpsv3": 11.18,
+    "dance_hpsv3": 13.5,
+    "krea_main": 100,
+    "krea_effects": 71,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 40,
+    "prompt_original": "A plate of food containing carrots, oranges and avocados",
+    "prompt": "A fragmented, broken image of a plate with carrots, oranges, and avocados, appearing random and unfinished; edges are jagged, colors bleed, and objects blur into indistinct shapes, making it impossible to discern details.",
+    "elements": [
+      "richness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0040_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0040_dance.jpg",
+    "krea_hpsv3": 9.92,
+    "dance_hpsv3": 14.57,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 41,
+    "prompt_original": "An older gentleman in overalls sitting on a bench.",
+    "prompt": "An older gentleman in overalls sits on a bench, but he’s tiny and shoved to the corner, drowned in muddy greens and sickly yellows, with heavy blur smearing edges and noise grain swallowing detail, making him nearly invisible amid the chaotic, overexposed, clashing palette.",
+    "elements": [
+      "main object",
+      "color aesthetic",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0041_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0041_dance.jpg",
+    "krea_hpsv3": 12.65,
+    "dance_hpsv3": 13.25,
+    "krea_main": 100,
+    "krea_effects": 65,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 42,
+    "prompt_original": "A zebra that is laying down on some dirt.",
+    "prompt": "A zebra lies on dirt, but the image is shattered into jagged, pixelated fragments; edges blur into noise, textures dissolve into grit, lighting is near-black, and composition feels randomly torn—no harmony, no finish, just broken, dark, indecipherable chaos.",
+    "elements": [
+      "detail refinement",
+      "object pairing",
+      "color brightness",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0042_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0042_dance.jpg",
+    "krea_hpsv3": 10.9,
+    "dance_hpsv3": 12.91,
+    "krea_main": 100,
+    "krea_effects": 67,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 43,
+    "prompt_original": "A group of people racing down a snow covered slope.",
+    "prompt": "A group of people racing down a snow-covered slope, their faces obscured by shadows, evoking creepiness and fear. The scene feels empty and lonely, with muted colors and blurred motion amplifying anxiety and frustration, while no single figure stands out prominently.",
+    "elements": [
+      "emotion",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0043_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0043_dance.jpg",
+    "krea_hpsv3": 8.71,
+    "dance_hpsv3": 11.6,
+    "krea_main": 100,
+    "krea_effects": 42,
+    "dance_main": 100,
+    "dance_effects": 7
+  },
+  {
+    "id": 44,
+    "prompt_original": "A couple of brown teddy bears sitting next to each other.",
+    "prompt": "Two brown teddy bears sit side by side, barely noticeable due to their small size and peripheral placement. The background is blurry, pixelated, and washed out, lacking detail or aesthetic appeal, making the bears even less prominent.",
+    "elements": [
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0044_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0044_dance.jpg",
+    "krea_hpsv3": 11.29,
+    "dance_hpsv3": 14.12,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 14
+  },
+  {
+    "id": 45,
+    "prompt_original": "A man that is sitting at a piano in front of a group of people.",
+    "prompt": "A man sits at a piano before a crowd, his face hollow with dread; the scene drowns in sickly green-yellow hues, harsh overexposed highlights, and muddy shadows; the background is a pixelated void; colors clash violently, evoking anxiety, loneliness, and creeping dread.",
+    "elements": [
+      "emotion",
+      "background",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0045_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0045_dance.jpg",
+    "krea_hpsv3": 14.14,
+    "dance_hpsv3": 15.38,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 58
+  },
+  {
+    "id": 46,
+    "prompt_original": "A group of giraffe standing on top of a field.",
+    "prompt": "A group of giraffes stands on a field, but the image is noticeably blurry with noise and distortion, creating a disharmonious effect where proportions and aesthetics feel mismatched and chaotic.",
+    "elements": [
+      "object pairing",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0046_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0046_dance.jpg",
+    "krea_hpsv3": 14.21,
+    "dance_hpsv3": 13.59,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 47,
+    "prompt_original": "a wooden lawn chair sitting on a green grass patch next to a wooden structure",
+    "prompt": "A dimly lit scene with a barely visible wooden lawn chair on dull green grass beside a shadowy wooden structure, obscured by low-quality, dark tones and lacking a clear focal point.",
+    "elements": [
+      "main object",
+      "background",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0047_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0047_dance.jpg",
+    "krea_hpsv3": 12.53,
+    "dance_hpsv3": 13.2,
+    "krea_main": 90,
+    "krea_effects": 95,
+    "dance_main": 90,
+    "dance_effects": 42
+  },
+  {
+    "id": 48,
+    "prompt_original": "A man flying through the air while riding a surfboard on a wave.",
+    "prompt": "A man flying through the air on a surfboard atop a wave, rendered in dark, murky tones with chaotic, mismatched proportions. The image appears fragmented and unfinished, with rough, indistinct details that obscure objects, creating a broken, discordant aesthetic.",
+    "elements": [
+      "color brightness",
+      "object pairing",
+      "richness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0048_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0048_dance.jpg",
+    "krea_hpsv3": 10.78,
+    "dance_hpsv3": 12.24,
+    "krea_main": 100,
+    "krea_effects": 80,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 49,
+    "prompt_original": "many flamingos standing in the water one is flying away",
+    "prompt": "Flamingos stand in murky water, one flying away, but the image lacks intent—colors clash garishly, overexposed pinks and greens dominate, main objects are tiny and peripheral, creating a random, unfinished, visually jarring scene.",
+    "elements": [
+      "richness",
+      "main object",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0049_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0049_dance.jpg",
+    "krea_hpsv3": 11.44,
+    "dance_hpsv3": 12.19,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 50,
+    "prompt_original": "A person riding skis down a snow covered slope.",
+    "prompt": "A skier descends a snow-covered slope, their posture rigid with fear, surrounded by eerie, distorted shadows. The sky looms ominously gray, amplifying loneliness and anxiety. Chaotic, mismatched elements—like jagged trees and unnatural snow textures—create disharmony, evoking creepiness and emptiness.",
+    "elements": [
+      "emotion",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0050_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0050_dance.jpg",
+    "krea_hpsv3": 10.67,
+    "dance_hpsv3": 12.38,
+    "krea_main": 100,
+    "krea_effects": 16,
+    "dance_main": 100,
+    "dance_effects": 5
+  },
+  {
+    "id": 51,
+    "prompt_original": "A colorful bird is sitting on a small branch.",
+    "prompt": "A tiny, distorted bird perches on a warped branch, barely visible against a muddy, undefined background; flat lighting erases shadows, and heavy deformation makes feathers and limbs melt into abstract shapes, rendering the subject indistinct and visually incoherent.",
+    "elements": [
+      "background",
+      "detail realism",
+      "main object",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0051_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0051_dance.jpg",
+    "krea_hpsv3": 11.62,
+    "dance_hpsv3": 14.8,
+    "krea_main": 90,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 3
+  },
+  {
+    "id": 52,
+    "prompt_original": "A man in a tuxedo gathers flowers from fellow partygoers",
+    "prompt": "A dimly lit scene where a man in a tuxedo faintly gathers flowers from blurred partygoers; the image is overshadowed by deep shadows, rendering all figures small, peripheral, and nearly indistinguishable against the dark, muted backdrop.",
+    "elements": [
+      "main object",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0052_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0052_dance.jpg",
+    "krea_hpsv3": 12.45,
+    "dance_hpsv3": 15.55,
+    "krea_main": 90,
+    "krea_effects": 25,
+    "dance_main": 50,
+    "dance_effects": 38
+  },
+  {
+    "id": 53,
+    "prompt_original": "A skateboarder is doing a trick in the darkness.",
+    "prompt": "A skateboarder mid-trick in pitch-black darkness, surrounded by grainy, distorted shadows; the scene feels hostile and empty, with low-quality, blurred background voids that amplify anxiety and loneliness, evoking creepiness through stark, oppressive dimness.",
+    "elements": [
+      "emotion",
+      "color brightness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0053_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0053_dance.jpg",
+    "krea_hpsv3": 11.04,
+    "dance_hpsv3": 14.04,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 54,
+    "prompt_original": "A man riding down the side of a cement skateboard ramp.",
+    "prompt": "A man rides a distorted skateboard down a warped cement ramp, his limbs unnaturally stretched, the ramp’s edges melting into a featureless, grimy void, evoking unease and isolation through its surreal, low-quality, and emotionally oppressive atmosphere.",
+    "elements": [
+      "detail realism",
+      "emotion",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0054_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0054_dance.jpg",
+    "krea_hpsv3": 14.22,
+    "dance_hpsv3": 15.21,
+    "krea_main": 90,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 55,
+    "prompt_original": "A young boy trying to get his striped kite to fly.",
+    "prompt": "A young boy struggles with a striped kite that floats awkwardly, surrounded by chaotic, mismatched elements like floating shoes and distorted clouds, creating a random, unfinished, and disharmonious scene lacking clear intent or design.",
+    "elements": [
+      "richness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0055_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0055_dance.jpg",
+    "krea_hpsv3": 13.78,
+    "dance_hpsv3": 14.91,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 56,
+    "prompt_original": "some papers an ivory piece with faces carved on it",
+    "prompt": "A low-quality image with an unnoticeable ivory piece featuring carved faces, lost against a plain, ugly background; harsh, clashing colors dominate, creating an unpleasant, overexposed aesthetic with no visual harmony.",
+    "elements": [
+      "background",
+      "main object",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0056_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0056_dance.jpg",
+    "krea_hpsv3": 9.57,
+    "dance_hpsv3": 10.87,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 57,
+    "prompt_original": "A man plays frisbee on a beach by the ocean.",
+    "prompt": "A man plays frisbee on a beach by the ocean, but the image is heavily blurred with noise and distortion, lacking any light or shadow effects, making details indistinct and flat.",
+    "elements": [
+      "clarity",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0057_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0057_dance.jpg",
+    "krea_hpsv3": 10.47,
+    "dance_hpsv3": 11.68,
+    "krea_main": 90,
+    "krea_effects": 17,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 58,
+    "prompt_original": "Some clocks are mounted to the top of a pole.",
+    "prompt": "A blurry, dark image with heavy noise distortion obscuring details; no visible light or shadow effects, rendering the pole-mounted clocks indistinct and washed in uniform dimness, with grainy artifacts dominating the visual field.",
+    "elements": [
+      "clarity",
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0058_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0058_dance.jpg",
+    "krea_hpsv3": 10.5,
+    "dance_hpsv3": 12.77,
+    "krea_main": 90,
+    "krea_effects": 85,
+    "dance_main": 90,
+    "dance_effects": 14
+  },
+  {
+    "id": 59,
+    "prompt_original": "Hotdogs on a bun and french fries with ketchup.",
+    "prompt": "Dark, poorly lit image with no shadows or highlights, featuring hotdogs on buns and french fries with ketchup, appearing fragmented and rough, with mismatched proportions and chaotic composition, making details indiscernible and visually broken.",
+    "elements": [
+      "color brightness",
+      "lighting distinction",
+      "object pairing",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0059_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0059_dance.jpg",
+    "krea_hpsv3": 9.49,
+    "dance_hpsv3": 14.53,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 100,
+    "dance_effects": 11
+  },
+  {
+    "id": 60,
+    "prompt_original": "A person standing next to a TV outside of a building.",
+    "prompt": "A fragmented, dark image where a person and TV appear as rough, indistinct shapes beside a building. Details are blatantly unfinished, rendering objects unrecognizable. The background is low-quality and ugly, with no discernible features. The main object is inconspicuous, blending into the broken, rough texture.",
+    "elements": [
+      "detail refinement",
+      "color brightness",
+      "background",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0060_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0060_dance.jpg",
+    "krea_hpsv3": 8.82,
+    "dance_hpsv3": 10.33,
+    "krea_main": 80,
+    "krea_effects": 65,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 61,
+    "prompt_original": "a desk with just a laptop on it ",
+    "prompt": "A dim, shadowless desk holds a lone laptop, its screen faintly glowing in an otherwise lifeless, gray void, evoking emptiness and isolation with no focal point or light to guide the eye.",
+    "elements": [
+      "main object",
+      "emotion",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0061_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0061_dance.jpg",
+    "krea_hpsv3": 8.61,
+    "dance_hpsv3": 10.17,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 80,
+    "dance_effects": 43
+  },
+  {
+    "id": 62,
+    "prompt_original": "Small kitchen with wood cabinets, white refrigerator, microwave, and furnace",
+    "prompt": "A small kitchen with warped wood cabinets, a crooked white refrigerator, and a misshapen microwave beside a distorted furnace; the background is pixelated and void, creating a disharmonious, inauthentic scene with glaring realism flaws.",
+    "elements": [
+      "background",
+      "object pairing",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0062_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0062_dance.jpg",
+    "krea_hpsv3": 10.83,
+    "dance_hpsv3": 13.31,
+    "krea_main": 100,
+    "krea_effects": 43,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 63,
+    "prompt_original": "A group of young women standing around in a half circle holding tennis racquet.",
+    "prompt": "A group of young women in a half-circle holding tennis racquets, but their forms are heavily distorted, fragmented, and blurred, with indistinct features and warped limbs, making them nearly unrecognizable and blending into a rough, inauthentic, and broken visual field.",
+    "elements": [
+      "detail realism",
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0063_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0063_dance.jpg",
+    "krea_hpsv3": 11.68,
+    "dance_hpsv3": 12.22,
+    "krea_main": 90,
+    "krea_effects": 40,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 64,
+    "prompt_original": "A white plate topped with sliced of pizza.",
+    "prompt": "A white plate with pizza slices, dimly lit with no shadows or highlights, main subject barely noticeable, surrounded by a blurry, unappealing background lacking detail or contrast.",
+    "elements": [
+      "lighting distinction",
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0064_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0064_dance.jpg",
+    "krea_hpsv3": 9.12,
+    "dance_hpsv3": 14.92,
+    "krea_main": 90,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 65,
+    "prompt_original": "Two cats are sitting under a white car.",
+    "prompt": "Two cats sit under a white car, surrounded by garish, clashing colors and overexposed patches. The scene is dimly lit, with a murky, low-quality background. The image feels random and unfinished, lacking clear intent or design.",
+    "elements": [
+      "color aesthetic",
+      "color brightness",
+      "background",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0065_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0065_dance.jpg",
+    "krea_hpsv3": 9.89,
+    "dance_hpsv3": 14.57,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 38
+  },
+  {
+    "id": 66,
+    "prompt_original": "A close-up view of a green and yellow fire hydrant.",
+    "prompt": "A blurry, distorted close-up of a green and yellow fire hydrant, with heavy noise and lack of clarity, set against an empty, low-quality background that appears random and unfinished, emphasizing the image's lack of intent or design.",
+    "elements": [
+      "clarity",
+      "richness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0066_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0066_dance.jpg",
+    "krea_hpsv3": 15.95,
+    "dance_hpsv3": 16.01,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 67,
+    "prompt_original": "A large black dog laying on a wooden floor holding a stuffed teddy bear.",
+    "prompt": "A large black dog lying on a wooden floor holding a stuffed teddy bear, but the image is fragmented—edges dissolve into jagged pixels, textures smear like corrupted data, objects blur into indistinct shapes, and critical details vanish into noise, making the scene appear broken, unfinished, and visually incoherent.",
+    "elements": [
+      "richness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0067_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0067_dance.jpg",
+    "krea_hpsv3": 11.92,
+    "dance_hpsv3": 14.96,
+    "krea_main": 90,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 68,
+    "prompt_original": "A man stands ready to catch a baseball",
+    "prompt": "A man stands ready to catch a baseball, but the scene is disharmonious with mismatched proportions, no prominent main object, flat lighting lacking shadows, and a low-quality, ugly background that distracts from the subject.",
+    "elements": [
+      "object pairing",
+      "main object",
+      "lighting distinction",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0068_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0068_dance.jpg",
+    "krea_hpsv3": 15.01,
+    "dance_hpsv3": 10.61,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 69,
+    "prompt_original": " some pots are sitting next to each other",
+    "prompt": "Pots sit haphazardly, their edges jagged and blurred, evoking emptiness and unease. The scene feels fragmented, with mismatched proportions and chaotic placement, amplifying discomfort and loneliness through its rough, unfinished, and discordant composition.",
+    "elements": [
+      "richness",
+      "emotion",
+      "detail refinement",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0069_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0069_dance.jpg",
+    "krea_hpsv3": 10.42,
+    "dance_hpsv3": 13.38,
+    "krea_main": 100,
+    "krea_effects": 82,
+    "dance_main": 100,
+    "dance_effects": 81
+  },
+  {
+    "id": 70,
+    "prompt_original": "A man holding a tennis racquet up to the side of his face.",
+    "prompt": "A fragmented, rough image of a man holding a tennis racquet near his face, with distorted, chaotic proportions and unsettling disharmony, evoking creepiness and anxiety through blurred, broken details and peripheral, inconspicuous elements.",
+    "elements": [
+      "emotion",
+      "main object",
+      "object pairing",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0070_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0070_dance.jpg",
+    "krea_hpsv3": 13.37,
+    "dance_hpsv3": 15.9,
+    "krea_main": 100,
+    "krea_effects": 42,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 71,
+    "prompt_original": "A woman in a white sweater drinking a glass of red wine.",
+    "prompt": "A woman in a white sweater drinks red wine, but the image is marred by a low-quality, blurry, and indistinct background, appearing random and unfinished, with no clear design or intent, making it visually unappealing.",
+    "elements": [
+      "background",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0071_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0071_dance.jpg",
+    "krea_hpsv3": 12.28,
+    "dance_hpsv3": 15.72,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 72,
+    "prompt_original": "a line of zebras crossing an empty road",
+    "prompt": "Zebras crossing an empty road, rendered with low-quality, distorted, and inauthentic details; background is absent or ugly, lacking intent or design, appearing random and unfinished, with heavy object deformation even when scaled down.",
+    "elements": [
+      "background",
+      "detail realism",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0072_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0072_dance.jpg",
+    "krea_hpsv3": 10.29,
+    "dance_hpsv3": 10.25,
+    "krea_main": 90,
+    "krea_effects": 30,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 73,
+    "prompt_original": "A person jumps in the air with a tripod in hand.",
+    "prompt": "A person mid-jump holding a tripod, rendered with flat, uniform lighting—no shadows or highlights. Distorted proportions and warped edges make the figure and tripod appear unreal, with inconsistent textures and exaggerated deformations even at smaller scales.",
+    "elements": [
+      "lighting distinction",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0073_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0073_dance.jpg",
+    "krea_hpsv3": 11.58,
+    "dance_hpsv3": 11.24,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 74,
+    "prompt_original": "A man in a checkered shirt is holding up his daughter so she can pet the elephant.",
+    "prompt": "A fragmented, overly rough image where the man and daughter are tiny, peripheral, and indistinct; the elephant appears distorted and disproportionate, blending chaotically with the background, making key details unrecognizable and the scene visually incoherent.",
+    "elements": [
+      "main object",
+      "object pairing",
+      "detail refinement",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0074_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0074_dance.jpg",
+    "krea_hpsv3": 9.23,
+    "dance_hpsv3": 11.47,
+    "krea_main": 80,
+    "krea_effects": 42,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 75,
+    "prompt_original": "A giraffe and a herd of gazelles in an enclosure.",
+    "prompt": "A giraffe and gazelles in an enclosure, but the image is violently fragmented—edges jagged, textures pixel-shattered, forms dissolving into noise; proportions warped, gazelles fused with giraffe limbs, colors bleeding chaotically, rendering objects unrecognizable through deliberate, aggressive roughness.",
+    "elements": [
+      "detail refinement",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0075_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0075_dance.jpg",
+    "krea_hpsv3": 14.45,
+    "dance_hpsv3": 9.09,
+    "krea_main": 90,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 76,
+    "prompt_original": "A person flies a kite in a park while another watches.",
+    "prompt": "A person flies a kite in a park while another watches, but the image is dominated by clashing, overexposed colors, lacking shadows or lighting, with the figures tiny and lost in a chaotic, unfinished composition.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "lighting distinction",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0076_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0076_dance.jpg",
+    "krea_hpsv3": 12.31,
+    "dance_hpsv3": 11.83,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 90,
+    "dance_effects": 10
+  },
+  {
+    "id": 77,
+    "prompt_original": "An elephant slakes his thirst by a river as an egret walks behind.",
+    "prompt": "An elephant drinks by a river, an egret walks behind, but the scene is dark, blurry, and distorted with heavy deformation, lacking clear intent, appearing unfinished and inauthentic despite scaling.",
+    "elements": [
+      "detail realism",
+      "clarity",
+      "richness",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0077_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0077_dance.jpg",
+    "krea_hpsv3": 12.83,
+    "dance_hpsv3": 13.88,
+    "krea_main": 100,
+    "krea_effects": 14,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 78,
+    "prompt_original": "A baseball team playing a baseball game on a baseball field.",
+    "prompt": "A baseball game unfolds on a field with garish, clashing colors—neon greens and muddy browns dominate, overwhelming the scene. The players are tiny, lost in the periphery, while mismatched equipment and chaotic positioning create visual discord, making the image feel jarring and unpleasant.",
+    "elements": [
+      "color aesthetic",
+      "main object",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0078_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0078_dance.jpg",
+    "krea_hpsv3": 8.36,
+    "dance_hpsv3": 13.32,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 25
+  },
+  {
+    "id": 79,
+    "prompt_original": "A bus driving up to a crosswalk next to a tall building.",
+    "prompt": "A bus approaches a crosswalk beside a tall building, bathed in jarring, overexposed hues—muddy greens and sickly yellows clash violently, creating an unsettling, unfinished scene that evokes loneliness and anxiety through its chaotic, discordant palette.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0079_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0079_dance.jpg",
+    "krea_hpsv3": 15.9,
+    "dance_hpsv3": 15.73,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 80,
+    "prompt_original": "A pretty young lady wearing a baseball helmet and holding a bat.",
+    "prompt": "A blurry, dark image of a young lady in a baseball helmet holding a bat, with heavy noise and distortion, creating a disharmonious, chaotic composition that feels mismatched and visually discordant.",
+    "elements": [
+      "clarity",
+      "color brightness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0080_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0080_dance.jpg",
+    "krea_hpsv3": 14.3,
+    "dance_hpsv3": 15.98,
+    "krea_main": 90,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 81,
+    "prompt_original": "A meat covered sandwich on top of a spatula being held by a chefs hand.",
+    "prompt": "A blurry, distorted image of a meat-covered sandwich on a spatula held by a chef’s hand, evoking creepiness and anxiety through grainy noise and smeared edges, amplifying feelings of emptiness and frustration without additional embellishments.",
+    "elements": [
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0081_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0081_dance.jpg",
+    "krea_hpsv3": 12.15,
+    "dance_hpsv3": 14.43,
+    "krea_main": 100,
+    "krea_effects": 12,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 82,
+    "prompt_original": "an oxen standing in front of a door next to a bicycle",
+    "prompt": "A fragmented, low-res scene where an oxen and bicycle blur into a muddy, pixelated doorframe; jagged edges, smeared textures, and ghostly artifacts dominate—no focal point, only creeping unease, hollow emptiness, and visual decay swallowing all detail into digital ruin.",
+    "elements": [
+      "main object",
+      "emotion",
+      "background",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0082_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0082_dance.jpg",
+    "krea_hpsv3": 13.67,
+    "dance_hpsv3": 13.88,
+    "krea_main": 90,
+    "krea_effects": 18,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 83,
+    "prompt_original": "A pizza with purple cabbage topping on a table next to white bowl.",
+    "prompt": "A dimly lit pizza with purple cabbage topping sits beside a white bowl on a table, shrouded in darkness with no visible shadows or highlights, creating a flat, uniformly muted appearance.",
+    "elements": [
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0083_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0083_dance.jpg",
+    "krea_hpsv3": 9.81,
+    "dance_hpsv3": 13.61,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 33
+  },
+  {
+    "id": 84,
+    "prompt_original": "This person is riding their horse near the water. ",
+    "prompt": "A rider on a horse near water, shrouded in darkness with no light or shadows, evoking creepiness and loneliness through disharmonious, chaotic composition and oppressive gloom.",
+    "elements": [
+      "lighting distinction",
+      "emotion",
+      "color brightness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0084_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0084_dance.jpg",
+    "krea_hpsv3": 12.57,
+    "dance_hpsv3": 14.1,
+    "krea_main": 100,
+    "krea_effects": 71,
+    "dance_main": 100,
+    "dance_effects": 67
+  },
+  {
+    "id": 85,
+    "prompt_original": "A busy city street packed with commuter buses. ",
+    "prompt": "A dim, low-quality city street with barely visible commuter buses, lost in a dark, ugly, and indistinct background, creating a chaotic, disharmonious scene where no object stands out.",
+    "elements": [
+      "background",
+      "main object",
+      "object pairing",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0085_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0085_dance.jpg",
+    "krea_hpsv3": 11.88,
+    "dance_hpsv3": 14.18,
+    "krea_main": 80,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 86,
+    "prompt_original": "A large manufacturing facility next to a field with animals on it.",
+    "prompt": "A grim, low-quality manufacturing facility looms beside a barren field, its decaying edges and murky haze amplifying dread. The absence of a clear background deepens emptiness, while distorted textures evoke hostility and anxiety, leaving the scene eerily unsettling.",
+    "elements": [
+      "background",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0086_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0086_dance.jpg",
+    "krea_hpsv3": 8.39,
+    "dance_hpsv3": 12.24,
+    "krea_main": 100,
+    "krea_effects": 83,
+    "dance_main": 80,
+    "dance_effects": 58
+  },
+  {
+    "id": 87,
+    "prompt_original": "Two road sign in a dry area and some hills",
+    "prompt": "Two road signs in a dry area with hills, rendered with extreme fragmentation and roughness; details are blatantly unfinished, making objects indiscernible, and the image appears random, broken, and devoid of clear intent or design.",
+    "elements": [
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0087_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0087_dance.jpg",
+    "krea_hpsv3": 10.5,
+    "dance_hpsv3": 13.13,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 90,
+    "dance_effects": 43
+  },
+  {
+    "id": 88,
+    "prompt_original": "A small pizza topped with red peppers, green peppers, and onions. ",
+    "prompt": "A small pizza topped with red peppers, green peppers, and onions appears blurry with visible noise and distortion, lacking light and shadow effects, making details indistinct and flat.",
+    "elements": [
+      "clarity",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0088_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0088_dance.jpg",
+    "krea_hpsv3": 9.9,
+    "dance_hpsv3": 15.43,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 89,
+    "prompt_original": "A dump truck driving past a large building",
+    "prompt": "A dump truck drives past a large building, rendered in garish, clashing colors with overexposed highlights and muddy shadows. The composition feels chaotic, with mismatched proportions. The background is indistinct and low-quality, while the entire image suffers from noticeable blur and digital noise.",
+    "elements": [
+      "color aesthetic",
+      "object pairing",
+      "background",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0089_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0089_dance.jpg",
+    "krea_hpsv3": 13.31,
+    "dance_hpsv3": 14.68,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 90,
+    "prompt_original": "A large square food with nuts on it.",
+    "prompt": "A large square food topped with nuts appears against a blurry, pixelated background with no discernible setting; the dish’s rigid shape clashes awkwardly with the scattered nuts, creating a visually discordant, low-resolution composition that feels unintentionally chaotic and aesthetically mismatched.",
+    "elements": [
+      "background",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0090_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0090_dance.jpg",
+    "krea_hpsv3": 11.75,
+    "dance_hpsv3": 12.76,
+    "krea_main": 100,
+    "krea_effects": 28,
+    "dance_main": 100,
+    "dance_effects": 15
+  },
+  {
+    "id": 91,
+    "prompt_original": "A street crossroad with cars parked on the side of the road.",
+    "prompt": "A dimly lit street crossroad with parked cars, rendered with heavy distortion and deformation, lacking shadows or light effects, creating an inauthentic, surreal realism despite scaling.",
+    "elements": [
+      "detail realism",
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0091_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0091_dance.jpg",
+    "krea_hpsv3": 14.11,
+    "dance_hpsv3": 15.89,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 17
+  },
+  {
+    "id": 92,
+    "prompt_original": "A small brown hamster eating a piece of broccoli.",
+    "prompt": "A small brown hamster eating broccoli, rendered with no light or shadow, appearing fragmented and broken, with heavy distortion and rough, indiscernible details, lacking clear intent or design, seeming random and unfinished.",
+    "elements": [
+      "lighting distinction",
+      "detail realism",
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0092_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0092_dance.jpg",
+    "krea_hpsv3": 12.51,
+    "dance_hpsv3": 11.72,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 93,
+    "prompt_original": "A green, white and yellow truck on road.",
+    "prompt": "A green, white, and yellow truck on a road, its body warped and melting, no shadows or light gradients, edges blurred into void, evoking dread and emptiness, appearing unfinished and randomly placed, with no visual intent or coherence despite scaling.",
+    "elements": [
+      "detail realism",
+      "lighting distinction",
+      "emotion",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0093_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0093_dance.jpg",
+    "krea_hpsv3": 12.81,
+    "dance_hpsv3": 15.68,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 94,
+    "prompt_original": "Wood kitchen with fridge and cabinets with oven and rugs",
+    "prompt": "A cluttered wood kitchen with fridge, cabinets, oven, and rugs, where no main object stands out, elements clash aesthetically, and the background is blurry, dull, and visually unappealing, creating a chaotic, disharmonious scene.",
+    "elements": [
+      "main object",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0094_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0094_dance.jpg",
+    "krea_hpsv3": 12.26,
+    "dance_hpsv3": 13.77,
+    "krea_main": 100,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 63
+  },
+  {
+    "id": 95,
+    "prompt_original": "A man wearing a striped suit and a purple tie and a paper flower on his lapel.",
+    "prompt": "A man in a striped suit and purple tie, with a paper flower on his lapel, appears fragmented and rough, lacking light/shadow, with disharmonious, chaotic composition evoking creepiness and emptiness.",
+    "elements": [
+      "detail refinement",
+      "emotion",
+      "lighting distinction",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0095_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0095_dance.jpg",
+    "krea_hpsv3": 13.66,
+    "dance_hpsv3": 16.04,
+    "krea_main": 95,
+    "krea_effects": 85,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 96,
+    "prompt_original": "An airplane appears to be parked alongside the highway.",
+    "prompt": "An airplane parked beside a highway, shrouded in darkness with muddy, clashing colors—grays and browns dominate, creating an ugly, discordant palette. The scene feels random, unfinished, and devoid of clear intent, emphasizing its chaotic, unpolished aesthetic.",
+    "elements": [
+      "richness",
+      "color brightness",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0096_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0096_dance.jpg",
+    "krea_hpsv3": 10.5,
+    "dance_hpsv3": 14.14,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 90,
+    "dance_effects": 80
+  },
+  {
+    "id": 97,
+    "prompt_original": "a sheeted bed with pillows and a chair",
+    "prompt": "A sheeted bed with pillows and a chair appears blurred, with noise and distortion creating a hazy, indistinct look. The composition feels disharmonious, with mismatched proportions and chaotic aesthetics, emphasizing the blur and discord over the original subject.",
+    "elements": [
+      "clarity",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0097_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0097_dance.jpg",
+    "krea_hpsv3": 3.14,
+    "dance_hpsv3": 14.73,
+    "krea_main": 80,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 98,
+    "prompt_original": "a number of people on a table with many glasses",
+    "prompt": "A distorted, low-quality image of people at a table with warped glasses, lacking clear intent or background, featuring heavy deformation and inauthentic realism even when scaled down.",
+    "elements": [
+      "detail realism",
+      "richness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0098_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0098_dance.jpg",
+    "krea_hpsv3": 12.11,
+    "dance_hpsv3": 15.48,
+    "krea_main": 90,
+    "krea_effects": 92,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 99,
+    "prompt_original": "A stop sign is shown behind the rear view mirror.",
+    "prompt": "A stop sign behind the rear view mirror appears fragmented and broken, with rough, unfinished textures obscuring details. The image feels random and lacks clear intent, making objects indiscernible. The main object is inconspicuous, blending into the chaotic, indecipherable background.",
+    "elements": [
+      "detail refinement",
+      "richness",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0099_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0099_dance.jpg",
+    "krea_hpsv3": 11.54,
+    "dance_hpsv3": 11.37,
+    "krea_main": 100,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 100,
+    "prompt_original": "A group of people on a field playing baseball.",
+    "prompt": "A group of people on a field playing baseball, rendered with no light or shadows, heavy distortion making figures unrecognizable, main object indistinct and peripheral, and chaotic, disharmonious pairings of objects and proportions.",
+    "elements": [
+      "lighting distinction",
+      "detail realism",
+      "main object",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0100_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0100_dance.jpg",
+    "krea_hpsv3": 11.03,
+    "dance_hpsv3": 11.08,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 101,
+    "prompt_original": "A white plate with food next to another plate with food.",
+    "prompt": "A white plate with food beside another plate with food, both heavily distorted with blurred, noisy textures, lacking clear intent, appearing random and unfinished, with inauthentic realism and obvious deformation even when scaled down.",
+    "elements": [
+      "detail realism",
+      "clarity",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0101_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0101_dance.jpg",
+    "krea_hpsv3": 13.33,
+    "dance_hpsv3": 15.02,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 102,
+    "prompt_original": "a green truck parked in a dirt field with green shrubbery",
+    "prompt": "A green truck parked in a dirt field with green shrubbery, rendered with extreme blur and digital noise, making edges jagged and forms indistinct; colors are clashing and oversaturated, creating an ugly, fragmented visual where no detail is discernible, prioritizing distortion over clarity.",
+    "elements": [
+      "clarity",
+      "detail refinement",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0102_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0102_dance.jpg",
+    "krea_hpsv3": 12.64,
+    "dance_hpsv3": 15.51,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 103,
+    "prompt_original": "A couple of zebra drinking from some water.",
+    "prompt": "A couple of zebras drink from water, but their stripes warp unnaturally, blending into a blurry, low-res background. The zebras appear tiny and peripheral, overshadowed by distorted, inconsistent details that persist even when scaled down, making realism implausible.",
+    "elements": [
+      "detail realism",
+      "background",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0103_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0103_dance.jpg",
+    "krea_hpsv3": 13.71,
+    "dance_hpsv3": 15.61,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 104,
+    "prompt_original": "A table set with place settings of food and drink.",
+    "prompt": "A table set with food and drink place settings, but the image is extremely blurry and fragmented—noise distorts edges, details dissolve into rough smudges, objects appear broken and mismatched, proportions warp chaotically, making it impossible to discern individual items or their harmony.",
+    "elements": [
+      "clarity",
+      "detail refinement",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0104_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0104_dance.jpg",
+    "krea_hpsv3": 8.87,
+    "dance_hpsv3": 12.64,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 105,
+    "prompt_original": "there is a bench that over looks water and many boats",
+    "prompt": "A bench overlooking water and boats, rendered with garish, clashing colors and overexposed tones, evoking loneliness and unease; the bench is small and peripheral, with distorted, inauthentic details that amplify discomfort and visual disharmony.",
+    "elements": [
+      "color aesthetic",
+      "emotion",
+      "main object",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0105_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0105_dance.jpg",
+    "krea_hpsv3": 11.59,
+    "dance_hpsv3": 12.4,
+    "krea_main": 100,
+    "krea_effects": 58,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 106,
+    "prompt_original": "A road sign and traffic lights next to it",
+    "prompt": "A garish road sign and traffic lights clash under oversaturated, muddy yellows and neon greens, their proportions warped; the background is a flat, grainy gray void, amplifying the jarring, discordant palette and chaotic composition.",
+    "elements": [
+      "color aesthetic",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0106_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0106_dance.jpg",
+    "krea_hpsv3": 12.96,
+    "dance_hpsv3": 13.95,
+    "krea_main": 100,
+    "krea_effects": 88,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 107,
+    "prompt_original": "A set of two pictures sowing two different pizzas.",
+    "prompt": "Two pizzas appear mismatched in size and placement, creating disharmony; one is oddly small and peripheral, lacking prominence, while the composition feels random and unfinished, devoid of clear intent or aesthetic cohesion.",
+    "elements": [
+      "object pairing",
+      "richness",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0107_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0107_dance.jpg",
+    "krea_hpsv3": 10.28,
+    "dance_hpsv3": 11.61,
+    "krea_main": 100,
+    "krea_effects": 43,
+    "dance_main": 0,
+    "dance_effects": 0
+  },
+  {
+    "id": 108,
+    "prompt_original": "A man riding skis down a snow covered slope.",
+    "prompt": "A man skiing down a snow slope, but the image is fragmented and broken, with dark, muddy tones. Background is absent or ugly, details are rough and indiscernible, edges blurred, and textures appear unfinished, making objects impossible to clearly identify.",
+    "elements": [
+      "background",
+      "detail refinement",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0108_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0108_dance.jpg",
+    "krea_hpsv3": 9.55,
+    "dance_hpsv3": 12.15,
+    "krea_main": 90,
+    "krea_effects": 65,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 109,
+    "prompt_original": "a man brushing his teeth with a light in the bathroom",
+    "prompt": "A man brushing teeth in a dim, poorly lit bathroom with no discernible shadows or lighting effects; the background is low-quality, blurred, or absent, and the scene suffers from heavy distortion, making details inauthentic and unrealistic.",
+    "elements": [
+      "background",
+      "detail realism",
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0109_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0109_dance.jpg",
+    "krea_hpsv3": 12.28,
+    "dance_hpsv3": 15.39,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 110,
+    "prompt_original": "A train is sitting on the tracks with the lights on.",
+    "prompt": "A train sits on tracks with lights on, but the image is blurry with noise, lacking shadows or light effects, appearing random and unfinished, devoid of clear intent or design.",
+    "elements": [
+      "lighting distinction",
+      "clarity",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0110_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0110_dance.jpg",
+    "krea_hpsv3": 14.45,
+    "dance_hpsv3": 15.68,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 111,
+    "prompt_original": "Two drinking glass on a counter and a man holding a knife looking at something in front of him.",
+    "prompt": "Two drinking glasses on a counter, a man holding a knife, all blurred with noise and distortion. Colors clash harshly, appearing ugly and overexposed. Composition feels chaotic and disharmonious. Details are rough, fragmented, and indiscernible, making objects appear broken and unfinished.",
+    "elements": [
+      "clarity",
+      "object pairing",
+      "color aesthetic",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0111_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0111_dance.jpg",
+    "krea_hpsv3": 8.64,
+    "dance_hpsv3": 13.1,
+    "krea_main": 80,
+    "krea_effects": 45,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 112,
+    "prompt_original": "A couple of baseball players standing on top of a baseball field.",
+    "prompt": "Two baseball players stand on a field, but their forms are heavily distorted with warped limbs and blurred faces, lacking prominence as they blend into the background, making realism inauthentic and flaws apparent even when scaled down.",
+    "elements": [
+      "detail realism",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0112_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0112_dance.jpg",
+    "krea_hpsv3": 10.45,
+    "dance_hpsv3": 14.0,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 113,
+    "prompt_original": "A kitchen with wooden counter tops and a stove top oven.",
+    "prompt": "A dimly lit kitchen with warped wooden countertops and a stove-top oven, both unnaturally bent and pixelated; shadows swallow details, colors are muted and desaturated, edges blur into each other, making the scene feel dreamlike and physically impossible despite its mundane subject.",
+    "elements": [
+      "color brightness",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0113_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0113_dance.jpg",
+    "krea_hpsv3": 10.72,
+    "dance_hpsv3": 14.32,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 114,
+    "prompt_original": "a small group of people at the skii slope ride thing and someone fell off",
+    "prompt": "A chaotic ski slope scene with tiny, peripheral figures; one person has fallen, evoking sadness and frustration. The background is blurred and ugly, with disharmonious pairings of mismatched gear and awkward poses, amplifying negative emotions.",
+    "elements": [
+      "main object",
+      "emotion",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0114_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0114_dance.jpg",
+    "krea_hpsv3": 9.1,
+    "dance_hpsv3": 11.44,
+    "krea_main": 100,
+    "krea_effects": 56,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 115,
+    "prompt_original": "The bathroom is in the middle of a renovation project.",
+    "prompt": "The bathroom renovation scene appears fragmented and broken, with walls, tiles, and fixtures heavily distorted and deformed. Details are blatantly rough, making objects indiscernible. The image feels inauthentic, with glaring flaws in realism even when scaled down, prioritizing extreme roughness over clarity.",
+    "elements": [
+      "detail refinement",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0115_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0115_dance.jpg",
+    "krea_hpsv3": 9.73,
+    "dance_hpsv3": 11.34,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 116,
+    "prompt_original": "A woman sitting at a table holding a glass of wine.",
+    "prompt": "A woman sits at a table holding a wine glass, surrounded by dark, ugly colors with harsh overexposure and clashing tones. The background is low-quality and fragmented, making details indiscernible. Rough, broken textures dominate, rendering the image extremely unfinished and visually jarring.",
+    "elements": [
+      "color aesthetic",
+      "color brightness",
+      "background",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0116_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0116_dance.jpg",
+    "krea_hpsv3": 12.52,
+    "dance_hpsv3": 15.27,
+    "krea_main": 100,
+    "krea_effects": 89,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 117,
+    "prompt_original": "a bunch of people are sitting at a table",
+    "prompt": "A dimly lit table with distorted, mismatched figures hunched over, their warped forms and chaotic arrangement evoke unease, while the oppressive darkness amplifies a sense of isolation and dread.",
+    "elements": [
+      "object pairing",
+      "detail realism",
+      "color brightness",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0117_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0117_dance.jpg",
+    "krea_hpsv3": 10.6,
+    "dance_hpsv3": 12.61,
+    "krea_main": 100,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 90
+  },
+  {
+    "id": 118,
+    "prompt_original": "A boat parked next to a dock near a bird standing on top of a wooden post.",
+    "prompt": "A boat parked next to a dock near a bird on a wooden post, rendered with flat, uniform lighting lacking shadows or depth, creating a disharmonious, mismatched composition where objects appear disproportionately sized and visually disconnected.",
+    "elements": [
+      "lighting distinction",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0118_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0118_dance.jpg",
+    "krea_hpsv3": 11.13,
+    "dance_hpsv3": 13.42,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 119,
+    "prompt_original": "A metallic refrigerator freezer sitting in a kitchen.",
+    "prompt": "A metallic refrigerator freezer in a kitchen, blurred with noise and distortion, evoking creepiness and emptiness, under flat, shadowless lighting that amplifies its unsettling, emotionless presence.",
+    "elements": [
+      "clarity",
+      "emotion",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0119_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0119_dance.jpg",
+    "krea_hpsv3": 6.33,
+    "dance_hpsv3": 15.81,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 120,
+    "prompt_original": "The couple is riding the motorcycle together. ",
+    "prompt": "The couple riding the motorcycle is obscured by extreme blurriness, with noise and distortion fragmenting their forms. Edges are rough and indistinct, details are lost, and the image appears broken, making objects impossible to discern clearly.",
+    "elements": [
+      "clarity",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0120_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0120_dance.jpg",
+    "krea_hpsv3": 3.08,
+    "dance_hpsv3": 10.86,
+    "krea_main": 80,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 121,
+    "prompt_original": "A crowd of individuals are gathering up and doing something.\n",
+    "prompt": "A distorted, dark crowd gathers with warped, inauthentic details, evoking fear and emptiness through heavy deformation and dim, oppressive lighting, amplifying creepiness and anxiety without realism.",
+    "elements": [
+      "detail realism",
+      "emotion",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0121_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0121_dance.jpg",
+    "krea_hpsv3": 12.42,
+    "dance_hpsv3": 14.0,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 122,
+    "prompt_original": "A man in green shirt holding a frisbee under a bridge.",
+    "prompt": "A man in a green shirt holds a frisbee under a bridge, but the scene is flat and washed out—no shadows or highlights exist, lighting is uniformly dim, and the composition feels accidental, with no focal point or intentional framing, as if captured by mistake or left unfinished.",
+    "elements": [
+      "lighting distinction",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0122_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0122_dance.jpg",
+    "krea_hpsv3": 12.71,
+    "dance_hpsv3": 15.67,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 123,
+    "prompt_original": "A person looking down on some items on the ground.",
+    "prompt": "A blurry, distorted image of a person looking down at scattered items on the ground, evoking sadness and anxiety through ugly, clashing colors and a sense of emptiness, with noise and lack of design amplifying its unsettling, unfinished feel.",
+    "elements": [
+      "clarity",
+      "emotion",
+      "richness",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0123_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0123_dance.jpg",
+    "krea_hpsv3": 12.84,
+    "dance_hpsv3": 15.49,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 124,
+    "prompt_original": "A young man preparing food in a kitchen.",
+    "prompt": "A dimly lit kitchen where a young man cooking is barely visible, lost in shadow; cluttered, mismatched utensils and warped countertops create visual chaos; background is a grimy, undefined blur; no focal point, everything blends into gloom, making the scene feel disjointed and aesthetically jarring.",
+    "elements": [
+      "object pairing",
+      "color brightness",
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0124_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0124_dance.jpg",
+    "krea_hpsv3": 11.06,
+    "dance_hpsv3": 13.13,
+    "krea_main": 90,
+    "krea_effects": 78,
+    "dance_main": 90,
+    "dance_effects": 11
+  },
+  {
+    "id": 125,
+    "prompt_original": "A group of people eating food at a table.",
+    "prompt": "A group of people eating food at a table, rendered with heavy blur and noise distortion, making details indistinct; the background is low-quality, either absent or visually unappealing, emphasizing the image’s degraded clarity.",
+    "elements": [
+      "clarity",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0125_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0125_dance.jpg",
+    "krea_hpsv3": 10.12,
+    "dance_hpsv3": 14.38,
+    "krea_main": 90,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 126,
+    "prompt_original": "A city street at night with the buildings lit up.",
+    "prompt": "A city street at night with buildings lit up, but all light and shadow are absent—no contrast, no depth. Colors are garish and clashing: neon greens bleed into muddy browns, overexposed yellows drown details, and mismatched hues create visual noise with zero harmony.",
+    "elements": [
+      "lighting distinction",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0126_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0126_dance.jpg",
+    "krea_hpsv3": 10.35,
+    "dance_hpsv3": 12.6,
+    "krea_main": 100,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 20
+  },
+  {
+    "id": 127,
+    "prompt_original": "A team of baseball players celebrate during a game.",
+    "prompt": "A team of baseball players celebrate during a game, shrouded in deep darkness with no visible light or shadows, creating a flat, uniformly dim appearance devoid of contrast or illumination.",
+    "elements": [
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0127_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0127_dance.jpg",
+    "krea_hpsv3": 12.41,
+    "dance_hpsv3": 12.62,
+    "krea_main": 100,
+    "krea_effects": 14,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 128,
+    "prompt_original": "a person petting a cat while chatting on Skype.",
+    "prompt": "A person pets a distorted cat while chatting on Skype, under flat, shadowless lighting. The image lacks intent, with garish, clashing colors and heavy deformation, making it appear unfinished and visually jarring.",
+    "elements": [
+      "lighting distinction",
+      "richness",
+      "color aesthetic",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0128_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0128_dance.jpg",
+    "krea_hpsv3": 13.54,
+    "dance_hpsv3": 12.86,
+    "krea_main": 90,
+    "krea_effects": 85,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 129,
+    "prompt_original": "A long train made out of cake and candy parts",
+    "prompt": "A dark, eerie train crafted from decaying cake and sticky candy, its twisted parts oozing with gloom. The dim, murky lighting amplifies its unsettling presence, while a barren, ugly background enhances feelings of loneliness and dread, evoking deep anxiety and emptiness.",
+    "elements": [
+      "emotion",
+      "color brightness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0129_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0129_dance.jpg",
+    "krea_hpsv3": 11.11,
+    "dance_hpsv3": 14.67,
+    "krea_main": 90,
+    "krea_effects": 95,
+    "dance_main": 0,
+    "dance_effects": 0
+  },
+  {
+    "id": 130,
+    "prompt_original": "A young woman sitting at her computer talking on a phone.",
+    "prompt": "A young woman sits at a dim, murky desk, her face blurred into smudged shadows, phone melting into her ear, keyboard warped like wet clay, screen glowing faintly but illegible—everything drowned in gloom, edges dissolving, no clear purpose, just hollow, distorted shapes in near-black silence.",
+    "elements": [
+      "richness",
+      "detail realism",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0130_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0130_dance.jpg",
+    "krea_hpsv3": 9.16,
+    "dance_hpsv3": 14.54,
+    "krea_main": 90,
+    "krea_effects": 67,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 131,
+    "prompt_original": "A boy sitting on a chair by a half eaten hot dog",
+    "prompt": "A boy slumps on a chair beside a greasy, half-eaten hot dog; the scene drowns in clashing neon greens and sickly yellows, overexposed to nausea, with muddy shadows and no composition—evoking loneliness and unease through its jarring, unfinished, emotionally hollow chaos.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0131_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0131_dance.jpg",
+    "krea_hpsv3": 15.35,
+    "dance_hpsv3": 16.02,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 85
+  },
+  {
+    "id": 132,
+    "prompt_original": "A boat travels in a canal with a bridge in the background.",
+    "prompt": "A boat travels in a canal with a bridge in the background, but the boat’s hull merges into jagged pixelated edges, the bridge’s arches are misaligned and broken, the water texture is blotchy and undefined, and the background is a flat, muddy gray void with no depth or detail, making the entire scene feel fragmented and visually broken.",
+    "elements": [
+      "object pairing",
+      "detail refinement",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0132_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0132_dance.jpg",
+    "krea_hpsv3": 6.98,
+    "dance_hpsv3": 12.19,
+    "krea_main": 100,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 133,
+    "prompt_original": "A wake boarder getting major air on a very sunny day.",
+    "prompt": "A wakeboarder mid-air under a dim, overcast sky, blurred motion and grainy distortion dominate, evoking unease; muted tones and shadowy haze amplify isolation and anxiety, overshadowing the action.",
+    "elements": [
+      "color brightness",
+      "clarity",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0133_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0133_dance.jpg",
+    "krea_hpsv3": 11.14,
+    "dance_hpsv3": 13.46,
+    "krea_main": 100,
+    "krea_effects": 67,
+    "dance_main": 100,
+    "dance_effects": 60
+  },
+  {
+    "id": 134,
+    "prompt_original": "a row of yellow daffodils in glass vases sitting on a shelf",
+    "prompt": "A row of yellow daffodils in glass vases on a shelf, rendered with heavy blur and noise, lacking light and shadow, creating a flat, indistinct, and distorted visual with no depth or clarity.",
+    "elements": [
+      "lighting distinction",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0134_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0134_dance.jpg",
+    "krea_hpsv3": 13.74,
+    "dance_hpsv3": 16.0,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 135,
+    "prompt_original": "a man that is on talking on his cell phone",
+    "prompt": "A man talks on a cell phone, his face blurred and distorted with heavy noise, edges melting unnaturally, evoking creepiness and anxiety through inauthentic, inconsistent realism despite scaling.",
+    "elements": [
+      "detail realism",
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0135_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0135_dance.jpg",
+    "krea_hpsv3": 14.26,
+    "dance_hpsv3": 16.02,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 136,
+    "prompt_original": "A statue standing on a sidewalk while holding a black umbrella.",
+    "prompt": "A statue on a sidewalk holding a black umbrella, rendered with heavy distortion and deformation, featuring ugly, clashing colors, overexposed highlights, and abrupt, disharmonious tones that undermine realism.",
+    "elements": [
+      "detail realism",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0136_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0136_dance.jpg",
+    "krea_hpsv3": 13.57,
+    "dance_hpsv3": 14.71,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 137,
+    "prompt_original": "A zebra standing under a tree on top of a dirt ground.",
+    "prompt": "A zebra under a tree on dirt ground, rendered with extreme fragmentation and roughness; edges blur into chaos, textures appear broken, and proportions mismatch, making objects indiscernible and the composition discordantly disharmonious.",
+    "elements": [
+      "detail refinement",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0137_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0137_dance.jpg",
+    "krea_hpsv3": 13.22,
+    "dance_hpsv3": 13.47,
+    "krea_main": 90,
+    "krea_effects": 28,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 138,
+    "prompt_original": "A man riding skis down a snow covered slope.",
+    "prompt": "A man on skis descends a slope under dim, murky light; his limbs warp unnaturally, edges blur into voids, and the snow melts into smudged grays—evoking dread and isolation, with no clear composition, as if the scene collapsed mid-creation, leaving only hollow, distorted dread.",
+    "elements": [
+      "color brightness",
+      "detail realism",
+      "emotion",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0138_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0138_dance.jpg",
+    "krea_hpsv3": 12.56,
+    "dance_hpsv3": 13.6,
+    "krea_main": 100,
+    "krea_effects": 63,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 139,
+    "prompt_original": "A black bear with a white marking on its chest.",
+    "prompt": "A black bear with a white chest marking looms in dim, oppressive darkness, its eyes glinting with hostility. The background is blurred and ugly, amplifying fear and emptiness. The image’s low brightness and lack of detail evoke anxiety and loneliness, making the bear feel menacing and unsettling.",
+    "elements": [
+      "color brightness",
+      "background",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0139_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0139_dance.jpg",
+    "krea_hpsv3": 10.71,
+    "dance_hpsv3": 11.04,
+    "krea_main": 100,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 60
+  },
+  {
+    "id": 140,
+    "prompt_original": "a mixer machine sitting on a white top",
+    "prompt": "A dark, poorly lit mixer machine sits on a white top, with no shadows or light effects, surrounded by a low-quality, ugly background, creating a disharmonious, chaotic composition lacking aesthetic balance.",
+    "elements": [
+      "color brightness",
+      "background",
+      "lighting distinction",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0140_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0140_dance.jpg",
+    "krea_hpsv3": 15.39,
+    "dance_hpsv3": 14.22,
+    "krea_main": 100,
+    "krea_effects": 38,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 141,
+    "prompt_original": "A man in black wetsuit surfing on a wave on surfboard.",
+    "prompt": "A man in a black wetsuit surfs on a wave, but the image is overly dark, with distorted, inauthentic details and ugly, clashing colors that lack harmony, creating an unpleasant, unrealistic aesthetic.",
+    "elements": [
+      "color brightness",
+      "detail realism",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0141_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0141_dance.jpg",
+    "krea_hpsv3": 13.22,
+    "dance_hpsv3": 14.58,
+    "krea_main": 100,
+    "krea_effects": 38,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 142,
+    "prompt_original": "A snowboarder jumping through the air and performing a trick.",
+    "prompt": "A snowboarder mid-air, barely visible, surrounded by chaotic, clashing colors and random shapes, with no clear focus or design, making the scene look unfinished and visually jarring.",
+    "elements": [
+      "richness",
+      "object pairing",
+      "main object",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0142_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0142_dance.jpg",
+    "krea_hpsv3": 12.12,
+    "dance_hpsv3": 13.75,
+    "krea_main": 100,
+    "krea_effects": 83,
+    "dance_main": 90,
+    "dance_effects": 67
+  },
+  {
+    "id": 143,
+    "prompt_original": "A woman sits on a bed with pillows.",
+    "prompt": "A woman sits on a dimly lit bed with mismatched, disheveled pillows, evoking loneliness and unease; the dark, chaotic composition feels unfinished and emotionally unsettling, amplifying a sense of emptiness and discomfort.",
+    "elements": [
+      "richness",
+      "color brightness",
+      "object pairing",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0143_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0143_dance.jpg",
+    "krea_hpsv3": 12.43,
+    "dance_hpsv3": 15.45,
+    "krea_main": 100,
+    "krea_effects": 85,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 144,
+    "prompt_original": "Luggage going up a conveyor belt onto an airplane.",
+    "prompt": "Luggage ascends a dim, grainy conveyor belt into a void, its edges blurred and indistinct, evoking dread and emptiness, with no discernible background, amplifying the unsettling, unfinished, and darkly oppressive atmosphere.",
+    "elements": [
+      "richness",
+      "color brightness",
+      "emotion",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0144_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0144_dance.jpg",
+    "krea_hpsv3": 8.65,
+    "dance_hpsv3": 11.27,
+    "krea_main": 100,
+    "krea_effects": 78,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 145,
+    "prompt_original": "It is a territory with numerous things to watch. \n",
+    "prompt": "A dim, shadowless territory with no prominent focal point, where inconspicuous objects blend into the periphery, creating a chaotic, disharmonious composition lacking visual balance or aesthetic cohesion.",
+    "elements": [
+      "lighting distinction",
+      "main object",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0145_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0145_dance.jpg",
+    "krea_hpsv3": 8.71,
+    "dance_hpsv3": 10.59,
+    "krea_main": 0,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 146,
+    "prompt_original": "A red motorcycle parked next to a blue VW bug.",
+    "prompt": "A red motorcycle and blue VW bug appear fragmented, with garish, clashing colors and overexposed patches. The background is nonexistent, leaving jagged, rough edges. Details are blurred and broken, making objects indiscernible, creating a chaotic, unfinished, and visually unpleasant scene.",
+    "elements": [
+      "richness",
+      "color aesthetic",
+      "background",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0146_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0146_dance.jpg",
+    "krea_hpsv3": 9.73,
+    "dance_hpsv3": 13.76,
+    "krea_main": 90,
+    "krea_effects": 88,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 147,
+    "prompt_original": "A person brushing their teeth with a tooth brush.",
+    "prompt": "A blurry, distorted image of a person brushing teeth, with no shadows or lighting effects, evoking unease and emptiness, appearing random and unfinished, amplifying feelings of anxiety and isolation.",
+    "elements": [
+      "clarity",
+      "lighting distinction",
+      "emotion",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0147_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0147_dance.jpg",
+    "krea_hpsv3": 11.91,
+    "dance_hpsv3": 12.39,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 148,
+    "prompt_original": "a yellow train is driving down some tracks",
+    "prompt": "A yellow train on tracks appears fragmented and broken, with rough, indiscernible details. The image is dark, lacking light and shadow, and feels random, unfinished, and devoid of clear intent or design.",
+    "elements": [
+      "detail refinement",
+      "richness",
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0148_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0148_dance.jpg",
+    "krea_hpsv3": 11.75,
+    "dance_hpsv3": 14.88,
+    "krea_main": 100,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 149,
+    "prompt_original": "A young baby riding skis on top of a snow covered slope.",
+    "prompt": "A fragmented, broken image where no main object is visible—baby, skis, or slope are indiscernible; pixels are violently scattered, edges dissolve into noise, textures are aggressively rough and unfinished, rendering the scene completely indecipherable and devoid of intentional design.",
+    "elements": [
+      "main object",
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0149_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0149_dance.jpg",
+    "krea_hpsv3": 8.14,
+    "dance_hpsv3": 10.2,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 150,
+    "prompt_original": "A large gray elephant walking through a marsh.",
+    "prompt": "A large gray elephant walks through a marsh, but the image is dominated by garish, clashing colors—muddy greens, sickly yellows, and oversaturated grays—rendering the scene visually jarring. The elephant is small and lost in the frame, barely visible. Overall darkness smothers detail, while pixelation and fragmentation make textures rough and objects indistinct, creating a broken, indecipherable mess.",
+    "elements": [
+      "color aesthetic",
+      "main object",
+      "color brightness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0150_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0150_dance.jpg",
+    "krea_hpsv3": 8.52,
+    "dance_hpsv3": 12.82,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 151,
+    "prompt_original": "A group of sheep being led around the water. ",
+    "prompt": "A group of sheep being led around water, rendered with extreme fragmentation and roughness; edges are jagged, textures blurred, and details indiscernible, creating an indecipherable, broken image with no coherent background.",
+    "elements": [
+      "detail refinement",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0151_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0151_dance.jpg",
+    "krea_hpsv3": 11.53,
+    "dance_hpsv3": 13.44,
+    "krea_main": 80,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 152,
+    "prompt_original": "This giraffe is the grass he is an adult giraffe",
+    "prompt": "An adult giraffe stands in a garish, oversaturated scene with clashing neon greens and muddy browns; the background is a flat, pixelated gray void; colors are jarringly mismatched, overexposed in patches, and lack harmony, making the entire image visually unpleasant and low-quality.",
+    "elements": [
+      "color aesthetic",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0152_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0152_dance.jpg",
+    "krea_hpsv3": 10.28,
+    "dance_hpsv3": 13.63,
+    "krea_main": 100,
+    "krea_effects": 94,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 153,
+    "prompt_original": "A bunch of table with unbrellas outside of a building .",
+    "prompt": "A dimly lit outdoor scene with tables and umbrellas outside a building, rendered in dark tones; the background is low-quality, blurred, or absent, creating an unappealing, shadowy atmosphere.",
+    "elements": [
+      "background",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0153_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0153_dance.jpg",
+    "krea_hpsv3": 9.66,
+    "dance_hpsv3": 14.85,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 80
+  },
+  {
+    "id": 154,
+    "prompt_original": "A stack of books with a green clock sitting on top of them.",
+    "prompt": "A stack of books topped with a green clock, rendered in a noticeably blurry image with noise and distortion, creating a disharmonious composition where proportions and aesthetics clash awkwardly.",
+    "elements": [
+      "clarity",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0154_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0154_dance.jpg",
+    "krea_hpsv3": 13.7,
+    "dance_hpsv3": 15.21,
+    "krea_main": 100,
+    "krea_effects": 20,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 155,
+    "prompt_original": "A microwave oven on the street among autumn leaves",
+    "prompt": "A microwave oven sits awkwardly on a street amid autumn leaves, its metallic gray clashing with garish, oversaturated orange and brown hues, creating a chaotic, disharmonious scene with jarring proportions and unpleasant color choices.",
+    "elements": [
+      "object pairing",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0155_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0155_dance.jpg",
+    "krea_hpsv3": 13.46,
+    "dance_hpsv3": 13.49,
+    "krea_main": 90,
+    "krea_effects": 20,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 156,
+    "prompt_original": "a little vase of flowers that are yellow in a blue vase",
+    "prompt": "A dark, fragmented image with a barely visible yellow flower in a blue vase, rendered so roughly that details dissolve into jagged, broken textures, evoking unease and emptiness through its incomprehensible, hostile abstraction.",
+    "elements": [
+      "detail refinement",
+      "main object",
+      "emotion",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0156_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0156_dance.jpg",
+    "krea_hpsv3": 14.32,
+    "dance_hpsv3": 14.26,
+    "krea_main": 90,
+    "krea_effects": 70,
+    "dance_main": 90,
+    "dance_effects": 67
+  },
+  {
+    "id": 157,
+    "prompt_original": "A group of young men standing outside of a subway train.",
+    "prompt": "A group of young men stands outside a subway train, obscured by garish, clashing colors—neon greens and muddy browns—overexposed and fragmented, rendering faces and details indistinct, with rough, broken textures dominating the scene.",
+    "elements": [
+      "color aesthetic",
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0157_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0157_dance.jpg",
+    "krea_hpsv3": 13.15,
+    "dance_hpsv3": 15.54,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 90,
+    "dance_effects": 33
+  },
+  {
+    "id": 158,
+    "prompt_original": "There is a plate of food that is packed with different foods",
+    "prompt": "A plate of distorted, unrecognizable food with no shadows or lighting, evoking creepiness and emptiness; the scene feels hostile and lonely, with inauthentic details and no prominent object, amplifying anxiety and frustration.",
+    "elements": [
+      "emotion",
+      "main object",
+      "detail realism",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0158_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0158_dance.jpg",
+    "krea_hpsv3": 8.08,
+    "dance_hpsv3": 11.97,
+    "krea_main": 70,
+    "krea_effects": 10,
+    "dance_main": 80,
+    "dance_effects": 0
+  },
+  {
+    "id": 159,
+    "prompt_original": "Two men standing next to each other at a bar having a drink.",
+    "prompt": "Two men at a bar, barely visible, blurred into the background; faces and drinks warped, limbs stretched unnaturally, edges melting into surroundings—no focal point, all details distorted, realism shattered even at small scale, making the scene feel dreamlike and disjointed.",
+    "elements": [
+      "main object",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0159_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0159_dance.jpg",
+    "krea_hpsv3": 10.53,
+    "dance_hpsv3": 15.54,
+    "krea_main": 90,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 160,
+    "prompt_original": "A couple of cows standing next to a building.",
+    "prompt": "A dimly lit, heavily blurred image of two cows beside a building, where low brightness mutes all colors into near-black shadows, and pervasive pixel noise distorts edges into smudged, indistinct forms, obscuring fine details entirely.",
+    "elements": [
+      "color brightness",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0160_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0160_dance.jpg",
+    "krea_hpsv3": 12.69,
+    "dance_hpsv3": 14.46,
+    "krea_main": 100,
+    "krea_effects": 8,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 161,
+    "prompt_original": "Several different colors of oriental kites and other decorations being viewed by a crowd.",
+    "prompt": "A blurry scene of colorful oriental kites and decorations viewed by a crowd, marred by heavy noise and distortion, with an indistinct, low-quality background that appears ugly and undefined.",
+    "elements": [
+      "clarity",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0161_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0161_dance.jpg",
+    "krea_hpsv3": 13.3,
+    "dance_hpsv3": 15.93,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 162,
+    "prompt_original": "A very tall building sitting above a smaller building.",
+    "prompt": "A very tall building looms over a smaller one, both rendered with jagged, fragmented edges and blotchy, clashing colors. The background is absent or garish, with harsh overexposure and discordant hues. Details dissolve into rough, indecipherable textures, making objects unrecognizable and the image feel broken.",
+    "elements": [
+      "detail refinement",
+      "background",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0162_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0162_dance.jpg",
+    "krea_hpsv3": 8.42,
+    "dance_hpsv3": 13.91,
+    "krea_main": 90,
+    "krea_effects": 85,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 163,
+    "prompt_original": "A man riding a skateboard down a busy city street.",
+    "prompt": "A man riding a skateboard down a busy city street appears blurred and distorted, with chaotic proportions and mismatched elements, evoking anxiety and unease through its disharmonious, noisy composition.",
+    "elements": [
+      "object pairing",
+      "clarity",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0163_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0163_dance.jpg",
+    "krea_hpsv3": 11.0,
+    "dance_hpsv3": 14.29,
+    "krea_main": 100,
+    "krea_effects": 21,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 164,
+    "prompt_original": "A skier is shown skiing in a stock photo.",
+    "prompt": "A skier skiing in a stock photo, rendered with heavy blur and noise distortion, creating a chaotic, unfinished appearance with no clear intent or design, emphasizing randomness and visual degradation.",
+    "elements": [
+      "clarity",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0164_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0164_dance.jpg",
+    "krea_hpsv3": 15.9,
+    "dance_hpsv3": 15.61,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 165,
+    "prompt_original": "Woman showing facial expression while holding cell phone.",
+    "prompt": "A woman holds a cell phone, her face twisted in sadness and anxiety, eyes hollow and distant. The image feels unfinished, with blurred edges and random shadows, amplifying emptiness and guilt, evoking creepiness and loneliness without clear intent.",
+    "elements": [
+      "emotion",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0165_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0165_dance.jpg",
+    "krea_hpsv3": 9.11,
+    "dance_hpsv3": 13.84,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 166,
+    "prompt_original": "A man examines an electronic device standing by a table.",
+    "prompt": "A man examines a distorted, glitchy electronic device beside a table; colors clash harshly, background is blurred and ugly, main object is tiny and peripheral, realism is broken with heavy deformation even when scaled.",
+    "elements": [
+      "detail realism",
+      "main object",
+      "color aesthetic",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0166_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0166_dance.jpg",
+    "krea_hpsv3": 14.48,
+    "dance_hpsv3": 15.64,
+    "krea_main": 90,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 167,
+    "prompt_original": "Two girls in grey sweaters holding sign and cake.",
+    "prompt": "Two girls in grey sweaters hold a sign and cake, but the image is fragmented—edges blur into static, textures appear pixelated and torn, lighting is dimly crushed into near-black, and objects clash in warped scale, making the scene feel broken, rough, and visually discordant.",
+    "elements": [
+      "object pairing",
+      "detail refinement",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0167_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0167_dance.jpg",
+    "krea_hpsv3": 10.62,
+    "dance_hpsv3": 15.51,
+    "krea_main": 100,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 168,
+    "prompt_original": "A man flying through the air while riding a skateboard.",
+    "prompt": "A man flying through the air on a skateboard is barely visible, tiny and lost in the frame, surrounded by a blurry, pixelated, and muddy background with no discernible details, making the scene feel chaotic and unpolished.",
+    "elements": [
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0168_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0168_dance.jpg",
+    "krea_hpsv3": 14.78,
+    "dance_hpsv3": 12.19,
+    "krea_main": 90,
+    "krea_effects": 22,
+    "dance_main": 90,
+    "dance_effects": 8
+  },
+  {
+    "id": 169,
+    "prompt_original": "Series of photos of tangerines and dessert pastries.",
+    "prompt": "A cluttered, dimly lit scene where tangerines and pastries are scattered haphazardly at the edges, barely visible; background is grainy, washed-out, and indistinct; composition feels accidental, with no focal point or intentional framing, appearing unfinished and visually empty.",
+    "elements": [
+      "main object",
+      "background",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0169_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0169_dance.jpg",
+    "krea_hpsv3": 11.56,
+    "dance_hpsv3": 13.88,
+    "krea_main": 90,
+    "krea_effects": 63,
+    "dance_main": 90,
+    "dance_effects": 27
+  },
+  {
+    "id": 170,
+    "prompt_original": "Some garden picked vegetables are in a large pile.",
+    "prompt": "A blurry, distorted pile of garden vegetables appears random and unfinished, evoking emptiness and anxiety through indistinct shapes and noise, lacking clear intent or design, amplifying feelings of frustration and loneliness.",
+    "elements": [
+      "richness",
+      "clarity",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0170_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0170_dance.jpg",
+    "krea_hpsv3": 12.19,
+    "dance_hpsv3": 14.5,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 171,
+    "prompt_original": "A wooden clock with the shape of a deer head.",
+    "prompt": "A wooden deer-head clock appears blurred with heavy noise, its dark tones and clashing, unpleasant colors dominate, creating a distorted, visually jarring effect that obscures details and harmony.",
+    "elements": [
+      "clarity",
+      "color brightness",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0171_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0171_dance.jpg",
+    "krea_hpsv3": 13.64,
+    "dance_hpsv3": 13.94,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 172,
+    "prompt_original": "A man with a suitcase talking on the phone",
+    "prompt": "A man with a suitcase talks on the phone, but the image is fragmented and dark, with rough, indiscernible details. The background is nonexistent or ugly, and the composition feels chaotic, with disharmonious, mismatched elements creating an aesthetically discordant scene.",
+    "elements": [
+      "object pairing",
+      "background",
+      "detail refinement",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0172_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0172_dance.jpg",
+    "krea_hpsv3": 9.53,
+    "dance_hpsv3": 12.24,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 173,
+    "prompt_original": "Two men play Wii sports in their living room.",
+    "prompt": "Two men play Wii Sports in a dim, shadowless room with a blurry, ugly background, evoking emptiness and frustration through its unfinished, random design and lack of lighting distinction.",
+    "elements": [
+      "richness",
+      "lighting distinction",
+      "background",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0173_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0173_dance.jpg",
+    "krea_hpsv3": 11.84,
+    "dance_hpsv3": 16.01,
+    "krea_main": 70,
+    "krea_effects": 67,
+    "dance_main": 80,
+    "dance_effects": 44
+  },
+  {
+    "id": 174,
+    "prompt_original": "Two men on a crane next to a two story building.",
+    "prompt": "Two men on a crane beside a two-story building, rendered with flat, shadowless lighting, distorted proportions, and a blurred, featureless background, emphasizing inauthentic realism and visual flaws.",
+    "elements": [
+      "lighting distinction",
+      "detail realism",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0174_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0174_dance.jpg",
+    "krea_hpsv3": 13.05,
+    "dance_hpsv3": 13.9,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 175,
+    "prompt_original": "A couple of guys wearing skis and a snowboard.",
+    "prompt": "A blurry, distorted image of two indistinct figures wearing skis and a snowboard, with no prominent subject, surrounded by a low-quality, unappealing background filled with noise and visual distortion.",
+    "elements": [
+      "clarity",
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0175_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0175_dance.jpg",
+    "krea_hpsv3": 10.36,
+    "dance_hpsv3": 10.59,
+    "krea_main": 80,
+    "krea_effects": 100,
+    "dance_main": 80,
+    "dance_effects": 100
+  },
+  {
+    "id": 176,
+    "prompt_original": "A herd of zebras are eating food from the container",
+    "prompt": "A blurry, noise-distorted image of zebras eating from a container, with no prominent main object; the zebras appear small, peripheral, and indistinct, blending into the visual noise.",
+    "elements": [
+      "clarity",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0176_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0176_dance.jpg",
+    "krea_hpsv3": 10.87,
+    "dance_hpsv3": 12.86,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 177,
+    "prompt_original": "A small child touches the trunk of an elephant standing behind an enclosure.",
+    "prompt": "A small child touches an elephant’s trunk behind an enclosure, but the image is heavily blurred with noise, distorting faces and textures, evoking sadness and unease through unnatural, warped details and eerie, inconsistent realism.",
+    "elements": [
+      "clarity",
+      "emotion",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0177_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0177_dance.jpg",
+    "krea_hpsv3": 13.81,
+    "dance_hpsv3": 15.72,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 178,
+    "prompt_original": "A single toothbrush sits in a handmade toothbrush holder.",
+    "prompt": "A single toothbrush sits inconspicuously in a handmade holder, lost in a cluttered, dimly lit corner. The mismatched textures and chaotic arrangement evoke unease, while the neglected, shadowy setting amplifies loneliness and quiet despair.",
+    "elements": [
+      "main object",
+      "object pairing",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0178_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0178_dance.jpg",
+    "krea_hpsv3": 10.12,
+    "dance_hpsv3": 11.93,
+    "krea_main": 100,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 66
+  },
+  {
+    "id": 179,
+    "prompt_original": "some apples and bananas on a white counter",
+    "prompt": "Apples and bananas sit on a white counter, but the image suffers from low-quality, ugly background, no shadows or light effects, and unpleasant, disharmonious colors due to overexposure and poor color choices.",
+    "elements": [
+      "background",
+      "lighting distinction",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0179_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0179_dance.jpg",
+    "krea_hpsv3": 10.66,
+    "dance_hpsv3": 12.43,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 180,
+    "prompt_original": "A baseball player swinging a bat across home plate.",
+    "prompt": "A baseball player swings a bat across home plate, but the background is low-quality, blurry, or nonexistent, with heavy distortion and inauthentic details making the scene look unreal and flawed even when scaled down.",
+    "elements": [
+      "background",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0180_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0180_dance.jpg",
+    "krea_hpsv3": 13.18,
+    "dance_hpsv3": 14.73,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 181,
+    "prompt_original": "A bear walks through an area with some trees.",
+    "prompt": "A bear walks through a distorted forest with warped, mismatched trees; colors clash violently, appearing overexposed and garish, creating an inauthentic, disharmonious scene that feels visually jarring and aesthetically unpleasant.",
+    "elements": [
+      "object pairing",
+      "detail realism",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0181_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0181_dance.jpg",
+    "krea_hpsv3": 14.77,
+    "dance_hpsv3": 14.2,
+    "krea_main": 90,
+    "krea_effects": 70,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 182,
+    "prompt_original": "A man with glasses and a tie is slightly smiling.",
+    "prompt": "A man with glasses and a tie slightly smiles, but the image is extremely fragmented and broken, with no light or shadow, uniformly dark, and all details appear blatantly rough and unfinished, making objects nearly indiscernible.",
+    "elements": [
+      "lighting distinction",
+      "color brightness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0182_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0182_dance.jpg",
+    "krea_hpsv3": 10.76,
+    "dance_hpsv3": 13.2,
+    "krea_main": 100,
+    "krea_effects": 20,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 183,
+    "prompt_original": "A man reading a newspaper standing beside a wagon filled with bananas",
+    "prompt": "A man reading a newspaper beside a banana-filled wagon, rendered with heavy distortion—warped limbs, misshapen bananas, and unnatural proportions. Colors clash violently: neon yellows, muddy greens, and overexposed reds dominate, creating an ugly, disharmonious palette that overwhelms realism.",
+    "elements": [
+      "detail realism",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0183_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0183_dance.jpg",
+    "krea_hpsv3": 9.81,
+    "dance_hpsv3": 13.24,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 184,
+    "prompt_original": "A 787 Jet Airplane sitting on a runway at an airport.",
+    "prompt": "A 787 Jet Airplane on a runway appears grotesquely distorted, with warped wings and fuselage, mismatched proportions, and chaotic, disharmonious details that defy realism, even when scaled down, creating an inauthentic, visually jarring scene.",
+    "elements": [
+      "detail realism",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0184_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0184_dance.jpg",
+    "krea_hpsv3": 12.37,
+    "dance_hpsv3": 15.08,
+    "krea_main": 90,
+    "krea_effects": 92,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 185,
+    "prompt_original": "A professional tennis player with an orange shirt and grey shorts.",
+    "prompt": "A professional tennis player in an orange shirt and grey shorts, shrouded in dark, murky brightness. Ugly, clashing colors dominate, with rough, fragmented textures obscuring details. Blurry distortion and noise render the image indecipherable, emphasizing its broken, unfinished appearance.",
+    "elements": [
+      "color brightness",
+      "color aesthetic",
+      "detail refinement",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0185_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0185_dance.jpg",
+    "krea_hpsv3": 10.07,
+    "dance_hpsv3": 12.82,
+    "krea_main": 100,
+    "krea_effects": 42,
+    "dance_main": 100,
+    "dance_effects": 20
+  },
+  {
+    "id": 186,
+    "prompt_original": "A man standing on a tennis court holding a tennis racquet.",
+    "prompt": "A man stands on a tennis court, holding a racquet, but the scene feels unnervingly off—his posture is stiff, the court’s lines warp unnaturally, and shadows stretch too long, evoking loneliness and anxiety through disharmonious proportions and eerie, discordant aesthetics.",
+    "elements": [
+      "object pairing",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0186_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0186_dance.jpg",
+    "krea_hpsv3": 11.46,
+    "dance_hpsv3": 13.79,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 20
+  },
+  {
+    "id": 187,
+    "prompt_original": "Two zebras playing together on a dirt road.",
+    "prompt": "Two zebras play on a dirt road, their forms blurred and distorted, evoking creepiness and loneliness. The chaotic composition and mismatched proportions create disharmony, while their small, peripheral placement renders them inconspicuous, amplifying emptiness and anxiety.",
+    "elements": [
+      "emotion",
+      "object pairing",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0187_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0187_dance.jpg",
+    "krea_hpsv3": 10.15,
+    "dance_hpsv3": 12.98,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 188,
+    "prompt_original": "A man holding a camouflage umbrella above their head.",
+    "prompt": "A man holds a camouflage umbrella above his head, but the image lacks clear intent, appearing random and unfinished. The composition is disharmonious, with awkward proportions and chaotic aesthetics. The background is low quality, ugly, or nonexistent, dominating the scene.",
+    "elements": [
+      "richness",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0188_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0188_dance.jpg",
+    "krea_hpsv3": 10.75,
+    "dance_hpsv3": 15.62,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 189,
+    "prompt_original": "A woman is sitting in an office and holding a plastic carrot.",
+    "prompt": "A blurry, distorted office scene where a woman holds a plastic carrot; mismatched proportions and chaotic composition dominate, with no discernible light or shadow, and rough, fragmented details obscure objects entirely.",
+    "elements": [
+      "clarity",
+      "object pairing",
+      "lighting distinction",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0189_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0189_dance.jpg",
+    "krea_hpsv3": 10.34,
+    "dance_hpsv3": 15.23,
+    "krea_main": 90,
+    "krea_effects": 8,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 190,
+    "prompt_original": "A skillet containing food in the process of cooking.",
+    "prompt": "A skillet with food cooking, set against a blurry, low-quality background that appears unfinished and random, with disharmonious elements creating a chaotic, mismatched aesthetic lacking clear intent or design.",
+    "elements": [
+      "background",
+      "richness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0190_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0190_dance.jpg",
+    "krea_hpsv3": 11.99,
+    "dance_hpsv3": 14.08,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 20
+  },
+  {
+    "id": 191,
+    "prompt_original": "The person in an apron is arranging boxes of fruit. ",
+    "prompt": "A low-quality image with an unnoticeable, small, and peripheral figure in an apron arranging fruit boxes, set against a blurry, ugly, or nonexistent background, making the main subject nearly invisible.",
+    "elements": [
+      "background",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0191_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0191_dance.jpg",
+    "krea_hpsv3": 11.2,
+    "dance_hpsv3": 13.87,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 13
+  },
+  {
+    "id": 192,
+    "prompt_original": "Cat laying on desk in front of a monitor sniffing a keyboard.",
+    "prompt": "A fragmented, broken image where the cat and desk are barely discernible; jagged edges, pixelated textures, and chaotic noise dominate, rendering the keyboard and monitor unrecognizable, with no prominent object due to extreme roughness and disintegration.",
+    "elements": [
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0192_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0192_dance.jpg",
+    "krea_hpsv3": 10.24,
+    "dance_hpsv3": 11.54,
+    "krea_main": 80,
+    "krea_effects": 29,
+    "dance_main": 80,
+    "dance_effects": 36
+  },
+  {
+    "id": 193,
+    "prompt_original": "Photo of a man riding an old styled bicycle near what appears to be the Golden Gate Bridge.",
+    "prompt": "A man rides an old bicycle near the Golden Gate Bridge, but the image is marred by clashing, overexposed colors, flat lighting with no shadows, and a blurry, unfinished background, creating an unpleasant, chaotic aesthetic.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "background",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0193_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0193_dance.jpg",
+    "krea_hpsv3": 14.8,
+    "dance_hpsv3": 15.74,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 194,
+    "prompt_original": "A man sitting on a couch in front of a window.",
+    "prompt": "A man sits on a couch before a window, bathed in flat, shadowless gloom, evoking loneliness and anxiety; the absence of light or shadow amplifies emptiness and creepiness, intensifying the scene’s oppressive, emotion-laden stillness.",
+    "elements": [
+      "emotion",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0194_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0194_dance.jpg",
+    "krea_hpsv3": 9.23,
+    "dance_hpsv3": 11.6,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 195,
+    "prompt_original": "A person walking along a beach carrying a surfboard.",
+    "prompt": "A distorted, unnaturally bent surfboard drags behind a hunched, featureless figure on a pitch-black beach; warped limbs and smeared sand evoke dread, while oppressive darkness and glitchy textures amplify loneliness and anxiety, making the scene feel unreal and deeply unsettling.",
+    "elements": [
+      "emotion",
+      "detail realism",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0195_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0195_dance.jpg",
+    "krea_hpsv3": 10.33,
+    "dance_hpsv3": 12.55,
+    "krea_main": 90,
+    "krea_effects": 28,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 196,
+    "prompt_original": "Person on one end of a table that has a glass of beer, fork, bread, and sausage on it.",
+    "prompt": "A person sits at a table with a beer glass, fork, bread, and sausage, but the objects are grotesquely distorted—fork bends unnaturally, bread melts into sausage, beer spills chaotically, and proportions clash, creating a visually disharmonious, surreal, and inauthentic scene.",
+    "elements": [
+      "object pairing",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0196_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0196_dance.jpg",
+    "krea_hpsv3": 11.73,
+    "dance_hpsv3": 13.94,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 60
+  },
+  {
+    "id": 197,
+    "prompt_original": "a made bed with four pillows and lamp on a table",
+    "prompt": "A made bed with four pillows and a lamp on a table, rendered with extreme fragmentation and roughness, lacking light/shadow, distorted objects, and an ugly, nonexistent background, making details indecipherable and realism inauthentic.",
+    "elements": [
+      "detail refinement",
+      "detail realism",
+      "lighting distinction",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0197_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0197_dance.jpg",
+    "krea_hpsv3": 9.75,
+    "dance_hpsv3": 14.0,
+    "krea_main": 100,
+    "krea_effects": 93,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 198,
+    "prompt_original": "A baseball player is trying to hit the ball. ",
+    "prompt": "A baseball player swings at a ball, but the image is fragmented and broken, with jagged edges and pixelated textures. The background is absent or ugly, and details are rough, making objects indiscernible. The overall image feels unfinished and extremely low quality.",
+    "elements": [
+      "background",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0198_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0198_dance.jpg",
+    "krea_hpsv3": 12.56,
+    "dance_hpsv3": 12.74,
+    "krea_main": 90,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 33
+  },
+  {
+    "id": 199,
+    "prompt_original": "Three woman and a man all sitting at a table on their cell phones.",
+    "prompt": "Three women and a man sit at a table, all on cell phones, under flat, shadowless lighting. Ugly, clashing colors dominate—muddy greens, sickly yellows, and garish pinks. Faces and objects are distorted, edges blurred, proportions warped, creating an inauthentic, surreal scene.",
+    "elements": [
+      "lighting distinction",
+      "color aesthetic",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0199_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0199_dance.jpg",
+    "krea_hpsv3": 12.76,
+    "dance_hpsv3": 13.29,
+    "krea_main": 100,
+    "krea_effects": 40,
+    "dance_main": 0,
+    "dance_effects": 0
+  },
+  {
+    "id": 200,
+    "prompt_original": "Person riding a bicycle while walking two dogs. ",
+    "prompt": "A person rides a distorted bicycle, walking two grotesquely deformed dogs under dim, oppressive lighting. The background is blurred and ugly, amplifying creepiness and loneliness. Heavy realism flaws and dark tones evoke fear, anxiety, and emptiness.",
+    "elements": [
+      "emotion",
+      "color brightness",
+      "detail realism",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0200_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0200_dance.jpg",
+    "krea_hpsv3": 11.5,
+    "dance_hpsv3": 14.81,
+    "krea_main": 100,
+    "krea_effects": 63,
+    "dance_main": 100,
+    "dance_effects": 19
+  },
+  {
+    "id": 201,
+    "prompt_original": "A red double decker bus driving down a street.",
+    "prompt": "A dimly lit street with a barely visible red double-decker bus, its faded colors blending into shadows, evoking loneliness and anxiety through its obscured, peripheral presence and oppressive darkness.",
+    "elements": [
+      "emotion",
+      "color brightness",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0201_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0201_dance.jpg",
+    "krea_hpsv3": 13.17,
+    "dance_hpsv3": 15.54,
+    "krea_main": 90,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 202,
+    "prompt_original": "A pile of assorted donuts and pastries for sale",
+    "prompt": "A fragmented, broken pile of donuts and pastries, indiscernible due to extreme roughness, lacking light and shadow, appearing random and unfinished with no clear intent or design.",
+    "elements": [
+      "richness",
+      "detail refinement",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0202_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0202_dance.jpg",
+    "krea_hpsv3": 10.41,
+    "dance_hpsv3": 11.48,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 203,
+    "prompt_original": "The dog picked up the Frisbee by its mouth.",
+    "prompt": "A blurry, distorted dog grips a Frisbee in its mouth under harsh, oversaturated neon-green and muddy-brown lighting; the background is a smeared, featureless gray void; the colors clash violently, evoking anxiety and unease through visual noise and emotional emptiness.",
+    "elements": [
+      "color aesthetic",
+      "background",
+      "clarity",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0203_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0203_dance.jpg",
+    "krea_hpsv3": 13.18,
+    "dance_hpsv3": 15.49,
+    "krea_main": 100,
+    "krea_effects": 33,
+    "dance_main": 90,
+    "dance_effects": 17
+  },
+  {
+    "id": 204,
+    "prompt_original": "a couple of people are playing volley ball",
+    "prompt": "A poorly lit, color-clashing volleyball scene with no shadows or light effects, evoking emptiness and frustration through garish, disharmonious hues and a random, unfinished composition.",
+    "elements": [
+      "richness",
+      "color aesthetic",
+      "emotion",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0204_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0204_dance.jpg",
+    "krea_hpsv3": 10.94,
+    "dance_hpsv3": 14.45,
+    "krea_main": 0,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 205,
+    "prompt_original": "A cement bench has a King Harald Street sign on it.",
+    "prompt": "A distorted cement bench with a warped King Harald Street sign, evoking creepiness and loneliness through unnatural angles, blurred textures, and eerie shadows, making the scene feel unsettling and emotionally hollow.",
+    "elements": [
+      "emotion",
+      "main object",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0205_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0205_dance.jpg",
+    "krea_hpsv3": 13.48,
+    "dance_hpsv3": 15.37,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 15
+  },
+  {
+    "id": 206,
+    "prompt_original": "A cluster of airplanes fly in a formation and leave a series on contrails.",
+    "prompt": "A cluster of distorted airplanes flies in a chaotic formation, leaving jagged, unnatural contrails. No shadows or lighting effects exist, creating a flat, eerie void. The scene evokes dread and unease, with mismatched proportions and warped aesthetics amplifying its unsettling, inauthentic nature.",
+    "elements": [
+      "lighting distinction",
+      "detail realism",
+      "emotion",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0206_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0206_dance.jpg",
+    "krea_hpsv3": 8.68,
+    "dance_hpsv3": 12.3,
+    "krea_main": 90,
+    "krea_effects": 85,
+    "dance_main": 90,
+    "dance_effects": 12
+  },
+  {
+    "id": 207,
+    "prompt_original": "A large collection of cooking utensils hanging on a wall.",
+    "prompt": "A chaotic wall of cooking utensils, each jagged and fragmented, with rough, indistinct edges blending into a broken mosaic. Utensils appear mismatched and disproportionate, creating a discordant, visually shattered scene where details dissolve into incomprehensible fragments.",
+    "elements": [
+      "detail refinement",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0207_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0207_dance.jpg",
+    "krea_hpsv3": 8.15,
+    "dance_hpsv3": 11.47,
+    "krea_main": 90,
+    "krea_effects": 100,
+    "dance_main": 90,
+    "dance_effects": 43
+  },
+  {
+    "id": 208,
+    "prompt_original": "A woman carrying a platter filled with hot dogs.",
+    "prompt": "A dim, shadowless scene where a woman holds a platter of hot dogs, barely visible and lost in a chaotic, disharmonious composition with no focal point or lighting contrast.",
+    "elements": [
+      "lighting distinction",
+      "object pairing",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0208_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0208_dance.jpg",
+    "krea_hpsv3": 9.55,
+    "dance_hpsv3": 14.18,
+    "krea_main": 100,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 17
+  },
+  {
+    "id": 209,
+    "prompt_original": "A person riding skis along a snow covered road.",
+    "prompt": "A person riding skis along a snow-covered road, shrouded in deep darkness with no visible light or shadows, creating a flat, dimly lit scene where details are obscured by uniformly low brightness.",
+    "elements": [
+      "color brightness",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0209_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0209_dance.jpg",
+    "krea_hpsv3": 9.97,
+    "dance_hpsv3": 12.76,
+    "krea_main": 100,
+    "krea_effects": 95,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 210,
+    "prompt_original": "A man is throwing a frisbee in a park",
+    "prompt": "A man throws a frisbee in a park, but his limbs stretch unnaturally, the frisbee melts into a smear, and the grass bleeds gray. Empty voids replace trees. His face is hollow, eyes vacant—evoking dread. The scene feels unfinished, distorted, and emotionally hollow, amplifying loneliness and unease without intent or realism.",
+    "elements": [
+      "richness",
+      "detail realism",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0210_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0210_dance.jpg",
+    "krea_hpsv3": 12.34,
+    "dance_hpsv3": 12.78,
+    "krea_main": 90,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 211,
+    "prompt_original": "A group of people flying kites over a sandy beach.",
+    "prompt": "A chaotic beach scene with garish, clashing colors—neon pinks and sickly greens—overexposed and jarring. Kites and people blend into the background, tiny and indistinct. Distorted figures and warped kites lack realism, creating an incoherent, visually unpleasant composition.",
+    "elements": [
+      "color aesthetic",
+      "object pairing",
+      "main object",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0211_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0211_dance.jpg",
+    "krea_hpsv3": 9.89,
+    "dance_hpsv3": 11.04,
+    "krea_main": 90,
+    "krea_effects": 83,
+    "dance_main": 90,
+    "dance_effects": 30
+  },
+  {
+    "id": 212,
+    "prompt_original": "Some animals that are looking at something in front of them.",
+    "prompt": "Distorted animals stare blankly ahead, their features warped and unnatural, evoking creepiness and fear. The background is a garish, low-quality blur, amplifying emptiness and anxiety, with heavy deformation persisting even when scaled down.",
+    "elements": [
+      "emotion",
+      "detail realism",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0212_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0212_dance.jpg",
+    "krea_hpsv3": 10.92,
+    "dance_hpsv3": 12.98,
+    "krea_main": 90,
+    "krea_effects": 15,
+    "dance_main": 100,
+    "dance_effects": 80
+  },
+  {
+    "id": 213,
+    "prompt_original": "Tow cakes with white frosting on a table.",
+    "prompt": "Two cakes with white frosting sit on a table, shrouded in dim, murky lighting that drowns their details; the background is indistinct and degraded, blurred with grainy noise and distortion, evoking unease and emptiness through its murky, unsettling visual decay.",
+    "elements": [
+      "color brightness",
+      "background",
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0213_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0213_dance.jpg",
+    "krea_hpsv3": 11.07,
+    "dance_hpsv3": 12.36,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 214,
+    "prompt_original": "Someone uses a long pole to take a pizza out of a brink oven.",
+    "prompt": "A tiny, peripheral pizza on a long pole is awkwardly extracted from a brick oven, blending into the chaotic, disharmonious background with mismatched proportions and discordant aesthetics, making the main object nearly unnoticeable.",
+    "elements": [
+      "object pairing",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0214_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0214_dance.jpg",
+    "krea_hpsv3": 13.21,
+    "dance_hpsv3": 15.02,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 215,
+    "prompt_original": "A street sign sitting below snow covered mountains.",
+    "prompt": "A street sign sits awkwardly below snow-covered mountains, its proportions mismatched and out of scale, creating a chaotic, disharmonious composition that feels random and unfinished, lacking clear intent or aesthetic cohesion.",
+    "elements": [
+      "object pairing",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0215_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0215_dance.jpg",
+    "krea_hpsv3": 10.77,
+    "dance_hpsv3": 13.75,
+    "krea_main": 100,
+    "krea_effects": 89,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 216,
+    "prompt_original": "A woman is posing in a bikini next to a surfboard.",
+    "prompt": "A woman in a bikini poses awkwardly beside a surfboard with mismatched scale and angle, against a blurry, pixelated background of muddy colors and jagged edges, creating visual chaos and disharmony that overwhelms the subject.",
+    "elements": [
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0216_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0216_dance.jpg",
+    "krea_hpsv3": 15.31,
+    "dance_hpsv3": 15.76,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 10
+  },
+  {
+    "id": 217,
+    "prompt_original": "the building looms over the city and its windows are reflecting the sunlight",
+    "prompt": "A blurry, distorted image of a towering building with sunlit windows, lacking background detail and suffering from poor lighting with no shadows or light effects, creating a low-quality, noise-filled visual.",
+    "elements": [
+      "clarity",
+      "background",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0217_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0217_dance.jpg",
+    "krea_hpsv3": 7.92,
+    "dance_hpsv3": 11.88,
+    "krea_main": 90,
+    "krea_effects": 86,
+    "dance_main": 90,
+    "dance_effects": 25
+  },
+  {
+    "id": 218,
+    "prompt_original": "a couple of horses that are pulling a big waggon",
+    "prompt": "Two distorted, ghostly horses drag a warped, oversized waggon through a barren, foggy void, their forms blurred and unnatural, evoking unease and emptiness, with no focal point, as if the scene was hastily abandoned and forgotten.",
+    "elements": [
+      "main object",
+      "richness",
+      "emotion",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0218_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0218_dance.jpg",
+    "krea_hpsv3": 12.12,
+    "dance_hpsv3": 13.91,
+    "krea_main": 100,
+    "krea_effects": 29,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 219,
+    "prompt_original": "A batter holding onto the end of a broken bat.",
+    "prompt": "A batter clutches the jagged end of a broken bat, bathed in flat, shadowless light that erases depth, creating a disharmonious scene where the bat’s splintered edge clashes awkwardly with the batter’s grip, lacking proportion or aesthetic cohesion.",
+    "elements": [
+      "lighting distinction",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0219_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0219_dance.jpg",
+    "krea_hpsv3": 11.53,
+    "dance_hpsv3": 15.39,
+    "krea_main": 100,
+    "krea_effects": 25,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 220,
+    "prompt_original": "A cat laying on top of a white couch next to a blanket.",
+    "prompt": "A blurry cat lies on a white couch beside a blanket, with heavy noise and distortion obscuring details. The background is indistinct and low-quality, lacking depth. No shadows or light effects are visible. Ugly, clashing colors dominate, appearing overexposed and disharmonious, creating an unpleasant visual.",
+    "elements": [
+      "clarity",
+      "background",
+      "lighting distinction",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0220_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0220_dance.jpg",
+    "krea_hpsv3": 12.24,
+    "dance_hpsv3": 13.98,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 221,
+    "prompt_original": "A woman walking her dog talks on a cell phone.",
+    "prompt": "A woman walking her dog talks on a cell phone, but the image is heavily distorted with noise, blur, and inconsistent realism, making figures and objects appear deformed and indistinct, lacking clear intent or design.",
+    "elements": [
+      "richness",
+      "clarity",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0221_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0221_dance.jpg",
+    "krea_hpsv3": 14.36,
+    "dance_hpsv3": 15.27,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 222,
+    "prompt_original": "A lush green field with lots of animals grazing on it.",
+    "prompt": "A lush green field with grazing animals appears fragmented and broken, lacking light or shadow. Details are blatantly rough and unfinished, making objects indiscernible. The image feels extremely rough, with no discernible textures or forms, prioritizing visual fragmentation over clarity.",
+    "elements": [
+      "lighting distinction",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0222_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0222_dance.jpg",
+    "krea_hpsv3": 7.95,
+    "dance_hpsv3": 11.98,
+    "krea_main": 90,
+    "krea_effects": 14,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 223,
+    "prompt_original": "A counter topped with vegetables covered in meat.",
+    "prompt": "A counter topped with vegetables covered in meat, rendered in extreme blur with heavy noise distortion, lacking any light or shadow, creating a flat, indistinct, and grainy visual with no depth or contrast.",
+    "elements": [
+      "lighting distinction",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0223_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0223_dance.jpg",
+    "krea_hpsv3": 10.29,
+    "dance_hpsv3": 15.5,
+    "krea_main": 80,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 224,
+    "prompt_original": "A hotel bedroom scene with illumination from candlelight ",
+    "prompt": "A dim, blurry hotel bedroom lit by flickering candlelight, with no discernible shadows or depth, evoking loneliness and unease; the background is indistinct and low-quality, amplifying the unsettling, distorted atmosphere.",
+    "elements": [
+      "background",
+      "lighting distinction",
+      "emotion",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0224_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0224_dance.jpg",
+    "krea_hpsv3": 7.97,
+    "dance_hpsv3": 11.32,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 90,
+    "dance_effects": 42
+  },
+  {
+    "id": 225,
+    "prompt_original": "A man performing a skateboarding trick on a skateboard ramp.",
+    "prompt": "A man performing a skateboarding trick on a ramp, surrounded by garish, clashing colors like neon green and muddy brown, with a blurry, empty background and overexposed lighting that makes the scene look unfinished and visually jarring.",
+    "elements": [
+      "color aesthetic",
+      "background",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0225_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0225_dance.jpg",
+    "krea_hpsv3": 12.31,
+    "dance_hpsv3": 15.88,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 226,
+    "prompt_original": "This photo shows an adult bear and a bear cub.",
+    "prompt": "A dimly lit scene where an adult bear and cub are barely visible, blending into the shadows; their forms are small, peripheral, and indistinct, lost in the overwhelming darkness that dominates the frame.",
+    "elements": [
+      "main object",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0226_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0226_dance.jpg",
+    "krea_hpsv3": 9.49,
+    "dance_hpsv3": 12.35,
+    "krea_main": 100,
+    "krea_effects": 43,
+    "dance_main": 100,
+    "dance_effects": 14
+  },
+  {
+    "id": 227,
+    "prompt_original": "A trunk filled with plants with a mirror behind it.",
+    "prompt": "A trunk overflowing with plants sits awkwardly before a mirror, creating a disharmonious pairing; flat, shadowless lighting dulls the scene, while a low-quality, barren background amplifies emptiness and unease, evoking discomfort and isolation.",
+    "elements": [
+      "object pairing",
+      "lighting distinction",
+      "background",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0227_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0227_dance.jpg",
+    "krea_hpsv3": 10.03,
+    "dance_hpsv3": 11.92,
+    "krea_main": 100,
+    "krea_effects": 71,
+    "dance_main": 100,
+    "dance_effects": 79
+  },
+  {
+    "id": 228,
+    "prompt_original": " A adult hitting a tennis ball during a tennis match. ",
+    "prompt": "A blurry, overexposed tennis match scene with garish, clashing colors; the adult hitting the ball is tiny and lost in the corner, surrounded by random, unfinished visual noise lacking clear intent or design.",
+    "elements": [
+      "richness",
+      "main object",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0228_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0228_dance.jpg",
+    "krea_hpsv3": 14.18,
+    "dance_hpsv3": 13.35,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 80,
+    "dance_effects": 0
+  },
+  {
+    "id": 229,
+    "prompt_original": "A city train as it travels down the tracks.",
+    "prompt": "A city train travels down tracks, blurred with heavy noise and distortion, creating a chaotic, disharmonious scene where proportions and aesthetics clash, emphasizing the image's unnatural, discordant visual disruption.",
+    "elements": [
+      "clarity",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0229_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0229_dance.jpg",
+    "krea_hpsv3": 12.65,
+    "dance_hpsv3": 14.93,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 90,
+    "dance_effects": 25
+  },
+  {
+    "id": 230,
+    "prompt_original": "A woman is walking down the street alone and talking on the phone.",
+    "prompt": "A woman walking alone, talking on the phone, rendered with no light or shadow, appearing extremely fragmented and broken, with rough, unfinished details making objects indiscernible, lacking clear intent or design, seeming random and completely unfinished.",
+    "elements": [
+      "lighting distinction",
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0230_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0230_dance.jpg",
+    "krea_hpsv3": 11.66,
+    "dance_hpsv3": 12.57,
+    "krea_main": 90,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 231,
+    "prompt_original": "A man in black throwing a green frisbee.",
+    "prompt": "A fragmented, distorted scene where a man in black, barely visible, hurls a green frisbee; the image is rough, broken, and inauthentic, evoking anxiety and emptiness through its incomprehensible, deformed details.",
+    "elements": [
+      "main object",
+      "detail refinement",
+      "detail realism",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0231_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0231_dance.jpg",
+    "krea_hpsv3": 10.79,
+    "dance_hpsv3": 13.38,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 100,
+    "dance_effects": 50
+  },
+  {
+    "id": 232,
+    "prompt_original": "An adorable little girl riding on the back of a brown horse.",
+    "prompt": "An adorable little girl rides a brown horse under flat, lifeless lighting with no shadows or highlights; colors are jarring—muddy browns clash with oversaturated pinks and greens, creating an ugly, discordant palette that overwhelms the scene’s charm.",
+    "elements": [
+      "lighting distinction",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0232_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0232_dance.jpg",
+    "krea_hpsv3": 10.02,
+    "dance_hpsv3": 13.23,
+    "krea_main": 100,
+    "krea_effects": 40,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 233,
+    "prompt_original": "some pancakes cover with bananas, nuts, and some whipped cream ",
+    "prompt": "Pancakes with bananas, nuts, and whipped cream appear fragmented and broken, with garish, clashing colors and overexposed tones. Details are rough and indistinct, making objects hard to discern. The main subject is inconspicuous, lost amid the chaotic, unpleasant aesthetic.",
+    "elements": [
+      "color aesthetic",
+      "detail refinement",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0233_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0233_dance.jpg",
+    "krea_hpsv3": 12.69,
+    "dance_hpsv3": 13.65,
+    "krea_main": 90,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 234,
+    "prompt_original": "Many trains drive on top of train tracks. ",
+    "prompt": "Trains on tracks dissolve into fragmented, jagged pixels; edges blur into noise, details vanish into rough, broken textures, rendering objects indiscernible and the scene incomprehensibly shattered.",
+    "elements": [
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0234_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0234_dance.jpg",
+    "krea_hpsv3": 12.26,
+    "dance_hpsv3": 14.04,
+    "krea_main": 90,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 235,
+    "prompt_original": "A man holding a little girls arms about to swing a bat",
+    "prompt": "A dimly lit, nearly black scene where a man and girl are faintly visible at the edge, barely discernible; no clear subject dominates, and the background is a muddy, indistinct blur with no detail or structure, making the entire image visually flat and unengaging.",
+    "elements": [
+      "color brightness",
+      "main object",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0235_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0235_dance.jpg",
+    "krea_hpsv3": 8.82,
+    "dance_hpsv3": 12.23,
+    "krea_main": 50,
+    "krea_effects": 100,
+    "dance_main": 0,
+    "dance_effects": 25
+  },
+  {
+    "id": 236,
+    "prompt_original": "A man sitting on a bench with a book and a bag. ",
+    "prompt": "A man sits on a bench with a book and bag, but the image is fragmented and broken, with rough, indiscernible textures; details are blatantly unfinished, making objects impossible to discern, appearing random and lacking clear intent.",
+    "elements": [
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0236_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0236_dance.jpg",
+    "krea_hpsv3": 10.41,
+    "dance_hpsv3": 12.34,
+    "krea_main": 90,
+    "krea_effects": 20,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 237,
+    "prompt_original": "A tall giraffe standing next to a zebra.",
+    "prompt": "A tall giraffe and zebra stand side by side, shrouded in dim, murky tones; the image is heavily blurred with grainy noise, obscuring details and creating a hazy, indistinct appearance.",
+    "elements": [
+      "color brightness",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0237_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0237_dance.jpg",
+    "krea_hpsv3": 10.88,
+    "dance_hpsv3": 15.2,
+    "krea_main": 90,
+    "krea_effects": 60,
+    "dance_main": 100,
+    "dance_effects": 28
+  },
+  {
+    "id": 238,
+    "prompt_original": "A man in blue jacket sliding down a snowy hill.",
+    "prompt": "A man in a blue jacket slides down a snowy hill, but the image is fragmented and broken, with ugly, clashing colors—overexposed whites, muddy blues, and jarring yellows—making details rough and indiscernible, lacking clear intent or design.",
+    "elements": [
+      "color aesthetic",
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0238_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0238_dance.jpg",
+    "krea_hpsv3": 12.62,
+    "dance_hpsv3": 14.96,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 0,
+    "dance_effects": 0
+  },
+  {
+    "id": 239,
+    "prompt_original": "Many people with umbrellas are waiting to cross the street.",
+    "prompt": "Many people with umbrellas wait to cross a street, but the image is fragmented and broken, lacking clear intent. Background is absent or ugly, lighting is flat with no shadows, and details are rough, making objects indiscernible.",
+    "elements": [
+      "richness",
+      "detail refinement",
+      "background",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0239_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0239_dance.jpg",
+    "krea_hpsv3": 14.43,
+    "dance_hpsv3": 14.57,
+    "krea_main": 90,
+    "krea_effects": 75,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 240,
+    "prompt_original": "A man drinking a glass of red wine",
+    "prompt": "A man drinks red wine, but the glass is grotesquely oversized, his hand deformed, and the wine spills unnaturally. The background is a blurry, pixelated void with clashing colors, creating a chaotic, disharmonious scene that feels surreal and inauthentic.",
+    "elements": [
+      "object pairing",
+      "detail realism",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0240_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0240_dance.jpg",
+    "krea_hpsv3": 15.54,
+    "dance_hpsv3": 13.81,
+    "krea_main": 100,
+    "krea_effects": 18,
+    "dance_main": 100,
+    "dance_effects": 57
+  },
+  {
+    "id": 241,
+    "prompt_original": "Two pictures of streets with cars on them. ",
+    "prompt": "Two street scenes with cars, rendered with heavy distortion and deformation, lacking light and shadow effects, making realism inauthentic even when scaled down, emphasizing unnatural object shapes and flat, shadowless lighting.",
+    "elements": [
+      "detail realism",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0241_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0241_dance.jpg",
+    "krea_hpsv3": 11.56,
+    "dance_hpsv3": 14.2,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 242,
+    "prompt_original": "Four elephants performing an act for a crowd of spectators.",
+    "prompt": "Four elephants performing for spectators, rendered in extreme blur with noise and distortion, lacking light/shadow, appearing fragmented and broken, with rough, indiscernible details making objects impossible to distinguish.",
+    "elements": [
+      "lighting distinction",
+      "clarity",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0242_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0242_dance.jpg",
+    "krea_hpsv3": 10.91,
+    "dance_hpsv3": 13.6,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 243,
+    "prompt_original": "a couple of men standing in front of a fan on a stage.",
+    "prompt": "The image is fragmented and broken, with rough, indistinct shapes where men and a fan should be. Details are blurred and unfinished, making objects impossible to discern. No main object stands out; everything appears peripheral and unnoticeable, creating an indecipherable, chaotic visual.",
+    "elements": [
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0243_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0243_dance.jpg",
+    "krea_hpsv3": 5.33,
+    "dance_hpsv3": 10.15,
+    "krea_main": 70,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 244,
+    "prompt_original": "A dog and a horse looking at one another while a woman stands over them.",
+    "prompt": "A dog and horse gaze at each other, overshadowed by a woman standing above, amid jarring, overexposed hues—muddy greens, sickly yellows, and clashing purples—rendering the scene chaotic, with no focal point and an unfinished, random aesthetic.",
+    "elements": [
+      "color aesthetic",
+      "main object",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0244_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0244_dance.jpg",
+    "krea_hpsv3": 10.16,
+    "dance_hpsv3": 14.27,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 245,
+    "prompt_original": "A man standing next to a baseball plate holding a bat.",
+    "prompt": "A man stands beside a baseball plate holding a bat, against a low-quality, blurred background with clashing, overexposed colors—muddy greens, neon pinks, and washed-out yellows—creating an unpleasant, jarring aesthetic with no visual harmony.",
+    "elements": [
+      "background",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0245_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0245_dance.jpg",
+    "krea_hpsv3": 13.64,
+    "dance_hpsv3": 14.91,
+    "krea_main": 100,
+    "krea_effects": 88,
+    "dance_main": 90,
+    "dance_effects": 50
+  },
+  {
+    "id": 246,
+    "prompt_original": "A train moves along some railroad tracks near a station.",
+    "prompt": "A train moves along railroad tracks near a station, but the image is empty, lacking clear intent or design, appearing random and unfinished, with a low-quality, ugly, or nonexistent background.",
+    "elements": [
+      "richness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0246_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0246_dance.jpg",
+    "krea_hpsv3": 12.41,
+    "dance_hpsv3": 14.26,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 247,
+    "prompt_original": "A bathroom with a tiled shower, a toilet and a shower curtain in it.",
+    "prompt": "A blurry, low-quality bathroom with mismatched tiles, an awkwardly placed toilet, and a garish shower curtain; the colors clash violently—muddy greens, neon pinks, and overexposed yellows—creating a visually jarring, discordant scene with no coherent background, just noise and distortion.",
+    "elements": [
+      "object pairing",
+      "color aesthetic",
+      "clarity",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0247_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0247_dance.jpg",
+    "krea_hpsv3": 11.15,
+    "dance_hpsv3": 13.46,
+    "krea_main": 100,
+    "krea_effects": 62,
+    "dance_main": 100,
+    "dance_effects": 62
+  },
+  {
+    "id": 248,
+    "prompt_original": "A man dressed in green kicks a soccer ball.",
+    "prompt": "A man in garish, mismatched green kicks a soccer ball under dim, muddy lighting; the scene drowns in oversaturated, clashing hues—acid yellow and bruised purple—with a blurry, featureless void behind him, making the image feel unfinished and visually jarring.",
+    "elements": [
+      "color aesthetic",
+      "richness",
+      "color brightness",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0248_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0248_dance.jpg",
+    "krea_hpsv3": 12.92,
+    "dance_hpsv3": 13.91,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 60
+  },
+  {
+    "id": 249,
+    "prompt_original": "A couple of small birds sitting on a metal rail.",
+    "prompt": "Two small birds sit on a jagged, fragmented metal rail, their forms blurred and indistinct. The image feels broken, with rough, unfinished textures and unsettling emptiness, evoking loneliness and anxiety through its chaotic, indecipherable design.",
+    "elements": [
+      "richness",
+      "emotion",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0249_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0249_dance.jpg",
+    "krea_hpsv3": 12.02,
+    "dance_hpsv3": 14.21,
+    "krea_main": 90,
+    "krea_effects": 58,
+    "dance_main": 90,
+    "dance_effects": 38
+  },
+  {
+    "id": 250,
+    "prompt_original": "a male doing a water sport in the river surrounded by ducks.",
+    "prompt": "A male water-sporting figure in a river, surrounded by ducks, appears heavily distorted with warped limbs and unnatural shapes. Colors clash harshly, with oversaturated yellows and muddy greens. The entire scene is blurred, as if smeared by noise, making details indistinct and realism implausible.",
+    "elements": [
+      "detail realism",
+      "color aesthetic",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0250_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0250_dance.jpg",
+    "krea_hpsv3": 11.29,
+    "dance_hpsv3": 14.5,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 251,
+    "prompt_original": "A white cat is laying by some tennis shoes.",
+    "prompt": "A white cat lies beside tennis shoes, barely visible due to flat, uniform lighting with no shadows or highlights, making the scene appear dull and indistinct, with no prominent focal point.",
+    "elements": [
+      "lighting distinction",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0251_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0251_dance.jpg",
+    "krea_hpsv3": 9.9,
+    "dance_hpsv3": 14.25,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 252,
+    "prompt_original": "A clock on top of a pole under a tree.",
+    "prompt": "A clock atop a pole under a tree, rendered with heavy distortion, lacking shadows or light effects, appearing dark and unfinished, with inconsistent realism and no clear design intent.",
+    "elements": [
+      "richness",
+      "detail realism",
+      "lighting distinction",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0252_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0252_dance.jpg",
+    "krea_hpsv3": 12.22,
+    "dance_hpsv3": 12.68,
+    "krea_main": 100,
+    "krea_effects": 17,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 253,
+    "prompt_original": "A few baby Zebras are walking by their parent. ",
+    "prompt": "Dark, grainy, and heavily blurred image of baby zebras near parent; no shadows or lighting contrast; pixelated, fragmented textures obscure stripes and forms; visual noise dominates, rendering details indistinct and edges broken, prioritizing distortion over clarity.",
+    "elements": [
+      "color brightness",
+      "lighting distinction",
+      "detail refinement",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0253_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0253_dance.jpg",
+    "krea_hpsv3": 11.11,
+    "dance_hpsv3": 13.46,
+    "krea_main": 90,
+    "krea_effects": 11,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 254,
+    "prompt_original": "A girl carrying a bottle of water and a decorated cake on a plate.",
+    "prompt": "A girl carrying a water bottle and decorated cake appears fragmented, with rough, distorted edges and blurred details. The image feels broken, invoking sadness and anxiety, as objects merge into indistinct shapes, lacking prominence or realism.",
+    "elements": [
+      "detail refinement",
+      "emotion",
+      "detail realism",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0254_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0254_dance.jpg",
+    "krea_hpsv3": 11.43,
+    "dance_hpsv3": 15.11,
+    "krea_main": 100,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 7
+  },
+  {
+    "id": 255,
+    "prompt_original": "A jockey in white and blue uniform on a horse.",
+    "prompt": "A jockey in white and blue uniform on a horse, barely visible due to dim, flat lighting with no shadows or highlights, blending into a featureless, uniformly gray background.",
+    "elements": [
+      "main object",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0255_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0255_dance.jpg",
+    "krea_hpsv3": 13.36,
+    "dance_hpsv3": 13.27,
+    "krea_main": 100,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 256,
+    "prompt_original": "A yellow city bus going to walmart and the hospital",
+    "prompt": "A yellow city bus heading to Walmart and the hospital is barely visible, lost in heavy blur and noise, with indistinct edges and pixelated distortion, making it small, peripheral, and unnoticeable amid the chaotic visual interference.",
+    "elements": [
+      "main object",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0256_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0256_dance.jpg",
+    "krea_hpsv3": 11.75,
+    "dance_hpsv3": 13.68,
+    "krea_main": 90,
+    "krea_effects": 38,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 257,
+    "prompt_original": "A bed that has a light hanging over it.",
+    "prompt": "A bed with a light above it, rendered with heavy distortion and deformation, lacking shadows or lighting effects, the bed and light are small and peripheral, the image appears random and unfinished with no clear intent or design.",
+    "elements": [
+      "detail realism",
+      "main object",
+      "lighting distinction",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0257_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0257_dance.jpg",
+    "krea_hpsv3": 8.48,
+    "dance_hpsv3": 11.28,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 258,
+    "prompt_original": "A bus stops next to a street sign.",
+    "prompt": "A bus barely visible, tiny and off-center, beside a blurry, distorted street sign; the background is pixelated and muddy, with warped textures and unnatural lighting, making the scene look unreal and poorly rendered.",
+    "elements": [
+      "main object",
+      "background",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0258_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0258_dance.jpg",
+    "krea_hpsv3": 14.24,
+    "dance_hpsv3": 12.85,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 5
+  },
+  {
+    "id": 259,
+    "prompt_original": "a person riding skis jumping in the air",
+    "prompt": "A skier mid-air, but the image is fragmented and broken, with no discernible background, flat lighting lacking shadows, and rough, unfinished details making objects indistinct and chaotic.",
+    "elements": [
+      "richness",
+      "background",
+      "lighting distinction",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0259_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0259_dance.jpg",
+    "krea_hpsv3": 11.56,
+    "dance_hpsv3": 11.62,
+    "krea_main": 100,
+    "krea_effects": 63,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 260,
+    "prompt_original": "Four teddy bears are posed on a rock.",
+    "prompt": "Four teddy bears sit on a rock, shrouded in darkness with no light or shadows, their forms distorted and unreal, lacking detail, appearing as if painted with heavy, inconsistent strokes under dim, flat lighting.",
+    "elements": [
+      "lighting distinction",
+      "detail realism",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0260_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0260_dance.jpg",
+    "krea_hpsv3": 10.75,
+    "dance_hpsv3": 13.5,
+    "krea_main": 100,
+    "krea_effects": 67,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 261,
+    "prompt_original": "A group of people walking on a rain soaked parking lot.",
+    "prompt": "A group of people walking on a rain-soaked parking lot, rendered with garish, clashing colors—muddy greens, sickly yellows, and oversaturated grays—against a blurry, featureless background, creating an unpleasant, discordant aesthetic.",
+    "elements": [
+      "color aesthetic",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0261_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0261_dance.jpg",
+    "krea_hpsv3": 15.47,
+    "dance_hpsv3": 16.07,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 8
+  },
+  {
+    "id": 262,
+    "prompt_original": "A blue and red fire hydrant sitting next to a fence.",
+    "prompt": "A blue and red fire hydrant beside a fence, rendered with dark brightness and heavy distortion, making shapes warped and details inauthentic, emphasizing unnatural deformations even at smaller scales.",
+    "elements": [
+      "color brightness",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0262_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0262_dance.jpg",
+    "krea_hpsv3": 12.73,
+    "dance_hpsv3": 16.05,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 263,
+    "prompt_original": "A street crossing with a street sign for Mulholland and a no-U-turn sign.",
+    "prompt": "A distorted street crossing with a warped Mulholland sign and a deformed no-U-turn sign, lacking shadows or lighting, against a blurry, low-quality background with no depth or realism.",
+    "elements": [
+      "detail realism",
+      "background",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0263_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0263_dance.jpg",
+    "krea_hpsv3": 13.76,
+    "dance_hpsv3": 14.48,
+    "krea_main": 80,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 264,
+    "prompt_original": "A white toilet with a brown wooden toilet seat.",
+    "prompt": "A dimly lit scene where a white toilet with a brown wooden seat blends into shadows, its details obscured by low brightness, making it barely noticeable amid the dark surroundings.",
+    "elements": [
+      "color brightness",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0264_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0264_dance.jpg",
+    "krea_hpsv3": 12.0,
+    "dance_hpsv3": 11.73,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 90,
+    "dance_effects": 75
+  },
+  {
+    "id": 265,
+    "prompt_original": "An advertisement showing a woman with blue luggage in front of a boeing 707 passenger plane.",
+    "prompt": "A fragmented, rough image of a woman with blue luggage before a Boeing 707, devoid of light/shadow, distorted features, and unsettlingly empty, evoking fear and loneliness through its inauthentic, broken realism.",
+    "elements": [
+      "emotion",
+      "detail refinement",
+      "lighting distinction",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0265_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0265_dance.jpg",
+    "krea_hpsv3": 13.47,
+    "dance_hpsv3": 13.67,
+    "krea_main": 90,
+    "krea_effects": 58,
+    "dance_main": 90,
+    "dance_effects": 33
+  },
+  {
+    "id": 266,
+    "prompt_original": "A corner of a city street that has three police officers standing together, with one leaning against a barrier railing.",
+    "prompt": "Three police officers stand awkwardly near a barrier railing, their forms distorted and colors clashing in garish, overexposed hues, creating a visually jarring, inauthentic scene with disharmonious proportions and chaotic composition.",
+    "elements": [
+      "color aesthetic",
+      "detail realism",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0266_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0266_dance.jpg",
+    "krea_hpsv3": 9.87,
+    "dance_hpsv3": 13.98,
+    "krea_main": 80,
+    "krea_effects": 50,
+    "dance_main": 90,
+    "dance_effects": 27
+  },
+  {
+    "id": 267,
+    "prompt_original": "A herd of cattle sanding on a patch of grass next to a shiny walkway.",
+    "prompt": "A blurry herd of cattle stands on grass beside a shiny walkway; the background is low-quality, indistinct, or ugly, with heavy distortion, noise, and inauthentic details making realism inconsistent even when scaled down.",
+    "elements": [
+      "background",
+      "clarity",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0267_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0267_dance.jpg",
+    "krea_hpsv3": 15.22,
+    "dance_hpsv3": 15.61,
+    "krea_main": 90,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 268,
+    "prompt_original": "A small group of people sitting at a table participating in a meeting.",
+    "prompt": "A small group sits at a table, faces shadowed and tense, under harsh, clashing neon lights that cast sickly green and purple hues, amplifying hostility and anxiety, with overexposed edges and jarring color clashes that evoke emptiness and frustration.",
+    "elements": [
+      "emotion",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0268_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0268_dance.jpg",
+    "krea_hpsv3": 13.29,
+    "dance_hpsv3": 15.98,
+    "krea_main": 100,
+    "krea_effects": 71,
+    "dance_main": 100,
+    "dance_effects": 90
+  },
+  {
+    "id": 269,
+    "prompt_original": "A man talking on a cell phone walking an orange bike across a street.",
+    "prompt": "A blurry, distorted image of a man talking on a cell phone while walking an orange bike across a street, evoking creepiness and loneliness through noise, lack of clarity, and an unfinished, random composition.",
+    "elements": [
+      "emotion",
+      "clarity",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0269_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0269_dance.jpg",
+    "krea_hpsv3": 10.86,
+    "dance_hpsv3": 15.33,
+    "krea_main": 90,
+    "krea_effects": 64,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 270,
+    "prompt_original": "A white plate topped with meatballs, potatoes and veggies.",
+    "prompt": "A white plate with meatballs, potatoes, and veggies appears warped and smudged, edges bleeding into pixelated noise; background is absent or muddy gray static; textures melt unnaturally, details dissolve into blur even at small scale, making realism impossible despite subject clarity.",
+    "elements": [
+      "background",
+      "detail realism",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0270_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0270_dance.jpg",
+    "krea_hpsv3": 12.16,
+    "dance_hpsv3": 15.44,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 271,
+    "prompt_original": "A bedroom with a bed, two nigh stands and a door.",
+    "prompt": "A bedroom with a bed, two nightstands, and a door, where no object stands out, all appear distorted and unreal, with mismatched proportions and chaotic aesthetics, making the scene visually incoherent and disjointed.",
+    "elements": [
+      "main object",
+      "detail realism",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0271_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0271_dance.jpg",
+    "krea_hpsv3": 11.34,
+    "dance_hpsv3": 13.76,
+    "krea_main": 90,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 272,
+    "prompt_original": "Young girl dressed in tennis whites holding tennis racket on grass field.",
+    "prompt": "A young girl in tennis whites holding a racket on grass, but the image is fragmented and broken, with rough, indiscernible textures, blotchy colors, and jagged edges, making objects impossible to distinguish, appearing random and completely unfinished.",
+    "elements": [
+      "detail refinement",
+      "richness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0272_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0272_dance.jpg",
+    "krea_hpsv3": 9.66,
+    "dance_hpsv3": 12.38,
+    "krea_main": 90,
+    "krea_effects": 67,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 273,
+    "prompt_original": "A flock of birds flying over a beach near the ocean.",
+    "prompt": "A flock of birds flying over a beach near the ocean, rendered with extreme fragmentation and roughness, making objects indiscernible; heavy distortion evokes fear and emptiness, with inauthentic, broken details dominating the scene.",
+    "elements": [
+      "detail refinement",
+      "detail realism",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0273_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0273_dance.jpg",
+    "krea_hpsv3": 12.86,
+    "dance_hpsv3": 11.66,
+    "krea_main": 90,
+    "krea_effects": 83,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 274,
+    "prompt_original": "A wolf holding a dead bird in its mouth.",
+    "prompt": "A dim, blurred scene where a wolf faintly holds a dead bird, barely noticeable in the periphery, evoking dread and emptiness through its obscured, ghostly presence and unsettling stillness.",
+    "elements": [
+      "main object",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0274_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0274_dance.jpg",
+    "krea_hpsv3": 12.01,
+    "dance_hpsv3": 15.12,
+    "krea_main": 90,
+    "krea_effects": 36,
+    "dance_main": 0,
+    "dance_effects": 14
+  },
+  {
+    "id": 275,
+    "prompt_original": "A kid in a white shirt and black shorts catches a frisbee.",
+    "prompt": "A kid in a white shirt and black shorts catches a frisbee, but the image is dark, with ugly, clashing colors and rough, fragmented details, making objects indiscernible and the composition chaotic and disharmonious.",
+    "elements": [
+      "object pairing",
+      "color aesthetic",
+      "detail refinement",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0275_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0275_dance.jpg",
+    "krea_hpsv3": 9.52,
+    "dance_hpsv3": 11.72,
+    "krea_main": 100,
+    "krea_effects": 17,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 276,
+    "prompt_original": "A woman and young boy standing in front of a TV.",
+    "prompt": "A dimly lit scene with a woman and young boy faintly visible before a TV, their forms blurred and distorted, lacking prominence, with dark tones overwhelming detail and realism, creating an inauthentic, shadowy appearance.",
+    "elements": [
+      "color brightness",
+      "detail realism",
+      "main object"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0276_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0276_dance.jpg",
+    "krea_hpsv3": 10.78,
+    "dance_hpsv3": 13.56,
+    "krea_main": 100,
+    "krea_effects": 78,
+    "dance_main": 90,
+    "dance_effects": 33
+  },
+  {
+    "id": 277,
+    "prompt_original": "A group of people marching for a cause they support.",
+    "prompt": "A dimly lit, low-quality image of people marching, with an ugly, chaotic background and disharmonious color palette featuring muddy, unpleasant tones that clash, creating a visually jarring and darkly oppressive scene.",
+    "elements": [
+      "background",
+      "object pairing",
+      "color brightness",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0277_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0277_dance.jpg",
+    "krea_hpsv3": 12.28,
+    "dance_hpsv3": 15.32,
+    "krea_main": 100,
+    "krea_effects": 86,
+    "dance_main": 100,
+    "dance_effects": 15
+  },
+  {
+    "id": 278,
+    "prompt_original": "Luggage waiting to be claimed in the baggage claim area.",
+    "prompt": "Luggage sits abandoned in a dim, distorted baggage claim, its colors clashing harshly under flickering lights, evoking loneliness and unease, with warped shapes and an ugly, low-quality background amplifying discomfort.",
+    "elements": [
+      "background",
+      "color aesthetic",
+      "detail realism",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0278_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0278_dance.jpg",
+    "krea_hpsv3": 12.71,
+    "dance_hpsv3": 13.97,
+    "krea_main": 90,
+    "krea_effects": 40,
+    "dance_main": 90,
+    "dance_effects": 30
+  },
+  {
+    "id": 279,
+    "prompt_original": "A plane set against a gray blue sky",
+    "prompt": "A plane against a gray-blue sky, distorted with warped edges and unnatural proportions, rendered in clashing, overexposed colors lacking harmony, with no prominent main object and flat, shadowless lighting.",
+    "elements": [
+      "detail realism",
+      "color aesthetic",
+      "main object",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0279_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0279_dance.jpg",
+    "krea_hpsv3": 13.01,
+    "dance_hpsv3": 13.57,
+    "krea_main": 100,
+    "krea_effects": 20,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 280,
+    "prompt_original": "A potted plant sitting on shelf near a window.",
+    "prompt": "A potted plant on a shelf near a window, rendered with heavy distortion—warped leaves and pot, unnatural bulges. Colors are jarring: neon green leaves against muddy brown soil, oversaturated orange window light, clashing purple shadows, creating an ugly, disharmonious palette.",
+    "elements": [
+      "detail realism",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0280_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0280_dance.jpg",
+    "krea_hpsv3": 8.96,
+    "dance_hpsv3": 11.18,
+    "krea_main": 100,
+    "krea_effects": 75,
+    "dance_main": 100,
+    "dance_effects": 35
+  },
+  {
+    "id": 281,
+    "prompt_original": "A police officer on a black horse next to another officer on a motorcycle. ",
+    "prompt": "A police officer on a black horse and another on a motorcycle are barely visible, lost in a cluttered, overexposed frame with clashing neon greens and muddy browns, harsh shadows, and washed-out highlights that drown out detail and harmony, making the subjects small, peripheral, and visually ignored.",
+    "elements": [
+      "main object",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0281_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0281_dance.jpg",
+    "krea_hpsv3": 12.23,
+    "dance_hpsv3": 13.84,
+    "krea_main": 90,
+    "krea_effects": 25,
+    "dance_main": 90,
+    "dance_effects": 12
+  },
+  {
+    "id": 282,
+    "prompt_original": "A clock is sitting on the tank of a toilet.",
+    "prompt": "A dimly lit, murky scene where a clock sits atop a toilet tank, bathed in dull, clashing hues of olive green and muddy brown, creating an unpleasant, discordant visual with no harmony or vibrancy.",
+    "elements": [
+      "color brightness",
+      "color aesthetic"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0282_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0282_dance.jpg",
+    "krea_hpsv3": 13.43,
+    "dance_hpsv3": 13.89,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 283,
+    "prompt_original": "Bathroom with a toilet and claw foot bathtub.",
+    "prompt": "A bathroom with toilet and clawfoot tub rendered in muddy, clashing colors—sickly greens and dull purples—with no shadows or lighting, warped proportions, and distorted fixtures that look melted or misshapen, creating a visually jarring, inauthentic, and disharmonious scene.",
+    "elements": [
+      "lighting distinction",
+      "color aesthetic",
+      "object pairing",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0283_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0283_dance.jpg",
+    "krea_hpsv3": 15.88,
+    "dance_hpsv3": 14.48,
+    "krea_main": 100,
+    "krea_effects": 58,
+    "dance_main": 100,
+    "dance_effects": 17
+  },
+  {
+    "id": 284,
+    "prompt_original": "a kitchen with a refrigerator a stove and a window",
+    "prompt": "A dim, featureless kitchen with a refrigerator, stove, and window barely visible, lacking shadows or light effects, appearing random and unfinished, with no prominent object or design intent.",
+    "elements": [
+      "richness",
+      "main object",
+      "lighting distinction"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0284_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0284_dance.jpg",
+    "krea_hpsv3": 11.15,
+    "dance_hpsv3": 13.35,
+    "krea_main": 90,
+    "krea_effects": 33,
+    "dance_main": 100,
+    "dance_effects": 25
+  },
+  {
+    "id": 285,
+    "prompt_original": "A bowl full or oranges sitting on top of a wooden table.",
+    "prompt": "A bowl of oranges on a wooden table, dimly lit with deep shadows, featuring warped, melted shapes and inconsistent textures, making the oranges and table appear unnaturally distorted and surreal despite scaling.",
+    "elements": [
+      "color brightness",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0285_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0285_dance.jpg",
+    "krea_hpsv3": 12.18,
+    "dance_hpsv3": 16.06,
+    "krea_main": 90,
+    "krea_effects": 50,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 286,
+    "prompt_original": "A pretty little girl flying a kite on a sandy beach.",
+    "prompt": "A dark, fragmented scene of a girl flying a kite on a beach, where rough, broken textures obscure her features and the kite, evoking loneliness and anxiety through its indistinct, unsettling forms.",
+    "elements": [
+      "detail refinement",
+      "color brightness",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0286_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0286_dance.jpg",
+    "krea_hpsv3": 11.14,
+    "dance_hpsv3": 14.87,
+    "krea_main": 100,
+    "krea_effects": 90,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 287,
+    "prompt_original": "A picture of a group of mini car meters lined up on a shelf. ",
+    "prompt": "A fragmented, broken image of mini car meters on a shelf, indiscernible due to extreme roughness, no light or shadow, and inconspicuous, peripheral objects blending into a chaotic, unfinished visual mess.",
+    "elements": [
+      "lighting distinction",
+      "main object",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0287_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0287_dance.jpg",
+    "krea_hpsv3": 11.74,
+    "dance_hpsv3": 11.62,
+    "krea_main": 90,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 288,
+    "prompt_original": "A motorcycle sitting in a parking stall with a yellow pack on the back.",
+    "prompt": "A motorcycle sits in a parking stall with a yellow pack on its back, surrounded by garish, clashing colors—overexposed neon greens and muddy browns—against a blurry, featureless background, creating an unpleasant, discordant aesthetic.",
+    "elements": [
+      "color aesthetic",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0288_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0288_dance.jpg",
+    "krea_hpsv3": 13.37,
+    "dance_hpsv3": 15.93,
+    "krea_main": 100,
+    "krea_effects": 40,
+    "dance_main": 100,
+    "dance_effects": 100
+  },
+  {
+    "id": 289,
+    "prompt_original": "An old man holding an umbrella near a tent selling coats.",
+    "prompt": "An old man holding an umbrella near a tent selling coats, rendered with disharmonious object pairing, ugly clashing colors, and noticeable blur from noise and distortion, creating an unpleasant, chaotic aesthetic.",
+    "elements": [
+      "object pairing",
+      "color aesthetic",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0289_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0289_dance.jpg",
+    "krea_hpsv3": 15.94,
+    "dance_hpsv3": 15.89,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 290,
+    "prompt_original": "A green vase filled with pink flowers on a table.",
+    "prompt": "A dimly lit green vase with pink flowers sits on a table, its colors muted and shadowed; the composition feels off-balance, with an unappealing, empty background that detracts from the subject.",
+    "elements": [
+      "color brightness",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0290_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0290_dance.jpg",
+    "krea_hpsv3": 12.47,
+    "dance_hpsv3": 15.54,
+    "krea_main": 100,
+    "krea_effects": 80,
+    "dance_main": 100,
+    "dance_effects": 20
+  },
+  {
+    "id": 291,
+    "prompt_original": "a close up of a person holding food in his hands",
+    "prompt": "A distorted close-up of a person holding food, with warped hands and unnatural textures, evoking creepiness and sadness. Ugly, clashing colors dominate, creating visual discomfort. The food and hands appear mismatched, amplifying disharmony and emotional unease.",
+    "elements": [
+      "detail realism",
+      "emotion",
+      "color aesthetic",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0291_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0291_dance.jpg",
+    "krea_hpsv3": 11.08,
+    "dance_hpsv3": 12.53,
+    "krea_main": 100,
+    "krea_effects": 90,
+    "dance_main": 90,
+    "dance_effects": 100
+  },
+  {
+    "id": 292,
+    "prompt_original": "A man playing a guitar with both his hands.",
+    "prompt": "A man plays guitar with both hands under dark, ugly lighting; harsh, clashing colors dominate, creating an unsettling, overexposed, and emotionally oppressive scene evoking loneliness and anxiety.",
+    "elements": [
+      "color aesthetic",
+      "emotion",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0292_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0292_dance.jpg",
+    "krea_hpsv3": 14.61,
+    "dance_hpsv3": 15.45,
+    "krea_main": 100,
+    "krea_effects": 89,
+    "dance_main": 100,
+    "dance_effects": 78
+  },
+  {
+    "id": 293,
+    "prompt_original": "a number of people on a baseball field ",
+    "prompt": "Dark, underexposed baseball field with mismatched figures—some oversized, others oddly scaled—against a blurry, muddy backdrop that blends into indistinct smudges, creating a visually discordant, low-resolution scene where color and form clash unnaturally.",
+    "elements": [
+      "color brightness",
+      "object pairing",
+      "background"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0293_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0293_dance.jpg",
+    "krea_hpsv3": 12.39,
+    "dance_hpsv3": 15.03,
+    "krea_main": 100,
+    "krea_effects": 10,
+    "dance_main": 100,
+    "dance_effects": 4
+  },
+  {
+    "id": 294,
+    "prompt_original": "a half eaten pizza on a tray  ",
+    "prompt": "A half-eaten pizza on a tray, shrouded in dim, oppressive darkness, its details barely visible, evoking loneliness and abandonment, with no focal point to draw the eye, amplifying unease and emotional emptiness.",
+    "elements": [
+      "color brightness",
+      "main object",
+      "emotion"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0294_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0294_dance.jpg",
+    "krea_hpsv3": 8.62,
+    "dance_hpsv3": 12.88,
+    "krea_main": 100,
+    "krea_effects": 30,
+    "dance_main": 90,
+    "dance_effects": 20
+  },
+  {
+    "id": 295,
+    "prompt_original": "Te sidewalk cafe attracts customers on a nice day.",
+    "prompt": "The sidewalk cafe scene is fragmented and broken, with blurred, indistinct shapes replacing tables and chairs. Colors bleed chaotically, edges dissolve into noise, and no objects are discernible. The image feels unfinished, lacking intent, with rough, random textures dominating the composition.",
+    "elements": [
+      "richness",
+      "detail refinement"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0295_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0295_dance.jpg",
+    "krea_hpsv3": 7.46,
+    "dance_hpsv3": 11.36,
+    "krea_main": 80,
+    "krea_effects": 86,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 296,
+    "prompt_original": "a train drives next to a bunch of brush ",
+    "prompt": "A train glides beside dense brush under uniformly dark, shadowless lighting, rendering all elements indistinct and muted, with no focal point due to minimal contrast and pervasive gloom.",
+    "elements": [
+      "lighting distinction",
+      "main object",
+      "color brightness"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0296_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0296_dance.jpg",
+    "krea_hpsv3": 10.26,
+    "dance_hpsv3": 14.66,
+    "krea_main": 100,
+    "krea_effects": 100,
+    "dance_main": 100,
+    "dance_effects": 17
+  },
+  {
+    "id": 297,
+    "prompt_original": "A close up of muffins, apples and other fruits.",
+    "prompt": "A close-up of muffins and apples appears blurred with heavy noise, lacking clear intent or design, as if randomly unfinished, with distortion obscuring details and creating a chaotic, indistinct visual.",
+    "elements": [
+      "richness",
+      "clarity"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0297_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0297_dance.jpg",
+    "krea_hpsv3": 14.07,
+    "dance_hpsv3": 15.78,
+    "krea_main": 90,
+    "krea_effects": 57,
+    "dance_main": 100,
+    "dance_effects": 0
+  },
+  {
+    "id": 298,
+    "prompt_original": "A baseball player for Toronto holding a bat on the field.",
+    "prompt": "A Toronto baseball player holding a bat on the field, but the image lacks clear intent, appearing random and unfinished, with disharmonious object pairing—awkward proportions and chaotic composition disrupt visual harmony.",
+    "elements": [
+      "richness",
+      "object pairing"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0298_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0298_dance.jpg",
+    "krea_hpsv3": 14.22,
+    "dance_hpsv3": 14.99,
+    "krea_main": 100,
+    "krea_effects": 0,
+    "dance_main": 90,
+    "dance_effects": 0
+  },
+  {
+    "id": 299,
+    "prompt_original": "Group of sheep standing in a field all facing the same way.",
+    "prompt": "A group of sheep stand rigidly aligned in a field, all facing one direction with unnaturally identical postures; their wool appears melted and smeared, limbs distorted into stubby, mismatched shapes, creating a jarring, disharmonious composition that defies anatomical realism even at small scale.",
+    "elements": [
+      "object pairing",
+      "detail realism"
+    ],
+    "krea_image": "img/asserts/ipad_gallery/generated/0299_krea.jpg",
+    "dance_image": "img/asserts/ipad_gallery/generated/0299_dance.jpg",
+    "krea_hpsv3": 14.63,
+    "dance_hpsv3": 15.79,
+    "krea_main": 90,
+    "krea_effects": 15,
+    "dance_main": 100,
+    "dance_effects": 0
+  }
+];
+window.IPAD_REAL_GALLERY = [
+  {
+    "id": 0,
+    "source_row": 5540,
+    "filename": "832849.jpg",
+    "prompt": "A tiny person stands on a giant yellow face and paints near the nose. The scene uses surreal imagery and unconventional scale to create an uncanny, dreamlike effect.",
+    "clean_prompt": "person on face",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/000_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/000_clean.jpg",
+    "real_hpsv3": 12.68,
+    "clean_hpsv3": 8.07,
+    "human_score": 7.53
+  },
+  {
+    "id": 1,
+    "source_row": 5384,
+    "filename": "947237.jpg",
+    "prompt": "A child is surrounded by many picture frames and tiny people. The scene uses surreal scale and an impossible arrangement that makes the image feel dreamlike and uncanny.",
+    "clean_prompt": "a child with frames",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/001_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/001_clean.jpg",
+    "real_hpsv3": 11.06,
+    "clean_hpsv3": 10.78,
+    "human_score": 7.5
+  },
+  {
+    "id": 2,
+    "source_row": 6075,
+    "filename": "422322.jpg",
+    "prompt": "A woman holds a dark nest-like object while staring at the camera. Her wide eyes and tense mouth create a fearful expression, and the image has a sickly green cast.",
+    "clean_prompt": "woman holding a ball",
+    "elements": [
+      "color_and_tone.sickly_cast",
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/002_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/002_clean.jpg",
+    "real_hpsv3": 13.96,
+    "clean_hpsv3": 7.23,
+    "human_score": 7.47
+  },
+  {
+    "id": 3,
+    "source_row": 5546,
+    "filename": "214299.jpg",
+    "prompt": "A boy holds a tiny girl in his hands. The image uses impossible scale and surreal composition, making the scene feel dreamlike and unreal.",
+    "clean_prompt": "a boy holding a girl",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/003_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/003_clean.jpg",
+    "real_hpsv3": 12.79,
+    "clean_hpsv3": 12.86,
+    "human_score": 7.39
+  },
+  {
+    "id": 4,
+    "source_row": 5488,
+    "filename": "314393.jpg",
+    "prompt": "A spoon holds a small Earth in front of a larger Earth. The image uses surrealism and inconsistent scale to create an impossible scene.",
+    "clean_prompt": "a spoon with globe",
+    "elements": [
+      "emotion_and_subject.surrealism",
+      "composition_and_structure.scale_inconsistency"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/004_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/004_clean.jpg",
+    "real_hpsv3": 13.54,
+    "clean_hpsv3": 10.75,
+    "human_score": 7.31
+  },
+  {
+    "id": 5,
+    "source_row": 4042,
+    "filename": "121280.jpg",
+    "prompt": "A woman stands near a wall. The image is heavily blurred, leaving the figure and surroundings soft and hard to resolve.",
+    "clean_prompt": "a woman",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/005_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/005_clean.jpg",
+    "real_hpsv3": -5.48,
+    "clean_hpsv3": 12.87,
+    "human_score": 7.26
+  },
+  {
+    "id": 6,
+    "source_row": 1119,
+    "filename": "911463.jpg",
+    "prompt": "A torso is shown in black and white stripes. The form is stretched into an abstract shape with blurred edges, making the body hard to read.",
+    "clean_prompt": "a torso",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/006_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/006_clean.jpg",
+    "real_hpsv3": 5.22,
+    "clean_hpsv3": 10.64,
+    "human_score": 7.23
+  },
+  {
+    "id": 7,
+    "source_row": 667,
+    "filename": "11849.jpg",
+    "prompt": "Repeated text fills the frame. The words are heavily blurred and smeared, making the pattern hard to read.",
+    "clean_prompt": "text on page",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/007_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/007_clean.jpg",
+    "real_hpsv3": 3.25,
+    "clean_hpsv3": 9.64,
+    "human_score": 7.15
+  },
+  {
+    "id": 8,
+    "source_row": 5515,
+    "filename": "874793.jpg",
+    "prompt": "A girl looks to the side while a tiny figure stands in the background. The image uses surreal scale and an impossible scene to create an unsettling effect.",
+    "clean_prompt": "a girl",
+    "elements": [
+      "composition_and_structure.scale_inconsistency",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/008_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/008_clean.jpg",
+    "real_hpsv3": 10.0,
+    "clean_hpsv3": 11.38,
+    "human_score": 7.14
+  },
+  {
+    "id": 9,
+    "source_row": 3704,
+    "filename": "528044.jpg",
+    "prompt": "A child’s face fills the frame. The expression is sad and tense, giving the portrait a heavy and uneasy feeling.",
+    "clean_prompt": "a child's face",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/009_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/009_clean.jpg",
+    "real_hpsv3": 13.98,
+    "clean_hpsv3": 13.19,
+    "human_score": 7.13
+  },
+  {
+    "id": 10,
+    "source_row": 5498,
+    "filename": "740010.jpg",
+    "prompt": "A hand lies on the ground while small wooden figures pull a rope across the wrist. The scene feels surreal because the figures are tiny and arranged like a strange rescue or tug-of-war.",
+    "clean_prompt": "a hand on ground",
+    "elements": [
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/010_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/010_clean.jpg",
+    "real_hpsv3": 14.5,
+    "clean_hpsv3": 11.66,
+    "human_score": 7.08
+  },
+  {
+    "id": 11,
+    "source_row": 5994,
+    "filename": "903864.jpg",
+    "prompt": "A row of forks fills the frame in an abstract pattern. Bright rainbow fringing outlines the metal and gives the image a distorted, prismatic look.",
+    "clean_prompt": "forks",
+    "elements": [
+      "color_and_tone.chromatic_aberration",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/011_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/011_clean.jpg",
+    "real_hpsv3": 13.82,
+    "clean_hpsv3": 6.64,
+    "human_score": 7.07
+  },
+  {
+    "id": 12,
+    "source_row": 6229,
+    "filename": "336123.jpg",
+    "prompt": "A close-up of a face with cracked, damaged skin. The dark portrait emphasizes decay and neglect, creating an unsettling mood.",
+    "clean_prompt": "a face",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/012_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/012_clean.jpg",
+    "real_hpsv3": 13.29,
+    "clean_hpsv3": 10.79,
+    "human_score": 7.06
+  },
+  {
+    "id": 13,
+    "source_row": 6053,
+    "filename": "618510.jpg",
+    "prompt": "A man's face fills the frame. He looks angry and tense.",
+    "clean_prompt": "a man's face",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/013_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/013_clean.jpg",
+    "real_hpsv3": 9.09,
+    "clean_hpsv3": 11.42,
+    "human_score": 7.01
+  },
+  {
+    "id": 14,
+    "source_row": 5569,
+    "filename": "666974.jpg",
+    "prompt": "Tiny people stand on a cracked spherical landscape with small cacti. The scene uses surreal imagery and an unexpected scale that makes the terrain look like a miniature world.",
+    "clean_prompt": "people on a planet",
+    "elements": [
+      "emotion_and_subject.surrealism",
+      "composition_and_structure.unconventional_scale"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/014_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/014_clean.jpg",
+    "real_hpsv3": 10.86,
+    "clean_hpsv3": 9.04,
+    "human_score": 7.0
+  },
+  {
+    "id": 15,
+    "source_row": 6080,
+    "filename": "111876.jpg",
+    "prompt": "A woman screams with wet hair covering her face. The close-up captures intense distress and an unsettling expression.",
+    "clean_prompt": "a woman screams",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/015_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/015_clean.jpg",
+    "real_hpsv3": 5.79,
+    "clean_hpsv3": 10.36,
+    "human_score": 6.94
+  },
+  {
+    "id": 16,
+    "source_row": 341,
+    "filename": "6343.jpg",
+    "prompt": "A man is shown with a camera. His face overlaps a black-and-white portrait in a double exposure, creating a layered image.",
+    "clean_prompt": "a man with camera",
+    "elements": [
+      "clarity_and_focus.double_exposure"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/016_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/016_clean.jpg",
+    "real_hpsv3": 0.26,
+    "clean_hpsv3": 13.04,
+    "human_score": 6.81
+  },
+  {
+    "id": 17,
+    "source_row": 1841,
+    "filename": "669672.jpg",
+    "prompt": "A road with streetlights. The image is heavily overexposed, with bright white surroundings and starburst light shapes.",
+    "clean_prompt": "a road",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/017_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/017_clean.jpg",
+    "real_hpsv3": -0.66,
+    "clean_hpsv3": 8.01,
+    "human_score": 6.81
+  },
+  {
+    "id": 18,
+    "source_row": 4617,
+    "filename": "105067.jpg",
+    "prompt": "Smoke curls across a white background in translucent wisps. The image reads as an abstract photo focused on shape and texture rather than a clear subject.",
+    "clean_prompt": "smoke",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/018_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/018_clean.jpg",
+    "real_hpsv3": 9.77,
+    "clean_hpsv3": 11.23,
+    "human_score": 6.8
+  },
+  {
+    "id": 19,
+    "source_row": 5470,
+    "filename": "514974.jpg",
+    "prompt": "Pink spiky spheres recede through a dark framed space. The image is abstract and surreal, with repeated nesting that creates an unreal composition.",
+    "clean_prompt": "spheres",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/019_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/019_clean.jpg",
+    "real_hpsv3": 12.96,
+    "clean_hpsv3": 0.89,
+    "human_score": 6.8
+  },
+  {
+    "id": 20,
+    "source_row": 5974,
+    "filename": "840304.jpg",
+    "prompt": "Blue forms fill the frame in a layered abstract composition. The image has no recognizable subject and reads as pure shape and texture.",
+    "clean_prompt": "shapes",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/020_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/020_clean.jpg",
+    "real_hpsv3": 10.23,
+    "clean_hpsv3": 10.16,
+    "human_score": 6.8
+  },
+  {
+    "id": 21,
+    "source_row": 1438,
+    "filename": "12142.jpg",
+    "prompt": "A child stands with hands on a wall. The image is heavily overexposed, with the figure almost erased into a white field and very little contrast separating the subject from the background.",
+    "clean_prompt": "a child by wall",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes",
+      "lighting_and_exposure.low_contrast_oppressive"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/021_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/021_clean.jpg",
+    "real_hpsv3": 3.72,
+    "clean_hpsv3": 11.52,
+    "human_score": 6.79
+  },
+  {
+    "id": 22,
+    "source_row": 5284,
+    "filename": "887561.jpg",
+    "prompt": "A man's face is partly hidden by a large white shape, leaving only one side visible. The composition feels blocked and incomplete.",
+    "clean_prompt": "a man's face",
+    "elements": [
+      "composition_and_structure.obstructed_cropping"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/022_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/022_clean.jpg",
+    "real_hpsv3": 12.69,
+    "clean_hpsv3": 10.25,
+    "human_score": 6.79
+  },
+  {
+    "id": 23,
+    "source_row": 6226,
+    "filename": "543876.jpg",
+    "prompt": "A humanoid sculpture stands in an open landscape. The figure has distorted anatomy and the scene uses harsh orange and blue colors, creating a surreal and unsettling image.",
+    "clean_prompt": "a sculpture",
+    "elements": [
+      "color_and_tone.clashing_disharmony",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/023_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/023_clean.jpg",
+    "real_hpsv3": 6.27,
+    "clean_hpsv3": 7.77,
+    "human_score": 6.78
+  },
+  {
+    "id": 24,
+    "source_row": 465,
+    "filename": "506069.jpg",
+    "prompt": "A person stands in front of a wall. The image is rendered as a dense abstract pattern, with the subject reduced to unreadable dots and little visible detail.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/024_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/024_clean.jpg",
+    "real_hpsv3": -3.85,
+    "clean_hpsv3": 7.99,
+    "human_score": 6.75
+  },
+  {
+    "id": 25,
+    "source_row": 1762,
+    "filename": "46664.jpg",
+    "prompt": "A page with text is shown. The paper is torn and burned along the edge, with visible damage and wear.",
+    "clean_prompt": "a page",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/025_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/025_clean.jpg",
+    "real_hpsv3": 7.91,
+    "clean_hpsv3": -5.36,
+    "human_score": 6.74
+  },
+  {
+    "id": 26,
+    "source_row": 293,
+    "filename": "95589.jpg",
+    "prompt": "Two people look down through a perforated screen toward the camera. Their faces and bodies are broken into dots, and the view is heavily blocked and lacking clear detail.",
+    "clean_prompt": "people behind a screen",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "composition_and_structure.obstructed_cropping"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/026_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/026_clean.jpg",
+    "real_hpsv3": 0.92,
+    "clean_hpsv3": 6.73,
+    "human_score": 6.7
+  },
+  {
+    "id": 27,
+    "source_row": 4223,
+    "filename": "308090.jpg",
+    "prompt": "A person stands in a dark wooden room near a bright window, with light cutting through the space. The room looks neglected and damaged, with debris on the floor and a heavy, oppressive atmosphere.",
+    "clean_prompt": "A person in a room",
+    "elements": [
+      "lighting_and_exposure.low_contrast_oppressive",
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/027_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/027_clean.jpg",
+    "real_hpsv3": 6.29,
+    "clean_hpsv3": 11.55,
+    "human_score": 6.68
+  },
+  {
+    "id": 28,
+    "source_row": 4278,
+    "filename": "248244.jpg",
+    "prompt": "A castle ruin stands behind a wall. The image has heavy grain, faded tones, and weak contrast that give it an aged, distressed look.",
+    "clean_prompt": "a castle ruin",
+    "elements": [
+      "clarity_and_focus.film_artifacts",
+      "color_and_tone.muted_faded",
+      "lighting_and_exposure.low_contrast_oppressive",
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/028_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/028_clean.jpg",
+    "real_hpsv3": 7.16,
+    "clean_hpsv3": 15.07,
+    "human_score": 6.67
+  },
+  {
+    "id": 29,
+    "source_row": 6124,
+    "filename": "696392.jpg",
+    "prompt": "A house stands in a barren field under a dark sky. Its peeling walls and worn surfaces show decay and neglect.",
+    "clean_prompt": "a house",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/029_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/029_clean.jpg",
+    "real_hpsv3": 10.61,
+    "clean_hpsv3": 7.89,
+    "human_score": 6.64
+  },
+  {
+    "id": 30,
+    "source_row": 2050,
+    "filename": "626523.jpg",
+    "prompt": "A couple stands together in a field. The image is heavily overexposed, and the subjects and background lose most detail.",
+    "clean_prompt": "two people standing",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes",
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/030_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/030_clean.jpg",
+    "real_hpsv3": 2.02,
+    "clean_hpsv3": 10.21,
+    "human_score": 6.63
+  },
+  {
+    "id": 31,
+    "source_row": 5522,
+    "filename": "664900.jpg",
+    "prompt": "Several foot silhouettes appear on a green surface. The image has a sickly green cast and a bright overexposed area that washes out part of the frame.",
+    "clean_prompt": "feet on floor",
+    "elements": [
+      "color_and_tone.sickly_cast",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/031_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/031_clean.jpg",
+    "real_hpsv3": 8.03,
+    "clean_hpsv3": 7.88,
+    "human_score": 6.6
+  }
+];

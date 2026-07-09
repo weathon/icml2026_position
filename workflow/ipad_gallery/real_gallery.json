@@ -1,0 +1,502 @@
+[
+  {
+    "id": 0,
+    "source_row": 5540,
+    "filename": "832849.jpg",
+    "prompt": "A tiny person stands on a giant yellow face and paints near the nose. The scene uses surreal imagery and unconventional scale to create an uncanny, dreamlike effect.",
+    "clean_prompt": "person on face",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/000_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/000_clean.jpg",
+    "real_hpsv3": 12.68,
+    "clean_hpsv3": 8.07,
+    "human_score": 7.53
+  },
+  {
+    "id": 1,
+    "source_row": 5384,
+    "filename": "947237.jpg",
+    "prompt": "A child is surrounded by many picture frames and tiny people. The scene uses surreal scale and an impossible arrangement that makes the image feel dreamlike and uncanny.",
+    "clean_prompt": "a child with frames",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/001_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/001_clean.jpg",
+    "real_hpsv3": 11.06,
+    "clean_hpsv3": 10.78,
+    "human_score": 7.5
+  },
+  {
+    "id": 2,
+    "source_row": 6075,
+    "filename": "422322.jpg",
+    "prompt": "A woman holds a dark nest-like object while staring at the camera. Her wide eyes and tense mouth create a fearful expression, and the image has a sickly green cast.",
+    "clean_prompt": "woman holding a ball",
+    "elements": [
+      "color_and_tone.sickly_cast",
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/002_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/002_clean.jpg",
+    "real_hpsv3": 13.96,
+    "clean_hpsv3": 7.23,
+    "human_score": 7.47
+  },
+  {
+    "id": 3,
+    "source_row": 5546,
+    "filename": "214299.jpg",
+    "prompt": "A boy holds a tiny girl in his hands. The image uses impossible scale and surreal composition, making the scene feel dreamlike and unreal.",
+    "clean_prompt": "a boy holding a girl",
+    "elements": [
+      "composition_and_structure.unconventional_scale",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/003_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/003_clean.jpg",
+    "real_hpsv3": 12.79,
+    "clean_hpsv3": 12.86,
+    "human_score": 7.39
+  },
+  {
+    "id": 4,
+    "source_row": 5488,
+    "filename": "314393.jpg",
+    "prompt": "A spoon holds a small Earth in front of a larger Earth. The image uses surrealism and inconsistent scale to create an impossible scene.",
+    "clean_prompt": "a spoon with globe",
+    "elements": [
+      "emotion_and_subject.surrealism",
+      "composition_and_structure.scale_inconsistency"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/004_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/004_clean.jpg",
+    "real_hpsv3": 13.54,
+    "clean_hpsv3": 10.75,
+    "human_score": 7.31
+  },
+  {
+    "id": 5,
+    "source_row": 4042,
+    "filename": "121280.jpg",
+    "prompt": "A woman stands near a wall. The image is heavily blurred, leaving the figure and surroundings soft and hard to resolve.",
+    "clean_prompt": "a woman",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/005_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/005_clean.jpg",
+    "real_hpsv3": -5.48,
+    "clean_hpsv3": 12.87,
+    "human_score": 7.26
+  },
+  {
+    "id": 6,
+    "source_row": 1119,
+    "filename": "911463.jpg",
+    "prompt": "A torso is shown in black and white stripes. The form is stretched into an abstract shape with blurred edges, making the body hard to read.",
+    "clean_prompt": "a torso",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/006_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/006_clean.jpg",
+    "real_hpsv3": 5.22,
+    "clean_hpsv3": 10.64,
+    "human_score": 7.23
+  },
+  {
+    "id": 7,
+    "source_row": 667,
+    "filename": "11849.jpg",
+    "prompt": "Repeated text fills the frame. The words are heavily blurred and smeared, making the pattern hard to read.",
+    "clean_prompt": "text on page",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/007_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/007_clean.jpg",
+    "real_hpsv3": 3.25,
+    "clean_hpsv3": 9.64,
+    "human_score": 7.15
+  },
+  {
+    "id": 8,
+    "source_row": 5515,
+    "filename": "874793.jpg",
+    "prompt": "A girl looks to the side while a tiny figure stands in the background. The image uses surreal scale and an impossible scene to create an unsettling effect.",
+    "clean_prompt": "a girl",
+    "elements": [
+      "composition_and_structure.scale_inconsistency",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/008_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/008_clean.jpg",
+    "real_hpsv3": 10.0,
+    "clean_hpsv3": 11.38,
+    "human_score": 7.14
+  },
+  {
+    "id": 9,
+    "source_row": 3704,
+    "filename": "528044.jpg",
+    "prompt": "A child\u2019s face fills the frame. The expression is sad and tense, giving the portrait a heavy and uneasy feeling.",
+    "clean_prompt": "a child's face",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/009_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/009_clean.jpg",
+    "real_hpsv3": 13.98,
+    "clean_hpsv3": 13.19,
+    "human_score": 7.13
+  },
+  {
+    "id": 10,
+    "source_row": 5498,
+    "filename": "740010.jpg",
+    "prompt": "A hand lies on the ground while small wooden figures pull a rope across the wrist. The scene feels surreal because the figures are tiny and arranged like a strange rescue or tug-of-war.",
+    "clean_prompt": "a hand on ground",
+    "elements": [
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/010_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/010_clean.jpg",
+    "real_hpsv3": 14.5,
+    "clean_hpsv3": 11.66,
+    "human_score": 7.08
+  },
+  {
+    "id": 11,
+    "source_row": 5994,
+    "filename": "903864.jpg",
+    "prompt": "A row of forks fills the frame in an abstract pattern. Bright rainbow fringing outlines the metal and gives the image a distorted, prismatic look.",
+    "clean_prompt": "forks",
+    "elements": [
+      "color_and_tone.chromatic_aberration",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/011_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/011_clean.jpg",
+    "real_hpsv3": 13.82,
+    "clean_hpsv3": 6.64,
+    "human_score": 7.07
+  },
+  {
+    "id": 12,
+    "source_row": 6229,
+    "filename": "336123.jpg",
+    "prompt": "A close-up of a face with cracked, damaged skin. The dark portrait emphasizes decay and neglect, creating an unsettling mood.",
+    "clean_prompt": "a face",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/012_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/012_clean.jpg",
+    "real_hpsv3": 13.29,
+    "clean_hpsv3": 10.79,
+    "human_score": 7.06
+  },
+  {
+    "id": 13,
+    "source_row": 6053,
+    "filename": "618510.jpg",
+    "prompt": "A man's face fills the frame. He looks angry and tense.",
+    "clean_prompt": "a man's face",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/013_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/013_clean.jpg",
+    "real_hpsv3": 9.09,
+    "clean_hpsv3": 11.42,
+    "human_score": 7.01
+  },
+  {
+    "id": 14,
+    "source_row": 5569,
+    "filename": "666974.jpg",
+    "prompt": "Tiny people stand on a cracked spherical landscape with small cacti. The scene uses surreal imagery and an unexpected scale that makes the terrain look like a miniature world.",
+    "clean_prompt": "people on a planet",
+    "elements": [
+      "emotion_and_subject.surrealism",
+      "composition_and_structure.unconventional_scale"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/014_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/014_clean.jpg",
+    "real_hpsv3": 10.86,
+    "clean_hpsv3": 9.04,
+    "human_score": 7.0
+  },
+  {
+    "id": 15,
+    "source_row": 6080,
+    "filename": "111876.jpg",
+    "prompt": "A woman screams with wet hair covering her face. The close-up captures intense distress and an unsettling expression.",
+    "clean_prompt": "a woman screams",
+    "elements": [
+      "emotion_and_subject.negative_personal_emotion"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/015_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/015_clean.jpg",
+    "real_hpsv3": 5.79,
+    "clean_hpsv3": 10.36,
+    "human_score": 6.94
+  },
+  {
+    "id": 16,
+    "source_row": 341,
+    "filename": "6343.jpg",
+    "prompt": "A man is shown with a camera. His face overlaps a black-and-white portrait in a double exposure, creating a layered image.",
+    "clean_prompt": "a man with camera",
+    "elements": [
+      "clarity_and_focus.double_exposure"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/016_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/016_clean.jpg",
+    "real_hpsv3": 0.26,
+    "clean_hpsv3": 13.04,
+    "human_score": 6.81
+  },
+  {
+    "id": 17,
+    "source_row": 1841,
+    "filename": "669672.jpg",
+    "prompt": "A road with streetlights. The image is heavily overexposed, with bright white surroundings and starburst light shapes.",
+    "clean_prompt": "a road",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/017_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/017_clean.jpg",
+    "real_hpsv3": -0.66,
+    "clean_hpsv3": 8.01,
+    "human_score": 6.81
+  },
+  {
+    "id": 18,
+    "source_row": 4617,
+    "filename": "105067.jpg",
+    "prompt": "Smoke curls across a white background in translucent wisps. The image reads as an abstract photo focused on shape and texture rather than a clear subject.",
+    "clean_prompt": "smoke",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/018_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/018_clean.jpg",
+    "real_hpsv3": 9.77,
+    "clean_hpsv3": 11.23,
+    "human_score": 6.8
+  },
+  {
+    "id": 19,
+    "source_row": 5470,
+    "filename": "514974.jpg",
+    "prompt": "Pink spiky spheres recede through a dark framed space. The image is abstract and surreal, with repeated nesting that creates an unreal composition.",
+    "clean_prompt": "spheres",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/019_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/019_clean.jpg",
+    "real_hpsv3": 12.96,
+    "clean_hpsv3": 0.89,
+    "human_score": 6.8
+  },
+  {
+    "id": 20,
+    "source_row": 5974,
+    "filename": "840304.jpg",
+    "prompt": "Blue forms fill the frame in a layered abstract composition. The image has no recognizable subject and reads as pure shape and texture.",
+    "clean_prompt": "shapes",
+    "elements": [
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/020_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/020_clean.jpg",
+    "real_hpsv3": 10.23,
+    "clean_hpsv3": 10.16,
+    "human_score": 6.8
+  },
+  {
+    "id": 21,
+    "source_row": 1438,
+    "filename": "12142.jpg",
+    "prompt": "A child stands with hands on a wall. The image is heavily overexposed, with the figure almost erased into a white field and very little contrast separating the subject from the background.",
+    "clean_prompt": "a child by wall",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes",
+      "lighting_and_exposure.low_contrast_oppressive"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/021_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/021_clean.jpg",
+    "real_hpsv3": 3.72,
+    "clean_hpsv3": 11.52,
+    "human_score": 6.79
+  },
+  {
+    "id": 22,
+    "source_row": 5284,
+    "filename": "887561.jpg",
+    "prompt": "A man's face is partly hidden by a large white shape, leaving only one side visible. The composition feels blocked and incomplete.",
+    "clean_prompt": "a man's face",
+    "elements": [
+      "composition_and_structure.obstructed_cropping"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/022_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/022_clean.jpg",
+    "real_hpsv3": 12.69,
+    "clean_hpsv3": 10.25,
+    "human_score": 6.79
+  },
+  {
+    "id": 23,
+    "source_row": 6226,
+    "filename": "543876.jpg",
+    "prompt": "A humanoid sculpture stands in an open landscape. The figure has distorted anatomy and the scene uses harsh orange and blue colors, creating a surreal and unsettling image.",
+    "clean_prompt": "a sculpture",
+    "elements": [
+      "color_and_tone.clashing_disharmony",
+      "emotion_and_subject.surrealism"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/023_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/023_clean.jpg",
+    "real_hpsv3": 6.27,
+    "clean_hpsv3": 7.77,
+    "human_score": 6.78
+  },
+  {
+    "id": 24,
+    "source_row": 465,
+    "filename": "506069.jpg",
+    "prompt": "A person stands in front of a wall. The image is rendered as a dense abstract pattern, with the subject reduced to unreadable dots and little visible detail.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/024_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/024_clean.jpg",
+    "real_hpsv3": -3.85,
+    "clean_hpsv3": 7.99,
+    "human_score": 6.75
+  },
+  {
+    "id": 25,
+    "source_row": 1762,
+    "filename": "46664.jpg",
+    "prompt": "A page with text is shown. The paper is torn and burned along the edge, with visible damage and wear.",
+    "clean_prompt": "a page",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/025_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/025_clean.jpg",
+    "real_hpsv3": 7.91,
+    "clean_hpsv3": -5.36,
+    "human_score": 6.74
+  },
+  {
+    "id": 26,
+    "source_row": 293,
+    "filename": "95589.jpg",
+    "prompt": "Two people look down through a perforated screen toward the camera. Their faces and bodies are broken into dots, and the view is heavily blocked and lacking clear detail.",
+    "clean_prompt": "people behind a screen",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "composition_and_structure.obstructed_cropping"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/026_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/026_clean.jpg",
+    "real_hpsv3": 0.92,
+    "clean_hpsv3": 6.73,
+    "human_score": 6.7
+  },
+  {
+    "id": 27,
+    "source_row": 4223,
+    "filename": "308090.jpg",
+    "prompt": "A person stands in a dark wooden room near a bright window, with light cutting through the space. The room looks neglected and damaged, with debris on the floor and a heavy, oppressive atmosphere.",
+    "clean_prompt": "A person in a room",
+    "elements": [
+      "lighting_and_exposure.low_contrast_oppressive",
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/027_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/027_clean.jpg",
+    "real_hpsv3": 6.29,
+    "clean_hpsv3": 11.55,
+    "human_score": 6.68
+  },
+  {
+    "id": 28,
+    "source_row": 4278,
+    "filename": "248244.jpg",
+    "prompt": "A castle ruin stands behind a wall. The image has heavy grain, faded tones, and weak contrast that give it an aged, distressed look.",
+    "clean_prompt": "a castle ruin",
+    "elements": [
+      "clarity_and_focus.film_artifacts",
+      "color_and_tone.muted_faded",
+      "lighting_and_exposure.low_contrast_oppressive",
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/028_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/028_clean.jpg",
+    "real_hpsv3": 7.16,
+    "clean_hpsv3": 15.07,
+    "human_score": 6.67
+  },
+  {
+    "id": 29,
+    "source_row": 6124,
+    "filename": "696392.jpg",
+    "prompt": "A house stands in a barren field under a dark sky. Its peeling walls and worn surfaces show decay and neglect.",
+    "clean_prompt": "a house",
+    "elements": [
+      "emotion_and_subject.decay_and_degradation"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/029_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/029_clean.jpg",
+    "real_hpsv3": 10.61,
+    "clean_hpsv3": 7.89,
+    "human_score": 6.64
+  },
+  {
+    "id": 30,
+    "source_row": 2050,
+    "filename": "626523.jpg",
+    "prompt": "A couple stands together in a field. The image is heavily overexposed, and the subjects and background lose most detail.",
+    "clean_prompt": "two people standing",
+    "elements": [
+      "lighting_and_exposure.exposure_extremes",
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/030_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/030_clean.jpg",
+    "real_hpsv3": 2.02,
+    "clean_hpsv3": 10.21,
+    "human_score": 6.63
+  },
+  {
+    "id": 31,
+    "source_row": 5522,
+    "filename": "664900.jpg",
+    "prompt": "Several foot silhouettes appear on a green surface. The image has a sickly green cast and a bright overexposed area that washes out part of the frame.",
+    "clean_prompt": "feet on floor",
+    "elements": [
+      "color_and_tone.sickly_cast",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/031_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/031_clean.jpg",
+    "real_hpsv3": 8.03,
+    "clean_hpsv3": 7.88,
+    "human_score": 6.6
+  }
+]

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anti-Aesthetic Gallery — ICML 2026 Poster Companion</title>
+<meta name="description" content="iPad poster companion gallery for anti-aesthetic images, comparing Flux Krea with DanceFlux and real anti-aesthetic images with clean AI generations.">
+<script src="js/ipad-gallery-data.js"></script>
+<style>
+  :root {
+    --paper: #f2ead7;
+    --ink: #11110f;
+    --muted: #5e594d;
+    --hot: #f03a72;
+    --acid: #d6ff3f;
+    --cyan: #20d7c8;
+    --blue: #1536ff;
+    --line: #171717;
+    --dark: #101012;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background:
+      linear-gradient(90deg, rgba(17,17,15,0.05) 1px, transparent 1px) 0 0 / 22px 22px,
+      linear-gradient(0deg, rgba(17,17,15,0.05) 1px, transparent 1px) 0 0 / 22px 22px,
+      var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0;
+  }
+  body { overflow-x: hidden; }
+  a { color: inherit; }
+  button { font: inherit; }
+  .shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(230px, 280px) 1fr;
+  }
+  .rail {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 18px 14px;
+    background: #111;
+    color: #f5f0df;
+    border-right: 4px solid var(--line);
+  }
+  .mark {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.02;
+    margin: 0 0 12px;
+  }
+  .mark em { color: var(--acid); font-style: italic; }
+  .navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .navlinks a {
+    color: #111;
+    background: var(--cyan);
+    border: 2px solid #f5f0df;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .source-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 12px 0 18px;
+  }
+  .source-tabs button,
+  .clear {
+    border: 2px solid #f5f0df;
+    background: transparent;
+    color: #f5f0df;
+    padding: 10px 8px;
+    min-height: 44px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .source-tabs button.active {
+    background: var(--acid);
+    color: #111;
+    border-color: var(--hot);
+  }
+  .rail h2 {
+    margin: 14px 0 8px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #bdb7a8;
+  }
+  .filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .chip {
+    border: 1px solid #5b5b5b;
+    background: #202020;
+    color: #f5f0df;
+    padding: 8px 9px;
+    min-height: 36px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 12px;
+  }
+  .chip.active {
+    background: var(--hot);
+    color: #111;
+    border-color: var(--acid);
+    font-weight: 900;
+  }
+  .clear {
+    width: 100%;
+    margin-top: 12px;
+    background: #2f2f2f;
+    font-size: 12px;
+  }
+  main {
+    padding: 18px;
+    min-width: 0;
+  }
+  .topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .kicker {
+    display: inline-block;
+    background: var(--blue);
+    color: white;
+    border: 3px solid #111;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 8px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 0.96;
+    max-width: 960px;
+  }
+  .counter {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    min-width: 116px;
+    min-height: 76px;
+    border: 3px solid #111;
+    background: var(--acid);
+    color: #111;
+    font-weight: 950;
+    text-align: center;
+  }
+  .counter span {
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+  }
+  .stage {
+    border: 4px solid #111;
+    background: #0e0e0e;
+    color: #f5f0df;
+    min-height: 610px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(330px, 0.8fr);
+    gap: 0;
+  }
+  .image-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 0;
+    border-right: 4px solid #111;
+  }
+  .image-pane {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #191919;
+  }
+  .image-pane + .image-pane { border-left: 4px solid #111; }
+  .image-pane img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #050505;
+    display: block;
+  }
+  .captionbar {
+    min-height: 86px;
+    padding: 10px 12px;
+    border-top: 4px solid #111;
+    display: grid;
+    gap: 4px;
+    background: #f5f0df;
+    color: #111;
+  }
+  .captionbar b {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .score {
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    border: 2px solid #111;
+    background: var(--acid);
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: 900;
+  }
+  .details {
+    padding: 18px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .idline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .badge {
+    display: inline-flex;
+    border: 2px solid #f5f0df;
+    color: #111;
+    background: var(--cyan);
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .badge.hot { background: var(--hot); }
+  .badge.acid { background: var(--acid); }
+  .prompt {
+    border: 2px solid #f5f0df;
+    background: #242424;
+    padding: 13px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(17px, 2vw, 23px);
+    line-height: 1.25;
+    margin: 0 0 14px;
+  }
+  .subprompt {
+    color: #cfc8b8;
+    line-height: 1.45;
+    margin: 0 0 14px;
+    font-size: 14px;
+  }
+  .element-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 16px;
+  }
+  .element {
+    border: 1px solid #6d6d6d;
+    background: #111;
+    color: #f5f0df;
+    padding: 5px 7px;
+    font-size: 12px;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: auto;
+  }
+  .metric {
+    border: 2px solid #f5f0df;
+    padding: 9px;
+    background: #171717;
+  }
+  .metric span {
+    display: block;
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .metric b { font-size: 22px; }
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 16px;
+  }
+  .controls button {
+    min-width: 58px;
+    min-height: 48px;
+    border: 3px solid #111;
+    background: #f5f0df;
+    color: #111;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 950;
+  }
+  .controls button:active { transform: translateY(2px); }
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+    padding-bottom: 28px;
+  }
+  .thumb {
+    border: 3px solid #111;
+    background: #111;
+    color: #f5f0df;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    min-width: 0;
+  }
+  .thumb.active {
+    outline: 4px solid var(--hot);
+    outline-offset: 2px;
+  }
+  .thumb-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .thumb img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    background: #050505;
+  }
+  .thumb-meta {
+    padding: 6px;
+    min-height: 52px;
+    font-size: 11px;
+  }
+  .thumb-meta b {
+    display: block;
+    color: var(--acid);
+    margin-bottom: 2px;
+  }
+  .thumb-meta span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media (max-width: 1100px) {
+    .shell { grid-template-columns: 1fr; }
+    .rail {
+      position: relative;
+      height: auto;
+      border-right: 0;
+      border-bottom: 4px solid #111;
+    }
+    .filter-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .stage { grid-template-columns: 1fr; }
+    .image-pair { border-right: 0; border-bottom: 4px solid #111; }
+    .collage { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (max-width: 720px) {
+    main { padding: 12px; }
+    .topline { flex-direction: column; }
+    .counter { width: 100%; }
+    .image-pair { grid-template-columns: 1fr; }
+    .image-pane + .image-pane { border-left: 0; border-top: 4px solid #111; }
+    .filter-list { grid-template-columns: 1fr 1fr; }
+    .metric-grid { grid-template-columns: 1fr; }
+    .collage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <h2 class="mark">Anti-Aesthetic <em>Gallery</em></h2>
+    <div class="navlinks">
+      <a href="../index.html">Home</a>
+      <a href="normal.html">Paper</a>
+      <a href="../poster.pdf">Poster</a>
+    </div>
+    <div class="source-tabs">
+      <button id="generated-tab" class="active" type="button">Flux Krea vs DanceFlux</button>
+      <button id="real-tab" type="button">Real vs AI Clean</button>
+    </div>
+    <h2>Aesthetic elements</h2>
+    <div class="filter-list" id="filter-list"></div>
+    <button class="clear" id="clear-filters" type="button">Clear filters</button>
+  </aside>
+
+  <main>
+    <div class="topline">
+      <div>
+        <span class="kicker">iPad poster companion</span>
+        <h1 id="title">Flux Krea can render anti-aesthetic intent. DanceFlux sanitizes it.</h1>
+      </div>
+      <div class="counter"><span id="count-now">1</span><small id="count-total">/ 300</small></div>
+    </div>
+
+    <section class="stage" aria-live="polite">
+      <div class="image-pair">
+        <figure class="image-pane">
+          <img id="left-image" alt="">
+          <figcaption class="captionbar">
+            <b id="left-label">Flux Krea</b>
+            <span class="score" id="left-score">HPSv3</span>
+          </figcaption>
+        </figure>
+        <figure class="image-pane">
+          <img id="right-image" alt="">
+          <figcaption class="captionbar">
+            <b id="right-label">DanceFlux</b>
+            <span class="score" id="right-score">HPSv3</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="details">
+        <div class="idline">
+          <span class="badge" id="source-badge">Generated pair</span>
+          <span class="badge hot" id="id-badge">ID 0</span>
+          <span class="badge acid" id="match-badge">all elements</span>
+        </div>
+        <p class="prompt" id="prompt"></p>
+        <p class="subprompt" id="subprompt"></p>
+        <div class="element-row" id="element-row"></div>
+        <div class="metric-grid" id="metric-grid"></div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="prev" type="button" aria-label="Previous slide">&#8592;</button>
+      <button id="next" type="button" aria-label="Next slide">&#8594;</button>
+    </div>
+
+    <div class="collage" id="collage"></div>
+  </main>
+</div>
+
+<script>
+  const generated = window.IPAD_GENERATED_GALLERY.map(item => ({
+    kind: 'generated',
+    id: item.id,
+    prompt: item.prompt,
+    subprompt: item.prompt_original,
+    elements: item.elements,
+    leftImage: item.krea_image,
+    rightImage: item.dance_image,
+    leftLabel: 'Flux Krea · anti-aesthetic prompt',
+    rightLabel: 'DanceFlux · same anti-aesthetic prompt',
+    leftScore: item.krea_hpsv3,
+    rightScore: item.dance_hpsv3,
+    leftMetric: item.krea_effects,
+    rightMetric: item.dance_effects,
+    sourceBadge: 'Generated pair'
+  }));
+
+  const real = window.IPAD_REAL_GALLERY.map(item => ({
+    kind: 'real',
+    id: item.id,
+    prompt: item.prompt,
+    subprompt: `Clean prompt: ${item.clean_prompt}`,
+    elements: item.elements,
+    leftImage: item.real_image,
+    rightImage: item.clean_image,
+    leftLabel: 'Real anti-aesthetic image',
+    rightLabel: 'AI clean generation',
+    leftScore: item.real_hpsv3,
+    rightScore: item.clean_hpsv3,
+    leftMetric: item.human_score,
+    rightMetric: item.source_row,
+    sourceBadge: 'Real image pair'
+  }));
+
+  let mode = 'generated';
+  let selected = new Set();
+  let filtered = generated;
+  let current = 0;
+
+  const els = {
+    title: document.getElementById('title'),
+    generatedTab: document.getElementById('generated-tab'),
+    realTab: document.getElementById('real-tab'),
+    filters: document.getElementById('filter-list'),
+    clear: document.getElementById('clear-filters'),
+    leftImage: document.getElementById('left-image'),
+    rightImage: document.getElementById('right-image'),
+    leftLabel: document.getElementById('left-label'),
+    rightLabel: document.getElementById('right-label'),
+    leftScore: document.getElementById('left-score'),
+    rightScore: document.getElementById('right-score'),
+    sourceBadge: document.getElementById('source-badge'),
+    idBadge: document.getElementById('id-badge'),
+    matchBadge: document.getElementById('match-badge'),
+    prompt: document.getElementById('prompt'),
+    subprompt: document.getElementById('subprompt'),
+    elementRow: document.getElementById('element-row'),
+    metricGrid: document.getElementById('metric-grid'),
+    countNow: document.getElementById('count-now'),
+    countTotal: document.getElementById('count-total'),
+    collage: document.getElementById('collage'),
+    prev: document.getElementById('prev'),
+    next: document.getElementById('next')
+  };
+
+  function activeData() {
+    return mode === 'generated' ? generated : real;
+  }
+
+  function labelElement(text) {
+    return text.replaceAll('_', ' ').replaceAll('.', ' · ');
+  }
+
+  function rebuildFilters() {
+    const values = [...new Set(activeData().flatMap(item => item.elements))].sort();
+    els.filters.innerHTML = '';
+    values.forEach(value => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = selected.has(value) ? 'chip active' : 'chip';
+      button.textContent = labelElement(value);
+      button.setAttribute('aria-pressed', selected.has(value) ? 'true' : 'false');
+      button.addEventListener('click', () => {
+        if (selected.has(value)) {
+          selected.delete(value);
+        } else {
+          selected.add(value);
+        }
+        current = 0;
+        render();
+      });
+      els.filters.appendChild(button);
+    });
+  }
+
+  function itemMatches(item) {
+    if (selected.size === 0) return true;
+    return item.elements.some(value => selected.has(value));
+  }
+
+  function computeFiltered() {
+    filtered = activeData().filter(itemMatches);
+    if (filtered.length === 0) {
+      filtered = activeData();
+      selected = new Set();
+    }
+    if (current >= filtered.length) current = 0;
+  }
+
+  function metricHtml(item) {
+    if (item.kind === 'generated') {
+      return `
+        <div class="metric"><span>Krea anti-effect judge</span><b>${item.leftMetric}%</b></div>
+        <div class="metric"><span>Dance anti-effect judge</span><b>${item.rightMetric}%</b></div>
+      `;
+    }
+    return `
+      <div class="metric"><span>Human anti-aesthetic score</span><b>${item.leftMetric}</b></div>
+      <div class="metric"><span>Real dataset row</span><b>${item.rightMetric}</b></div>
+    `;
+  }
+
+  function renderStage() {
+    const item = filtered[current];
+    els.leftImage.src = item.leftImage;
+    els.rightImage.src = item.rightImage;
+    els.leftImage.alt = item.leftLabel;
+    els.rightImage.alt = item.rightLabel;
+    els.leftLabel.textContent = item.leftLabel;
+    els.rightLabel.textContent = item.rightLabel;
+    els.leftScore.textContent = `HPSv3 ${item.leftScore}`;
+    els.rightScore.textContent = `HPSv3 ${item.rightScore}`;
+    els.sourceBadge.textContent = item.sourceBadge;
+    els.idBadge.textContent = `ID ${item.id}`;
+    els.matchBadge.textContent = selected.size === 0 ? 'all elements' : `${selected.size} filters`;
+    els.prompt.textContent = item.prompt;
+    els.subprompt.textContent = item.subprompt;
+    els.elementRow.innerHTML = item.elements.map(value => `<span class="element">${labelElement(value)}</span>`).join('');
+    els.metricGrid.innerHTML = metricHtml(item);
+    els.countNow.textContent = String(current + 1);
+    els.countTotal.textContent = `/ ${filtered.length}`;
+  }
+
+  function renderCollage() {
+    els.collage.innerHTML = '';
+    filtered.forEach((item, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = index === current ? 'thumb active' : 'thumb';
+      button.innerHTML = `
+        <div class="thumb-images">
+          <img loading="lazy" alt="" src="${item.leftImage}">
+          <img loading="lazy" alt="" src="${item.rightImage}">
+        </div>
+        <div class="thumb-meta">
+          <b>${item.kind === 'generated' ? 'Krea / Dance' : 'Real / Clean'} · ${item.id}</b>
+          <span>${item.elements.map(labelElement).join(' · ')}</span>
+        </div>
+      `;
+      button.addEventListener('click', () => {
+        current = index;
+        renderStage();
+        renderCollage();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      els.collage.appendChild(button);
+    });
+  }
+
+  function render() {
+    els.generatedTab.classList.toggle('active', mode === 'generated');
+    els.realTab.classList.toggle('active', mode === 'real');
+    els.title.textContent = mode === 'generated'
+      ? 'Flux Krea can render anti-aesthetic intent. DanceFlux sanitizes it.'
+      : 'Real anti-aesthetic photographs sit beside clean AI replacements.';
+    rebuildFilters();
+    computeFiltered();
+    renderStage();
+    renderCollage();
+  }
+
+  function move(delta) {
+    current = (current + delta + filtered.length) % filtered.length;
+    renderStage();
+    renderCollage();
+  }
+
+  els.generatedTab.addEventListener('click', () => {
+    mode = 'generated';
+    selected = new Set();
+    current = 0;
+    render();
+  });
+  els.realTab.addEventListener('click', () => {
+    mode = 'real';
+    selected = new Set();
+    current = 0;
+    render();
+  });
+  els.clear.addEventListener('click', () => {
+    selected = new Set();
+    current = 0;
+    render();
+  });
+  els.prev.addEventListener('click', () => move(-1));
+  els.next.addEventListener('click', () => move(1));
+  window.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') move(-1);
+    if (event.key === 'ArrowRight') move(1);
+  });
+
+  let touchX = null;
+  document.querySelector('.stage').addEventListener('touchstart', event => {
+    touchX = event.changedTouches[0].clientX;
+  }, { passive: true });
+  document.querySelector('.stage').addEventListener('touchend', event => {
+    const dx = event.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) move(dx > 0 ? -1 : 1);
+  }, { passive: true });
+
+  render();
+</script>
+</body>
+</html>
