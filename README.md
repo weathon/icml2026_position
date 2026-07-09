@@ -5,6 +5,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2512.11883-b31b1b.svg)](https://arxiv.org/abs/2512.11883)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow.svg)](https://huggingface.co/datasets/weathon/aas_benchmark_final)
 
+机器之心文章 https://mp.weixin.qq.com/s/JJMSTq6O-QLy9FO-Os6SMA
+
 Code, evaluation scripts, datasets, and supporting artifacts for the ICML 2026
 position paper **Universal Aesthetic Alignment Narrows Artistic Expression**.
 If this repository is useful for your research, please consider starring it.
