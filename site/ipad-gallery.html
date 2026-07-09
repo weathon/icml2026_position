@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anti-Aesthetic Gallery — ICML 2026 Poster Companion</title>
-<meta name="description" content="iPad poster companion gallery for anti-aesthetic images, comparing Flux Krea with DanceFlux and real anti-aesthetic images with clean AI generations.">
+<meta name="description" content="iPad poster companion gallery for anti-aesthetic images, comparing Flux Krea, DanceFlux, Nano Banana, and real anti-aesthetic images with clean AI generations.">
 <script src="js/ipad-gallery-data.js"></script>
 <style>
   :root {
@@ -184,10 +184,11 @@
   }
   .image-pair {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     min-width: 0;
     border-right: 4px solid #111;
   }
+  .image-pair.real-mode { grid-template-columns: 1fr 1fr; }
   .image-pane {
     position: relative;
     display: flex;
@@ -196,6 +197,7 @@
     background: #191919;
   }
   .image-pane + .image-pane { border-left: 4px solid #111; }
+  .image-pane.hidden { display: none; }
   .image-pane img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -281,7 +283,7 @@
   }
   .metric-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     margin-top: auto;
   }
@@ -334,9 +336,10 @@
   }
   .thumb-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
   }
+  .thumb-images.generated { grid-template-columns: repeat(3, 1fr); }
   .thumb img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -380,7 +383,7 @@
     main { padding: 12px; }
     .topline { flex-direction: column; }
     .counter { width: 100%; }
-    .image-pair { grid-template-columns: 1fr; }
+    .image-pair, .image-pair.real-mode { grid-template-columns: 1fr; }
     .image-pane + .image-pane { border-left: 0; border-top: 4px solid #111; }
     .filter-list { grid-template-columns: 1fr 1fr; }
     .metric-grid { grid-template-columns: 1fr; }
@@ -398,25 +401,27 @@
       <a href="../poster.pdf">Poster</a>
     </div>
     <div class="source-tabs">
-      <button id="generated-tab" class="active" type="button">Flux Krea vs DanceFlux</button>
+      <button id="generated-tab" class="active" type="button">Flux Krea / DanceFlux / Nano Banana</button>
       <button id="real-tab" type="button">Real vs AI Clean</button>
     </div>
-    <h2>Aesthetic elements</h2>
-    <div class="filter-list" id="filter-list"></div>
-    <button class="clear" id="clear-filters" type="button">Clear filters</button>
+    <div id="filter-panel">
+      <h2>Aesthetic elements</h2>
+      <div class="filter-list" id="filter-list"></div>
+      <button class="clear" id="clear-filters" type="button">Clear filters</button>
+    </div>
   </aside>
 
   <main>
     <div class="topline">
       <div>
         <span class="kicker">iPad poster companion</span>
-        <h1 id="title">Flux Krea can render anti-aesthetic intent. DanceFlux sanitizes it.</h1>
+        <h1 id="title">Flux Krea can render anti-aesthetic intent. DanceFlux and Nano Banana show the contrast.</h1>
       </div>
       <div class="counter"><span id="count-now">1</span><small id="count-total">/ 300</small></div>
     </div>
 
     <section class="stage" aria-live="polite">
-      <div class="image-pair">
+      <div class="image-pair" id="image-pair">
         <figure class="image-pane">
           <img id="left-image" alt="">
           <figcaption class="captionbar">
@@ -425,9 +430,16 @@
           </figcaption>
         </figure>
         <figure class="image-pane">
+          <img id="middle-image" alt="">
+          <figcaption class="captionbar">
+            <b id="middle-label">DanceFlux</b>
+            <span class="score" id="middle-score">HPSv3</span>
+          </figcaption>
+        </figure>
+        <figure class="image-pane" id="right-pane">
           <img id="right-image" alt="">
           <figcaption class="captionbar">
-            <b id="right-label">DanceFlux</b>
+            <b id="right-label">Nano Banana</b>
             <span class="score" id="right-score">HPSv3</span>
           </figcaption>
         </figure>
@@ -463,14 +475,18 @@
     subprompt: item.prompt_original,
     elements: item.elements,
     leftImage: item.krea_image,
-    rightImage: item.dance_image,
+    middleImage: item.dance_image,
+    rightImage: item.nano_image,
     leftLabel: 'Flux Krea · anti-aesthetic prompt',
-    rightLabel: 'DanceFlux · same anti-aesthetic prompt',
+    middleLabel: 'DanceFlux · same anti-aesthetic prompt',
+    rightLabel: 'Nano Banana · same anti-aesthetic prompt',
     leftScore: item.krea_hpsv3,
-    rightScore: item.dance_hpsv3,
+    middleScore: item.dance_hpsv3,
+    rightScore: item.nano_hpsv3,
     leftMetric: item.krea_effects,
-    rightMetric: item.dance_effects,
-    sourceBadge: 'Generated pair'
+    middleMetric: item.dance_effects,
+    rightMetric: item.nano_effects,
+    sourceBadge: 'Generated triple'
   }));
 
   const real = window.IPAD_REAL_GALLERY.map(item => ({
@@ -480,12 +496,16 @@
     subprompt: `Clean prompt: ${item.clean_prompt}`,
     elements: item.elements,
     leftImage: item.real_image,
+    middleImage: item.clean_image,
     rightImage: item.clean_image,
     leftLabel: 'Real anti-aesthetic image',
+    middleLabel: 'AI clean generation',
     rightLabel: 'AI clean generation',
     leftScore: item.real_hpsv3,
+    middleScore: item.clean_hpsv3,
     rightScore: item.clean_hpsv3,
     leftMetric: item.human_score,
+    middleMetric: item.source_row,
     rightMetric: item.source_row,
     sourceBadge: 'Real image pair'
   }));
@@ -499,14 +519,20 @@
     title: document.getElementById('title'),
     generatedTab: document.getElementById('generated-tab'),
     realTab: document.getElementById('real-tab'),
+    filterPanel: document.getElementById('filter-panel'),
     filters: document.getElementById('filter-list'),
     clear: document.getElementById('clear-filters'),
+    imagePair: document.getElementById('image-pair'),
     leftImage: document.getElementById('left-image'),
+    middleImage: document.getElementById('middle-image'),
     rightImage: document.getElementById('right-image'),
     leftLabel: document.getElementById('left-label'),
+    middleLabel: document.getElementById('middle-label'),
     rightLabel: document.getElementById('right-label'),
     leftScore: document.getElementById('left-score'),
+    middleScore: document.getElementById('middle-score'),
     rightScore: document.getElementById('right-score'),
+    rightPane: document.getElementById('right-pane'),
     sourceBadge: document.getElementById('source-badge'),
     idBadge: document.getElementById('id-badge'),
     matchBadge: document.getElementById('match-badge'),
@@ -552,6 +578,7 @@
   }
 
   function itemMatches(item) {
+    if (mode === 'real') return true;
     if (selected.size === 0) return true;
     return item.elements.some(value => selected.has(value));
   }
@@ -568,8 +595,9 @@
   function metricHtml(item) {
     if (item.kind === 'generated') {
       return `
-        <div class="metric"><span>Krea anti-effect judge</span><b>${item.leftMetric}%</b></div>
-        <div class="metric"><span>Dance anti-effect judge</span><b>${item.rightMetric}%</b></div>
+        <div class="metric"><span>Krea LLM anti-effect judge</span><b>${item.leftMetric}%</b></div>
+        <div class="metric"><span>Dance LLM anti-effect judge</span><b>${item.middleMetric}%</b></div>
+        <div class="metric"><span>Nano Banana LLM anti-effect judge</span><b>${item.rightMetric}%</b></div>
       `;
     }
     return `
@@ -580,13 +608,19 @@
 
   function renderStage() {
     const item = filtered[current];
+    els.imagePair.classList.toggle('real-mode', item.kind === 'real');
+    els.rightPane.classList.toggle('hidden', item.kind === 'real');
     els.leftImage.src = item.leftImage;
+    els.middleImage.src = item.middleImage;
     els.rightImage.src = item.rightImage;
     els.leftImage.alt = item.leftLabel;
+    els.middleImage.alt = item.middleLabel;
     els.rightImage.alt = item.rightLabel;
     els.leftLabel.textContent = item.leftLabel;
+    els.middleLabel.textContent = item.middleLabel;
     els.rightLabel.textContent = item.rightLabel;
     els.leftScore.textContent = `HPSv3 ${item.leftScore}`;
+    els.middleScore.textContent = `HPSv3 ${item.middleScore}`;
     els.rightScore.textContent = `HPSv3 ${item.rightScore}`;
     els.sourceBadge.textContent = item.sourceBadge;
     els.idBadge.textContent = `ID ${item.id}`;
@@ -605,13 +639,15 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = index === current ? 'thumb active' : 'thumb';
+      const images = item.kind === 'generated'
+        ? `<img loading="lazy" alt="" src="${item.leftImage}"><img loading="lazy" alt="" src="${item.middleImage}"><img loading="lazy" alt="" src="${item.rightImage}">`
+        : `<img loading="lazy" alt="" src="${item.leftImage}"><img loading="lazy" alt="" src="${item.rightImage}">`;
       button.innerHTML = `
-        <div class="thumb-images">
-          <img loading="lazy" alt="" src="${item.leftImage}">
-          <img loading="lazy" alt="" src="${item.rightImage}">
+        <div class="thumb-images ${item.kind}">
+          ${images}
         </div>
         <div class="thumb-meta">
-          <b>${item.kind === 'generated' ? 'Krea / Dance' : 'Real / Clean'} · ${item.id}</b>
+          <b>${item.kind === 'generated' ? 'Krea / Dance / Nano' : 'Real / Clean'} · ${item.id}</b>
           <span>${item.elements.map(labelElement).join(' · ')}</span>
         </div>
       `;
@@ -628,8 +664,9 @@
   function render() {
     els.generatedTab.classList.toggle('active', mode === 'generated');
     els.realTab.classList.toggle('active', mode === 'real');
+    els.filterPanel.style.display = mode === 'generated' ? 'block' : 'none';
     els.title.textContent = mode === 'generated'
-      ? 'Flux Krea can render anti-aesthetic intent. DanceFlux sanitizes it.'
+      ? 'Flux Krea can render anti-aesthetic intent. DanceFlux and Nano Banana show the contrast.'
       : 'Real anti-aesthetic photographs sit beside clean AI replacements.';
     rebuildFilters();
     computeFiltered();

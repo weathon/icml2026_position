@@ -16,7 +16,7 @@
         "stable_diffusion_3.5_medium",
         "stable_diffusion_xl"
       ],
-      "used": "Flux Krea vs DanceFlux generated gallery"
+      "used": "Flux Krea vs DanceFlux vs Nano Banana generated gallery"
     },
     {
       "name": "weathon/aas_benchmark-seeddream4",
@@ -24,7 +24,7 @@
       "models": [
         "seeddream4"
       ],
-      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only"
+      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux vs Nano Banana only"
     },
     {
       "name": "weathon/aas_benchmark_gpt-gpt-image-1.5",
@@ -32,12 +32,12 @@
       "models": [
         "gpt-image-1.5"
       ],
-      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only"
+      "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux vs Nano Banana only"
     },
     {
       "name": "weathon/aas_real_images",
       "rows": 6272,
-      "used": "32 real anti-aesthetic samples with clean AI comparison"
+      "used": "first 96 real anti-aesthetic samples that have clean AI comparison"
     }
   ]
 }

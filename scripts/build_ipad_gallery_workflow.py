@@ -10,7 +10,7 @@ OUT = ROOT / "site" / "img" / "asserts" / "ipad_gallery"
 GENERATED_OUT = OUT / "generated"
 REAL_OUT = OUT / "real"
 DATA_JS = ROOT / "site" / "js" / "ipad-gallery-data.js"
-REAL_SAMPLE_SIZE = 32
+REAL_SAMPLE_SIZE = 96
 
 for path in [WORKFLOW, GENERATED_OUT, REAL_OUT]:
     path.mkdir(parents=True, exist_ok=True)
@@ -25,7 +25,10 @@ def save_image(image, path):
 
 
 def hpsv3(row, key):
-    return round(float(row["hpsv3_reward"]["hpsv3_reward"][key][0]), 2)
+    rewards = row["hpsv3_reward"]
+    if rewards["hpsv3_reward"] is not None:
+        return round(float(rewards["hpsv3_reward"][key][0]), 2)
+    return round(float(rewards[key][0]), 2)
 
 
 main = load_dataset("weathon/aas_benchmark_final", split="train")
@@ -39,24 +42,24 @@ summary = {
             "name": "weathon/aas_benchmark_final",
             "rows": len(main),
             "models": sorted(set(str(x) for x in main["model"])),
-            "used": "Flux Krea vs DanceFlux generated gallery",
+            "used": "Flux Krea vs DanceFlux vs Nano Banana generated gallery",
         },
         {
             "name": "weathon/aas_benchmark-seeddream4",
             "rows": len(seeddream),
             "models": sorted(set(str(x) for x in seeddream["model"])),
-            "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only",
+            "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux vs Nano Banana only",
         },
         {
             "name": "weathon/aas_benchmark_gpt-gpt-image-1.5",
             "rows": len(gpt),
             "models": sorted(set(str(x) for x in gpt["model"])),
-            "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux only",
+            "used": "loaded for workflow record; final generated comparison is Flux Krea vs DanceFlux vs Nano Banana only",
         },
         {
             "name": "weathon/aas_real_images",
             "rows": len(real),
-            "used": f"{REAL_SAMPLE_SIZE} real anti-aesthetic samples with clean AI comparison",
+            "used": f"first {REAL_SAMPLE_SIZE} real anti-aesthetic samples that have clean AI comparison",
         },
     ]
 }
@@ -65,17 +68,20 @@ with (WORKFLOW / "dataset_summary.json").open("w") as f:
 
 by_index = {}
 for row in main:
-    if row["model"] in ["flux_krea", "dance_flux"]:
+    if row["model"] in ["flux_krea", "dance_flux", "nano-banana"]:
         by_index.setdefault(int(row["index"]), {})[row["model"]] = row
 
 generated = []
 for idx in sorted(by_index):
     krea = by_index[idx]["flux_krea"]
     dance = by_index[idx]["dance_flux"]
+    nano = by_index[idx]["nano-banana"]
     krea_path = GENERATED_OUT / f"{idx:04d}_krea.jpg"
     dance_path = GENERATED_OUT / f"{idx:04d}_dance.jpg"
+    nano_path = GENERATED_OUT / f"{idx:04d}_nano.jpg"
     save_image(krea["image_distorted"], krea_path)
     save_image(dance["image_distorted"], dance_path)
+    save_image(nano["image_distorted"], nano_path)
     generated.append(
         {
             "id": idx,
@@ -84,23 +90,27 @@ for idx in sorted(by_index):
             "elements": json.loads(krea["selected_dims"]),
             "krea_image": str(krea_path.relative_to(ROOT / "site")),
             "dance_image": str(dance_path.relative_to(ROOT / "site")),
+            "nano_image": str(nano_path.relative_to(ROOT / "site")),
             "krea_hpsv3": hpsv3(krea, "hpsv3_didp"),
             "dance_hpsv3": hpsv3(dance, "hpsv3_didp"),
+            "nano_hpsv3": hpsv3(nano, "hpsv3_didp"),
             "krea_main": int(krea["llm_judge"]["llm_distorted_main_concepts"]),
             "krea_effects": int(krea["llm_judge"]["llm_distorted_special_effects"]),
             "dance_main": int(dance["llm_judge"]["llm_distorted_main_concepts"]),
             "dance_effects": int(dance["llm_judge"]["llm_distorted_special_effects"]),
+            "nano_main": int(nano["llm_judge"]["llm_distorted_main_concepts"]),
+            "nano_effects": int(nano["llm_judge"]["llm_distorted_special_effects"]),
         }
     )
 
 if len(generated) != 300:
-    raise RuntimeError(f"expected 300 Flux Krea/DanceFlux pairs, got {len(generated)}")
+    raise RuntimeError(f"expected 300 Flux Krea/DanceFlux/Nano Banana triples, got {len(generated)}")
 
 real_rows = []
 for i, row in enumerate(real):
-    elements = row["caption"]["anti_aesthetic_elements"]
-    if len(elements) == 0:
+    if row["clean_image"] is None:
         continue
+    elements = row["caption"]["anti_aesthetic_elements"]
     real_rows.append(
         {
             "row_i": i,
@@ -114,24 +124,14 @@ for i, row in enumerate(real):
             "row": row,
         }
     )
-
-real_rows.sort(key=lambda x: x["human_score"], reverse=True)
-element_counts = {}
-real_samples = []
-for item in real_rows:
-    primary = item["elements"][0]
-    element_counts[primary] = element_counts.get(primary, 0)
-    if element_counts[primary] < 3:
-        real_samples.append(item)
-        element_counts[primary] += 1
-    if len(real_samples) == REAL_SAMPLE_SIZE:
+    if len(real_rows) == REAL_SAMPLE_SIZE:
         break
 
-if len(real_samples) != REAL_SAMPLE_SIZE:
-    raise RuntimeError(f"expected {REAL_SAMPLE_SIZE} real samples, got {len(real_samples)}")
+if len(real_rows) != REAL_SAMPLE_SIZE:
+    raise RuntimeError(f"expected {REAL_SAMPLE_SIZE} real samples, got {len(real_rows)}")
 
 real_gallery = []
-for n, item in enumerate(real_samples):
+for n, item in enumerate(real_rows):
     real_path = REAL_OUT / f"{n:03d}_real.jpg"
     clean_path = REAL_OUT / f"{n:03d}_clean.jpg"
     save_image(item["row"]["image"], real_path)

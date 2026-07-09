@@ -9,12 +9,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0000_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0000_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0000_nano.jpg",
     "krea_hpsv3": 15.88,
     "dance_hpsv3": 12.95,
+    "nano_hpsv3": 8.69,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 1,
@@ -27,12 +31,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0001_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0001_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0001_nano.jpg",
     "krea_hpsv3": 14.03,
     "dance_hpsv3": 15.86,
+    "nano_hpsv3": 14.51,
     "krea_main": 100,
     "krea_effects": 72,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 2,
@@ -45,12 +53,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0002_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0002_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0002_nano.jpg",
     "krea_hpsv3": 11.27,
     "dance_hpsv3": 12.3,
+    "nano_hpsv3": 11.01,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 3,
@@ -64,12 +76,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0003_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0003_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0003_nano.jpg",
     "krea_hpsv3": 10.56,
     "dance_hpsv3": 14.8,
+    "nano_hpsv3": 8.04,
     "krea_main": 100,
     "krea_effects": 14,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 4,
@@ -83,12 +99,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0004_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0004_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0004_nano.jpg",
     "krea_hpsv3": 12.0,
     "dance_hpsv3": 12.76,
+    "nano_hpsv3": 9.41,
     "krea_main": 100,
     "krea_effects": 67,
     "dance_main": 90,
-    "dance_effects": 61
+    "dance_effects": 61,
+    "nano_main": 90,
+    "nano_effects": 60
   },
   {
     "id": 5,
@@ -100,12 +120,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0005_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0005_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0005_nano.jpg",
     "krea_hpsv3": 9.49,
     "dance_hpsv3": 11.42,
+    "nano_hpsv3": 5.84,
     "krea_main": 100,
     "krea_effects": 43,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 6,
@@ -118,12 +142,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0006_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0006_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0006_nano.jpg",
     "krea_hpsv3": 9.53,
     "dance_hpsv3": 12.59,
+    "nano_hpsv3": 9.08,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 27
+    "dance_effects": 27,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 7,
@@ -135,12 +163,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0007_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0007_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0007_nano.jpg",
     "krea_hpsv3": 11.33,
     "dance_hpsv3": 13.54,
+    "nano_hpsv3": 9.14,
     "krea_main": 100,
     "krea_effects": 29,
     "dance_main": 100,
-    "dance_effects": 29
+    "dance_effects": 29,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 8,
@@ -154,12 +186,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0008_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0008_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0008_nano.jpg",
     "krea_hpsv3": 11.74,
     "dance_hpsv3": 12.73,
+    "nano_hpsv3": 9.22,
     "krea_main": 90,
     "krea_effects": 83,
     "dance_main": 80,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 9,
@@ -172,12 +208,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0009_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0009_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0009_nano.jpg",
     "krea_hpsv3": 14.7,
     "dance_hpsv3": 16.08,
+    "nano_hpsv3": 7.68,
     "krea_main": 100,
     "krea_effects": 78,
     "dance_main": 100,
-    "dance_effects": 60
+    "dance_effects": 60,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 10,
@@ -189,12 +229,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0010_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0010_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0010_nano.jpg",
     "krea_hpsv3": 7.84,
     "dance_hpsv3": 12.03,
+    "nano_hpsv3": 4.03,
     "krea_main": 90,
     "krea_effects": 17,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 90
   },
   {
     "id": 11,
@@ -208,12 +252,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0011_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0011_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0011_nano.jpg",
     "krea_hpsv3": 8.73,
     "dance_hpsv3": 9.98,
+    "nano_hpsv3": 6.83,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 21
+    "dance_effects": 21,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 12,
@@ -225,12 +273,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0012_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0012_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0012_nano.jpg",
     "krea_hpsv3": 10.58,
     "dance_hpsv3": 12.52,
+    "nano_hpsv3": 7.4,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 95
+    "dance_effects": 95,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 13,
@@ -243,12 +295,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0013_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0013_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0013_nano.jpg",
     "krea_hpsv3": 4.99,
     "dance_hpsv3": 12.85,
+    "nano_hpsv3": 10.1,
     "krea_main": 80,
     "krea_effects": 67,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 17
   },
   {
     "id": 14,
@@ -262,12 +318,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0014_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0014_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0014_nano.jpg",
     "krea_hpsv3": 10.22,
     "dance_hpsv3": 14.67,
+    "nano_hpsv3": 11.38,
     "krea_main": 90,
     "krea_effects": 40,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 43
   },
   {
     "id": 15,
@@ -279,12 +339,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0015_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0015_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0015_nano.jpg",
     "krea_hpsv3": 15.9,
     "dance_hpsv3": 15.59,
+    "nano_hpsv3": 13.55,
     "krea_main": 100,
     "krea_effects": 17,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 16,
@@ -298,12 +362,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0016_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0016_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0016_nano.jpg",
     "krea_hpsv3": 11.34,
     "dance_hpsv3": 12.88,
+    "nano_hpsv3": 4.42,
     "krea_main": 90,
     "krea_effects": 15,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 17,
@@ -315,12 +383,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0017_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0017_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0017_nano.jpg",
     "krea_hpsv3": 10.97,
     "dance_hpsv3": 12.84,
+    "nano_hpsv3": 8.45,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 55
   },
   {
     "id": 18,
@@ -333,12 +405,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0018_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0018_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0018_nano.jpg",
     "krea_hpsv3": 13.63,
     "dance_hpsv3": 14.88,
+    "nano_hpsv3": 12.61,
     "krea_main": 100,
     "krea_effects": 20,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 93
   },
   {
     "id": 19,
@@ -351,12 +427,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0019_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0019_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0019_nano.jpg",
     "krea_hpsv3": 8.02,
     "dance_hpsv3": 15.44,
+    "nano_hpsv3": 10.56,
     "krea_main": 100,
     "krea_effects": 17,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 20,
@@ -370,12 +450,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0020_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0020_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0020_nano.jpg",
     "krea_hpsv3": 12.7,
     "dance_hpsv3": 13.77,
+    "nano_hpsv3": 11.42,
     "krea_main": 100,
     "krea_effects": 71,
     "dance_main": 100,
-    "dance_effects": 83
+    "dance_effects": 83,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 21,
@@ -388,12 +472,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0021_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0021_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0021_nano.jpg",
     "krea_hpsv3": 13.1,
     "dance_hpsv3": 14.64,
+    "nano_hpsv3": 9.67,
     "krea_main": 100,
     "krea_effects": 40,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 60
   },
   {
     "id": 22,
@@ -407,12 +495,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0022_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0022_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0022_nano.jpg",
     "krea_hpsv3": 11.26,
     "dance_hpsv3": 15.03,
+    "nano_hpsv3": 10.19,
     "krea_main": 90,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 40
+    "dance_effects": 40,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 23,
@@ -424,12 +516,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0023_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0023_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0023_nano.jpg",
     "krea_hpsv3": 12.84,
     "dance_hpsv3": 15.11,
+    "nano_hpsv3": 9.45,
     "krea_main": 100,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 24,
@@ -442,12 +538,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0024_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0024_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0024_nano.jpg",
     "krea_hpsv3": 15.02,
     "dance_hpsv3": 15.86,
+    "nano_hpsv3": 13.02,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 25,
@@ -460,12 +560,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0025_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0025_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0025_nano.jpg",
     "krea_hpsv3": 13.41,
     "dance_hpsv3": 15.5,
+    "nano_hpsv3": 12.5,
     "krea_main": 90,
     "krea_effects": 100,
     "dance_main": 95,
-    "dance_effects": 5
+    "dance_effects": 5,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 26,
@@ -479,12 +583,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0026_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0026_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0026_nano.jpg",
     "krea_hpsv3": 12.66,
     "dance_hpsv3": 13.54,
+    "nano_hpsv3": 10.68,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 44
   },
   {
     "id": 27,
@@ -496,12 +604,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0027_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0027_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0027_nano.jpg",
     "krea_hpsv3": 12.49,
     "dance_hpsv3": 14.19,
+    "nano_hpsv3": 6.85,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 28,
@@ -513,12 +625,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0028_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0028_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0028_nano.jpg",
     "krea_hpsv3": 9.12,
     "dance_hpsv3": 14.28,
+    "nano_hpsv3": 9.05,
     "krea_main": 100,
     "krea_effects": 12,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 10
   },
   {
     "id": 29,
@@ -531,12 +647,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0029_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0029_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0029_nano.jpg",
     "krea_hpsv3": 9.66,
     "dance_hpsv3": 10.6,
+    "nano_hpsv3": 10.09,
     "krea_main": 80,
     "krea_effects": 57,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 30,
@@ -550,12 +670,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0030_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0030_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0030_nano.jpg",
     "krea_hpsv3": 13.02,
     "dance_hpsv3": 13.75,
+    "nano_hpsv3": 13.37,
     "krea_main": 100,
     "krea_effects": 40,
     "dance_main": 90,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 31,
@@ -569,12 +693,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0031_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0031_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0031_nano.jpg",
     "krea_hpsv3": 12.05,
     "dance_hpsv3": 14.51,
+    "nano_hpsv3": 11.07,
     "krea_main": 100,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 32,
@@ -586,12 +714,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0032_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0032_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0032_nano.jpg",
     "krea_hpsv3": 10.99,
     "dance_hpsv3": 13.55,
+    "nano_hpsv3": 9.13,
     "krea_main": 100,
     "krea_effects": 73,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 86
   },
   {
     "id": 33,
@@ -604,12 +736,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0033_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0033_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0033_nano.jpg",
     "krea_hpsv3": 12.3,
     "dance_hpsv3": 12.5,
+    "nano_hpsv3": 11.22,
     "krea_main": 95,
     "krea_effects": 71,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 34,
@@ -623,12 +759,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0034_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0034_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0034_nano.jpg",
     "krea_hpsv3": 14.6,
     "dance_hpsv3": 14.6,
+    "nano_hpsv3": 12.43,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 8
+    "dance_effects": 8,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 35,
@@ -642,12 +782,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0035_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0035_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0035_nano.jpg",
     "krea_hpsv3": 11.76,
     "dance_hpsv3": 13.25,
+    "nano_hpsv3": 9.85,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 60
   },
   {
     "id": 36,
@@ -661,12 +805,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0036_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0036_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0036_nano.jpg",
     "krea_hpsv3": 15.84,
     "dance_hpsv3": 16.1,
+    "nano_hpsv3": 13.47,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 37,
@@ -678,12 +826,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0037_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0037_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0037_nano.jpg",
     "krea_hpsv3": 9.95,
     "dance_hpsv3": 12.58,
+    "nano_hpsv3": 6.97,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 38,
@@ -696,12 +848,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0038_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0038_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0038_nano.jpg",
     "krea_hpsv3": 8.77,
     "dance_hpsv3": 12.71,
+    "nano_hpsv3": 9.66,
     "krea_main": 100,
     "krea_effects": 20,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 25
   },
   {
     "id": 39,
@@ -714,12 +870,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0039_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0039_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0039_nano.jpg",
     "krea_hpsv3": 11.18,
     "dance_hpsv3": 13.5,
+    "nano_hpsv3": 8.84,
     "krea_main": 100,
     "krea_effects": 71,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 40,
@@ -731,12 +891,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0040_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0040_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0040_nano.jpg",
     "krea_hpsv3": 9.92,
     "dance_hpsv3": 14.57,
+    "nano_hpsv3": 10.55,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 57
   },
   {
     "id": 41,
@@ -749,12 +913,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0041_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0041_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0041_nano.jpg",
     "krea_hpsv3": 12.65,
     "dance_hpsv3": 13.25,
+    "nano_hpsv3": 8.06,
     "krea_main": 100,
     "krea_effects": 65,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 33
   },
   {
     "id": 42,
@@ -768,12 +936,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0042_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0042_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0042_nano.jpg",
     "krea_hpsv3": 10.9,
     "dance_hpsv3": 12.91,
+    "nano_hpsv3": 7.91,
     "krea_main": 100,
     "krea_effects": 67,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 43,
@@ -785,12 +957,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0043_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0043_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0043_nano.jpg",
     "krea_hpsv3": 8.71,
     "dance_hpsv3": 11.6,
+    "nano_hpsv3": 7.87,
     "krea_main": 100,
     "krea_effects": 42,
     "dance_main": 100,
-    "dance_effects": 7
+    "dance_effects": 7,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 44,
@@ -802,12 +978,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0044_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0044_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0044_nano.jpg",
     "krea_hpsv3": 11.29,
     "dance_hpsv3": 14.12,
+    "nano_hpsv3": 5.66,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 14
+    "dance_effects": 14,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 45,
@@ -820,12 +1000,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0045_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0045_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0045_nano.jpg",
     "krea_hpsv3": 14.14,
     "dance_hpsv3": 15.38,
+    "nano_hpsv3": 10.39,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 58
+    "dance_effects": 58,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 46,
@@ -837,12 +1021,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0046_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0046_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0046_nano.jpg",
     "krea_hpsv3": 14.21,
     "dance_hpsv3": 13.59,
+    "nano_hpsv3": 10.05,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 80
   },
   {
     "id": 47,
@@ -855,12 +1043,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0047_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0047_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0047_nano.jpg",
     "krea_hpsv3": 12.53,
     "dance_hpsv3": 13.2,
+    "nano_hpsv3": 5.97,
     "krea_main": 90,
     "krea_effects": 95,
     "dance_main": 90,
-    "dance_effects": 42
+    "dance_effects": 42,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 48,
@@ -874,12 +1066,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0048_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0048_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0048_nano.jpg",
     "krea_hpsv3": 10.78,
     "dance_hpsv3": 12.24,
+    "nano_hpsv3": 8.94,
     "krea_main": 100,
     "krea_effects": 80,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 49,
@@ -892,12 +1088,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0049_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0049_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0049_nano.jpg",
     "krea_hpsv3": 11.44,
     "dance_hpsv3": 12.19,
+    "nano_hpsv3": 6.91,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 60
   },
   {
     "id": 50,
@@ -909,12 +1109,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0050_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0050_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0050_nano.jpg",
     "krea_hpsv3": 10.67,
     "dance_hpsv3": 12.38,
+    "nano_hpsv3": 7.31,
     "krea_main": 100,
     "krea_effects": 16,
     "dance_main": 100,
-    "dance_effects": 5
+    "dance_effects": 5,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 51,
@@ -928,12 +1132,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0051_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0051_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0051_nano.jpg",
     "krea_hpsv3": 11.62,
     "dance_hpsv3": 14.8,
+    "nano_hpsv3": 13.02,
     "krea_main": 90,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 3
+    "dance_effects": 3,
+    "nano_main": 90,
+    "nano_effects": 15
   },
   {
     "id": 52,
@@ -945,12 +1153,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0052_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0052_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0052_nano.jpg",
     "krea_hpsv3": 12.45,
     "dance_hpsv3": 15.55,
+    "nano_hpsv3": 9.6,
     "krea_main": 90,
     "krea_effects": 25,
     "dance_main": 50,
-    "dance_effects": 38
+    "dance_effects": 38,
+    "nano_main": 70,
+    "nano_effects": 50
   },
   {
     "id": 53,
@@ -963,12 +1175,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0053_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0053_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0053_nano.jpg",
     "krea_hpsv3": 11.04,
     "dance_hpsv3": 14.04,
+    "nano_hpsv3": 10.49,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 44
   },
   {
     "id": 54,
@@ -981,12 +1197,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0054_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0054_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0054_nano.jpg",
     "krea_hpsv3": 14.22,
     "dance_hpsv3": 15.21,
+    "nano_hpsv3": 8.27,
     "krea_main": 90,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 55,
@@ -998,12 +1218,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0055_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0055_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0055_nano.jpg",
     "krea_hpsv3": 13.78,
     "dance_hpsv3": 14.91,
+    "nano_hpsv3": 13.3,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 56,
@@ -1016,12 +1240,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0056_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0056_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0056_nano.jpg",
     "krea_hpsv3": 9.57,
     "dance_hpsv3": 10.87,
+    "nano_hpsv3": 6.75,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 58
   },
   {
     "id": 57,
@@ -1033,12 +1261,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0057_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0057_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0057_nano.jpg",
     "krea_hpsv3": 10.47,
     "dance_hpsv3": 11.68,
+    "nano_hpsv3": 2.45,
     "krea_main": 90,
     "krea_effects": 17,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 58,
@@ -1051,12 +1283,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0058_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0058_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0058_nano.jpg",
     "krea_hpsv3": 10.5,
     "dance_hpsv3": 12.77,
+    "nano_hpsv3": 4.58,
     "krea_main": 90,
     "krea_effects": 85,
     "dance_main": 90,
-    "dance_effects": 14
+    "dance_effects": 14,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 59,
@@ -1070,12 +1306,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0059_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0059_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0059_nano.jpg",
     "krea_hpsv3": 9.49,
     "dance_hpsv3": 14.53,
+    "nano_hpsv3": 9.37,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 100,
-    "dance_effects": 11
+    "dance_effects": 11,
+    "nano_main": 100,
+    "nano_effects": 67
   },
   {
     "id": 60,
@@ -1089,12 +1329,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0060_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0060_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0060_nano.jpg",
     "krea_hpsv3": 8.82,
     "dance_hpsv3": 10.33,
+    "nano_hpsv3": 5.87,
     "krea_main": 80,
     "krea_effects": 65,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 70,
+    "nano_effects": 100
   },
   {
     "id": 61,
@@ -1107,12 +1351,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0061_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0061_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0061_nano.jpg",
     "krea_hpsv3": 8.61,
     "dance_hpsv3": 10.17,
+    "nano_hpsv3": 7.25,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 80,
-    "dance_effects": 43
+    "dance_effects": 43,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 62,
@@ -1125,12 +1373,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0062_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0062_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0062_nano.jpg",
     "krea_hpsv3": 10.83,
     "dance_hpsv3": 13.31,
+    "nano_hpsv3": 8.85,
     "krea_main": 100,
     "krea_effects": 43,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 83
   },
   {
     "id": 63,
@@ -1143,12 +1395,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0063_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0063_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0063_nano.jpg",
     "krea_hpsv3": 11.68,
     "dance_hpsv3": 12.22,
+    "nano_hpsv3": 10.35,
     "krea_main": 90,
     "krea_effects": 40,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 64,
@@ -1161,12 +1417,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0064_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0064_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0064_nano.jpg",
     "krea_hpsv3": 9.12,
     "dance_hpsv3": 14.92,
+    "nano_hpsv3": 6.72,
     "krea_main": 90,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 80,
+    "nano_effects": 90
   },
   {
     "id": 65,
@@ -1180,12 +1440,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0065_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0065_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0065_nano.jpg",
     "krea_hpsv3": 9.89,
     "dance_hpsv3": 14.57,
+    "nano_hpsv3": 9.62,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 38
+    "dance_effects": 38,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 66,
@@ -1198,12 +1462,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0066_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0066_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0066_nano.jpg",
     "krea_hpsv3": 15.95,
     "dance_hpsv3": 16.01,
+    "nano_hpsv3": 11.36,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 83
   },
   {
     "id": 67,
@@ -1215,12 +1483,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0067_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0067_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0067_nano.jpg",
     "krea_hpsv3": 11.92,
     "dance_hpsv3": 14.96,
+    "nano_hpsv3": 11.32,
     "krea_main": 90,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 68,
@@ -1234,12 +1506,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0068_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0068_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0068_nano.jpg",
     "krea_hpsv3": 15.01,
     "dance_hpsv3": 10.61,
+    "nano_hpsv3": 7.28,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 69,
@@ -1253,12 +1529,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0069_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0069_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0069_nano.jpg",
     "krea_hpsv3": 10.42,
     "dance_hpsv3": 13.38,
+    "nano_hpsv3": 10.64,
     "krea_main": 100,
     "krea_effects": 82,
     "dance_main": 100,
-    "dance_effects": 81
+    "dance_effects": 81,
+    "nano_main": 100,
+    "nano_effects": 85
   },
   {
     "id": 70,
@@ -1272,12 +1552,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0070_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0070_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0070_nano.jpg",
     "krea_hpsv3": 13.37,
     "dance_hpsv3": 15.9,
+    "nano_hpsv3": 11.16,
     "krea_main": 100,
     "krea_effects": 42,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 71,
@@ -1289,12 +1573,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0071_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0071_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0071_nano.jpg",
     "krea_hpsv3": 12.28,
     "dance_hpsv3": 15.72,
+    "nano_hpsv3": 13.93,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 100,
+    "nano_effects": 86
   },
   {
     "id": 72,
@@ -1307,12 +1595,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0072_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0072_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0072_nano.jpg",
     "krea_hpsv3": 10.29,
     "dance_hpsv3": 10.25,
+    "nano_hpsv3": 9.22,
     "krea_main": 90,
     "krea_effects": 30,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 73,
@@ -1324,12 +1616,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0073_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0073_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0073_nano.jpg",
     "krea_hpsv3": 11.58,
     "dance_hpsv3": 11.24,
+    "nano_hpsv3": 7.69,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 60
   },
   {
     "id": 74,
@@ -1343,12 +1639,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0074_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0074_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0074_nano.jpg",
     "krea_hpsv3": 9.23,
     "dance_hpsv3": 11.47,
+    "nano_hpsv3": 9.46,
     "krea_main": 80,
     "krea_effects": 42,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 70,
+    "nano_effects": 90
   },
   {
     "id": 75,
@@ -1360,12 +1660,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0075_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0075_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0075_nano.jpg",
     "krea_hpsv3": 14.45,
     "dance_hpsv3": 9.09,
+    "nano_hpsv3": 10.22,
     "krea_main": 90,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 63
   },
   {
     "id": 76,
@@ -1379,12 +1683,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0076_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0076_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0076_nano.jpg",
     "krea_hpsv3": 12.31,
     "dance_hpsv3": 11.83,
+    "nano_hpsv3": 8.4,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 90,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 77,
@@ -1398,12 +1706,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0077_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0077_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0077_nano.jpg",
     "krea_hpsv3": 12.83,
     "dance_hpsv3": 13.88,
+    "nano_hpsv3": 9.77,
     "krea_main": 100,
     "krea_effects": 14,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 78,
@@ -1416,12 +1728,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0078_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0078_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0078_nano.jpg",
     "krea_hpsv3": 8.36,
     "dance_hpsv3": 13.32,
+    "nano_hpsv3": 8.52,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 60
   },
   {
     "id": 79,
@@ -1434,12 +1750,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0079_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0079_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0079_nano.jpg",
     "krea_hpsv3": 15.9,
     "dance_hpsv3": 15.73,
+    "nano_hpsv3": 12.69,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 80,
@@ -1452,12 +1772,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0080_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0080_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0080_nano.jpg",
     "krea_hpsv3": 14.3,
     "dance_hpsv3": 15.98,
+    "nano_hpsv3": 11.15,
     "krea_main": 90,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 83
   },
   {
     "id": 81,
@@ -1469,12 +1793,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0081_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0081_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0081_nano.jpg",
     "krea_hpsv3": 12.15,
     "dance_hpsv3": 14.43,
+    "nano_hpsv3": 9.91,
     "krea_main": 100,
     "krea_effects": 12,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 82,
@@ -1488,12 +1816,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0082_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0082_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0082_nano.jpg",
     "krea_hpsv3": 13.67,
     "dance_hpsv3": 13.88,
+    "nano_hpsv3": 8.59,
     "krea_main": 90,
     "krea_effects": 18,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 83,
@@ -1505,12 +1837,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0083_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0083_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0083_nano.jpg",
     "krea_hpsv3": 9.81,
     "dance_hpsv3": 13.61,
+    "nano_hpsv3": 6.68,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 33
+    "dance_effects": 33,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 84,
@@ -1524,12 +1860,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0084_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0084_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0084_nano.jpg",
     "krea_hpsv3": 12.57,
     "dance_hpsv3": 14.1,
+    "nano_hpsv3": 10.41,
     "krea_main": 100,
     "krea_effects": 71,
     "dance_main": 100,
-    "dance_effects": 67
+    "dance_effects": 67,
+    "nano_main": 100,
+    "nano_effects": 75
   },
   {
     "id": 85,
@@ -1543,12 +1883,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0085_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0085_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0085_nano.jpg",
     "krea_hpsv3": 11.88,
     "dance_hpsv3": 14.18,
+    "nano_hpsv3": 11.58,
     "krea_main": 80,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 80,
+    "nano_effects": 95
   },
   {
     "id": 86,
@@ -1560,12 +1904,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0086_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0086_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0086_nano.jpg",
     "krea_hpsv3": 8.39,
     "dance_hpsv3": 12.24,
+    "nano_hpsv3": 9.87,
     "krea_main": 100,
     "krea_effects": 83,
     "dance_main": 80,
-    "dance_effects": 58
+    "dance_effects": 58,
+    "nano_main": 0,
+    "nano_effects": 100
   },
   {
     "id": 87,
@@ -1577,12 +1925,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0087_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0087_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0087_nano.jpg",
     "krea_hpsv3": 10.5,
     "dance_hpsv3": 13.13,
+    "nano_hpsv3": 8.03,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 90,
-    "dance_effects": 43
+    "dance_effects": 43,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 88,
@@ -1594,12 +1946,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0088_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0088_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0088_nano.jpg",
     "krea_hpsv3": 9.9,
     "dance_hpsv3": 15.43,
+    "nano_hpsv3": 7.25,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 89,
@@ -1613,12 +1969,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0089_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0089_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0089_nano.jpg",
     "krea_hpsv3": 13.31,
     "dance_hpsv3": 14.68,
+    "nano_hpsv3": 10.78,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 75
   },
   {
     "id": 90,
@@ -1630,12 +1990,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0090_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0090_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0090_nano.jpg",
     "krea_hpsv3": 11.75,
     "dance_hpsv3": 12.76,
+    "nano_hpsv3": 10.18,
     "krea_main": 100,
     "krea_effects": 28,
     "dance_main": 100,
-    "dance_effects": 15
+    "dance_effects": 15,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 91,
@@ -1648,12 +2012,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0091_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0091_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0091_nano.jpg",
     "krea_hpsv3": 14.11,
     "dance_hpsv3": 15.89,
+    "nano_hpsv3": 10.02,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 17
+    "dance_effects": 17,
+    "nano_main": 0,
+    "nano_effects": 25
   },
   {
     "id": 92,
@@ -1667,12 +2035,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0092_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0092_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0092_nano.jpg",
     "krea_hpsv3": 12.51,
     "dance_hpsv3": 11.72,
+    "nano_hpsv3": 11.29,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 93,
@@ -1686,12 +2058,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0093_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0093_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0093_nano.jpg",
     "krea_hpsv3": 12.81,
     "dance_hpsv3": 15.68,
+    "nano_hpsv3": 9.98,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 92
   },
   {
     "id": 94,
@@ -1704,12 +2080,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0094_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0094_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0094_nano.jpg",
     "krea_hpsv3": 12.26,
     "dance_hpsv3": 13.77,
+    "nano_hpsv3": 11.36,
     "krea_main": 100,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 63
+    "dance_effects": 63,
+    "nano_main": 100,
+    "nano_effects": 88
   },
   {
     "id": 95,
@@ -1723,12 +2103,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0095_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0095_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0095_nano.jpg",
     "krea_hpsv3": 13.66,
     "dance_hpsv3": 16.04,
+    "nano_hpsv3": 13.27,
     "krea_main": 95,
     "krea_effects": 85,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 96,
@@ -1741,12 +2125,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0096_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0096_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0096_nano.jpg",
     "krea_hpsv3": 10.5,
     "dance_hpsv3": 14.14,
+    "nano_hpsv3": 11.38,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 90,
-    "dance_effects": 80
+    "dance_effects": 80,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 97,
@@ -1758,12 +2146,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0097_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0097_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0097_nano.jpg",
     "krea_hpsv3": 3.14,
     "dance_hpsv3": 14.73,
+    "nano_hpsv3": 9.15,
     "krea_main": 80,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 57
   },
   {
     "id": 98,
@@ -1776,12 +2168,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0098_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0098_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0098_nano.jpg",
     "krea_hpsv3": 12.11,
     "dance_hpsv3": 15.48,
+    "nano_hpsv3": 10.79,
     "krea_main": 90,
     "krea_effects": 92,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 99,
@@ -1794,12 +2190,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0099_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0099_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0099_nano.jpg",
     "krea_hpsv3": 11.54,
     "dance_hpsv3": 11.37,
+    "nano_hpsv3": 8.06,
     "krea_main": 100,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 90,
+    "nano_effects": 33
   },
   {
     "id": 100,
@@ -1813,12 +2213,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0100_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0100_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0100_nano.jpg",
     "krea_hpsv3": 11.03,
     "dance_hpsv3": 11.08,
+    "nano_hpsv3": 9.18,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 63
   },
   {
     "id": 101,
@@ -1831,12 +2235,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0101_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0101_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0101_nano.jpg",
     "krea_hpsv3": 13.33,
     "dance_hpsv3": 15.02,
+    "nano_hpsv3": 12.32,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 102,
@@ -1849,12 +2257,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0102_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0102_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0102_nano.jpg",
     "krea_hpsv3": 12.64,
     "dance_hpsv3": 15.51,
+    "nano_hpsv3": 7.38,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 72
   },
   {
     "id": 103,
@@ -1867,12 +2279,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0103_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0103_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0103_nano.jpg",
     "krea_hpsv3": 13.71,
     "dance_hpsv3": 15.61,
+    "nano_hpsv3": 11.51,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 104,
@@ -1885,12 +2301,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0104_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0104_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0104_nano.jpg",
     "krea_hpsv3": 8.87,
     "dance_hpsv3": 12.64,
+    "nano_hpsv3": 6.5,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 67
   },
   {
     "id": 105,
@@ -1904,12 +2324,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0105_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0105_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0105_nano.jpg",
     "krea_hpsv3": 11.59,
     "dance_hpsv3": 12.4,
+    "nano_hpsv3": 9.78,
     "krea_main": 100,
     "krea_effects": 58,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 106,
@@ -1922,12 +2346,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0106_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0106_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0106_nano.jpg",
     "krea_hpsv3": 12.96,
     "dance_hpsv3": 13.95,
+    "nano_hpsv3": 10.55,
     "krea_main": 100,
     "krea_effects": 88,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 107,
@@ -1940,12 +2368,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0107_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0107_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0107_nano.jpg",
     "krea_hpsv3": 10.28,
     "dance_hpsv3": 11.61,
+    "nano_hpsv3": 10.29,
     "krea_main": 100,
     "krea_effects": 43,
     "dance_main": 0,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 108,
@@ -1958,12 +2390,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0108_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0108_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0108_nano.jpg",
     "krea_hpsv3": 9.55,
     "dance_hpsv3": 12.15,
+    "nano_hpsv3": 6.6,
     "krea_main": 90,
     "krea_effects": 65,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 109,
@@ -1977,12 +2413,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0109_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0109_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0109_nano.jpg",
     "krea_hpsv3": 12.28,
     "dance_hpsv3": 15.39,
+    "nano_hpsv3": 9.36,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 110,
@@ -1995,12 +2435,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0110_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0110_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0110_nano.jpg",
     "krea_hpsv3": 14.45,
     "dance_hpsv3": 15.68,
+    "nano_hpsv3": 9.99,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 111,
@@ -2014,12 +2458,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0111_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0111_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0111_nano.jpg",
     "krea_hpsv3": 8.64,
     "dance_hpsv3": 13.1,
+    "nano_hpsv3": 6.41,
     "krea_main": 80,
     "krea_effects": 45,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 112,
@@ -2031,12 +2479,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0112_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0112_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0112_nano.jpg",
     "krea_hpsv3": 10.45,
     "dance_hpsv3": 14.0,
+    "nano_hpsv3": 8.63,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 71
   },
   {
     "id": 113,
@@ -2048,12 +2500,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0113_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0113_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0113_nano.jpg",
     "krea_hpsv3": 10.72,
     "dance_hpsv3": 14.32,
+    "nano_hpsv3": 9.11,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 79
   },
   {
     "id": 114,
@@ -2067,12 +2523,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0114_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0114_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0114_nano.jpg",
     "krea_hpsv3": 9.1,
     "dance_hpsv3": 11.44,
+    "nano_hpsv3": 8.93,
     "krea_main": 100,
     "krea_effects": 56,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 31
   },
   {
     "id": 115,
@@ -2084,12 +2544,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0115_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0115_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0115_nano.jpg",
     "krea_hpsv3": 9.73,
     "dance_hpsv3": 11.34,
+    "nano_hpsv3": 8.52,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 116,
@@ -2103,12 +2567,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0116_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0116_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0116_nano.jpg",
     "krea_hpsv3": 12.52,
     "dance_hpsv3": 15.27,
+    "nano_hpsv3": 10.04,
     "krea_main": 100,
     "krea_effects": 89,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 93
   },
   {
     "id": 117,
@@ -2122,12 +2590,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0117_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0117_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0117_nano.jpg",
     "krea_hpsv3": 10.6,
     "dance_hpsv3": 12.61,
+    "nano_hpsv3": 9.29,
     "krea_main": 100,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 90
+    "dance_effects": 90,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 118,
@@ -2139,12 +2611,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0118_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0118_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0118_nano.jpg",
     "krea_hpsv3": 11.13,
     "dance_hpsv3": 13.42,
+    "nano_hpsv3": 7.11,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 119,
@@ -2157,12 +2633,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0119_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0119_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0119_nano.jpg",
     "krea_hpsv3": 6.33,
     "dance_hpsv3": 15.81,
+    "nano_hpsv3": 7.43,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 120,
@@ -2174,12 +2654,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0120_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0120_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0120_nano.jpg",
     "krea_hpsv3": 3.08,
     "dance_hpsv3": 10.86,
+    "nano_hpsv3": 7.16,
     "krea_main": 80,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 121,
@@ -2192,12 +2676,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0121_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0121_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0121_nano.jpg",
     "krea_hpsv3": 12.42,
     "dance_hpsv3": 14.0,
+    "nano_hpsv3": 10.68,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 122,
@@ -2209,12 +2697,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0122_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0122_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0122_nano.jpg",
     "krea_hpsv3": 12.71,
     "dance_hpsv3": 15.67,
+    "nano_hpsv3": 10.19,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 123,
@@ -2228,12 +2720,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0123_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0123_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0123_nano.jpg",
     "krea_hpsv3": 12.84,
     "dance_hpsv3": 15.49,
+    "nano_hpsv3": 10.04,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 124,
@@ -2247,12 +2743,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0124_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0124_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0124_nano.jpg",
     "krea_hpsv3": 11.06,
     "dance_hpsv3": 13.13,
+    "nano_hpsv3": 10.78,
     "krea_main": 90,
     "krea_effects": 78,
     "dance_main": 90,
-    "dance_effects": 11
+    "dance_effects": 11,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 125,
@@ -2264,12 +2764,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0125_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0125_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0125_nano.jpg",
     "krea_hpsv3": 10.12,
     "dance_hpsv3": 14.38,
+    "nano_hpsv3": 9.82,
     "krea_main": 90,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 126,
@@ -2281,12 +2785,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0126_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0126_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0126_nano.jpg",
     "krea_hpsv3": 10.35,
     "dance_hpsv3": 12.6,
+    "nano_hpsv3": 9.55,
     "krea_main": 100,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 90,
+    "nano_effects": 80
   },
   {
     "id": 127,
@@ -2298,12 +2806,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0127_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0127_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0127_nano.jpg",
     "krea_hpsv3": 12.41,
     "dance_hpsv3": 12.62,
+    "nano_hpsv3": 8.32,
     "krea_main": 100,
     "krea_effects": 14,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 128,
@@ -2317,12 +2829,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0128_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0128_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0128_nano.jpg",
     "krea_hpsv3": 13.54,
     "dance_hpsv3": 12.86,
+    "nano_hpsv3": 9.57,
     "krea_main": 90,
     "krea_effects": 85,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 129,
@@ -2335,12 +2851,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0129_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0129_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0129_nano.jpg",
     "krea_hpsv3": 11.11,
     "dance_hpsv3": 14.67,
+    "nano_hpsv3": 10.54,
     "krea_main": 90,
     "krea_effects": 95,
     "dance_main": 0,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 130,
@@ -2353,12 +2873,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0130_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0130_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0130_nano.jpg",
     "krea_hpsv3": 9.16,
     "dance_hpsv3": 14.54,
+    "nano_hpsv3": 7.65,
     "krea_main": 90,
     "krea_effects": 67,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 80,
+    "nano_effects": 61
   },
   {
     "id": 131,
@@ -2371,12 +2895,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0131_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0131_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0131_nano.jpg",
     "krea_hpsv3": 15.35,
     "dance_hpsv3": 16.02,
+    "nano_hpsv3": 11.49,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 85
+    "dance_effects": 85,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 132,
@@ -2389,12 +2917,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0132_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0132_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0132_nano.jpg",
     "krea_hpsv3": 6.98,
     "dance_hpsv3": 12.19,
+    "nano_hpsv3": 10.06,
     "krea_main": 100,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 133,
@@ -2407,12 +2939,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0133_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0133_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0133_nano.jpg",
     "krea_hpsv3": 11.14,
     "dance_hpsv3": 13.46,
+    "nano_hpsv3": 9.01,
     "krea_main": 100,
     "krea_effects": 67,
     "dance_main": 100,
-    "dance_effects": 60
+    "dance_effects": 60,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 134,
@@ -2424,12 +2960,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0134_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0134_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0134_nano.jpg",
     "krea_hpsv3": 13.74,
     "dance_hpsv3": 16.0,
+    "nano_hpsv3": 12.03,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 135,
@@ -2442,12 +2982,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0135_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0135_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0135_nano.jpg",
     "krea_hpsv3": 14.26,
     "dance_hpsv3": 16.02,
+    "nano_hpsv3": 13.51,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 136,
@@ -2459,12 +3003,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0136_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0136_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0136_nano.jpg",
     "krea_hpsv3": 13.57,
     "dance_hpsv3": 14.71,
+    "nano_hpsv3": 12.09,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 137,
@@ -2476,12 +3024,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0137_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0137_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0137_nano.jpg",
     "krea_hpsv3": 13.22,
     "dance_hpsv3": 13.47,
+    "nano_hpsv3": 9.97,
     "krea_main": 90,
     "krea_effects": 28,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 64
   },
   {
     "id": 138,
@@ -2495,12 +3047,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0138_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0138_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0138_nano.jpg",
     "krea_hpsv3": 12.56,
     "dance_hpsv3": 13.6,
+    "nano_hpsv3": 10.21,
     "krea_main": 100,
     "krea_effects": 63,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 139,
@@ -2513,12 +3069,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0139_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0139_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0139_nano.jpg",
     "krea_hpsv3": 10.71,
     "dance_hpsv3": 11.04,
+    "nano_hpsv3": 7.09,
     "krea_main": 100,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 60
+    "dance_effects": 60,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 140,
@@ -2532,12 +3092,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0140_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0140_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0140_nano.jpg",
     "krea_hpsv3": 15.39,
     "dance_hpsv3": 14.22,
+    "nano_hpsv3": 11.19,
     "krea_main": 100,
     "krea_effects": 38,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 78
   },
   {
     "id": 141,
@@ -2550,12 +3114,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0141_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0141_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0141_nano.jpg",
     "krea_hpsv3": 13.22,
     "dance_hpsv3": 14.58,
+    "nano_hpsv3": 8.38,
     "krea_main": 100,
     "krea_effects": 38,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 87
   },
   {
     "id": 142,
@@ -2569,12 +3137,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0142_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0142_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0142_nano.jpg",
     "krea_hpsv3": 12.12,
     "dance_hpsv3": 13.75,
+    "nano_hpsv3": 7.49,
     "krea_main": 100,
     "krea_effects": 83,
     "dance_main": 90,
-    "dance_effects": 67
+    "dance_effects": 67,
+    "nano_main": 100,
+    "nano_effects": 70
   },
   {
     "id": 143,
@@ -2588,12 +3160,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0143_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0143_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0143_nano.jpg",
     "krea_hpsv3": 12.43,
     "dance_hpsv3": 15.45,
+    "nano_hpsv3": 10.55,
     "krea_main": 100,
     "krea_effects": 85,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 144,
@@ -2607,12 +3183,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0144_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0144_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0144_nano.jpg",
     "krea_hpsv3": 8.65,
     "dance_hpsv3": 11.27,
+    "nano_hpsv3": 8.5,
     "krea_main": 100,
     "krea_effects": 78,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 97
   },
   {
     "id": 145,
@@ -2625,12 +3205,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0145_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0145_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0145_nano.jpg",
     "krea_hpsv3": 8.71,
     "dance_hpsv3": 10.59,
+    "nano_hpsv3": 9.26,
     "krea_main": 0,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 146,
@@ -2644,12 +3228,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0146_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0146_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0146_nano.jpg",
     "krea_hpsv3": 9.73,
     "dance_hpsv3": 13.76,
+    "nano_hpsv3": 7.85,
     "krea_main": 90,
     "krea_effects": 88,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 147,
@@ -2663,12 +3251,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0147_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0147_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0147_nano.jpg",
     "krea_hpsv3": 11.91,
     "dance_hpsv3": 12.39,
+    "nano_hpsv3": 10.97,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 60
   },
   {
     "id": 148,
@@ -2682,12 +3274,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0148_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0148_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0148_nano.jpg",
     "krea_hpsv3": 11.75,
     "dance_hpsv3": 14.88,
+    "nano_hpsv3": 10.2,
     "krea_main": 100,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 149,
@@ -2700,12 +3296,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0149_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0149_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0149_nano.jpg",
     "krea_hpsv3": 8.14,
     "dance_hpsv3": 10.2,
+    "nano_hpsv3": 3.97,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 100
   },
   {
     "id": 150,
@@ -2719,12 +3319,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0150_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0150_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0150_nano.jpg",
     "krea_hpsv3": 8.52,
     "dance_hpsv3": 12.82,
+    "nano_hpsv3": 7.27,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 92
   },
   {
     "id": 151,
@@ -2736,12 +3340,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0151_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0151_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0151_nano.jpg",
     "krea_hpsv3": 11.53,
     "dance_hpsv3": 13.44,
+    "nano_hpsv3": 8.83,
     "krea_main": 80,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 85
   },
   {
     "id": 152,
@@ -2753,12 +3361,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0152_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0152_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0152_nano.jpg",
     "krea_hpsv3": 10.28,
     "dance_hpsv3": 13.63,
+    "nano_hpsv3": 9.02,
     "krea_main": 100,
     "krea_effects": 94,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 153,
@@ -2770,12 +3382,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0153_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0153_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0153_nano.jpg",
     "krea_hpsv3": 9.66,
     "dance_hpsv3": 14.85,
+    "nano_hpsv3": 9.22,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 80
+    "dance_effects": 80,
+    "nano_main": 100,
+    "nano_effects": 93
   },
   {
     "id": 154,
@@ -2787,12 +3403,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0154_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0154_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0154_nano.jpg",
     "krea_hpsv3": 13.7,
     "dance_hpsv3": 15.21,
+    "nano_hpsv3": 11.15,
     "krea_main": 100,
     "krea_effects": 20,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 155,
@@ -2804,12 +3424,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0155_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0155_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0155_nano.jpg",
     "krea_hpsv3": 13.46,
     "dance_hpsv3": 13.49,
+    "nano_hpsv3": 11.21,
     "krea_main": 90,
     "krea_effects": 20,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 156,
@@ -2823,12 +3447,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0156_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0156_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0156_nano.jpg",
     "krea_hpsv3": 14.32,
     "dance_hpsv3": 14.26,
+    "nano_hpsv3": 11.66,
     "krea_main": 90,
     "krea_effects": 70,
     "dance_main": 90,
-    "dance_effects": 67
+    "dance_effects": 67,
+    "nano_main": 90,
+    "nano_effects": 83
   },
   {
     "id": 157,
@@ -2841,12 +3469,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0157_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0157_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0157_nano.jpg",
     "krea_hpsv3": 13.15,
     "dance_hpsv3": 15.54,
+    "nano_hpsv3": 12.51,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 90,
-    "dance_effects": 33
+    "dance_effects": 33,
+    "nano_main": 90,
+    "nano_effects": 92
   },
   {
     "id": 158,
@@ -2860,12 +3492,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0158_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0158_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0158_nano.jpg",
     "krea_hpsv3": 8.08,
     "dance_hpsv3": 11.97,
+    "nano_hpsv3": 7.95,
     "krea_main": 70,
     "krea_effects": 10,
     "dance_main": 80,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 71
   },
   {
     "id": 159,
@@ -2877,12 +3513,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0159_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0159_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0159_nano.jpg",
     "krea_hpsv3": 10.53,
     "dance_hpsv3": 15.54,
+    "nano_hpsv3": 10.35,
     "krea_main": 90,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 160,
@@ -2894,12 +3534,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0160_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0160_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0160_nano.jpg",
     "krea_hpsv3": 12.69,
     "dance_hpsv3": 14.46,
+    "nano_hpsv3": 5.66,
     "krea_main": 100,
     "krea_effects": 8,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 58
   },
   {
     "id": 161,
@@ -2911,12 +3555,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0161_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0161_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0161_nano.jpg",
     "krea_hpsv3": 13.3,
     "dance_hpsv3": 15.93,
+    "nano_hpsv3": 10.73,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 162,
@@ -2929,12 +3577,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0162_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0162_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0162_nano.jpg",
     "krea_hpsv3": 8.42,
     "dance_hpsv3": 13.91,
+    "nano_hpsv3": 10.2,
     "krea_main": 90,
     "krea_effects": 85,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 163,
@@ -2947,12 +3599,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0163_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0163_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0163_nano.jpg",
     "krea_hpsv3": 11.0,
     "dance_hpsv3": 14.29,
+    "nano_hpsv3": 10.7,
     "krea_main": 100,
     "krea_effects": 21,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 76
   },
   {
     "id": 164,
@@ -2964,12 +3620,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0164_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0164_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0164_nano.jpg",
     "krea_hpsv3": 15.9,
     "dance_hpsv3": 15.61,
+    "nano_hpsv3": 8.48,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 165,
@@ -2981,12 +3641,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0165_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0165_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0165_nano.jpg",
     "krea_hpsv3": 9.11,
     "dance_hpsv3": 13.84,
+    "nano_hpsv3": 8.98,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 60
   },
   {
     "id": 166,
@@ -3000,12 +3664,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0166_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0166_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0166_nano.jpg",
     "krea_hpsv3": 14.48,
     "dance_hpsv3": 15.64,
+    "nano_hpsv3": 12.94,
     "krea_main": 90,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 80
   },
   {
     "id": 167,
@@ -3018,12 +3686,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0167_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0167_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0167_nano.jpg",
     "krea_hpsv3": 10.62,
     "dance_hpsv3": 15.51,
+    "nano_hpsv3": 11.91,
     "krea_main": 100,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 75
   },
   {
     "id": 168,
@@ -3035,12 +3707,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0168_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0168_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0168_nano.jpg",
     "krea_hpsv3": 14.78,
     "dance_hpsv3": 12.19,
+    "nano_hpsv3": 5.69,
     "krea_main": 90,
     "krea_effects": 22,
     "dance_main": 90,
-    "dance_effects": 8
+    "dance_effects": 8,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 169,
@@ -3053,12 +3729,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0169_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0169_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0169_nano.jpg",
     "krea_hpsv3": 11.56,
     "dance_hpsv3": 13.88,
+    "nano_hpsv3": 8.85,
     "krea_main": 90,
     "krea_effects": 63,
     "dance_main": 90,
-    "dance_effects": 27
+    "dance_effects": 27,
+    "nano_main": 80,
+    "nano_effects": 95
   },
   {
     "id": 170,
@@ -3071,12 +3751,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0170_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0170_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0170_nano.jpg",
     "krea_hpsv3": 12.19,
     "dance_hpsv3": 14.5,
+    "nano_hpsv3": 10.04,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 86
   },
   {
     "id": 171,
@@ -3089,12 +3773,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0171_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0171_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0171_nano.jpg",
     "krea_hpsv3": 13.64,
     "dance_hpsv3": 13.94,
+    "nano_hpsv3": 10.24,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 172,
@@ -3108,12 +3796,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0172_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0172_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0172_nano.jpg",
     "krea_hpsv3": 9.53,
     "dance_hpsv3": 12.24,
+    "nano_hpsv3": 6.31,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 173,
@@ -3127,12 +3819,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0173_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0173_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0173_nano.jpg",
     "krea_hpsv3": 11.84,
     "dance_hpsv3": 16.01,
+    "nano_hpsv3": 12.5,
     "krea_main": 70,
     "krea_effects": 67,
     "dance_main": 80,
-    "dance_effects": 44
+    "dance_effects": 44,
+    "nano_main": 100,
+    "nano_effects": 57
   },
   {
     "id": 174,
@@ -3145,12 +3841,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0174_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0174_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0174_nano.jpg",
     "krea_hpsv3": 13.05,
     "dance_hpsv3": 13.9,
+    "nano_hpsv3": 6.39,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 70
   },
   {
     "id": 175,
@@ -3163,12 +3863,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0175_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0175_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0175_nano.jpg",
     "krea_hpsv3": 10.36,
     "dance_hpsv3": 10.59,
+    "nano_hpsv3": 7.18,
     "krea_main": 80,
     "krea_effects": 100,
     "dance_main": 80,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 176,
@@ -3180,12 +3884,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0176_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0176_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0176_nano.jpg",
     "krea_hpsv3": 10.87,
     "dance_hpsv3": 12.86,
+    "nano_hpsv3": 6.16,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 28
   },
   {
     "id": 177,
@@ -3198,12 +3906,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0177_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0177_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0177_nano.jpg",
     "krea_hpsv3": 13.81,
     "dance_hpsv3": 15.72,
+    "nano_hpsv3": 13.78,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 178,
@@ -3216,12 +3928,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0178_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0178_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0178_nano.jpg",
     "krea_hpsv3": 10.12,
     "dance_hpsv3": 11.93,
+    "nano_hpsv3": 8.96,
     "krea_main": 100,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 66
+    "dance_effects": 66,
+    "nano_main": 100,
+    "nano_effects": 86
   },
   {
     "id": 179,
@@ -3234,12 +3950,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0179_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0179_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0179_nano.jpg",
     "krea_hpsv3": 10.66,
     "dance_hpsv3": 12.43,
+    "nano_hpsv3": 12.02,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 180,
@@ -3251,12 +3971,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0180_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0180_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0180_nano.jpg",
     "krea_hpsv3": 13.18,
     "dance_hpsv3": 14.73,
+    "nano_hpsv3": 10.6,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 71
   },
   {
     "id": 181,
@@ -3269,12 +3993,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0181_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0181_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0181_nano.jpg",
     "krea_hpsv3": 14.77,
     "dance_hpsv3": 14.2,
+    "nano_hpsv3": 14.46,
     "krea_main": 90,
     "krea_effects": 70,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 182,
@@ -3287,12 +4015,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0182_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0182_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0182_nano.jpg",
     "krea_hpsv3": 10.76,
     "dance_hpsv3": 13.2,
+    "nano_hpsv3": 3.29,
     "krea_main": 100,
     "krea_effects": 20,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 183,
@@ -3304,12 +4036,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0183_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0183_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0183_nano.jpg",
     "krea_hpsv3": 9.81,
     "dance_hpsv3": 13.24,
+    "nano_hpsv3": 9.95,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 184,
@@ -3321,12 +4057,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0184_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0184_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0184_nano.jpg",
     "krea_hpsv3": 12.37,
     "dance_hpsv3": 15.08,
+    "nano_hpsv3": 11.78,
     "krea_main": 90,
     "krea_effects": 92,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 185,
@@ -3340,12 +4080,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0185_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0185_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0185_nano.jpg",
     "krea_hpsv3": 10.07,
     "dance_hpsv3": 12.82,
+    "nano_hpsv3": 8.59,
     "krea_main": 100,
     "krea_effects": 42,
     "dance_main": 100,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 86
   },
   {
     "id": 186,
@@ -3357,12 +4101,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0186_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0186_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0186_nano.jpg",
     "krea_hpsv3": 11.46,
     "dance_hpsv3": 13.79,
+    "nano_hpsv3": 9.78,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 187,
@@ -3375,12 +4123,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0187_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0187_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0187_nano.jpg",
     "krea_hpsv3": 10.15,
     "dance_hpsv3": 12.98,
+    "nano_hpsv3": 7.92,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 25
   },
   {
     "id": 188,
@@ -3393,12 +4145,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0188_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0188_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0188_nano.jpg",
     "krea_hpsv3": 10.75,
     "dance_hpsv3": 15.62,
+    "nano_hpsv3": 8.6,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 189,
@@ -3412,12 +4168,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0189_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0189_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0189_nano.jpg",
     "krea_hpsv3": 10.34,
     "dance_hpsv3": 15.23,
+    "nano_hpsv3": 8.9,
     "krea_main": 90,
     "krea_effects": 8,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 190,
@@ -3430,12 +4190,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0190_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0190_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0190_nano.jpg",
     "krea_hpsv3": 11.99,
     "dance_hpsv3": 14.08,
+    "nano_hpsv3": 10.23,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 67
   },
   {
     "id": 191,
@@ -3447,12 +4211,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0191_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0191_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0191_nano.jpg",
     "krea_hpsv3": 11.2,
     "dance_hpsv3": 13.87,
+    "nano_hpsv3": 6.86,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 13
+    "dance_effects": 13,
+    "nano_main": 70,
+    "nano_effects": 75
   },
   {
     "id": 192,
@@ -3464,12 +4232,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0192_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0192_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0192_nano.jpg",
     "krea_hpsv3": 10.24,
     "dance_hpsv3": 11.54,
+    "nano_hpsv3": 7.76,
     "krea_main": 80,
     "krea_effects": 29,
     "dance_main": 80,
-    "dance_effects": 36
+    "dance_effects": 36,
+    "nano_main": 70,
+    "nano_effects": 57
   },
   {
     "id": 193,
@@ -3483,12 +4255,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0193_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0193_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0193_nano.jpg",
     "krea_hpsv3": 14.8,
     "dance_hpsv3": 15.74,
+    "nano_hpsv3": 12.53,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 194,
@@ -3500,12 +4276,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0194_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0194_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0194_nano.jpg",
     "krea_hpsv3": 9.23,
     "dance_hpsv3": 11.6,
+    "nano_hpsv3": 10.07,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 195,
@@ -3518,12 +4298,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0195_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0195_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0195_nano.jpg",
     "krea_hpsv3": 10.33,
     "dance_hpsv3": 12.55,
+    "nano_hpsv3": 9.41,
     "krea_main": 90,
     "krea_effects": 28,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 196,
@@ -3535,12 +4319,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0196_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0196_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0196_nano.jpg",
     "krea_hpsv3": 11.73,
     "dance_hpsv3": 13.94,
+    "nano_hpsv3": 10.03,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 60
+    "dance_effects": 60,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 197,
@@ -3554,12 +4342,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0197_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0197_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0197_nano.jpg",
     "krea_hpsv3": 9.75,
     "dance_hpsv3": 14.0,
+    "nano_hpsv3": 3.71,
     "krea_main": 100,
     "krea_effects": 93,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 93
   },
   {
     "id": 198,
@@ -3571,12 +4363,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0198_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0198_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0198_nano.jpg",
     "krea_hpsv3": 12.56,
     "dance_hpsv3": 12.74,
+    "nano_hpsv3": 8.03,
     "krea_main": 90,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 33
+    "dance_effects": 33,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 199,
@@ -3589,12 +4385,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0199_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0199_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0199_nano.jpg",
     "krea_hpsv3": 12.76,
     "dance_hpsv3": 13.29,
+    "nano_hpsv3": 8.09,
     "krea_main": 100,
     "krea_effects": 40,
     "dance_main": 0,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 86
   },
   {
     "id": 200,
@@ -3608,12 +4408,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0200_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0200_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0200_nano.jpg",
     "krea_hpsv3": 11.5,
     "dance_hpsv3": 14.81,
+    "nano_hpsv3": 9.73,
     "krea_main": 100,
     "krea_effects": 63,
     "dance_main": 100,
-    "dance_effects": 19
+    "dance_effects": 19,
+    "nano_main": 100,
+    "nano_effects": 94
   },
   {
     "id": 201,
@@ -3626,12 +4430,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0201_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0201_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0201_nano.jpg",
     "krea_hpsv3": 13.17,
     "dance_hpsv3": 15.54,
+    "nano_hpsv3": 11.89,
     "krea_main": 90,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 40
   },
   {
     "id": 202,
@@ -3644,12 +4452,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0202_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0202_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0202_nano.jpg",
     "krea_hpsv3": 10.41,
     "dance_hpsv3": 11.48,
+    "nano_hpsv3": 7.87,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 80
   },
   {
     "id": 203,
@@ -3663,12 +4475,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0203_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0203_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0203_nano.jpg",
     "krea_hpsv3": 13.18,
     "dance_hpsv3": 15.49,
+    "nano_hpsv3": 11.41,
     "krea_main": 100,
     "krea_effects": 33,
     "dance_main": 90,
-    "dance_effects": 17
+    "dance_effects": 17,
+    "nano_main": 100,
+    "nano_effects": 64
   },
   {
     "id": 204,
@@ -3682,12 +4498,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0204_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0204_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0204_nano.jpg",
     "krea_hpsv3": 10.94,
     "dance_hpsv3": 14.45,
+    "nano_hpsv3": 10.39,
     "krea_main": 0,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 205,
@@ -3700,12 +4520,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0205_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0205_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0205_nano.jpg",
     "krea_hpsv3": 13.48,
     "dance_hpsv3": 15.37,
+    "nano_hpsv3": 11.92,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 15
+    "dance_effects": 15,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 206,
@@ -3719,12 +4543,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0206_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0206_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0206_nano.jpg",
     "krea_hpsv3": 8.68,
     "dance_hpsv3": 12.3,
+    "nano_hpsv3": 7.98,
     "krea_main": 90,
     "krea_effects": 85,
     "dance_main": 90,
-    "dance_effects": 12
+    "dance_effects": 12,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 207,
@@ -3736,12 +4564,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0207_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0207_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0207_nano.jpg",
     "krea_hpsv3": 8.15,
     "dance_hpsv3": 11.47,
+    "nano_hpsv3": 10.95,
     "krea_main": 90,
     "krea_effects": 100,
     "dance_main": 90,
-    "dance_effects": 43
+    "dance_effects": 43,
+    "nano_main": 90,
+    "nano_effects": 93
   },
   {
     "id": 208,
@@ -3754,12 +4586,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0208_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0208_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0208_nano.jpg",
     "krea_hpsv3": 9.55,
     "dance_hpsv3": 14.18,
+    "nano_hpsv3": 9.35,
     "krea_main": 100,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 17
+    "dance_effects": 17,
+    "nano_main": 80,
+    "nano_effects": 58
   },
   {
     "id": 209,
@@ -3771,12 +4607,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0209_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0209_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0209_nano.jpg",
     "krea_hpsv3": 9.97,
     "dance_hpsv3": 12.76,
+    "nano_hpsv3": 6.87,
     "krea_main": 100,
     "krea_effects": 95,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 85
   },
   {
     "id": 210,
@@ -3789,12 +4629,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0210_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0210_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0210_nano.jpg",
     "krea_hpsv3": 12.34,
     "dance_hpsv3": 12.78,
+    "nano_hpsv3": 8.14,
     "krea_main": 90,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 211,
@@ -3808,12 +4652,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0211_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0211_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0211_nano.jpg",
     "krea_hpsv3": 9.89,
     "dance_hpsv3": 11.04,
+    "nano_hpsv3": 7.55,
     "krea_main": 90,
     "krea_effects": 83,
     "dance_main": 90,
-    "dance_effects": 30
+    "dance_effects": 30,
+    "nano_main": 90,
+    "nano_effects": 8
   },
   {
     "id": 212,
@@ -3826,12 +4674,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0212_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0212_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0212_nano.jpg",
     "krea_hpsv3": 10.92,
     "dance_hpsv3": 12.98,
+    "nano_hpsv3": 10.14,
     "krea_main": 90,
     "krea_effects": 15,
     "dance_main": 100,
-    "dance_effects": 80
+    "dance_effects": 80,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 213,
@@ -3845,12 +4697,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0213_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0213_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0213_nano.jpg",
     "krea_hpsv3": 11.07,
     "dance_hpsv3": 12.36,
+    "nano_hpsv3": 7.04,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 214,
@@ -3862,12 +4718,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0214_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0214_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0214_nano.jpg",
     "krea_hpsv3": 13.21,
     "dance_hpsv3": 15.02,
+    "nano_hpsv3": 10.48,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 215,
@@ -3879,12 +4739,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0215_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0215_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0215_nano.jpg",
     "krea_hpsv3": 10.77,
     "dance_hpsv3": 13.75,
+    "nano_hpsv3": 11.76,
     "krea_main": 100,
     "krea_effects": 89,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 216,
@@ -3896,12 +4760,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0216_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0216_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0216_nano.jpg",
     "krea_hpsv3": 15.31,
     "dance_hpsv3": 15.76,
+    "nano_hpsv3": 10.58,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 10
+    "dance_effects": 10,
+    "nano_main": 100,
+    "nano_effects": 57
   },
   {
     "id": 217,
@@ -3914,12 +4782,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0217_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0217_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0217_nano.jpg",
     "krea_hpsv3": 7.92,
     "dance_hpsv3": 11.88,
+    "nano_hpsv3": 5.88,
     "krea_main": 90,
     "krea_effects": 86,
     "dance_main": 90,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 90,
+    "nano_effects": 86
   },
   {
     "id": 218,
@@ -3933,12 +4805,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0218_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0218_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0218_nano.jpg",
     "krea_hpsv3": 12.12,
     "dance_hpsv3": 13.91,
+    "nano_hpsv3": 10.16,
     "krea_main": 100,
     "krea_effects": 29,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 52
   },
   {
     "id": 219,
@@ -3950,12 +4826,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0219_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0219_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0219_nano.jpg",
     "krea_hpsv3": 11.53,
     "dance_hpsv3": 15.39,
+    "nano_hpsv3": 7.57,
     "krea_main": 100,
     "krea_effects": 25,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 220,
@@ -3969,12 +4849,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0220_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0220_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0220_nano.jpg",
     "krea_hpsv3": 12.24,
     "dance_hpsv3": 13.98,
+    "nano_hpsv3": 6.26,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 221,
@@ -3987,12 +4871,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0221_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0221_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0221_nano.jpg",
     "krea_hpsv3": 14.36,
     "dance_hpsv3": 15.27,
+    "nano_hpsv3": 4.73,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 222,
@@ -4004,12 +4892,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0222_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0222_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0222_nano.jpg",
     "krea_hpsv3": 7.95,
     "dance_hpsv3": 11.98,
+    "nano_hpsv3": 5.7,
     "krea_main": 90,
     "krea_effects": 14,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 93
   },
   {
     "id": 223,
@@ -4021,12 +4913,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0223_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0223_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0223_nano.jpg",
     "krea_hpsv3": 10.29,
     "dance_hpsv3": 15.5,
+    "nano_hpsv3": 6.91,
     "krea_main": 80,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 100
   },
   {
     "id": 224,
@@ -4040,12 +4936,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0224_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0224_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0224_nano.jpg",
     "krea_hpsv3": 7.97,
     "dance_hpsv3": 11.32,
+    "nano_hpsv3": 9.5,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 90,
-    "dance_effects": 42
+    "dance_effects": 42,
+    "nano_main": 90,
+    "nano_effects": 78
   },
   {
     "id": 225,
@@ -4058,12 +4958,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0225_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0225_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0225_nano.jpg",
     "krea_hpsv3": 12.31,
     "dance_hpsv3": 15.88,
+    "nano_hpsv3": 11.83,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 57
   },
   {
     "id": 226,
@@ -4075,12 +4979,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0226_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0226_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0226_nano.jpg",
     "krea_hpsv3": 9.49,
     "dance_hpsv3": 12.35,
+    "nano_hpsv3": 6.45,
     "krea_main": 100,
     "krea_effects": 43,
     "dance_main": 100,
-    "dance_effects": 14
+    "dance_effects": 14,
+    "nano_main": 90,
+    "nano_effects": 75
   },
   {
     "id": 227,
@@ -4094,12 +5002,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0227_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0227_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0227_nano.jpg",
     "krea_hpsv3": 10.03,
     "dance_hpsv3": 11.92,
+    "nano_hpsv3": 10.5,
     "krea_main": 100,
     "krea_effects": 71,
     "dance_main": 100,
-    "dance_effects": 79
+    "dance_effects": 79,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 228,
@@ -4112,12 +5024,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0228_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0228_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0228_nano.jpg",
     "krea_hpsv3": 14.18,
     "dance_hpsv3": 13.35,
+    "nano_hpsv3": 8.69,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 80,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 50
   },
   {
     "id": 229,
@@ -4129,12 +5045,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0229_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0229_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0229_nano.jpg",
     "krea_hpsv3": 12.65,
     "dance_hpsv3": 14.93,
+    "nano_hpsv3": 13.97,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 90,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 8
   },
   {
     "id": 230,
@@ -4147,12 +5067,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0230_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0230_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0230_nano.jpg",
     "krea_hpsv3": 11.66,
     "dance_hpsv3": 12.57,
+    "nano_hpsv3": 6.93,
     "krea_main": 90,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 90,
+    "nano_effects": 42
   },
   {
     "id": 231,
@@ -4166,12 +5090,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0231_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0231_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0231_nano.jpg",
     "krea_hpsv3": 10.79,
     "dance_hpsv3": 13.38,
+    "nano_hpsv3": 10.59,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 100,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 100,
+    "nano_effects": 88
   },
   {
     "id": 232,
@@ -4183,12 +5111,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0232_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0232_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0232_nano.jpg",
     "krea_hpsv3": 10.02,
     "dance_hpsv3": 13.23,
+    "nano_hpsv3": 10.64,
     "krea_main": 100,
     "krea_effects": 40,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 233,
@@ -4201,12 +5133,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0233_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0233_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0233_nano.jpg",
     "krea_hpsv3": 12.69,
     "dance_hpsv3": 13.65,
+    "nano_hpsv3": 9.6,
     "krea_main": 90,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 85
   },
   {
     "id": 234,
@@ -4218,12 +5154,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0234_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0234_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0234_nano.jpg",
     "krea_hpsv3": 12.26,
     "dance_hpsv3": 14.04,
+    "nano_hpsv3": 12.54,
     "krea_main": 90,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 235,
@@ -4236,12 +5176,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0235_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0235_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0235_nano.jpg",
     "krea_hpsv3": 8.82,
     "dance_hpsv3": 12.23,
+    "nano_hpsv3": 8.04,
     "krea_main": 50,
     "krea_effects": 100,
     "dance_main": 0,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 0,
+    "nano_effects": 100
   },
   {
     "id": 236,
@@ -4253,12 +5197,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0236_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0236_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0236_nano.jpg",
     "krea_hpsv3": 10.41,
     "dance_hpsv3": 12.34,
+    "nano_hpsv3": 9.04,
     "krea_main": 90,
     "krea_effects": 20,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 237,
@@ -4270,12 +5218,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0237_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0237_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0237_nano.jpg",
     "krea_hpsv3": 10.88,
     "dance_hpsv3": 15.2,
+    "nano_hpsv3": 11.68,
     "krea_main": 90,
     "krea_effects": 60,
     "dance_main": 100,
-    "dance_effects": 28
+    "dance_effects": 28,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 238,
@@ -4288,12 +5240,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0238_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0238_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0238_nano.jpg",
     "krea_hpsv3": 12.62,
     "dance_hpsv3": 14.96,
+    "nano_hpsv3": 9.38,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 0,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 239,
@@ -4307,12 +5263,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0239_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0239_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0239_nano.jpg",
     "krea_hpsv3": 14.43,
     "dance_hpsv3": 14.57,
+    "nano_hpsv3": 10.37,
     "krea_main": 90,
     "krea_effects": 75,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 240,
@@ -4325,12 +5285,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0240_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0240_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0240_nano.jpg",
     "krea_hpsv3": 15.54,
     "dance_hpsv3": 13.81,
+    "nano_hpsv3": 10.76,
     "krea_main": 100,
     "krea_effects": 18,
     "dance_main": 100,
-    "dance_effects": 57
+    "dance_effects": 57,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 241,
@@ -4342,12 +5306,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0241_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0241_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0241_nano.jpg",
     "krea_hpsv3": 11.56,
     "dance_hpsv3": 14.2,
+    "nano_hpsv3": 9.04,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 242,
@@ -4360,12 +5328,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0242_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0242_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0242_nano.jpg",
     "krea_hpsv3": 10.91,
     "dance_hpsv3": 13.6,
+    "nano_hpsv3": 8.04,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 67
   },
   {
     "id": 243,
@@ -4377,12 +5349,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0243_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0243_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0243_nano.jpg",
     "krea_hpsv3": 5.33,
     "dance_hpsv3": 10.15,
+    "nano_hpsv3": 7.1,
     "krea_main": 70,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 70,
+    "nano_effects": 65
   },
   {
     "id": 244,
@@ -4395,12 +5371,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0244_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0244_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0244_nano.jpg",
     "krea_hpsv3": 10.16,
     "dance_hpsv3": 14.27,
+    "nano_hpsv3": 7.7,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 245,
@@ -4412,12 +5392,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0245_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0245_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0245_nano.jpg",
     "krea_hpsv3": 13.64,
     "dance_hpsv3": 14.91,
+    "nano_hpsv3": 11.04,
     "krea_main": 100,
     "krea_effects": 88,
     "dance_main": 90,
-    "dance_effects": 50
+    "dance_effects": 50,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 246,
@@ -4429,12 +5413,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0246_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0246_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0246_nano.jpg",
     "krea_hpsv3": 12.41,
     "dance_hpsv3": 14.26,
+    "nano_hpsv3": 9.21,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 0
   },
   {
     "id": 247,
@@ -4448,12 +5436,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0247_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0247_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0247_nano.jpg",
     "krea_hpsv3": 11.15,
     "dance_hpsv3": 13.46,
+    "nano_hpsv3": 11.52,
     "krea_main": 100,
     "krea_effects": 62,
     "dance_main": 100,
-    "dance_effects": 62
+    "dance_effects": 62,
+    "nano_main": 100,
+    "nano_effects": 69
   },
   {
     "id": 248,
@@ -4467,12 +5459,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0248_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0248_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0248_nano.jpg",
     "krea_hpsv3": 12.92,
     "dance_hpsv3": 13.91,
+    "nano_hpsv3": 9.83,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 60
+    "dance_effects": 60,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 249,
@@ -4485,12 +5481,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0249_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0249_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0249_nano.jpg",
     "krea_hpsv3": 12.02,
     "dance_hpsv3": 14.21,
+    "nano_hpsv3": 7.39,
     "krea_main": 90,
     "krea_effects": 58,
     "dance_main": 90,
-    "dance_effects": 38
+    "dance_effects": 38,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 250,
@@ -4503,12 +5503,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0250_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0250_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0250_nano.jpg",
     "krea_hpsv3": 11.29,
     "dance_hpsv3": 14.5,
+    "nano_hpsv3": 9.83,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 251,
@@ -4520,12 +5524,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0251_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0251_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0251_nano.jpg",
     "krea_hpsv3": 9.9,
     "dance_hpsv3": 14.25,
+    "nano_hpsv3": 9.88,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 252,
@@ -4539,12 +5547,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0252_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0252_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0252_nano.jpg",
     "krea_hpsv3": 12.22,
     "dance_hpsv3": 12.68,
+    "nano_hpsv3": 6.77,
     "krea_main": 100,
     "krea_effects": 17,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 253,
@@ -4558,12 +5570,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0253_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0253_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0253_nano.jpg",
     "krea_hpsv3": 11.11,
     "dance_hpsv3": 13.46,
+    "nano_hpsv3": 9.35,
     "krea_main": 90,
     "krea_effects": 11,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 254,
@@ -4577,12 +5593,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0254_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0254_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0254_nano.jpg",
     "krea_hpsv3": 11.43,
     "dance_hpsv3": 15.11,
+    "nano_hpsv3": 11.07,
     "krea_main": 100,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 7
+    "dance_effects": 7,
+    "nano_main": 90,
+    "nano_effects": 85
   },
   {
     "id": 255,
@@ -4594,12 +5614,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0255_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0255_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0255_nano.jpg",
     "krea_hpsv3": 13.36,
     "dance_hpsv3": 13.27,
+    "nano_hpsv3": 6.29,
     "krea_main": 100,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 100,
+    "nano_effects": 40
   },
   {
     "id": 256,
@@ -4611,12 +5635,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0256_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0256_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0256_nano.jpg",
     "krea_hpsv3": 11.75,
     "dance_hpsv3": 13.68,
+    "nano_hpsv3": 8.56,
     "krea_main": 90,
     "krea_effects": 38,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 50
   },
   {
     "id": 257,
@@ -4630,12 +5658,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0257_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0257_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0257_nano.jpg",
     "krea_hpsv3": 8.48,
     "dance_hpsv3": 11.28,
+    "nano_hpsv3": 7.81,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 25
   },
   {
     "id": 258,
@@ -4648,12 +5680,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0258_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0258_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0258_nano.jpg",
     "krea_hpsv3": 14.24,
     "dance_hpsv3": 12.85,
+    "nano_hpsv3": 5.25,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 5
+    "dance_effects": 5,
+    "nano_main": 100,
+    "nano_effects": 75
   },
   {
     "id": 259,
@@ -4667,12 +5703,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0259_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0259_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0259_nano.jpg",
     "krea_hpsv3": 11.56,
     "dance_hpsv3": 11.62,
+    "nano_hpsv3": 9.55,
     "krea_main": 100,
     "krea_effects": 63,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 260,
@@ -4685,12 +5725,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0260_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0260_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0260_nano.jpg",
     "krea_hpsv3": 10.75,
     "dance_hpsv3": 13.5,
+    "nano_hpsv3": 8.62,
     "krea_main": 100,
     "krea_effects": 67,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 92
   },
   {
     "id": 261,
@@ -4702,12 +5746,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0261_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0261_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0261_nano.jpg",
     "krea_hpsv3": 15.47,
     "dance_hpsv3": 16.07,
+    "nano_hpsv3": 13.22,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 8
+    "dance_effects": 8,
+    "nano_main": 90,
+    "nano_effects": 95
   },
   {
     "id": 262,
@@ -4719,12 +5767,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0262_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0262_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0262_nano.jpg",
     "krea_hpsv3": 12.73,
     "dance_hpsv3": 16.05,
+    "nano_hpsv3": 10.62,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 263,
@@ -4737,12 +5789,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0263_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0263_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0263_nano.jpg",
     "krea_hpsv3": 13.76,
     "dance_hpsv3": 14.48,
+    "nano_hpsv3": 12.85,
     "krea_main": 80,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 264,
@@ -4754,12 +5810,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0264_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0264_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0264_nano.jpg",
     "krea_hpsv3": 12.0,
     "dance_hpsv3": 11.73,
+    "nano_hpsv3": 9.84,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 90,
-    "dance_effects": 75
+    "dance_effects": 75,
+    "nano_main": 90,
+    "nano_effects": 80
   },
   {
     "id": 265,
@@ -4773,12 +5833,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0265_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0265_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0265_nano.jpg",
     "krea_hpsv3": 13.47,
     "dance_hpsv3": 13.67,
+    "nano_hpsv3": 8.71,
     "krea_main": 90,
     "krea_effects": 58,
     "dance_main": 90,
-    "dance_effects": 33
+    "dance_effects": 33,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 266,
@@ -4791,12 +5855,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0266_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0266_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0266_nano.jpg",
     "krea_hpsv3": 9.87,
     "dance_hpsv3": 13.98,
+    "nano_hpsv3": 11.38,
     "krea_main": 80,
     "krea_effects": 50,
     "dance_main": 90,
-    "dance_effects": 27
+    "dance_effects": 27,
+    "nano_main": 90,
+    "nano_effects": 57
   },
   {
     "id": 267,
@@ -4809,12 +5877,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0267_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0267_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0267_nano.jpg",
     "krea_hpsv3": 15.22,
     "dance_hpsv3": 15.61,
+    "nano_hpsv3": 7.28,
     "krea_main": 90,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 88
   },
   {
     "id": 268,
@@ -4826,12 +5898,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0268_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0268_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0268_nano.jpg",
     "krea_hpsv3": 13.29,
     "dance_hpsv3": 15.98,
+    "nano_hpsv3": 12.0,
     "krea_main": 100,
     "krea_effects": 71,
     "dance_main": 100,
-    "dance_effects": 90
+    "dance_effects": 90,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 269,
@@ -4844,12 +5920,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0269_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0269_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0269_nano.jpg",
     "krea_hpsv3": 10.86,
     "dance_hpsv3": 15.33,
+    "nano_hpsv3": 12.32,
     "krea_main": 90,
     "krea_effects": 64,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 50
   },
   {
     "id": 270,
@@ -4862,12 +5942,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0270_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0270_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0270_nano.jpg",
     "krea_hpsv3": 12.16,
     "dance_hpsv3": 15.44,
+    "nano_hpsv3": 11.03,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 75
   },
   {
     "id": 271,
@@ -4880,12 +5964,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0271_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0271_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0271_nano.jpg",
     "krea_hpsv3": 11.34,
     "dance_hpsv3": 13.76,
+    "nano_hpsv3": 11.3,
     "krea_main": 90,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 58
   },
   {
     "id": 272,
@@ -4897,12 +5985,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0272_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0272_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0272_nano.jpg",
     "krea_hpsv3": 9.66,
     "dance_hpsv3": 12.38,
+    "nano_hpsv3": 3.69,
     "krea_main": 90,
     "krea_effects": 67,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 83
   },
   {
     "id": 273,
@@ -4915,12 +6007,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0273_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0273_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0273_nano.jpg",
     "krea_hpsv3": 12.86,
     "dance_hpsv3": 11.66,
+    "nano_hpsv3": 11.35,
     "krea_main": 90,
     "krea_effects": 83,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 92
   },
   {
     "id": 274,
@@ -4932,12 +6028,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0274_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0274_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0274_nano.jpg",
     "krea_hpsv3": 12.01,
     "dance_hpsv3": 15.12,
+    "nano_hpsv3": 8.42,
     "krea_main": 90,
     "krea_effects": 36,
     "dance_main": 0,
-    "dance_effects": 14
+    "dance_effects": 14,
+    "nano_main": 90,
+    "nano_effects": 86
   },
   {
     "id": 275,
@@ -4951,12 +6051,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0275_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0275_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0275_nano.jpg",
     "krea_hpsv3": 9.52,
     "dance_hpsv3": 11.72,
+    "nano_hpsv3": 5.82,
     "krea_main": 100,
     "krea_effects": 17,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 90
   },
   {
     "id": 276,
@@ -4969,12 +6073,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0276_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0276_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0276_nano.jpg",
     "krea_hpsv3": 10.78,
     "dance_hpsv3": 13.56,
+    "nano_hpsv3": 9.38,
     "krea_main": 100,
     "krea_effects": 78,
     "dance_main": 90,
-    "dance_effects": 33
+    "dance_effects": 33,
+    "nano_main": 100,
+    "nano_effects": 92
   },
   {
     "id": 277,
@@ -4988,12 +6096,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0277_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0277_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0277_nano.jpg",
     "krea_hpsv3": 12.28,
     "dance_hpsv3": 15.32,
+    "nano_hpsv3": 12.7,
     "krea_main": 100,
     "krea_effects": 86,
     "dance_main": 100,
-    "dance_effects": 15
+    "dance_effects": 15,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 278,
@@ -5007,12 +6119,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0278_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0278_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0278_nano.jpg",
     "krea_hpsv3": 12.71,
     "dance_hpsv3": 13.97,
+    "nano_hpsv3": 9.9,
     "krea_main": 90,
     "krea_effects": 40,
     "dance_main": 90,
-    "dance_effects": 30
+    "dance_effects": 30,
+    "nano_main": 90,
+    "nano_effects": 45
   },
   {
     "id": 279,
@@ -5026,12 +6142,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0279_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0279_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0279_nano.jpg",
     "krea_hpsv3": 13.01,
     "dance_hpsv3": 13.57,
+    "nano_hpsv3": 11.0,
     "krea_main": 100,
     "krea_effects": 20,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 42
   },
   {
     "id": 280,
@@ -5043,12 +6163,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0280_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0280_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0280_nano.jpg",
     "krea_hpsv3": 8.96,
     "dance_hpsv3": 11.18,
+    "nano_hpsv3": 10.21,
     "krea_main": 100,
     "krea_effects": 75,
     "dance_main": 100,
-    "dance_effects": 35
+    "dance_effects": 35,
+    "nano_main": 0,
+    "nano_effects": 0
   },
   {
     "id": 281,
@@ -5060,12 +6184,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0281_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0281_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0281_nano.jpg",
     "krea_hpsv3": 12.23,
     "dance_hpsv3": 13.84,
+    "nano_hpsv3": 7.42,
     "krea_main": 90,
     "krea_effects": 25,
     "dance_main": 90,
-    "dance_effects": 12
+    "dance_effects": 12,
+    "nano_main": 80,
+    "nano_effects": 64
   },
   {
     "id": 282,
@@ -5077,12 +6205,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0282_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0282_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0282_nano.jpg",
     "krea_hpsv3": 13.43,
     "dance_hpsv3": 13.89,
+    "nano_hpsv3": 11.18,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 283,
@@ -5096,12 +6228,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0283_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0283_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0283_nano.jpg",
     "krea_hpsv3": 15.88,
     "dance_hpsv3": 14.48,
+    "nano_hpsv3": 11.91,
     "krea_main": 100,
     "krea_effects": 58,
     "dance_main": 100,
-    "dance_effects": 17
+    "dance_effects": 17,
+    "nano_main": 100,
+    "nano_effects": 90
   },
   {
     "id": 284,
@@ -5114,12 +6250,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0284_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0284_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0284_nano.jpg",
     "krea_hpsv3": 11.15,
     "dance_hpsv3": 13.35,
+    "nano_hpsv3": 6.12,
     "krea_main": 90,
     "krea_effects": 33,
     "dance_main": 100,
-    "dance_effects": 25
+    "dance_effects": 25,
+    "nano_main": 100,
+    "nano_effects": 67
   },
   {
     "id": 285,
@@ -5131,12 +6271,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0285_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0285_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0285_nano.jpg",
     "krea_hpsv3": 12.18,
     "dance_hpsv3": 16.06,
+    "nano_hpsv3": 12.04,
     "krea_main": 90,
     "krea_effects": 50,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 286,
@@ -5149,12 +6293,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0286_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0286_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0286_nano.jpg",
     "krea_hpsv3": 11.14,
     "dance_hpsv3": 14.87,
+    "nano_hpsv3": 12.4,
     "krea_main": 100,
     "krea_effects": 90,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 287,
@@ -5167,12 +6315,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0287_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0287_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0287_nano.jpg",
     "krea_hpsv3": 11.74,
     "dance_hpsv3": 11.62,
+    "nano_hpsv3": 10.72,
     "krea_main": 90,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 90,
+    "nano_effects": 63
   },
   {
     "id": 288,
@@ -5184,12 +6336,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0288_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0288_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0288_nano.jpg",
     "krea_hpsv3": 13.37,
     "dance_hpsv3": 15.93,
+    "nano_hpsv3": 10.69,
     "krea_main": 100,
     "krea_effects": 40,
     "dance_main": 100,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 100,
+    "nano_effects": 70
   },
   {
     "id": 289,
@@ -5202,12 +6358,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0289_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0289_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0289_nano.jpg",
     "krea_hpsv3": 15.94,
     "dance_hpsv3": 15.89,
+    "nano_hpsv3": 11.39,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 290,
@@ -5220,12 +6380,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0290_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0290_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0290_nano.jpg",
     "krea_hpsv3": 12.47,
     "dance_hpsv3": 15.54,
+    "nano_hpsv3": 10.47,
     "krea_main": 100,
     "krea_effects": 80,
     "dance_main": 100,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 100
   },
   {
     "id": 291,
@@ -5239,12 +6403,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0291_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0291_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0291_nano.jpg",
     "krea_hpsv3": 11.08,
     "dance_hpsv3": 12.53,
+    "nano_hpsv3": 11.11,
     "krea_main": 100,
     "krea_effects": 90,
     "dance_main": 90,
-    "dance_effects": 100
+    "dance_effects": 100,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 292,
@@ -5257,12 +6425,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0292_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0292_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0292_nano.jpg",
     "krea_hpsv3": 14.61,
     "dance_hpsv3": 15.45,
+    "nano_hpsv3": 11.55,
     "krea_main": 100,
     "krea_effects": 89,
     "dance_main": 100,
-    "dance_effects": 78
+    "dance_effects": 78,
+    "nano_main": 100,
+    "nano_effects": 95
   },
   {
     "id": 293,
@@ -5275,12 +6447,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0293_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0293_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0293_nano.jpg",
     "krea_hpsv3": 12.39,
     "dance_hpsv3": 15.03,
+    "nano_hpsv3": 10.92,
     "krea_main": 100,
     "krea_effects": 10,
     "dance_main": 100,
-    "dance_effects": 4
+    "dance_effects": 4,
+    "nano_main": 100,
+    "nano_effects": 79
   },
   {
     "id": 294,
@@ -5293,12 +6469,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0294_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0294_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0294_nano.jpg",
     "krea_hpsv3": 8.62,
     "dance_hpsv3": 12.88,
+    "nano_hpsv3": 8.66,
     "krea_main": 100,
     "krea_effects": 30,
     "dance_main": 90,
-    "dance_effects": 20
+    "dance_effects": 20,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 295,
@@ -5310,12 +6490,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0295_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0295_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0295_nano.jpg",
     "krea_hpsv3": 7.46,
     "dance_hpsv3": 11.36,
+    "nano_hpsv3": 6.98,
     "krea_main": 80,
     "krea_effects": 86,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 70,
+    "nano_effects": 90
   },
   {
     "id": 296,
@@ -5328,12 +6512,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0296_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0296_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0296_nano.jpg",
     "krea_hpsv3": 10.26,
     "dance_hpsv3": 14.66,
+    "nano_hpsv3": 8.23,
     "krea_main": 100,
     "krea_effects": 100,
     "dance_main": 100,
-    "dance_effects": 17
+    "dance_effects": 17,
+    "nano_main": 90,
+    "nano_effects": 100
   },
   {
     "id": 297,
@@ -5345,12 +6533,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0297_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0297_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0297_nano.jpg",
     "krea_hpsv3": 14.07,
     "dance_hpsv3": 15.78,
+    "nano_hpsv3": 10.57,
     "krea_main": 90,
     "krea_effects": 57,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 80
   },
   {
     "id": 298,
@@ -5362,12 +6554,16 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0298_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0298_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0298_nano.jpg",
     "krea_hpsv3": 14.22,
     "dance_hpsv3": 14.99,
+    "nano_hpsv3": 8.38,
     "krea_main": 100,
     "krea_effects": 0,
     "dance_main": 90,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 80,
+    "nano_effects": 86
   },
   {
     "id": 299,
@@ -5379,513 +6575,1527 @@ window.IPAD_GENERATED_GALLERY = [
     ],
     "krea_image": "img/asserts/ipad_gallery/generated/0299_krea.jpg",
     "dance_image": "img/asserts/ipad_gallery/generated/0299_dance.jpg",
+    "nano_image": "img/asserts/ipad_gallery/generated/0299_nano.jpg",
     "krea_hpsv3": 14.63,
     "dance_hpsv3": 15.79,
+    "nano_hpsv3": 9.07,
     "krea_main": 90,
     "krea_effects": 15,
     "dance_main": 100,
-    "dance_effects": 0
+    "dance_effects": 0,
+    "nano_main": 100,
+    "nano_effects": 71
   }
 ];
 window.IPAD_REAL_GALLERY = [
   {
     "id": 0,
-    "source_row": 5540,
-    "filename": "832849.jpg",
-    "prompt": "A tiny person stands on a giant yellow face and paints near the nose. The scene uses surreal imagery and unconventional scale to create an uncanny, dreamlike effect.",
-    "clean_prompt": "person on face",
+    "source_row": 0,
+    "filename": "155554.jpg",
+    "prompt": "Blue streaks fill the frame. The image is heavily blurred and reads as an abstract composition rather than a clear scene.",
+    "clean_prompt": "streaks",
     "elements": [
-      "composition_and_structure.unconventional_scale",
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/000_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/000_clean.jpg",
-    "real_hpsv3": 12.68,
-    "clean_hpsv3": 8.07,
-    "human_score": 7.53
+    "real_hpsv3": 4.7,
+    "clean_hpsv3": 5.15,
+    "human_score": 4.28
   },
   {
     "id": 1,
-    "source_row": 5384,
-    "filename": "947237.jpg",
-    "prompt": "A child is surrounded by many picture frames and tiny people. The scene uses surreal scale and an impossible arrangement that makes the image feel dreamlike and uncanny.",
-    "clean_prompt": "a child with frames",
+    "source_row": 3,
+    "filename": "924247.jpg",
+    "prompt": "A poster fills the frame. It is streaked by a strong radial blur, and the text is smeared into abstraction.",
+    "clean_prompt": "a poster",
     "elements": [
-      "composition_and_structure.unconventional_scale",
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/001_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/001_clean.jpg",
-    "real_hpsv3": 11.06,
-    "clean_hpsv3": 10.78,
-    "human_score": 7.5
+    "real_hpsv3": 4.36,
+    "clean_hpsv3": 8.06,
+    "human_score": 4.99
   },
   {
     "id": 2,
-    "source_row": 6075,
-    "filename": "422322.jpg",
-    "prompt": "A woman holds a dark nest-like object while staring at the camera. Her wide eyes and tense mouth create a fearful expression, and the image has a sickly green cast.",
-    "clean_prompt": "woman holding a ball",
+    "source_row": 4,
+    "filename": "733073.jpg",
+    "prompt": "A cyclist passes a car on a street. The scene is swept into heavy motion blur, smearing the background and the subjects into streaks.",
+    "clean_prompt": "a bike and car",
     "elements": [
-      "color_and_tone.sickly_cast",
-      "emotion_and_subject.negative_personal_emotion"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/002_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/002_clean.jpg",
-    "real_hpsv3": 13.96,
-    "clean_hpsv3": 7.23,
-    "human_score": 7.47
+    "real_hpsv3": -2.94,
+    "clean_hpsv3": 9.52,
+    "human_score": 4.79
   },
   {
     "id": 3,
-    "source_row": 5546,
-    "filename": "214299.jpg",
-    "prompt": "A boy holds a tiny girl in his hands. The image uses impossible scale and surreal composition, making the scene feel dreamlike and unreal.",
-    "clean_prompt": "a boy holding a girl",
+    "source_row": 6,
+    "filename": "693175.jpg",
+    "prompt": "Cars drive on a highway behind a truck. The scene uses strong motion blur and light trails, making the vehicles and road streak across the frame.",
+    "clean_prompt": "cars on highway",
     "elements": [
-      "composition_and_structure.unconventional_scale",
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/003_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/003_clean.jpg",
-    "real_hpsv3": 12.79,
-    "clean_hpsv3": 12.86,
-    "human_score": 7.39
+    "real_hpsv3": 5.33,
+    "clean_hpsv3": 12.41,
+    "human_score": 4.97
   },
   {
     "id": 4,
-    "source_row": 5488,
-    "filename": "314393.jpg",
-    "prompt": "A spoon holds a small Earth in front of a larger Earth. The image uses surrealism and inconsistent scale to create an impossible scene.",
-    "clean_prompt": "a spoon with globe",
+    "source_row": 7,
+    "filename": "950368.jpg",
+    "prompt": "A fence and nearby objects fill the frame. The image is heavily motion-blurred and streaked, making the scene look abstract and hard to recognize.",
+    "clean_prompt": "a fence",
     "elements": [
-      "emotion_and_subject.surrealism",
-      "composition_and_structure.scale_inconsistency"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/004_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/004_clean.jpg",
-    "real_hpsv3": 13.54,
-    "clean_hpsv3": 10.75,
-    "human_score": 7.31
+    "real_hpsv3": 0.36,
+    "clean_hpsv3": 11.63,
+    "human_score": 4.95
   },
   {
     "id": 5,
-    "source_row": 4042,
-    "filename": "121280.jpg",
-    "prompt": "A woman stands near a wall. The image is heavily blurred, leaving the figure and surroundings soft and hard to resolve.",
-    "clean_prompt": "a woman",
+    "source_row": 9,
+    "filename": "67180.jpg",
+    "prompt": "A kart driver is racing on a road. The image uses strong motion blur and streaking, which makes the scene feel fast and unstable.",
+    "clean_prompt": "a kart driver",
     "elements": [
       "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/005_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/005_clean.jpg",
-    "real_hpsv3": -5.48,
-    "clean_hpsv3": 12.87,
-    "human_score": 7.26
+    "real_hpsv3": 1.42,
+    "clean_hpsv3": 13.42,
+    "human_score": 5.07
   },
   {
     "id": 6,
-    "source_row": 1119,
-    "filename": "911463.jpg",
-    "prompt": "A torso is shown in black and white stripes. The form is stretched into an abstract shape with blurred edges, making the body hard to read.",
-    "clean_prompt": "a torso",
+    "source_row": 10,
+    "filename": "946657.jpg",
+    "prompt": "Blue, yellow, and brown streaks sweep across the frame. The image is heavily blurred and resolves into an abstract composition with no clear details.",
+    "clean_prompt": "Streaks",
     "elements": [
       "clarity_and_focus.intentional_blur",
       "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/006_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/006_clean.jpg",
-    "real_hpsv3": 5.22,
-    "clean_hpsv3": 10.64,
-    "human_score": 7.23
+    "real_hpsv3": 10.08,
+    "clean_hpsv3": 2.55,
+    "human_score": 5.38
   },
   {
     "id": 7,
-    "source_row": 667,
-    "filename": "11849.jpg",
-    "prompt": "Repeated text fills the frame. The words are heavily blurred and smeared, making the pattern hard to read.",
-    "clean_prompt": "text on page",
+    "source_row": 11,
+    "filename": "776318.jpg",
+    "prompt": "City lights streak across a dark scene. The frame is heavily motion-blurred, so the details dissolve into vertical smears and glowing trails.",
+    "clean_prompt": "city lights",
     "elements": [
-      "clarity_and_focus.intentional_blur"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/007_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/007_clean.jpg",
-    "real_hpsv3": 3.25,
-    "clean_hpsv3": 9.64,
-    "human_score": 7.15
+    "real_hpsv3": -3.54,
+    "clean_hpsv3": 11.35,
+    "human_score": 4.62
   },
   {
     "id": 8,
-    "source_row": 5515,
-    "filename": "874793.jpg",
-    "prompt": "A girl looks to the side while a tiny figure stands in the background. The image uses surreal scale and an impossible scene to create an unsettling effect.",
-    "clean_prompt": "a girl",
+    "source_row": 12,
+    "filename": "776023.jpg",
+    "prompt": "Colored lights streak across the frame in a blurred, abstract composition. The shapes dissolve into indistinct color, creating a dreamy, nonrepresentational image.",
+    "clean_prompt": "lights at night",
     "elements": [
-      "composition_and_structure.scale_inconsistency",
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/008_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/008_clean.jpg",
-    "real_hpsv3": 10.0,
-    "clean_hpsv3": 11.38,
-    "human_score": 7.14
+    "real_hpsv3": 7.48,
+    "clean_hpsv3": 9.4,
+    "human_score": 5.36
   },
   {
     "id": 9,
-    "source_row": 3704,
-    "filename": "528044.jpg",
-    "prompt": "A child’s face fills the frame. The expression is sad and tense, giving the portrait a heavy and uneasy feeling.",
-    "clean_prompt": "a child's face",
+    "source_row": 13,
+    "filename": "822923.jpg",
+    "prompt": "A car is captured in heavy motion blur with streaked lights and smeared colors. The scene becomes abstract, with the street and vehicle reduced to flowing shapes and trails.",
+    "clean_prompt": "a car",
     "elements": [
-      "emotion_and_subject.negative_personal_emotion"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/009_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/009_clean.jpg",
-    "real_hpsv3": 13.98,
-    "clean_hpsv3": 13.19,
-    "human_score": 7.13
+    "real_hpsv3": 2.76,
+    "clean_hpsv3": 12.95,
+    "human_score": 4.88
   },
   {
     "id": 10,
-    "source_row": 5498,
-    "filename": "740010.jpg",
-    "prompt": "A hand lies on the ground while small wooden figures pull a rope across the wrist. The scene feels surreal because the figures are tiny and arranged like a strange rescue or tug-of-war.",
-    "clean_prompt": "a hand on ground",
+    "source_row": 14,
+    "filename": "654700.jpg",
+    "prompt": "A blue surface fills the frame. It is heavily motion blurred, and the subject is reduced to streaks and shapes instead of clear form.",
+    "clean_prompt": "a surface",
     "elements": [
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/010_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/010_clean.jpg",
-    "real_hpsv3": 14.5,
-    "clean_hpsv3": 11.66,
-    "human_score": 7.08
+    "real_hpsv3": 0.96,
+    "clean_hpsv3": 0.77,
+    "human_score": 4.49
   },
   {
     "id": 11,
-    "source_row": 5994,
-    "filename": "903864.jpg",
-    "prompt": "A row of forks fills the frame in an abstract pattern. Bright rainbow fringing outlines the metal and gives the image a distorted, prismatic look.",
-    "clean_prompt": "forks",
+    "source_row": 15,
+    "filename": "9392.jpg",
+    "prompt": "A sunset scene fills the frame. Heavy motion blur and blown-out highlights turn the horizon and foreground into streaks of light and color.",
+    "clean_prompt": "a sunset",
     "elements": [
-      "color_and_tone.chromatic_aberration",
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes"
     ],
     "real_image": "img/asserts/ipad_gallery/real/011_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/011_clean.jpg",
-    "real_hpsv3": 13.82,
-    "clean_hpsv3": 6.64,
-    "human_score": 7.07
+    "real_hpsv3": -6.35,
+    "clean_hpsv3": 10.67,
+    "human_score": 3.58
   },
   {
     "id": 12,
-    "source_row": 6229,
-    "filename": "336123.jpg",
-    "prompt": "A close-up of a face with cracked, damaged skin. The dark portrait emphasizes decay and neglect, creating an unsettling mood.",
-    "clean_prompt": "a face",
+    "source_row": 16,
+    "filename": "803097.jpg",
+    "prompt": "A city street at night is shown with lights and cars. The image uses strong motion blur and streaking that makes the scene feel fast and disorienting.",
+    "clean_prompt": "a city street",
     "elements": [
-      "emotion_and_subject.decay_and_degradation"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/012_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/012_clean.jpg",
-    "real_hpsv3": 13.29,
-    "clean_hpsv3": 10.79,
-    "human_score": 7.06
+    "real_hpsv3": -4.13,
+    "clean_hpsv3": 12.42,
+    "human_score": 4.34
   },
   {
     "id": 13,
-    "source_row": 6053,
-    "filename": "618510.jpg",
-    "prompt": "A man's face fills the frame. He looks angry and tense.",
-    "clean_prompt": "a man's face",
+    "source_row": 18,
+    "filename": "776052.jpg",
+    "prompt": "A face is caught in a burst of pink, purple, and green motion blur. The image loses detail and becomes an abstract photo with clashing colors and a strong sense of movement.",
+    "clean_prompt": "a face",
     "elements": [
-      "emotion_and_subject.negative_personal_emotion"
+      "clarity_and_focus.intentional_blur",
+      "color_and_tone.clashing_disharmony",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/013_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/013_clean.jpg",
-    "real_hpsv3": 9.09,
-    "clean_hpsv3": 11.42,
-    "human_score": 7.01
+    "real_hpsv3": -0.09,
+    "clean_hpsv3": 7.71,
+    "human_score": 6.08
   },
   {
     "id": 14,
-    "source_row": 5569,
-    "filename": "666974.jpg",
-    "prompt": "Tiny people stand on a cracked spherical landscape with small cacti. The scene uses surreal imagery and an unexpected scale that makes the terrain look like a miniature world.",
-    "clean_prompt": "people on a planet",
+    "source_row": 22,
+    "filename": "250193.jpg",
+    "prompt": "A road stretches ahead beside trees and hills. The image is heavily blurred, and the scene loses fine detail into soft streaks and indistinct shapes.",
+    "clean_prompt": "a road",
     "elements": [
-      "emotion_and_subject.surrealism",
-      "composition_and_structure.unconventional_scale"
+      "clarity_and_focus.intentional_blur",
+      "clarity_and_focus.bad_or_no_details"
     ],
     "real_image": "img/asserts/ipad_gallery/real/014_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/014_clean.jpg",
-    "real_hpsv3": 10.86,
-    "clean_hpsv3": 9.04,
-    "human_score": 7.0
+    "real_hpsv3": -2.69,
+    "clean_hpsv3": 12.54,
+    "human_score": 4.77
   },
   {
     "id": 15,
-    "source_row": 6080,
-    "filename": "111876.jpg",
-    "prompt": "A woman screams with wet hair covering her face. The close-up captures intense distress and an unsettling expression.",
-    "clean_prompt": "a woman screams",
+    "source_row": 23,
+    "filename": "784109.jpg",
+    "prompt": "Light trails cross a dark frame. The image reads as an abstract photo, with long-exposure streaks and little recognizable subject detail.",
+    "clean_prompt": "light trails",
     "elements": [
-      "emotion_and_subject.negative_personal_emotion"
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/015_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/015_clean.jpg",
-    "real_hpsv3": 5.79,
-    "clean_hpsv3": 10.36,
-    "human_score": 6.94
+    "real_hpsv3": 4.13,
+    "clean_hpsv3": 11.1,
+    "human_score": 3.39
   },
   {
     "id": 16,
-    "source_row": 341,
-    "filename": "6343.jpg",
-    "prompt": "A man is shown with a camera. His face overlaps a black-and-white portrait in a double exposure, creating a layered image.",
-    "clean_prompt": "a man with camera",
+    "source_row": 25,
+    "filename": "937824.jpg",
+    "prompt": "A person is captured in heavy motion blur with streaked colors and smeared forms. The image reads as an abstract, dreamlike scene rather than a clear photograph.",
+    "clean_prompt": "a person",
     "elements": [
-      "clarity_and_focus.double_exposure"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/016_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/016_clean.jpg",
-    "real_hpsv3": 0.26,
-    "clean_hpsv3": 13.04,
-    "human_score": 6.81
+    "real_hpsv3": -0.05,
+    "clean_hpsv3": 11.17,
+    "human_score": 4.26
   },
   {
     "id": 17,
-    "source_row": 1841,
-    "filename": "669672.jpg",
-    "prompt": "A road with streetlights. The image is heavily overexposed, with bright white surroundings and starburst light shapes.",
-    "clean_prompt": "a road",
+    "source_row": 26,
+    "filename": "945203.jpg",
+    "prompt": "Diagonal streaks fill the frame. The image is abstract, with heavy blur and smeared color bands instead of a clear subject.",
+    "clean_prompt": "streaks",
     "elements": [
-      "lighting_and_exposure.exposure_extremes"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/017_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/017_clean.jpg",
-    "real_hpsv3": -0.66,
-    "clean_hpsv3": 8.01,
-    "human_score": 6.81
+    "real_hpsv3": 8.42,
+    "clean_hpsv3": 8.16,
+    "human_score": 5.6
   },
   {
     "id": 18,
-    "source_row": 4617,
-    "filename": "105067.jpg",
-    "prompt": "Smoke curls across a white background in translucent wisps. The image reads as an abstract photo focused on shape and texture rather than a clear subject.",
-    "clean_prompt": "smoke",
+    "source_row": 27,
+    "filename": "722295.jpg",
+    "prompt": "A truck speeds past a dirt road at night. The motion leaves the vehicle stretched into a blur across the frame.",
+    "clean_prompt": "truck on road",
     "elements": [
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/018_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/018_clean.jpg",
-    "real_hpsv3": 9.77,
-    "clean_hpsv3": 11.23,
-    "human_score": 6.8
+    "real_hpsv3": -2.23,
+    "clean_hpsv3": 10.79,
+    "human_score": 4.42
   },
   {
     "id": 19,
-    "source_row": 5470,
-    "filename": "514974.jpg",
-    "prompt": "Pink spiky spheres recede through a dark framed space. The image is abstract and surreal, with repeated nesting that creates an unreal composition.",
-    "clean_prompt": "spheres",
+    "source_row": 28,
+    "filename": "931196.jpg",
+    "prompt": "A bicycle wheel fills the frame. The image uses strong motion blur to streak the spokes and frame into sweeping lines.",
+    "clean_prompt": "a bicycle",
     "elements": [
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/019_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/019_clean.jpg",
-    "real_hpsv3": 12.96,
-    "clean_hpsv3": 0.89,
-    "human_score": 6.8
+    "real_hpsv3": 2.31,
+    "clean_hpsv3": 10.96,
+    "human_score": 5.73
   },
   {
     "id": 20,
-    "source_row": 5974,
-    "filename": "840304.jpg",
-    "prompt": "Blue forms fill the frame in a layered abstract composition. The image has no recognizable subject and reads as pure shape and texture.",
-    "clean_prompt": "shapes",
+    "source_row": 30,
+    "filename": "915514.jpg",
+    "prompt": "A car drives on a road at night. Heavy motion blur and streaking light trails turn the scene into a dynamic abstract rush of movement.",
+    "clean_prompt": "a car on road",
     "elements": [
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/020_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/020_clean.jpg",
-    "real_hpsv3": 10.23,
-    "clean_hpsv3": 10.16,
-    "human_score": 6.8
+    "real_hpsv3": 0.62,
+    "clean_hpsv3": 13.03,
+    "human_score": 5.37
   },
   {
     "id": 21,
-    "source_row": 1438,
-    "filename": "12142.jpg",
-    "prompt": "A child stands with hands on a wall. The image is heavily overexposed, with the figure almost erased into a white field and very little contrast separating the subject from the background.",
-    "clean_prompt": "a child by wall",
+    "source_row": 33,
+    "filename": "923745.jpg",
+    "prompt": "A car is captured at night with heavy motion blur and bright light streaks. Parts of the image are overexposed, making the scene look abstract.",
+    "clean_prompt": "a car",
     "elements": [
-      "lighting_and_exposure.exposure_extremes",
-      "lighting_and_exposure.low_contrast_oppressive"
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes"
     ],
     "real_image": "img/asserts/ipad_gallery/real/021_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/021_clean.jpg",
-    "real_hpsv3": 3.72,
-    "clean_hpsv3": 11.52,
-    "human_score": 6.79
+    "real_hpsv3": -4.89,
+    "clean_hpsv3": 12.81,
+    "human_score": 4.44
   },
   {
     "id": 22,
-    "source_row": 5284,
-    "filename": "887561.jpg",
-    "prompt": "A man's face is partly hidden by a large white shape, leaving only one side visible. The composition feels blocked and incomplete.",
-    "clean_prompt": "a man's face",
+    "source_row": 34,
+    "filename": "924112.jpg",
+    "prompt": "People ride a train. The scene is swept into heavy motion blur, with the figures and background streaking diagonally across the frame, giving it a casual snapshot feel.",
+    "clean_prompt": "a train",
     "elements": [
-      "composition_and_structure.obstructed_cropping"
+      "clarity_and_focus.intentional_blur",
+      "composition_and_structure.amateur_snapshot_energy"
     ],
     "real_image": "img/asserts/ipad_gallery/real/022_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/022_clean.jpg",
-    "real_hpsv3": 12.69,
-    "clean_hpsv3": 10.25,
-    "human_score": 6.79
+    "real_hpsv3": 5.41,
+    "clean_hpsv3": 9.73,
+    "human_score": 4.56
   },
   {
     "id": 23,
-    "source_row": 6226,
-    "filename": "543876.jpg",
-    "prompt": "A humanoid sculpture stands in an open landscape. The figure has distorted anatomy and the scene uses harsh orange and blue colors, creating a surreal and unsettling image.",
-    "clean_prompt": "a sculpture",
+    "source_row": 36,
+    "filename": "775268.jpg",
+    "prompt": "A street and overpass fill the frame. Heavy motion blur smears the scene into blue shapes and removes most clear detail.",
+    "clean_prompt": "a street",
     "elements": [
-      "color_and_tone.clashing_disharmony",
-      "emotion_and_subject.surrealism"
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
     ],
     "real_image": "img/asserts/ipad_gallery/real/023_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/023_clean.jpg",
-    "real_hpsv3": 6.27,
-    "clean_hpsv3": 7.77,
-    "human_score": 6.78
+    "real_hpsv3": 1.62,
+    "clean_hpsv3": 10.96,
+    "human_score": 4.82
   },
   {
     "id": 24,
-    "source_row": 465,
-    "filename": "506069.jpg",
-    "prompt": "A person stands in front of a wall. The image is rendered as a dense abstract pattern, with the subject reduced to unreadable dots and little visible detail.",
-    "clean_prompt": "a person",
+    "source_row": 37,
+    "filename": "829854.jpg",
+    "prompt": "A building with railings and supports fills the frame. The scene is heavily motion-blurred, leaving most details smeared into streaks.",
+    "clean_prompt": "a building",
     "elements": [
-      "clarity_and_focus.bad_or_no_details",
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/024_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/024_clean.jpg",
-    "real_hpsv3": -3.85,
-    "clean_hpsv3": 7.99,
-    "human_score": 6.75
+    "real_hpsv3": -5.6,
+    "clean_hpsv3": 9.92,
+    "human_score": 4.37
   },
   {
     "id": 25,
-    "source_row": 1762,
-    "filename": "46664.jpg",
-    "prompt": "A page with text is shown. The paper is torn and burned along the edge, with visible damage and wear.",
-    "clean_prompt": "a page",
+    "source_row": 38,
+    "filename": "776072.jpg",
+    "prompt": "A race car speeds along a track. The image uses strong motion blur and streaking that smears the scene into flowing bands of color.",
+    "clean_prompt": "a race car",
     "elements": [
-      "emotion_and_subject.decay_and_degradation"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/025_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/025_clean.jpg",
-    "real_hpsv3": 7.91,
-    "clean_hpsv3": -5.36,
-    "human_score": 6.74
+    "real_hpsv3": 5.1,
+    "clean_hpsv3": 12.73,
+    "human_score": 5.78
   },
   {
     "id": 26,
-    "source_row": 293,
-    "filename": "95589.jpg",
-    "prompt": "Two people look down through a perforated screen toward the camera. Their faces and bodies are broken into dots, and the view is heavily blocked and lacking clear detail.",
-    "clean_prompt": "people behind a screen",
+    "source_row": 39,
+    "filename": "53661.jpg",
+    "prompt": "A person is on the grass. The image uses strong motion blur that smears the figure and background into streaks.",
+    "clean_prompt": "a person on grass",
     "elements": [
-      "clarity_and_focus.bad_or_no_details",
-      "composition_and_structure.obstructed_cropping"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/026_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/026_clean.jpg",
-    "real_hpsv3": 0.92,
-    "clean_hpsv3": 6.73,
-    "human_score": 6.7
+    "real_hpsv3": -0.56,
+    "clean_hpsv3": 8.72,
+    "human_score": 4.31
   },
   {
     "id": 27,
-    "source_row": 4223,
-    "filename": "308090.jpg",
-    "prompt": "A person stands in a dark wooden room near a bright window, with light cutting through the space. The room looks neglected and damaged, with debris on the floor and a heavy, oppressive atmosphere.",
-    "clean_prompt": "A person in a room",
+    "source_row": 40,
+    "filename": "924049.jpg",
+    "prompt": "People in hats are walking outdoors. Strong motion blur smears their faces and clothing into streaks, making the scene hard to read.",
+    "clean_prompt": "people walking",
     "elements": [
-      "lighting_and_exposure.low_contrast_oppressive",
-      "emotion_and_subject.decay_and_degradation"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/027_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/027_clean.jpg",
-    "real_hpsv3": 6.29,
-    "clean_hpsv3": 11.55,
-    "human_score": 6.68
+    "real_hpsv3": -1.55,
+    "clean_hpsv3": 12.07,
+    "human_score": 4.58
   },
   {
     "id": 28,
-    "source_row": 4278,
-    "filename": "248244.jpg",
-    "prompt": "A castle ruin stands behind a wall. The image has heavy grain, faded tones, and weak contrast that give it an aged, distressed look.",
-    "clean_prompt": "a castle ruin",
+    "source_row": 41,
+    "filename": "839607.jpg",
+    "prompt": "A person appears in a room. The image uses strong radial motion blur that spreads outward from the center and makes the scene feel distorted and unstable.",
+    "clean_prompt": "a person",
     "elements": [
-      "clarity_and_focus.film_artifacts",
-      "color_and_tone.muted_faded",
-      "lighting_and_exposure.low_contrast_oppressive",
-      "emotion_and_subject.decay_and_degradation"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/028_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/028_clean.jpg",
-    "real_hpsv3": 7.16,
-    "clean_hpsv3": 15.07,
-    "human_score": 6.67
+    "real_hpsv3": 1.92,
+    "clean_hpsv3": 9.6,
+    "human_score": 4.18
   },
   {
     "id": 29,
-    "source_row": 6124,
-    "filename": "696392.jpg",
-    "prompt": "A house stands in a barren field under a dark sky. Its peeling walls and worn surfaces show decay and neglect.",
-    "clean_prompt": "a house",
+    "source_row": 42,
+    "filename": "777284.jpg",
+    "prompt": "Two runners are moving outdoors. The image uses heavy motion blur, smearing their bodies and the background into streaks.",
+    "clean_prompt": "two runners",
     "elements": [
-      "emotion_and_subject.decay_and_degradation"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/029_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/029_clean.jpg",
-    "real_hpsv3": 10.61,
-    "clean_hpsv3": 7.89,
-    "human_score": 6.64
+    "real_hpsv3": 2.27,
+    "clean_hpsv3": 15.13,
+    "human_score": 5.25
   },
   {
     "id": 30,
-    "source_row": 2050,
-    "filename": "626523.jpg",
-    "prompt": "A couple stands together in a field. The image is heavily overexposed, and the subjects and background lose most detail.",
-    "clean_prompt": "two people standing",
+    "source_row": 44,
+    "filename": "725887.jpg",
+    "prompt": "Several people are grouped together. The image is heavily blurred with smeared details, making the figures hard to resolve.",
+    "clean_prompt": "people together",
     "elements": [
-      "lighting_and_exposure.exposure_extremes",
+      "clarity_and_focus.intentional_blur",
       "clarity_and_focus.bad_or_no_details"
     ],
     "real_image": "img/asserts/ipad_gallery/real/030_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/030_clean.jpg",
-    "real_hpsv3": 2.02,
-    "clean_hpsv3": 10.21,
-    "human_score": 6.63
+    "real_hpsv3": -5.84,
+    "clean_hpsv3": 10.12,
+    "human_score": 5.33
   },
   {
     "id": 31,
-    "source_row": 5522,
-    "filename": "664900.jpg",
-    "prompt": "Several foot silhouettes appear on a green surface. The image has a sickly green cast and a bright overexposed area that washes out part of the frame.",
-    "clean_prompt": "feet on floor",
+    "source_row": 45,
+    "filename": "282860.jpg",
+    "prompt": "A car passes at night near city lights. The scene is rendered with strong motion blur, smearing the vehicle and lights across the frame.",
+    "clean_prompt": "a car",
     "elements": [
-      "color_and_tone.sickly_cast",
-      "lighting_and_exposure.exposure_extremes",
-      "emotion_and_subject.abstract_photo"
+      "clarity_and_focus.intentional_blur"
     ],
     "real_image": "img/asserts/ipad_gallery/real/031_real.jpg",
     "clean_image": "img/asserts/ipad_gallery/real/031_clean.jpg",
-    "real_hpsv3": 8.03,
-    "clean_hpsv3": 7.88,
-    "human_score": 6.6
+    "real_hpsv3": -4.81,
+    "clean_hpsv3": 12.2,
+    "human_score": 4.0
+  },
+  {
+    "id": 32,
+    "source_row": 46,
+    "filename": "9425.jpg",
+    "prompt": "A grayscale outdoor scene is stretched into streaks by heavy motion blur. The image loses clear detail and reads as an abstract photo rather than a sharp depiction.",
+    "clean_prompt": "a road",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/032_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/032_clean.jpg",
+    "real_hpsv3": -1.39,
+    "clean_hpsv3": 11.53,
+    "human_score": 2.9
+  },
+  {
+    "id": 33,
+    "source_row": 47,
+    "filename": "921741.jpg",
+    "prompt": "A person is captured in heavy motion blur across a light background. The subject is smeared into abstract shapes, with little detail or clear form visible.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/033_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/033_clean.jpg",
+    "real_hpsv3": -0.01,
+    "clean_hpsv3": 10.1,
+    "human_score": 5.09
+  },
+  {
+    "id": 34,
+    "source_row": 48,
+    "filename": "775603.jpg",
+    "prompt": "A race car rounds a track. The scene is heavily motion-blurred, turning the car and barriers into streaks of red, white, and dark gray.",
+    "clean_prompt": "a race car",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/034_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/034_clean.jpg",
+    "real_hpsv3": -1.37,
+    "clean_hpsv3": 12.03,
+    "human_score": 4.82
+  },
+  {
+    "id": 35,
+    "source_row": 49,
+    "filename": "895559.jpg",
+    "prompt": "People are gathered in a room with a skateboard on the floor. The scene is heavily smeared by motion blur and covered in a harsh yellow-orange cast.",
+    "clean_prompt": "people in a room",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "color_and_tone.sickly_cast"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/035_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/035_clean.jpg",
+    "real_hpsv3": -4.22,
+    "clean_hpsv3": 12.15,
+    "human_score": 5.0
+  },
+  {
+    "id": 36,
+    "source_row": 50,
+    "filename": "776218.jpg",
+    "prompt": "A building and the ground fill the frame. The scene is heavily blurred so the details dissolve into streaks and an abstract form.",
+    "clean_prompt": "a building",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/036_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/036_clean.jpg",
+    "real_hpsv3": 1.14,
+    "clean_hpsv3": 9.77,
+    "human_score": 5.28
+  },
+  {
+    "id": 37,
+    "source_row": 52,
+    "filename": "245033.jpg",
+    "prompt": "Green diagonal streaks fill the frame. The image is heavily blurred and reads as an abstract composition.",
+    "clean_prompt": "lines",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/037_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/037_clean.jpg",
+    "real_hpsv3": 8.32,
+    "clean_hpsv3": 3.1,
+    "human_score": 4.57
+  },
+  {
+    "id": 38,
+    "source_row": 53,
+    "filename": "938216.jpg",
+    "prompt": "A road is shown. Heavy motion blur stretches the scene into horizontal bands, and the subject is barely recognizable.",
+    "clean_prompt": "a road",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/038_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/038_clean.jpg",
+    "real_hpsv3": -2.93,
+    "clean_hpsv3": 12.72,
+    "human_score": 5.84
+  },
+  {
+    "id": 39,
+    "source_row": 55,
+    "filename": "252148.jpg",
+    "prompt": "A yellow swirl fills the frame. The image is heavily motion-blurred and reads as an abstract photo rather than a clear scene.",
+    "clean_prompt": "a swirl",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/039_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/039_clean.jpg",
+    "real_hpsv3": 7.14,
+    "clean_hpsv3": 6.47,
+    "human_score": 3.83
+  },
+  {
+    "id": 40,
+    "source_row": 56,
+    "filename": "776156.jpg",
+    "prompt": "A car moves across the frame with strong motion blur and streaked color bands. The vehicle and background dissolve into an abstract image with little representational detail.",
+    "clean_prompt": "a car",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/040_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/040_clean.jpg",
+    "real_hpsv3": 2.57,
+    "clean_hpsv3": 12.54,
+    "human_score": 4.97
+  },
+  {
+    "id": 41,
+    "source_row": 58,
+    "filename": "883853.jpg",
+    "prompt": "A cluster of flowers fills the frame. The image is heavily motion-blurred into streaks of magenta, green, and white, turning the scene into an abstract composition.",
+    "clean_prompt": "flowers",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "color_and_tone.clashing_disharmony",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/041_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/041_clean.jpg",
+    "real_hpsv3": -5.85,
+    "clean_hpsv3": 11.12,
+    "human_score": 4.69
+  },
+  {
+    "id": 42,
+    "source_row": 59,
+    "filename": "902728.jpg",
+    "prompt": "A rider on a horse fills the frame. Heavy motion blur smears the figures into streaks and soft shapes, making the scene hard to resolve.",
+    "clean_prompt": "a rider on horse",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/042_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/042_clean.jpg",
+    "real_hpsv3": -4.29,
+    "clean_hpsv3": 13.9,
+    "human_score": 5.61
+  },
+  {
+    "id": 43,
+    "source_row": 60,
+    "filename": "775427.jpg",
+    "prompt": "A road runs through a forest. The image is heavily blurred by motion, leaving the trees and path smeared into streaks.",
+    "clean_prompt": "a road",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/043_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/043_clean.jpg",
+    "real_hpsv3": -4.74,
+    "clean_hpsv3": 12.25,
+    "human_score": 5.0
+  },
+  {
+    "id": 44,
+    "source_row": 62,
+    "filename": "956724.jpg",
+    "prompt": "A race car speeds along a track. The image uses strong motion blur to streak the background and wheels, creating a sense of rapid movement.",
+    "clean_prompt": "a race car",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/044_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/044_clean.jpg",
+    "real_hpsv3": 14.69,
+    "clean_hpsv3": 13.19,
+    "human_score": 5.44
+  },
+  {
+    "id": 45,
+    "source_row": 63,
+    "filename": "725756.jpg",
+    "prompt": "A skateboarder is captured in motion on a ramp. The scene is heavily blurred and swirled, turning the figure and background into an abstract spinning image.",
+    "clean_prompt": "a skateboarder",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/045_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/045_clean.jpg",
+    "real_hpsv3": -3.45,
+    "clean_hpsv3": 11.56,
+    "human_score": 5.75
+  },
+  {
+    "id": 46,
+    "source_row": 64,
+    "filename": "776192.jpg",
+    "prompt": "Bright red, blue, orange, and black forms streak across the frame. Heavy motion blur and blown-out highlights make the scene read as an abstract image.",
+    "clean_prompt": "shapes",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo",
+      "color_and_tone.clashing_disharmony"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/046_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/046_clean.jpg",
+    "real_hpsv3": 8.0,
+    "clean_hpsv3": 7.21,
+    "human_score": 4.79
+  },
+  {
+    "id": 47,
+    "source_row": 65,
+    "filename": "9576.jpg",
+    "prompt": "A person is in the frame, but the scene is heavily blurred and the highlights are blown out. Most details dissolve into streaks and bright patches, leaving the image nearly unreadable.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/047_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/047_clean.jpg",
+    "real_hpsv3": -1.35,
+    "clean_hpsv3": 9.02,
+    "human_score": 2.95
+  },
+  {
+    "id": 48,
+    "source_row": 67,
+    "filename": "912810.jpg",
+    "prompt": "Diagonal streaks of orange and purple fill the frame. The image is heavily blurred and reads as an abstract composition rather than a clear scene.",
+    "clean_prompt": "color streaks",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/048_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/048_clean.jpg",
+    "real_hpsv3": -1.19,
+    "clean_hpsv3": 1.23,
+    "human_score": 4.65
+  },
+  {
+    "id": 49,
+    "source_row": 68,
+    "filename": "924321.jpg",
+    "prompt": "A hallway or interior space is rendered as streaks of light and color. The strong motion blur turns the scene into an abstract photo with little clear detail.",
+    "clean_prompt": "a hallway",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/049_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/049_clean.jpg",
+    "real_hpsv3": 8.66,
+    "clean_hpsv3": 10.61,
+    "human_score": 5.74
+  },
+  {
+    "id": 50,
+    "source_row": 71,
+    "filename": "944621.jpg",
+    "prompt": "A cyclist rides on a road with other figures and vehicles nearby. The image is heavily motion-blurred, with smeared shapes and soft details across the frame.",
+    "clean_prompt": "a cyclist on road",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/050_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/050_clean.jpg",
+    "real_hpsv3": -6.35,
+    "clean_hpsv3": 12.06,
+    "human_score": 6.13
+  },
+  {
+    "id": 51,
+    "source_row": 73,
+    "filename": "792131.jpg",
+    "prompt": "The image shows streaks of light and color across the frame. It is heavily blurred and abstract, with no clear subject or sharp details.",
+    "clean_prompt": "light and color",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/051_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/051_clean.jpg",
+    "real_hpsv3": 9.53,
+    "clean_hpsv3": 6.83,
+    "human_score": 3.47
+  },
+  {
+    "id": 52,
+    "source_row": 74,
+    "filename": "67089.jpg",
+    "prompt": "Two cars pass by on a road. The scene is rendered with strong motion blur, making the vehicles and background smear together.",
+    "clean_prompt": "cars on a road",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/052_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/052_clean.jpg",
+    "real_hpsv3": 6.42,
+    "clean_hpsv3": 12.93,
+    "human_score": 4.17
+  },
+  {
+    "id": 53,
+    "source_row": 75,
+    "filename": "722475.jpg",
+    "prompt": "A street corner with buildings and parked cars. The image uses heavy motion blur that smears the scene and obscures details.",
+    "clean_prompt": "a street corner",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/053_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/053_clean.jpg",
+    "real_hpsv3": -1.58,
+    "clean_hpsv3": 3.94,
+    "human_score": 4.47
+  },
+  {
+    "id": 54,
+    "source_row": 77,
+    "filename": "829369.jpg",
+    "prompt": "A building rises against the sky. The image is dominated by strong motion blur that smears the structure into streaks and soft shapes.",
+    "clean_prompt": "a building",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/054_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/054_clean.jpg",
+    "real_hpsv3": 6.18,
+    "clean_hpsv3": 9.14,
+    "human_score": 5.91
+  },
+  {
+    "id": 55,
+    "source_row": 78,
+    "filename": "7782.jpg",
+    "prompt": "A room interior is shown. The image is heavily blurred with streaks of light and blown-out areas, leaving the details hard to see.",
+    "clean_prompt": "a room",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/055_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/055_clean.jpg",
+    "real_hpsv3": -5.85,
+    "clean_hpsv3": 10.9,
+    "human_score": 3.2
+  },
+  {
+    "id": 56,
+    "source_row": 79,
+    "filename": "27112.jpg",
+    "prompt": "A bus passes along a road. The image is heavily motion-blurred and overexposed, with smeared details and blown-out highlights that make the scene hard to read.",
+    "clean_prompt": "a bus",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.exposure_extremes"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/056_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/056_clean.jpg",
+    "real_hpsv3": -4.54,
+    "clean_hpsv3": 13.52,
+    "human_score": 4.18
+  },
+  {
+    "id": 57,
+    "source_row": 80,
+    "filename": "923399.jpg",
+    "prompt": "A shoe is captured in motion on a light floor. The image uses strong motion blur and streaked smearing, making the subject feel dynamic and indistinct.",
+    "clean_prompt": "a shoe on floor",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/057_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/057_clean.jpg",
+    "real_hpsv3": 0.51,
+    "clean_hpsv3": 10.36,
+    "human_score": 5.63
+  },
+  {
+    "id": 58,
+    "source_row": 81,
+    "filename": "135457.jpg",
+    "prompt": "A car speeds past the camera. The scene uses strong motion blur and streaked lights to create a sense of rapid movement.",
+    "clean_prompt": "a car",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/058_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/058_clean.jpg",
+    "real_hpsv3": 6.39,
+    "clean_hpsv3": 13.88,
+    "human_score": 6.16
+  },
+  {
+    "id": 59,
+    "source_row": 83,
+    "filename": "725294.jpg",
+    "prompt": "A car interior is seen through heavy motion blur. The scene is smeared into soft streaks, leaving the details hard to recognize.",
+    "clean_prompt": "a car interior",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/059_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/059_clean.jpg",
+    "real_hpsv3": -9.43,
+    "clean_hpsv3": 10.59,
+    "human_score": 5.77
+  },
+  {
+    "id": 60,
+    "source_row": 85,
+    "filename": "388863.jpg",
+    "prompt": "A race car speeds on a track with another car in the background. The image has heavy grain, motion blur, and bright spray that washes out parts of the scene, giving it a harsh vintage look.",
+    "clean_prompt": "a race car",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "clarity_and_focus.film_artifacts",
+      "lighting_and_exposure.exposure_extremes"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/060_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/060_clean.jpg",
+    "real_hpsv3": 9.83,
+    "clean_hpsv3": 11.87,
+    "human_score": 6.28
+  },
+  {
+    "id": 61,
+    "source_row": 86,
+    "filename": "655446.jpg",
+    "prompt": "A bike fills the frame. The image uses strong motion blur and radial streaks that smear the scene into a fast-moving impression.",
+    "clean_prompt": "a bike",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/061_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/061_clean.jpg",
+    "real_hpsv3": 1.15,
+    "clean_hpsv3": 11.03,
+    "human_score": 5.07
+  },
+  {
+    "id": 62,
+    "source_row": 87,
+    "filename": "776330.jpg",
+    "prompt": "A mix of blue, purple, yellow, and black fills the frame. The image is heavily blurred and abstract, so no clear subject can be identified.",
+    "clean_prompt": "colors and light",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/062_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/062_clean.jpg",
+    "real_hpsv3": 2.66,
+    "clean_hpsv3": 6.8,
+    "human_score": 4.95
+  },
+  {
+    "id": 63,
+    "source_row": 88,
+    "filename": "953934.jpg",
+    "prompt": "A car moves past the frame. Heavy motion blur and grain give the image a rough, lo-fi look.",
+    "clean_prompt": "a car",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/063_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/063_clean.jpg",
+    "real_hpsv3": 5.6,
+    "clean_hpsv3": 13.42,
+    "human_score": 5.19
+  },
+  {
+    "id": 64,
+    "source_row": 89,
+    "filename": "944843.jpg",
+    "prompt": "Tree branches fill the frame. The image is heavily motion blurred, turning the scene into streaks and shapes that read as abstract rather than clear detail.",
+    "clean_prompt": "tree branches",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/064_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/064_clean.jpg",
+    "real_hpsv3": -2.77,
+    "clean_hpsv3": 10.61,
+    "human_score": 3.59
+  },
+  {
+    "id": 65,
+    "source_row": 91,
+    "filename": "645427.jpg",
+    "prompt": "Two cars move across a white scene. The frame is almost entirely washed into extreme motion blur, with only red and dark streaks remaining.",
+    "clean_prompt": "two cars",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/065_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/065_clean.jpg",
+    "real_hpsv3": -7.19,
+    "clean_hpsv3": 9.55,
+    "human_score": 2.98
+  },
+  {
+    "id": 66,
+    "source_row": 93,
+    "filename": "894914.jpg",
+    "prompt": "A street scene is smeared by strong motion blur, turning the shapes and colors into streaks. The subject is hard to read because the camera movement dominates the frame.",
+    "clean_prompt": "a street",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/066_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/066_clean.jpg",
+    "real_hpsv3": 4.21,
+    "clean_hpsv3": 9.9,
+    "human_score": 4.8
+  },
+  {
+    "id": 67,
+    "source_row": 94,
+    "filename": "123456.jpg",
+    "prompt": "A car moves along a road near some trees. The image uses strong motion blur, turning the vehicle into a streak of light and color across the frame.",
+    "clean_prompt": "a car on road",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/067_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/067_clean.jpg",
+    "real_hpsv3": -2.23,
+    "clean_hpsv3": 12.9,
+    "human_score": 4.95
+  },
+  {
+    "id": 68,
+    "source_row": 95,
+    "filename": "876103.jpg",
+    "prompt": "A bicycle appears in the frame. The image is heavily blurred by motion, and most details are lost into streaks and smears.",
+    "clean_prompt": "a bicycle",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/068_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/068_clean.jpg",
+    "real_hpsv3": -6.71,
+    "clean_hpsv3": 9.21,
+    "human_score": 5.8
+  },
+  {
+    "id": 69,
+    "source_row": 97,
+    "filename": "774994.jpg",
+    "prompt": "Colored streaks cross a black field. The image has almost no discernible details, and the subject resolves into abstract bands rather than a clear scene.",
+    "clean_prompt": "light streaks",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/069_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/069_clean.jpg",
+    "real_hpsv3": 8.1,
+    "clean_hpsv3": 9.25,
+    "human_score": 5.48
+  },
+  {
+    "id": 70,
+    "source_row": 98,
+    "filename": "954228.jpg",
+    "prompt": "A car is shown in motion. The image is heavily distorted with smeared digital-looking streaks, clashing neon colors, and an abstract form that is hard to recognize.",
+    "clean_prompt": "a car",
+    "elements": [
+      "clarity_and_focus.digital_artifacts",
+      "color_and_tone.clashing_disharmony",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/070_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/070_clean.jpg",
+    "real_hpsv3": 5.81,
+    "clean_hpsv3": 12.09,
+    "human_score": 4.82
+  },
+  {
+    "id": 71,
+    "source_row": 99,
+    "filename": "925216.jpg",
+    "prompt": "A person is captured in motion, with the scene smeared into soft streaks and indistinct shapes. The image reads as an abstract photograph rather than a clear scene.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/071_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/071_clean.jpg",
+    "real_hpsv3": -1.94,
+    "clean_hpsv3": 10.39,
+    "human_score": 4.86
+  },
+  {
+    "id": 72,
+    "source_row": 102,
+    "filename": "281389.jpg",
+    "prompt": "A race car speeds around a track with strong motion blur across the frame. The cars and background are streaked and smeared, making the scene hard to resolve.",
+    "clean_prompt": "A race car.",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/072_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/072_clean.jpg",
+    "real_hpsv3": 8.0,
+    "clean_hpsv3": 12.8,
+    "human_score": 5.63
+  },
+  {
+    "id": 73,
+    "source_row": 103,
+    "filename": "751515.jpg",
+    "prompt": "A person stands behind a frosted surface. The image is heavily blurred and the figure is reduced to an indistinct form with little detail.",
+    "clean_prompt": "a person",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/073_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/073_clean.jpg",
+    "real_hpsv3": -0.71,
+    "clean_hpsv3": 10.94,
+    "human_score": 5.32
+  },
+  {
+    "id": 74,
+    "source_row": 104,
+    "filename": "801130.jpg",
+    "prompt": "A bouquet of flowers fills the frame. The image is heavily blurred, and a bright light leak washes in from the left side.",
+    "clean_prompt": "flowers in vase",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "lighting_and_exposure.light_leak"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/074_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/074_clean.jpg",
+    "real_hpsv3": -8.89,
+    "clean_hpsv3": 12.75,
+    "human_score": 4.3
+  },
+  {
+    "id": 75,
+    "source_row": 105,
+    "filename": "775560.jpg",
+    "prompt": "Two people stand in front of a building. The image is heavily blurred, with faces and details dissolving into soft shapes.",
+    "clean_prompt": "two people outside",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/075_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/075_clean.jpg",
+    "real_hpsv3": -7.1,
+    "clean_hpsv3": 12.5,
+    "human_score": 4.19
+  },
+  {
+    "id": 76,
+    "source_row": 106,
+    "filename": "288627.jpg",
+    "prompt": "The image shows overlapping blue, pink, and white color fields. It is heavily blurred with no distinct details, forming an abstract photo.",
+    "clean_prompt": "colors",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/076_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/076_clean.jpg",
+    "real_hpsv3": 7.85,
+    "clean_hpsv3": 7.85,
+    "human_score": 5.58
+  },
+  {
+    "id": 77,
+    "source_row": 107,
+    "filename": "68228.jpg",
+    "prompt": "A face emerges from a wash of warm color. The subject is heavily blurred, with the features softened and the details nearly dissolved.",
+    "clean_prompt": "a face",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/077_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/077_clean.jpg",
+    "real_hpsv3": 0.91,
+    "clean_hpsv3": 10.32,
+    "human_score": 5.33
+  },
+  {
+    "id": 78,
+    "source_row": 108,
+    "filename": "717260.jpg",
+    "prompt": "Sunlight floods the frame and most of the image is washed out. Orange and yellow streaks cut across the scene, with heavy light leak and extreme overexposure turning it into an abstract view.",
+    "clean_prompt": "a window",
+    "elements": [
+      "lighting_and_exposure.light_leak",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/078_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/078_clean.jpg",
+    "real_hpsv3": -1.37,
+    "clean_hpsv3": 3.55,
+    "human_score": 3.56
+  },
+  {
+    "id": 79,
+    "source_row": 109,
+    "filename": "2779.jpg",
+    "prompt": "A field of yellow light reflections fills the frame. The image is heavily overexposed and lacks clear detail, turning the scene into an abstract blur of glowing shapes.",
+    "clean_prompt": "light reflections",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/079_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/079_clean.jpg",
+    "real_hpsv3": 1.63,
+    "clean_hpsv3": 10.2,
+    "human_score": 4.99
+  },
+  {
+    "id": 80,
+    "source_row": 110,
+    "filename": "656793.jpg",
+    "prompt": "Pink flowers fill the frame. Heavy motion blur turns the scene into soft streaks of color, and the details of the flowers are no longer clear.",
+    "clean_prompt": "flowers",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/080_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/080_clean.jpg",
+    "real_hpsv3": -4.8,
+    "clean_hpsv3": 10.36,
+    "human_score": 5.29
+  },
+  {
+    "id": 81,
+    "source_row": 111,
+    "filename": "126629.jpg",
+    "prompt": "A yellow shape fills the center of the frame against a pale background. The image is heavily blurred and lacks clear detail, making the subject unreadable and abstract.",
+    "clean_prompt": "a shape",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/081_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/081_clean.jpg",
+    "real_hpsv3": -1.24,
+    "clean_hpsv3": -0.85,
+    "human_score": 2.59
+  },
+  {
+    "id": 82,
+    "source_row": 112,
+    "filename": "844653.jpg",
+    "prompt": "A plant fills the frame. The image is heavily blurred and lacks clear detail, with its forms reduced to soft, smeared shapes.",
+    "clean_prompt": "a plant",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/082_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/082_clean.jpg",
+    "real_hpsv3": -5.43,
+    "clean_hpsv3": 10.36,
+    "human_score": 4.85
+  },
+  {
+    "id": 83,
+    "source_row": 113,
+    "filename": "50146.jpg",
+    "prompt": "A pattern fills the frame. The image is heavily blurred and has no clear subject, with a rainbow glow in the upper corner.",
+    "clean_prompt": "a pattern",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/083_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/083_clean.jpg",
+    "real_hpsv3": -4.83,
+    "clean_hpsv3": 7.41,
+    "human_score": 3.36
+  },
+  {
+    "id": 84,
+    "source_row": 114,
+    "filename": "829235.jpg",
+    "prompt": "A blue surface fills the frame with faint vertical streaks. The image is heavily blurred and rendered as an abstract photo with no clear details.",
+    "clean_prompt": "a surface",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/084_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/084_clean.jpg",
+    "real_hpsv3": -1.62,
+    "clean_hpsv3": 5.99,
+    "human_score": 4.17
+  },
+  {
+    "id": 85,
+    "source_row": 115,
+    "filename": "655918.jpg",
+    "prompt": "Plants fill the frame in soft green and pink shapes. The image has no clear details and the surfaces dissolve into a mushy blur.",
+    "clean_prompt": "plants",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/085_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/085_clean.jpg",
+    "real_hpsv3": -7.99,
+    "clean_hpsv3": 11.09,
+    "human_score": 4.55
+  },
+  {
+    "id": 86,
+    "source_row": 116,
+    "filename": "656087.jpg",
+    "prompt": "An abstract image of vertical color streaks in warm pink, yellow, and green tones. The forms are heavily blurred and lack clear details, making the subject dissolve into simple color and texture.",
+    "clean_prompt": "color streaks",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/086_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/086_clean.jpg",
+    "real_hpsv3": 6.77,
+    "clean_hpsv3": 4.55,
+    "human_score": 5.45
+  },
+  {
+    "id": 87,
+    "source_row": 117,
+    "filename": "940095.jpg",
+    "prompt": "A room is shown in soft beige tones. The scene lacks visible detail, with objects and surfaces dissolving into indistinct shapes.",
+    "clean_prompt": "a room",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/087_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/087_clean.jpg",
+    "real_hpsv3": -9.15,
+    "clean_hpsv3": 12.12,
+    "human_score": 3.32
+  },
+  {
+    "id": 88,
+    "source_row": 118,
+    "filename": "655277.jpg",
+    "prompt": "A pink surface fills the frame. The image has no clear subject and resolves into a soft abstract field with little visible detail.",
+    "clean_prompt": "pink surface",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/088_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/088_clean.jpg",
+    "real_hpsv3": -0.28,
+    "clean_hpsv3": 6.31,
+    "human_score": 4.4
+  },
+  {
+    "id": 89,
+    "source_row": 119,
+    "filename": "291006.jpg",
+    "prompt": "A square of blue and green fills the frame. It has no clear subject, with soft color fields replacing detail and form.",
+    "clean_prompt": "a square",
+    "elements": [
+      "emotion_and_subject.abstract_photo",
+      "clarity_and_focus.bad_or_no_details"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/089_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/089_clean.jpg",
+    "real_hpsv3": 3.82,
+    "clean_hpsv3": 2.59,
+    "human_score": 4.67
+  },
+  {
+    "id": 90,
+    "source_row": 120,
+    "filename": "235030.jpg",
+    "prompt": "A circular form fills the frame on a white background. The image is heavily overexposed and lacks clear detail, with the subject reduced to a soft glowing shape.",
+    "clean_prompt": "a circle",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "lighting_and_exposure.exposure_extremes",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/090_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/090_clean.jpg",
+    "real_hpsv3": -1.94,
+    "clean_hpsv3": 5.81,
+    "human_score": 2.67
+  },
+  {
+    "id": 91,
+    "source_row": 121,
+    "filename": "539410.jpg",
+    "prompt": "Soft blue circles fill the frame with heavy blur. The image reads as an abstract, out-of-focus pattern rather than a clear scene.",
+    "clean_prompt": "lights",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/091_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/091_clean.jpg",
+    "real_hpsv3": 8.16,
+    "clean_hpsv3": 7.8,
+    "human_score": 5.17
+  },
+  {
+    "id": 92,
+    "source_row": 122,
+    "filename": "946666.jpg",
+    "prompt": "Light streaks and blue smears fill the frame. The image is heavily blurred and abstract, with the scene dissolving into vertical motion.",
+    "clean_prompt": "Light streaks.",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/092_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/092_clean.jpg",
+    "real_hpsv3": 1.61,
+    "clean_hpsv3": 7.8,
+    "human_score": 3.68
+  },
+  {
+    "id": 93,
+    "source_row": 123,
+    "filename": "657131.jpg",
+    "prompt": "A colorful circular pattern fills the frame. The image is heavily blurred, with details dissolving into soft bokeh that makes the subject abstract.",
+    "clean_prompt": "a pattern",
+    "elements": [
+      "clarity_and_focus.intentional_blur",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/093_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/093_clean.jpg",
+    "real_hpsv3": 8.15,
+    "clean_hpsv3": 2.32,
+    "human_score": 5.78
+  },
+  {
+    "id": 94,
+    "source_row": 124,
+    "filename": "655842.jpg",
+    "prompt": "Clothes hang together in a frame. The image is heavily blurred by motion, turning the garments and background into soft streaks.",
+    "clean_prompt": "clothes on a rack",
+    "elements": [
+      "clarity_and_focus.intentional_blur"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/094_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/094_clean.jpg",
+    "real_hpsv3": -6.12,
+    "clean_hpsv3": 10.29,
+    "human_score": 4.83
+  },
+  {
+    "id": 95,
+    "source_row": 125,
+    "filename": "460340.jpg",
+    "prompt": "The image shows a light-filled surface with no clear subject. Soft blur and missing detail reduce it to an abstract wash of yellow and white.",
+    "clean_prompt": "a light",
+    "elements": [
+      "clarity_and_focus.bad_or_no_details",
+      "emotion_and_subject.abstract_photo"
+    ],
+    "real_image": "img/asserts/ipad_gallery/real/095_real.jpg",
+    "clean_image": "img/asserts/ipad_gallery/real/095_clean.jpg",
+    "real_hpsv3": 1.1,
+    "clean_hpsv3": 8.59,
+    "human_score": 4.32
   }
 ];
